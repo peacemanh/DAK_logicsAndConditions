@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Repository Management Guide
 
 # Cloning the Repository
