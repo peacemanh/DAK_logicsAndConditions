@@ -1,0 +1,27 @@
+[
+    {
+        "atFirst": [
+            "DAK, Method in mind",
+            "DAK, Method in use",
+            "DAK, Methods previously used",
+            "DAK, Conditions relevant to sterilization and FAB",
+            "DAK, Conditions relevant to FAB",
+            "DAK, Hypertension"
+        ]
+    },
+    {
+        "duringEachUpdate": [
+            "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
+            "DAK, Persistent behaviours",
+            "DAK, Cervical Cancer risk assessment",
+            "DAK, Service for clients with special needs",
+            "DAK, Reason for being certain",
+            "DAK, Medical eligibility category",
+            "DAK, Chosen method",
+            "DAK, Health condition(s)",
+            "DaK, Hx of previous Preterm delivery",
+            "DAK, Medical conditions during past pregnancy and after childbirth",
+            "DAK, Reason for no method at exit"
+        ]
+    }
+]

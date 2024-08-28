@@ -1,0 +1,53 @@
+[
+    {
+        "case": "DAK, Ultrasound required",
+        "value": true,
+        "orderables": ["Abdomen u/s"]
+    },
+    {
+        "case": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "orderables": ["LB CBC", "Urine Chemical Examination", "Urine Microscopic Examination", "Blood group with Rh (ABO) (blood)", "HIV ELISA (Blood)", "Abdomen u/s", "HIV test", "viral load hepatitis B", "Hepatitis B surface antigen", "viral load hepatitis C", "HCV Antibody Test", "VDRL Rapid", "TB AFB (sputum)", "TB Culture LJ (sputum)", "TB Culture MGIT (sputum)", "Genexpert Test (sputum)", "FL LPA (sputum)", "SL LPA (sputum)", "FL phenotypic DST (sputum)", "SL phenotypic DST (sputum)", "TB whole genome sequence (sputum)", "spoilage typing (sputum)", "Chest X-ray all view"]
+    },
+    {
+        "case": "DAK, Gestational age",
+        "value": 30,
+        "orderables": ["LB CBC", "HIV test", "VDRL Rapid"]
+    },
+    {
+        "case": "DAK, Gestational age",
+        "value": 31,
+        "orderables": ["LB CBC", "HIV test", "VDRL Rapid"]
+    },
+    {
+        "case": "DAK, Gestational age",
+        "value": 38,
+        "orderables": ["LB CBC"]
+    },
+    {
+        "case": "DAK, Gestational age",
+        "value": 39,
+        "orderables": ["LB CBC"]
+    },
+    {
+        "case": "DAK, Gestational age",
+        "value": 26,
+        "orderables": ["Urine Chemical Examination", "Urine Microscopic Examination"]
+    }
+    ,
+    {
+        "case": "DAK, Gestational age",
+        "value": 27,
+        "orderables": ["Urine Chemical Examination", "Urine Microscopic Examination"]
+    },
+    {
+        "case": "DAK, Gestational age",
+        "value": 34,
+        "orderables": ["Urine Chemical Examination", "Urine Microscopic Examination"]
+    },
+    {
+        "case": "DAK, Gestational age",
+        "value": 35,
+        "orderables": ["Urine Chemical Examination", "Urine Microscopic Examination"]
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "logics": [
+            {
+                "trigger": "None",
+                "value": "None",
+                "operator": "="
+            }
+        ],
+        "action": "None",
+        "dependent": "None",
+        "logic_key": 1
+    }
+]    

@@ -1,0 +1,14 @@
+[
+    {
+        "resultConcept": "DAK, BMI",
+        "operands": ["DAK, Height", "DAK, Current weight"],
+        "formula": "(DAK, Current weight / (DAK, Height * DAK, Height)) * 10000"
+        
+    },
+    {
+        "resultConcept": "DAK, Days since start of last normal menses",
+        "operands": ["DAK, Last normal menustral period"],
+        "formula": "DAK, Last normal menustral period / 1",
+        "dateSource": true
+    }
+]

@@ -1,0 +1,14 @@
+[
+	{
+		"conditions": [
+			{
+				"key": "None",
+				"value": "None",
+				"operator": "="
+			}
+		],
+		"action": "None",
+		"annotation": "None",
+		"action_key": 1
+	}
+]    

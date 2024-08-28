@@ -1,0 +1,42 @@
+[
+    {
+        "conceptName": "DAK, Height",
+        "operator": "beyond, <, <",
+        "minValue": 100,
+        "maxValue": 200,
+        "type": "restrict",
+        "message": "Height should be between 100 cm and 200 cm"
+    },
+    {
+        "conceptName": "DAK, Current weight",
+        "operator": "beyond, <, <",
+        "minValue": 15,
+        "maxValue": 250,
+        "type": "optional",
+        "message": "Weight should be between 15 Kg and 250 Kg"
+    },
+    {
+        "conceptName": "DAK, BMI",
+        "operator": "beyond, <, <",
+        "minValue": 19,
+        "maxValue": 25,
+        "type": "optional",
+        "message": "BMI should be between 19 and 25"
+    },
+    {
+        "conceptName": "DAK, Systolic blood pressure",
+        "operator": "beyond, <=, <=",
+        "minValue": 60,
+        "maxValue": 260,
+        "type": "optional",
+        "message": "Systolic blood pressure should be between 60mmHg and 260mmHg"
+    },
+    {
+        "conceptName": "DAK, Diastolic blood pressure",
+        "operator": "beyond, <=, <=",
+        "minValue": 60,
+        "maxValue": 260,
+        "type": "optional",
+        "message": "Diastolic blood pressure should be between 60mmHg and 260mmHg"
+    }
+]

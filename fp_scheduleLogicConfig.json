@@ -1,0 +1,215 @@
+[
+    {
+        "triggerEvent": "DAK, Method or service provided",
+        "triggerDate": "contact date",
+        "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+        "sceduleDays": 28,
+        "service": "Post-Cu-IUD Insertion Follow-up",
+        "serviceDescription": "Copper-bearing intrauterine device (Cu-IUD) insertion Follow-up",
+        "type": "FP"
+    },
+    {
+        "haveMultipleTriggerEvent": true,
+        "triggerEvents": [
+            {
+                "trigger": "DAK, Reason for visit",
+                "value": "DAK, Follow-up",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Reason for follow-up",
+                "orValues": [
+                    "DAK, Wishes to stop contraception",
+                    "DAK, Method change",
+                    "DAK, Issues and concerns/ method failure",
+                    "DAK, Implant removal"
+                ],
+                "operator": "NO"
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "triggerDate": "DAK, IUD insertion date",
+        "sceduleDays": 3653,
+        "service": "Cu-IUD removal",
+        "type": "FP"
+    },
+    {
+        "triggerEvent": "DAK, Method or service provided",
+        "triggerDate": "contact date",
+        "value": "DAK, Etonogestrel (ETG) one-rod implant",
+        "sceduleDays": 28,
+        "service": "Post-ETG one-rod implant insertion Follow-up",
+        "type": "FP"
+    },
+    {
+        "haveMultipleTriggerEvent": true,
+        "triggerEvents": [
+            {
+                "trigger": "DAK, Reason for visit",
+                "value": "DAK, Follow-up",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Reason for follow-up",
+                "orValues": [
+                    "DAK, Wishes to stop contraception",
+                    "DAK, Method change",
+                    "DAK, Issues and concerns/ method failure",
+                    "DAK, Implant removal"
+                ],
+                "operator": "NO"
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Etonogestrel (ETG) one-rod implant",
+                "operator": "="
+            }
+        ],
+        "triggerDate": "DAK, Implant insertion date",
+        "sceduleDays": 1097,
+        "service": "Etonogestrel (ETG) one-rod implant removal",
+        "type": "FP"
+    },
+    {
+        "triggerEvent": "DAK, Method or service provided",
+        "triggerDate": "contact date",
+        "value": "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+        "sceduleDays": 21,
+        "service": "Post-LNG two-rod (Jadele) insertion Follow-up",
+        "type": "FP"
+    },
+    {
+        "haveMultipleTriggerEvent": true,
+        "triggerEvents": [
+            {
+                "trigger": "DAK, Reason for visit",
+                "value": "DAK, Follow-up",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Reason for follow-up",
+                "orValues": [
+                    "DAK, Wishes to stop contraception",
+                    "DAK, Method change",
+                    "DAK, Issues and concerns/ method failure",
+                    "DAK, Implant removal"
+                ],
+                "operator": "NO"
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+                "operator": "="
+            }
+        ],
+        "triggerDate": "DAK, Implant insertion date",
+        "sceduleDays": 1827,
+        "service": "Etonogestrel (ETG) one-rod implant removal",
+        "type": "FP"
+    },
+    {
+        "triggerEvent": "DAK, Method or service provided",
+        "triggerDate": "contact date",
+        "value": "DAK, Levonorgestrel (LNG) two-rod(Levoplant)",
+        "sceduleDays": 28,
+        "service": "Post-LNG two-rod implant (Levoplant) follow-up",
+        "type": "FP"
+    },
+    {
+        "haveMultipleTriggerEvent": true,
+        "triggerEvents": [
+            {
+                "trigger": "DAK, Reason for visit",
+                "value": "DAK, Follow-up",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Reason for follow-up",
+                "orValues": [
+                    "DAK, Wishes to stop contraception",
+                    "DAK, Method change",
+                    "DAK, Issues and concerns/ method failure",
+                    "DAK, Implant removal"
+                ],
+                "operator": "NO"
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Levonorgestrel (LNG) two-rod(Levoplant)",
+                "operator": "="
+            }
+        ],
+        "triggerDate": "DAK, Implant insertion date",
+        "sceduleDays": 1097,
+        "service": "Etonogestrel (ETG) one-rod implant removal",
+        "type": "FP"
+    },
+    {
+        "triggerEvent": "DAK, Method or service provided",
+        "triggerDate": "contact date",
+        "value": "DAK, DMPA-IM",
+        "sceduleDays": 84,
+        "service": "DMPA-IM next injection",
+        "type": "FP"
+    },
+    {
+        "triggerEvent": "DAK, Method or service provided",
+        "triggerDate": "contact date",
+        "value": "DAK, DMPA-SC",
+        "sceduleDays": 84,
+        "service": "DMPA-SC next injection",
+        "type": "FP"
+    },
+    {
+        "triggerEvent": "DAK, Method or service provided",
+        "triggerDate": "contact date",
+        "value": "DAK, Progestogen-only pills (POPs)",
+        "sceduleDays": 28,
+        "service": "Post-Progestogen-only pills (POPs) follow-up",
+        "type": "FP"
+    },
+    {
+        "triggerEvent": "DAK, Method or service provided",
+        "triggerDate": "contact date",
+        "value": "DAK, Combined oral contraceptives (COCs)",
+        "sceduleDays": 84,
+        "service": "Combined oral contraceptives - Quarter visit",
+        "type": "FP"
+    },
+    {
+        "triggerEvent": "DAK, Method or service provided",
+        "triggerDate": "contact date",
+        "value": "DAK, Male sterilizationnn",
+        "sceduleDays": 28,
+        "service": "Post Male sterilization follow-up",
+        "type": "FP"
+    },
+    {
+        "triggerEvent": "DAK, Method or service provided",
+        "triggerDate": "contact date",
+        "value": "DAK, Female sterilizationnn",
+        "sceduleDays": 28,
+        "service": "Post Female sterilization follow-up",
+        "type": "FP"
+    },
+    {
+        "triggerEvent": "DAK, Method or service provided",
+        "triggerDate": "contact date",
+        "value": "DAK, Vasectomy",
+        "sceduleDays": 84,
+        "service": "Post-Vasectomy follow-up",
+        "type": "FP"
+    },
+    {
+        "triggerEvent": "DAK, Method or service provided",
+        "triggerDate": "contact date",
+        "value": "DAK, Tubal ligition",
+        "sceduleDays": 7,
+        "service": "Post-Tubal ligiation follow-up",
+        "type": "FP"
+    }
+]

@@ -1,0 +1,28 @@
+[
+    {
+        "resultConcept": "DAK, BMI",
+        "operands": ["DAK, Height", "DAK, Current weight"],
+        "formula": "(DAK, Current weight / (DAK, Height * DAK, Height)) * 10000"
+        
+    },
+    {
+        "resultConcept": "DAK, Parity",
+        "operands": ["DAK, Number of live births", "DAK, Number of stillbirths"],
+        "formula": "DAK, Number of live births + DAK, Number of stillbirths"
+        
+    },
+{
+        "resultConcept": "DAK, Number of previous pregnancies",
+        "operands": ["DAK, Number of pregnancies (gravida)"],
+        "formula": "DAK, Number of pregnancies (gravida) - 1"
+        
+    },
+{
+        "resultConcept": "DAK, Total weight gain (kgTotal weight gain (kg)",
+        "operands": ["DAK, Current weight",  "DAK, Pre-gestational weight"],
+        "formula": "DAK, Current weight - DAK, Pre-gestational weight"
+        
+    }
+
+
+]
