@@ -1,6 +1,6 @@
-#!/bin/bash
-
 # Repository Management Guide
+
+#!/bin/bash
 
 # To clone the repository for the first time, use the following command:
 git clone https://github.com/peacemanh/DAK_logicsAndConditions.git
