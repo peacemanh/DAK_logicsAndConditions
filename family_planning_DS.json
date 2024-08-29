@@ -17761,9 +17761,12 @@
     {
         "conditions": [
             {
-                "key": "DAK, Method in use",
-                "value": "DAK, Male condoms OR Female condoms",
-                "operator": "="
+                "key": "DAK, Method in mind",
+                "orValues": [
+                    "DAK, Male condoms",
+                    "DAK, Female condoms"
+                ],
+                "operator": "OR"
             },
             {
                 "key": "DAK, Health condition(s)",
@@ -17771,60 +17774,69 @@
                 "operator": "="
             }
         ],
+        "action_key": 919,
         "action": "Counsel client that s/he is medically eligible for this method",
-        "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
-        "action_key": 919
+        "annotation": "Medical eligibility criteria (MEC) category 1 \u00e2\u20ac\u201c Use method in any circumstance"
     },
     {
         "conditions": [
             {
-                "key": "DAK, Method in use",
-                "value": "DAK, Male condoms OR Female condoms",
-                "operator": "="
+                "key": "DAK, Method in mind",
+                "orValues": [
+                    "DAK, Male condoms",
+                    "DAK, Female condoms"
+                ],
+                "operator": "OR"
             },
             {
-                "key": "DAK, Health condition(s)",
+                "key": "DAK, Other infections (schistosomiasis, tuberculosis, malaria)",
                 "value": "DAK, Allergy to latex",
                 "operator": "="
             }
         ],
-        "action": "Counsel client that s/he is NOT medically eligible for this method.\nDiscuss methods and options to find alternative contraception for the client.",
-        "annotation": "Medical eligibility criteria (MEC) category 3 \u2013 Use of method not usually recommended unless other more appropriate methods are not available or acceptable.\n\nThis DOES NOT APPLY to plastic condoms.",
-        "action_key": 920
+        "action_key": 920,
+        "action": "Counsel client that s/he is NOT medically eligible for this method.Discuss methods and options to find alternative contraception for the client.",
+        "annotation": "Medical eligibility criteria (MEC) category 3 \u00e2\u20ac\u201c Use of method not usually recommended unless other more appropriate methods are not available or acceptable.This DOES NOT APPLY to plastic condoms."
     },
     {
         "conditions": [
             {
-                "key": "DAK, Method in use",
-                "value": "DAK, Male condoms OR Female condoms",
-                "operator": "="
+                "key": "DAK, Method in mind",
+                "orValues": [
+                    "DAK, Male condoms",
+                    "DAK, Female condoms"
+                ],
+                "operator": "OR"
             },
             {
-                "key": "DAK, Health condition(s)",
+                "key": "DAK, Other infections (schistosomiasis, tuberculosis, malaria)",
                 "value": "DAK, Allergy to latex",
                 "operator": "!="
             }
         ],
+        "action_key": 921,
         "action": "Counsel client that s/he is medically eligible for this method",
-        "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance\nNote: If the client has any medical condition other than allergy to latex, there are no restrictions on condom use.",
-        "action_key": 921
+        "annotation": "Medical eligibility criteria (MEC) category 1 \u00e2\u20ac\u201c Use method in any circumstanceNote: If the client has any medical condition other than allergy to latex, there are no restrictions on condom use."
     },
     {
         "conditions": [
             {
-                "key": "DAK, Method in use",
-                "value": "DAK, Male condoms OR Female condoms",
-                "operator": "="
+                "key": "DAK, Method in mind",
+                "orValues": [
+                    "DAK, Male condoms",
+                    "DAK, Female condoms"
+                ],
+                "operator": "OR"
             },
             {
-                "key": "DAK, Current medications",
-                "value": "DAK, ANY MEDICATIONS",
-                "operator": "="
+                "key": "DAK, Current medications FP form",
+                "value": "null",
+                "operator": "!="
             }
         ],
+        "action_key": 922,
         "action": "Counsel client that s/he is medically eligible for this method",
-        "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance\nNote: If the client has any medical condition is taking any medication, there are no restrictions on condom use.",
-        "action_key": 922
+        "annotation": "Medical eligibility criteria (MEC) category 1 \u00e2\u20ac\u201c Use method in any circumstanceNote: If the client has any medical condition is taking any medication, there are no restrictions on condom use."
     },
     {
         "conditions": [
@@ -33238,6 +33250,6 @@
         ],
         "action": "Insert implant at the time of consultation if pregnancy is ruled out",
         "annotation": "\u2013An implant can be inserted at the time of consultation if pregnancy is ruled out by check list and also pregancy test.",
-        "action_key": 1599
+        "action_key": 1598
     }
 ]
