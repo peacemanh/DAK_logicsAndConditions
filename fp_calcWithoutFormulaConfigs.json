@@ -392,7 +392,7 @@
         ],
         "dependentValue": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
         "dependent": "DAK, Chosen method",
-        "logic_key": 29
+        "logic_key": 30
     },
     {
         "logics": [
@@ -409,7 +409,7 @@
         ],
         "dependentValue": "DAK, Male condoms",
         "dependent": "DAK, Chosen method",
-        "logic_key": 30
+        "logic_key": 31
     },
     {
         "logics": [
@@ -421,7 +421,7 @@
         ],
         "dependentValue": "DAK, Obese",
         "dependent": "DAK, Lifestyle Behaviors",
-        "logic_key": 31
+        "logic_key": 32
     },
     {
         "logics": [
@@ -433,7 +433,7 @@
         ],
         "dependentValue": "DAK, Unprotected sex",
         "dependent": "DAK, Cervical Cancer risk assessment",
-        "logic_key": 32
+        "logic_key": 33
     },
     {
         "logics": [
@@ -453,7 +453,7 @@
         ],
         "dependentValue": "Number, 1",
         "dependent": "DAK, Medical eligibility category",
-        "logic_key": 33
+        "logic_key": 34
     },
     {
         "logics": [
@@ -470,7 +470,7 @@
         ],
         "dependentValue": "DAK, Miscarriage or abortion in the past 12 days",
         "dependent": "DAK, Reason for being certain",
-        "logic_key": 33
+        "logic_key": 35
     },
     {
         "logics": [
@@ -487,7 +487,7 @@
         ],
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed",
-        "logic_key": 33
+        "logic_key": 36
     },
     {
         "logics": [
@@ -509,7 +509,7 @@
         ],
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed",
-        "logic_key": 33
+        "logic_key": 37
     },
     {
         "logics": [
@@ -531,7 +531,7 @@
         ],
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed",
-        "logic_key": 33
+        "logic_key": 38
     },
     {
         "logics": [
@@ -558,7 +558,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed",
-        "logic_key": 33
+        "logic_key": 39
     },
     {
         "logics": [
@@ -585,44 +585,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed",
-        "logic_key": 33
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Method or service provided",
-                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Amenorrhoea",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Date of last birth",
-                "value": 28,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Postpartum",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Days since start of last normal menses",
-                "value": 12,
-                "operator": "<="
-            },
-            {
-                "trigger": "DAK, Reasonably certain a woman is not pregnant",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Back-up method needed",
-        "logic_key": 33
+        "logic_key": 40
     },
     {
         "logics": [
@@ -652,6 +615,43 @@
                 "operator": "<="
             },
             {
+                "trigger": "DAK, Reasonably certain a woman is not pregnant",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Back-up method needed",
+        "logic_key": 41
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method or service provided",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Amenorrhoea",
+                "value": false,
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Date of last birth",
+                "value": 28,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Postpartum",
+                "value": false,
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Days since start of last normal menses",
+                "value": 12,
+                "operator": "<="
+            },
+            {
                 "trigger": "DAK, Pregnancy test result",
                 "value": "DAK, Not pregnant",
                 "operator": "="
@@ -659,7 +659,7 @@
         ],
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed",
-        "logic_key": 33
+        "logic_key": 42
     },
     {
         "logics": [
@@ -696,7 +696,7 @@
         ],
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed",
-        "logic_key": 33
+        "logic_key": 43
     },
     {
         "logics": [
@@ -733,7 +733,7 @@
         ],
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed",
-        "logic_key": 33
+        "logic_key": 44
     },
     {
         "logics": [
@@ -755,7 +755,7 @@
         ],
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed",
-        "logic_key": 33
+        "logic_key": 45
     },
     {
         "logics": [
@@ -792,7 +792,7 @@
         ],
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed",
-        "logic_key": 33
+        "logic_key": 46
     },
     {
         "logics": [
@@ -829,7 +829,7 @@
         ],
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed",
-        "logic_key": 33
+        "logic_key": 47
     },
     {
         "logics": [
@@ -851,7 +851,7 @@
         ],
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed",
-        "logic_key": 33
+        "logic_key": 48
     },
     {
         "logics": [
@@ -873,7 +873,7 @@
         ],
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed",
-        "logic_key": 33
+        "logic_key": 49
     },
     {
         "logics": [
@@ -895,7 +895,7 @@
         ],
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed",
-        "logic_key": 33
+        "logic_key": 50
     },
     {
         "logics": [
@@ -917,7 +917,7 @@
         ],
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed",
-        "logic_key": 33
+        "logic_key": 51
     },
     {
         "logics": [
@@ -937,7 +937,7 @@
                 "operator": "<="
             }
         ],
-        "logic_key": 1143,
+        "logic_key": 52,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -959,7 +959,7 @@
                 "operator": "<"
             }
         ],
-        "logic_key": 1144,
+        "logic_key": 53,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -981,7 +981,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1145,
+        "logic_key": 54,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1006,7 +1006,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1149,
+        "logic_key": 55,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1026,7 +1026,7 @@
                 "operator": "<="
             }
         ],
-        "logic_key": 1150,
+        "logic_key": 56,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1056,7 +1056,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1151,
+        "logic_key": 57,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1086,7 +1086,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1153,
+        "logic_key": 58,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1121,7 +1121,7 @@
                 "operator": "<="
             }
         ],
-        "logic_key": 1154,
+        "logic_key": 59,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1146,7 +1146,7 @@
                 "operator": "<="
             }
         ],
-        "logic_key": 1155,
+        "logic_key": 60,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1182,7 +1182,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1157,
+        "logic_key": 61,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1218,7 +1218,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1157,
+        "logic_key": 62,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1254,7 +1254,7 @@
                 "operator": "<="
             }
         ],
-        "logic_key": 1158,
+        "logic_key": 63,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1290,7 +1290,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1158,
+        "logic_key": 64,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1315,7 +1315,7 @@
                     "DAK, Copper-bearing intrauterine device (Cu-IUD)",
                     "DAK, Levonorgestrel-releasing IUD (LNG-IUD)"
                 ],
-                "operator": "="
+                "operator": "OR"
             },
             {
                 "trigger": "DAK, Days since start of last normal menses",
@@ -1323,7 +1323,7 @@
                 "operator": "<="
             }
         ],
-        "logic_key": 1159,
+        "logic_key": 65,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1348,7 +1348,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1160,
+        "logic_key": 66,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1373,7 +1373,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1160,
+        "logic_key": 67,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1403,7 +1403,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1161,
+        "logic_key": 68,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1433,7 +1433,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1161,
+        "logic_key": 69,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1468,7 +1468,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1162,
+        "logic_key": 70,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1503,7 +1503,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1162,
+        "logic_key": 71,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1543,7 +1543,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1163,
+        "logic_key": 72,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1583,52 +1583,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1163,
-        "dependentValue": true,
-        "dependent": "DAK, Back-up method needed"
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Method or service provided",
-                "orValues": [
-                    "DAK, Levonorgestrel (LNG) two-rod implant",
-                    "DAK, Etonogestrel (ETG) one-rod implant"
-                ],
-                "operator": "OR"
-            },
-            {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Date of last birth",
-                "value": 21,
-                "operator": ">"
-            },
-            {
-                "trigger": "DAK, Is client currently breastfeeding?",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Amenorrhoea",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Days since start of last normal menses",
-                "value": 7,
-                "operator": ">"
-            },
-            {
-                "trigger": "DAK, Reasonably certain a woman is not pregnant",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "logic_key": 1163,
+        "logic_key": 73,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1668,12 +1623,57 @@
                 "operator": ">"
             },
             {
+                "trigger": "DAK, Reasonably certain a woman is not pregnant",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "logic_key": 74,
+        "dependentValue": true,
+        "dependent": "DAK, Back-up method needed"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method or service provided",
+                "orValues": [
+                    "DAK, Levonorgestrel (LNG) two-rod implant",
+                    "DAK, Etonogestrel (ETG) one-rod implant"
+                ],
+                "operator": "OR"
+            },
+            {
+                "trigger": "DAK, Postpartum",
+                "value": true,
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Date of last birth",
+                "value": 21,
+                "operator": ">"
+            },
+            {
+                "trigger": "DAK, Is client currently breastfeeding?",
+                "value": false,
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Amenorrhoea",
+                "value": false,
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Days since start of last normal menses",
+                "value": 7,
+                "operator": ">"
+            },
+            {
                 "trigger": "DAK, Pregnancy test result",
                 "value": "DAK, Not pregnant",
                 "operator": "="
             }
         ],
-        "logic_key": 1163,
+        "logic_key": 75,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1708,7 +1708,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1165,
+        "logic_key": 76,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1743,7 +1743,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1165,
+        "logic_key": 77,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1778,7 +1778,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1165,
+        "logic_key": 78,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1813,7 +1813,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1165,
+        "logic_key": 79,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1838,7 +1838,7 @@
                 "operator": ">"
             }
         ],
-        "logic_key": 1166,
+        "logic_key": 80,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1879,7 +1879,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1167,
+        "logic_key": 81,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1920,7 +1920,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1167,
+        "logic_key": 82,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -1960,7 +1960,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1168,
+        "logic_key": 83,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2000,7 +2000,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1168,
+        "logic_key": 84,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2020,7 +2020,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1170,
+        "logic_key": 85,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2048,7 +2048,7 @@
                 "operator": "OR"
             }
         ],
-        "logic_key": 1171,
+        "logic_key": 86,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2073,7 +2073,7 @@
                 "operator": "<"
             }
         ],
-        "logic_key": 1174,
+        "logic_key": 87,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2103,7 +2103,7 @@
                 "operator": "OR"
             }
         ],
-        "logic_key": 1175,
+        "logic_key": 88,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2131,7 +2131,7 @@
                 "operator": "OR"
             }
         ],
-        "logic_key": 1176,
+        "logic_key": 89,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2151,7 +2151,7 @@
                 "operator": "<="
             }
         ],
-        "logic_key": 1177,
+        "logic_key": 90,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2186,7 +2186,7 @@
                 "operator": "<="
             }
         ],
-        "logic_key": 1178,
+        "logic_key": 91,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2221,7 +2221,7 @@
                 "operator": "<="
             }
         ],
-        "logic_key": 1179,
+        "logic_key": 92,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2246,7 +2246,7 @@
                 "operator": "<="
             }
         ],
-        "logic_key": 1180,
+        "logic_key": 93,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2287,7 +2287,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1181,
+        "logic_key": 94,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2328,7 +2328,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1181,
+        "logic_key": 95,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2358,7 +2358,7 @@
                 "operator": "<="
             }
         ],
-        "logic_key": 1182,
+        "logic_key": 96,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2383,7 +2383,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1183,
+        "logic_key": 97,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2408,7 +2408,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1183,
+        "logic_key": 98,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2433,7 +2433,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1184,
+        "logic_key": 99,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2458,7 +2458,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1184,
+        "logic_key": 100,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2488,7 +2488,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1185,
+        "logic_key": 101,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2528,7 +2528,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1186,
+        "logic_key": 102,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2568,7 +2568,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1186,
+        "logic_key": 103,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2609,7 +2609,7 @@
                 "operator": ">"
             }
         ],
-        "logic_key": 1188,
+        "logic_key": 104,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2650,7 +2650,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1188,
+        "logic_key": 105,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2685,7 +2685,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1189,
+        "logic_key": 106,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2720,7 +2720,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1189,
+        "logic_key": 107,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2745,7 +2745,7 @@
                 "operator": ">"
             }
         ],
-        "logic_key": 1190,
+        "logic_key": 108,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2775,7 +2775,7 @@
                 "operator": "None"
             }
         ],
-        "logic_key": 1191,
+        "logic_key": 109,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2805,7 +2805,7 @@
                 "operator": "None"
             }
         ],
-        "logic_key": 1192,
+        "logic_key": 110,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2825,7 +2825,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1193,
+        "logic_key": 111,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2842,7 +2842,7 @@
                 "operator": "<="
             }
         ],
-        "logic_key": 1196,
+        "logic_key": 112,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2873,7 +2873,7 @@
                 "operator": "OR"
             }
         ],
-        "logic_key": 1197,
+        "logic_key": 113,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2901,7 +2901,7 @@
                 "operator": "between"
             }
         ],
-        "logic_key": 1198,
+        "logic_key": 114,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2933,7 +2933,7 @@
                 "operator": "<="
             }
         ],
-        "logic_key": 1199,
+        "logic_key": 115,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2960,7 +2960,7 @@
                 "operator": "<"
             }
         ],
-        "logic_key": 1200,
+        "logic_key": 116,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -2992,7 +2992,7 @@
                 "operator": "<="
             }
         ],
-        "logic_key": 1201,
+        "logic_key": 117,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3014,7 +3014,7 @@
                 "operator": "<="
             }
         ],
-        "logic_key": 1202,
+        "logic_key": 118,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3050,7 +3050,7 @@
                 "operator": "<="
             }
         ],
-        "logic_key": 1203,
+        "logic_key": 119,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3086,7 +3086,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1203,
+        "logic_key": 120,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3113,7 +3113,7 @@
                 "operator": "<="
             }
         ],
-        "logic_key": 1204,
+        "logic_key": 121,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3135,7 +3135,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1207,
+        "logic_key": 122,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3162,7 +3162,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1208,
+        "logic_key": 123,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3189,7 +3189,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1208,
+        "logic_key": 124,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3211,7 +3211,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1209,
+        "logic_key": 125,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3233,7 +3233,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1209,
+        "logic_key": 126,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3270,7 +3270,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1210,
+        "logic_key": 127,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3307,7 +3307,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1210,
+        "logic_key": 128,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3344,7 +3344,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1211,
+        "logic_key": 129,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3381,7 +3381,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1211,
+        "logic_key": 130,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3418,7 +3418,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1212,
+        "logic_key": 131,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3455,7 +3455,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1212,
+        "logic_key": 132,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3482,7 +3482,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1213,
+        "logic_key": 133,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3509,7 +3509,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1213,
+        "logic_key": 134,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3547,7 +3547,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1214,
+        "logic_key": 135,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3585,7 +3585,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1214,
+        "logic_key": 136,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3602,7 +3602,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1215,
+        "logic_key": 137,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3629,7 +3629,7 @@
                 "operator": "None"
             }
         ],
-        "logic_key": 1216,
+        "logic_key": 138,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3651,7 +3651,7 @@
                 "operator": "None"
             }
         ],
-        "logic_key": 1218,
+        "logic_key": 139,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3683,7 +3683,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1219,
+        "logic_key": 140,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3715,7 +3715,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1219,
+        "logic_key": 141,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3732,7 +3732,7 @@
                 "operator": "<="
             }
         ],
-        "logic_key": 1220,
+        "logic_key": 142,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3754,7 +3754,7 @@
                 "operator": "<="
             }
         ],
-        "logic_key": 1224,
+        "logic_key": 143,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3785,7 +3785,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1225,
+        "logic_key": 144,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3816,7 +3816,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1225,
+        "logic_key": 145,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3841,7 +3841,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1226,
+        "logic_key": 146,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3874,7 +3874,7 @@
                 "operator": "<="
             }
         ],
-        "logic_key": 1227,
+        "logic_key": 147,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3901,7 +3901,7 @@
                 "operator": "<="
             }
         ],
-        "logic_key": 1228,
+        "logic_key": 148,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3923,7 +3923,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1229,
+        "logic_key": 149,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3945,7 +3945,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1229,
+        "logic_key": 150,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3967,7 +3967,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1230,
+        "logic_key": 151,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -3989,7 +3989,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1231,
+        "logic_key": 152,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4021,7 +4021,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1232,
+        "logic_key": 153,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4053,7 +4053,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1232,
+        "logic_key": 154,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4090,7 +4090,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1232,
+        "logic_key": 155,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4127,7 +4127,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1232,
+        "logic_key": 156,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4164,7 +4164,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1233,
+        "logic_key": 157,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4201,7 +4201,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1233,
+        "logic_key": 158,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4238,7 +4238,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1234,
+        "logic_key": 159,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4275,7 +4275,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1234,
+        "logic_key": 160,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4302,7 +4302,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1235,
+        "logic_key": 161,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4329,7 +4329,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1235,
+        "logic_key": 162,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4367,7 +4367,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1236,
+        "logic_key": 163,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4405,7 +4405,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1236,
+        "logic_key": 164,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4422,7 +4422,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1237,
+        "logic_key": 165,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4449,7 +4449,7 @@
                 "operator": ">"
             }
         ],
-        "logic_key": 1238,
+        "logic_key": 166,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4476,7 +4476,7 @@
                 "operator": ">"
             }
         ],
-        "logic_key": 1239,
+        "logic_key": 167,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4508,7 +4508,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1240,
+        "logic_key": 168,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4540,7 +4540,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1240,
+        "logic_key": 169,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4552,7 +4552,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1244,
+        "logic_key": 170,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4588,7 +4588,7 @@
                 "operator": "OR"
             }
         ],
-        "logic_key": 1245,
+        "logic_key": 171,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4605,7 +4605,7 @@
                 "operator": "OR"
             }
         ],
-        "logic_key": 1249,
+        "logic_key": 172,
         "dependentValue": false,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4617,7 +4617,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1250,
+        "logic_key": 173,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4629,7 +4629,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1251,
+        "logic_key": 174,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4646,7 +4646,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1252,
+        "logic_key": 175,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
     },
@@ -4663,8 +4663,3230 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1252,
+        "logic_key": 176,
         "dependentValue": true,
         "dependent": "DAK, Back-up method needed"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Reasonably certain a woman is not pregnant",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "logic_key": 177,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Pregnancy test result",
+                "value": "DAK, Not pregnant",
+                "operator": "="
+            }
+        ],
+        "logic_key": 178,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Health condition(s)",
+                "value": "DAK, No reported health conditions",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 179,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "age",
+                "value": 18,
+                "operator": "<"
+            }
+        ],
+        "logic_key": 180,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "age",
+                "value": 18.0,
+                "operator": ">="
+            }
+        ],
+        "logic_key": 181,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Parity",
+                "value": 0,
+                "operator": "="
+            }
+        ],
+        "logic_key": 182,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Parity",
+                "value": 1.0,
+                "operator": ">="
+            }
+        ],
+        "logic_key": 183,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Postpartum",
+                "value": true,
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Date of last birth",
+                "value": 2,
+                "operator": "<"
+            }
+        ],
+        "logic_key": 184,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Postpartum",
+                "value": true,
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Date of last birth",
+                "minValue": 2,
+                "maxValue": 28,
+                "operator": "between, <=, <"
+            }
+        ],
+        "logic_key": 185,
+        "dependentValue": "Number, 3",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Postpartum",
+                "value": true,
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Date of last birth",
+                "value": 28.0,
+                "operator": ">="
+            }
+        ],
+        "logic_key": 186,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Postpartum",
+                "value": true,
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Medical conditions during past pregnancy and after childbirth",
+                "value": "DAK, Puerperal sepsis postpartum",
+                "operator": "="
+            }
+        ],
+        "logic_key": 187,
+        "dependentValue": "Number, 4",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
+                "value": true,
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
+                "value": "DAK, First trimester: <13 weeks GA",
+                "operator": "="
+            }
+        ],
+        "logic_key": 188,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
+                "value": true,
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
+                "value": "DAK, Second trimester: \u226513 to \u226428 Weeks",
+                "operator": "="
+            }
+        ],
+        "logic_key": 189,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Have you had a recent miscarriage or abortion",
+                "value": true,
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
+                "value": "DAK, Immediate post-septic abortion",
+                "operator": "="
+            }
+        ],
+        "logic_key": 190,
+        "dependentValue": "Number, 4",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Medical conditions during past pregnancy and after childbirth",
+                "value": "DAK, Past ectopic pregnancy",
+                "operator": "="
+            }
+        ],
+        "logic_key": 191,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Medical conditions during past pregnancy and after childbirth",
+                "value": "DAK, History of pelvic surgery",
+                "operator": "="
+            }
+        ],
+        "logic_key": 192,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Risk factors for venous thromboembolism (VTE)",
+                "value": "DAK, Client is Obese",
+                "operator": "="
+            }
+        ],
+        "logic_key": 193,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Cardiovascular disease",
+                "value": "DAK, Multiple risk factors for arterial cardiovascular disease",
+                "operator": "="
+            }
+        ],
+        "logic_key": 194,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Hypertension",
+                "value": "DAK, History of hypertension, but blood pressure cannot be evaluated",
+                "operator": "="
+            }
+        ],
+        "logic_key": 195,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Hypertension",
+                "value": "DAK, Adequately controlled hypertension, and blood pressure can be evaluated",
+                "operator": "="
+            }
+        ],
+        "logic_key": 196,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Systolic blood pressure",
+                "minValue": 140.0,
+                "maxValue": 159.0,
+                "operator": "between, <=, <="
+            },
+            {
+                "trigger": "DAK, Diastolic blood pressure",
+                "minValue": 90.0,
+                "maxValue": 99.0,
+                "operator": "between, <=, <="
+            }
+        ],
+        "logic_key": 197,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Systolic blood pressure",
+                "value": 160.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Diastolic blood pressure",
+                "value": 100.0,
+                "operator": ">="
+            }
+        ],
+        "logic_key": 198,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Hypertension",
+                "value": "DAK, Vascular disease",
+                "operator": "="
+            }
+        ],
+        "logic_key": 199,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Hypertension",
+                "value": "DAK, History of hypertension during pregnancy, and blood pressure can be evaluated",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Systolic blood pressure",
+                "value": 120.0,
+                "operator": "<="
+            },
+            {
+                "trigger": "DAK, Diastolic blood pressure",
+                "value": 80.0,
+                "operator": "<="
+            }
+        ],
+        "logic_key": 200,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Risk factors for venous thromboembolism (VTE)",
+                "value": "DAK, History of deep vein thrombosis (DVT)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 201,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Risk factors for venous thromboembolism (VTE)",
+                "value": "DAK, History of pulmonary embolism (PE)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 202,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Risk factors for venous thromboembolism (VTE)",
+                "value": "DAK, Acute deep vein thrombosis (DVT)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 203,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Risk factors for venous thromboembolism (VTE)",
+                "value": "DAK, Acute pulmonary embolism (PE)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 204,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Risk factors for venous thromboembolism (VTE)",
+                "value": "DAK, Family history of deep vein thrombosis (DVT) / pulmonary embolism (PE)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 205,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Risk factors for venous thromboembolism (VTE)",
+                "value": "DAK, Major surgery with prolonged immobilization",
+                "operator": "="
+            }
+        ],
+        "logic_key": 206,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Risk factors for venous thromboembolism (VTE)",
+                "value": "DAK, Major surgery without prolonged immobilization",
+                "operator": "="
+            }
+        ],
+        "logic_key": 207,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Risk factors for venous thromboembolism (VTE)",
+                "value": "DAK, Minor surgery without immobilization",
+                "operator": "="
+            }
+        ],
+        "logic_key": 208,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Superficial venous disorders",
+                "value": "DAK, Known thrombogenic mutations ",
+                "operator": "="
+            }
+        ],
+        "logic_key": 209,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Superficial venous disorders",
+                "value": "DAK, Varicose veins",
+                "operator": "="
+            }
+        ],
+        "logic_key": 210,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Superficial venous disorders",
+                "value": "DAK, Superficial venous thrombosis",
+                "operator": "="
+            }
+        ],
+        "logic_key": 211,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Cardiovascular disease",
+                "value": "DAK, Ischaemic heart disease",
+                "operator": "="
+            }
+        ],
+        "logic_key": 212,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Cardiovascular disease",
+                "value": "DAK, History of ischaemic heart disease OR Current ;;ll heart disease",
+                "operator": "="
+            }
+        ],
+        "logic_key": 213,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Cardiovascular disease",
+                "value": "DAK, Stroke",
+                "operator": "="
+            }
+        ],
+        "logic_key": 214,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Cardiovascular disease",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Cardiovascular disease",
+                "value": "DAK, Dyslipidaemias",
+                "operator": "="
+            }
+        ],
+        "logic_key": 215,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Cardiovascular disease",
+                "value": "DAK, Uncomplicated valvular heart disease",
+                "operator": "="
+            }
+        ],
+        "logic_key": 216,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Cardiovascular disease",
+                "value": "DAK, Complicated valvular heart disease",
+                "operator": "="
+            }
+        ],
+        "logic_key": 217,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Cardiovascular disease",
+                "value": "DAK, SLE with positive (or unknown) antiphospholipid antibodies",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 218,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Cardiovascular disease",
+                "value": "DAK, SLE with severe thrombocytopenia",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 219,
+        "dependentValue": "Number, 3",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Cardiovascular disease",
+                "value": "DAK, SLE on immunosuppressive treatment",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 220,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Cardiovascular disease",
+                "value": "DAK, SLE with positive (or unknown) antiphospholipid antibodies",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 221,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Cardiovascular disease",
+                "value": "DAK, SLE with severe thrombocytopenia",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 222,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Cardiovascular disease",
+                "value": "DAK, SLE on immunosuppressive treatment",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 223,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Cardiovascular disease",
+                "value": "DAK, SLE with no complications",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 224,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Headaches",
+                "value": "DAK, Non-migrainous headache",
+                "operator": "="
+            }
+        ],
+        "logic_key": 225,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Headaches",
+                "value": "DAK, Migraine headache without aura",
+                "operator": "="
+            }
+        ],
+        "logic_key": 226,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Headaches",
+                "value": "DAK, Migraine headache with aura",
+                "operator": "="
+            }
+        ],
+        "logic_key": 227,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Health condition(s)",
+                "value": "DAK, Epilepsy",
+                "operator": "="
+            }
+        ],
+        "logic_key": 228,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Health condition(s)",
+                "value": "DAK, Depressive disorders",
+                "operator": "="
+            }
+        ],
+        "logic_key": 229,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Vaginal bleeding patterns",
+                "value": "DAK, Irregular vaginal bleeding patterns",
+                "operator": "="
+            }
+        ],
+        "logic_key": 230,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Vaginal bleeding patterns",
+                "value": "DAK, Heavy or prolonged vaginal bleeding patterns",
+                "operator": "="
+            }
+        ],
+        "logic_key": 231,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Vaginal bleeding patterns",
+                "value": "DAK, Unexplained vaginal bleeding before evaluation",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 232,
+        "dependentValue": "Number, 4",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Vaginal bleeding patterns",
+                "value": "DAK, Unexplained vaginal bleeding before evaluation",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 233,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Reproductive tract infections and disorders",
+                "value": "DAK, Endometriosis",
+                "operator": "="
+            }
+        ],
+        "logic_key": 234,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Reproductive tract infections and disorders",
+                "value": "DAK, Benign ovarian tumours",
+                "operator": "="
+            }
+        ],
+        "logic_key": 235,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Vaginal bleeding patterns",
+                "value": "DAK, Severe dysmenorrhea",
+                "operator": "="
+            }
+        ],
+        "logic_key": 236,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Reproductive tract infections and disorders",
+                "value": "DAK, Gestational trophoblastic disease with decreasing or undetectable \u03b2-human chorionic gonadotropin (\u03b2-hCG) level",
+                "operator": "="
+            }
+        ],
+        "logic_key": 237,
+        "dependentValue": "Number, 3",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Reproductive tract infections and disorders",
+                "value": "DAK, Gestational trophoblastic disease with persistently elevated \u03b2-human chorionic gonadotropin (\u03b2-hCG) levels or malignant disease",
+                "operator": "="
+            }
+        ],
+        "logic_key": 238,
+        "dependentValue": "Number, 4",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Reproductive tract infections and disorders",
+                "value": "DAK, Cervical ectropion",
+                "operator": "="
+            }
+        ],
+        "logic_key": 239,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Reproductive tract infections and disorders",
+                "value": "DAK, Cervical intraepithelial neoplasia (CIN)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 240,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Reproductive tract infections and disorders",
+                "value": "DAK, Cervical cancer (awaiting treatment)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 241,
+        "dependentValue": "Number, 4",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Reproductive tract infections and disorders",
+                "value": "DAK, Cervical cancer (awaiting treatment)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 242,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Breast disease",
+                "value": "DAK, Undiagnosed mass",
+                "operator": "="
+            }
+        ],
+        "logic_key": 243,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Breast disease",
+                "value": "DAK, Benign breast disease",
+                "operator": "="
+            }
+        ],
+        "logic_key": 244,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Breast disease",
+                "value": "DAK, Family history of cancer",
+                "operator": "="
+            }
+        ],
+        "logic_key": 245,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Breast disease",
+                "value": "DAK, Currently has breast cancer",
+                "operator": "="
+            }
+        ],
+        "logic_key": 246,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Breast disease",
+                "value": "DAK, Past history of breast cancer",
+                "operator": "="
+            }
+        ],
+        "logic_key": 247,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Reproductive tract infections and disorders",
+                "value": "DAK, Endometrial cancer",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 248,
+        "dependentValue": "Number, 4",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Reproductive tract infections and disorders",
+                "value": "DAK, Endometrial cancer",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 249,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Reproductive tract infections and disorders",
+                "value": "DAK, Ovarian cancer",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 250,
+        "dependentValue": "Number, 3",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Reproductive tract infections and disorders",
+                "value": "DAK, Ovarian cancer",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 251,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Uterine fibroids",
+                "value": "DAK, Uterine fibroids without distortion of the uterine cavity",
+                "operator": "="
+            }
+        ],
+        "logic_key": 252,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Uterine fibroids",
+                "value": "DAK, Uterine fibroids with distortion of the uterine cavity",
+                "operator": "="
+            }
+        ],
+        "logic_key": 253,
+        "dependentValue": "Number, 4",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Uterine fibroids",
+                "value": "DAK, Anatomical abnormalities that do not distort the uterine cavity",
+                "operator": "="
+            }
+        ],
+        "logic_key": 254,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Pelvic inflammatory disease (PID) FP",
+                "value": "DAK, Past pelvic inflammatory disease (PID) with subsequent pregnancy",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 255,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Pelvic inflammatory disease (PID) FP",
+                "value": "DAK, Past pelvic inflammatory disease (PID) with subsequent pregnancy",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 256,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Pelvic inflammatory disease (PID) FP",
+                "value": "DAK, Past pelvic inflammatory disease (PID) without subsequent pregnancy",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 257,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Pelvic inflammatory disease (PID) FP",
+                "value": "DAK, Past pelvic inflammatory disease (PID) without subsequent pregnancy",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 258,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Pelvic inflammatory disease (PID) FP",
+                "value": "DAK, Current pelvic inflammatory disease (PID)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 259,
+        "dependentValue": "Number, 4",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Pelvic inflammatory disease (PID) FP",
+                "value": "DAK, Current pelvic inflammatory disease (PID)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 260,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, STIs",
+                "value": "DAK, Current purulent cervicitis",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 261,
+        "dependentValue": "Number,4",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, STIs",
+                "value": "DAK, Current chlamydia",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 262,
+        "dependentValue": "Number, 4",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, STIs",
+                "value": "DAK, Current gonorrhea",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 263,
+        "dependentValue": "Number, 4",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, STIs",
+                "value": "DAK, Current purulent cervicitis",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 264,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, STIs",
+                "value": "DAK, Current chlamydia",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 265,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, STIs",
+                "value": "DAK, Current gonorrhea",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 266,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, STIs",
+                "value": "DAK, Other",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 267,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, STIs",
+                "value": "DAK, Other",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 268,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Conditions relevant to sterilization and FAB",
+                "value": "DAK, Vaginitis",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 269,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Conditions relevant to sterilization and FAB",
+                "value": "DAK, Vaginitis",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 270,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Health condition(s)",
+                "value": "DAK, Increased risk of sexually transmitted infections (STIs)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 271,
+        "dependentValue": "Number, 3",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Health condition(s)",
+                "value": "DAK, Increased risk of sexually transmitted infections (STIs)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 272,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, High risk of HIV disease",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 273,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, High risk of HIV disease",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 274,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, HIV disease stage 1",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 275,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, HIV disease stage 2",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 276,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, HIV disease stage 3",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 277,
+        "dependentValue": "Number, 3",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, HIV disease 4",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 278,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, HIV disease stage 3",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 279,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, HIV disease 4",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 280,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Other infections (schistosomiasis, tuberculosis, malaria)",
+                "value": "DAK, Schistosomiasis (uncomplicated)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 281,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Other infections (schistosomiasis, tuberculosis, malaria)",
+                "value": "DAK, Non-pelvic tuberculosis",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 282,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Other infections (schistosomiasis, tuberculosis, malaria)",
+                "value": "DAK, Non-pelvic tuberculosis",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 283,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Other infections (schistosomiasis, tuberculosis, malaria)",
+                "value": "DAK, Known pelvic tuberculosis",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 284,
+        "dependentValue": "Number, 4",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Other infections (schistosomiasis, tuberculosis, malaria)",
+                "value": "DAK, Known pelvic tuberculosis",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 285,
+        "dependentValue": "Number, 3",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Other infections (schistosomiasis, tuberculosis, malaria)",
+                "value": "DAK, Malaria",
+                "operator": "="
+            }
+        ],
+        "logic_key": 286,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Diabetes",
+                "value": "DAK, History of gestational diabetes",
+                "operator": "="
+            }
+        ],
+        "logic_key": 287,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Diabetes",
+                "value": "DAK, Non-insulin dependent diabetes",
+                "operator": "="
+            }
+        ],
+        "logic_key": 288,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Diabetes",
+                "value": "DAK, Insulin-dependent diabetes",
+                "operator": "="
+            }
+        ],
+        "logic_key": 289,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Diabetes",
+                "value": "DAK, Diabetes with nephropathy",
+                "operator": "="
+            }
+        ],
+        "logic_key": 290,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Diabetes",
+                "value": "DAK, Diabetes with retinopathy",
+                "operator": "="
+            }
+        ],
+        "logic_key": 291,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Diabetes",
+                "value": "DAK, Diabetes with neuropathy",
+                "operator": "="
+            }
+        ],
+        "logic_key": 292,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Diabetes",
+                "value": "DAK, Diabetes > 20 years duration",
+                "operator": "="
+            }
+        ],
+        "logic_key": 293,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Diabetes",
+                "value": "DAK, Other vascular disease > 20 years duration",
+                "operator": "="
+            }
+        ],
+        "logic_key": 294,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Thyroid disorders",
+                "value": "DAK, Simple goitre",
+                "operator": "="
+            }
+        ],
+        "logic_key": 295,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Thyroid disorders",
+                "value": "DAK, Hyperthyroid",
+                "operator": "="
+            }
+        ],
+        "logic_key": 296,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Thyroid disorders",
+                "value": "DAK, Hypothyroid",
+                "operator": "="
+            }
+        ],
+        "logic_key": 297,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Gall bladder disorders",
+                "value": "DAK, Symptomatic gall bladder disease (treated by cholecystectomy)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 298,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Gall bladder disorders",
+                "value": "DAK, Symptomatic gall bladder disease (treated by cholecystectomy)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 299,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Gall bladder disorders",
+                "value": "DAK, Current symptoms of gall bladder disease",
+                "operator": "="
+            }
+        ],
+        "logic_key": 300,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Gall bladder disorders",
+                "value": "DAK, Asymptomatic gall bladder disease",
+                "operator": "="
+            }
+        ],
+        "logic_key": 301,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Gall bladder disorders",
+                "value": "DAK, History of pregnancy-related cholestasis",
+                "operator": "="
+            }
+        ],
+        "logic_key": 302,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Gall bladder disorders",
+                "value": "DAK, Past combined oral contraceptives-related cholestasis",
+                "operator": "="
+            }
+        ],
+        "logic_key": 303,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Liver disorders",
+                "value": "DAK, Acute or flare viral hepatitis",
+                "operator": "="
+            }
+        ],
+        "logic_key": 304,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Liver disorders",
+                "value": "DAK, Carrier viral hepatitis",
+                "operator": "="
+            }
+        ],
+        "logic_key": 305,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Liver disorders",
+                "value": "DAK, Chronic viral hepatitis",
+                "operator": "="
+            }
+        ],
+        "logic_key": 306,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Liver disorders",
+                "value": "DAK, Mild (compensated) cirrhosis",
+                "operator": "="
+            }
+        ],
+        "logic_key": 307,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Liver disorders",
+                "value": "DAK, Severe (decompensated) cirrhosis",
+                "operator": "="
+            }
+        ],
+        "logic_key": 308,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Liver disorders",
+                "value": "DAK, Benign focal nodular hyperplasia of the liver",
+                "operator": "="
+            }
+        ],
+        "logic_key": 309,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Liver disorders",
+                "value": "DAK, Benign hepatocellular adenoma",
+                "operator": "="
+            }
+        ],
+        "logic_key": 310,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Liver disorders",
+                "value": "DAK, Malignant liver tumour (hepatoma/hepatocellular carcinoma)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 311,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Anemias",
+                "value": "DAK, Thalassemia",
+                "operator": "="
+            }
+        ],
+        "logic_key": 312,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Anemias",
+                "value": "DAK, Sickle cell anaemia",
+                "operator": "="
+            }
+        ],
+        "logic_key": 313,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Anemias",
+                "value": "DAK, Iron-deficiency anaemia",
+                "operator": "="
+            }
+        ],
+        "logic_key": 314,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, NRTIs (e.g. ABC, TDF, AZT, 3TC, DDI, FTC, C265, D4T)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, HIV disease stage 1",
+                "operator": "="
+            }
+        ],
+        "logic_key": 315,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, NRTIs (e.g. ABC, TDF, AZT, 3TC, DDI, FTC, C265, D4T)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, HIV disease stage 2",
+                "operator": "="
+            }
+        ],
+        "logic_key": 316,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, NRTIs (e.g. ABC, TDF, AZT, 3TC, DDI, FTC, C265, D4T)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, HIV disease stage 3",
+                "operator": "="
+            }
+        ],
+        "logic_key": 317,
+        "dependentValue": "Number, 3",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, NRTIs (e.g. ABC, TDF, AZT, 3TC, DDI, FTC, C265, D4T)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, HIV disease 4",
+                "operator": "="
+            }
+        ],
+        "logic_key": 318,
+        "dependentValue": "Number, 4",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, NRTIs (e.g. ABC, TDF, AZT, 3TC, DDI, FTC, C265, D4T)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 319,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, NRTIs (e.g. ABC, TDF, AZT, 3TC, DDI, FTC, C265, D4T)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, HIV disease stage 1",
+                "operator": "="
+            }
+        ],
+        "logic_key": 320,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, NRTIs (e.g. ABC, TDF, AZT, 3TC, DDI, FTC, C265, D4T)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, HIV disease stage 2",
+                "operator": "="
+            }
+        ],
+        "logic_key": 321,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, NRTIs (e.g. ABC, TDF, AZT, 3TC, DDI, FTC, C265, D4T)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, HIV disease stage 3",
+                "operator": "="
+            }
+        ],
+        "logic_key": 322,
+        "dependentValue": "Number, 3",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, NRTIs (e.g. ABC, TDF, AZT, 3TC, DDI, FTC, C265, D4T)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, HIV disease 4",
+                "operator": "="
+            }
+        ],
+        "logic_key": 323,
+        "dependentValue": "Number, 3",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, NRTIs (e.g. ABC, TDF, AZT, 3TC, DDI, FTC, C265, D4T)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 324,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, Protease inhibitors (e.g. ATV/r, LPV/r, DRV/r, RTV)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, HIV disease stage 1",
+                "operator": "="
+            }
+        ],
+        "logic_key": 325,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, Protease inhibitors (e.g. ATV/r, LPV/r, DRV/r, RTV)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, HIV disease stage 2",
+                "operator": "="
+            }
+        ],
+        "logic_key": 326,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, Protease inhibitors (e.g. ATV/r, LPV/r, DRV/r, RTV)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, HIV disease stage 3",
+                "operator": "="
+            }
+        ],
+        "logic_key": 327,
+        "dependentValue": "Number, 3",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, Protease inhibitors (e.g. ATV/r, LPV/r, DRV/r, RTV)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, HIV disease 4",
+                "operator": "="
+            }
+        ],
+        "logic_key": 328,
+        "dependentValue": "Number, 3",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, Protease inhibitors (e.g. ATV/r, LPV/r, DRV/r, RTV)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 329,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, Integrase inhibitors (e.g. RAL)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, HIV disease stage 1",
+                "operator": "="
+            }
+        ],
+        "logic_key": 330,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, Integrase inhibitors (e.g. RAL)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, HIV disease stage 2",
+                "operator": "="
+            }
+        ],
+        "logic_key": 331,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, Integrase inhibitors (e.g. RAL)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, HIV disease stage 3",
+                "operator": "="
+            }
+        ],
+        "logic_key": 332,
+        "dependentValue": "Number, 3",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, Integrase inhibitors (e.g. RAL)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "!="
+            },
+            {
+                "trigger": "DAK, HIV/AIDS",
+                "value": "DAK, HIV disease 4",
+                "operator": "="
+            }
+        ],
+        "logic_key": 333,
+        "dependentValue": "Number, 3",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, Integrase inhibitors (e.g. RAL)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Method in use",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 334,
+        "dependentValue": "Number, 2",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, Anticonvulsant therapy (e.g. phenytoin, carbamazepine, barbiturates, primidone, topiramate, oxcarbazepine)",
+                "operator": "="
+            }
+        ],
+        "logic_key": 335,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, Anticonvulsant therapy with lamotrigine",
+                "operator": "="
+            }
+        ],
+        "logic_key": 336,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, Antimicrobial therapy",
+                "operator": "="
+            }
+        ],
+        "logic_key": 337,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Method in mind",
+                "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Current medications FP",
+                "value": "DAK, Antimicrobial therapy with rifampicin or rifabutin",
+                "operator": "="
+            }
+        ],
+        "logic_key": 338,
+        "dependentValue": "Number, 1",
+        "dependent": "DAK, Medical eligibility category"
     }
 ]
