@@ -1,8 +1,8 @@
 [
     {
         "resultConcept": "DAK, BMI",
-        "operands": ["DAK, Height", "DAK, Current weight"],
-        "formula": "(DAK, Current weight / (DAK, Height * DAK, Height)) * 10000"
+        "operands": ["DAK, Height", "DAK, Pre-gestational weight"],
+        "formula": "(DAK, Pre-gestational weight / (DAK, Height * DAK, Height)) * 10000"
         
     },
     {
@@ -25,4 +25,9 @@
     }
 
 
+
+
 ]
+
+
+
