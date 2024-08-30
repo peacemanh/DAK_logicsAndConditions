@@ -1,15 +1,16 @@
 import json
 
 # Load the configuration from the specified JSON file
-with open('/home/selamsew/DAK_logicsAndConditions/family_planning_DS.json', 'r') as file:
+
+with open(r'C:\Users\ZTE\Desktop\CDHi\Dak\DAK_logicsAndConditions\fp_calcWithoutFormulaConfigs.json', 'r') as file:
     config = json.load(file)
 
 # Adjust the 'action_key' values sequentially, starting from 0
 for idx, item in enumerate(config, start=0):
-    item['action_key'] = idx
+    item['logic_key'] = idx
 
 # Write the updated configuration to a new file
-with open('FP_DS.json', 'w') as file:
+with open('FP_CL.json', 'w') as file:
     json.dump(config, file, indent=4)
 
 # This script creates a file 'FP_DS.json' by adjusting the 'action_key' sequentially.
