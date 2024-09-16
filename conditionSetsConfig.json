@@ -1,5 +1,3 @@
-
-
 [
 	{
 		"conditions": [
@@ -12,24 +10,6 @@
 		"action": "Proceed with ANC contact",
 		"annotation": "If no danger signs are present, the health worker can continue with the normal ANC contact",
 		"action_key": 1
-	},
-	{
-		"conditions": [
-			{
-				"key": "DAK, Pregnancy confirmed",
-				"value": true,
-				"operator": "="
-			},
-			{
-				"key": "DAK, Danger signs",
-				"positiveValue": "ANY",
-				"negativeValue": ["DAK, Bleeding vaginally", "DAK, Central cyanosis"],
-				"operator": "exclude"
-			}
-		],
-		"action": "None action popup here",
-		"annotation": "If no danger signs are present, the health worker can continue with the normal ANC contact",
-		"action_key": 40987
 	},
 	{
 		"conditions": [
@@ -373,6 +353,8 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Counselling conducted on pharmacological treatments for nausea and vomiting",
+
 		"action": "Conduct counseling on physiological symptoms   . Start management OR refer if no improvement",
 		"annotation": "Pharmacological treatments for nausea and vomiting, such as doxylamine and metoclopramide, should be reserved for those pregnant women experiencing distressing symptoms that are not relieved by non-pharmacological options, under the supervision of a medical doctor due to side-effects of the anti emetics.",
 		"action_key": 28
@@ -385,6 +367,8 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Counselling conducted on diet and lifestyle changes to prevent and relieve heartburn",
+
 		"action": "Conduct counseling on physiological symptoms  ",
 		"annotation": "Advice on diet and lifestyle  (e.g. small and frequent feeding, avoid spicy and fatty foods, avoid sleeping in supine position immediately after eating, and adding pillows when necessary).",
 		"action_key": 29
@@ -397,6 +381,8 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Counselling conducted on antacid preparations to relieve heartburn",
+
 		"action": "Conduct counseling on physiological symptoms  .Start management OR refer if no improvement",
 		"annotation": "Antacid preparations and other pharmacological treatments can be offered to women with troublesome symptoms that are not relieved by lifestyle modification.",
 		"action_key": 30
@@ -409,6 +395,8 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Counselling on non-pharmacological treatment for the relief of leg cramps",
+
 		"action": "Conduct counseling on physiological symptoms  ",
 		"annotation": "Non-pharmacological therapies, including muscle stretching, relaxation, heat therapy, dorsiflexion of the foot, and massage can be used for the relief of leg cramps in pregnancy",
 		"action_key": 31
@@ -421,64 +409,73 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Counselling conducted on use of magnesium and calcium to relieve leg cramps",
+
 		"action": "Conduct counseling on physiological symptoms  .Start management OR refer if no improvement",
 		"annotation": "If leg cramps are not relieved with non-pharmacological measures, then give 300\u2013360\u00a0mg magnesium per day in two or three divided doses; give calcium 1\u00a0g twice daily for two weeks. These medifications might be avilabale in antenatal supplments",
 		"action_key": 32
 	},
-    {
-        "conditions": [
-         {
-          "key": "DAK, Current symptoms",
-          "positiveValue": "DAK, Pain - Low back",
-          "negativeValue": ["DAK, Contractions", "DAK, Pain -During urination (dysuria)", "DAK, Pain - Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)"],
-          "operator": "exclude"
-         }
-        ],
-        "action": "Conduct counseling on physiological symptoms",
-        "annotation": "Regular exercise, physiotherapy and support belts are recommended to prevent and treat low back and pelvic pain, depending on the woman\u2019s preferences and available options",
-        "action_key": 33
-       },
+	{
+		"conditions": [
+			{
+				"key": "DAK, Current symptoms",
+				"positiveValue": "DAK, Pain - Low back",
+				"negativeValue": [ "DAK, Contractions", "DAK, Pain -During urination (dysuria)", "DAK, Pain - Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)" ],
+				"operator": "exclude"
+			}
+		],
+		"displayPoint": "DAK, Regular exercise, physiotherapy and support belts to relieve low back and pelvic pain",
 
-       {
-        "conditions": [
-         {
-          "key": "DAK, Current symptoms",
-          "positiveValue": "DAK, Pain - Pelvic",
-          "negativeValue": ["DAK, Contractions", "DAK, Pain -During urination (dysuria)", "DAK, Pain - Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)"],
-          "operator": "exclude"
-         }
-        ],
-        "action": "Conduct counseling on physiological symptoms",
-        "annotation": "Regular exercise, physiotherapy and support belts are recommended to prevent and treat low back and pelvic pain, depending on the woman\u2019s preferences and available options",
-        "action_key": 34
-       },
-       {
-        "conditions": [
-         {
-          "key": "DAK, Persistent symptoms",
-          "positiveValue": "DAK, Pain - Low back",
-          "negativeValue": ["DAK, Contractions", "DAK, Pain -During urination (dysuria)", "DAK, Pain - Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)"],
-          "operator": "exclude"
-         }
-        ],
-        "action": "Conduct counseling on physiological symptoms",
-        "annotation": "Regular exercise, physiotherapy and support belts are recommended to prevent and treat low back and pelvic pain, depending on the woman\u2019s preferences and available options",
-        "action_key": 35
-       },
+		"action": "Conduct counseling on physiological symptoms",
+		"annotation": "Regular exercise, physiotherapy and support belts are recommended to prevent and treat low back and pelvic pain, depending on the woman\u2019s preferences and available options",
+		"action_key": 33
+	},
 
-       {
-        "conditions": [
-         {
-          "key": "DAK, Persistent symptoms",
-          "positiveValue": "DAK, Pain - Pelvic",
-          "negativeValue": ["DAK, Contractions", "DAK, Pain -During urination (dysuria)", "DAK, Pain - Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)"],
-          "operator": "exclude"
-         }
-        ],
-        "action": "Conduct counseling on physiological symptoms",
-        "annotation": "Regular exercise, physiotherapy and support belts are recommended to prevent and treat low back and pelvic pain, depending on the woman\u2019s preferences and available options",
-        "action_key": 35
-       },
+	{
+		"conditions": [
+			{
+				"key": "DAK, Current symptoms",
+				"positiveValue": "DAK, Pain - Pelvic",
+				"negativeValue": [ "DAK, Contractions", "DAK, Pain -During urination (dysuria)", "DAK, Pain - Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)" ],
+				"operator": "exclude"
+			}
+		],
+		"displayPoint": "DAK, Regular exercise, physiotherapy and support belts to relieve low back and pelvic pain",
+		"action": "Conduct counseling on physiological symptoms",
+		"annotation": "Regular exercise, physiotherapy and support belts are recommended to prevent and treat low back and pelvic pain, depending on the woman\u2019s preferences and available options",
+		"action_key": 34
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Persistent symptoms",
+				"positiveValue": "DAK, Pain - Low back",
+				"negativeValue": [ "DAK, Contractions", "DAK, Pain -During urination (dysuria)", "DAK, Pain - Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)" ],
+				"operator": "exclude"
+			}
+		],
+		"displayPoint": "DAK, Regular exercise, physiotherapy and support belts to relieve low back and pelvic pain",
+
+		"action": "Conduct counseling on physiological symptoms",
+		"annotation": "Regular exercise, physiotherapy and support belts are recommended to prevent and treat low back and pelvic pain, depending on the woman\u2019s preferences and available options",
+		"action_key": 35
+	},
+
+	{
+		"conditions": [
+			{
+				"key": "DAK, Persistent symptoms",
+				"positiveValue": "DAK, Pain - Pelvic",
+				"negativeValue": [ "DAK, Contractions", "DAK, Pain -During urination (dysuria)", "DAK, Pain - Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)" ],
+				"operator": "exclude"
+			}
+		],
+		"displayPoint": "DAK, Regular exercise, physiotherapy and support belts to relieve low back and pelvic pain",
+
+		"action": "Conduct counseling on physiological symptoms",
+		"annotation": "Regular exercise, physiotherapy and support belts are recommended to prevent and treat low back and pelvic pain, depending on the woman\u2019s preferences and available options",
+		"action_key": 36
+	},
 
 	{
 		"conditions": [
@@ -488,6 +485,8 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Counselling conducted on dietary modifications to relieve constipation",
+
 		"action": "Conduct counseling on physiological symptoms  ",
 		"annotation": "Dietary modifications to relieve constipation include promoting adequate intake of water and dietary fibre (found in vegetables, nuts, fruits and whole grains)",
 		"action_key": 37
@@ -500,65 +499,75 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Counselling conducted on use of wheat bran or other fibre supplements to relieve constipation",
+
 		"action": "Conduct counseling on physiological symptoms  .Start management OR refer if no improvement",
 		"annotation": "Wheat bran or other fibre supplements can be used to relieve constipation, if dietary modifications are not enough, and if they are available and appropriate",
 		"action_key": 38
 	},
 
-    {
-        "conditions": [
-         {
-          "key": "DAK, Current symptoms",
-          "positiveValue": "DAK, Varicose veins",
-          "negativeValue": ["DAK, Pain - Leg"],
-          "operator": "exclude"
-         }
-        ],
-        "action": "Conduct counseling on physiological symptoms",
-        "annotation": "Non-pharmacological options, such as compression stockings, leg elevation and water immersion, can be used depending on the woman\u2019s preferences and available options.",
-        "action_key": 39
-       },
+	{
+		"conditions": [
+			{
+				"key": "DAK, Current symptoms",
+				"positiveValue": "DAK, Varicose veins",
+				"negativeValue": [ "DAK, Pain - Leg" ],
+				"operator": "exclude"
+			}
+		],
+		"displayPoint": "DAK, Counselling conducted on non-pharmacological options for varicose veins and oedema",
 
-       {
-        "conditions": [
-         {
-          "key": "DAK, Current symptoms",
-          "positiveValue": "DAK, Oedema",
-          "negativeValue": ["DAK, Pain - Leg"],
-          "operator": "exclude"
-         }
-        ],
-        "action": "Conduct counseling on physiological symptoms",
-        "annotation": "Non-pharmacological options, such as compression stockings, leg elevation and water immersion, can be used depending on the woman\u2019s preferences and available options.",
-        "action_key": 40
-       },
-       {
-        "conditions": [
-         {
-          "key": "DAK, Persistent symptoms",
-          "positiveValue": "DAK, Varicose veins",
-          "negativeValue": ["DAK, Pain - Leg"],
-          "operator": "exclude"
-         }
-        ],
-        "action": "Conduct counseling on physiological symptoms",
-        "annotation": "Non-pharmacological options, such as compression stockings, leg elevation and water immersion, can be used depending on the woman\u2019s preferences and available options.",
-        "action_key": 41
-       },
-       {
-        "conditions": [
-         {
-          "key": "DAK, Persistent symptoms",
-          "positiveValue": "DAK, Oedema",
-          "negativeValue": ["DAK, Pain - Leg"],
-          "operator": "exclude"
-         }
-        ],
-        "action": "Conduct counseling on physiological symptoms",
-        "annotation": "Non-pharmacological options, such as compression stockings, leg elevation and water immersion, can be used depending on the woman\u2019s preferences and available options.",
-        "action_key": 42
-       },
-	
+		"action": "Conduct counseling on physiological symptoms",
+		"annotation": "Non-pharmacological options, such as compression stockings, leg elevation and water immersion, can be used depending on the woman\u2019s preferences and available options.",
+		"action_key": 39
+	},
+
+	{
+		"conditions": [
+			{
+				"key": "DAK, Current symptoms",
+				"positiveValue": "DAK, Oedema",
+				"negativeValue": [ "DAK, Pain - Leg" ],
+				"operator": "exclude"
+			}
+		],
+		"displayPoint": "DAK, Counselling conducted on non-pharmacological options for varicose veins and oedema",
+
+		"action": "Conduct counseling on physiological symptoms",
+		"annotation": "Non-pharmacological options, such as compression stockings, leg elevation and water immersion, can be used depending on the woman\u2019s preferences and available options.",
+		"action_key": 40
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Persistent symptoms",
+				"positiveValue": "DAK, Varicose veins",
+				"negativeValue": [ "DAK, Pain - Leg" ],
+				"operator": "exclude"
+			}
+		],
+		"displayPoint": "DAK, Counselling conducted on non-pharmacological options for varicose veins and oedema",
+
+		"action": "Conduct counseling on physiological symptoms",
+		"annotation": "Non-pharmacological options, such as compression stockings, leg elevation and water immersion, can be used depending on the woman\u2019s preferences and available options.",
+		"action_key": 41
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Persistent symptoms",
+				"positiveValue": "DAK, Oedema",
+				"negativeValue": [ "DAK, Pain - Leg" ],
+				"operator": "exclude"
+			}
+		],
+		"displayPoint": "DAK, Counselling conducted on non-pharmacological options for varicose veins and oedema",
+
+		"action": "Conduct counseling on physiological symptoms",
+		"annotation": "Non-pharmacological options, such as compression stockings, leg elevation and water immersion, can be used depending on the woman\u2019s preferences and available options.",
+		"action_key": 42
+	},
+
 	{
 		"conditions": [
 			{
@@ -843,6 +852,8 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Urine test ordered",
+
 		"action": "Conduct laboratory tests (i.e urine analysis)",
 		"annotation": "Please investigate urinary tract infection and treat if positive.If symptoms persist after treatment, Refer for further evaluation managment.",
 		"action_key": 47
@@ -855,6 +866,8 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Urine test ordered",
+
 		"action": "Conduct laboratory tests (i.e urine analysis)",
 		"annotation": "",
 		"action_key": 48
@@ -1931,6 +1944,7 @@
 				"operator": "<"
 			}
 		],
+		"displayPoint": "DAK, Counselling on postpartum family planning conducted",
 		"action": "Conduct ultrasound at the health-care facility or the referral facility",
 		"annotation": "An ultrasound is recommended for all women before 24 weeks gestation",
 		"action_key": 130
@@ -1943,6 +1957,7 @@
 				"operator": ">="
 			}
 		],
+		"displayPoint": "DAK, Ultrasound scan conducted",
 		"action": "Conduct ultrasound at the health-care facility or the referral facility optional if deemed necessary by the health worker",
 		"annotation": "An ultrasound is recommended for all women even after 24 weeks gestation if deemed necessary (e.g. to identify the number of fetuses, fetal presentation,placenta location, assess fetal growth and amniotic fluid volume)",
 		"action_key": 131
@@ -1965,6 +1980,7 @@
 				"operator": "<"
 			}
 		],
+		"displayPoint": "DAK, Ultrasound category",
 		"action": "Conduct ultrasound scan",
 		"annotation": "An ultrasound is recommended for all women before 24 weeks .\nAn early ultrasound is key to estimate gestational age, improve detection of fetal anomalies and multiple fetuses, and improve a woman\u2019s pregnancy experience.",
 		"action_key": 132
@@ -1987,6 +2003,7 @@
 				"operator": "<"
 			}
 		],
+		"displayPoint": "DAK, Ultrasound category",
 		"action": "Refer to a facility with ultrasound equipment",
 		"annotation": "If an ultrasound cannot be conducted at the health-care facility, the woman should be referred to another health-care facility in which she can receive an ultrasound. \nAn ultrasound is recommended for all women before 24 weeks gestation.",
 		"action_key": 133
@@ -2009,6 +2026,7 @@
 				"operator": ">="
 			}
 		],
+		"displayPoint": "DAK, Ultrasound category",
 		"action": "Ultrasound scan is required",
 		"annotation": "An ultrasound is recommended for all women even after 24 weeks gestation(e.g. to identify the number of fetuses, fetal presentation,placenta location, asses fetal growth and amniotic fluild volume)",
 		"action_key": 134
@@ -2031,6 +2049,7 @@
 				"operator": ">="
 			}
 		],
+		"displayPoint": "DAK, Ultrasound category",
 		"action": "Ultrasound scan is optional",
 		"annotation": "An ultrasound is recommended for all women even after 24 weeks gestation if  considered necessary (e.g. to identify the number of fetuses, fetal presentation,placenta location, asses fetal growth and amniotic fluild volume)",
 		"action_key": 135
@@ -2038,18 +2057,20 @@
 	{
 		"conditions": [
 			{
-				"key": "DAK, Reason for coming to facility",
-				"value": "DAK, First antenatal care contact",
-				"operator": "="
-			},
-			{
 				"key": "DAK, Pregnancy confirmed",
 				"value": true,
 				"operator": "="
+			},
+
+			{
+				"key": "DAK, Reason for coming to facility",
+				"value": "DAK, First antenatal care contact",
+				"operator": "="
 			}
 
-			
+
 		],
+		"displayPoint": "DAK, HIV test conducted",
 		"action": "Conduct HIV test",
 		"annotation": "An HIV test is required for all pregnant women at the first contact.",
 		"action_key": 136
@@ -2067,6 +2088,7 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, HIV test conducted",
 		"action": "Conduct HIV test",
 		"annotation": "If the woman first HIV test result was negative, retest for HIV  with risk assessment after  the gestational age \u2265 30 weeks ( the interval between the two tests should be greater than 3 months)",
 		"action_key": 137
@@ -2086,11 +2108,13 @@
 	{
 		"conditions": [
 			{
-				"key": "DAK, ANC contact number",
-				"value": "DAK, 1",
+				"key": "DAK, Reason for coming to facility",
+				"value": "DAK, First antenatal care contact",
 				"operator": "="
 			}
 		],
+
+		"displayPoint": "DAK, Syphilis test conducted",
 		"action": "Conduct syphilis test",
 		"annotation": "A syphilis test is recommended for all pregnant women at the first contact",
 		"action_key": 139
@@ -2103,6 +2127,7 @@
 				"operator": ">="
 			}
 		],
+		"displayPoint": "DAK, Syphilis test conducted",
 		"action": "Conduct syphilis test",
 		"annotation": "If the woman first syphlis test result was negative, retest for syphlis  with risk assessment after  the gestational age \u2265 30 weeks ( the interval between the two tests should be greater than 6 months)",
 		"action_key": 140
@@ -2127,6 +2152,7 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Urine test conducted",
 		"action": "Conduct urine test",
 		"annotation": "Urine test is required any time the woman reports pain during urination (dysuria)",
 		"action_key": 142
@@ -2158,11 +2184,12 @@
 	{
 		"conditions": [
 			{
-				"key": "DAK, ANC contact number",
-				"value": "DAK, 1",
+				"key": "DAK, Reason for coming to facility",
+				"value": "DAK, First antenatal care contact",
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Urine test conducted",
 		"action": "Conduct urine test",
 		"annotation": "The urine dipstick test is important for identifying hypertensive disorders ( protein uria), DM (glucose uria), asymptomatic bacteriuria (ASB) and UTI.  Midstream culture and gram -staining are the standard tests  for diagnosis of ASB if available.",
 		"action_key": 145
@@ -2175,6 +2202,7 @@
 				"operator": ">="
 			}
 		],
+		"displayPoint": "DAK, Urine test conducted",
 		"action": "Conduct urine test",
 		"annotation": "The urine dipstick test is important for identifying hypertensive disorders ( protein uria), DM (glucose uria), asymptomatic bacteriuria (ASB) and UTI.  Midstream culture and gram -staining are the standard tests  for diagnosis of ASB if available.",
 		"action_key": 146
@@ -2187,6 +2215,7 @@
 				"operator": ">="
 			}
 		],
+		"displayPoint": "DAK, Urine test conducted",
 		"action": "Conduct urine test if necessary",
 		"annotation": "The urine dipstick test is important for identifying hypertensive disorders ( protein uria), DM (glucose uria), asymptomatic bacteriuria (ASB) and UTI.  Midstream culture and gram -staining are the standard tests  for diagnosis of ASB if available.",
 		"action_key": 147
@@ -2617,9 +2646,11 @@
 				"operator": ">="
 			}
 		],
+		"displayPoint": "DAK, Counselling conducted on dietary modifications to relieve constipation",
 		"action": "Conduct counseling on dietary interventions",
 		"annotation": "Increase daily energy and protein intake to reduce the risk of low-birth-weight neonates\nProtein Sources like Beef, fish, chicken, eggs, milk, cheese, beans and peas, nuts, seeds, etc\nEnergy sources like Grains (wheat, sorghum, corn, barley), dairy products (milk, cheese,butter), fruits, poultry (egg, chicken), fats and oils, sugar, honey, etc.",
 		"action_key": 180
+
 	},
 	{
 		"conditions": [
@@ -3433,7 +3464,7 @@
 	},
 	{
 		"conditions": [
- {
+			{
 				"key": "DAK, Pregnancy confirmed",
 				"value": true,
 				"operator": "="
@@ -3454,9 +3485,9 @@
 		"action_key": 217
 	},
 
-{
+	{
 		"conditions": [
-{
+			{
 				"key": "DAK, Pregnancy confirmed",
 				"value": true,
 				"operator": "="
@@ -3567,7 +3598,7 @@
 		"action_key": 224
 	},
 
-{
+	{
 		"conditions": [
 			{
 				"key": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
@@ -3580,11 +3611,11 @@
 		"annotation": "\u2013 The woman has gestational diabetes mellitus (GDM) if her 75 g OGTT \u2013 2 hours is 153\u2013199 mg/dL\n\u2013 Woman with hyperglycemia, reassert dietary intervention and refer to high-level care",
 		"action_key": 600
 	},
-{
+	{
 		"conditions": [
 			{
 				"key": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
-				
+
 				"value": 126.0,
 				"operator": ">="
 			}
@@ -3754,6 +3785,8 @@
 				"operator": ">="
 			}
 		],
+		"displayPoint": "DAK, Counselling conducted on anaemia",
+
 		"action": "\"Anaemia counseling conducted\" IS OPTIONAL",
 		"annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDue to the population's high anaemia prevalence, a daily dose of 60 mg of elemental iron is preferred over a lower dose. A daily dose of 400 micrograms (0.4 mg) folic acid is also recommended.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate heptahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
 		"action_key": 235
@@ -3776,6 +3809,8 @@
 				"operator": ">="
 			}
 		],
+		"displayPoint": "DAK, Counselling conducted on anaemia",
+
 		"action": "\"Anaemia counseling conducted\" IS OPTIONAL",
 		"annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDue to the population's high anaemia prevalence, a daily dose of 60 mg of elemental iron is preferred over a lower dose. A daily dose of 400 micrograms (0.4 mg) folic acid is also recommended.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate heptahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
 		"action_key": 236
@@ -3799,6 +3834,8 @@
 				"operator": ">="
 			}
 		],
+		"displayPoint": "DAK, Counselling conducted on anaemia",
+
 		"action": "\"Anaemia counseling conducted\" IS OPTIONAL",
 		"annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDue to the population's high anaemia prevalence, a daily dose of 60 mg of elemental iron is preferred over a lower dose. A daily dose of 400 micrograms (0.4 mg) folic acid is also recommended.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate heptahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
 		"action_key": 237
@@ -3821,6 +3858,8 @@
 				"operator": ">="
 			}
 		],
+		"displayPoint": "DAK, Counselling conducted on anaemia",
+
 		"action": "\"Anaemia counseling conducted\" IS OPTIONAL",
 		"annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDaily oral iron and folic acid supplementation with 30\u201360 mg of elemental iron and 400 micrograms (0.4 mg) of folic acidc to prevent maternal anaemia, puerperal sepsis, low birth weight and preterm birth.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate hepahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
 		"action_key": 238
@@ -3848,6 +3887,8 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Counselling conducted on anaemia",
+
 		"action": "\"Anaemia counseling conducted\" IS OPTIONAL",
 		"annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDaily oral iron and folic acid supplementation with 30\u201360 mg of elemental iron and 400 micrograms (0.4 mg) of folic acidc to prevent maternal anaemia, puerperal sepsis, low birth weight and preterm birth.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate hepahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
 		"action_key": 239
@@ -3875,6 +3916,8 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Counselling conducted on anaemia",
+
 		"action": "\"Anaemia counseling conducted\" IS OPTIONAL",
 		"annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDaily oral iron and folic acid supplementation with 30\u201360 mg of elemental iron and 400 micrograms (0.4 mg) of folic acidc to prevent maternal anaemia, puerperal sepsis, low birth weight and preterm birth.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate hepahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
 		"action_key": 240
@@ -3903,6 +3946,8 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Counselling conducted on anaemia",
+
 		"action": "\"Anaemia counseling conducted\" IS OPTIONAL",
 		"annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDaily oral iron and folic acid supplementation with 30\u201360 mg of elemental iron and 400 micrograms (0.4 mg) of folic acidc to prevent maternal anaemia, puerperal sepsis, low birth weight and preterm birth.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate hepahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
 		"action_key": 241
@@ -3930,6 +3975,7 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Counselling conducted on anaemia",
 		"action": "\"Anaemia counseling conducted\" IS OPTIONAL",
 		"annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDaily oral iron and folic acid supplementation with 30\u201360 mg of elemental iron and 400 micrograms (0.4 mg) of folic acidc to prevent maternal anaemia, puerperal sepsis, low birth weight and preterm birth.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate hepahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
 		"action_key": 242
@@ -3957,6 +4003,7 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Counselling conducted on anaemia",
 		"action": "\"Anaemia counseling conducted\" IS OPTIONAL",
 		"annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nIf daily iron is not acceptable due to side-effects, provide intermittent iron and folic acid supplementation instead (120 mg of elemental iron and 2.8 mg of folic acid once weekly).\n\nThe equivalent of 120 mg of elemental iron is 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
 		"action_key": 243
@@ -3984,6 +4031,7 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Counselling conducted on anaemia",
 		"action": "\"Anaemia counseling conducted\" IS OPTIONAL",
 		"annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nIf daily iron is not acceptable due to side-effects, provide intermittent iron and folic acid supplementation instead (120 mg of elemental iron and 2.8 mg of folic acid once weekly).\n\nThe equivalent of 120 mg of elemental iron is 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
 		"action_key": 244
@@ -4012,6 +4060,7 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Counselling conducted on anaemia",
 		"action": "\"Anaemia counseling conducted\" IS OPTIONAL",
 		"annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nIf daily iron is not acceptable due to side-effects, provide intermittent iron and folic acid supplementation instead (120 mg of elemental iron and 2.8 mg of folic acid once weekly).\n\nThe equivalent of 120 mg of elemental iron is 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
 		"action_key": 245
@@ -4039,6 +4088,7 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Counselling conducted on anaemia",
 		"action": "\"Anaemia counseling conducted\" IS OPTIONAL",
 		"annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nIf daily iron is not acceptable due to side-effects, provide intermittent iron and folic acid supplementation instead (120 mg of elemental iron and 2.8 mg of folic acid once weekly).\n\nThe equivalent of 120 mg of elemental iron is 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
 		"action_key": 246
@@ -4051,6 +4101,8 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Amount of daily calcium supplements provided",
+
 		"action": "Provide calcium supplementation",
 		"annotation": "In populations with low dietary calcium intake, daily calcium supplementation (1.5\u20132.0 g oral elemental calcium) is recommended for pregnant women to reduce the risk of pre-eclampsia. \n\nDietary counseling of pregnant women should promote adequate calcium intake through locally available, calcium-rich foods such as Injera, Milk and diary product, dried fruit, fish, green leaf vegitables,  almond/nut and figs (Beles)\n\n\u2013 Divide the total dose into three doses, preferably taken at meal-time.\n\u2013 Iron and calcium should preferably be administered several hours apart rather than concomitantly.",
 		"action_key": 247
@@ -4063,6 +4115,8 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Amount of daily calcium supplements provided",
+
 		"action": "Do not provide calcium supplementation",
 		"annotation": "Dietary counseling of pregnant women should promote adequate calcium intake through locally available, calcium-rich foods like Injera, Milk and diary product, dried fruit, fish, green leaf vegitables,  almond/nut and figs (Beles)",
 		"action_key": 248
@@ -4317,6 +4371,8 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Amount of daily calcium supplements provided",
+
 		"action": "Provide counseling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
 		"annotation": "The woman is at risk of developing pre-eclampsia: provide counseling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20132 g until delivery for pre-eclampsia risk",
 		"action_key": 265
@@ -4339,6 +4395,7 @@
 				"operator": "="
 			}
 		],
+
 		"action": "Provide counseling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
 		"annotation": "The woman is at risk of developing pre-eclampsia: provide counseling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20133 g until delivery for pre-eclampsia risk",
 		"action_key": 266
@@ -4361,6 +4418,7 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Amount of daily calcium supplements provided",
 		"action": "Provide counseling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
 		"annotation": "The woman is at risk of developing pre-eclampsia: provide counseling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20134 g until delivery for pre-eclampsia risk",
 		"action_key": 267
@@ -4383,6 +4441,7 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Amount of daily calcium supplements provided",
 		"action": "Provide counseling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
 		"annotation": "The woman is at risk of developing pre-eclampsia: provide counseling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20135 g until delivery for pre-eclampsia risk",
 		"action_key": 268
@@ -4405,6 +4464,7 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Amount of daily calcium supplements provided",
 		"action": "Provide counseling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
 		"annotation": "The woman is at risk of developing pre-eclampsia: provide counseling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20136 g until delivery for pre-eclampsia risk",
 		"action_key": 269
@@ -4427,6 +4487,7 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Amount of daily calcium supplements provided",
 		"action": "Provide counseling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
 		"annotation": "The woman is at risk of developing pre-eclampsia: provide counseling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20137 g until delivery for pre-eclampsia risk",
 		"action_key": 270
@@ -4449,6 +4510,7 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Amount of daily calcium supplements provided",
 		"action": "Provide counseling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg",
 		"annotation": "The woman is at risk of developing pre-eclampsia: provide counseling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20138 g until delivery for pre-eclampsia risk",
 		"action_key": 271
@@ -4471,6 +4533,7 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Amount of daily calcium supplements provided",
 		"action": "Provide counseling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
 		"annotation": "The woman is at risk of developing pre-eclampsia: provide counseling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20139 g until delivery for pre-eclampsia risk",
 		"action_key": 272
@@ -4526,7 +4589,7 @@
 				"value": "DAK, Macrosomia",
 				"operator": "="
 			},
-			{			
+			{
 				"key": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
 				"value": "DAK, Negative",
 				"operator": "="
@@ -4642,6 +4705,7 @@
 				"operator": ">"
 			}
 		],
+		"displayPoint": "DAK, HIV risk",
 		"action": "Conduct counseling on HIV risk",
 		"annotation": "If the woman lives in a setting with a generalized HIV epidemic, or her partner is HIV positive, or she injects drugs, or she is a sex worker, then she is at high risk for HIV \u2013 counseling should be given to provide prevention options\n\nProvide comprehensive HIV prevention options: \n\u2013 STI screening and treatment (syndromic and syphilis)\n\u2013 Condom promotion\n\u2013 Risk reduction counseling\n\u2013 Pre-exposure prophylaxis (PrEP) with emphasis on adherence\n\u2013 Emphasize importance of follow-up ANC contact visits",
 		"action_key": 280
@@ -4659,6 +4723,7 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, HIV risk",
 		"action": "Conduct counseling on HIV risk",
 		"annotation": "If the woman lives in a setting with a generalized HIV epidemic, or her partner is HIV positive, or she injects drugs, or she is a sex worker, then she is at high risk for HIV \u2013 counseling should be given to provide prevention options\n\nProvide comprehensive HIV prevention options: \n\u2013 STI screening and treatment (syndromic and syphilis)\n\u2013 Condom promotion\n\u2013 Risk reduction counseling\n\u2013 Pre-exposure prophylaxis (PrEP) with emphasis on adherence\n\u2013 Emphasize importance of follow-up ANC contact visits",
 		"action_key": 281
@@ -5142,7 +5207,7 @@
 				"operator": "="
 			}
 		],
-		"displayPoint": "DAK, Counselling on postpartum family planning conducted",
+		"displayPoint": "Conduct counseling on postpartum family planning",
 		"action": "Conduct counseling on postpartum family planning",
 		"annotation": "Possible methods include: Levonorgestrel IUD, copper IUD, implants, LAM, oral contraceptive pills, sterilization, tubal ligation\t\n\nNote: LAM is an effective method for breastfeeding women who are amenorrhoeic and their infant < 6 months of age; \n\nBreastfeeding women < 6 weeks postpartum are generally advised not to use injectables and should not use combined hormonal contraceptive (CHC); \n\nBreastfeeding women \u2265 6 weeks can use injectables without restriction; Breastfeeding women \u2265 6 weeks to < 6 months postpartum (primarily breastfeeding) generally should not use CHCs unless other more appropriate methods are not available or acceptable (16).",
 		"action_key": 316
@@ -5713,6 +5778,7 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Malaria prophylaxis",
 		"action": "Provide malaria prophylaxis",
 		"annotation": "Sleeping under an insecticide-treated bednet and the importance of seeking care and getting treatment as soon as she has any symptoms. \n- Wear loose-fitting long-sleeved closes",
 		"action_key": 356
@@ -5730,6 +5796,7 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, Malaria prophylaxis",
 		"action": "Do not give IPTp-SP, because woman is taking co-trimoxazole",
 		"annotation": "IF the woman is currently taking co-trimoxazole, even in a malaria-endemic setting, she should not receive any dose of IPTp-SP. Taking both co-trimoxazole and IPTp-SP together can enhance side-effects, especially haematological side-effects such as anaemia.",
 		"action_key": 357
@@ -5790,6 +5857,7 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, HIV test conducted",
 		"action": "Conduct HIV test",
 		"annotation": "An HIV test is required for all pregnant women at the first contact.",
 		"action_key": 374
@@ -5812,6 +5880,7 @@
 				"operator": "="
 			}
 		],
+		"displayPoint": "DAK, HIV test conducted",
 		"action": "Conduct HIV test",
 		"annotation": "If the woman first HIV test result was negative, retest for HIV  with risk assessment after  the gestational age ≥ 30 weeks ( the interval between the two tests should be greater than 3 months)",
 		"action_key": 375
@@ -5831,20 +5900,8 @@
 	{
 		"conditions": [
 			{
-				"key": "DAK, ANC Contact Number",
-				"value": 1,
-				"operator": "="
-			}
-		],
-		"action": "Conduct syphilis test",
-		"annotation": "A syphilis test is recommended for all pregnant women at the first contact",
-		"action_key": 377
-	},
-{
-		"conditions": [
-			{
 				"key": "DAK, Cardiac exam result",
-			"value": "DAK, Other",
+				"value": "DAK, Other",
 				"operator": "="
 			}
 		],
@@ -5852,7 +5909,7 @@
 		"annotation": "Woman's cardiac condition is abnormal and she should be referred urgently to the hospital.Put the woman in semi sitting position and support her with oxygen.",
 		"action_key": 378
 	},
-{
+	{
 		"conditions": [
 			{
 				"key": "DAK, Breast exam result",
@@ -5865,11 +5922,11 @@
 		"action_key": 379
 	},
 
-{
+	{
 		"conditions": [
 			{
 				"key": "DAK, Abdominal exam result",
-			"value": "DAK, Other",
+				"value": "DAK, Other",
 				"operator": "="
 			}
 		],
@@ -5877,25 +5934,27 @@
 		"annotation": "Woman's abdominal exam result is  abnormal and she should be referred for further evaluation and management",
 		"action_key": 380
 	},
-    {
+	{
 		"conditions": [
 			{
 				"key": "DAK, Current symptoms",
-			 "value": "DAK, Pain - Leg",
+				"value": "DAK, Pain - Leg",
 				"operator": "="
 			},
-            {
+			{
 				"key": "DAK, Persistent symptoms",
-			"value": "DAK, Pain - Leg",
+				"value": "DAK, Pain - Leg",
 				"operator": "="
 			}
 
 		],
+		"displayPoint": "DAK, Counselling conducted on non-pharma measures to relieve nausea and vomiting",
+
 		"action": "Conduct counselling on physiological symptoms , look for cause and manage and referral if no improvement",
 		"annotation": "Non-pharmacological therapies, including muscle stretching, relaxation, heat therapy, dorsiflexion of the foot, and massage can be used for the relief of leg pain in pregnancy. Please assess any possible cause , including thrombosis and varicose veins.",
 		"action_key": 381
 	},
-{
+	{
 		"conditions": [
 			{
 				"key": "DAK, Pregnancy confirmed",
@@ -5904,20 +5963,20 @@
 			},
 			{
 				"key": "DAK, Syphilis test result",
-				"value":  "DAK, Syphilis positive",
+				"value": "DAK, Syphilis positive",
 				"operator": "="
 			},
 			{
 				"key": "DAK, Syphilis test type",
-				"value":  "DAK, Rapid plasma reagin (RPR) test",
+				"value": "DAK, Rapid plasma reagin (RPR) test",
 				"operator": "="
 			}
-					],
+		],
 		"action": "Conduct syphilis treatment and counselling",
 		"annotation": "Provide treatment according to the clinical phase of syphilis.",
 		"action_key": 382
 	},
-{
+	{
 		"conditions": [
 			{
 				"key": "DAK, Pregnancy confirmed",
@@ -5926,7 +5985,7 @@
 			},
 			{
 				"key": "DAK, Syphilis test result",
-				"value":  "DAK, Syphilis positive",
+				"value": "DAK, Syphilis positive",
 				"operator": "="
 			},
 			{
@@ -5934,7 +5993,7 @@
 				"value": "DAK, VDRL",
 				"operator": "="
 			}
-					],
+		],
 		"action": "Conduct syphilis treatment and counselling",
 		"annotation": "Provide treatment according to the clinical phase of syphilis",
 		"action_key": 383
@@ -5946,7 +6005,8 @@
 				"value": "DAK, First antenatal care contact",
 				"operator": "="
 			}
-			],
+		],
+		"displayPoint": "DAK, Syphilis test conducted",
 		"action": "Conduct syphilis test",
 		"annotation": "A syphilis test is recommended for all pregnant women at the first contact",
 		"action_key": 384
@@ -5958,410 +6018,415 @@
 				"value": "DAK, First antenatal care contact",
 				"operator": "="
 			}
-			],
+		],
+		"displayPoint": "DAK, Syphilis test conducted",
 		"action": "Conduct syphilis test",
 		"annotation": "A syphilis test is recommended for all pregnant women at the first contact",
 		"action_key": 385
 	},
-{
-       "conditions": [
-           {
-               "key": "DAK, Pregnancy confirmed",
-               "value": true,
-               "operator": "="
-           }
-                   ],
-		"displayPoint": "DAK, TB screening conducted",		   
-       "action": "Conduct TB screening and if one or more of symptoms present(reffer the annotation), link her for further investigation",
-       "annotation": "TB screening by screening tool ( i.e fever, cough greater than two weeks, night sweating,and weight loss/failure to gain weight) is recommended for all pregnant woman.",
-       "action_key": 386
-   },
-   {
-    "conditions": [
-		{
-			"key": "DAK, Hepatitis B test required",
-			"value": true,
-			"operator": "="
-		},
-		{
-			"key": "DAK, Reason for coming to facility",
-			"value": "DAK, First antenatal care contact",
-			"operator": "="
-		}
-				],
-	"action": "Conduct hepatitis B test",
-	"annotation": "Hepatitis B testing is recommended for all pregnant women.HBsAg laboratory-based immunoassay is the preferred method for testing for Hep B infection in pregnancy; if immunoassay is not available, HBsAg rapid diagnostic test (RDT) is recommended over dried blood spot (DBS) HBsAg testing.",
-	"action_key": 387
-      
- },
-{
-   "conditions": [
-       {
-           "key": "DAK, Hematocrit (Ht)",
-           "value": 20.0,
-           "operator": "<"
-       }
-   ],
-   "action": "Low levels",
-   "annotation": "Hematocrit levels too low! Refer her for further evaluation and management",
-   "action_key": 388
-},
-{
-   "conditions": [
-       {
-           "key": "DAK, White blood cell (WBC) count",
-           "value": 16000.0,
-           "operator": ">"
-       }
-   ],
-   "action": "Low levels",
-   "annotation": "White blood cell count too high!Refer her for further evaluation and management if not explained by the physiological change of the pregnancy",
-   "action_key": 389
-},
-{
-   "conditions": [
-       {
-           "key": "DAK, Platelet count",
-           "value": 100000.0,
-           "operator": "<"
-       }
-   ],
-   "action": "Low levels",
-   "annotation": "Platelet count too low! Refer her for further evaluation and management",
-   "action_key": 390
-},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Pregnancy confirmed",
+				"value": true,
+				"operator": "="
+			}
+		],
+		"displayPoint": "DAK, TB screening conducted",
+		"action": "Conduct TB screening and if one or more of symptoms present(reffer the annotation), link her for further investigation",
+		"annotation": "TB screening by screening tool ( i.e fever, cough greater than two weeks, night sweating,and weight loss/failure to gain weight) is recommended for all pregnant woman.",
+		"action_key": 386
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Hepatitis B test required",
+				"value": true,
+				"operator": "="
+			},
+			{
+				"key": "DAK, Reason for coming to facility",
+				"value": "DAK, First antenatal care contact",
+				"operator": "="
+			}
+		],
+		"displayPoint": "DAK, Hepatitis B test conducted",
 
-  {
-        "conditions": [
-            {
-                "key": "DAK, Counselling conducted on healthy eating and keeping physically active",
-                "value": false,
-                "operator": "="
-            }
-        ],
-        "action": "Counselling on diet",
-        "annotation": "Healthy eating and keeping physically active during pregnancy is recommended for pregnant women to stay healthy and to prevent excessive weight gain during pregnancy",
-        "action_key": 391
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Counselling conducted on personal hygiene and environmental sanitation",
-                "value": false,
-                "operator": "="
-            }
-        ],
-        "action": "Counselling on personal hygiene and environmental sanitation",
-        "annotation": "Counsel women on the importance of personal hygiene and enviromental sanitation",
-        "action_key": 392
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Counselling on avoidance of harmful traditional practices",
-                "value": false,
-                "operator": "="
-            }
-        ],
-        "action": "Counselling on avoidance of harmful traditional practices",
-        "annotation": "Counsel women on avoidance of harmful traditional practices",
-        "action_key": 393
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Counselling conducted on seeking care when danger signs occur",
-                "value": false,
-                "operator": "="
-            }
-        ],
-        "action": "Counselling on danger signs",
-        "annotation": "Counsel women on how to look out for danger signs and seek care accordingly",
-        "action_key": 394
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Counselling on ANC contact schedule conducted",
-                "value": false,
-                "operator": "="
-            }
-        ],
-        "action": "Counselling on contact schedule",
-        "annotation": "It is recommended that a woman sees a health-care provider 8 times during pregnancy (this can change if the woman has any complications); this schedule shows when the woman should come in to be able to access all the important care and information",
-        "action_key": 395
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Counsel to immediately go to the hospital if severe danger signs are present",
-                "value": false,
-                "operator": "="
-            }
-        ],
-        "action": "Counselling on danger signs",
-        "annotation": "Counsel women on the importance of immediately going to the hospital if severe danger signs are present ",
-        "action_key": 396
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Counselling on birth preparedness and complications readiness",
-                "value": "DAK, Counselling on birth preparedness and complications readiness was not conducted",
-                "operator": "="
-            }
-        ],
-        "action": "Counselling on birth plan",
-        "annotation": "Counsel women on preparing for birth and possible complications that may arise",
-        "action_key": 397
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Counselling on postpartum family planning conducted",
-                "value": false,
-                "operator": "="
-            }
-        ],
-        "action": "Counselling on family planning",
-        "annotation": "Counsel woman on postpartum family planning methods",
-        "action_key": 398
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Counselling conducted on breastfeeding",
-                "value": false,
-                "operator": "="
-            }
-        ],
-        "action": "Counselling on breastfeeding",
-        "annotation": "Counsel women on the importance of breastfeeding for 6 months after birth",
-        "action_key": 399
-    },
-    {
-        "conditions": [
-            {
-                "key": "Malaria-endemic setting",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "action": "Counselling on malaria prevention",
-        "annotation": "Counselling on malaria prevention should be conducted during every contact in malaria-endemic settings (where there is moderate to high malaria transmission)",
-        "action_key": 400
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Amount of daily calcium supplements provided",
-                "value": 0,
-                "operator": ">"
-            }
-        ],
-        "action": "Check whether the woman is taking her daily calcium supplements",
-        "annotation": "After the woman has been prescribed calcium supplements, check whether the woman is still continuing to take her calcium supplements",
-        "action_key": 401
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Amount of iron prescribed",
-                "value": 0,
-                "operator": ">"
-            },
-            {
-                "key": "DAK, Amount of daily dose of folic acid prescribed",
-                "value": 0,
-                "operator": ">"
-            }
-        ],
-        "action": "IFA tablet check",
-        "annotation": "'After the woman has been prescribed IFA tablets, check whether the woman is still continuing to take her IFA tablets",
-        "action_key": 402
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Amount of daily aspirin prescribed until delivery",
-                "value": 0,
-                "operator": ">"
-            }
-        ],
-        "action": "Aspirin tablet check",
-        "annotation": "'After the woman has been prescribed aspirin, check whether the woman is still continuing to take her aspirin tablets",
-        "action_key": 403
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Syphilis diagnosis",
-                "value": "DAK, Syphilis positive",
-                "operator": "="
-            }
-        ],
-        "action": "Treatment for syphilis check",
-        "annotation": "The health worker checking whether the woman is taking her medication for syphilis",
-        "action_key": 404
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Risk of pre-eclampsia",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "action": "Counselling on risk reduction ",
-        "annotation": "Provide counselling to reduce risk of developing pre-eclampsia if the woman is deemed to be at risk for developing pre-eclampsia",
-        "action_key": 405
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, High risk for HIV",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "action": "Counselling on risk reduction ",
-        "annotation": "Provide counselling to reduce risk of contracting HIV if the woman is deemed to be at risk for contracting HIV",
-        "action_key": 406
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Hypertension",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "action": "Counselling on risk reduction",
-        "annotation": "Counselling: \u2013 Advice to reduce workload and to rest \u2013 Advise on danger signs \u2013Reassess at the next contact or in 1 week\u2013 If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available",
-        "action_key": 407
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Risk of gestational diabetes mellitus (GDM)",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "action": "Counselling on risk reduction ",
-        "annotation": "Provide counselling to reduce risk of developing GDM if the woman is deemed to be at risk of developing GDM",
-        "action_key": 408
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, HIV test result",
-                "value": "DAK, HIV-positive",
-                "operator": "="
-            }
-        ],
-        "action": "Counselling on HIV-positive",
-        "annotation": "Counselling when a woman has tested positive for HIV",
-        "action_key": 409
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, TB screening result",
-                "value": "DAK, Positive",
-                "operator": "="
-            }
-        ],
-        "action": "Counselling on positive TB screening",
-        "annotation": "If TB screening resut is positive, treat according to local protocol and/or refer for treatment",
-        "action_key": 410
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Anaemia diagnosis",
-                "value": "DAK, Positive",
-                "operator": "="
-            }
-        ],
-        "action": "Counselling on anaemia",
-        "annotation": "If the woman has been diagnosed with anaemia, provide counselling and treatment accordingly",
-        "action_key": 411
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Positive",
-                "operator": "="
-            }
-        ],
-        "action": "Counselling on diabetes mellitus (DM)",
-        "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
-        "action_key": 412
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Positive",
-                "operator": "="
-            }
-        ],
-        "action": "Counselling on gestational diabetes mellitus (GDM) ",
-        "annotation": "If the woman is diagnosed with GDM, provide treatment and counselling accordingly",
-        "action_key": 413
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Asymptomatic bacteriuria (ASB) diagnosis",
-                "value": "DAK, ASB positive",
-                "operator": "="
-            }
-        ],
-        "action": "Seven-day antibiotic regimen for asymptomatic bacteriuria (ASB)",
-        "annotation": "If the woman tested positive, provide counselling and treatment",
-        "action_key": 414
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Syphilis test result",
-                "value": "DAK, Syphilis positive",
-                "operator": "="
-            }
-        ],
-        "action": "'Syphilis counselling and treatment",
-        "annotation": "In low prevalence areas, if a woman tests positive for syphilis simply provide treatment. In high prevalence areas, if a woman tests positive on on-site rapid syphilis test (RST), provide first dose of treatment. Then run rapid plasma reagin (RPR) test. If RPR is also positive, provide treatment according to duration of syphilis.",
-        "action_key": 415
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Hepatitis C test result",
-                "value": "DAK, Hepatitis C positive",
-                "operator": "="
-            }
-        ],
-        "action": "Counselling on hepatitis C positive",
-        "annotation": "'If woman tested positive for hepatitis C, provide counselling",
-        "action_key": 416
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Hepatitis B test result",
-                "value": "DAK, Hepatitis B positive",
-                "operator": "="
-            }
-        ],
-        "action": "Counselling on hepatitis B positive",
-        "annotation": "If woman tested positive for hepatitis B, provide counselling",
-        "action_key": 417
-    }
+		"action": "Conduct hepatitis B test",
+		"annotation": "Hepatitis B testing is recommended for all pregnant women.HBsAg laboratory-based immunoassay is the preferred method for testing for Hep B infection in pregnancy; if immunoassay is not available, HBsAg rapid diagnostic test (RDT) is recommended over dried blood spot (DBS) HBsAg testing.",
+		"action_key": 387
+
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Hematocrit (Ht)",
+				"value": 20.0,
+				"operator": "<"
+			}
+		],
+		"action": "Low levels",
+		"annotation": "Hematocrit levels too low! Refer her for further evaluation and management",
+		"action_key": 388
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, White blood cell (WBC) count",
+				"value": 16000.0,
+				"operator": "<"
+			}
+		],
+		"action": "Low levels",
+		"annotation": "White blood cell count too high!Refer her for further evaluation and management if not explained by the physiological change of the pregnancy",
+		"action_key": 389
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Platelet count",
+				"value": 100000.0,
+				"operator": "<"
+			}
+		],
+		"action": "Low levels",
+		"annotation": "Platelet count too low! Refer her for further evaluation and management",
+		"action_key": 390
+	},
+
+	{
+		"conditions": [
+			{
+				"key": "DAK, Counselling conducted on healthy eating and keeping physically active",
+				"value": false,
+				"operator": "="
+			}
+		],
+		"action": "Counselling on diet",
+		"annotation": "Healthy eating and keeping physically active during pregnancy is recommended for pregnant women to stay healthy and to prevent excessive weight gain during pregnancy",
+		"action_key": 391
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Counselling conducted on personal hygiene and environmental sanitation",
+				"value": false,
+				"operator": "="
+			}
+		],
+		"action": "Counselling on personal hygiene and environmental sanitation",
+		"annotation": "Counsel women on the importance of personal hygiene and enviromental sanitation",
+		"action_key": 392
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Counselling on avoidance of harmful traditional practices",
+				"value": false,
+				"operator": "="
+			}
+		],
+		"action": "Counselling on avoidance of harmful traditional practices",
+		"annotation": "Counsel women on avoidance of harmful traditional practices",
+		"action_key": 393
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Counselling conducted on seeking care when danger signs occur",
+				"value": false,
+				"operator": "="
+			}
+		],
+		"action": "Counselling on danger signs",
+		"annotation": "Counsel women on how to look out for danger signs and seek care accordingly",
+		"action_key": 394
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Counselling on ANC contact schedule conducted",
+				"value": false,
+				"operator": "="
+			}
+		],
+		"action": "Counselling on contact schedule",
+		"annotation": "It is recommended that a woman sees a health-care provider 8 times during pregnancy (this can change if the woman has any complications); this schedule shows when the woman should come in to be able to access all the important care and information",
+		"action_key": 395
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Counsel to immediately go to the hospital if severe danger signs are present",
+				"value": false,
+				"operator": "="
+			}
+		],
+		"action": "Counselling on danger signs",
+		"annotation": "Counsel women on the importance of immediately going to the hospital if severe danger signs are present ",
+		"action_key": 396
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Counselling on birth preparedness and complications readiness",
+				"value": "DAK, Counselling on birth preparedness and complications readiness was not conducted",
+				"operator": "="
+			}
+		],
+		"action": "Counselling on birth plan",
+		"annotation": "Counsel women on preparing for birth and possible complications that may arise",
+		"action_key": 397
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Counselling on postpartum family planning conducted",
+				"value": false,
+				"operator": "="
+			}
+		],
+		"action": "Counselling on family planning",
+		"annotation": "Counsel woman on postpartum family planning methods",
+		"action_key": 398
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Counselling conducted on breastfeeding",
+				"value": false,
+				"operator": "="
+			}
+		],
+		"action": "Counselling on breastfeeding",
+		"annotation": "Counsel women on the importance of breastfeeding for 6 months after birth",
+		"action_key": 399
+	},
+	{
+		"conditions": [
+			{
+				"key": "Malaria-endemic setting",
+				"value": true,
+				"operator": "="
+			}
+		],
+		"displayPoint": "DAK, Malaria prophylaxis",
+		"action": "Counselling on malaria prevention",
+		"annotation": "Counselling on malaria prevention should be conducted during every contact in malaria-endemic settings (where there is moderate to high malaria transmission)",
+		"action_key": 400
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Amount of daily calcium supplements provided",
+				"value": 0,
+				"operator": ">"
+			}
+		],
+		"action": "Check whether the woman is taking her daily calcium supplements",
+		"annotation": "After the woman has been prescribed calcium supplements, check whether the woman is still continuing to take her calcium supplements",
+		"action_key": 401
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Amount of iron prescribed",
+				"value": 0,
+				"operator": ">"
+			},
+			{
+				"key": "DAK, Amount of daily dose of folic acid prescribed",
+				"value": 0,
+				"operator": ">"
+			}
+		],
+		"action": "IFA tablet check",
+		"annotation": "'After the woman has been prescribed IFA tablets, check whether the woman is still continuing to take her IFA tablets",
+		"action_key": 402
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Amount of daily aspirin prescribed until delivery",
+				"value": 0,
+				"operator": ">"
+			}
+		],
+		"action": "Aspirin tablet check",
+		"annotation": "'After the woman has been prescribed aspirin, check whether the woman is still continuing to take her aspirin tablets",
+		"action_key": 403
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Syphilis diagnosis",
+				"value": "DAK, Syphilis positive",
+				"operator": "="
+			}
+		],
+		"action": "Treatment for syphilis check",
+		"annotation": "The health worker checking whether the woman is taking her medication for syphilis",
+		"action_key": 404
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Risk of pre-eclampsia",
+				"value": true,
+				"operator": "="
+			}
+		],
+		"action": "Counselling on risk reduction ",
+		"annotation": "Provide counselling to reduce risk of developing pre-eclampsia if the woman is deemed to be at risk for developing pre-eclampsia",
+		"action_key": 405
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, High risk for HIV",
+				"value": true,
+				"operator": "="
+			}
+		],
+		"action": "Counselling on risk reduction ",
+		"annotation": "Provide counselling to reduce risk of contracting HIV if the woman is deemed to be at risk for contracting HIV",
+		"action_key": 406
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Hypertension",
+				"value": true,
+				"operator": "="
+			}
+		],
+		"action": "Counselling on risk reduction",
+		"annotation": "Counselling: \u2013 Advice to reduce workload and to rest \u2013 Advise on danger signs \u2013Reassess at the next contact or in 1 week\u2013 If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available",
+		"action_key": 407
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Risk of gestational diabetes mellitus (GDM)",
+				"value": true,
+				"operator": "="
+			}
+		],
+		"action": "Counselling on risk reduction ",
+		"annotation": "Provide counselling to reduce risk of developing GDM if the woman is deemed to be at risk of developing GDM",
+		"action_key": 408
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, HIV test result",
+				"value": "DAK, HIV-positive",
+				"operator": "="
+			}
+		],
+		"action": "Counselling on HIV-positive",
+		"annotation": "Counselling when a woman has tested positive for HIV",
+		"action_key": 409
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, TB screening result",
+				"value": "DAK, Positive",
+				"operator": "="
+			}
+		],
+		"action": "Counselling on positive TB screening",
+		"annotation": "If TB screening resut is positive, treat according to local protocol and/or refer for treatment",
+		"action_key": 410
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Anaemia diagnosis",
+				"value": "DAK, Positive",
+				"operator": "="
+			}
+		],
+		"action": "Counselling on anaemia",
+		"annotation": "If the woman has been diagnosed with anaemia, provide counselling and treatment accordingly",
+		"action_key": 411
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+				"value": "DAK, Positive",
+				"operator": "="
+			}
+		],
+		"action": "Counselling on diabetes mellitus (DM)",
+		"annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
+		"action_key": 412
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+				"value": "DAK, Positive",
+				"operator": "="
+			}
+		],
+		"action": "Counselling on gestational diabetes mellitus (GDM) ",
+		"annotation": "If the woman is diagnosed with GDM, provide treatment and counselling accordingly",
+		"action_key": 413
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Asymptomatic bacteriuria (ASB) diagnosis",
+				"value": "DAK, ASB positive",
+				"operator": "="
+			}
+		],
+		"action": "Seven-day antibiotic regimen for asymptomatic bacteriuria (ASB)",
+		"annotation": "If the woman tested positive, provide counselling and treatment",
+		"action_key": 414
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Syphilis test result",
+				"value": "DAK, Syphilis positive",
+				"operator": "="
+			}
+		],
+		"action": "'Syphilis counselling and treatment",
+		"annotation": "In low prevalence areas, if a woman tests positive for syphilis simply provide treatment. In high prevalence areas, if a woman tests positive on on-site rapid syphilis test (RST), provide first dose of treatment. Then run rapid plasma reagin (RPR) test. If RPR is also positive, provide treatment according to duration of syphilis.",
+		"action_key": 415
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Hepatitis C test result",
+				"value": "DAK, Hepatitis C positive",
+				"operator": "="
+			}
+		],
+		"action": "Counselling on hepatitis C positive",
+		"annotation": "'If woman tested positive for hepatitis C, provide counselling",
+		"action_key": 416
+	},
+	{
+		"conditions": [
+			{
+				"key": "DAK, Hepatitis B test result",
+				"value": "DAK, Hepatitis B positive",
+				"operator": "="
+			}
+		],
+		"action": "Counselling on hepatitis B positive",
+		"annotation": "If woman tested positive for hepatitis B, provide counselling",
+		"action_key": 417
+	}
 
 ]
+
 
 
 
