@@ -3456,6 +3456,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, HIV positive counselling conducted",
     "action": "Conduct HIV positive counseling and link her to PMTCT service",
     "annotation": "\u2013 Counsel for HIV positive test result\n\u2013 Confirm by retesting \n\u2013  Initiate PMTCT of HIV services\n\u2013 Advise on opportunistic infections and need to seek medical help\n\u2013 Proceed with systematic screening for active TB",
     "action_key": 238
@@ -3468,6 +3469,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on hepatitis B positive",
     "action": "Provide hepatitis B counseling",
     "annotation": "counseling:\n\u2013 Provide post-testing counseling\n\u2013 Advise retesting if ongoing risk or known exposure",
     "action_key": 239
@@ -3480,6 +3482,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on hepatitis B positive",
     "action": "Conduct hepatitis B positive counseling",
     "annotation": "Counseling:\n\u2013 Provide post-testing counseling\n\u2013 Refer to hospital",
     "action_key": 240
@@ -3492,6 +3495,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on hepatitis C positive",
     "action": "Conduct hepatitis C positive counseling and Refer",
     "annotation": "Counseling:\n\u2013 Provide post-testing counseling\n\u2013 Refer to hospital",
     "action_key": 241
@@ -3514,6 +3518,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Syphilis counselling and treatment",
     "action": "Conduct syphilis treatment and counseling",
     "annotation": "Provide treatment according to the clinical phase of syphilis:\n\u2013 If primary or secondary stage of syphilis, give single dose of benzathine penicillin 2,400,000 IU\n\u2013 If late or unknown stage of syphilis, give one dose of benzathine penicillin 2,400,000 IU weekly for 3 consecutive weeks\n\u2013 Advise on treating partner\n\u2013 Encourage HIV testing and counseling\n\u2013 Reinforce use of condoms\n\u2013 Proceed to further testing with an RPR or VDRL test after 6 months",
     "action_key": 242
@@ -3536,6 +3541,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Syphilis counselling and treatment",
     "action": "Conduct syphilis treatment and counseling",
     "annotation": "Provide treatment according to the clinical phase of syphilis:\n\u2013 If primary or secondary stage of syphilis, give single dose of benzathine penicillin 2,400,000 IU\n\u2013 If late or unknown stage of syphilis, give one dose of benzathine penicillin 2,400,000 IU weekly for 3 consecutive weeks\n\u2013 Advise on treating partner\n\u2013 Encourage HIV testing and counseling\n\u2013 Reinforce use of condoms\n\u2013 Proceed to further testing with an RPR or VDRL test after 6 months",
     "action_key": 243
@@ -3548,6 +3554,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Asymptomatic bacteriuria (ASB) diagnosis",
     "action": "Provide 7-day antibiotic regimen for asymptomatic bacteriuria (ASB)",
     "annotation": "A woman is considered to have ASB if she has one of the following test results:\n\n\u2013 Gram-staining positive\n\u2013 Urine dipstick test positive (nitrites or leukocytes)\n\nSeven-day antibiotic regimen is recommended for all pregnant women with asymptomatic bacteriuria (ASB) to prevent persistent bacteriuria, preterm birth and low birth weight.",
     "action_key": 244
@@ -3560,6 +3567,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Urinary tract Infection",
     "action": "Provide 7-day antibiotic regimen",
     "annotation": "A woman is considered to have UTI if she has urine dipstick test positive (nitrites )\n\nSeven-day antibiotic regimen is recommended for all pregnant women with UTI to prevent preterm birth and low birth weight.",
     "action_key": 245
@@ -3572,6 +3580,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Urinary tract Infection",
     "action": "Provide 7-day antibiotic regimen",
     "annotation": "A woman is considered to have UTI if she has urine dipstick test positive (leukocytes )\n\nSeven-day antibiotic regimen is recommended for all pregnant women with UTI to prevent preterm birth and low birth weight.",
     "action_key": 246
@@ -3585,6 +3594,7 @@
         "operator": "between, <=, <"
       }
     ],
+    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
     "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counseling and Refer",
     "annotation": "\u2013 The woman has gestational diabetes mellitus (GDM) if her fasting plasma glucose is 92\u2013125 mg/dL\n\u2013 Woman with hyperglycemia, reassert dietary intervention and refer to high-level care\n\"Hyperglycaemia first detected at any time during pregnancy should be classified as either gestational diabetes mellitus (GDM) or diabetes mellitus in pregnancy, according to WHO criteria\" (2)",
     "action_key": 247
@@ -3598,6 +3608,7 @@
         "operator": "between, <=, <="
       }
     ],
+    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
     "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counseling and Refer",
     "annotation": "\u2013 The woman has gestational diabetes mellitus (GDM) if her 75 g OGTT \u2013 fasting glucose is 92\u2013125 mg/dL\n\u2013 Woman with hyperglycemia, reassert dietary intervention and refer to high-level care\n\"Hyperglycaemia first detected at any time during pregnancy should be classified as either gestational diabetes mellitus (GDM) or diabetes mellitus in pregnancy, according to WHO criteria\" (2)",
     "action_key": 248
@@ -3611,6 +3622,7 @@
         "operator": "between, <=, <"
       }
     ],
+    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
     "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counseling and Refer",
     "annotation": "\u2013 The woman has gestational diabetes mellitus (GDM) if her 75g OGTT \u2013 1 hour is 180\u2013199 mg/dL\n\u2013 Woman with hyperglycemia, reassert dietary intervention and refer to high-level care\n)",
     "action_key": 249
@@ -3624,6 +3636,7 @@
         "operator": "between, <=, <"
       }
     ],
+    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
     "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counseling and Refer",
     "annotation": "\u2013 The woman has gestational diabetes mellitus (GDM) if her 75 g OGTT \u2013 2 hours is 153\u2013199 mg/dL\n\u2013 Woman with hyperglycemia, reassert dietary intervention and refer to high-level care",
     "action_key": 250
@@ -3637,6 +3650,7 @@
         "operator": "between, <=, <"
       }
     ],
+    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
     "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counseling and Refer",
     "annotation": "\u2013 The woman has gestational diabetes mellitus (GDM) if her 75 g OGTT \u2013 2 hours is 153\u2013199 mg/dL\n\u2013 Woman with hyperglycemia, reassert dietary intervention and refer to high-level care",
     "action_key": 251
@@ -3649,6 +3663,7 @@
         "operator": ">="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
     "action": "Conduct REQUIRED overt diabetes mellitus (DM) counseling and Refer",
     "annotation": "\u2013 The woman has gestational diabetes mellitus (GDM) if her 75 g OGTT \u2013 2 hours is 153\u2013199 mg/dL\n\u2013 Woman with hyperglycemia, reassert dietary intervention and refer to high-level care",
     "action_key": 252
@@ -3661,6 +3676,7 @@
         "operator": ">="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
     "action": "Conduct REQUIRED overt diabetes mellitus (DM) counseling and Refer",
     "annotation": "\u2013 The woman has diabetes mellitus (DM) in pregnancy if her fasting plasma glucose is 126 mg/dL or higher\n\u2013 Woman with hyperglycemia, reassert dietary intervention and refer to high-level care",
     "action_key": 253
@@ -3673,6 +3689,7 @@
         "operator": ">="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
     "action": "Conduct REQUIRED overt diabetes mellitus (DM) counseling and Refer ( do not proceed with OGTT test)",
     "annotation": "\u2013 The woman has diabetes mellitus (DM) in pregnancy if her 75 g OGTT \u2013 fasting glucose is 126 mg/dL or higher\n\u2013 Woman with hyperglycemia, reassert dietary intervention and refer to high-level care\n- Do not proccede with OGTT test",
     "action_key": 254
@@ -3685,6 +3702,7 @@
         "operator": ">="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
     "action": "Conduct REQUIRED overt diabetes mellitus (DM) counseling and Refer",
     "annotation": "\u2013 The woman has diabetes mellitus (DM) in pregnancy if her 75 g OGTT \u2013 1 hour is 200 mg/dL or higher\n\u2013 Woman with hyperglycemia, reassert dietary intervention and refer to high-level care",
     "action_key": 255
@@ -3697,6 +3715,7 @@
         "operator": ">="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
     "action": "Conduct REQUIRED overt diabetes mellitus (DM) counseling and Refer",
     "annotation": "\u2013 The woman has diabetes mellitus (DM) in pregnancy if her fasting 75 g OGTT \u2013 2 hours is 200 mg/dL or higher\n\u2013 Woman with hyperglycemia, reassert dietary intervention and refer to high-level care",
     "action_key": 256
@@ -3709,6 +3728,7 @@
         "operator": ">="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
     "action": "Conduct REQUIRED overt diabetes mellitus (DM) counseling and Refer",
     "annotation": "\u2013 The woman has diabetes mellitus (DM) in pregnancy if her random plasma glucose level is 200 mg/dL or higher\n\u2013 Woman with hyperglycemia, reassert dietary intervention and refer to high-level care",
     "action_key": 257
@@ -3721,6 +3741,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on TB screening positive",
     "action": "Conduct TB screening positive counseling and Refer for further evaluation and manegment",
     "annotation": "If TB screening  is positive, counsel on the need of confirmatory test and timely initiation of manegment, and Refer for further evaluation and manegment.",
     "action_key": 258
