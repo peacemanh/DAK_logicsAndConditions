@@ -4894,6 +4894,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on Rh factor negative",
     "action": "Provide counseling on Rh factor negative",
     "annotation": "\u2013 Woman is at risk of alloimmunization if the baby's father is Rh positive or unknown\n\u2013 Proceed with local protocol to investigate sensitization and the need for referral \n\u2013 If non-sensitized, woman should receive anti-D prophylaxis postnatally if the baby is Rh positive",
     "action_key": 317
@@ -5033,6 +5034,7 @@
         "operator": ">"
       }
     ],
+    "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
     "action": "Conduct counseling on birth preparedness and complications readiness",
     "annotation": "Early Ultrasound scan is a must\n- Additional contact might be needed\n- Early referal preparation",
     "action_key": 326
@@ -5045,6 +5047,7 @@
         "operator": "<="
       }
     ],
+    "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
     "action": "Conduct counseling on birth preparedness and complications readiness",
     "annotation": "Encourage delivery at a health-care facility.\n- Additional contact might be needed\n- For teenage pregnancy , psychological support counseling is recommended \n- Early referal preparation \n\nRisk factors necessitating a facility birth:\n\u2013 Age 17 or under\n\u2013 Primigravida\n\u2013 Parity 6 or higher\n\u2013 Prior caesarian section\n\u2013 Previous pregnancy complications: heavy bleeding, forceps or vacuum delivery, convulsions, or 3rd or 4th degree tear\n\u2013 Vaginal bleeding\n\u2013 Multiple fetuses\n\u2013 Abnormal fetal presentation\n\u2013 HIV positive\n\u2013 Wants IUD or tubal ligation following delivery",
     "action_key": 327
@@ -5057,6 +5060,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
     "action": "Conduct counseling on birth preparedness and complications readiness",
     "annotation": "Encourage delivery at a health-care facility.\n- Additional contact might be needed\n- For teenage pregnancy , psychological support counseling is recommended \n- Early referal preparation \n\nRisk factors necessitating a facility birth:\n\u2013 Age 17 or under\n\u2013 Primigravida\n\u2013 Parity 6 or higher\n\u2013 Prior caesarian section\n\u2013 Previous pregnancy complications: heavy bleeding, forceps or vacuum delivery, convulsions, or 3rd or 5th degree tear\n\u2013 Vaginal bleeding\n\u2013 Multiple fetuses\n\u2013 Abnormal fetal presentation\n\u2013 HIV positive\n\u2013 Wants IUD or tubal ligation following delivery",
     "action_key": 328
@@ -5069,6 +5073,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
     "action": "Conduct counseling on birth preparedness and complications readiness",
     "annotation": "Encourage delivery at a health-care facility.\n- Additional contact might be needed\n- For teenage pregnancy , psychological support counseling is recommended \n- Early referal preparation \n\nRisk factors necessitating a facility birth:\n\u2013 Age 17 or under\n\u2013 Primigravida\n\u2013 Parity 6 or higher\n\u2013 Prior caesarian section\n\u2013 Previous pregnancy complications: heavy bleeding, forceps or vacuum delivery, convulsions, or 3rd or 6th degree tear\n\u2013 Vaginal bleeding\n\u2013 Multiple fetuses\n\u2013 Abnormal fetal presentation\n\u2013 HIV positive\n\u2013 Wants IUD or tubal ligation following delivery",
     "action_key": 329
@@ -5081,6 +5086,7 @@
         "operator": ">"
       }
     ],
+    "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
     "action": "Conduct counseling on birth preparedness and complications readiness",
     "annotation": "Encourage delivery at a health-care facility.\n- Additional contact might be needed\n- For teenage pregnancy , psychological support counseling is recommended \n- Early referal preparation \n\nRisk factors necessitating a facility birth:\n\u2013 Age 17 or under\n\u2013 Primigravida\n\u2013 Parity 6 or higher\n\u2013 Prior caesarian section\n\u2013 Previous pregnancy complications: heavy bleeding, forceps or vacuum delivery, convulsions, or 3rd or 7th degree tear\n\u2013 Vaginal bleeding\n\u2013 Multiple fetuses\n\u2013 Abnormal fetal presentation\n\u2013 HIV positive\n\u2013 Wants IUD or tubal ligation following delivery",
     "action_key": 330
@@ -5093,6 +5099,7 @@
         "operator": ">"
       }
     ],
+    "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
     "action": "Conduct counseling on birth preparedness and complications readiness",
     "annotation": "Encourage delivery at a health-care facility.\n- Additional contact might be needed\n- For teenage pregnancy , psychological support counseling is recommended \n- Early referal preparation \n\nRisk factors necessitating a facility birth:\n\u2013 Age 17 or under\n\u2013 Primigravida\n\u2013 Parity 6 or higher\n\u2013 Prior caesarian section\n\u2013 Previous pregnancy complications: heavy bleeding, forceps or vacuum delivery, convulsions, or 3rd or 8th degree tear\n\u2013 Vaginal bleeding\n\u2013 Multiple fetuses\n\u2013 Abnormal fetal presentation\n\u2013 HIV positive\n\u2013 Wants IUD or tubal ligation following delivery",
     "action_key": 331
@@ -5105,6 +5112,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
     "action": "Conduct counseling on birth preparedness and complications readiness",
     "annotation": "Encourage delivery at a health-care facility.\n- Additional contact might be needed\n- For teenage pregnancy , psychological support counseling is recommended \n- Early referal preparation \n\nRisk factors necessitating a facility birth:\n\u2013 Age 17 or under\n\u2013 Primigravida\n\u2013 Parity 6 or higher\n\u2013 Prior caesarian section\n\u2013 Previous pregnancy complications: heavy bleeding, forceps or vacuum delivery, convulsions, or 3rd or 9th degree tear\n\u2013 Vaginal bleeding\n\u2013 Multiple fetuses\n\u2013 Abnormal fetal presentation\n\u2013 HIV positive\n\u2013 Wants IUD or tubal ligation following delivery",
     "action_key": 332
@@ -5117,6 +5125,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
     "action": "Conduct counseling on birth preparedness and complications readiness",
     "annotation": "Encourage delivery at a health-care facility.\n- Additional contact might be needed\n- For teenage pregnancy , psychological support counseling is recommended \n- Early referal preparation \n\nRisk factors necessitating a facility birth:\n\u2013 Age 17 or under\n\u2013 Primigravida\n\u2013 Parity 6 or higher\n\u2013 Prior caesarian section\n\u2013 Previous pregnancy complications: heavy bleeding, forceps or vacuum delivery, convulsions, or 3rd or 10th degree tear\n\u2013 Vaginal bleeding\n\u2013 Multiple fetuses\n\u2013 Abnormal fetal presentation\n\u2013 HIV positive\n\u2013 Wants IUD or tubal ligation following delivery",
     "action_key": 333
@@ -5129,6 +5138,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
     "action": "Conduct counseling on birth preparedness and complications readiness",
     "annotation": "Encourage delivery at a health-care facility.\n- Additional contact might be needed\n- For teenage pregnancy , psychological support counseling is recommended \n- Early referal preparation \n\nRisk factors necessitating a facility birth:\n\u2013 Age 17 or under\n\u2013 Primigravida\n\u2013 Parity 6 or higher\n\u2013 Prior caesarian section\n\u2013 Previous pregnancy complications: heavy bleeding, forceps or vacuum delivery, convulsions, or 3rd or 11th degree tear\n\u2013 Vaginal bleeding\n\u2013 Multiple fetuses\n\u2013 Abnormal fetal presentation\n\u2013 HIV positive\n\u2013 Wants IUD or tubal ligation following delivery",
     "action_key": 334
@@ -5141,6 +5151,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
     "action": "Conduct counseling on birth preparedness and complications readiness",
     "annotation": "Encourage delivery at a health-care facility.\n- Additional contact might be needed\n- For teenage pregnancy , psychological support counseling is recommended \n- Early referal preparation \n\nRisk factors necessitating a facility birth:\n\u2013 Age 17 or under\n\u2013 Primigravida\n\u2013 Parity 6 or higher\n\u2013 Prior caesarian section\n\u2013 Previous pregnancy complications: heavy bleeding, forceps or vacuum delivery, convulsions, or 3rd or 12th degree tear\n\u2013 Vaginal bleeding\n\u2013 Multiple fetuses\n\u2013 Abnormal fetal presentation\n\u2013 HIV positive\n\u2013 Wants IUD or tubal ligation following delivery",
     "action_key": 335
@@ -5153,6 +5164,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
     "action": "Conduct counseling on birth preparedness and complications readiness",
     "annotation": "Encourage delivery at a health-care facility.\n- Additional contact might be needed\n- For teenage pregnancy , psychological support counseling is recommended \n- Early referal preparation \n\nRisk factors necessitating a facility birth:\n\u2013 Age 17 or under\n\u2013 Primigravida\n\u2013 Parity 6 or higher\n\u2013 Prior caesarian section\n\u2013 Previous pregnancy complications: heavy bleeding, forceps or vacuum delivery, convulsions, or 3rd or 13th degree tear\n\u2013 Vaginal bleeding\n\u2013 Multiple fetuses\n\u2013 Abnormal fetal presentation\n\u2013 HIV positive\n\u2013 Wants IUD or tubal ligation following delivery",
     "action_key": 336
@@ -5165,6 +5177,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
     "action": "Conduct counseling on birth preparedness and complications readiness",
     "annotation": "Encourage delivery at a health-care facility.\n- Additional contact might be needed\n- For teenage pregnancy , psychological support counseling is recommended \n- Early referal preparation \n\nRisk factors necessitating a facility birth:\n\u2013 Age 17 or under\n\u2013 Primigravida\n\u2013 Parity 6 or higher\n\u2013 Prior caesarian section\n\u2013 Previous pregnancy complications: heavy bleeding, forceps or vacuum delivery, convulsions, or 3rd or 14th degree tear\n\u2013 Vaginal bleeding\n\u2013 Multiple fetuses\n\u2013 Abnormal fetal presentation\n\u2013 HIV positive\n\u2013 Wants IUD or tubal ligation following delivery",
     "action_key": 337
@@ -5177,6 +5190,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
     "action": "Conduct counseling on birth preparedness and complications readiness",
     "annotation": "Encourage delivery at a health-care facility.\n- Additional contact might be needed\n- For teenage pregnancy , psychological support counseling is recommended \n- Early referal preparation \n\nRisk factors necessitating a facility birth:\n\u2013 Age 17 or under\n\u2013 Primigravida\n\u2013 Parity 6 or higher\n\u2013 Prior caesarian section\n\u2013 Previous pregnancy complications: heavy bleeding, forceps or vacuum delivery, convulsions, or 3rd or 14th degree tear\n\u2013 Vaginal bleeding\n\u2013 Multiple fetuses\n\u2013 Abnormal fetal presentation\n\u2013 HIV positive\n\u2013 Wants IUD or tubal ligation following delivery",
     "action_key": 338
@@ -5189,6 +5203,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
     "action": "Conduct counseling on birth preparedness and complications readiness",
     "annotation": "Encourage delivery at a health-care facility.\n- Additional contact might be needed\n- For teenage pregnancy , psychological support counseling is recommended \n- Early referal preparation \n\nRisk factors necessitating a facility birth:\n\u2013 Age 17 or under\n\u2013 Primigravida\n\u2013 Parity 6 or higher\n\u2013 Prior caesarian section\n\u2013 Previous pregnancy complications: heavy bleeding, forceps or vacuum delivery, convulsions, or 3rd or 15th degree tear\n\u2013 Vaginal bleeding\n\u2013 Multiple fetuses\n\u2013 Abnormal fetal presentation\n\u2013 HIV positive\n\u2013 Wants IUD or tubal ligation following delivery",
     "action_key": 339
@@ -5201,6 +5216,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
     "action": "Conduct counseling on birth preparedness and complications readiness",
     "annotation": "Encourage delivery at a health-care facility.\n- Additional contact might be needed\n- For teenage pregnancy , psychological support counseling is recommended \n- Early referal preparation \n\nRisk factors necessitating a facility birth:\n\u2013 Age 17 or under\n\u2013 Primigravida\n\u2013 Parity 6 or higher\n\u2013 Prior caesarian section\n\u2013 Previous pregnancy complications: heavy bleeding, forceps or vacuum delivery, convulsions, or 3rd or 16th degree tear\n\u2013 Vaginal bleeding\n\u2013 Multiple fetuses\n\u2013 Abnormal fetal presentation\n\u2013 HIV positive\n\u2013 Wants IUD or tubal ligation following delivery",
     "action_key": 340
@@ -5213,6 +5229,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
     "action": "Conduct counseling on birth preparedness and complications readiness",
     "annotation": "Encourage delivery at a health-care facility.\n- Additional contact might be needed\n- For teenage pregnancy , psychological support counseling is recommended \n- Early referal preparation \n\nRisk factors necessitating a facility birth:\n\u2013 Age 17 or under\n\u2013 Primigravida\n\u2013 Parity 6 or higher\n\u2013 Prior caesarian section\n\u2013 Previous pregnancy complications: heavy bleeding, forceps or vacuum delivery, convulsions, or 3rd or 17th degree tear\n\u2013 Vaginal bleeding\n\u2013 Multiple fetuses\n\u2013 Abnormal fetal presentation\n\u2013 HIV positive\n\u2013 Wants IUD or tubal ligation following delivery",
     "action_key": 341
@@ -5225,6 +5242,7 @@
         "operator": ">"
       }
     ],
+    "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
     "action": "Conduct counseling on birth preparedness and complications readiness",
     "annotation": "Encourage delivery at a health-care facility.\n- Additional contact might be needed\n- For teenage pregnancy , psychological support counseling is recommended \n- Early referal preparation \n\nRisk factors necessitating a facility birth:\n\u2013 Age 17 or under\n\u2013 Primigravida\n\u2013 Parity 6 or higher\n\u2013 Prior caesarian section\n\u2013 Previous pregnancy complications: heavy bleeding, forceps or vacuum delivery, convulsions, or 3rd or 18th degree tear\n\u2013 Vaginal bleeding\n\u2013 Multiple fetuses\n\u2013 Abnormal fetal presentation\n\u2013 HIV positive\n\u2013 Wants IUD or tubal ligation following delivery",
     "action_key": 342
@@ -5237,6 +5255,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
     "action": "Conduct counseling on birth preparedness and complications readiness",
     "annotation": "Encourage delivery at a health-care facility.\n- Additional contact might be needed\n- For teenage pregnancy , psychological support counseling is recommended \n- Early referal preparation \n\nRisk factors necessitating a facility birth:\n\u2013 Age 17 or under\n\u2013 Primigravida\n\u2013 Parity 6 or higher\n\u2013 Prior caesarian section\n\u2013 Previous pregnancy complications: heavy bleeding, forceps or vacuum delivery, convulsions, or 3rd or 19th degree tear\n\u2013 Vaginal bleeding\n\u2013 Multiple fetuses\n\u2013 Abnormal fetal presentation\n\u2013 HIV positive\n\u2013 Wants IUD or tubal ligation following delivery",
     "action_key": 343
@@ -5249,6 +5268,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
     "action": "Conduct counseling on birth preparedness and complications readiness",
     "annotation": "Explain why delivery needs to be with a skilled birth attendant, preferably at a nearby facility according to woman's  preference",
     "action_key": 344
@@ -5261,7 +5281,7 @@
         "operator": "="
       }
     ],
-    "displayPoint": "Conduct counseling on postpartum family planning",
+    "displayPoint": "DAK, Counselling on postpartum family planning conducted",
     "action": "Conduct counseling on postpartum family planning",
     "annotation": "Possible methods include: Levonorgestrel IUD, copper IUD, implants, LAM, oral contraceptive pills, sterilization, tubal ligation\t\n\nNote: LAM is an effective method for breastfeeding women who are amenorrhoeic and their infant < 6 months of age; \n\nBreastfeeding women < 6 weeks postpartum are generally advised not to use injectables and should not use combined hormonal contraceptive (CHC); \n\nBreastfeeding women \u2265 6 weeks can use injectables without restriction; Breastfeeding women \u2265 6 weeks to < 6 months postpartum (primarily breastfeeding) generally should not use CHCs unless other more appropriate methods are not available or acceptable (16).",
     "action_key": 345
@@ -6408,6 +6428,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on breastfeeding",
     "action": "Counselling on breastfeeding",
     "annotation": "Counsel women on the importance of breastfeeding for 6 months after birth",
     "action_key": 415
