@@ -6021,7 +6021,265 @@
     "action": "show",
     "dependent": "DAK, Substance use",
     "logic_key": 493
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "="
+      }
+    ],
+    "action": "required",
+    "dependent": "DAK, BMI",
+    "logic_key": 492
+  },
+
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "!="
+      }
+    ],
+    "action": "noneRequired",
+    "dependent": "DAK, BMI",
+    "logic_key": 493
+  },
+
+
+
+
+
+
+
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Systolic blood pressure",
+        "minValue": 140.0,
+        "maxValue": 160.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "trigger": "DAK, Repeat systolic blood pressure",
+        "minValue": 140.0,
+        "maxValue": 160.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "trigger": "DAK, Urine dipstick result \u2013 protein",
+        "value": "DAK, +",
+        "operator": "="
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on hypertension",
+    "logic_key": 494
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Diastolic blood pressure",
+        "minValue": 90.0,
+        "maxValue": 110.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "trigger": "DAK, Repeat diastolic blood pressure",
+        "minValue": 90.0,
+        "maxValue": 110.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "trigger": "DAK, Urine dipstick result \u2013 protein",
+        "value": "DAK, +",
+        "operator": "="
+      }
+
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on hypertension",
+    "logic_key": 495
+  },
+
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Diastolic blood pressure",
+        "minValue": 90.0,
+        "maxValue": 110.0,
+        "operator": "between, <=, <="
+      },
+      {
+        "trigger": "DAK, Repeat diastolic blood pressure",
+        "minValue": 90.0,
+        "maxValue": 110.0,
+        "operator": "between, <=, <="
+      },
+      {
+        "trigger": "DAK, Urine dipstick result \u2013 protein",
+        "value": "DAK, Negative",
+        "operator": "="
+      }
+
+
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on hypertension",
+    "logic_key": 496
+  },
+
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fasting Blood sugar test result",
+        "minValue": 92.0,
+        "maxValue": 126.0,
+        "operator": "between, <=, <"
+
+      }
+
+
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
+    "logic_key": 497
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT)-fasting glucose test result",
+        "minValue": 92.0,
+        "maxValue": 126.0,
+        "operator": "between, <=, <="
+
+
+      }
+
+
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
+    "logic_key": 498
+  },
+  {
+    "logics": [
+      {
+
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) – 1 hour test result",
+        "minValue": 180.0,
+        "maxValue": 200.0,
+        "operator": "between, <=, <"
+
+
+
+      }
+
+
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
+    "logic_key": 499
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) – 2 hours test result",
+        "minValue": 153.0,
+        "maxValue": 200.0,
+        "operator": "between, <=, <"
+
+      }
+
+
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
+    "logic_key": 500
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+
+        "value": 126.0,
+        "operator": ">="
+
+      }
+
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on diabetes mellitus (DM)",
+    "logic_key": 501
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fasting Blood sugar test result",
+        "value": 126.0,
+        "operator": ">="
+
+
+      }
+
+
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on diabetes mellitus (DM)",
+    "logic_key": 502
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) – 1 hour test result",
+        "value": 200.0,
+        "operator": ">="
+
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on diabetes mellitus (DM)",
+    "logic_key": 503
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) – 2 hours test result",
+        "value": 200.0,
+        "operator": ">="
+
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on diabetes mellitus (DM)",
+    "logic_key": 504
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Random blood sugar test result",
+        "value": 200.0,
+        "operator": ">="
+
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on diabetes mellitus (DM)",
+    "logic_key": 505
   }
+
 
 
 
