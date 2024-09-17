@@ -2112,7 +2112,7 @@
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Syphilis test conducted",
+    "displayPoint": "DAK, Syphilis test required",
     "action": "Conduct syphilis test",
     "annotation": "A syphilis test is recommended for all pregnant women at the first contact",
     "action_key": 162
@@ -2125,7 +2125,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint": "DAK, Syphilis test conducted",
+    "displayPoint": "DAK, Syphilis test required",
     "action": "Conduct syphilis test",
     "annotation": "If the woman first syphlis test result was negative, retest for syphlis  with risk assessment after  the gestational age \u2265 30 weeks ( the interval between the two tests should be greater than 6 months)",
     "action_key": 163
@@ -2138,6 +2138,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Syphilis test required",
     "action": "No syphilis test required",
     "annotation": "Women who are already confirmed positive for syphilis do not need to be tested",
     "action_key": 164
@@ -2150,7 +2151,7 @@
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Urine test conducted",
+    "displayPoint": "DAK, Urine test required",
     "action": "Conduct urine test",
     "annotation": "Urine test is required any time the woman reports pain during urination (dysuria)",
     "action_key": 165
@@ -2163,6 +2164,7 @@
         "operator": ">="
       }
     ],
+    "displayPoint": "DAK, Urine test required",
     "action": "Do urine dipstick test for protein",
     "annotation": "Given high values (SBP \u2265 140 or DBP \u2265 90) upon second measure, urine dipstick test should be done to check for protein in the urine, a symptom of pre-eclampsia",
     "action_key": 166
@@ -2175,6 +2177,7 @@
         "operator": ">="
       }
     ],
+    "displayPoint": "DAK, Urine test required",
     "action": "Do urine dipstick test for protein",
     "annotation": "Given high values (SBP \u2265 140 or DBP \u2265 90) upon second measure, urine dipstick test should be done to check for protein in the urine, a symptom of pre-eclampsia",
     "action_key": 167
@@ -2187,7 +2190,7 @@
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Urine test conducted",
+    "displayPoint": "DAK, Urine test required",
     "action": "Conduct urine test",
     "annotation": "The urine dipstick test is important for identifying hypertensive disorders ( protein uria), DM (glucose uria), asymptomatic bacteriuria (ASB) and UTI.  Midstream culture and gram -staining are the standard tests  for diagnosis of ASB if available.",
     "action_key": 168
@@ -2200,7 +2203,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint": "DAK, Urine test conducted",
+    "displayPoint": "DAK, Urine test required",
     "action": "Conduct urine test",
     "annotation": "The urine dipstick test is important for identifying hypertensive disorders ( protein uria), DM (glucose uria), asymptomatic bacteriuria (ASB) and UTI.  Midstream culture and gram -staining are the standard tests  for diagnosis of ASB if available.",
     "action_key": 169
@@ -2213,7 +2216,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint": "DAK, Urine test conducted",
+    "displayPoint": "DAK, Urine test required",
     "action": "Conduct urine test if necessary",
     "annotation": "The urine dipstick test is important for identifying hypertensive disorders ( protein uria), DM (glucose uria), asymptomatic bacteriuria (ASB) and UTI.  Midstream culture and gram -staining are the standard tests  for diagnosis of ASB if available.",
     "action_key": 170
@@ -2226,6 +2229,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, TB screening recommended",
     "action": "Conduct TB screening and if one or more of symptoms present(refer the annotation), link her for further investigation",
     "annotation": "TB screening by screening tool ( i.e fever, cough greater than two weeks, night sweating,and weight loss/failure to gain weight) is recommended for all pregnant woman.",
     "action_key": 171
@@ -2238,6 +2242,7 @@
         "operator": "<"
       }
     ],
+    "displayPoint": "DAK, Hematocrit (Ht)",
     "action": "Referral",
     "annotation": "Hematocrit levels too low! Refer her for further evaluation and management",
     "action_key": 172
@@ -2250,6 +2255,7 @@
         "operator": ">"
       }
     ],
+    "displayPoint": "DAK, White blood cell (WBC) count",
     "action": "Referrer her if not explained by the physiological change of the pregnancy",
     "annotation": "White blood cell count too high!Refer her for further evaluation and management if not explained by the physiological change of the pregnancy",
     "action_key": 173
@@ -2262,6 +2268,7 @@
         "operator": "<"
       }
     ],
+    "displayPoint": "DAK, Platelet count",
     "action": "Referral",
     "annotation": "Platelet count too low! Refer her for further evaluation and management",
     "action_key": 174
@@ -6080,6 +6087,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, HIV test required",
     "action": "HIV test is not required",
     "annotation": "A test is not required if the woman is already confirmed HIV positive",
     "action_key": 393
@@ -6604,5 +6612,20 @@
     "action": "Counselling on hepatitis B positive",
     "annotation": "If woman tested positive for hepatitis B, provide counselling",
     "action_key": 433
+  },
+{
+    "conditions": [
+      {
+        "key": "DAK, Pregnancy confirmed",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Hepatitis C test required",
+    "action": "Conduct hepatitis C test",
+    "annotation": "Hepatitis C test required for all pregnant women ,if the test is available.Anti-HCV laboratory-based immunoassay is the preferred method for testing for Hep C infection in pregnancy; if immunoassay is not available, anti-HCV rapid diagnostic test (RDT) is recommended over dried blood spot (DBS) anti-HCV testing.",
+    "action_key": 434
   }
+
+  
 ]
