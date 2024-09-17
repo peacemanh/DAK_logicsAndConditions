@@ -4357,6 +4357,7 @@
         "operator": ">="
       }
     ],
+    "displayPoint": "DAK, Risk of pre-eclampsia",
     "action": "Provide counseling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg",
     "annotation": "The woman is at risk of developing pre-eclampsia: provide counseling; prescribe aspirin 75 mg daily until delivery (starting at 18 weeks gestation) for pre-eclampsia risk",
     "action_key": 291
@@ -4374,6 +4375,7 @@
         "operator": ">="
       }
     ],
+    "displayPoint": "DAK, Risk of pre-eclampsia",
     "action": "Provide counseling on pre-eclampsia risk",
     "annotation": "The woman is at risk of developing pre-eclampsia: provide counseling; prescribe aspirin 75 mg daily until delivery (starting at 19 weeks gestation) for pre-eclampsia risk",
     "action_key": 292
@@ -4396,7 +4398,7 @@
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Amount of daily calcium supplements provided",
+    "displayPoint": "DAK, Risk of pre-eclampsia",
     "action": "Provide counseling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
     "annotation": "The woman is at risk of developing pre-eclampsia: provide counseling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20132 g until delivery for pre-eclampsia risk",
     "action_key": 293
@@ -4419,6 +4421,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Risk of pre-eclampsia",
     "action": "Provide counseling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
     "annotation": "The woman is at risk of developing pre-eclampsia: provide counseling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20133 g until delivery for pre-eclampsia risk",
     "action_key": 294
@@ -4441,7 +4444,7 @@
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Amount of daily calcium supplements provided",
+    "displayPoint": "DAK, Risk of pre-eclampsia",
     "action": "Provide counseling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
     "annotation": "The woman is at risk of developing pre-eclampsia: provide counseling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20134 g until delivery for pre-eclampsia risk",
     "action_key": 295
