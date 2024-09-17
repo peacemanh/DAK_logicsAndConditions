@@ -1946,7 +1946,7 @@
         "operator": "<"
       }
     ],
-    "displayPoint": "DAK, Counselling on postpartum family planning conducted",
+    "displayPoint": "DAK, Ultrasound required",
     "action": "Conduct ultrasound at the health-care facility or the referral facility",
     "annotation": "An ultrasound is recommended for all women before 24 weeks gestation",
     "action_key": 153
@@ -1959,7 +1959,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint": "DAK, Ultrasound scan conducted",
+    "displayPoint": "DAK, Ultrasound required",
     "action": "Conduct ultrasound at the health-care facility or the referral facility optional if deemed necessary by the health worker",
     "annotation": "An ultrasound is recommended for all women even after 24 weeks gestation if deemed necessary (e.g. to identify the number of fetuses, fetal presentation,placenta location, assess fetal growth and amniotic fluid volume)",
     "action_key": 154
@@ -1972,7 +1972,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Ultrasound available at the health-care facility",
+        "key": "Ultrasound available at the health-care facility",
         "value": true,
         "operator": "="
       },
@@ -1982,7 +1982,7 @@
         "operator": "<"
       }
     ],
-    "displayPoint": "DAK, Ultrasound category",
+    "displayPoint": "DAK, Ultrasound scan conducted",
     "action": "Conduct ultrasound scan",
     "annotation": "An ultrasound is recommended for all women before 24 weeks .\nAn early ultrasound is key to estimate gestational age, improve detection of fetal anomalies and multiple fetuses, and improve a woman\u2019s pregnancy experience.",
     "action_key": 155
@@ -2005,7 +2005,7 @@
         "operator": "<"
       }
     ],
-    "displayPoint": "DAK, Ultrasound category",
+    "displayPoint": "DAK, Ultrasound scan conducted",
     "action": "Refer to a facility with ultrasound equipment",
     "annotation": "If an ultrasound cannot be conducted at the health-care facility, the woman should be referred to another health-care facility in which she can receive an ultrasound. \nAn ultrasound is recommended for all women before 24 weeks gestation.",
     "action_key": 156
@@ -2028,7 +2028,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint": "DAK, Ultrasound category",
+    "displayPoint": "DAK, Ultrasound required",
     "action": "Ultrasound scan is required",
     "annotation": "An ultrasound is recommended for all women even after 24 weeks gestation(e.g. to identify the number of fetuses, fetal presentation,placenta location, asses fetal growth and amniotic fluild volume)",
     "action_key": 157
@@ -2051,7 +2051,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint": "DAK, Ultrasound category",
+    "displayPoint": "DAK, Ultrasound scan conducted",
     "action": "Ultrasound scan is optional",
     "annotation": "An ultrasound is recommended for all women even after 24 weeks gestation if  considered necessary (e.g. to identify the number of fetuses, fetal presentation,placenta location, asses fetal growth and amniotic fluild volume)",
     "action_key": 158
