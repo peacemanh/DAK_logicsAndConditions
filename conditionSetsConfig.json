@@ -5241,6 +5241,11 @@
         "key": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
         "value": true,
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
     "action": "Conduct clinical enquiry",
@@ -5253,8 +5258,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Ongoing stress",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 347
@@ -5265,8 +5276,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Ongoing anxiety",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 348
@@ -5277,8 +5294,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Ongoing depression",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 349
@@ -5289,8 +5312,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Unspecified ongoing emotional health issues",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 350
@@ -5301,8 +5330,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Misuse of alcohol",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 351
@@ -5313,8 +5348,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Misuse of drugs",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 352
@@ -5325,8 +5366,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Unspecified harmful behaviours",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 353
@@ -5337,8 +5384,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Thoughts of self-harm or (attempted) suicide",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 354
@@ -5349,8 +5402,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Plans to self-harm or (attempt) suicide",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 355
@@ -5361,8 +5420,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Acts of self-harm or (attempted) suicide",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 356
@@ -5373,8 +5438,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Repeated sexually transmitted infections (STIs)",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 357
@@ -5385,8 +5456,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Unwanted pregnancies",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 358
@@ -5397,8 +5474,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Unexplained chronic pain",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 359
@@ -5409,8 +5492,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Unexplained chronic gastrointestinal symptoms",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 360
@@ -5421,8 +5510,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Unexplained genitourinary symptoms",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 361
@@ -5433,8 +5528,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Adverse reproductive outcomes",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 362
@@ -5445,8 +5546,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Unexplained reproductive system symptoms",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 363
@@ -5457,8 +5564,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Repeated vaginal bleeding",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 364
@@ -5469,8 +5582,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Unexplained traumatic injury",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 365
@@ -5481,8 +5600,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Problems with central nervous system",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 366
@@ -5493,8 +5618,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Repeated health consultations with no clear diagnosis",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 367
@@ -5505,8 +5636,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Woman\u2019s partner or husband is intrusive during consultations",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 368
@@ -5517,8 +5654,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Woman often misses her own or her children\u2019s health-care appointments",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 369
@@ -5529,8 +5672,14 @@
         "key": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Children have emotional and behavioural problems",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 370
@@ -5541,8 +5690,14 @@
         "key": "DAK, Presenting signs/conditions for IPV ",
         "value": "DAK, Injury to abdomen",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 371
@@ -5553,8 +5708,14 @@
         "key": "DAK, Presenting signs/conditions for IPV ",
         "value": "DAK, Injury to abdomen",
         "operator": "="
+      },
+      {
+        "key": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
     "action": "Conduct clinical enquiry and provide first-line support and care if IPV confirmed",
     "annotation": "WHO does not recommend universal screening for violence against women attending health care. WHO does encourage health-care providers to raise the topic with women who have injuries or conditions that they suspect may be related to violence.\n\nNever raise the issue of partner violence unless a woman is alone. Even if she is with another woman, that woman could be the mother or sister of an abuser.\n\nIf you do ask her about violence, do it in an empathic, non-judgemental manner. Use language that is appropriate and relevant to the culture and community you are working in. Some women may not like the words \u201cviolence\u201d and \u201cabuse\u201d",
     "action_key": 372
