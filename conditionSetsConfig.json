@@ -2704,6 +2704,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on dietary modifications to relieve constipation",
     "action": "Start emergency manegment  and refer urgently to a hospital",
     "annotation": "Symptom(s) of severe pre-eclampsia! Refer urgently to hospital!\nWoman has hypertension. If she is experiencing a symptom of severe pre-eclampsia, then refer urgently to the hospital for further investigation and management.\n\nProcedure\n\u2013 Give Loading dose of magnsium sulphate\n\u2013 Give appropriate anti-hypertensives\n\u2013 Revise the birth plan \n\u2013 Refer urgently to hospital",
     "action_key": 206
@@ -3258,6 +3259,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Severe hypertension",
     "action": "Start emergency manegment  and refer urgently to a hospital",
     "annotation": "Woman has severe hypertension. If SBP is 160 mmHg or higher and/or DBP is 110 mmHg or higher, then refer urgently to the hospital for further investigation and management. Start emergency manegment (secure IV line, give  loading dose of magnesium sulphate, and anti-hypertensive drug if avilable)  before Referal.",
     "action_key": 228
@@ -3280,6 +3282,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Severe hypertension",
     "action": "Start emergency manegment  and refer urgently to a hospital",
     "annotation": "Woman has severe hypertension. If SBP is 160 mmHg or higher and/or DBP is 111 mmHg or higher, then refer urgently to the hospital for further investigation and management. Start emergency manegment (secure IV line, give  loading dose of magnesium sulphate, and anti-hypertensive drug if avilable)  before Referal.",
     "action_key": 229
@@ -3302,6 +3305,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Severe hypertension",
     "action": "Start emergency manegment  and refer urgently to a hospital",
     "annotation": "Woman has severe hypertension. If SBP is 160 mmHg or higher and/or DBP is 110 mmHg or higher, then refer urgently to the hospital for further investigation and management.",
     "action_key": 230
@@ -3324,6 +3328,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Severe hypertension",
     "action": "Start emergency manegment  and refer urgently to a hospital",
     "annotation": "Woman has severe hypertension. If SBP is 160 mmHg or higher and/or DBP is 111 mmHg or higher, then refer urgently to the hospital for further investigation and management.",
     "action_key": 231
