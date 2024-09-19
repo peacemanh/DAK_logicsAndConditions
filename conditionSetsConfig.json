@@ -4610,6 +4610,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
     "action": "Provide counseling on gestational diabetes mellitus (GDM) risk",
     "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m2 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate counseling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
     "action_key": 301
@@ -4632,6 +4633,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
     "action": "Provide counseling on gestational diabetes mellitus (GDM) risk",
     "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m3 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate counseling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
     "action_key": 302
@@ -4654,6 +4656,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
     "action": "Provide counseling on gestational diabetes mellitus (GDM) risk",
     "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m4 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate counseling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
     "action_key": 303
@@ -4676,6 +4679,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
     "action": "Provide counseling on gestational diabetes mellitus (GDM) risk",
     "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m5 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate counseling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
     "action_key": 304
@@ -4698,6 +4702,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
     "action": "Provide counseling on gestational diabetes mellitus (GDM) risk",
     "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m6 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate counseling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
     "action_key": 305
@@ -4720,6 +4725,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
     "action": "Provide counseling on gestational diabetes mellitus (GDM) risk",
     "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m7 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate counseling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
     "action_key": 306
@@ -4742,6 +4748,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
     "action": "Provide counseling on gestational diabetes mellitus (GDM) risk",
     "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m8 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate counseling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
     "action_key": 307
