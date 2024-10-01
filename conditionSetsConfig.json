@@ -1372,6 +1372,7 @@
         "operator": ">="
       }
     ],
+    "displayPoint": "DAK, Current symptoms",
     "action": "Conduct further investigation and, if necessary, refer urgently if treatment not available at your facility",
     "annotation": "If the second measurement is \u2265 37.5 0c , indentify the cause and manage accordingly or Refer",
     "action_key": 107
@@ -1385,6 +1386,7 @@
         "operator": "beyond, <=, <="
       }
     ],
+    "displayPoint": "DAK, Current symptoms",
     "action": "Refer to a hospital",
     "annotation": "If the second measurement is  <60 or >100 , indentify the cause and manage accordingly  or Refer",
     "action_key": 108
