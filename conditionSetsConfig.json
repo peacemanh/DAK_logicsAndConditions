@@ -3762,8 +3762,25 @@
         "key": "DAK, Gestational age",
         "value": 12.0,
         "operator": "<="
+      },
+      {
+        "key": "DAK, Amount of iron prescribed",
+        "value": 120,
+        "operator": "="
+      },
+      {
+        "key": "DAK, Type of iron supplement dosage provided",
+        "value": "DAK, Daily",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Amount of daily dose of folic acid prescribed",
+        "value": 0.4,
+        "operator": "="
       }
+
     ],
+    "displayPoint": "DAK, Counselling conducted on anaemia",
     "action": "Conduct REQUIRED anaemia counseling",
     "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct counseling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
     "action_key": 259
@@ -3779,8 +3796,24 @@
         "key": "DAK, Gestational age",
         "value": 28.0,
         "operator": ">="
+      },
+      {
+        "key": "DAK, Amount of iron prescribed",
+        "value": 120,
+        "operator": "="
+      },
+      {
+        "key": "DAK, Type of iron supplement dosage provided",
+        "value": "DAK, Daily",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Amount of daily dose of folic acid prescribed",
+        "value": 0.4,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on anaemia",
     "action": "Conduct REQUIRED anaemia counseling",
     "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct counseling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
     "action_key": 260
@@ -3797,8 +3830,24 @@
         "minValue": 13.0,
         "maxValue": 27.0,
         "operator": "between, <=, <="
+      },
+      {
+        "key": "DAK, Amount of iron prescribed",
+        "value": 120,
+        "operator": "="
+      },
+      {
+        "key": "DAK, Type of iron supplement dosage provided",
+        "value": "DAK, Daily",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Amount of daily dose of folic acid prescribed",
+        "value": 0.4,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on anaemia",
     "action": "Conduct REQUIRED anaemia counseling",
     "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct counseling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
     "action_key": 261
@@ -3814,8 +3863,24 @@
         "key": "DAK, Pallor",
         "value": true,
         "operator": "="
+      },
+      {
+        "key": "DAK, Amount of iron prescribed",
+        "value": 120,
+        "operator": "="
+      },
+      {
+        "key": "DAK, Type of iron supplement dosage provided",
+        "value": "DAK, Daily",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Amount of daily dose of folic acid prescribed",
+        "value": 0.4,
+        "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on anaemia",
     "action": "Conduct REQUIRED anaemia counseling",
     "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct counseling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
     "action_key": 262
@@ -4919,6 +4984,7 @@
         "operator": "="
       }
     ],
+
     "action": "Provide tetanus diphteria immunizations \u2013 using the \"Tetanus Diphteria(TD) vaccine \u2013 NO PREVIOUS\" schedule (3 dose scheme)",
     "annotation": "Tetanus Diphteria (TD) vaccination is recommended for all pregnant women who are not fully immunised against TD to prevent maternal and neonatal tetanus",
     "action_key": 318
@@ -4970,6 +5036,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Tetanus Diphtheria Vaccine (TD)",
     "action": "Provide tetanus diphteria immunizations \u2013 using the \"Tetanus Diphteria (TD) vaccine\u2013 WITH PREVIOUS\" schedule (1 dose scheme)",
     "annotation": "1\u20134 doses of TDV in the past:\n\u2013 1 dose scheme: Woman should receive one dose of TDV during each subsequent pregnancy to a total of five doses (five doses protects throughout the childbearing years)",
     "action_key": 321
@@ -4992,6 +5059,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Tetanus Diphtheria Vaccine (TD)",
     "action": "Provide tetanus diphteria immunizations \u2013 using the \"Tetanus Diphteria (TD) vaccine\u2013 WITH PREVIOUS\" schedule (1 dose scheme)",
     "annotation": "1\u20134 doses of TDV in the past:\n\u2013 1 dose scheme: Woman should receive one dose of TDV during each subsequent pregnancy to a total of five doses (five doses protects throughout the childbearing years)",
     "action_key": 322
@@ -5009,6 +5077,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Tetanus Diphtheria Vaccine (TD)",
     "action": "Provide tetanus diphteria immunizations \u2013 using the \"Tetanus Diphteria (TD) vaccine\u2013 WITH PREVIOUS\" schedule (1 dose scheme)",
     "annotation": "1\u20134 doses of TDV in the past:\n\u2013 1 dose scheme: Woman should receive one dose of TDV during each subsequent pregnancy to a total of five doses (five doses protects throughout the childbearing years)",
     "action_key": 323
@@ -5021,6 +5090,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Tetanus Diphtheria Vaccine (TD)",
     "action": "Provide tetanus diphteria immunizations \u2013 using the \"Tetanus Diphteria (TD) vaccine\u2013 WITH PREVIOUS\" schedule (1 dose scheme)",
     "annotation": "1\u20134 doses of TDV in the past:\n\u2013 1 dose scheme: Woman should receive one dose of TDV during each subsequent pregnancy to a total of five doses (five doses protects throughout the childbearing years)",
     "action_key": 324
