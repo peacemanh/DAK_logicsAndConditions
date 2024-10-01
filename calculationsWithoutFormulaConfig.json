@@ -2423,6 +2423,23 @@
     "dependentValue": "DAK, HIV negative",
     "dependent": "DAK, HIV status",
     "logic_key": 157
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Temperature",
+        "value": 37.5,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Second temperature",
+        "value": 37.5,
+        "operator": ">="
+      }
+    ],
+    "dependentValue": "DAK, HIV negative",
+    "dependent": "DAK, HIV status",
+    "logic_key": 157
   }
 
 
