@@ -2423,11 +2423,40 @@
     "dependentValue": "DAK, HIV negative",
     "dependent": "DAK, HIV status",
     "logic_key": 157
+  },
+
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Temperature",
+        "value": 37.5,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Second temperature",
+        "value": 37.5,
+        "operator": ">="
+      }
+    ],
+    "dependentValue": "DAK, Fever",
+    "dependent": "DAK, Current symptoms",
+    "logic_key": 158
+  },
+
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Second pulse rate",
+        "minValue": 60.0,
+        "maxValue": 100.0,
+        "operator": "beyond, <=, <="
+      }
+
+    ],
+    "dependentValue": "DAK, Abnormal pulse rate",
+    "dependent": "DAK, Current symptoms",
+    "logic_key": 159
   }
-
-
-
-
 
 ]
 
