@@ -6667,7 +6667,7 @@
     "annotation": "If woman tested positive for hepatitis B, provide counselling",
     "action_key": 433
   },
-{
+  {
     "conditions": [
       {
         "key": "DAK, Pregnancy confirmed",
@@ -6679,6 +6679,19 @@
     "action": "Conduct hepatitis C test",
     "annotation": "Hepatitis C test required for all pregnant women ,if the test is available.Anti-HCV laboratory-based immunoassay is the preferred method for testing for Hep C infection in pregnancy; if immunoassay is not available, anti-HCV rapid diagnostic test (RDT) is recommended over dried blood spot (DBS) anti-HCV testing.",
     "action_key": 434
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Pregnancy confirmed",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Hepatitis C test required",
+    "action": "Conduct hepatitis C test",
+    "annotation": "Hepatitis C test required for all pregnant women ,if the test is available.Anti-HCV laboratory-based immunoassay is the preferred method for testing for Hep C infection in pregnancy; if immunoassay is not available, anti-HCV rapid diagnostic test (RDT) is recommended over dried blood spot (DBS) anti-HCV testing.",
+    "action_key": 435
   }
 
   
