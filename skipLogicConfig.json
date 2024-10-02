@@ -13,7 +13,7 @@
     ],
     "action": "none",
     "dependent": "none",
-    "logic_key": 0
+    "logic_key": 1
   },
   {
     "logics": [
@@ -25,7 +25,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Specific health concern(s) form",
-    "logic_key": 1
+    "logic_key": 2
   },
   {
     "logics": [
@@ -37,7 +37,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
-    "logic_key": 2
+    "logic_key": 3
   },
   {
     "logics": [
@@ -49,7 +49,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Fetal movement",
-    "logic_key": 3
+    "logic_key": 4
   },
   {
     "logics": [
@@ -61,7 +61,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on hepatitis B positive",
-    "logic_key": 4
+    "logic_key": 5
   },
   {
     "logics": [
@@ -78,7 +78,7 @@
     ],
     "action": "hide",
     "dependent": "DAK, Blood pressure cannot be taken",
-    "logic_key": 5
+    "logic_key": 6
   },
   {
     "logics": [
@@ -90,7 +90,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Oedema grading",
-    "logic_key": 6
+    "logic_key": 7
   },
   {
     "logics": [
@@ -102,7 +102,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Fetal heart rate",
-    "logic_key": 7
+    "logic_key": 8
   },
   {
     "logics": [
@@ -114,7 +114,7 @@
     ],
     "action": "hide",
     "dependent": "DAK, Number of fetuses unknown",
-    "logic_key": 8
+    "logic_key": 9
   },
   {
     "logics": [
@@ -126,7 +126,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Fetal presentation form",
-    "logic_key": 9
+    "logic_key": 10
   },
   {
     "logics": [
@@ -138,7 +138,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Presenting signs/conditions for IPV form",
-    "logic_key": 10
+    "logic_key": 11
   },
   {
     "logics": [
@@ -155,7 +155,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Clinical enquiry for IPV form",
-    "logic_key": 11
+    "logic_key": 12
   },
   {
     "logics": [
@@ -167,7 +167,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Types of IPV form",
-    "logic_key": 12
+    "logic_key": 13
   },
   {
     "logics": [
@@ -179,7 +179,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason ultrasound scan not done",
-    "logic_key": 13
+    "logic_key": 14
   },
   {
     "logics": [
@@ -191,7 +191,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason hepatitis B test not conducted",
-    "logic_key": 14
+    "logic_key": 15
   },
   {
     "logics": [
@@ -203,7 +203,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Syphilis test conducted",
-    "logic_key": 15
+    "logic_key": 16
   },
   {
     "logics": [
@@ -215,7 +215,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Hepatitis C test ordered",
-    "logic_key": 16
+    "logic_key": 17
   },
   {
     "logics": [
@@ -227,7 +227,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Hepatitis C test ordered",
-    "logic_key": 17
+    "logic_key": 18
   },
   {
     "logics": [
@@ -239,7 +239,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Urine test conducted",
-    "logic_key": 18
+    "logic_key": 19
   },
   {
     "logics": [
@@ -251,7 +251,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Urine test conducted",
-    "logic_key": 19
+    "logic_key": 20
   },
   {
     "logics": [
@@ -262,8 +262,8 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Urine test conducted",
-    "logic_key": 20
+    "dependent": "DAK, Urine test required",
+    "logic_key": 21
   },
   {
     "logics": [
@@ -275,7 +275,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Blood haemoglobin test ordered",
-    "logic_key": 21
+    "logic_key": 22
   },
   {
     "logics": [
@@ -287,7 +287,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Blood haemoglobin test ordered",
-    "logic_key": 22
+    "logic_key": 23
   },
   {
     "logics": [
@@ -299,7 +299,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason blood haemoglobin test not done",
-    "logic_key": 23
+    "logic_key": 24
   },
   {
     "logics": [
@@ -311,23 +311,6 @@
     ],
     "action": "show",
     "dependent": "DAK, Blood haemoglobin test conducted",
-    "logic_key": 24
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Blood haemoglobin test conducted",
-        "value": false,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Blood haemoglobin test ordered",
-        "value": false,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Test stock-out",
     "logic_key": 25
   },
   {
@@ -344,7 +327,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Expired tests",
+    "dependent": "DAK, Test stock-out",
     "logic_key": 26
   },
   {
@@ -361,8 +344,25 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Other reason test not conducted (specify)",
+    "dependent": "DAK, Expired tests",
     "logic_key": 27
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test conducted",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Blood haemoglobin test ordered",
+        "value": false,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other reason test not conducted (specify)",
+    "logic_key": 28
   },
   {
     "logics": [
@@ -374,7 +374,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason counselling on caffeine reduction was not done",
-    "logic_key": 28
+    "logic_key": 29
   },
   {
     "logics": [
@@ -386,7 +386,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason counselling on tobacco cessation was not conducted",
-    "logic_key": 29
+    "logic_key": 30
   },
   {
     "logics": [
@@ -398,7 +398,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason counselling on second-hand smoke was not conducted",
-    "logic_key": 30
+    "logic_key": 31
   },
   {
     "logics": [
@@ -410,7 +410,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason counselling on condom use was not conducted",
-    "logic_key": 31
+    "logic_key": 32
   },
   {
     "logics": [
@@ -422,7 +422,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason counselling on alcohol / substance use was not conducted",
-    "logic_key": 32
+    "logic_key": 33
   },
   {
     "logics": [
@@ -434,7 +434,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason counselling on non-pharma measures to relieve nausea and vomiting was not conducted",
-    "logic_key": 33
+    "logic_key": 34
   },
   {
     "logics": [
@@ -446,7 +446,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason counselling on pharmacological treatments for nausea and vomiting was not conducted",
-    "logic_key": 34
+    "logic_key": 35
   },
   {
     "logics": [
@@ -458,7 +458,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason counselling on diet and lifestyle changes to prevent and relieve heartburn was not conducted",
-    "logic_key": 35
+    "logic_key": 36
   },
   {
     "logics": [
@@ -470,7 +470,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason counselling on antacid preparations to relieve heartburn was not conducted",
-    "logic_key": 36
+    "logic_key": 37
   },
   {
     "logics": [
@@ -482,7 +482,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason counselling on non-pharmacological treatment for the relief of leg cramps was not conducted",
-    "logic_key": 37
+    "logic_key": 38
   },
   {
     "logics": [
@@ -494,7 +494,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason counselling on use of magnesium and calcium to relieve leg cramps was not conducted",
-    "logic_key": 38
+    "logic_key": 39
   },
   {
     "logics": [
@@ -506,7 +506,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason counselling on dietary modifications to relieve constipation was not conducted",
-    "logic_key": 39
+    "logic_key": 40
   },
   {
     "logics": [
@@ -518,7 +518,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason counselling on use of wheat bran or other fibre supplements to relieve constipation was not conducted",
-    "logic_key": 40
+    "logic_key": 41
   },
   {
     "logics": [
@@ -530,7 +530,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason counselling on regular exercise, physiotherapy, support belts and acupuncture to relieve low back and pelvic pain was not conducted",
-    "logic_key": 41
+    "logic_key": 42
   },
   {
     "logics": [
@@ -542,7 +542,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason counselling on non-pharmacological options for varicose veins and oedema was not conducted",
-    "logic_key": 42
+    "logic_key": 43
   },
   {
     "logics": [
@@ -554,7 +554,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason counselling on healthy eating and keeping physically active was not conducted",
-    "logic_key": 43
+    "logic_key": 44
   },
   {
     "logics": [
@@ -566,7 +566,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason counselling on increasing daily energy and protein intake was not conducted",
-    "logic_key": 44
+    "logic_key": 45
   },
   {
     "logics": [
@@ -578,7 +578,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason seven-day antibiotic regimen for asymptomatic bacteriuria (ASB) not provided form",
-    "logic_key": 45
+    "logic_key": 46
   },
   {
     "logics": [
@@ -590,7 +590,7 @@
     ],
     "action": "show",
     "dependent": "DAK, iron and folic acid not prescribed",
-    "logic_key": 46
+    "logic_key": 47
   },
   {
     "logics": [
@@ -607,7 +607,7 @@
     ],
     "action": "show",
     "dependent": "DAK, iron and folic acid not prescribed",
-    "logic_key": 47
+    "logic_key": 48
   },
   {
     "logics": [
@@ -619,23 +619,6 @@
     ],
     "action": "show",
     "dependent": "DAK, iron and folic acid not prescribed",
-    "logic_key": 48
-  },
-  {
-    "logics": [
-      {
-        "trigger": "Population with low dietary calcium intake",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Amount of daily calcium supplements provided",
-        "value": 0.0,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Reason calcium not prescribed",
     "logic_key": 49
   },
   {
@@ -658,6 +641,23 @@
   {
     "logics": [
       {
+        "trigger": "Population with low dietary calcium intake",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Amount of daily calcium supplements provided",
+        "value": 0.0,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Reason calcium not prescribed",
+    "logic_key": 51
+  },
+  {
+    "logics": [
+      {
         "trigger": "DAK, PrEP for HIV prevention provided",
         "value": false,
         "operator": "="
@@ -665,7 +665,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason PrEP for HIV prevention was not provided",
-    "logic_key": 51
+    "logic_key": 52
   },
   {
     "logics": [
@@ -677,7 +677,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Type of postpartum family planning method selected",
-    "logic_key": 52
+    "logic_key": 53
   },
   {
     "logics": [
@@ -689,7 +689,7 @@
     ],
     "action": "show",
     "dependent": "DAK, IPV first-line support provided",
-    "logic_key": 53
+    "logic_key": 54
   },
   {
     "logics": [
@@ -706,7 +706,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason IPV first line support not done",
-    "logic_key": 54
+    "logic_key": 55
   },
   {
     "logics": [
@@ -718,7 +718,7 @@
     ],
     "action": "show",
     "dependent": "DAK, IPV first-line support provided",
-    "logic_key": 55
+    "logic_key": 56
   },
   {
     "logics": [
@@ -730,18 +730,6 @@
     ],
     "action": "show",
     "dependent": "DAK, What additional type of care provided",
-    "logic_key": 56
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Safety assessment conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Has the physical violence happened more often or gotten worse over the past 6 months?",
     "logic_key": 57
   },
   {
@@ -753,7 +741,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Has he ever used a weapon or threatened you with a weapon?",
+    "dependent": "DAK, Has the physical violence happened more often or gotten worse over the past 6 months?",
     "logic_key": 58
   },
   {
@@ -765,7 +753,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Has he ever tried to strangle you?",
+    "dependent": "DAK, Has he ever used a weapon or threatened you with a weapon?",
     "logic_key": 59
   },
   {
@@ -777,7 +765,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Has he ever beaten you when you were pregnant?",
+    "dependent": "DAK, Has he ever tried to strangle you?",
     "logic_key": 60
   },
   {
@@ -789,7 +777,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Is he violently and constantly jealous of you?",
+    "dependent": "DAK, Has he ever beaten you when you were pregnant?",
     "logic_key": 61
   },
   {
@@ -801,8 +789,20 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Do you believe he could kill you?",
+    "dependent": "DAK, Is he violently and constantly jealous of you?",
     "logic_key": 62
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Safety assessment conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Do you believe he could kill you?",
+    "logic_key": 63
   },
   {
     "logics": [
@@ -814,7 +814,7 @@
     ],
     "action": "show",
     "dependent": "DAK, External services the client was referred",
-    "logic_key": 63
+    "logic_key": 64
   },
   {
     "logics": [
@@ -826,7 +826,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Preventive antihelminthic treatment provided",
-    "logic_key": 64
+    "logic_key": 65
   },
   {
     "logics": [
@@ -838,7 +838,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Preventive antihelminthic treatment provided",
-    "logic_key": 65
+    "logic_key": 66
   },
   {
     "logics": [
@@ -850,7 +850,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason no preventative treatment provided",
-    "logic_key": 66
+    "logic_key": 67
   },
   {
     "logics": [
@@ -862,7 +862,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason no preventative treatment provided",
-    "logic_key": 67
+    "logic_key": 68
   },
   {
     "logics": [
@@ -874,7 +874,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason counselling on malaria prevention was not conducted",
-    "logic_key": 68
+    "logic_key": 69
   },
   {
     "logics": [
@@ -886,7 +886,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason counselling on malaria prevention was not conducted",
-    "logic_key": 69
+    "logic_key": 70
   },
   {
     "logics": [
@@ -898,7 +898,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason malaria prophylaxis not provided",
-    "logic_key": 70
+    "logic_key": 71
   },
   {
     "logics": [
@@ -910,7 +910,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason malaria prophylaxis not provided",
-    "logic_key": 71
+    "logic_key": 72
   },
   {
     "logics": [
@@ -922,7 +922,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason malaria prophylaxis not provided",
-    "logic_key": 72
+    "logic_key": 73
   },
   {
     "logics": [
@@ -934,7 +934,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason referral not done",
-    "logic_key": 73
+    "logic_key": 74
   },
   {
     "logics": [
@@ -946,7 +946,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason referral not done",
-    "logic_key": 74
+    "logic_key": 75
   },
   {
     "logics": [
@@ -958,25 +958,13 @@
     ],
     "action": "show",
     "dependent": "Population prevalence of HIV in key populations (men who have sex with men, people in prison or other closed settings, people who inject drugs, sex workers and transgender people)",
-    "logic_key": 75
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Delivery date",
     "logic_key": 76
   },
   {
     "logics": [
       {
         "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Stillbirth",
+        "value": "DAK, Live birth",
         "operator": "="
       }
     ],
@@ -988,19 +976,19 @@
     "logics": [
       {
         "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
+        "value": "DAK, Stillbirth",
         "operator": "="
       }
     ],
     "action": "show",
-    "dependent": "DAK, Place of delivery",
+    "dependent": "DAK, Delivery date",
     "logic_key": 78
   },
   {
     "logics": [
       {
         "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Stillbirth",
+        "value": "DAK, Live birth",
         "operator": "="
       }
     ],
@@ -1012,19 +1000,19 @@
     "logics": [
       {
         "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
+        "value": "DAK, Stillbirth",
         "operator": "="
       }
     ],
     "action": "show",
-    "dependent": "DAK, Preterm Birth",
+    "dependent": "DAK, Place of delivery",
     "logic_key": 80
   },
   {
     "logics": [
       {
         "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Stillbirth",
+        "value": "DAK, Live birth",
         "operator": "="
       }
     ],
@@ -1036,19 +1024,19 @@
     "logics": [
       {
         "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
+        "value": "DAK, Stillbirth",
         "operator": "="
       }
     ],
     "action": "show",
-    "dependent": "DAK, Delivery mode",
+    "dependent": "DAK, Preterm Birth",
     "logic_key": 82
   },
   {
     "logics": [
       {
         "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Stillbirth",
+        "value": "DAK, Live birth",
         "operator": "="
       }
     ],
@@ -1060,13 +1048,25 @@
     "logics": [
       {
         "trigger": "DAK, Reason for closing ANC record",
+        "value": "DAK, Stillbirth",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Delivery mode",
+    "logic_key": 84
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for closing ANC record",
         "value": "DAK, Live birth",
         "operator": "="
       }
     ],
     "action": "show",
     "dependent": "DAK, Birth weight",
-    "logic_key": 84
+    "logic_key": 85
   },
   {
     "logics": [
@@ -1078,7 +1078,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other (specify)",
-    "logic_key": 85
+    "logic_key": 86
   },
   {
     "logics": [
@@ -1090,7 +1090,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other current physiological symptoms (specify)",
-    "logic_key": 86
+    "logic_key": 87
   },
   {
     "logics": [
@@ -1102,7 +1102,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other substance use",
-    "logic_key": 87
+    "logic_key": 88
   },
   {
     "logics": [
@@ -1114,7 +1114,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other allergies (specify)",
-    "logic_key": 88
+    "logic_key": 89
   },
   {
     "logics": [
@@ -1126,7 +1126,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other surgeries (specify)",
-    "logic_key": 89
+    "logic_key": 90
   },
   {
     "logics": [
@@ -1138,7 +1138,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other (specify)",
-    "logic_key": 90
+    "logic_key": 91
   },
   {
     "logics": [
@@ -1150,7 +1150,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other medications (specify)",
-    "logic_key": 91
+    "logic_key": 92
   },
   {
     "logics": [
@@ -1162,7 +1162,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other substance use (specify)",
-    "logic_key": 92
+    "logic_key": 93
   },
   {
     "logics": [
@@ -1174,7 +1174,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other abnormal respiratory exam result (specify)",
-    "logic_key": 93
+    "logic_key": 94
   },
   {
     "logics": [
@@ -1186,7 +1186,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other abnormal cardiac exam result (specify)",
-    "logic_key": 94
+    "logic_key": 95
   },
   {
     "logics": [
@@ -1198,7 +1198,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other abnormal breast exam result (specify)",
-    "logic_key": 95
+    "logic_key": 96
   },
   {
     "logics": [
@@ -1210,7 +1210,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other abnormal abdominal exam result (specify)",
-    "logic_key": 96
+    "logic_key": 97
   },
   {
     "logics": [
@@ -1222,7 +1222,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other abnormal pelvic exam (visual) result (specify)",
-    "logic_key": 97
+    "logic_key": 98
   },
   {
     "logics": [
@@ -1234,7 +1234,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other fetal presentation (specify)",
-    "logic_key": 98
+    "logic_key": 99
   },
   {
     "logics": [
@@ -1246,7 +1246,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Any other presenting signs or symptoms indicative of violence (specify)",
-    "logic_key": 99
+    "logic_key": 100
   },
   {
     "logics": [
@@ -1258,7 +1258,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other Clinical enquiry for IPV",
-    "logic_key": 100
+    "logic_key": 101
   },
   {
     "logics": [
@@ -1270,7 +1270,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Violence by other family members (not intimate partner)",
-    "logic_key": 101
+    "logic_key": 102
   },
   {
     "logics": [
@@ -1282,7 +1282,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason counselling not done on caffeine reduction (specify)",
-    "logic_key": 102
+    "logic_key": 103
   },
   {
     "logics": [
@@ -1294,7 +1294,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason counselling not done on tobacco reduction (specify)",
-    "logic_key": 103
+    "logic_key": 104
   },
   {
     "logics": [
@@ -1306,7 +1306,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason counselling not done on Second-hand smoke (specify)",
-    "logic_key": 104
+    "logic_key": 105
   },
   {
     "logics": [
@@ -1318,7 +1318,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason counselling not done on Condom use (specify)",
-    "logic_key": 105
+    "logic_key": 106
   },
   {
     "logics": [
@@ -1330,7 +1330,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason counselling not done on Substance use (specify)",
-    "logic_key": 106
+    "logic_key": 107
   },
   {
     "logics": [
@@ -1342,7 +1342,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason counselling not done on Non-pharma measures to relieve nausea and vomiting (specify)",
-    "logic_key": 107
+    "logic_key": 108
   },
   {
     "logics": [
@@ -1354,7 +1354,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason counselling not done on Heartburn (specify)",
-    "logic_key": 108
+    "logic_key": 109
   },
   {
     "logics": [
@@ -1366,7 +1366,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason counselling not done on Antacid preparations to relieve heartburn (specify)",
-    "logic_key": 109
+    "logic_key": 110
   },
   {
     "logics": [
@@ -1378,7 +1378,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason counselling not done on Non-pharmacological treatment (specify)",
-    "logic_key": 110
+    "logic_key": 111
   },
   {
     "logics": [
@@ -1390,7 +1390,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason counselling not done on Use of magnesium and calcium (specify)",
-    "logic_key": 111
+    "logic_key": 112
   },
   {
     "logics": [
@@ -1402,7 +1402,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason counselling not done on Regular exercise, physiotherapy (specify)",
-    "logic_key": 112
+    "logic_key": 113
   },
   {
     "logics": [
@@ -1414,7 +1414,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason counselling not done on Dietary modifications to relieve constipation (specify)",
-    "logic_key": 113
+    "logic_key": 114
   },
   {
     "logics": [
@@ -1426,7 +1426,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason counselling not done on Use of wheat bran or other fibre (specify)",
-    "logic_key": 114
+    "logic_key": 115
   },
   {
     "logics": [
@@ -1438,7 +1438,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason counselling not done on Non-pharmacological options for varicose veins and oedema (specify)",
-    "logic_key": 115
+    "logic_key": 116
   },
   {
     "logics": [
@@ -1450,7 +1450,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason counselling not done on healthy eating and keeping physically activity (specify)",
-    "logic_key": 116
+    "logic_key": 117
   },
   {
     "logics": [
@@ -1462,7 +1462,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason counselling not done on Increasing daily energy and protein intake (specify)",
-    "logic_key": 117
+    "logic_key": 118
   },
   {
     "logics": [
@@ -1474,7 +1474,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason counselling not done (specify)",
-    "logic_key": 118
+    "logic_key": 119
   },
   {
     "logics": [
@@ -1486,7 +1486,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason counselling not done on Avoidance of harmful traditional practices (specify)",
-    "logic_key": 119
+    "logic_key": 120
   },
   {
     "logics": [
@@ -1498,7 +1498,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason ASB was not provided",
-    "logic_key": 120
+    "logic_key": 121
   },
   {
     "logics": [
@@ -1510,7 +1510,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other iron and folic acid reason not prescribed (specify)",
-    "logic_key": 121
+    "logic_key": 122
   },
   {
     "logics": [
@@ -1522,7 +1522,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason Calcium supplementation not prescribed (specify)",
-    "logic_key": 122
+    "logic_key": 123
   },
   {
     "logics": [
@@ -1534,7 +1534,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason Asprin was not provided",
-    "logic_key": 123
+    "logic_key": 124
   },
   {
     "logics": [
@@ -1546,7 +1546,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason counselling not done (specify)",
-    "logic_key": 124
+    "logic_key": 125
   },
   {
     "logics": [
@@ -1558,7 +1558,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other gynecological procedures (specify)",
-    "logic_key": 125
+    "logic_key": 126
   },
   {
     "logics": [
@@ -1570,7 +1570,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason counselling not done on Pharmacological treatments for nausea and vomiting (specify)",
-    "logic_key": 126
+    "logic_key": 127
   },
   {
     "logics": [
@@ -1582,7 +1582,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Injury other (specify)",
-    "logic_key": 127
+    "logic_key": 128
   },
   {
     "logics": [
@@ -1594,7 +1594,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason ultrasound not done (specify)",
-    "logic_key": 128
+    "logic_key": 129
   },
   {
     "logics": [
@@ -1606,7 +1606,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other gross Congenital Anomale",
-    "logic_key": 129
+    "logic_key": 130
   },
   {
     "logics": [
@@ -1618,7 +1618,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason HIV test not done",
-    "logic_key": 130
+    "logic_key": 131
   },
   {
     "logics": [
@@ -1630,7 +1630,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason hepatitis B test not conducted",
-    "logic_key": 131
+    "logic_key": 132
   },
   {
     "logics": [
@@ -1642,7 +1642,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason Hepatitis C test not done",
-    "logic_key": 132
+    "logic_key": 133
   },
   {
     "logics": [
@@ -1654,7 +1654,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason syphilis test not done",
-    "logic_key": 133
+    "logic_key": 134
   },
   {
     "logics": [
@@ -1666,7 +1666,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason urine test not done",
-    "logic_key": 134
+    "logic_key": 135
   },
   {
     "logics": [
@@ -1678,7 +1678,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason blood haemoglobin test not done",
-    "logic_key": 135
+    "logic_key": 136
   },
   {
     "logics": [
@@ -1690,7 +1690,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason TB screening not done (specify)",
-    "logic_key": 136
+    "logic_key": 137
   },
   {
     "logics": [
@@ -1702,7 +1702,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason immunization not provided (specify)",
-    "logic_key": 137
+    "logic_key": 138
   },
   {
     "logics": [
@@ -1714,7 +1714,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason Hep B prophylaxis was not provided",
-    "logic_key": 138
+    "logic_key": 139
   },
   {
     "logics": [
@@ -1726,7 +1726,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason first-line support not done (specify)",
-    "logic_key": 139
+    "logic_key": 140
   },
   {
     "logics": [
@@ -1738,7 +1738,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other external services the client was referred",
-    "logic_key": 140
+    "logic_key": 141
   },
   {
     "logics": [
@@ -1750,7 +1750,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason malaria prophylaxis not provided",
-    "logic_key": 141
+    "logic_key": 142
   },
   {
     "logics": [
@@ -1762,7 +1762,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason for closing ANC record",
-    "logic_key": 142
+    "logic_key": 143
   },
   {
     "logics": [
@@ -1774,7 +1774,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason counselling on personal hygiene and environmental sanitation was not conducted",
-    "logic_key": 143
+    "logic_key": 144
   },
   {
     "logics": [
@@ -1786,7 +1786,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason counselling on avoidance of harmful traditional practices was not done",
-    "logic_key": 144
+    "logic_key": 145
   },
   {
     "logics": [
@@ -1798,7 +1798,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason Tetanus\u00e2\u20ac\u201cdiphtheria (TD) vaccination not provided",
-    "logic_key": 145
+    "logic_key": 146
   },
   {
     "logics": [
@@ -1810,7 +1810,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason Tetanus\u00e2\u20ac\u201cdiphtheria (TD) vaccination not provided",
-    "logic_key": 146
+    "logic_key": 147
   },
   {
     "logics": [
@@ -1822,7 +1822,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason Tetanus\u00e2\u20ac\u201cdiphtheria (TD) vaccination not provided",
-    "logic_key": 147
+    "logic_key": 148
   },
   {
     "logics": [
@@ -1834,7 +1834,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason Tetanus\u00e2\u20ac\u201cdiphtheria (TD) vaccination not provided",
-    "logic_key": 148
+    "logic_key": 149
   },
   {
     "logics": [
@@ -1846,7 +1846,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other (specify)",
-    "logic_key": 149
+    "logic_key": 150
   },
   {
     "logics": [
@@ -1858,7 +1858,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason blood pressure cannot be taken form",
-    "logic_key": 150
+    "logic_key": 151
   },
   {
     "logics": [
@@ -1870,7 +1870,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other complaint (specify)",
-    "logic_key": 151
+    "logic_key": 152
   },
   {
     "logics": [
@@ -1882,7 +1882,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason iron and folic acid not prescribed (specify)",
-    "logic_key": 152
+    "logic_key": 153
   },
   {
     "logics": [
@@ -1894,7 +1894,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason PrEP was not provided",
-    "logic_key": 153
+    "logic_key": 154
   },
   {
     "logics": [
@@ -1906,7 +1906,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Amount of oral PrEP provided",
-    "logic_key": 154
+    "logic_key": 155
   },
   {
     "logics": [
@@ -1918,7 +1918,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason for emergency referral",
-    "logic_key": 155
+    "logic_key": 156
   },
   {
     "logics": [
@@ -1930,7 +1930,7 @@
     ],
     "action": "show",
     "dependent": "DAK, ANC Contact Number",
-    "logic_key": 156
+    "logic_key": 157
   },
   {
     "logics": [
@@ -1942,7 +1942,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Ultrasound date",
-    "logic_key": 157
+    "logic_key": 158
   },
   {
     "logics": [
@@ -1954,7 +1954,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Were the miscarriage and/or abortions consecutive and spontaneous?",
-    "logic_key": 158
+    "logic_key": 159
   },
   {
     "logics": [
@@ -1966,7 +1966,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Taking calcium supplements",
-    "logic_key": 159
+    "logic_key": 160
   },
   {
     "logics": [
@@ -1978,7 +1978,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Has side-effects from calcium supplements",
-    "logic_key": 160
+    "logic_key": 161
   },
   {
     "logics": [
@@ -1990,7 +1990,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Substance use during past pregnancy specification form",
-    "logic_key": 161
+    "logic_key": 162
   },
   {
     "logics": [
@@ -2002,7 +2002,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Has side-effects from iron and folic acid supplements",
-    "logic_key": 162
+    "logic_key": 163
   },
   {
     "logics": [
@@ -2014,7 +2014,7 @@
     ],
     "action": "show",
     "dependent": "DAK, HIV diagnosis date",
-    "logic_key": 163
+    "logic_key": 164
   },
   {
     "logics": [
@@ -2027,7 +2027,7 @@
     "action": "show",
     "parent": "DaK, Hx of previous Preterm delivery",
     "dependent": "DAK, Has previous history of preterm delivery",
-    "logic_key": 164
+    "logic_key": 165
   },
   {
     "logics": [
@@ -2039,7 +2039,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Current alcohol and/or other substance use",
-    "logic_key": 165
+    "logic_key": 166
   },
   {
     "logics": [
@@ -2056,7 +2056,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Taking iron and folic acid (IFA) tablets",
-    "logic_key": 166
+    "logic_key": 167
   },
   {
     "logics": [
@@ -2068,7 +2068,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Taking aspirin tablets",
-    "logic_key": 167
+    "logic_key": 168
   },
   {
     "logics": [
@@ -2080,18 +2080,6 @@
     ],
     "action": "show",
     "dependent": "DAK, Taking penicillin treatment for syphilis",
-    "logic_key": 168
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Ultrasound scan conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Ultrasound scan date",
     "logic_key": 169
   },
   {
@@ -2103,7 +2091,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Estimated fetal weight",
+    "dependent": "DAK, Ultrasound scan date",
     "logic_key": 170
   },
   {
@@ -2115,7 +2103,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Gross Congenital Anomale",
+    "dependent": "DAK, Estimated fetal weight",
     "logic_key": 171
   },
   {
@@ -2127,7 +2115,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Amniotic fluid level",
+    "dependent": "DAK, Gross Congenital Anomale",
     "logic_key": 172
   },
   {
@@ -2139,8 +2127,20 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Placenta location",
+    "dependent": "DAK, Amniotic fluid level",
     "logic_key": 173
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Ultrasound scan conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Placenta location",
+    "logic_key": 174
   },
   {
     "logics": [
@@ -2152,18 +2152,6 @@
     ],
     "action": "show",
     "dependent": "DAK, Blood type test conducted",
-    "logic_key": 174
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Blood type test conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Rh factor",
     "logic_key": 175
   },
   {
@@ -2175,8 +2163,20 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Blood type",
+    "dependent": "DAK, Rh factor",
     "logic_key": 176
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood type test conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Blood type",
+    "logic_key": 177
   },
   {
     "logics": [
@@ -2188,7 +2188,7 @@
     ],
     "action": "show",
     "dependent": "DAK, HIV test conducted",
-    "logic_key": 177
+    "logic_key": 178
   },
   {
     "logics": [
@@ -2200,18 +2200,6 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason HIV test not done",
-    "logic_key": 178
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, HIV test conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, HIV test date",
     "logic_key": 179
   },
   {
@@ -2223,8 +2211,20 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, HIV test result",
+    "dependent": "DAK, HIV test date",
     "logic_key": 180
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, HIV test conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, HIV test result",
+    "logic_key": 181
   },
   {
     "logics": [
@@ -2236,7 +2236,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Ultrasound scan ordered",
-    "logic_key": 181
+    "logic_key": 182
   },
   {
     "logics": [
@@ -2248,18 +2248,6 @@
     ],
     "action": "show",
     "dependent": "DAK, Ultrasound scan conducted",
-    "logic_key": 182
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for coming to facility",
-        "value": "DAK, First antenatal care contact",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Height",
     "logic_key": 183
   },
   {
@@ -2271,8 +2259,20 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Blood type test ordered",
+    "dependent": "DAK, Height",
     "logic_key": 184
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Blood type test ordered",
+    "logic_key": 185
   },
   {
     "logics": [
@@ -2284,7 +2284,7 @@
     ],
     "action": "show",
     "dependent": "DAK, HIV test ordered",
-    "logic_key": 185
+    "logic_key": 186
   },
   {
     "logics": [
@@ -2296,7 +2296,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Partner HIV test ordered",
-    "logic_key": 186
+    "logic_key": 187
   },
   {
     "logics": [
@@ -2308,18 +2308,6 @@
     ],
     "action": "show",
     "dependent": "DAK, Partner HIV test conducted",
-    "logic_key": 187
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Partner HIV test conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Partner HIV test date",
     "logic_key": 188
   },
   {
@@ -2331,8 +2319,20 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Partner HIV test result",
+    "dependent": "DAK, Partner HIV test date",
     "logic_key": 189
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Partner HIV test conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Partner HIV test result",
+    "logic_key": 190
   },
   {
     "logics": [
@@ -2344,7 +2344,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Hepatitis B test ordered",
-    "logic_key": 190
+    "logic_key": 191
   },
   {
     "logics": [
@@ -2356,7 +2356,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Hepatitis B test conducted",
-    "logic_key": 191
+    "logic_key": 192
   },
   {
     "logics": [
@@ -2368,7 +2368,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Hepatitis B test result",
-    "logic_key": 192
+    "logic_key": 193
   },
   {
     "logics": [
@@ -2380,7 +2380,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Hepatitis B test type",
-    "logic_key": 193
+    "logic_key": 194
   },
   {
     "logics": [
@@ -2392,7 +2392,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Hepatitis C test ordered",
-    "logic_key": 194
+    "logic_key": 195
   },
   {
     "logics": [
@@ -2404,18 +2404,6 @@
     ],
     "action": "show",
     "dependent": "DAK, Hepatitis C test type",
-    "logic_key": 195
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Hepatitis C test conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Hepatitis C test date",
     "logic_key": 196
   },
   {
@@ -2427,7 +2415,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Hepatitis C test result",
+    "dependent": "DAK, Hepatitis C test date",
     "logic_key": 197
   },
   {
@@ -2439,8 +2427,20 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Hepatitis C diagnosis",
+    "dependent": "DAK, Hepatitis C test result",
     "logic_key": 198
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Hepatitis C test conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Hepatitis C diagnosis",
+    "logic_key": 199
   },
   {
     "logics": [
@@ -2452,7 +2452,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Hepatitis C test conducted",
-    "logic_key": 199
+    "logic_key": 200
   },
   {
     "logics": [
@@ -2464,7 +2464,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason Hepatitis C test not done",
-    "logic_key": 200
+    "logic_key": 201
   },
   {
     "logics": [
@@ -2476,18 +2476,6 @@
     ],
     "action": "show",
     "dependent": "DAK, Syphilis test ordered",
-    "logic_key": 201
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Syphilis test ordered",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Syphilis test type",
     "logic_key": 202
   },
   {
@@ -2499,19 +2487,19 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Syphilis test conducted",
+    "dependent": "DAK, Syphilis test type",
     "logic_key": 203
   },
   {
     "logics": [
       {
-        "trigger": "DAK, Syphilis test conducted",
+        "trigger": "DAK, Syphilis test ordered",
         "value": true,
         "operator": "="
       }
     ],
     "action": "show",
-    "dependent": "DAK, Syphilis test date",
+    "dependent": "DAK, Syphilis test conducted",
     "logic_key": 204
   },
   {
@@ -2523,7 +2511,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Syphilis test result",
+    "dependent": "DAK, Syphilis test date",
     "logic_key": 205
   },
   {
@@ -2535,8 +2523,20 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Syphilis diagnosis",
+    "dependent": "DAK, Syphilis test result",
     "logic_key": 206
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Syphilis test conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Syphilis diagnosis",
+    "logic_key": 207
   },
   {
     "logics": [
@@ -2548,7 +2548,7 @@
     ],
     "action": "show",
     "dependent": "Reason syphilis test not done",
-    "logic_key": 207
+    "logic_key": 208
   },
   {
     "logics": [
@@ -2560,7 +2560,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Fetal heartbeat present",
-    "logic_key": 208
+    "logic_key": 209
   },
   {
     "logics": [
@@ -2572,18 +2572,6 @@
     ],
     "action": "show",
     "dependent": "DAK, Urine test ordered",
-    "logic_key": 209
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Urine test ordered",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Urine test type",
     "logic_key": 210
   },
   {
@@ -2595,19 +2583,19 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Urine test conducted",
+    "dependent": "DAK, Urine test type",
     "logic_key": 211
   },
   {
     "logics": [
       {
-        "trigger": "DAK, Urine test conducted",
+        "trigger": "DAK, Urine test ordered",
         "value": true,
         "operator": "="
       }
     ],
     "action": "show",
-    "dependent": "DAK, Urine test date",
+    "dependent": "DAK, Urine test conducted",
     "logic_key": 212
   },
   {
@@ -2625,6 +2613,18 @@
   {
     "logics": [
       {
+        "trigger": "DAK, Urine test conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Urine test date",
+    "logic_key": 214
+  },
+  {
+    "logics": [
+      {
         "trigger": "DAK, Urine test type",
         "value": "DAK, Urine Culture",
         "operator": "="
@@ -2632,7 +2632,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Urine Culture",
-    "logic_key": 214
+    "logic_key": 215
   },
   {
     "logics": [
@@ -2644,7 +2644,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Identified organism",
-    "logic_key": 215
+    "logic_key": 216
   },
   {
     "logics": [
@@ -2656,18 +2656,6 @@
     ],
     "action": "show",
     "dependent": "DAK, Midstream urine Gram-staining",
-    "logic_key": 216
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Urine test type",
-        "value": "DAK, Urine dipstick",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Urine dipstick result \u00e2\u20ac\u201c nitrites",
     "logic_key": 217
   },
   {
@@ -2679,7 +2667,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Urine dipstick result \u00e2\u20ac\u201c leukocytes",
+    "dependent": "DAK, Urine dipstick result \u00e2\u20ac\u201c nitrites",
     "logic_key": 218
   },
   {
@@ -2691,7 +2679,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Urine dipstick result \u00e2\u20ac\u201c protein",
+    "dependent": "DAK, Urine dipstick result \u00e2\u20ac\u201c leukocytes",
     "logic_key": 219
   },
   {
@@ -2703,8 +2691,20 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Urine dipstick result \u00e2\u20ac\u201c glucose",
+    "dependent": "DAK, Urine dipstick result \u00e2\u20ac\u201c protein",
     "logic_key": 220
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Urine test type",
+        "value": "DAK, Urine dipstick",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Urine dipstick result \u00e2\u20ac\u201c glucose",
+    "logic_key": 221
   },
   {
     "logics": [
@@ -2716,7 +2716,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason syphilis test not done",
-    "logic_key": 221
+    "logic_key": 222
   },
   {
     "logics": [
@@ -2728,7 +2728,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason urine test not done",
-    "logic_key": 222
+    "logic_key": 223
   },
   {
     "logics": [
@@ -2740,7 +2740,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Ultrasound category",
-    "logic_key": 223
+    "logic_key": 224
   },
   {
     "logics": [
@@ -2752,7 +2752,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Syphilis test required",
-    "logic_key": 224
+    "logic_key": 225
   },
   {
     "logics": [
@@ -2764,18 +2764,6 @@
     ],
     "action": "show",
     "dependent": "DAK, Blood glucose test conducted",
-    "logic_key": 225
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Blood glucose test conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Blood glucose test type",
     "logic_key": 226
   },
   {
@@ -2787,7 +2775,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+    "dependent": "DAK, Blood glucose test type",
     "logic_key": 227
   },
   {
@@ -2799,7 +2787,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, 75 g oral glucose tolerance test (OGTT) \u00e2\u20ac\u201c 1 hour test result",
+    "dependent": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
     "logic_key": 228
   },
   {
@@ -2811,7 +2799,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, 75 g oral glucose tolerance test (OGTT) \u00e2\u20ac\u201c 2 hours test result",
+    "dependent": "DAK, 75 g oral glucose tolerance test (OGTT) \u00e2\u20ac\u201c 1 hour test result",
     "logic_key": 229
   },
   {
@@ -2823,7 +2811,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+    "dependent": "DAK, 75 g oral glucose tolerance test (OGTT) \u00e2\u20ac\u201c 2 hours test result",
     "logic_key": 230
   },
   {
@@ -2835,8 +2823,20 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+    "dependent": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
     "logic_key": 231
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood glucose test conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+    "logic_key": 232
   },
   {
     "logics": [
@@ -2848,18 +2848,6 @@
     ],
     "action": "show",
     "dependent": "DAK, Blood haemoglobin test type",
-    "logic_key": 232
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Blood haemoglobin test conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Blood haemoglobin test date",
     "logic_key": 233
   },
   {
@@ -2871,7 +2859,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Blood haemoglobin test result",
+    "dependent": "DAK, Blood haemoglobin test date",
     "logic_key": 234
   },
   {
@@ -2883,7 +2871,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Anaemia diagnosis",
+    "dependent": "DAK, Blood haemoglobin test result",
     "logic_key": 235
   },
   {
@@ -2895,7 +2883,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Hematocrit (Ht)",
+    "dependent": "DAK, Anaemia diagnosis",
     "logic_key": 236
   },
   {
@@ -2907,7 +2895,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, White blood cell (WBC) count",
+    "dependent": "DAK, Hematocrit (Ht)",
     "logic_key": 237
   },
   {
@@ -2919,8 +2907,20 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Platelet count",
+    "dependent": "DAK, White blood cell (WBC) count",
     "logic_key": 238
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Platelet count",
+    "logic_key": 239
   },
   {
     "logics": [
@@ -2932,7 +2932,7 @@
     ],
     "action": "show",
     "dependent": "DAK, TB screening conducted",
-    "logic_key": 239
+    "logic_key": 240
   },
   {
     "logics": [
@@ -2944,18 +2944,6 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason TB screening not done",
-    "logic_key": 240
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, TB screening conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, TB screening date",
     "logic_key": 241
   },
   {
@@ -2967,19 +2955,19 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, TB screening result",
+    "dependent": "DAK, TB screening date",
     "logic_key": 242
   },
   {
     "logics": [
       {
-        "trigger": "DAK, Other tests conducted",
+        "trigger": "DAK, TB screening conducted",
         "value": true,
         "operator": "="
       }
     ],
     "action": "show",
-    "dependent": "DAK, Other test name",
+    "dependent": "DAK, TB screening result",
     "logic_key": 243
   },
   {
@@ -2991,7 +2979,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Other test(s) date",
+    "dependent": "DAK, Other test name",
     "logic_key": 244
   },
   {
@@ -3003,8 +2991,20 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Other test(s) result(s)",
+    "dependent": "DAK, Other test(s) date",
     "logic_key": 245
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Other tests conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other test(s) result(s)",
+    "logic_key": 246
   },
   {
     "logics": [
@@ -3016,7 +3016,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other planned birth place (specify)",
-    "logic_key": 246
+    "logic_key": 247
   },
   {
     "logics": [
@@ -3028,7 +3028,7 @@
     ],
     "action": "hide",
     "dependent": "DAK, Reason aspirin not prescribed",
-    "logic_key": 247
+    "logic_key": 248
   },
   {
     "logics": [
@@ -3040,7 +3040,7 @@
     ],
     "action": "hide",
     "dependent": "DAK, Reason calcium not prescribed",
-    "logic_key": 248
+    "logic_key": 249
   },
   {
     "logics": [
@@ -3052,7 +3052,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Gestational diabetes mellitus (GDM) risk counselling conducted",
-    "logic_key": 249
+    "logic_key": 250
   },
   {
     "logics": [
@@ -3064,7 +3064,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Oedema type",
-    "logic_key": 250
+    "logic_key": 251
   },
   {
     "logics": [
@@ -3076,7 +3076,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Cervical dilation",
-    "logic_key": 251
+    "logic_key": 252
   },
   {
     "logics": [
@@ -3088,7 +3088,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Pre-gestational weight",
-    "logic_key": 252
+    "logic_key": 253
   },
   {
     "logics": [
@@ -3100,7 +3100,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Second body temperature",
-    "logic_key": 253
+    "logic_key": 254
   },
   {
     "logics": [
@@ -3112,7 +3112,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Second body temperature",
-    "logic_key": 254
+    "logic_key": 255
   },
   {
     "logics": [
@@ -3124,7 +3124,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Second pulse rate",
-    "logic_key": 255
+    "logic_key": 256
   },
   {
     "logics": [
@@ -3136,7 +3136,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Second pulse rate",
-    "logic_key": 256
+    "logic_key": 257
   },
   {
     "logics": [
@@ -3148,7 +3148,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Fetal heart rate",
-    "logic_key": 257
+    "logic_key": 258
   },
   {
     "logics": [
@@ -3160,7 +3160,7 @@
     ],
     "action": "hide",
     "dependent": "DAK, Number of fetuses unknown",
-    "logic_key": 258
+    "logic_key": 259
   },
   {
     "logics": [
@@ -3172,7 +3172,7 @@
     ],
     "action": "show",
     "dependent": "DAK, iron and folic acid not prescribed",
-    "logic_key": 259
+    "logic_key": 260
   },
   {
     "logics": [
@@ -3184,7 +3184,7 @@
     ],
     "action": "show",
     "dependent": "DAK, iron and folic acid not prescribed",
-    "logic_key": 260
+    "logic_key": 261
   },
   {
     "logics": [
@@ -3196,7 +3196,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Date Tetanus\u00e2\u20ac\u201cdiphtheria (TD) 1 immunization was received",
-    "logic_key": 261
+    "logic_key": 262
   },
   {
     "logics": [
@@ -3208,7 +3208,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Date Tetanus\u00e2\u20ac\u201cdiphtheria (TD) 2 immunization was received",
-    "logic_key": 262
+    "logic_key": 263
   },
   {
     "logics": [
@@ -3220,7 +3220,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Date Tetanus\u00e2\u20ac\u201cdiphtheria (TD) 3 immunization was received",
-    "logic_key": 263
+    "logic_key": 264
   },
   {
     "logics": [
@@ -3232,7 +3232,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Date Tetanus\u00e2\u20ac\u201cdiphtheria (TD) 4 immunization was received",
-    "logic_key": 264
+    "logic_key": 265
   },
   {
     "logics": [
@@ -3244,7 +3244,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Date Tetanus\u00e2\u20ac\u201cdiphtheria (TD) 5 immunization was received",
-    "logic_key": 265
+    "logic_key": 266
   },
   {
     "logics": [
@@ -3256,7 +3256,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason immunization not provided (specify)",
-    "logic_key": 266
+    "logic_key": 267
   },
   {
     "logics": [
@@ -3268,7 +3268,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason Hep B prophylaxis was not provided",
-    "logic_key": 267
+    "logic_key": 268
   },
   {
     "logics": [
@@ -3280,7 +3280,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reason Hep B prophylaxis was not provided",
-    "logic_key": 268
+    "logic_key": 269
   },
   {
     "logics": [
@@ -3292,7 +3292,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Hepatitis B diagnosis",
-    "logic_key": 269
+    "logic_key": 270
   },
   {
     "logics": [
@@ -3304,7 +3304,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason clinical enquiry not done",
-    "logic_key": 270
+    "logic_key": 271
   },
   {
     "logics": [
@@ -3316,7 +3316,7 @@
     ],
     "action": "show",
     "dependent": "DAK, caffeine reduction",
-    "logic_key": 271
+    "logic_key": 272
   },
   {
     "logics": [
@@ -3328,7 +3328,7 @@
     ],
     "action": "show",
     "dependent": "DAK, caffeine reduction",
-    "logic_key": 272
+    "logic_key": 273
   },
   {
     "logics": [
@@ -3340,7 +3340,7 @@
     ],
     "action": "show",
     "dependent": "DAK, caffeine reduction",
-    "logic_key": 273
+    "logic_key": 274
   },
   {
     "logics": [
@@ -3352,7 +3352,7 @@
     ],
     "action": "show",
     "dependent": "DAK, caffeine reduction",
-    "logic_key": 274
+    "logic_key": 275
   },
   {
     "logics": [
@@ -3364,7 +3364,7 @@
     ],
     "action": "show",
     "dependent": "DAK, HIV status",
-    "logic_key": 275
+    "logic_key": 276
   },
   {
     "logics": [
@@ -3376,7 +3376,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Partner HIV status - confirmed",
-    "logic_key": 276
+    "logic_key": 277
   },
   {
     "logics": [
@@ -3388,7 +3388,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Asymptomatic bacteriuria (ASB) diagnosis",
-    "logic_key": 277
+    "logic_key": 278
   },
   {
     "logics": [
@@ -3400,7 +3400,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on breastfeeding",
-    "logic_key": 278
+    "logic_key": 279
   },
   {
     "logics": [
@@ -3412,7 +3412,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Preventive antihelminthic treatment provided",
-    "logic_key": 279
+    "logic_key": 280
   },
   {
     "logics": [
@@ -3429,7 +3429,7 @@
     ],
     "action": "show",
     "dependent": "DAK,  Non-pharma measures to relieve nausea and vomiting",
-    "logic_key": 280
+    "logic_key": 281
   },
   {
     "logics": [
@@ -3446,7 +3446,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Pharmacological treatments for nausea and vomiting",
-    "logic_key": 281
+    "logic_key": 282
   },
   {
     "logics": [
@@ -3463,7 +3463,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Antacid preparations to relieve heartburn",
-    "logic_key": 282
+    "logic_key": 283
   },
   {
     "logics": [
@@ -3480,7 +3480,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Heartburn",
-    "logic_key": 283
+    "logic_key": 284
   },
   {
     "logics": [
@@ -3492,7 +3492,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Repeat systolic blood pressure",
-    "logic_key": 284
+    "logic_key": 285
   },
   {
     "logics": [
@@ -3504,7 +3504,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Repeat diastolic blood pressure",
-    "logic_key": 285
+    "logic_key": 286
   },
   {
     "logics": [
@@ -3516,7 +3516,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Second body temperature",
-    "logic_key": 286
+    "logic_key": 287
   },
   {
     "logics": [
@@ -3528,7 +3528,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Second pulse rate",
-    "logic_key": 287
+    "logic_key": 288
   },
   {
     "logics": [
@@ -3540,7 +3540,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Second pulse rate",
-    "logic_key": 288
+    "logic_key": 289
   },
   {
     "logics": [
@@ -3552,7 +3552,7 @@
     ],
     "action": "show",
     "dependent": "DAK,  Non-pharmacological treatment for the relief of leg cramps",
-    "logic_key": 289
+    "logic_key": 290
   },
   {
     "logics": [
@@ -3564,30 +3564,13 @@
     ],
     "action": "show",
     "dependent": "DAK, Use of magnesium and calcium to relieve leg cramps",
-    "logic_key": 290
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Current symptoms",
-        "positiveValue": "DAK, Pain - Pelvic",
-        "negativeValue": [
-          "DAK, Contractions",
-          "DAK, Pain - During urination (dysuria)",
-          "DAK, Pain - Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)"
-        ],
-        "operator": "exclude"
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Regular exercise, physiotherapy and support belts to relieve low back and pelvic pain",
     "logic_key": 291
   },
   {
     "logics": [
       {
         "trigger": "DAK, Current symptoms",
-        "positiveValue": "DAK, Pain - Low back",
+        "positiveValue": "DAK, Pain - Pelvic",
         "negativeValue": [
           "DAK, Contractions",
           "DAK, Pain - During urination (dysuria)",
@@ -3603,8 +3586,8 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Persistent symptoms",
-        "positiveValue": "DAK, Pain - Pelvic",
+        "trigger": "DAK, Current symptoms",
+        "positiveValue": "DAK, Pain - Low back",
         "negativeValue": [
           "DAK, Contractions",
           "DAK, Pain - During urination (dysuria)",
@@ -3621,7 +3604,7 @@
     "logics": [
       {
         "trigger": "DAK, Persistent symptoms",
-        "positiveValue": "DAK, Pain - Low back",
+        "positiveValue": "DAK, Pain - Pelvic",
         "negativeValue": [
           "DAK, Contractions",
           "DAK, Pain - During urination (dysuria)",
@@ -3637,6 +3620,23 @@
   {
     "logics": [
       {
+        "trigger": "DAK, Persistent symptoms",
+        "positiveValue": "DAK, Pain - Low back",
+        "negativeValue": [
+          "DAK, Contractions",
+          "DAK, Pain - During urination (dysuria)",
+          "DAK, Pain - Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)"
+        ],
+        "operator": "exclude"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Regular exercise, physiotherapy and support belts to relieve low back and pelvic pain",
+    "logic_key": 295
+  },
+  {
+    "logics": [
+      {
         "trigger": "DAK, Current symptoms",
         "value": "DAK, Constipation",
         "operator": "="
@@ -3644,7 +3644,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Dietary modifications to relieve constipation",
-    "logic_key": 295
+    "logic_key": 296
   },
   {
     "logics": [
@@ -3656,24 +3656,12 @@
     ],
     "action": "show",
     "dependent": "DAK, Use of wheat bran or other fibre supplements to relieve constipation",
-    "logic_key": 296
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Current symptoms",
-        "value": "DAK, Pain - Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Regular exercise, physiotherapy and support belts to relieve low back and pelvic pain",
     "logic_key": 297
   },
   {
     "logics": [
       {
-        "trigger": "DAK, Persistent symptoms",
+        "trigger": "DAK, Current symptoms",
         "value": "DAK, Pain - Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)",
         "operator": "="
       }
@@ -3686,15 +3674,12 @@
     "logics": [
       {
         "trigger": "DAK, Persistent symptoms",
-        "positiveValue": "DAK, Varicose veins",
-        "negativeValue": [
-          "DAK, Pain - Leg"
-        ],
-        "operator": "exclude"
+        "value": "DAK, Pain - Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)",
+        "operator": "="
       }
     ],
     "action": "show",
-    "dependent": "DAK,  Non-pharmacological options for varicose veins and oedema",
+    "dependent": "DAK, Regular exercise, physiotherapy and support belts to relieve low back and pelvic pain",
     "logic_key": 299
   },
   {
@@ -3703,7 +3688,7 @@
         "trigger": "DAK, Persistent symptoms",
         "positiveValue": "DAK, Varicose veins",
         "negativeValue": [
-          "DAK, Oedema"
+          "DAK, Pain - Leg"
         ],
         "operator": "exclude"
       }
@@ -3715,10 +3700,10 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Current symptoms",
+        "trigger": "DAK, Persistent symptoms",
         "positiveValue": "DAK, Varicose veins",
         "negativeValue": [
-          "DAK, Pain - Leg"
+          "DAK, Oedema"
         ],
         "operator": "exclude"
       }
@@ -3733,7 +3718,7 @@
         "trigger": "DAK, Current symptoms",
         "positiveValue": "DAK, Varicose veins",
         "negativeValue": [
-          "DAK, Oedema"
+          "DAK, Pain - Leg"
         ],
         "operator": "exclude"
       }
@@ -3745,13 +3730,16 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Reason for coming to facility",
-        "value": "DAK, First antenatal care contact",
-        "operator": "="
+        "trigger": "DAK, Current symptoms",
+        "positiveValue": "DAK, Varicose veins",
+        "negativeValue": [
+          "DAK, Oedema"
+        ],
+        "operator": "exclude"
       }
     ],
     "action": "show",
-    "dependent": "DAK, Obstetric history category",
+    "dependent": "DAK,  Non-pharmacological options for varicose veins and oedema",
     "logic_key": 303
   },
   {
@@ -3763,8 +3751,20 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Medical history",
+    "dependent": "DAK, Obstetric history category",
     "logic_key": 304
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Medical history",
+    "logic_key": 305
   },
   {
     "logics": [
@@ -3776,7 +3776,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on HIV positive",
-    "logic_key": 305
+    "logic_key": 306
   },
   {
     "logics": [
@@ -3788,7 +3788,7 @@
     ],
     "action": "show",
     "dependent": "DAK, tobacco reduction",
-    "logic_key": 306
+    "logic_key": 307
   },
   {
     "logics": [
@@ -3800,7 +3800,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on hepatitis B positive",
-    "logic_key": 307
+    "logic_key": 308
   },
   {
     "logics": [
@@ -3812,7 +3812,7 @@
     ],
     "action": "show",
     "dependent": "DAK, tobacco reduction",
-    "logic_key": 308
+    "logic_key": 309
   },
   {
     "logics": [
@@ -3824,7 +3824,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on hepatitis B positive",
-    "logic_key": 309
+    "logic_key": 310
   },
   {
     "logics": [
@@ -3836,7 +3836,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on hepatitis C positive",
-    "logic_key": 310
+    "logic_key": 311
   },
   {
     "logics": [
@@ -3848,7 +3848,7 @@
     ],
     "action": "show",
     "dependent": "DAK, seven-day antibiotic regimen for asymptomatic bacteriuria (ASB) not provided",
-    "logic_key": 311
+    "logic_key": 312
   },
   {
     "logics": [
@@ -3860,7 +3860,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on TB screening positive",
-    "logic_key": 312
+    "logic_key": 313
   },
   {
     "logics": [
@@ -3872,7 +3872,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Second-hand smoke",
-    "logic_key": 313
+    "logic_key": 314
   },
   {
     "logics": [
@@ -3884,7 +3884,7 @@
     ],
     "action": "show",
     "dependent": "DAK, tobacco reduction",
-    "logic_key": 314
+    "logic_key": 315
   },
   {
     "logics": [
@@ -3896,7 +3896,7 @@
     ],
     "action": "show",
     "dependent": "DAK, tobacco reduction",
-    "logic_key": 315
+    "logic_key": 316
   },
   {
     "logics": [
@@ -3908,7 +3908,7 @@
     ],
     "action": "show",
     "dependent": "DAK,  Condom use",
-    "logic_key": 316
+    "logic_key": 317
   },
   {
     "logics": [
@@ -3920,7 +3920,7 @@
     ],
     "action": "show",
     "dependent": "DAK,  Condom use",
-    "logic_key": 317
+    "logic_key": 318
   },
   {
     "logics": [
@@ -3932,7 +3932,7 @@
     ],
     "action": "show",
     "dependent": "DAK,  Condom use",
-    "logic_key": 318
+    "logic_key": 319
   },
   {
     "logics": [
@@ -3944,7 +3944,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Substance use",
-    "logic_key": 319
+    "logic_key": 320
   },
   {
     "logics": [
@@ -3956,7 +3956,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Substance use",
-    "logic_key": 320
+    "logic_key": 321
   },
   {
     "logics": [
@@ -3968,7 +3968,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Substance use",
-    "logic_key": 321
+    "logic_key": 322
   },
   {
     "logics": [
@@ -3980,7 +3980,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Substance use",
-    "logic_key": 322
+    "logic_key": 323
   },
   {
     "logics": [
@@ -3992,7 +3992,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Substance use",
-    "logic_key": 323
+    "logic_key": 324
   },
   {
     "logics": [
@@ -4005,7 +4005,7 @@
     ],
     "action": "required",
     "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
-    "logic_key": 324
+    "logic_key": 325
   },
   {
     "logics": [
@@ -4018,24 +4018,12 @@
     ],
     "action": "required",
     "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
-    "logic_key": 325
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Fasting Blood sugar test result",
-        "value": 126,
-        "operator": ">="
-      }
-    ],
-    "action": "required",
-    "dependent": "DAK, Counselling conducted on diabetes mellitus (DM)",
     "logic_key": 326
   },
   {
     "logics": [
       {
-        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+        "trigger": "DAK, Fasting Blood sugar test result",
         "value": 126,
         "operator": ">="
       }
@@ -4047,8 +4035,8 @@
   {
     "logics": [
       {
-        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u00e2\u20ac\u201c 1 hour test result",
-        "value": 200,
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+        "value": 126,
         "operator": ">="
       }
     ],
@@ -4059,7 +4047,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u00e2\u20ac\u201c 2 hours test result",
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u00e2\u20ac\u201c 1 hour test result",
         "value": 200,
         "operator": ">="
       }
@@ -4071,7 +4059,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Random blood sugar test result",
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u00e2\u20ac\u201c 2 hours test result",
         "value": 200,
         "operator": ">="
       }
@@ -4083,20 +4071,19 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Fasting Blood sugar test result",
-        "minValue": 92,
-        "maxValue": 126,
-        "operator": "between, <=, <"
+        "trigger": "DAK, Random blood sugar test result",
+        "value": 200,
+        "operator": ">="
       }
     ],
     "action": "required",
-    "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
+    "dependent": "DAK, Counselling conducted on diabetes mellitus (DM)",
     "logic_key": 331
   },
   {
     "logics": [
       {
-        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+        "trigger": "DAK, Fasting Blood sugar test result",
         "minValue": 92,
         "maxValue": 126,
         "operator": "between, <=, <"
@@ -4109,23 +4096,14 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Pregnancy confirmed",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Syphilis test result",
-        "value": "DAK, Syphilis positive",
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Syphilis test type",
-        "value": "DAK, Rapid plasma reagin (RPR) test",
-        "operator": "="
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+        "minValue": 92,
+        "maxValue": 126,
+        "operator": "between, <=, <"
       }
     ],
-    "action": "show",
-    "dependent": "DAK, Syphilis counselling and treatment",
+    "action": "required",
+    "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
     "logic_key": 333
   },
   {
@@ -4142,7 +4120,7 @@
       },
       {
         "trigger": "DAK, Syphilis test type",
-        "value": "DAK, VDRL",
+        "value": "DAK, Rapid plasma reagin (RPR) test",
         "operator": "="
       }
     ],
@@ -4164,13 +4142,35 @@
       },
       {
         "trigger": "DAK, Syphilis test type",
+        "value": "DAK, VDRL",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Syphilis counselling and treatment",
+    "logic_key": 335
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy confirmed",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Syphilis test result",
+        "value": "DAK, Syphilis positive",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Syphilis test type",
         "value": "DAK, Rapid plasma reagin (RPR) test",
         "operator": "="
       }
     ],
     "action": "show",
     "dependent": "DAK, Syphilis counselling, treatment and further testing",
-    "logic_key": 335
+    "logic_key": 336
   },
   {
     "logics": [
@@ -4192,7 +4192,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Syphilis counselling, treatment and further testing",
-    "logic_key": 336
+    "logic_key": 337
   },
   {
     "logics": [
@@ -4204,7 +4204,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Blood haemoglobin test ordered",
-    "logic_key": 337
+    "logic_key": 338
   },
   {
     "logics": [
@@ -4216,7 +4216,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Pre-eclampsia risk counselling provided",
-    "logic_key": 338
+    "logic_key": 339
   },
   {
     "logics": [
@@ -4228,7 +4228,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Pre-eclampsia risk counselling provided",
-    "logic_key": 339
+    "logic_key": 340
   },
   {
     "logics": [
@@ -4245,7 +4245,7 @@
     ],
     "action": "show",
     "dependent": "DAK, HIV category",
-    "logic_key": 340
+    "logic_key": 341
   },
   {
     "logics": [
@@ -4257,7 +4257,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Oxygen Saturation",
-    "logic_key": 341
+    "logic_key": 342
   },
   {
     "logics": [
@@ -4269,7 +4269,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Oxygen Saturation",
-    "logic_key": 342
+    "logic_key": 343
   },
   {
     "logics": [
@@ -4281,7 +4281,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Oxygen Saturation",
-    "logic_key": 343
+    "logic_key": 344
   },
   {
     "logics": [
@@ -4293,7 +4293,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Oxygen Saturation",
-    "logic_key": 344
+    "logic_key": 345
   },
   {
     "logics": [
@@ -4305,7 +4305,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Oxygen Saturation",
-    "logic_key": 345
+    "logic_key": 346
   },
   {
     "logics": [
@@ -4317,7 +4317,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Oxygen Saturation",
-    "logic_key": 346
+    "logic_key": 347
   },
   {
     "logics": [
@@ -4329,7 +4329,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Oxygen Saturation",
-    "logic_key": 347
+    "logic_key": 348
   },
   {
     "logics": [
@@ -4341,25 +4341,13 @@
     ],
     "action": "show",
     "dependent": "DAK, Urine category",
-    "logic_key": 348
+    "logic_key": 349
   },
   {
     "logics": [
       {
         "trigger": "DAK, Repeat systolic blood pressure",
         "value": 140,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Urine category",
-    "logic_key": 349
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Diastolic blood pressure",
-        "value": 90,
         "operator": ">="
       }
     ],
@@ -4382,6 +4370,18 @@
   {
     "logics": [
       {
+        "trigger": "DAK, Diastolic blood pressure",
+        "value": 90,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Urine category",
+    "logic_key": 352
+  },
+  {
+    "logics": [
+      {
         "trigger": "DAK, Reason for coming to facility",
         "value": "DAK, First antenatal care contact",
         "operator": "="
@@ -4389,7 +4389,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Urine category",
-    "logic_key": 352
+    "logic_key": 353
   },
   {
     "logics": [
@@ -4401,7 +4401,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Urine category",
-    "logic_key": 353
+    "logic_key": 354
   },
   {
     "logics": [
@@ -4413,7 +4413,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Urine category",
-    "logic_key": 354
+    "logic_key": 355
   },
   {
     "logics": [
@@ -4425,7 +4425,7 @@
     ],
     "action": "show",
     "dependent": "DAK, TB screening recommended",
-    "logic_key": 355
+    "logic_key": 356
   },
   {
     "logics": [
@@ -4442,7 +4442,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Increasing daily energy and protein intake",
-    "logic_key": 356
+    "logic_key": 357
   },
   {
     "logics": [
@@ -4454,18 +4454,6 @@
     ],
     "action": "show",
     "dependent": "DAK, IPV",
-    "logic_key": 357
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Rh factor",
-        "value": "DAK, Rh negative",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Danger sign",
     "logic_key": 358
   },
   {
@@ -4477,7 +4465,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, ANC contacts",
+    "dependent": "DAK, Danger sign",
     "logic_key": 359
   },
   {
@@ -4495,13 +4483,13 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Pregnancy confirmed",
-        "value": true,
+        "trigger": "DAK, Rh factor",
+        "value": "DAK, Rh negative",
         "operator": "="
       }
     ],
     "action": "show",
-    "dependent": "DAK, Birth Plan",
+    "dependent": "DAK, ANC contacts",
     "logic_key": 361
   },
   {
@@ -4513,8 +4501,20 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Breast feeding",
+    "dependent": "DAK, Birth Plan",
     "logic_key": 362
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy confirmed",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Breast feeding",
+    "logic_key": 363
   },
   {
     "logics": [
@@ -4526,7 +4526,7 @@
     ],
     "action": "show",
     "dependent": "DAK, TD immunization",
-    "logic_key": 363
+    "logic_key": 364
   },
   {
     "logics": [
@@ -4538,7 +4538,7 @@
     ],
     "action": "show",
     "dependent": "DAK, TD immunization",
-    "logic_key": 364
+    "logic_key": 365
   },
   {
     "logics": [
@@ -4550,7 +4550,7 @@
     ],
     "action": "show",
     "dependent": "DAK, TD immunization",
-    "logic_key": 365
+    "logic_key": 366
   },
   {
     "logics": [
@@ -4562,18 +4562,6 @@
     ],
     "action": "show",
     "dependent": "DAK, TD immunization",
-    "logic_key": 366
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Pregnancy confirmed",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Deworming",
     "logic_key": 367
   },
   {
@@ -4591,6 +4579,18 @@
   {
     "logics": [
       {
+        "trigger": "DAK, Pregnancy confirmed",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Deworming",
+    "logic_key": 369
+  },
+  {
+    "logics": [
+      {
         "trigger": "Malaria-endemic setting",
         "value": true,
         "operator": "="
@@ -4598,7 +4598,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling on malaria prevention",
-    "logic_key": 369
+    "logic_key": 370
   },
   {
     "logics": [
@@ -4610,7 +4610,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason for refferal",
-    "logic_key": 370
+    "logic_key": 371
   },
   {
     "logics": [
@@ -4622,7 +4622,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Treatment Given",
-    "logic_key": 371
+    "logic_key": 372
   },
   {
     "logics": [
@@ -4634,7 +4634,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on malaria prevention",
-    "logic_key": 372
+    "logic_key": 373
   },
   {
     "logics": [
@@ -4647,7 +4647,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Second fetal heart rate",
-    "logic_key": 373
+    "logic_key": 374
   },
   {
     "logics": [
@@ -4659,25 +4659,13 @@
     ],
     "action": "show",
     "dependent": "DAK, Has side-effects from iron and folic acid supplements",
-    "logic_key": 374
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
-        "operator": "="
-      }
-    ],
-    "action": "required",
-    "dependent": "DAK, Delivery date",
     "logic_key": 375
   },
   {
     "logics": [
       {
         "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Stillbirth",
+        "value": "DAK, Live birth",
         "operator": "="
       }
     ],
@@ -4694,14 +4682,14 @@
       }
     ],
     "action": "required",
-    "dependent": "DAK, Place of delivery",
+    "dependent": "DAK, Delivery date",
     "logic_key": 377
   },
   {
     "logics": [
       {
         "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
+        "value": "DAK, Stillbirth",
         "operator": "="
       }
     ],
@@ -4718,14 +4706,14 @@
       }
     ],
     "action": "required",
-    "dependent": "DAK, Delivery mode",
+    "dependent": "DAK, Place of delivery",
     "logic_key": 379
   },
   {
     "logics": [
       {
         "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Stillbirth",
+        "value": "DAK, Live birth",
         "operator": "="
       }
     ],
@@ -4737,31 +4725,31 @@
     "logics": [
       {
         "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
+        "value": "DAK, Stillbirth",
         "operator": "="
       }
     ],
     "action": "required",
-    "dependent": "DAK, Birth weight",
+    "dependent": "DAK, Delivery mode",
     "logic_key": 381
   },
   {
     "logics": [
       {
         "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Stillbirth",
+        "value": "DAK, Live birth",
         "operator": "="
       }
     ],
     "action": "required",
-    "dependent": "DAK, Delivery complications",
+    "dependent": "DAK, Birth weight",
     "logic_key": 382
   },
   {
     "logics": [
       {
         "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
+        "value": "DAK, Stillbirth",
         "operator": "="
       }
     ],
@@ -4773,13 +4761,25 @@
     "logics": [
       {
         "trigger": "DAK, Reason for closing ANC record",
+        "value": "DAK, Live birth",
+        "operator": "="
+      }
+    ],
+    "action": "required",
+    "dependent": "DAK, Delivery complications",
+    "logic_key": 384
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for closing ANC record",
         "value": "DAK, Miscarriage",
         "operator": "="
       }
     ],
     "action": "required",
     "dependent": "DAK, Date of miscarriage or abortion",
-    "logic_key": 384
+    "logic_key": 385
   },
   {
     "logics": [
@@ -4791,7 +4791,7 @@
     ],
     "action": "required",
     "dependent": "DAK, Date of miscarriage or abortion",
-    "logic_key": 385
+    "logic_key": 386
   },
   {
     "logics": [
@@ -4803,18 +4803,6 @@
     ],
     "action": "required",
     "dependent": "DAK, Number of fetuses unknown",
-    "logic_key": 386
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Death",
-        "operator": "="
-      }
-    ],
-    "action": "required",
-    "dependent": "DAK, Date of death",
     "logic_key": 387
   },
   {
@@ -4826,8 +4814,20 @@
       }
     ],
     "action": "required",
-    "dependent": "DAK, Cause of death",
+    "dependent": "DAK, Date of death",
     "logic_key": 388
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for closing ANC record",
+        "value": "DAK, Death",
+        "operator": "="
+      }
+    ],
+    "action": "required",
+    "dependent": "DAK, Cause of death",
+    "logic_key": 389
   },
   {
     "logics": [
@@ -4839,7 +4839,7 @@
     ],
     "action": "required",
     "dependent": "DAK, Preterm Birth",
-    "logic_key": 389
+    "logic_key": 390
   },
   {
     "logics": [
@@ -4851,7 +4851,7 @@
     ],
     "action": "required",
     "dependent": "DAK, Preterm Birth",
-    "logic_key": 390
+    "logic_key": 391
   },
   {
     "logics": [
@@ -4863,7 +4863,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Family planning",
-    "logic_key": 391
+    "logic_key": 392
   },
   {
     "logics": [
@@ -4880,7 +4880,7 @@
     ],
     "action": "noneRequired",
     "dependent": "DAK, Delivery date",
-    "logic_key": 392
+    "logic_key": 393
   },
   {
     "logics": [
@@ -4897,23 +4897,6 @@
     ],
     "action": "noneRequired",
     "dependent": "DAK, Place of delivery",
-    "logic_key": 393
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
-        "operator": "!="
-      },
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Stillbirth",
-        "operator": "!="
-      }
-    ],
-    "action": "noneRequired",
-    "dependent": "DAK, Delivery mode",
     "logic_key": 394
   },
   {
@@ -4930,8 +4913,25 @@
       }
     ],
     "action": "noneRequired",
-    "dependent": "DAK, Birth weight",
+    "dependent": "DAK, Delivery mode",
     "logic_key": 395
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for closing ANC record",
+        "value": "DAK, Live birth",
+        "operator": "!="
+      },
+      {
+        "trigger": "DAK, Reason for closing ANC record",
+        "value": "DAK, Stillbirth",
+        "operator": "!="
+      }
+    ],
+    "action": "noneRequired",
+    "dependent": "DAK, Birth weight",
+    "logic_key": 396
   },
   {
     "logics": [
@@ -4943,7 +4943,7 @@
     ],
     "action": "noneRequired",
     "dependent": "DAK, Delivery complications",
-    "logic_key": 396
+    "logic_key": 397
   },
   {
     "logics": [
@@ -4960,7 +4960,7 @@
     ],
     "action": "noneRequired",
     "dependent": "DAK, Date of miscarriage or abortion",
-    "logic_key": 397
+    "logic_key": 398
   },
   {
     "logics": [
@@ -4972,18 +4972,6 @@
     ],
     "action": "noneRequired",
     "dependent": "DAK, Number of fetuses unknown",
-    "logic_key": 398
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Death",
-        "operator": "!="
-      }
-    ],
-    "action": "noneRequired",
-    "dependent": "DAK, Date of death",
     "logic_key": 399
   },
   {
@@ -4995,8 +4983,20 @@
       }
     ],
     "action": "noneRequired",
-    "dependent": "DAK, Cause of death",
+    "dependent": "DAK, Date of death",
     "logic_key": 400
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for closing ANC record",
+        "value": "DAK, Death",
+        "operator": "!="
+      }
+    ],
+    "action": "noneRequired",
+    "dependent": "DAK, Cause of death",
+    "logic_key": 401
   },
   {
     "logics": [
@@ -5008,7 +5008,7 @@
     ],
     "action": "noneRequired",
     "dependent": "DAK, Preterm Birth",
-    "logic_key": 401
+    "logic_key": 402
   },
   {
     "logics": [
@@ -5020,7 +5020,7 @@
     ],
     "action": "noneRequired",
     "dependent": "DAK, Preterm Birth",
-    "logic_key": 402
+    "logic_key": 403
   },
   {
     "logics": [
@@ -5032,7 +5032,7 @@
     ],
     "action": "show",
     "dependent": "DAK, caffeine reduction",
-    "logic_key": 403
+    "logic_key": 404
   },
   {
     "logics": [
@@ -5044,7 +5044,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Second-hand smoke",
-    "logic_key": 404
+    "logic_key": 405
   },
   {
     "logics": [
@@ -5056,7 +5056,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 405
+    "logic_key": 406
   },
   {
     "logics": [
@@ -5068,7 +5068,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 406
+    "logic_key": 407
   },
   {
     "logics": [
@@ -5080,7 +5080,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 407
+    "logic_key": 408
   },
   {
     "logics": [
@@ -5092,7 +5092,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 408
+    "logic_key": 409
   },
   {
     "logics": [
@@ -5104,7 +5104,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 409
+    "logic_key": 410
   },
   {
     "logics": [
@@ -5116,7 +5116,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 410
+    "logic_key": 411
   },
   {
     "logics": [
@@ -5128,7 +5128,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 411
+    "logic_key": 412
   },
   {
     "logics": [
@@ -5140,7 +5140,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 412
+    "logic_key": 413
   },
   {
     "logics": [
@@ -5152,7 +5152,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 413
+    "logic_key": 414
   },
   {
     "logics": [
@@ -5164,7 +5164,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 414
+    "logic_key": 415
   },
   {
     "logics": [
@@ -5176,7 +5176,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 415
+    "logic_key": 416
   },
   {
     "logics": [
@@ -5188,7 +5188,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 416
+    "logic_key": 417
   },
   {
     "logics": [
@@ -5200,7 +5200,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 417
+    "logic_key": 418
   },
   {
     "logics": [
@@ -5212,7 +5212,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 418
+    "logic_key": 419
   },
   {
     "logics": [
@@ -5224,7 +5224,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 419
+    "logic_key": 420
   },
   {
     "logics": [
@@ -5236,7 +5236,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 420
+    "logic_key": 421
   },
   {
     "logics": [
@@ -5248,7 +5248,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 421
+    "logic_key": 422
   },
   {
     "logics": [
@@ -5260,7 +5260,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 422
+    "logic_key": 423
   },
   {
     "logics": [
@@ -5272,7 +5272,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 423
+    "logic_key": 424
   },
   {
     "logics": [
@@ -5284,7 +5284,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 424
+    "logic_key": 425
   },
   {
     "logics": [
@@ -5296,7 +5296,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 425
+    "logic_key": 426
   },
   {
     "logics": [
@@ -5308,7 +5308,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 426
+    "logic_key": 427
   },
   {
     "logics": [
@@ -5320,7 +5320,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 427
+    "logic_key": 428
   },
   {
     "logics": [
@@ -5332,7 +5332,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 428
+    "logic_key": 429
   },
   {
     "logics": [
@@ -5344,7 +5344,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 429
+    "logic_key": 430
   },
   {
     "logics": [
@@ -5356,7 +5356,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-    "logic_key": 430
+    "logic_key": 431
   },
   {
     "logics": [
@@ -5378,7 +5378,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Referral for screening including diagnostics and lab testing",
-    "logic_key": 431
+    "logic_key": 432
   },
   {
     "logics": [
@@ -5390,7 +5390,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on Rh factor negative",
-    "logic_key": 432
+    "logic_key": 433
   },
   {
     "logics": [
@@ -5402,7 +5402,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Fasting Blood sugar test result",
-    "logic_key": 433
+    "logic_key": 434
   },
   {
     "logics": [
@@ -5414,7 +5414,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Random blood sugar test result",
-    "logic_key": 434
+    "logic_key": 435
   },
   {
     "logics": [
@@ -5427,7 +5427,7 @@
     ],
     "action": "noneRequired",
     "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
-    "logic_key": 435
+    "logic_key": 436
   },
   {
     "logics": [
@@ -5440,24 +5440,12 @@
     ],
     "action": "noneRequired",
     "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
-    "logic_key": 436
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Fasting Blood sugar test result",
-        "value": 126,
-        "operator": "<"
-      }
-    ],
-    "action": "noneRequired",
-    "dependent": "DAK, Counselling conducted on diabetes mellitus (DM)",
     "logic_key": 437
   },
   {
     "logics": [
       {
-        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+        "trigger": "DAK, Fasting Blood sugar test result",
         "value": 126,
         "operator": "<"
       }
@@ -5469,8 +5457,8 @@
   {
     "logics": [
       {
-        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u00e2\u20ac\u201c 1 hour test result",
-        "value": 200,
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+        "value": 126,
         "operator": "<"
       }
     ],
@@ -5481,7 +5469,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u00e2\u20ac\u201c 2 hours test result",
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u00e2\u20ac\u201c 1 hour test result",
         "value": 200,
         "operator": "<"
       }
@@ -5493,7 +5481,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Random blood sugar test result",
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u00e2\u20ac\u201c 2 hours test result",
         "value": 200,
         "operator": "<"
       }
@@ -5505,20 +5493,19 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Fasting Blood sugar test result",
-        "minValue": 92,
-        "maxValue": 126,
-        "operator": "beyond, <, <="
+        "trigger": "DAK, Random blood sugar test result",
+        "value": 200,
+        "operator": "<"
       }
     ],
     "action": "noneRequired",
-    "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
+    "dependent": "DAK, Counselling conducted on diabetes mellitus (DM)",
     "logic_key": 442
   },
   {
     "logics": [
       {
-        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+        "trigger": "DAK, Fasting Blood sugar test result",
         "minValue": 92,
         "maxValue": 126,
         "operator": "beyond, <, <="
@@ -5531,13 +5518,14 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Reason for coming to facility",
-        "value": "DAK, First antenatal care contact",
-        "operator": "="
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+        "minValue": 92,
+        "maxValue": 126,
+        "operator": "beyond, <, <="
       }
     ],
-    "action": "show",
-    "dependent": "DAK, Blood type category",
+    "action": "noneRequired",
+    "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
     "logic_key": 444
   },
   {
@@ -5549,8 +5537,20 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Syphilis category",
+    "dependent": "DAK, Blood type category",
     "logic_key": 445
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Syphilis category",
+    "logic_key": 446
   },
   {
     "logics": [
@@ -5562,7 +5562,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Blood haemoglobin category",
-    "logic_key": 446
+    "logic_key": 447
   },
   {
     "logics": [
@@ -5574,7 +5574,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Blood haemoglobin category",
-    "logic_key": 447
+    "logic_key": 448
   },
   {
     "logics": [
@@ -5586,7 +5586,7 @@
     ],
     "action": "show",
     "dependent": "DAK, TB screening category",
-    "logic_key": 448
+    "logic_key": 449
   },
   {
     "logics": [
@@ -5603,7 +5603,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Medication follow-up",
-    "logic_key": 449
+    "logic_key": 450
   },
   {
     "logics": [
@@ -5625,7 +5625,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Medication follow-up",
-    "logic_key": 450
+    "logic_key": 451
   },
   {
     "logics": [
@@ -5642,7 +5642,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Medication follow-up",
-    "logic_key": 451
+    "logic_key": 452
   },
   {
     "logics": [
@@ -5659,7 +5659,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Medication follow-up",
-    "logic_key": 452
+    "logic_key": 453
   },
   {
     "logics": [
@@ -5676,7 +5676,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Medication follow-up",
-    "logic_key": 453
+    "logic_key": 454
   },
   {
     "logics": [
@@ -5693,7 +5693,7 @@
     ],
     "action": "show",
     "dependent": "DAK, HIV risk",
-    "logic_key": 454
+    "logic_key": 455
   },
   {
     "logics": [
@@ -5715,7 +5715,7 @@
     ],
     "action": "show",
     "dependent": "DAK, HIV risk",
-    "logic_key": 455
+    "logic_key": 456
   },
   {
     "logics": [
@@ -5727,7 +5727,7 @@
     ],
     "action": "show",
     "dependent": "DAK, HIV risk",
-    "logic_key": 456
+    "logic_key": 457
   },
   {
     "logics": [
@@ -5739,7 +5739,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Date of miscarriage or abortion",
-    "logic_key": 457
+    "logic_key": 458
   },
   {
     "logics": [
@@ -5751,18 +5751,6 @@
     ],
     "action": "show",
     "dependent": "DAK, Date of miscarriage or abortion",
-    "logic_key": 458
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Death",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Date of death",
     "logic_key": 459
   },
   {
@@ -5774,8 +5762,20 @@
       }
     ],
     "action": "show",
-    "dependent": "Cause of death",
+    "dependent": "DAK, Date of death",
     "logic_key": 460
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for closing ANC record",
+        "value": "DAK, Death",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "Cause of death",
+    "logic_key": 461
   },
   {
     "logics": [
@@ -5787,7 +5787,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Intimate partner violence (IPV)",
-    "logic_key": 461
+    "logic_key": 462
   },
   {
     "logics": [
@@ -5799,7 +5799,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Second-hand smoke",
-    "logic_key": 462
+    "logic_key": 463
   },
   {
     "logics": [
@@ -5811,7 +5811,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Substance use",
-    "logic_key": 463
+    "logic_key": 464
   },
   {
     "logics": [
@@ -5823,7 +5823,7 @@
     ],
     "action": "required",
     "dependent": "DAK, BMI",
-    "logic_key": 464
+    "logic_key": 465
   },
   {
     "logics": [
@@ -5835,7 +5835,7 @@
     ],
     "action": "noneRequired",
     "dependent": "DAK, BMI",
-    "logic_key": 465
+    "logic_key": 466
   },
   {
     "logics": [
@@ -5859,7 +5859,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on hypertension",
-    "logic_key": 466
+    "logic_key": 467
   },
   {
     "logics": [
@@ -5883,7 +5883,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on hypertension",
-    "logic_key": 467
+    "logic_key": 468
   },
   {
     "logics": [
@@ -5907,7 +5907,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on hypertension",
-    "logic_key": 468
+    "logic_key": 469
   },
   {
     "logics": [
@@ -5920,7 +5920,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
-    "logic_key": 469
+    "logic_key": 470
   },
   {
     "logics": [
@@ -5933,7 +5933,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
-    "logic_key": 470
+    "logic_key": 471
   },
   {
     "logics": [
@@ -5946,7 +5946,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
-    "logic_key": 471
+    "logic_key": 472
   },
   {
     "logics": [
@@ -5959,7 +5959,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
-    "logic_key": 472
+    "logic_key": 473
   },
   {
     "logics": [
@@ -5971,7 +5971,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "logic_key": 473
+    "logic_key": 474
   },
   {
     "logics": [
@@ -5983,7 +5983,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "logic_key": 474
+    "logic_key": 475
   },
   {
     "logics": [
@@ -5995,7 +5995,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "logic_key": 475
+    "logic_key": 476
   },
   {
     "logics": [
@@ -6007,7 +6007,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "logic_key": 476
+    "logic_key": 477
   },
   {
     "logics": [
@@ -6019,6 +6019,1102 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "logic_key": 477
+    "logic_key": 478
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 24,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Ultrasound category",
+    "logic_key": 479
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Ultrasound scan conducted",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "Ultrasound available at the health-care facility",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 24,
+        "operator": "<"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Referral for screening including diagnostics and lab testing",
+    "logic_key": 480
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Ultrasound scan conducted",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "Ultrasound available at the health-care facility",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 24,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Ultrasound category",
+    "logic_key": 481
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Ultrasound scan conducted",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "Ultrasound available at the health-care facility",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 24,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Ultrasound category",
+    "logic_key": 482
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy confirmed",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 30.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, HIV status",
+        "value": "DAK, HIV negative",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, HIV test conducted",
+    "logic_key": 483
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, HIV status",
+        "value": "DAK, HIV positive",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, HIV test required",
+    "logic_key": 484
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy confirmed",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Hepatitis B test required",
+    "logic_key": 485
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy confirmed",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Hepatitis C test required",
+    "logic_key": 486
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 30,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Syphilis test required",
+    "logic_key": 487
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Syphilis diagnosis",
+        "value": "DAK, Syphilis positive",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Syphilis test required",
+    "logic_key": 488
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Repeat diastolic blood pressure",
+        "value": 90,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Urine category",
+    "logic_key": 489
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Repeat diastolic blood pressure",
+        "value": 90,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Urine test type",
+    "logic_key": 490
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Repeat systolic blood pressure",
+        "value": 140,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Urine test type",
+    "logic_key": 491
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": "<"
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 12,
+        "operator": "<="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on anaemia",
+    "logic_key": 492
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": "<"
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 12,
+        "operator": "<="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of iron prescribed",
+    "logic_key": 493
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": "<"
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 12,
+        "operator": "<="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Type of iron supplement dosage provided",
+    "logic_key": 494
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": "<"
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 12,
+        "operator": "<="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of daily dose of folic acid prescribed",
+    "logic_key": 495
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": "<"
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on anaemia",
+    "logic_key": 496
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": "<"
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of iron prescribed",
+    "logic_key": 497
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": "<"
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Type of iron supplement dosage provided",
+    "logic_key": 498
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": "<"
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of daily dose of folic acid prescribed",
+    "logic_key": 499
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 10.5,
+        "operator": "<"
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "minValue": 13.0,
+        "maxValue": 27.0,
+        "operator": "between, <=, <="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on anaemia",
+    "logic_key": 500
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 10.5,
+        "operator": "<"
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "minValue": 13.0,
+        "maxValue": 27.0,
+        "operator": "between, <=, <="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of iron prescribed",
+    "logic_key": 501
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 10.5,
+        "operator": "<"
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "minValue": 13.0,
+        "maxValue": 27.0,
+        "operator": "between, <=, <="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Type of iron supplement dosage provided",
+    "logic_key": 502
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 10.5,
+        "operator": "<"
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "minValue": 13.0,
+        "maxValue": 27.0,
+        "operator": "between, <=, <="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of daily dose of folic acid prescribed",
+    "logic_key": 503
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test conducted",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Pallor",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on anaemia",
+    "logic_key": 504
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test conducted",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Pallor",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of iron prescribed",
+    "logic_key": 505
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test conducted",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Pallor",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Type of iron supplement dosage provided",
+    "logic_key": 506
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test conducted",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Pallor",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of daily dose of folic acid prescribed",
+    "logic_key": 507
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 40.0,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on anaemia",
+    "logic_key": 508
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 40.0,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of iron prescribed",
+    "logic_key": 509
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 40.0,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Type of iron supplement dosage provided",
+    "logic_key": 510
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 40.0,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of daily dose of folic acid prescribed",
+    "logic_key": 511
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 40.0,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on anaemia",
+    "logic_key": 512
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 40.0,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of iron prescribed",
+    "logic_key": 513
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 40.0,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Type of iron supplement dosage provided",
+    "logic_key": 514
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 40.0,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of daily dose of folic acid prescribed",
+    "logic_key": 515
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 10.5,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "minValue": 13.0,
+        "maxValue": 27.0,
+        "operator": "between, <=, <="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 40.0,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on anaemia",
+    "logic_key": 516
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 10.5,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "minValue": 13.0,
+        "maxValue": 27.0,
+        "operator": "between, <=, <="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 40.0,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of iron prescribed",
+    "logic_key": 517
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 10.5,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "minValue": 13.0,
+        "maxValue": 27.0,
+        "operator": "between, <=, <="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 40.0,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Type of iron supplement dosage provided",
+    "logic_key": 518
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 10.5,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "minValue": 13.0,
+        "maxValue": 27.0,
+        "operator": "between, <=, <="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 40.0,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of daily dose of folic acid prescribed",
+    "logic_key": 519
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test conducted",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Pallor",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 40.0,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on anaemia",
+    "logic_key": 520
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test conducted",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Pallor",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 40.0,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of iron prescribed",
+    "logic_key": 521
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test conducted",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Pallor",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 40.0,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Type of iron supplement dosage provided",
+    "logic_key": 522
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test conducted",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Pallor",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 40.0,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of daily dose of folic acid prescribed",
+    "logic_key": 523
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 20.0,
+        "operator": "<="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on anaemia",
+    "logic_key": 524
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 20.0,
+        "operator": "<="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of iron prescribed",
+    "logic_key": 525
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 20.0,
+        "operator": "<="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Type of iron supplement dosage provided",
+    "logic_key": 526
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 20.0,
+        "operator": "<="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of daily dose of folic acid prescribed",
+    "logic_key": 527
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": "<="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 20.0,
+        "operator": "<="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on anaemia",
+    "logic_key": 528
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": "<="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of iron prescribed",
+    "logic_key": 529
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": "<="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 20.0,
+        "operator": "<="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Type of iron supplement dosage provided",
+    "logic_key": 530
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 11.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": "<="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 20.0,
+        "operator": "<="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of daily dose of folic acid prescribed",
+    "logic_key": 531
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 10.5,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "minValue": 13.0,
+        "maxValue": 27.0,
+        "operator": "between, <=, <="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 20.0,
+        "operator": "<="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on anaemia",
+    "logic_key": 532
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 10.5,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "minValue": 13.0,
+        "maxValue": 27.0,
+        "operator": "between, <=, <="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 20.0,
+        "operator": "<="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of iron prescribed",
+    "logic_key": 533
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 10.5,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "minValue": 13.0,
+        "maxValue": 27.0,
+        "operator": "between, <=, <="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 20.0,
+        "operator": "<="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Type of iron supplement dosage provided",
+    "logic_key": 534
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": 10.5,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "minValue": 13.0,
+        "maxValue": 27.0,
+        "operator": "between, <=, <="
+      },
+      {
+        "trigger": "Population prevalence of anaemia",
+        "value": 20.0,
+        "operator": "<="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of daily dose of folic acid prescribed",
+    "logic_key": 535
   }
 ]
