@@ -6631,6 +6631,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
     "action": "Counselling on diabetes mellitus (DM)",
     "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
     "action_key": 427
@@ -6643,6 +6644,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
     "action": "Counselling on gestational diabetes mellitus (GDM) ",
     "annotation": "If the woman is diagnosed with GDM, provide treatment and counselling accordingly",
     "action_key": 428
@@ -6679,6 +6681,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on hepatitis C positive",
     "action": "Counselling on hepatitis C positive",
     "annotation": "'If woman tested positive for hepatitis C, provide counselling",
     "action_key": 431
@@ -6691,6 +6694,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on hepatitis B positive",
     "action": "Counselling on hepatitis B positive",
     "annotation": "If woman tested positive for hepatitis B, provide counselling",
     "action_key": 432
