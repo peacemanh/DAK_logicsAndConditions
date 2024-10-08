@@ -6557,7 +6557,8 @@
         "operator": "="
       }
     ],
-    "action": "Counselling on risk reduction ",
+    "displayPoint": "DAK, Counselling conducted on HIV risk",
+    "action": "Counselling on risk reduction",
     "annotation": "Provide counselling to reduce risk of contracting HIV if the woman is deemed to be at risk for contracting HIV",
     "action_key": 421
   },
