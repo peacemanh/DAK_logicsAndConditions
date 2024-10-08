@@ -6607,6 +6607,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on TB screening positive",
     "action": "Counselling on positive TB screening",
     "annotation": "If TB screening resut is positive, treat according to local protocol and/or refer for treatment",
     "action_key": 425
@@ -6669,7 +6670,8 @@
         "operator": "="
       }
     ],
-    "action": "'Syphilis counselling and treatment",
+    "displayPoint": "DAK, Syphilis counselling and treatment",
+    "action": "Syphilis counselling and treatment",
     "annotation": "In low prevalence areas, if a woman tests positive for syphilis simply provide treatment. In high prevalence areas, if a woman tests positive on on-site rapid syphilis test (RST), provide first dose of treatment. Then run rapid plasma reagin (RPR) test. If RPR is also positive, provide treatment according to duration of syphilis.",
     "action_key": 430
   },
