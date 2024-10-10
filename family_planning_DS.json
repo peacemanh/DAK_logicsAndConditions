@@ -10798,7 +10798,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, age (calculated)",
+        "key": "age",
         "minValue": 18.0,
         "maxValue": 45.0,
         "operator": "between"
@@ -10889,7 +10889,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Date of last birth",
+        "key": "DAK, Time since delivery",
         "value": 42,
         "operator": "<"
       }
@@ -10919,7 +10919,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Date of last birth",
+        "key": "DAK, Time since delivery",
         "value": 42,
         "operator": ">="
       }
@@ -10949,7 +10949,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Date of last birth",
+        "key": "DAK, Time since delivery",
         "value": 0.0,
         "operator": ">="
       }
