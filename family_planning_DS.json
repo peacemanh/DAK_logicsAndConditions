@@ -13221,7 +13221,7 @@
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance.\n\nDMPA is category 1 because its effectiveness is not decreased by the use of rifampicin or rifabutin.",
         "action_key": 675
-    },
+    },  
     {
         "conditions": [
             {
@@ -14664,7 +14664,7 @@
             },
             {
                 "key": "DAK, HIV/AIDS",
-                "value": "DAK, High risk of HIV disease", 
+                "value": "DAK, High risk of HIV disease",
                 "operator": "="
             }
         ],
@@ -15049,7 +15049,7 @@
             },
             {
                 "key": "DAK, Anemias",
-                "value": "DAK, Thalassemia", 
+                "value": "DAK, Thalassemia",
                 "operator": "="
             }
         ],
@@ -15270,7 +15270,7 @@
             },
             {
                 "key": "DAK, Current medications",
-                "value": "DAK, Antimicrobial therapy", 
+                "value": "DAK, Antimicrobial therapy",
                 "operator": "="
             }
         ],
@@ -17693,7 +17693,7 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time since delivery",
                 "value": 180,
                 "operator": ">="
             }
@@ -17761,12 +17761,9 @@
     {
         "conditions": [
             {
-                "key": "DAK, Method in mind",
-                "orValues": [
-                    "DAK, Male condoms",
-                    "DAK, Female condoms"
-                ],
-                "operator": "OR"
+                "key": "DAK, Method in use",
+                "value": "DAK, Male condoms OR Female condoms",
+                "operator": "="
             },
             {
                 "key": "DAK, Health condition(s)",
@@ -17774,69 +17771,60 @@
                 "operator": "="
             }
         ],
-        "action_key": 919,
         "action": "Counsel client that s/he is medically eligible for this method",
-        "annotation": "Medical eligibility criteria (MEC) category 1 \u00e2\u20ac\u201c Use method in any circumstance"
+        "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
+        "action_key": 919
     },
     {
         "conditions": [
             {
-                "key": "DAK, Method in mind",
-                "orValues": [
-                    "DAK, Male condoms",
-                    "DAK, Female condoms"
-                ],
-                "operator": "OR"
+                "key": "DAK, Method in use",
+                "value": "DAK, Male condoms OR Female condoms",
+                "operator": "="
             },
             {
-                "key": "DAK, Other infections (schistosomiasis, tuberculosis, malaria)",
+                "key": "DAK, Health condition(s)",
                 "value": "DAK, Allergy to latex",
                 "operator": "="
             }
         ],
-        "action_key": 920,
-        "action": "Counsel client that s/he is NOT medically eligible for this method.Discuss methods and options to find alternative contraception for the client.",
-        "annotation": "Medical eligibility criteria (MEC) category 3 \u00e2\u20ac\u201c Use of method not usually recommended unless other more appropriate methods are not available or acceptable.This DOES NOT APPLY to plastic condoms."
+        "action": "Counsel client that s/he is NOT medically eligible for this method.\nDiscuss methods and options to find alternative contraception for the client.",
+        "annotation": "Medical eligibility criteria (MEC) category 3 \u2013 Use of method not usually recommended unless other more appropriate methods are not available or acceptable.\n\nThis DOES NOT APPLY to plastic condoms.",
+        "action_key": 920
     },
     {
         "conditions": [
             {
-                "key": "DAK, Method in mind",
-                "orValues": [
-                    "DAK, Male condoms",
-                    "DAK, Female condoms"
-                ],
-                "operator": "OR"
+                "key": "DAK, Method in use",
+                "value": "DAK, Male condoms OR Female condoms",
+                "operator": "="
             },
             {
-                "key": "DAK, Other infections (schistosomiasis, tuberculosis, malaria)",
+                "key": "DAK, Health condition(s)",
                 "value": "DAK, Allergy to latex",
                 "operator": "!="
             }
         ],
-        "action_key": 921,
         "action": "Counsel client that s/he is medically eligible for this method",
-        "annotation": "Medical eligibility criteria (MEC) category 1 \u00e2\u20ac\u201c Use method in any circumstanceNote: If the client has any medical condition other than allergy to latex, there are no restrictions on condom use."
+        "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance\nNote: If the client has any medical condition other than allergy to latex, there are no restrictions on condom use.",
+        "action_key": 921
     },
     {
         "conditions": [
             {
-                "key": "DAK, Method in mind",
-                "orValues": [
-                    "DAK, Male condoms",
-                    "DAK, Female condoms"
-                ],
-                "operator": "OR"
+                "key": "DAK, Method in use",
+                "value": "DAK, Male condoms OR Female condoms",
+                "operator": "="
             },
             {
-                "key": "DAK, Current medications FP form",
-                "value": "null",
-                "operator": "!="
+                "key": "DAK, Current medications",
+                "value": "DAK, ANY MEDICATIONS",
+                "operator": "="
             }
         ],
-        "action_key": 922,
         "action": "Counsel client that s/he is medically eligible for this method",
-        "annotation": "Medical eligibility criteria (MEC) category 1 \u00e2\u20ac\u201c Use method in any circumstanceNote: If the client has any medical condition is taking any medication, there are no restrictions on condom use."
+        "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance\nNote: If the client has any medical condition is taking any medication, there are no restrictions on condom use.",
+        "action_key": 922
     },
     {
         "conditions": [
@@ -18310,7 +18298,7 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time since delivery",
                 "value": 42,
                 "operator": "<"
             }
@@ -18332,7 +18320,7 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time since delivery",
                 "value": 42,
                 "operator": "<"
             }
@@ -18354,7 +18342,7 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time since delivery",
                 "minValue": 42,
                 "maxValue": 180,
                 "operator": "between, <, <"
@@ -18377,7 +18365,7 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time since delivery",
                 "minValue": 42,
                 "maxValue": 180,
                 "operator": "between, <, <"
@@ -18400,7 +18388,7 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time since delivery",
                 "value": 180,
                 "operator": "<"
             },
@@ -18427,7 +18415,7 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time since delivery",
                 "value": 28,
                 "operator": "<"
             }
@@ -18449,7 +18437,7 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time since delivery",
                 "value": 28,
                 "operator": ">="
             }
@@ -18549,7 +18537,7 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time Postpartum",
                 "value": 28.0,
                 "operator": "<"
             }
@@ -18576,7 +18564,7 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time Postpartum",
                 "value": 28.0,
                 "operator": ">="
             }
@@ -19194,7 +19182,7 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time Postpartum",
                 "value": 7.0,
                 "operator": "<"
             }
@@ -19216,7 +19204,7 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time Postpartum",
                 "minValue": 7,
                 "maxValue": 42,
                 "operator": "between, <=, <="
@@ -19239,7 +19227,7 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time since delivery",
                 "value": 180.0,
                 "operator": "<"
             }
@@ -21348,8 +21336,8 @@
                 "operator": "<="
             }
         ],
-        "action": "Get informed consent",
-        "annotation": "",
+        "action": "\u2013 Assess Symptoms: Evaluate the patient’s symptoms and concerns in detail to determine if they might be related to other conditions rather than pregnancy.\n \u2013 Provide Reassurance: Since the menstrual period is not missed and it is still early in the cycle, reassure the patient that their situation may be within normal parameters, especially if they are seeking pregnancy-related testing.\n \u2013 Confirm Timing and Regularity: Verify the regularity of the patient’s menstrual cycle. Ensure the cycle tracking is accurate and consider any recent changes in cycle patterns. \n\u2013 Suggest Follow-Up: If there are concerns about pregnancy or other conditions, advise the patient to follow up in a few days or weeks, especially if symptoms persist or if their next period is missed.\n\u2013 Conduct Additional Tests: If appropriate, consider performing or recommending additional diagnostic tests based on the patient’s symptoms and medical history. \n\u2013 Provide Guidance: Offer advice on what to watch for and when to seek further medical evaluation, particularly if the patient has symptoms or issues that do not align with their current menstrual status.",
+        "annotation": " -Indicates that the patient’s menstruation has occurred as expected and has not been missed or delayed. -Indicates that it has been less than or equal to 7 days since the patient’s last normal menstrual period began.",
         "action_key": 1118
     },
     {
@@ -21365,7 +21353,7 @@
                 "operator": "="
             }
         ],
-        "action": "Get informed consent",
+        "action": "\u2013 Assess the Cause: Investigate potential causes of amenorrhea, such as hormonal imbalances or health conditions.\nu2013 Review History: Check the patient’s menstrual and reproductive history.\n\u2013 Consider Tests: Perform necessary diagnostic tests to determine the cause.\n\u2013 Provide Guidance: Offer counseling and follow-up based on findings.\n\u2013Address Contraception: Discuss contraceptive needs if relevant.",
         "annotation": "If the client has abstained from sexual intercourse since her last monthly bleeding, delivery, abortion, or miscarriage, it is reasonably certain that she is not pregnant.",
         "action_key": 1119
     },
@@ -21382,8 +21370,8 @@
                 "operator": "="
             }
         ],
-        "action": "Get informed consent",
-        "annotation": "",
+        "action": "\u2013Verify Information: Confirm the patient's report of no sexual intercourse since the last normal menstrual cycle, delivery, miscarriage, or abortion.\n\u2013 Reassure the Patient: Explain that the likelihood of pregnancy is very low if there has been no sexual activity.\n\u2013 Assess for Other Causes: Evaluate other potential reasons for any menstrual irregularities or concerns, such as stress, hormonal imbalances, or medical conditions. \n\u2013 Provide Guidance: Offer advice on tracking menstrual cycles and when to seek further medical advice if irregularities continue.",
+        "annotation": "\u2013 Amenorrhea Assessment: Patient reports no missed or late menses and has abstained from sexual intercourse since the last normal menses, delivery, miscarriage, or abortion.\n\u2013 Pregnancy Risk: The risk of pregnancy is negligible given the absence of sexual activity.\n\u2013 Further Evaluation: Consider other potential causes for any menstrual concerns, ensuring a comprehensive approach to the patient's reproductive health.\n\u2013 Patient Education: Emphasize the importance of monitoring menstrual cycles and maintaining open communication with healthcare providers for ongoing reproductive health management.",
         "action_key": 1120
     },
     {
@@ -21399,7 +21387,7 @@
                 "operator": "="
             }
         ],
-        "action": "Get informed consent",
+        "action": "\u2013 Verify Contraceptive Use: Confirm the proper use of the contraceptive method.\nu2013 Assess for Pregnancy: Evaluate the possibility of pregnancy through appropriate tests, despite contraceptive use.\nu2013 Investigate Other Causes: Explore other potential causes of amenorrhea, such as hormonal imbalances or underlying health conditions.\nu2013 Review Medical History: Consider any relevant medical or reproductive history that could explain amenorrhea. \nu2013 Provide Follow-Up: Recommend further tests or specialist referrals if necessary and discuss management options based on findings.",
         "annotation": "If the client has been using a reliable contraceptive method consistently and correctly since her last monthly bleeding, delivery, abortion, or miscarriage, it is reasonably certain that she is not pregnant.",
         "action_key": 1121
     },
@@ -21416,8 +21404,8 @@
                 "operator": "="
             }
         ],
-        "action": "Get informed consent",
-        "annotation": "",
+        "action": "\u2013 Verify Contraceptive Use: Confirm the patient's consistent and correct use of a reliable contraceptive method. \nu2013 Reassure the Patient: Explain that the likelihood of pregnancy is very low given the consistent use of contraception.\nu2013 Assess for Other Causes: Evaluate for other potential reasons for any menstrual irregularities or concerns, such as stress, hormonal imbalances, or medical conditions.\nu2013 Provide Guidance: Offer advice on tracking menstrual cycles and discuss any potential side effects of the contraceptive method being used.",
+        "annotation": "\u2013 Contraceptive Use: Patient reports no missed or late menses and has consistently and correctly used a reliable contraceptive method.\nu2013 Pregnancy Risk: The risk of pregnancy is minimal due to consistent and correct contraceptive use.\nu2013 Further Evaluation: Consider other potential causes for any menstrual concerns, ensuring a comprehensive approach to the patient's reproductive health.",
         "action_key": 1122
     },
     {
@@ -21428,12 +21416,12 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time since delivery",
                 "value": 28,
                 "operator": "<="
             }
         ],
-        "action": "Get informed consent",
+        "action": "\u2013 Reassure the Patient: Explain that amenorrhea within 28 days postpartum is normal and expected.\n\u2013 Postpartum Care: Provide standard postpartum care and counseling, including information on what to expect in the weeks following delivery.\n\u2013 Monitor for Complications: Advise the patient to report any unusual symptoms such as heavy bleeding, severe pain, or signs of infection. \n\u2013 Schedule Follow-Up: Arrange a follow-up appointment to monitor the patient's recovery and address any concerns. \n\u2013 Discuss Contraception: If appropriate, discuss postpartum contraceptive options and family planning to ensure the patient is informed about their choices.Reassure the Patient: Explain that amenorrhea within 28 days postpartum is normal and expected. \n\u2013 Postpartum Care: Provide standard postpartum care and counseling, including information on what to expect in the weeks following delivery.\n\u2013 Monitor for Complications: Advise the patient to report any unusual symptoms such as heavy bleeding, severe pain, or signs of infection.\n\u2013 Schedule Follow-Up: Arrange a follow-up appointment to monitor the patient's recovery and address any concerns.\n\u2013 Discuss Contraception: If appropriate, discuss postpartum contraceptive options and family planning to ensure the patient is informed about their choices.",
         "annotation": "Have you had a baby in the last 4 weeks? \nIf the client has had a baby in the last 4 weeks, then you can be reasonably sure she is not pregnant.",
         "action_key": 1123
     },
@@ -21445,13 +21433,13 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time since delivery",
                 "value": 28,
                 "operator": "<="
             }
         ],
-        "action": "Get informed consent",
-        "annotation": "",
+        "action": "\u2013 Reassure the Patient: Inform the patient that it is normal to not have had a menstrual period within 28 days postpartum. \n\u2013 Postpartum Care: Provide standard postpartum care and counseling. \n\u2013 Monitor for Complications: Advise the patient to watch for any signs of complications such as heavy bleeding, severe pain, or infection.\n\u2013 Schedule Follow-Up: Arrange a follow-up appointment to ensure the patient's recovery is on track.\n\u2013 Discuss Contraception: If appropriate, discuss postpartum contraceptive options and family planning.",
+        "annotation": "\u2013 Postpartum Amenorrhea: Patient is within 28 days postpartum, and the absence of menstruation is normal.\n\u2013 Patient Reassurance: Reassured the patient that not having a period within 28 days postpartum is expected.\n\u2013 Monitoring and Follow-Up: Advised the patient on symptoms to monitor and scheduled a follow-up appointment. \n\u2013 Contraceptive Counseling: Discussed postpartum contraceptive options with the patient.",
         "action_key": 1124
     },
     {
@@ -21462,7 +21450,7 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time since delivery",
                 "value": 28,
                 "operator": "<="
             },
@@ -21475,8 +21463,8 @@
                 "operator": "OR"
             }
         ],
-        "action": "Get informed consent",
-        "annotation": "",
+        "action": "\u2013 Reassure the Patient: Inform the patient that amenorrhea within 28 days postpartum is normal, especially when fully or nearly fully breastfeeding.\n\u2013 Postpartum and Breastfeeding Care: Provide standard postpartum and breastfeeding care, ensuring the patient is comfortable and well-informed. \n\u2013 Monitor for Complications: Advise the patient to be aware of any signs of complications such as heavy bleeding, severe pain, or infection. \n\u2013 Schedule Follow-Up: Arrange a follow-up appointment to check on the patient's recovery and breastfeeding progress.\n\u2013 Discuss Contraception: If appropriate, discuss postpartum contraceptive options, particularly those suitable for breastfeeding mothers.",
+        "annotation": "Did you have your baby less than 6 months ago, are you fully or nearly-fully breastfeeding, and have you had no monthly bleeding since then? \n If these conditions are met, you can be reasonably sure she is not pregnant.",
         "action_key": 1125
     },
     {
@@ -21487,13 +21475,13 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time since delivery",
                 "value": 180.0,
                 "operator": "<="
             }
         ],
-        "action": "Get informed consent",
-        "annotation": "",
+        "action": "\u2013 Reassure the Patient: Explain that it is normal not to have a period up to 180 days postpartum, especially if breastfeeding.\n\u2013 Evaluate Breastfeeding Status: Check if the patient is breastfeeding, as this can influence the return of menstruation.\n\u2013 Postpartum Care: Continue with standard postpartum care and monitoring. \n\u2013 Monitor for Complications: Advise the patient to report any unusual symptoms such as excessive bleeding, severe pain, or signs of infection.\n\u2013 Discuss Contraceptive Options: Discuss appropriate postpartum contraceptive methods, particularly those suitable for breastfeeding mothers, if applicable.\n\u2013 Schedule Follow-Up: Arrange a follow-up visit to monitor the patient's recovery and provide ongoing support.",
+        "annotation": "\u2013 Postpartum Amenorrhea: Patient is within 180 days postpartum, and the absence of menstruation is expected. \n\u2013 Patient Reassurance: Informed the patient that it is normal not to have a period up to 180 days postpartum, especially if breastfeeding.\n\u2013 Breastfeeding Influence: Explained the impact of breastfeeding on the return of menstruation.\n\u2013 Monitoring and Follow-Up: Advised the patient on symptoms to monitor and scheduled a follow-up appointment.\n\u2013 Contraceptive Counseling: Discussed postpartum contraceptive options, emphasizing methods compatible with breastfeeding.",
         "action_key": 1126
     },
     {
@@ -21514,7 +21502,7 @@
                 "operator": "<="
             }
         ],
-        "action": "Get informed consent",
+        "action": "\u2013 Counseling on Contraception: Discuss the chosen method of contraception with the patient, ensuring they understand its use and effectiveness.\nu2013 Confirm Amenorrhea Cause: Explain that it is normal to experience amenorrhea shortly after a miscarriage or abortion within 7 days. \nu2013 Monitor for Complications: Advise the patient to watch for signs of complications such as heavy bleeding, severe pain, or infection. \nu2013 Ensure Follow-Up Care: Schedule a follow-up visit to monitor the patient's recovery and address any concerns.\nu2013 Reinforce Contraceptive Use: Emphasize the importance of correctly and consistently using the chosen contraceptive method to prevent unintended pregnancy.\nu2013 Provide Support and Resources: Offer emotional support and provide information on resources for further care and support if needed.",
         "annotation": "Have you had a miscarriage or abortion in the last 7 days?\nIf the client has had a miscarriage or abortion in the last 7 days, you can be reasonably sure she is not pregnant.",
         "action_key": 1127
     },
@@ -21531,8 +21519,8 @@
                 "operator": "!="
             }
         ],
-        "action": "Get informed consent",
-        "annotation": "",
+        "action": "\u2013 Counsel on Contraceptive Use: Ensure the patient understands how to properly use their chosen method of contraception and discuss its effectiveness. \n\u2013 Address Any Concerns: Ask the patient if they have any concerns or questions about their contraceptive method.  \n\u2013 Assess Adherence: Confirm that the patient is using their contraceptive method consistently and correctly.\n\u2013 Routine Follow-Up: Schedule a routine follow-up visit to monitor contraceptive use and address any ongoing concerns.\n\u2013 Provide Education: Educate the patient on signs of contraceptive failure and what steps to take if they suspect an issue.",
+        "annotation": "\u2013 Contraceptive Counseling: Patient received counseling on the proper use and effectiveness of their chosen contraceptive method.\n\u2013 Patient Concerns: Addressed any concerns or questions the patient had about their contraceptive method. \n\u2013 Adherence Check: Confirmed that the patient is using their contraceptive method consistently and correctly. \n\u2013 Routine Follow-Up: Scheduled a follow-up visit to monitor contraceptive use. \n\u2013 Education Provided: Educated the patient on signs of contraceptive failure and necessary actions if an issue arises.",
         "action_key": 1128
     },
     {
@@ -21553,7 +21541,7 @@
                 "operator": "<="
             }
         ],
-        "action": "Get informed consent",
+        "action": "\u2013 Counsel on IUD Use: Ensure the patient understands how to use their Copper-bearing intrauterine device (Cu-IUD) properly. \n\u2013 Confirm Insertion: Confirm that the Cu-IUD was inserted correctly if it was placed after the miscarriage or abortion. \n\u2013 Assess for Complications: Check for any signs of complications related to the Cu-IUD insertion. \n\u2013 Monitor Symptoms: Monitor the patient for any symptoms of infection or other issues related to the Cu-IUD. \n\u2013 Schedule Follow-Up: Arrange a follow-up visit to reassess the patient's condition and the placement of the Cu-IUD.",
         "annotation": "If the client has had a miscarriage or abortion in the past 12 days, it can reasonably be assumed that she is not pregnant. If the client is planning to use a Cu-IUD, the 7-day window for ruling out pregnancy is extended to 12 days.",
         "action_key": 1129
     },
@@ -21570,8 +21558,8 @@
                 "operator": "="
             }
         ],
-        "action": "Get informed consent",
-        "annotation": "",
+        "action": "\u2013 Verify IUD Placement: Ensure that the Copper-bearing intrauterine device (Cu-IUD) is correctly placed and functioning.\n\u2013 Provide Contraceptive Counseling: Review and confirm the patient’s understanding of how the Cu-IUD works and its effectiveness.\n\u2013 Assess Patient Symptoms: Check for any symptoms of discomfort or complications related to the Cu-IUD. \n\u2013 Schedule Routine Check-Up: Arrange for routine follow-up visits to monitor the position and effectiveness of the Cu-IUDt",
+        "annotation": "IUD Placement Verification: Confirmed that the Copper-bearing intrauterine device (Cu-IUD) is properly placed. Contraceptive Counseling: Patient received information on the use and effectiveness of the Cu-IUD. Symptom Assessment: Evaluated the patient for any discomfort or potential complications related to the Cu-IUD. Follow-Up Scheduling: Scheduled routine check-ups to ensure ongoing effectiveness and proper placement of the Cu-IUD",
         "action_key": 1130
     },
     {
@@ -21588,15 +21576,23 @@
             },
             {
                 "key": "DAK, Reason for being certain",
-                "orValues": [
-                    "DAK, Last menstrual bleeding started within the past 7 days",
-                    "DAK, Abstained from sexual intercourse since last normal menses, delivery, miscarriage or abortion",
-                    "DAK, Consistently and correctly using reliable contraceptive method",
-                    "DAK, Gave birth in the last 4 weeks",
-                    "DAK, Gave birth less than 6 months ago, fully or nearly fully breastfeeding, and amenorrhoeic",
-                    "Miscarriage or abortion in the last 7 days"
-                ],
-                "operator": "OR"
+                "value": "DAK, Last menstrual bleeding started within the past 7 days",
+                "operator": "!="
+            },
+            {
+                "key": "DAK, Reason for being certain",
+                "value": "DAK, Abstained from sexual intercourse since last normal menses, delivery, miscarriage or abortion",
+                "operator": "!="
+            },
+            {
+                "key": "DAK, Reason for being certain",
+                "value": "DAK, Gave birth in the last 4 weeks",
+                "operator": "!="
+            },
+            {
+                "key": "DAK, Reason for being certain",
+                "value": "DAK, Consistently and correctly using reliable contraceptive method",
+                "operator": "!="
             }
         ],
         "action": "FP.C5. Perform pregnancy test",
@@ -21616,8 +21612,8 @@
                 "operator": "!="
             }
         ],
-        "action": "FP.C6. Perform pregnancy test",
-        "annotation": "",
+        "action": "\u2013 Confirm Contraceptive Method: Ensure that the chosen contraceptive method is appropriate and properly used by the patient. \n\u2013 Evaluate Contraceptive Use: Review the patient’s adherence to the chosen contraceptive method and its effectiveness. \n\u2013 Provide Education: Offer information about the selected contraceptive method, including its effectiveness and what to do if there are any concerns.",
+        "annotation": "\u2013 Contraceptive Method Confirmation: Verified that the patient’s chosen method is not a Copper-bearing intrauterine device (Cu-IUD). \u2013 Adherence and Effectiveness: Assessed the patient’s use and effectiveness of the chosen contraceptive method. \u2013 Patient Education: Provided information about the selected contraceptive method and addressed any questions or concerns.",
         "action_key": 1132
     },
     {
@@ -21634,18 +21630,26 @@
             },
             {
                 "key": "DAK, Reason for being certain",
-                "orValues": [
-                    "DAK, Last menstrual bleeding started within the past 7 days",
-                    "DAK, Abstained from sexual intercourse since last normal menses, delivery, miscarriage or abortion",
-                    "DAK, Consistently and correctly using reliable contraceptive method",
-                    "DAK, Gave birth in the last 4 weeks",
-                    "DAK, Gave birth less than 6 months ago, fully or nearly fully breastfeeding, and amenorrhoeic",
-                    "Miscarriage or abortion in the last 7 days"
-                ],
-                "operator": "OR"
+                "value": "DAK, Last menstrual bleeding started within the past 7 days",
+                "operator": "!="
+            },
+            {
+                "key": "DAK, Reason for being certain",
+                "value": "DAK, Abstained from sexual intercourse since last normal menses, delivery, miscarriage or abortion",
+                "operator": "!="
+            },
+            {
+                "key": "DAK, Reason for being certain",
+                "value": "DAK, Gave birth in the last 4 weeks",
+                "operator": "!="
+            },
+            {
+                "key": "DAK, Reason for being certain",
+                "value": "DAK, Consistently and correctly using reliable contraceptive method",
+                "operator": "!="
             }
         ],
-        "action": "FP.C7. Perform pregnancy test",
+        "action": "\u2013 Review Contraceptive Use: Assess the patient’s use of the Copper-bearing intrauterine device (Cu-IUD) and ensure it is properly placed and functioning.\n\u2013  Investigate Symptoms: Conduct a thorough evaluation to understand any symptoms or issues the patient may be experiencing. \n\u2013  Evaluate Menstrual and Sexual History: Review the patient’s menstrual history and sexual activity to determine if there are any factors affecting the contraceptive effectiveness.",
         "annotation": "If the client plans to use a Cu-IUD, the 7-day window is extended to 12 days. If the client answers \"No\" to any of the questions, pregnancy cannot be ruled out using the checklist. A pregnancy test is recommended to confirm. Follow-up may be needed based on the test sensitivity. Provide condoms or advise abstinence until the test is performed.                                                                   Depending on the sensitivity of the pregnancy test, the client might have to come back for a follow-up appointment. It is recommended that you provide the client with condoms or that she abstain from sexual intercourse in the interim.",
         "action_key": 1133
     },
@@ -21662,8 +21666,8 @@
                 "operator": "="
             }
         ],
-        "action": "FP.C8. Perform pregnancy test",
-        "annotation": "",
+        "action": "\u2013 Confirm Contraceptive Effectiveness: Verify that the Copper-bearing intrauterine device (Cu-IUD) is correctly positioned and functioning properly. \n\u2013 Monitor for Any Symptoms: Check for any potential symptoms or issues that might suggest contraceptive failure or other underlying problems. \n\u2013 Review Patient's Menstrual History: Ensure that the absence of missed or late menses is consistent with the effectiveness of the chosen contraceptive method.",
+        "annotation": "\u2013 Contraceptive Method: Confirmed the use of Copper-bearing intrauterine device (Cu-IUD) as the chosen method.\n\u2013 Menstrual Status: No missed or late menses reported, indicating that the menstrual cycle is regular or consistent with the use of the Cu-IUD.",
         "action_key": 1134
     },
     {
@@ -21679,7 +21683,7 @@
                 "operator": "="
             }
         ],
-        "action": "FP.C9. Perform pregnancy test",
+        "action": "\u2013 Perform Pregnancy Test: Conduct a pregnancy test to rule out the possibility of pregnancy.\n\u2013 Evaluate Cu-IUD Position: Ensure that the Copper-bearing intrauterine device (Cu-IUD) is in the correct position through physical examination or imaging, if necessary.\n\u2013 Review Medical History: Discuss any recent changes in health, medications, or lifestyle that could affect menstrual cycles.\n\u2013 Provide Counseling: Offer counseling on what to expect with Cu-IUD usage and potential reasons for missed or late menses.",
         "annotation": "If the client presents with a late/missed menses, use a pregnancy test to rule out pregnancy.",
         "action_key": 1135
     },
@@ -21713,8 +21717,8 @@
                 "operator": "="
             }
         ],
-        "action": "",
-        "annotation": "",
+        "action": "\u2013 Confirm Pregnancy: Verify the positive pregnancy test result with a second test if necessary.\n\u2013 Provide Counseling: Offer counseling on the available options, including continuation of the pregnancy, prenatal care, or other alternatives based on the patient's circumstances and wishes. \n\u2013 Refer to Prenatal Care: If the patient chooses to continue the pregnancy, refer her to appropriate prenatal care services. \n\u2013 Discuss Contraceptive \n\u2013 Use: Review the patient's contraceptive use and discuss why it may have failed, offering guidance on future contraceptive options post-pregnancy.",
+        "annotation": "\u2013 Menstrual Status: The patient does not report missed or late menses. \n\u2013 Pregnancy Status: A positive pregnancy test confirms that the patient is pregnant. \n\u2013 Counseling Provided: The patient was counseled on options and next steps after confirming the pregnancy. \n\u2013 Referral: The patient was referred to prenatal care services for further management.",
         "action_key": 1137
     },
     {
@@ -21747,8 +21751,8 @@
                 "operator": "="
             }
         ],
-        "action": "",
-        "annotation": "",
+        "action": "\u2013 Rule Out Pregnancy: Confirm the negative pregnancy test result. \n\u2013 Assess Menstrual Cycle: Evaluate the patient's menstrual history and any possible reasons for the absence of missed or late menses despite negative pregnancy. \n\u2013 Investigate Other Causes: Look into other potential causes for the symptoms or concerns the patient has, such as hormonal imbalances, stress, or underlying health issues. \n\u2013 Provide Guidance: Offer advice on maintaining a healthy menstrual cycle and discuss any lifestyle changes or medical follow-ups that may be needed",
+        "annotation": "\u2013 Menstrual Status: The patient does not report missed or late menses. \n\u2013 Pregnancy Status: A negative pregnancy test confirms that the patient is not pregnant. \n\u2013 Further Evaluation: The patient was evaluated for other possible causes of their symptoms or concerns. \n\u2013 Advice Given: Guidance was provided on maintaining menstrual health and any necessary follow-ups were discussed.",
         "action_key": 1139
     },
     {
@@ -21769,7 +21773,7 @@
                 "operator": "="
             }
         ],
-        "action": "",
+        "action": "\u2013 Confirm Negative Pregnancy Test: Reaffirm the negative pregnancy test result and its sensitivity.\n\u2013 Re-Evaluate Pregnancy Possibility: Discuss the timing of the test relative to the menstrual cycle. Consider repeating the test in a week if menses still do not occur.\n\u2013 Investigate Other Causes: Assess for other potential causes of missed or late menses, such as hormonal imbalances, stress, thyroid issues, or other health conditions.\n\u2013 Counseling: Provide counseling on what steps to take next and when to seek further medical evaluation if the issue persists.",
         "annotation": "If using a highly sensitive pregnancy test (e.g. 25 mIU/ml) and it is negative, provide her desired contraceptive method",
         "action_key": 1140
     },
@@ -21852,6 +21856,11 @@
                 "key": "DAK, Chosen method",
                 "value": "DAK, Female sterilization",
                 "operator": "="
+            },
+            {
+                "key": "DAK, Blood pressure measurement available",
+                "value": true,
+                "operator": "="
             }
         ],
         "action": "\u2013 Perform a pelvic/genital examination\n\u2013 measure  blood pressure \n\u2013 If available, perform haemoglobin test",
@@ -21863,6 +21872,11 @@
             {
                 "key": "DAK, Chosen method",
                 "value": "DAK, Combined oral contraceptives (COCs)",
+                "operator": "="
+            },
+            {
+                "key": "DAK, Blood pressure screening available",
+                "value": true,
                 "operator": "="
             }
         ],
@@ -21876,6 +21890,11 @@
                 "key": "DAK, Chosen method",
                 "value": "DAK, Progestogen-only pills (POPs)",
                 "operator": "="
+            },
+            {
+                "key": "DAK, Blood pressure measurement available",
+                "value": true,
+                "operator": "="
             }
         ],
         "action": "-Measure Blood Presure",
@@ -21886,7 +21905,16 @@
         "conditions": [
             {
                 "key": "DAK, Chosen method",
-                "value": "DAK, Implants",
+                "orValues": [
+                    "DAK, Etonogestrel (ETG) one-rod",
+                    "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+                    "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+                ],
+                "operator": "OR"
+            },
+            {
+                "key": "DAK, Blood pressure measurement available",
+                "value": true,
                 "operator": "="
             }
         ],
@@ -21904,6 +21932,11 @@
                     "DAK, DMPA-SC -SI"
                 ],
                 "operator": "OR"
+            },
+            {
+                "key": "DAK, Blood pressure measurement available",
+                "value": true,
+                "operator": "="
             }
         ],
         "action": "-Measure Blood Presure",
@@ -22015,7 +22048,7 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time since delivery",
                 "value": 28,
                 "operator": ">="
             },
@@ -22057,13 +22090,13 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time since delivery",
                 "value": 28,
                 "operator": ">="
             },
             {
                 "key": "DAK, Amenorrhoea",
-                "value": true,
+                "value": false,
                 "operator": "="
             },
             {
@@ -22099,7 +22132,7 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time since delivery",
                 "value": 2,
                 "operator": "<="
             }
@@ -22121,7 +22154,7 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time since deliver",
                 "value": 28,
                 "operator": ">"
             },
@@ -22163,7 +22196,7 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time since deliver",
                 "value": 28,
                 "operator": ">"
             },
@@ -22174,7 +22207,7 @@
             },
             {
                 "key": "DAK, Is client currently breastfeeding?",
-                "value": true,
+                "value": false,
                 "operator": "="
             },
             {
@@ -22465,7 +22498,7 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
+                "key": "DAK, Time since delivery",
                 "minValue": 2,
                 "maxValue": 28,
                 "operator": "between, <=, <="
@@ -32934,13 +32967,13 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
-                "value": 6.0,
+                "key": "DAK, Time since delivery",
+                "value": 180,
                 "operator": "<"
             },
             {
-                "key": "DAK, Bleeding - Oral contraceptive",
-                "value": "DAK, Amenorrhoea",
+                "key": "DAK, Amenorrhoea",
+                "value": true,
                 "operator": "="
             },
             {
@@ -32950,8 +32983,12 @@
             },
             {
                 "key": "DAK, Breastfeeding",
-                "value": "DAK, Fully breastfeeding",
-                "operator": "="
+                "orValues": [
+                    "DAK, Exclusive breastfeeding",
+                    "DAK, Fully breastfeeding,",
+                    "DAK, Nearly fully breastfeeding"
+                ],
+                "operator": "OR"
             }
         ],
         "action": "Counsel client that she is medically eligible for this method",
@@ -32966,8 +33003,8 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Date of last birth",
-                "value": 6.0,
+                "key": "DAK, Time since delivery",
+                "value": 180,
                 "operator": "<"
             },
             {
