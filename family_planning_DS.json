@@ -7642,7 +7642,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time Postpartum",
+        "key": "DAK, Date of last birth",
         "value": 2,
         "operator": "<"
       }
@@ -7664,7 +7664,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "minValue": 2,
         "maxValue": 28,
         "operator": "between, <=, <"
@@ -7687,7 +7687,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 28.0,
         "operator": ">="
       }
@@ -10798,7 +10798,7 @@
         "operator": "OR"
       },
       {
-        "key": "age",
+        "key": "DAK, age (calculated)",
         "minValue": 18.0,
         "maxValue": 45.0,
         "operator": "between"
@@ -10889,7 +10889,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 42,
         "operator": "<"
       }
@@ -10919,7 +10919,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 42,
         "operator": ">="
       }
@@ -10949,7 +10949,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 0.0,
         "operator": ">="
       }
@@ -15398,7 +15398,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 42,
         "operator": "<"
       }
@@ -15425,7 +15425,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "minValue": 42,
         "maxValue": 180,
         "operator": "between, <=, <"
@@ -15453,7 +15453,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 180,
         "operator": ">="
       }
@@ -15475,7 +15475,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 21,
         "operator": "<"
       }
@@ -15497,7 +15497,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 21,
         "operator": "<"
       }
@@ -15519,7 +15519,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "minValue": 21,
         "maxValue": 42,
         "operator": "between, <=, <="
@@ -15542,7 +15542,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "minValue": 21,
         "maxValue": 42,
         "operator": "between, <=, <="
@@ -15565,12 +15565,12 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 42,
         "operator": ">"
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 180,
         "operator": "<"
       }
@@ -21859,7 +21859,13 @@
         "key": "DAK, Chosen method",
         "value": "DAK, Female sterilization",
         "operator": "="
+      },
+      {
+        "key": "DAK, Blood pressure measurement available",
+        "value": true,
+        "operator": "="
       }
+
     ],
     "action": "\u2013 Perform a pelvic/genital examination\n\u2013 measure  blood pressure \n\u2013 If available, perform haemoglobin test",
     "annotation": "\u2013 A \"Pelvic/genital examination\" and \"Blood pressure measurment   are Class A: Essential and mandatory in all circumstances for safe and effective use of the contraceptive method. \n\u2013 \"Haemoglobin test\" is Class B: The examination or test contributes substantially to safe and effective use, but implementation may be considered within the public health and/or service context. The risk of not performing the examination or test should be balanced against the benefits of making the contraceptive method available, contributes substantially to safe and effective use.",
@@ -21871,7 +21877,13 @@
         "key": "DAK, Chosen method",
         "value": "DAK, Combined oral contraceptives (COCs)",
         "operator": "="
+      },
+      {
+        "key": "DAK, Blood pressure screening available",
+        "value": true,
+        "operator": "="
       }
+
     ],
     "action": "-Measure Blood Presure",
     "annotation": "\u2021 Desirable, but in settings where the risks of pregnancy are high, and hormonal methods are among the few methods widely available, women should not be denied use of hormonal methods solely because their blood pressure cannot be measured.",
@@ -21882,6 +21894,11 @@
       {
         "key": "DAK, Chosen method",
         "value": "DAK, Progestogen-only pills (POPs)",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Blood pressure measurement available",
+        "value": true,
         "operator": "="
       }
     ],
@@ -21899,6 +21916,11 @@
           "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
         ],
         "operator": "OR"
+      },
+      {
+        "key": "DAK, Blood pressure measurement available",
+        "value": true,
+        "operator": "="
       }
     ],
     "action": "-Measure Blood Presure",
@@ -21915,7 +21937,13 @@
           "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
+      },
+      {
+        "key": "DAK, Blood pressure measurement available",
+        "value": true,
+        "operator": "="
       }
+
     ],
     "action": "-Measure Blood Presure",
     "annotation": "\u2021 Desirable, but in settings where the risks of pregnancy are high, and hormonal methods are among the few methods widely available, women should not be denied use of hormonal methods solely because their blood pressure cannot be measured.",
@@ -22476,7 +22504,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Date of last birth",
+        "key": "DAK, Time since delivery",
         "minValue": 2,
         "maxValue": 28,
         "operator": "between, <=, <="
