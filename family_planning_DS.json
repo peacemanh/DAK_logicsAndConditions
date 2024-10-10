@@ -19182,7 +19182,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Date of last birth",
+        "key": "DAK, Time Postpartum",
         "value": 7.0,
         "operator": "<"
       }
@@ -19204,7 +19204,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Date of last birth",
+        "key": "DAK, Time Postpartum",
         "minValue": 7,
         "maxValue": 42,
         "operator": "between, <=, <="
@@ -19227,7 +19227,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Date of last birth",
+        "key": "DAK, Time since delivery",
         "value": 180.0,
         "operator": "<"
       }
