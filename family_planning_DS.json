@@ -13724,7 +13724,7 @@
             },
             {
                 "key": "DAK, Risk factors for venous thromboembolism (VTE)",
-                "value": "DAK, deep vein thrombosis (DVT) / pulmonary embolism (PE) and established on anticoagulant therapy",
+                "value": "DAK, Deep vein thrombosis (DVT) / pulmonary embolism (PE) and established on anticoagulant therapy",
                 "operator": "="
             }
         ],
@@ -13985,7 +13985,7 @@
             },
             {
                 "key": "DAK, Cardiovascular disease",
-                "value": "DAK, SLE with Positive (or unknown) antiphospholipid antibodies",
+                "value": "DAK, SLE with positive (or unknown) antiphospholipid antibodies",
                 "operator": "="
             }
         ],
@@ -14036,7 +14036,7 @@
             },
             {
                 "key": "DAK, Cardiovascular disease",
-                "value": "DAK, SLE  with no complications",
+                "value": "DAK, SLE with no complications",
                 "operator": "="
             }
         ],
@@ -14053,7 +14053,7 @@
             },
             {
                 "key": "DAK, Cardiovascular disease",
-                "value": "DAK, Non-migrainous headaches (mild or severe)",
+                "value": "DAK, Non-migrainous headache",
                 "operator": "="
             },
             {
@@ -14075,7 +14075,7 @@
             },
             {
                 "key": "DAK, Headaches",
-                "value": "DAK, Non-migrainous headaches (mild or severe)",
+                "value": "DAK, Non-migrainous headache",
                 "operator": "="
             },
             {
@@ -14097,7 +14097,7 @@
             },
             {
                 "key": "DAK, Headaches",
-                "value": "DAK, Migraine without aura",
+                "value": "DAK, Migraine headache without aura",
                 "operator": "="
             },
             {
@@ -14151,7 +14151,7 @@
             },
             {
                 "key": "DAK, Headaches",
-                "value": "DAK, Migraine with aura at any age",
+                "value": "DAK, Migraine headache with aura",
                 "operator": "="
             },
             {
@@ -14173,7 +14173,7 @@
             },
             {
                 "key": "DAK, Headaches",
-                "value": "DAK, Migraine with aura at any age",
+                "value": "DAK, Migraine headache with aura",
                 "operator": "="
             },
             {
@@ -14229,7 +14229,7 @@
             },
             {
                 "key": "DAK, Vaginal bleeding patterns",
-                "value": "DAK, Irregular vaginal bleeding patterns with out heavy bleeding",
+                "value": "DAK, Irregular vaginal bleeding patterns",
                 "operator": "="
             }
         ],
@@ -14263,7 +14263,7 @@
             },
             {
                 "key": "DAK, Vaginal bleeding patterns",
-                "value": "DAK, Unexplained vaginal bleeding( suspicious for serious conditions) before evaluation",
+                "value": "DAK, Unexplained vaginal bleeding before evaluation",
                 "operator": "="
             }
         ],
@@ -14313,7 +14313,7 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Reproductive tract infections and disorders",
+                "key": "DAK, Vaginal bleeding patterns",
                 "value": "DAK, Severe dysmenorrhoea",
                 "operator": "="
             }
@@ -14416,7 +14416,7 @@
             },
             {
                 "key": "DAK, Breast disease",
-                "value": "DAK, Undiagnosed breast mass",
+                "value": "DAK, Undiagnosed mass",
                 "operator": "="
             }
         ],
@@ -14484,7 +14484,7 @@
             },
             {
                 "key": "DAK, Breast disease",
-                "value": "DAK, Past history of breast cancer no evidence of current disease for last 5 years",
+                "value": "DAK, Past history of breast cancer",
                 "operator": "="
             }
         ],
@@ -14613,7 +14613,7 @@
             },
             {
                 "key": "DAK, STIs",
-                "value": "DAK, Other sexually transmitted infections (STIs)",
+                "value": "DAK, Other",
                 "operator": "="
             }
         ],
@@ -14664,7 +14664,7 @@
             },
             {
                 "key": "DAK, HIV/AIDS",
-                "value": "DAK, High risk of HIV",
+                "value": "DAK, High risk of HIV disease", 
                 "operator": "="
             }
         ],
@@ -14932,7 +14932,7 @@
         ],
         "action_key": 766,
         "action": "Counsel client that she is medically eligible for this method",
-        "annotation": "Medical eligibility criteria (MEC) category 1 \u00e2\u20ac\u201c Use method in any circumstance"
+        "annotation": "Medical eligibility criteria (MEC) category 2 – Generally use method"
     },
     {
         "conditions": [
@@ -15032,7 +15032,7 @@
             },
             {
                 "key": "DAK, Liver disorders",
-                "value": "DAK, Malignant liver tumour (hepatoma)",
+                "value": "DAK, Malignant liver tumour (hepatoma/hepatocellular carcinoma)S",
                 "operator": "="
             }
         ],
@@ -15049,7 +15049,7 @@
             },
             {
                 "key": "DAK, Anemias",
-                "value": "DAK, Thalassaemia",
+                "value": "DAK, Thalassemia", 
                 "operator": "="
             }
         ],
@@ -15066,7 +15066,7 @@
             },
             {
                 "key": "DAK, Anemias",
-                "value": "DAK, Sickle cell disease",
+                "value": "DAK, Sickle cell anaemia",
                 "operator": "="
             }
         ],
@@ -15168,7 +15168,7 @@
             },
             {
                 "key": "DAK, Current medications FP",
-                "value": "DAK, Nevirapine (NVP)",
+                "value": "DAK, NVP",
                 "operator": "="
             }
         ],
@@ -15185,7 +15185,7 @@
             },
             {
                 "key": "DAK, Current medications FP",
-                "value": "DAK, Rilpivirine (RPV)",
+                "value": "DAK, RPV",
                 "operator": "="
             }
         ],
@@ -15202,7 +15202,7 @@
             },
             {
                 "key": "DAK, Current medications FP",
-                "value": "DAK, Protease inhibitors  (e.g. ATV/r, LPV/r, DRV/r, RTV)",
+                "value": "DAK, Protease inhibitors (e.g. ATV/r, LPV/r, DRV/r, RTV)",
                 "operator": "="
             }
         ],
@@ -15270,7 +15270,7 @@
             },
             {
                 "key": "DAK, Current medications",
-                "value": "DAK, Antimicrobial therapy",
+                "value": "DAK, Antimicrobial therapy", 
                 "operator": "="
             }
         ],
@@ -15292,8 +15292,8 @@
             }
         ],
         "action_key": 787,
-        "action": "Counsel client that she is NOT medically eligible for this method. Discuss methods and options to find alternative contraception for the client.",
-        "annotation": "Medical eligibility criteria (MEC) category 3 \u00e2\u20ac\u201c Use of method not usually recommended unless other more appropriate methods are not available or acceptable                                                                               - Although the interaction of rifampicin or rifabutin with POPs is not harmful to women, it is likelt to reduce the effectivenss of POPs. Whether increasing the hormone dose of POPs alleviate this concer remains unclear. -Long-term use of rifampicin or rifabutin may reduce the effectiveness of POPs. Women on these medications should be encouraged to consider alternative contraceptives such as progestin-only injectables, copper-bearing IUDs, or LNG-IUDs. If using these medications short-term, a backup method can be used in combination with progestogen-only pills (POPs)."
+        "action": "Counsel client that she is NOT medically eligible for this method.Discuss methods and options to find alternative contraception for the client",
+        "annotation": "Medical eligibility criteria (MEC) category 3 \u00e2\u20ac\u201c Use of method not usually recommended unless other more appropriate methods are not available or acceptable- Although the interaction of rifampicin or rifabutin with POPs is not harmful to women, it is likelt to reduce the effectivenss of POPs. Whether increasing the hormone dose of POPs alleviate this concer remains unclear. -Long-term use of rifampicin or rifabutin may reduce the effectiveness of POPs. Women on these medications should be encouraged to consider alternative contraceptives such as progestin-only injectables, copper-bearing IUDs, or LNG-IUDs. If using these medications short-term, a backup method can be used in combination with progestogen-only pills (POPs)."
     },
     {
         "conditions": [
