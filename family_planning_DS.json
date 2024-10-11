@@ -17840,11 +17840,11 @@
     },
     {
         "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Emergency contraceptive pills (ECPs)",
-                "operator": "="
-            },
+          {
+            "key": "DAK, Method in mind",
+            "value": "DAK, Emergency contraceptive pills (ECPs)",
+            "operator": "="
+          },
             {
                 "key": "DAK, Reasonably certain a woman is not pregnant",
                 "value": "DAK, TRUE OR Pregnancy test result = Not pregnant",
