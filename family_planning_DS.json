@@ -17959,11 +17959,11 @@
     },
     {
         "conditions": [
-            {
-                "key": " ",
-                "value": "DAK, Emergency contraceptive pills (ECPs)",
-                "operator": "="
-            },
+          {
+            "key": "DAK, Method in mind",
+            "value": "DAK, Emergency contraceptive pills (ECPs)",
+            "operator": "="
+          },
             {
                 "key": "DAK, Risk factors for venous thromboembolism (VTE)",
                 "value": "DAK, History of deep vein thrombosis (DVT) or PE OR  Acute DVT or PE OR Major or minor surgery with or without prolonged immobilization OR Known thrombogenic mutations",
