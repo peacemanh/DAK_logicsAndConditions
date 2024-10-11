@@ -3254,7 +3254,7 @@
             },
             {
                 "key": "DAK, Cardiovascular disease",
-                "value": "DAK, Dyslipidemias",
+                "value": "DAK, Dyslipidaemias",
                 "operator": "="
             }
         ],
@@ -13948,7 +13948,7 @@
             },
             {
                 "key": "DAK, Cardiovascular disease",
-                "value": "DAK, Dyslipidemias",
+                "value": "DAK, Dyslipidaemias",
                 "operator": "="
             }
         ],
@@ -32448,7 +32448,7 @@
             },
             {
                 "key": "DAK, Cardiovascular disease",
-                "value": "DAK, Dyslipidemias",
+                "value": "DAK, Dyslipidaemias",
                 "operator": "="
             }
         ],
