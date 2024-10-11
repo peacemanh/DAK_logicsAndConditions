@@ -2404,11 +2404,11 @@
                 ],
                 "operator": "OR"
             },
-            {
-                "key": "DAK, Signs and symptoms for clinical inquiry of IPV",
-                "value": true,
-                "operator": "="
-            }
+          {
+            "key": "DAK, Signs and symptoms for clinical inquiry of IPV",
+            "value": true,
+            "operator": "="
+          }
         ],
         "action": "Conduct clinical enquiry and discuss concerns",
         "annotation": "To assess the impact of violence on reproductive and sexual life, ask:\n(1) Partner interference with contraception?\n(2)Forced or pressured pregnancy?\n(3) Partner refusal to use condoms?\n(4) Intentional unprotected sex for pregnancy?                                                                                                                                                 Discuss alternative methods less susceptible to partner interference:\n\u2013 Injectable contraceptives: No visible skin signs, may stop or regulate menstrual periods. Regular follow-up required.\n\u2013 Subcutaneous DMPA (DMPA-SC): Similar to injectables, self-administered option, regular follow-up needed.\n\u2013 Implants: Long-lasting, may be felt under the skin, changes in bleeding pattern. No regular follow-up required.\n\u2013 Copper and hormonal IUDs: Hidden in the uterus, partner may feel strings at the cervix, may require adjustment",
@@ -2437,86 +2437,108 @@
         "action_key": 138
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in mind",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Reasonably certain a woman is not pregnant",
-                "value": "DAK, TRUE OR Pregnancy test result = Not pregnant",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+
+        {
+          "key": "DAK, Reasonably certain a woman is not pregnant",
+          "value": true,
+          "operator": "="
+        },
+        {
+          "key": "DAK, Pregnancy test result",
+          "value": "DAK, Not pregnant",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method provided that she is not pregnant",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance for this method, provided that she is not pregnant",
         "action_key": 139
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, age (calculated)",
-                "value": 18.0,
-                "operator": "<"
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, age (calculated)",
+          "value": 18.0,
+          "operator": "<"
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance for this method, assuming menarche has occurred",
         "action_key": 140
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, age (calculated)",
-                "value": 18.0,
-                "operator": ">="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, age (calculated)",
+          "value": 18.0,
+          "operator": ">="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance for this method, assuming menarche has occurred",
         "action_key": 141
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Parity",
-                "value": "DAK, 0",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Parity",
+          "value": "DAK, 0",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 142
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Parity",
-                "value": 1.0,
-                "operator": ">="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Parity",
+          "value": 1.0,
+          "operator": ">="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 143
@@ -2730,18 +2752,23 @@
         "action_key": 152
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in mind",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Lifestyle Behaviors",
-                "value": "DAK, Smokes cigarettes",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "value": "DAK, Etonogestrel (ETG) one-rod",
+          "operator": "="
+        },
+
+        {
+          "key": "DAK, Risk factors for venous thromboembolism (VTE)",
+          "orValues": [
+            "DAK, Client smokes < 15 cigarettes per day",
+            "DAK, Client smokes >= 15 cigarettes per day"
+          ],
+          "operator": "OR"
+        }
+       
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 153
@@ -2753,1746 +2780,1989 @@
                 "value": "DAK, Etonogestrel (ETG) one-rod",
                 "operator": "="
             },
-            {
-                "key": "DAK, Lifestyle Behaviors",
-                "value": "DAK, Obese",
-                "operator": "="
-            }
+          {
+            "key": "DAK, Risk factors for venous thromboembolism (VTE)",
+            "value": "DAK, Client is Obese",
+            "operator": "="
+          }
         ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 154
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, age (calculated)",
-                "value": 18.0,
-                "operator": "<"
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Obese",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, age (calculated)",
+          "value": 18.0,
+          "operator": "<"
+        },
+        {
+          "key": "DAK, Risk factors for venous thromboembolism (VTE)",
+          "value": "DAK, Client is Obese",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance for this method, assuming menarche has occurred",
         "action_key": 155
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Cardiovascular disease",
-                "value": "DAK, Multiple risk factors for arterial cardiovascular disease",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Cardiovascular disease",
+          "value": "DAK, Multiple risk factors for arterial cardiovascular disease",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method.\n\nWhen multiple major risk factors exist, the risk of cardiovascular disease may increase substantially. Some progestogen-only contraceptives (POCs) may increase the risk of thrombosis, although this increase is substantially less than with combined oral contraceptives (COCs).",
         "action_key": 156
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Hypertension",
-                "value": "DAK, History of hypertension, but blood pressure cannot be evaluated",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Hypertension",
+          "value": "DAK, History of hypertension, but blood pressure cannot be evaluated",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method.\n\nIt is desirable to have blood pressure measurements taken before initiation of progestogen-only contraceptive (POC) use. However, women should not be denied the use of POCs simply because their blood pressure cannot be measured.",
         "action_key": 157
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Hypertension",
-                "value": "DAK, Adequately controlled hypertension, and blood pressure can be evaluated",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Hypertension",
+          "value": "DAK, Adequately controlled hypertension, and blood pressure can be evaluated",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance.\n\nWomen adequately treated for hypertension are at reduced risk of acute myocardial infarction (MI) and stroke as compared with untreated women. Although there are no data, progestogen-only contraceptive (POC) users with adequately controlled and monitored hypertension should be at reduced risk of acute MI and stroke compared with untreated hypertensive POC users.",
         "action_key": 158
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Systolic blood pressure",
-                "minValue": 140,
-                "maxValue": 159,
-                "operator": "between, <=, <="
-            },
-            {
-                "key": "DAK, Diastolic blood pressure",
-                "minValue": 90.0,
-                "maxValue": 99.0,
-                "operator": "between"
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Systolic blood pressure",
+          "minValue": 140,
+          "maxValue": 159,
+          "operator": "between, <=, <="
+        },
+        {
+          "key": "DAK, Diastolic blood pressure",
+          "minValue": 90.0,
+          "maxValue": 99.0,
+          "operator": "between, <=,<="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 159
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Systolic blood pressure",
-                "value": 160.0,
-                "operator": ">="
-            },
-            {
-                "key": "DAK, Diastolic blood pressure",
-                "value": 100.0,
-                "operator": ">="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Systolic blood pressure",
+          "value": 160.0,
+          "operator": ">="
+        },
+        {
+          "key": "DAK, Diastolic blood pressure",
+          "value": 100.0,
+          "operator": ">="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method",
         "action_key": 160
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Vascular disease",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Hypertension",
+          "value": "DAK, Vascular disease",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method",
         "action_key": 161
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, History of hypertension during pregnancy, and blood pressure can be evaluated",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Systolic blood pressure",
-                "value": 120.0,
-                "operator": "<="
-            },
-            {
-                "key": "DAK, Diastolic blood pressure",
-                "value": 80.0,
-                "operator": "<="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Hypertension",
+          "value": "DAK, History of hypertension during pregnancy, and blood pressure can be evaluated",
+          "operator": "="
+        },
+        {
+          "key": "DAK, Systolic blood pressure",
+          "value": 120.0,
+          "operator": "<="
+        },
+        {
+          "key": "DAK, Diastolic blood pressure",
+          "value": 80.0,
+          "operator": "<="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 162
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Risk factors for venous thromboembolism (VTE)",
-                "value": "DAK, History of deep vein thrombosis (DVT)",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Risk factors for venous thromboembolism (VTE)",
+          "value": "DAK, History of deep vein thrombosis (DVT)",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method",
         "action_key": 163
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Risk factors for venous thromboembolism (VTE)",
-                "value": "DAK, History of pulmonary embolism (PE)",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Risk factors for venous thromboembolism (VTE)",
+          "value": "DAK, History of pulmonary embolism (PE)",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method",
         "action_key": 164
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Risk factors for venous thromboembolism (VTE)",
-                "value": "DAK, Acute deep vein thrombosis (DVT)",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Risk factors for venous thromboembolism (VTE)",
+          "value": "DAK, Acute deep vein thrombosis (DVT)",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is NOT medically eligible for this method.\nDiscuss methods and options to find alternative contraception for the client.",
         "annotation": "Medical eligibility criteria (MEC) category 3 \u2013 Use of method not usually recommended unless other more appropriate methods are not available or acceptable",
         "action_key": 165
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Risk factors for venous thromboembolism (VTE)",
-                "value": "DAK, Acute pulmonary embolism (PE)",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Risk factors for venous thromboembolism (VTE)",
+          "value": "DAK, Acute pulmonary embolism (PE)",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is NOT medically eligible for this method.\nDiscuss methods and options to find alternative contraception for the client.",
         "annotation": "Medical eligibility criteria (MEC) category 3 \u2013 Use of method not usually recommended unless other more appropriate methods are not available or acceptable",
         "action_key": 166
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Risk factors for venous thromboembolism (VTE)",
-                "value": "DAK, Deep vein thrombosis (DVT) / pulmonary embolism (PE) and established on anticoagulant therapy",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Risk factors for venous thromboembolism (VTE)",
+          "value": "DAK, Deep vein thrombosis (DVT) / pulmonary embolism (PE) and established on anticoagulant therapy",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method",
         "action_key": 167
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Risk factors for venous thromboembolism (VTE)",
-                "value": "DAK, Family history of deep vein thrombosis (DVT) / pulmonary embolism (PE)",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Risk factors for venous thromboembolism (VTE)",
+          "value": "DAK, Family history of deep vein thrombosis (DVT) / pulmonary embolism (PE)",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 168
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in mind",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Risk factors for venous thromboembolism (VTE)",
-                "value": "DAK, Major surgery with prolonged immobilization",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Risk factors for venous thromboembolism (VTE)",
+          "value": "DAK, Major surgery with prolonged immobilization",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method",
         "action_key": 169
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in mind",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Risk factors for venous thromboembolism (VTE)",
-                "value": "DAK, Major surgery without prolonged immobilization OR Minor surgery without immobilization",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Risk factors for venous thromboembolism (VTE)",
+          "orValues": [
+            "DAK, Major surgery without prolonged immobilization",
+            "Minor surgery without immobilizatio"
+          ],
+          "operator": "OR"
+        }
+        
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 170
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in mind",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Superficial venous disorders",
-                "value": "DAK, Known thrombogenic mutations",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Superficial venous disorders",
+          "value": "DAK, Known thrombogenic mutations",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method.\n\nRoutine screening is not appropriate because of the rarity of the conditions and the high cost of screening.",
         "action_key": 171
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in mind",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Superficial venous disorders",
-                "value": "DAK, Varicose veins",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Superficial venous disorders",
+          "value": "DAK, Varicose veins",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 172
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in mind",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Superficial venous disorders",
-                "value": "DAK, Superficial venous thrombosis",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Superficial venous disorders",
+          "value": "DAK, Superficial venous thrombosis",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 173
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in mind",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Cardiovascular disease",
-                "value": "DAK, Current ischaemic heart disease",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "!="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Cardiovascular disease",
+          "value": "DAK, Ischaemic heart disease",
+          "operator": "="
+        },
+        {
+          "key": "DAK, Method in use",
+          "value": "DAK, Etonogestrel (ETG) one-rod",
+          "operator": "!="
+        },
+        {
+          "key": "DAK, Method in use",
+          "value": "DAK, Levonorgestrel (LNG) two-rod(Levoplant)",
+          "operator": "!="
+        }
+
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method for initiation",
         "action_key": 174
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in mind",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Cardiovascular disease",
-                "value": "DAK, Ischaemic heart disease",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "!="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Cardiovascular disease",
+          "value": "DAK, Ischaemic heart disease",
+          "operator": "="
+        },
+        {
+          "key": "DAK, Method in use",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+          ],
+          "operator": "OR"
+        }
+
+
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method for initiation",
         "action_key": 175
     },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Method in mind",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Cardiovascular disease",
-                "value": "DAK, Current ischaemic heart disease",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            }
+   {
+    "conditions": [
+      {
+        "key": "DAK, Method in mind",
+        "orValues": [
+          "DAK, Etonogestrel (ETG) one-rod",
+          "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
         ],
-        "action": "Counsel client that she is NOT medically eligible for this method.\nDiscuss methods and options to find alternative contraception for the client.",
-        "annotation": "Medical eligibility criteria (MEC) category 3 (for continuation) \u2013 Use of method not usually recommended unless other more appropriate methods are not available or acceptable",
-        "action_key": 176
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Method in mind",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Cardiovascular disease",
-                "value": "DAK, Ischaemic heart disease",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            }
-        ],
-        "action": "Counsel client that she is NOT medically eligible for this method.\nDiscuss methods and options to find alternative contraception for the client.",
-        "annotation": "Medical eligibility criteria (MEC) category 3 (for continuation) \u2013 Use of method not usually recommended unless other more appropriate methods are not available or acceptable",
-        "action_key": 177
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Method in mind",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Cardiovascular disease",
-                "value": "DAK, Stroke",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "!="
-            }
-        ],
+        "operator": "OR"
+      },
+      {
+        "key": "DAK, Cardiovascular disease",
+        "value": "DAK, Stroke",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Method in use",
+        "value": "DAK, Etonogestrel (ETG) one-rod",
+        "operator": "!="
+      },
+      {
+        "key": "DAK, Method in use",
+        "value": "DAK, Levonorgestrel (LNG) two-rod(Levoplant)",
+        "operator": "!="
+      }
+
+    ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method for initiation",
         "action_key": 178
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in mind",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Cardiovascular disease",
-                "value": "DAK, Stroke",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Cardiovascular disease",
+          "value": "DAK, Stroke",
+          "operator": "="
+        },
+        {
+          "key": "DAK, Method in use",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        }
+      ],
         "action": "Counsel client that she is NOT medically eligible for this method.\nDiscuss methods and options to find alternative contraception for the client.",
         "annotation": "Medical eligibility criteria (MEC) category 3 (for continuation) \u2013 Use of method not usually recommended unless other more appropriate methods are not available or acceptable",
         "action_key": 179
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in mind",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Cardiovascular disease",
-                "value": "DAK, Dyslipidemias",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Cardiovascular disease",
+          "value": "DAK, Dyslipidemias",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method.\n\nRoutine screening is not appropriate because of the rarity of the condition and the high cost of screening.",
         "action_key": 180
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in mind",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Cardiovascular disease",
-                "value": "DAK, Uncomplicated valvular heart disease",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Cardiovascular disease",
+          "orValues": [
+            "DAK, Uncomplicated valvular heart disease",
+            "DAK, Complicated valvular heart disease"
+          ],
+          "operator": "OR"
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 181
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in mind",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Cardiovascular disease",
-                "value": "DAK, SLE with positive (or unknown) antiphospholipid antibodies",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Cardiovascular disease",
+          "value": "DAK, SLE with positive (or unknown) antiphospholipid antibodies",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is NOT medically eligible for this method.\nDiscuss methods and options to find alternative contraception for the client.",
         "annotation": "Medical eligibility criteria (MEC) category 3 \u2013 Use of method not usually recommended unless other more appropriate methods are not available or acceptable",
         "action_key": 182
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in mind",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Cardiovascular disease",
-                "value": "DAK, SLE with severe thrombocytopenia",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Cardiovascular disease",
+          "value": "DAK, SLE with severe thrombocytopenia",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method",
         "action_key": 183
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in mind",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Cardiovascular disease",
-                "value": "DAK, SLE on immunosuppressive treatment",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Cardiovascular disease",
+          "value": "DAK, SLE on immunosuppressive treatment",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method",
         "action_key": 184
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in mind",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Cardiovascular disease",
-                "value": "DAK, SLE with no complications",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Cardiovascular disease",
+          "value": "DAK, SLE with no complications",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method",
         "action_key": 185
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in mind",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Headaches",
-                "value": "DAK, Non-migrainous headaches",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "!="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Headaches",
+          "value": "DAK, Non-migrainous headache",
+          "operator": "="
+        },
+        {
+          "key": "DAK, Method in use",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+          ],
+          "operator": "OR"
+        }
+
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance.\n\nClassification depends on accurate diagnosis of those severe headaches that are migrainous and those that are not. Any new headaches or marked changes in headaches should be evaluated.",
         "action_key": 186
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in mind",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Headaches",
-                "value": "DAK, Migraine without aura",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "!="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Headaches",
+          "value": "DAK, Migraine headache without aura",
+          "operator": "="
+        },
+        {
+          "key": "DAK, Method in use",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+          ],
+          "operator": "OR"
+        }
+
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method for initiation.\n\nClassification depends on accurate diagnosis of those severe headaches that are migrainous and those that are not. Any new headaches or marked changes in headaches should be evaluated.",
         "action_key": 187
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in mind",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Headaches",
-                "value": "DAK, Migraine with aura",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod",
-                "operator": "!="
-            },
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
-                "operator": "!="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Headaches",
+          "value": "DAK, Migraine headache with aura",
+          "operator": "="
+        },
+        {
+          "key": "DAK, Method in use",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+          ],
+          "operator": "OR"
+        }
+
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 9for initiation) \u2013 Generally use method.\n\nClassification depends on accurate diagnosis of those severe headaches that are migrainous and those that are not. Any new headaches or marked changes in headaches should be evaluated.",
         "action_key": 188
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Non-migrainous headaches",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod OR Levonorgestrel (LNG) two-rod",
-                "operator": "="
-            }
-        ],
-        "action": "Counsel client that she is medically eligible for this method",
-        "annotation": "Medical eligibility criteria (MEC) category 1 (for continuation) \u2013 Use method in any circumstance.\n\nClassification depends on accurate diagnosis of those severe headaches that are migrainous and those that are not. Any new headaches or marked changes in headaches should be evaluated.",
-        "action_key": 189
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Migraine without aura",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod OR Levonorgestrel (LNG) two-rod",
-                "operator": "="
-            }
-        ],
-        "action": "Counsel client that she is medically eligible for this method",
-        "annotation": "Medical eligibility criteria (MEC) category 2 for continuation \u2013 Generally use method.\n\nClassification depends on accurate diagnosis of those severe headaches that are migrainous and those that are not. Any new headaches or marked changes in headaches should be evaluated. Classification is for women without any other risk factors for stroke. Risk of stroke increases with age, hypertension and smoking.",
-        "action_key": 190
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Migraine with aura",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod OR Levonorgestrel (LNG) two-rod",
-                "operator": "="
-            }
-        ],
-        "action": "Counsel client that she is NOT medically eligible for this method.\nDiscuss methods and options to find alternative contraception for the client.",
-        "annotation": "Medical eligibility criteria (MEC) category 3 (for continuation) \u2013 Use of method not usually recommended unless other more appropriate methods are not available or acceptable.\n\nClassification depends on accurate diagnosis of those severe headaches that are migrainous and those that are not. Any new headaches or marked changes in headaches should be evaluated.",
-        "action_key": 191
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Epilepsy",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Health condition(s)",
+          "value": "DAK, Epilepsy",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance.\n\nAsk if client is taking any medications for epilepsy. Certain anticonvulsants lower progestogen-only contraceptive (POC) effectiveness. Use of other contraceptives should be encouraged for women who are long-term users of any of these drugs.",
         "action_key": 192
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Depressive disorders",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Health condition(s)",
+          "value": "DAK, Depressive disorders",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance.\n\nThere is a potential for drug interactions between certain antidepressant medications and hormonal contraceptives.",
         "action_key": 193
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Irregular vaginal bleeding patterns",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Vaginal bleeding patterns",
+          "value": "DAK, Irregular vaginal bleeding patterns",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method",
         "action_key": 194
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Heavy or prolonged vaginal bleeding patterns",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Vaginal bleeding patterns",
+          "value": "DAK, Heavy or prolonged vaginal bleeding patterns",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method.\n\nUnusually heavy bleeding should raise the suspicion of a serious underlying condition.",
         "action_key": 195
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Unexplained vaginal bleeding before evaluation",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Vaginal bleeding patterns",
+          "value": "DAK, Unexplained vaginal bleeding before evaluation",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is NOT medically eligible for this method.\nDiscuss methods and options to find alternative contraception for the client.",
         "annotation": "Medical eligibility criteria (MEC) category 3 \u2013 Use of method not usually recommended unless other more appropriate methods are not available or acceptable \n\nSuspicion of a serious condition. If pregnancy or an underlying pathological condition (such as pelvic malignancy) is suspected, it must be evaluated and the category adjusted after evaluation.",
         "action_key": 196
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Endometriosis",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Reproductive tract infections and disorders",
+          "value": "DAK, Endometriosis",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 197
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Benign ovarian tumours",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Reproductive tract infections and disorders",
+          "value": "DAK, Benign ovarian tumours",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 198
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Severe dysmenorrhoea",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Vaginal bleeding patterns",
+          "value": "DAK, Severe dysmenorrhea",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 199
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Gestational trophoblastic disease with decreasing or undetectable \u03b2-hCG level",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Reproductive tract infections and disorders",
+          "value": "DAK, Gestational trophoblastic disease with decreasing or undetectable β-hCG level",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 200
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Gestational trophoblastic disease with persistently elevated \u03b2-human chorionic gonadotropin (\u03b2-hCG) levels or malignant disease",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Reproductive tract infections and disorders",
+          "value": "DAK, Gestational trophoblastic disease with persistently elevated β-hCG levels or malignant disease",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 201
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Cervical ectropion",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Reproductive tract infections and disorders",
+          "value": "DAK, Cervical ectropion",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 202
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Cervical intraepithelial neoplasia (CIN)",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Reproductive tract infections and disorders",
+          "value": "DAK, Cervical intraepithelial neoplasia (CIN)",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method",
         "action_key": 203
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Cervical cancer (awaiting treatment)",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Reproductive tract infections and disorders",
+          "value": "DAK, Cervical cancer (awaiting treatment)",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method",
         "action_key": 204
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Undiagnosed breast mass",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Breast disease",
+          "value": "DAK, Undiagnosed mass",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method.\n\nEvaluation should be pursued as early as possible.",
         "action_key": 205
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Benign breast disease",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Breast disease",
+          "value": "DAK, Benign breast disease",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 206
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Family history of breast cancer",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Breast disease",
+          "value": "DAK, Family history of breast cancer",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 207
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Currently has breast cancer",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Breast disease",
+          "value": "DAK, Currently has breast cancer",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is NOT medically eligible for this method.\nDiscuss methods and options to find alternative contraception for the client.",
         "annotation": "Medical eligibility criteria (MEC) category 4 \u2013 Method NOT to be used",
         "action_key": 208
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Past history of breast cancer",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Breast disease",
+          "value": "DAK, Past history of breast cancer",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is NOT medically eligible for this method.\nDiscuss methods and options to find alternative contraception for the client.",
         "annotation": "Medical eligibility criteria (MEC) category 3 \u2013 Use of method not usually recommended unless other more appropriate methods are not available or acceptable",
         "action_key": 209
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Endometrial cancer",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Reproductive tract infections and disorders",
+          "value": "DAK, Endometrial cancer",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 210
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Ovarian cancer",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Reproductive tract infections and disorders",
+          "value": "DAK, Ovarian cancer",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 211
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Uterine fibroids without distortion of the uterine cavity OR Uterine fibroids with distortion of the uterine cavity",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+
+        {
+          "key": "DAK, Uterine fibroids",
+          "orValues": [
+            "DAK, Uterine fibroids without distortion of the uterine cavity",
+            "DAK, Uterine fibroids with distortion of the uterine cavity"
+          ],
+          "operator": "OR"
+        }
+        
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 212
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Past pelvic inflammatory disease (PID) with subsequent pregnancy OR Past pelvic inflammatory disease (PID) without subsequent pregnancy",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Pelvic inflammatory disease (PID) FP",
+          "orValues": [
+            "DAK, Past pelvic inflammatory disease (PID) with subsequent pregnancy",
+            "DAK, Past pelvic inflammatory disease (PID) without subsequent pregnancy"
+          ],
+          "operator": "OR"
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 213
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Current pelvic inflammatory disease (PID)",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Pelvic inflammatory disease (PID) FP",
+          "value": "DAK, Current pelvic inflammatory disease (PID)",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 214
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Current purulent cervicitis OR Current chlamydia OR Current gonorrhoea",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, STIs",
+          "orValues": [
+            "DAK, Current purulent cervicitis",
+            "DAK, Current chlamydia",
+            "DAK, Current gonorrhea"
+          ],
+          "operator": "OR"
+        }
+       
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 215
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Vaginitis",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Conditions relevant to sterilization and FAB",
+          "value": "DAK, Vaginitis",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 216
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Increased risk of sexually transmitted infections (STIs)",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Health condition(s)",
+          "value": "DAK, Increased risk of sexually transmitted infections (STIs)",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 217
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, High risk of HIV",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, HIV/AIDS",
+          "value": "DAK, High risk of HIV disease",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 218
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, HIV disease stage 1 or HIV disease stage 2",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, HIV/AIDS",
+          "orValues": [
+            "DAK, HIV disease stage 1",
+            "DAK, HIV disease stage 2"
+          ],
+          "operator": "OR"
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance.\nCertain antiretroviral drugs may interact with hormonal contraceptives. Ask if client is taking any medication and check for contraindications.",
         "action_key": 219
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, HIV disease stage 3 HIV disease stage 4",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, HIV/AIDS",
+          "orValues": [
+            "DAK, HIV disease stage 3",
+            "DAK, HIV disease 4"
+          ],
+          "operator": "OR"
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance.\nCertain antiretroviral drugs may interact with hormonal\ncontraceptives. Ask if client is taking any medication and check for contraindications.",
         "action_key": 220
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Uncomplicated schistosomiasis OR Schistosomiasis with liver fibrosis",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Other infections (schistosomiasis, tuberculosis, malaria)",
+          "value": "DAK, Schistosomiasis (uncomplicated)",
+          "operator": "="
+        },
+        {
+          "key": "DAK, Liver disorders",
+          "value": "DAK, Schistosomiasis with liver fibrosis",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 221
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Non-pelvic tuberculosis OR Known pelvic tuberculosis",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Other infections (schistosomiasis, tuberculosis, malaria)",
+          "orValues": [
+            "DAK, Non-pelvic tuberculosis",
+            "DAK, Known pelvic tuberculosis"
+          ],
+          "operator": "OR"
+
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance.\nCertain drugs that are used to treat tuberculosis may interact with POCs. Ask if the woman is taking drugs for treatment of tuberculosis and check for contraindications.",
         "action_key": 222
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Malaria",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Other infections (schistosomiasis, tuberculosis, malaria)",
+          "value": "DAK, Malaria",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 223
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, History of gestational diabetes",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Diabetes",
+          "value": "DAK, History of gestational diabetes",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 224
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Non- non-insulin dependent OR  insulin-dependent diabetes",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Diabetes",
+          "orValues": [
+            "DAK, Non-insulin dependent diabetes",
+            "DAK, Insulin-dependent diabetes"
+          ],
+          "operator": "OR"
+        }
+        
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method",
         "action_key": 225
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Diabetes with nephropathy retinopathy OR Diabetes with retinopathy OR Diabetes with neuropathy",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Diabetes",
+          "orValues": [
+            "DAK, Diabetes with nephropathy",
+            "DAK, Diabetes with retinopathy",
+            "DAK, Diabetes with neuropathy"
+          ],
+          "operator": "OR"
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method",
         "action_key": 226
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Diabetes > 20 years duration",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s) = Diabetes",
-                "value": 20.0,
-                "operator": ">"
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Diabetes",
+          "value": "DAK, Diabetes > 20 years duration",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method",
         "action_key": 227
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Other vascular disease > 20 years duration",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s) = Other vascular disease",
-                "value": 20.0,
-                "operator": ">"
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Diabetes",
+          "value": "DAK, Other vascular disease > 20 years duration",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method",
         "action_key": 228
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Simple goitre OR Hyperthyroid OR Hypothyroid",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Thyroid disorders",
+          "orValues": [
+            "DAK, Simple goitre",
+            "DAK, Hyperthyroidism",
+            "DAK, Hypothyroidism"
+          ],
+          "operator": "OR"
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 229
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Symptomatic gall bladder disease (treated by cholecystectomy) OR Symptomatic gall bladder disease (medically treated) OR Asymptomatic gall bladder disease",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Gall bladder disorders",
+          "orValues": [
+            "DAK, Symptomatic gall bladder disease (treated by cholecystectomy)",
+            "DAK, Symptomatic gall bladder disease (medically treated)",
+            "DAK, Asymptomatic gall bladder disease"
+          ],
+          "operator": "OR"
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method",
         "action_key": 230
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, History of pregnancy-related cholestasis OR Past combined oral contraceptives-related cholestasis",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Gall bladder disorders",
+          "orValues": [
+            "DAK, History of pregnancy-related cholestasis",
+            "DAK, Past combined oral contraceptives-related cholestasis"
+           
+          ],
+          "operator": "OR"
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 231
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Acute or flare viral hepatitis OR Carrier viral hepatitis OR Chronic viral hepatitis",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Liver disorders",
+          "orValues": [
+            "DAK, Acute or flare viral hepatitis",
+            "DAK, Carrier viral hepatitis",
+            "DAK, Chronic viral hepatitis"
+          ],
+          "operator": "OR"
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 232
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Mild (compensated) cirrhosis",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Liver disorders",
+          "value": "DAK, Mild (compensated) cirrhosis",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 233
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Severe (decompensated) cirrhosis",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Liver disorders",
+          "value": "DAK, Severe (decompensated) cirrhosis",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is NOT medically eligible for this method.\nDiscuss methods and options to find alternative contraception for the client.",
         "annotation": "Medical eligibility criteria (MEC) category 3 \u2013 Use of method not usually recommended unless other more appropriate methods are not available or acceptable",
         "action_key": 234
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Benign focal nodular hyperplasia",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Liver disorders",
+          "value": "DAK, Benign focal nodular hyperplasia of the liver",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method",
         "action_key": 235
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Benign hepatocellular adenoma OR Malignant liver tumour (hepatoma)",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Liver disorders",
+          "orValues": [
+            "DAK, Benign hepatocellular adenoma",
+            "DAK, Malignant liver tumour (hepatoma/hepatocellular carcinoma)"
+          ],
+          "operator": "OR"
+        }
+       
+      ],
         "action": "Counsel client that she is NOT medically eligible for this method.\nDiscuss methods and options to find alternative contraception for the client.",
         "annotation": "Medical eligibility criteria (MEC) category 3 \u2013 Use of method not usually recommended unless other more appropriate methods are not available or acceptable",
         "action_key": 236
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Thalassaemia",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Anemias",
+          "value": "DAK, Thalassemia",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 237
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Sickle cell disease",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Anemias",
+          "value": "DAK, Sickle cell anaemia",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 238
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Health condition(s)",
-                "value": "DAK, Iron-deficiency anaemia",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Anemias",
+          "value": "DAK, Iron-deficiency anaemia",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 239
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Current medications",
-                "value": "DAK, NRTIs (e.g. ABC, TDF, AZT,  3TC,  DDI,  FTC, C265,  D4T)",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Current medications FP",
+          "value": "DAK, NRTIs (e.g. ABC, TDF, AZT, 3TC, DDI, FTC, C265, D4T)",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 240
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Current medications",
-                "value": "DAK, Efavirenz (EFV)",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Current medications FP",
+          "value": "DAK, EFV",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method.\n\nPharmacokinetic data suggest potential drug interactions between some antiretroviral drugs (particularly some non-nucleoside reverse transcriptase inhibitors [NNRTIs] and ritonavir-boosted protease inhibitors [PIs]) and some hormonal contraceptives. These interactions may reduce the effectiveness of the hormonal contraceptive.",
         "action_key": 241
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Current medications",
-                "value": "DAK, Etravirine (ETR)",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Current medications FP",
+          "value": "DAK, ETR",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance.\n\nPharmacokinetic data suggest potential drug interactions between some antiretroviral drugs (particularly some non-nucleoside reverse transcriptase inhibitors [NNRTIs] and ritonavir-boosted protease inhibitors [PIs]) and some hormonal contraceptives. These interactions may reduce the effectiveness of the hormonal contraceptive.",
         "action_key": 242
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Current medications",
-                "value": "DAK, Nevirapine (NVP)",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Current medications FP",
+          "value": "DAK, NVP",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method.\n\nPharmacokinetic data suggest potential drug interactions between some antiretroviral drugs (particularly some non-nucleoside reverse transcriptase inhibitors [NNRTIs] and ritonavir-boosted protease inhibitors [PIs]) and some hormonal contraceptives. These interactions may reduce the effectiveness of the hormonal contraceptive.",
         "action_key": 243
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Current medications",
-                "value": "DAK, Rilpivirine (RPV)",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Current medications FP",
+          "value": "DAK, RPV",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance.\n\nAntiretroviral drugs have the potential to either decrease or increase the levels of steroid hormones in women using hormonal contraceptives.",
         "action_key": 244
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Current medications",
-                "value": "DAK, Protease inhibitors  (e.g. ATV/r, LPV/r, DRV/r, RTV)",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Current medications FP",
+          "value": "DAK, Protease inhibitors (e.g. ATV/r, LPV/r, DRV/r, RTV)",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method.\n\nPharmacokinetic data suggest potential drug interactions between some antiretroviral drugs (particularly some non-nucleoside reverse transcriptase inhibitors [NNRTIs] and ritonavir-boosted PIs) and some hormonal contraceptives. These interactions may reduce the effectiveness of the hormonal contraceptive.",
         "action_key": 245
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Current medications",
-                "value": "DAK, Integrase inhibitors (e.g. RAL)",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Current medications FP",
+          "value": "DAK, Integrase inhibitors (e.g. RAL)",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 246
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Current medications",
-                "value": "DAK, Anticonvulsant therapy (e.g. phenytoin, carbamazepine, barbiturates, primidone, topiramate, oxcarbazepine)",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Current medications FP",
+          "value": "DAK, Anticonvulsant therapy (e.g. phenytoin, carbamazepine, barbiturates, primidone, topiramate, oxcarbazepine)",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method.\n\nAlthough the interaction of certain anticonvulsants with LNG/ETG implants is not harmful to women, it is likely to reduce the effectiveness. Use of other contraceptives should be encouraged for women who are long-term users of any of these drugs.",
         "action_key": 247
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Current medications",
-                "value": "DAK, Anticonvulsant therapy with lamotrigine",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Current medications FP",
+          "value": "DAK, Anticonvulsant therapy with lamotrigine",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 248
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Current medications",
-                "value": "DAK, Antimicrobial therapy",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Current medications FP",
+          "value": "DAK, Antimicrobial therapy",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 1 \u2013 Use method in any circumstance",
         "action_key": 249
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Method in use",
-                "value": "DAK, Etonogestrel (ETG) one-rod implant OR Levonorgestrel (LNG) two-rod implant",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Current medications",
-                "value": "DAK, Antimicrobial therapy with rifampicin or rifabutin",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Method in mind",
+          "orValues": [
+            "DAK, Etonogestrel (ETG) one-rod",
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Current medications FP",
+          "value": "DAK, Antimicrobial therapy with rifampicin or rifabutin",
+          "operator": "="
+        }
+      ],
         "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method.\n\nLong-term use of rifampicin or rifabutin may reduce the effectiveness of LNG/ETG implants. Women on these medications should be encouraged to consider alternative contraceptives such as progestin-only injectables, copper-bearing IUDs, or LNG-IUDs. If using these medications short-term, a backup method can be used in combination with progestogen-only pills (POPs).",
         "action_key": 250
@@ -22509,12 +22779,12 @@
                 "value": true,
                 "operator": "="
             },
-            {
-                "key": "DAK, Time since delivery",
-                "minValue": 2,
-                "maxValue": 28,
-                "operator": "between, <=, <="
-            }
+          {
+            "key": "DAK, Time since delivery",
+            "minValue": 28,
+            "maxValue": 42,
+            "operator": "beyond, <=, >="
+          }
         ],
         "action": "Delay until 4 weeks or more after delivery.",
         "annotation": "48 hours to less than 4 weeks postpartum: use of Cu-IUDs is not usually recommended unless other more appropriate methods are not available or not acceptable (medical eligibility category 3)",
@@ -22560,11 +22830,11 @@
                 "value": true,
                 "operator": "="
             },
-            {
-                "key": "DAK, Date of last birth",
-                "value": 180,
-                "operator": "<="
-            },
+          {
+            "key": "DAK, Time since delivery",
+            "value": 180,
+            "operator": "<="
+          },
             {
                 "key": "DAK, Amenorrhoea",
                 "value": false,
@@ -22590,17 +22860,17 @@
                 ],
                 "operator": "OR"
             },
-            {
-                "key": "DAK, Six months post-delivery",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Date of last birth",
-                "minValue": 42,
-                "maxValue": 180,
-                "operator": "between"
-            },
+          {
+            "key": "DAK, 180 days post-delivery",
+            "value": true,
+            "operator": "="
+          },
+          {
+            "key": "DAK, Time since delivery",
+            "minValue": 42,
+            "maxValue": 180,
+            "operator": "beyound, <=,>="
+          },
             {
                 "key": "DAK, Amenorrhoea",
                 "value": true,
@@ -22641,106 +22911,106 @@
         "action_key": 1173
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Chosen method",
-                "orValues": [
-                    "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
-                    "DAK, Etonogestrel (ETG) one-rod"
-                ],
-                "operator": "OR"
-            },
-            {
-                "key": "DAK, Six months post-delivery",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Date of last birth",
-                "value": 42,
-                "operator": ">"
-            },
-            {
-                "key": "DAK, Amenorrhoea",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Days since start of last normal menses",
-                "value": 7,
-                "operator": "<="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Chosen method",
+          "orValues": [
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+            "DAK, Etonogestrel (ETG) one-rod"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, 180 days post-delivery",
+          "value": true,
+          "operator": "="
+        },
+        {
+          "key": "DAK, Time since delivery",
+         "value":"42", 
+          "operator": ">"
+        },
+        {
+          "key": "DAK, Amenorrhoea",
+          "value": false,
+          "operator": "="
+        },
+        {
+          "key": "DAK, Days since start of last normal menses",
+          "value": 7,
+          "operator": "<="
+        }
+      ],
         "action": "Insert implant at the time of consultation",
         "annotation": "\u2013 The implant can be inserted as  at the time of consultation, not just during menstruation",
         "action_key": 1174
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Chosen method",
-                "orValues": [
-                    "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
-                    "DAK, Etonogestrel (ETG) one-rod"
-                ],
-                "operator": "OR"
-            },
-            {
-                "key": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Date of last birth",
-                "value": 21,
-                "operator": "<"
-            },
-            {
-                "key": "DAK, Is client currently breastfeeding?",
-                "value": false,
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Chosen method",
+          "orValues": [
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+            "DAK, Etonogestrel (ETG) one-rod"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Postpartum",
+          "value": true,
+          "operator": "="
+        },
+        {
+          "key": "DAK, Time since delivery",
+          "value": "21",
+          "operator": "<"
+        },
+        {
+          "key": "DAK, Is client currently breastfeeding?",
+          "value": false,
+          "operator": "="
+        }
+      ],
         "action": "Insert implant at the time of consultation",
         "annotation": "\u2013 An implant can be inserted at the woman's convenience 21 days  postpartum.\n\u2013 It is highly unlikely that a woman will ovulate and be at risk of pregnancy during the first 21 days postpartum.",
         "action_key": 1175
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Chosen method",
-                "orValues": [
-                    "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
-                    "DAK, Etonogestrel (ETG) one-rod"
-                ],
-                "operator": "OR"
-            },
-            {
-                "key": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Date of last birth",
-                "value": 21.0,
-                "operator": ">"
-            },
-            {
-                "key": "DAK, Is client currently breastfeeding?",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Amenorrhoea",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Days since start of last normal menses",
-                "value": 7.0,
-                "operator": "<="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Chosen method",
+          "orValues": [
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+            "DAK, Etonogestrel (ETG) one-rod"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Postpartum",
+          "value": true,
+          "operator": "="
+        },
+        {
+          "key": "DAK, Time since delivery",
+          "value": "21",
+          "operator": ">"
+        },
+        {
+          "key": "DAK, Is client currently breastfeeding?",
+          "value": false,
+          "operator": "="
+        },
+        {
+          "key": "DAK, Amenorrhoea",
+          "value": false,
+          "operator": "="
+        },
+        {
+          "key": "DAK, Days since start of last normal menses",
+          "value": 7.0,
+          "operator": "<="
+        }
+      ],
         "action": "Insert implant at the time of consultation",
         "annotation": "\u2013 The implant can be inserted at the time of consultation, not just during menstruation",
         "action_key": 1176
@@ -22949,19 +23219,19 @@
                 ],
                 "operator": "OR"
             },
-            {
-                "key": "DAK, Six months post-delivery",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Date of last birth",
-                "value": 42,
-                "operator": ">"
-            },
+          {
+            "key": "DAK, 180 days post-delivery",
+            "value": true,
+            "operator": "="
+          },
+          {
+            "key": "DAK, Time since delivery",
+            "value": 42,
+            "operator": ">"
+          },
             {
                 "key": "DAK, Amenorrhoea",
-                "value": true,
+                "value": false,
                 "operator": "="
             },
             {
@@ -22985,46 +23255,46 @@
         "action_key": 1183
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Chosen method",
-                "orValues": [
-                    "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
-                    "DAK, Etonogestrel (ETG) one-rod"
-                ],
-                "operator": "OR"
-            },
-            {
-                "key": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Date of last birth",
-                "value": 21,
-                "operator": ">"
-            },
-            {
-                "key": "DAK, Is client currently breastfeeding?",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Amenorrhoea",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Reasonably certain a woman is not pregnant",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Pregnancy test result",
-                "value": "DAK, Not pregnant",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Chosen method",
+          "orValues": [
+            "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+            "DAK, Etonogestrel (ETG) one-rod"
+          ],
+          "operator": "OR"
+        },
+        {
+          "key": "DAK, Postpartum",
+          "value": true,
+          "operator": "="
+        },
+        {
+          "key": "DAK, Time since delivery",
+          "value": 21,
+          "operator": ">"
+        },
+        {
+          "key": "DAK, Is client currently breastfeeding?",
+          "value": false,
+          "operator": "="
+        },
+        {
+          "key": "DAK, Amenorrhoea",
+          "value": true,
+          "operator": "="
+        },
+        {
+          "key": "DAK, Reasonably certain a woman is not pregnant",
+          "value": true,
+          "operator": "="
+        },
+        {
+          "key": "DAK, Pregnancy test result",
+          "value": "DAK, Not pregnant",
+          "operator": "="
+        }
+      ],
         "action": "Insert implant at the time of consultation if reasonably certain she is not pregnant. Provide back-up method.",
         "annotation": "\u2013 An implant can be inserted  if pregnancy can be ruled out by checklist and pregnacy test",
         "action_key": 1184
@@ -23044,11 +23314,11 @@
                 "value": true,
                 "operator": "="
             },
-            {
-                "key": "DAK, Date of last birth",
-                "value": 21,
-                "operator": ">"
-            },
+          {
+            "key": "DAK, Time since delivery",
+            "value": 21,
+            "operator": ">"
+          },
             {
                 "key": "DAK, Is client currently breastfeeding?",
                 "value": false,
@@ -23056,7 +23326,7 @@
             },
             {
                 "key": "DAK, Amenorrhoea",
-                "value": true,
+                "value": false,
                 "operator": "="
             },
             {
@@ -23348,12 +23618,12 @@
                 "value": true,
                 "operator": "="
             },
-            {
-                "key": "DAK, Date of last birth",
-                "minValue": 42.0,
-                "maxValue": 180.0,
-                "operator": "between, <, <="
-            },
+          {
+            "key": "DAK, Time since delivery",
+            "minValue": 42.0,
+            "maxValue": 180.0,
+            "operator": "between, >, <="
+          },
             {
                 "key": "DAK, Amenorrhoea",
                 "value": true,
@@ -23379,12 +23649,12 @@
                 "value": true,
                 "operator": "="
             },
-            {
-                "key": "DAK, Date of last birth",
-                "minValue": 49.0,
-                "maxValue": 180.0,
-                "operator": "between, <, <="
-            },
+          {
+            "key": "DAK, Time since delivery",
+            "minValue": 49.0,
+            "maxValue": 180.0,
+            "operator": "between, >, <="
+          },
             {
                 "key": "DAK, Amenorrhoea",
                 "value": true,
@@ -23424,11 +23694,11 @@
                 "value": true,
                 "operator": "="
             },
-            {
-                "key": "DAK, Date of last birth",
-                "value": 21.0,
-                "operator": "<"
-            }
+          {
+            "key": "DAK, Time since delivery",
+            "value": 21.0,
+            "operator": "<"
+          }
         ],
         "action": "Provide injection at the time of consultation or at a time convenient for the client at a later date through an appropriate service",
         "annotation": "\u2013 The first injection can be given. \n\u2013 It is highly unlikely that a woman will ovulate and be at risk of pregnancy during the first 21 days postpartum. However, for programmatic reasons (i.e. depending on national, regional and/or local programme protocols), some contraceptive methods may be provided during this period.",
@@ -23528,16 +23798,16 @@
                 "value": true,
                 "operator": "="
             },
-            {
-                "key": "DAK, Six months post-delivery",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Date of last birth",
-                "value": 294,
-                "operator": ">"
-            },
+          {
+            "key": "DAK, 180 days post-delivery",
+            "value": true,
+            "operator": "="
+          },
+          {
+            "key": "DAK, Time since delivery",
+            "value": 294,
+            "operator": ">"
+          },
             {
                 "key": " DAK, Amenorrhoea",
                 "value": false,
@@ -23762,12 +24032,12 @@
                 "value": true,
                 "operator": "="
             },
-            {
-                "key": "DAK, Date of last birth",
-                "minValue": 42.0,
-                "maxValue": 180.0,
-                "operator": "beyond, <, >"
-            },
+          {
+            "key": "DAK, Time since delivery",
+            "minValue": 42.0,
+            "maxValue": 180.0,
+            "operator": "between, >, <"
+          },
             {
                 "key": "DAK, Amenorrhoea",
                 "value": false,
@@ -23813,11 +24083,11 @@
                 "value": true,
                 "operator": "="
             },
-            {
-                "key": "DAK, Date of last birth",
-                "values": 21,
-                "operator": ">"
-            },
+          {
+            "key": "DAK, Time since delivery",
+            "values": 21,
+            "operator": ">"
+          },
             {
                 "key": "DAK, Amenorrhoea",
                 "value": true,
@@ -24233,17 +24503,17 @@
                 "value": true,
                 "operator": "="
             },
-            {
-                "key": "DAK, Six months post-delivery",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Date of last birth",
-                "minValue": 42,
-                "maxValue": 180,
-                "operator": "between, <=, <"
-            },
+          {
+            "key": "DAK, 180 days post-delivery",
+            "value": true,
+            "operator": "="
+          },
+          {
+            "key": "DAK, Time since delivery",
+            "minValue": 42,
+            "maxValue": 180,
+            "operator": "between, >, <="
+          },
             {
                 "key": "DAK, Amenorrhoea",
                 "value": true,
@@ -24264,38 +24534,39 @@
         "action_key": 1219
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Chosen method",
-                "value": "DAK, Progestogen-only pills (POPs)",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Is client currently breastfeeding?",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Six months post-delivery",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Date of last birth",
-                "value": 42,
-                "operator": ">"
-            },
-            {
-                "key": "DAK, Amenorrhoea",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Days since start of last normal menses",
-                "value": 5.0,
-                "operator": "<="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Chosen method",
+          "value": "DAK, Progestogen-only pills (POPs)",
+          "operator": "="
+        },
+        {
+          "key": "DAK, Is client currently breastfeeding?",
+          "value": true,
+          "operator": "="
+        },
+        {
+          "key": "DAK, 180 days post-delivery",
+          "value": true,
+          "operator": "="
+        },
+
+        {
+          "key": "DAK, Time since delivery",
+          "value": 42,
+          "operator": ">"
+        },
+        {
+          "key": "DAK, Amenorrhoea",
+          "value": false,
+          "operator": "="
+        },
+        {
+          "key": "DAK, Days since start of last normal menses",
+          "value": 5.0,
+          "operator": "<="
+        }
+      ],
         "action": "Provide up to 1 year's supply of POPs with appropriate instructions on initiation",
         "annotation": "\u2013 More than 6 weeks postpartum and menstrual cycles have returned: POPs can be initiated as advised for other women having menstrual cycles (medical eligibility category 1).\n\u2013 POPs may be provided to a woman in advance with appropriate instructions on pill initiation, provided she is medically eligible.\n\u2013 Within 5 days of the start of menstrual bleeding: POPs can be initiated.",
         "action_key": 1220
@@ -24538,17 +24809,17 @@
                 "value": true,
                 "operator": "="
             },
-            {
-                "key": "DAK, Six months post-delivery",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Date of last birth",
-                "minValue": 42,
-                "maxValue": 180,
-                "operator": "between, <, <="
-            },
+          {
+            "key": "DAK, 180 days post-delivery",
+            "value": true,
+            "operator": "="
+          },
+          {
+            "key": "DAK, Time since delivery",
+            "minValue": 42,
+            "maxValue": 180,
+            "operator": "between, >, <="
+          },
             {
                 "key": "DAK, Amenorrhoea",
                 "value": true,
@@ -24598,19 +24869,19 @@
                 "value": true,
                 "operator": "="
             },
-            {
-                "key": "DAK, Six months post-delivery",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Date of last birth",
-                "value": 42,
-                "operator": ">"
-            },
+          {
+            "key": "DAK, 180 days post-delivery",
+            "value": true,
+            "operator": "="
+          },
+          {
+            "key": "DAK, Time since delivery",
+            "value": 42,
+            "operator": ">"
+          },
             {
                 "key": "DAK, Amenorrhoea",
-                "value": true,
+                "value": false,
                 "operator": "="
             },
             {
@@ -24654,22 +24925,8 @@
                 "key": "DAK, Date of last birth",
                 "value": 21,
                 "operator": ">"
-            },
-            {
-                "key": "DAK, Amenorrhoea",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Reasonably certain a woman is not pregnant",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Pregnancy test result",
-                "value": "DAK, Not pregnant",
-                "operator": "="
             }
+            
         ],
         "action": "Provide up to 1 year's supply POPs with appropriate instructions on initiation. Provide back-up method.",
         "annotation": "\u2013 POPs may be provided to a woman in advance with appropriate instructions on pill initiation, provided she is medically eligible.\n\u2013 21 or more days postpartum and menstrual cycles have not returned: POPs can be initiated if it is reasonably certain that the woman is not pregnant.",
@@ -24684,7 +24941,7 @@
             },
             {
                 "key": "DAK, Is client currently breastfeeding?",
-                "value": true,
+                "value": false,
                 "operator": "="
             },
             {
@@ -24718,33 +24975,34 @@
         "action_key": 1233
     },
     {
-        "conditions": [
-            {
-                "key": "DAK, Chosen method",
-                "value": "DAK, Progestogen-only pills (POPs)",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Date of miscarriage or abortion FP",
-                "value": 7.0,
-                "operator": ">"
-            },
-            {
-                "key": "DAK, Reasonably certain a woman is not pregnant",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Pregnancy test result",
-                "value": "DAK, Not pregnant",
-                "operator": "="
-            }
-        ],
+      "conditions": [
+        {
+          "key": "DAK, Chosen method",
+          "value": "DAK, Progestogen-only pills (POPs)",
+          "operator": "="
+        },
+        {
+          "key": "DAK, Miscarriage or abortion within past 4 weeks",
+          "value": true,
+          "operator": "="
+        },
+        {
+          "key": "DAK, Date of miscarriage or abortion FP",
+          "value": 7.0,
+          "operator": ">"
+        },
+        {
+          "key": "DAK, Reasonably certain a woman is not pregnant",
+          "value": true,
+          "operator": "="
+        },
+        {
+          "key": "DAK, Pregnancy test result",
+          "value": "DAK, Not pregnant",
+          "operator": "="
+        }
+
+      ],
         "action": "Provide up to 1 year's supply POPs with appropriate instructions on initiation. Provide back-up method.",
         "annotation": "\u2013 POPs may be provided to a woman in advance with appropriate instructions on pill initiation, provided she is medically eligible.\n\u2013 POPs can be initiated immediately post-abortion or miscarriage.",
         "action_key": 1234
@@ -25020,11 +25278,11 @@
                 "value": true,
                 "operator": "="
             },
-            {
-                "key": "DAK, Date of last birth",
-                "value": 180,
-                "operator": ">"
-            },
+          {
+            "key": "DAK, Time since delivery",
+            "value": 180,
+            "operator": ">"
+          },
             {
                 "key": "DAK, Amenorrhoea",
                 "value": false,
@@ -25057,11 +25315,11 @@
                 "value": true,
                 "operator": "="
             },
-            {
-                "key": "DAK, Date of last birth",
-                "value": 21,
-                "operator": ">"
-            }
+          {
+            "key": "DAK, Time since delivery",
+            "value": 21,
+            "operator": ">"
+          }
         ],
         "action": "Provide as much as possible up to 3 packs (for three months) supply COCs,  with appropriate instructions on initiation",
         "annotation": "\u2013 21 or more days postpartum: for women with no other risk factors for venous thromboembolism (VTE), COCs,  can generally be initiated (medical eligibility category 2).\n\u2013 Client can start COCs at any time on days 21\u201328 after giving birth. Give her pills any time to start during these 7 days. If additional risk for VTE, wait until 6 weeks postpartum.",
@@ -25298,11 +25556,11 @@
                 "value": true,
                 "operator": "="
             },
-            {
-                "key": "DAK, Date of last birth",
-                "value": 180,
-                "operator": ">"
-            },
+          {
+            "key": "DAK, Time since delivery",
+            "value": 180,
+            "operator": ">"
+          },
             {
                 "key": "DAK, Amenorrhoea",
                 "value": true,
@@ -25335,11 +25593,11 @@
                 "value": true,
                 "operator": "="
             },
-            {
-                "key": "DAK, Date of last birth",
-                "value": 180,
-                "operator": ">"
-            },
+          {
+            "key": "DAK, Time since delivery",
+            "value": 180,
+            "operator": ">"
+          },
             {
                 "key": "DAK, Amenorrhoea",
                 "value": false,
@@ -25712,17 +25970,17 @@
                 "value": true,
                 "operator": "="
             },
-            {
-                "key": "DAK, Six months post-delivery",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Date of last birth",
-                "minValue": 42.0,
-                "maxValue": 180,
-                "operator": "between, <, <="
-            }
+          {
+            "key": "DAK, 180 days post-delivery",
+            "value": true,
+            "operator": "="
+          },
+          {
+            "key": "DAK, Time since delivery",
+            "minValue": 42.0,
+            "maxValue": 180,
+            "operator": "between, >, <="
+          }
         ],
         "action": "Method should not be started. Counsel and discuss alternative options.",
         "annotation": "\u2013 6 weeks to 6 months postpartum and primarily breastfeeding: use of COCs,  is generally not recommended unless other more appropriate methods are not available or not acceptable (medical eligibility category 3)",
@@ -25745,11 +26003,11 @@
                 "value": true,
                 "operator": "="
             },
-            {
-                "key": "DAK, Date of last birth",
-                "value": 21.0,
-                "operator": "<"
-            }
+          {
+            "key": "DAK, Time since delivery",
+            "value": 21.0,
+            "operator": "<"
+          }
         ],
         "action": "Method should not be started. Counsel and discuss alternative options.",
         "annotation": "\u2013 Less than 21 days postpartum: use of COCs, is generally not recommended unless other more appropriate methods are not available or not acceptable (medical eligibility category 3). \n\u2013 It is highly unlikely that a woman will ovulate and be at risk of pregnancy during the first 21 days postpartum.",
@@ -25774,11 +26032,11 @@
                 "value": "DAK, Lactational amenorrhea method (LAM)",
                 "operator": "="
             },
-            {
-                "key": "DAK, Date of last birth",
-                "value": 180.0,
-                "operator": "<="
-            },
+          {
+            "key": "DAK, Time since delivery",
+            "value": 180.0,
+            "operator": "<="
+          },
             {
                 "key": "DAK, Amenorrhoea",
                 "value": true,
@@ -25810,11 +26068,11 @@
                 "value": "DAK, Lactational amenorrhea method (LAM)",
                 "operator": "="
             },
-            {
-                "key": "DAK, Date of last birth",
-                "value": 180.0,
-                "operator": ">"
-            }
+          {
+            "key": "DAK, Time since delivery",
+            "value": 180.0,
+            "operator": ">"
+          }
         ],
         "action": "Method should not be started. Counsel and discuss alternative options.",
         "annotation": "\u2013 the client should not be starting LAM method as the conditions are not met                                                                                                                                                                                        cousel and discuss alternative options.",
