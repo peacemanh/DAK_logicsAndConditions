@@ -19219,7 +19219,7 @@
                 "key": "DAK, Time Postpartum",
                 "minValue": 7,
                 "maxValue": 42,
-                "operator": "between, <=, <="
+                "operator": "between, <=, <"
             }
         ],
         "action": "Counsel client that she is medically eligible for this method",
@@ -19534,12 +19534,12 @@
                 "key": "DAK, Systolic blood pressure",
                 "minValue": 140,
                 "maxValue": 159,
-                "operator": "between, <=, <"
+                "operator": "between, <=, <="
             },
             {
                 "key": "DAK, Diastolic blood pressure",
                 "minValue": 90,
-                "maxValue": 159,
+                "maxValue": 99,
                 "operator": "between, <=, <"
             }
         ],
