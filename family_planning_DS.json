@@ -16282,7 +16282,7 @@
             }
         ],
         "action": "Counsel client that she is medically eligible for this method",
-        "annotation": "Medical eligibility criteria (MEC) category 1 for initiation\u2013 Use method in any circumstance.\n\nClassification depends on accurate diagnosis of those severe headaches that are migrainous and those that are not. Any new headaches or marked changes in headaches should be evaluated. Classification is for women without any other risk factors for stroke.",
+        "annotation": "Medical eligibility criteria (MEC) category 1  \u2013 Use method in any circumstance.\n\nClassification depends on accurate diagnosis of those severe headaches that are migrainous and those that are not. Any new headaches or marked changes in headaches should be evaluated. Classification is for women without any other risk factors for stroke.",
         "action_key": 838
     },
     {
@@ -16304,7 +16304,7 @@
             }
         ],
         "action": "Counsel client that she is medically eligible for this method",
-        "annotation": "Medical eligibility criteria (MEC) category 2 (for continuation) \u2013 Generally use method.\n\nAny new headaches or marked changes in headaches should be evaluated. Classification depends on accurate diagnosis of those severe headaches that are migrainous and those that are not. Classification is for women without any other risk factors for stroke.",
+        "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method.\n\nAny new headaches or marked changes in headaches should be evaluated. Classification depends on accurate diagnosis of those severe headaches that are migrainous and those that are not. Classification is for women without any other risk factors for stroke.",
         "action_key": 839
     },
     {
@@ -16326,7 +16326,7 @@
             }
         ],
         "action": "Counsel client that she is medically eligible for this method",
-        "annotation": "Medical eligibility criteria (MEC) category 2 for initiation \u2013 Generally use method.\n\nAny new headaches or marked changes in headaches should be evaluated.",
+        "annotation": "Medical eligibility criteria (MEC) category 2  \u2013 Generally use method.\n\nAny new headaches or marked changes in headaches should be evaluated.",
         "action_key": 840
     },
     {
@@ -16348,7 +16348,7 @@
             }
         ],
         "action": "Counsel client that she is NOT medically eligible for this method.\nDiscuss methods and options to find alternative contraception for the client.",
-        "annotation": "Medical eligibility criteria (MEC) category 3 for initiation \u2013 Use of method not usually recommended unless other more appropriate methods are not available or acceptable.\n\nAny new headaches or marked changes in headaches should be evaluated. Risk of stroke increases with age, hypertension and smoking.",
+        "annotation": "Medical eligibility criteria (MEC) category 3  \u2013 Use of method not usually recommended unless other more appropriate methods are not available or acceptable.\n\nAny new headaches or marked changes in headaches should be evaluated. Risk of stroke increases with age, hypertension and smoking.",
         "action_key": 841
     },
     {
@@ -16370,7 +16370,7 @@
             }
         ],
         "action": "Counsel client that she is NOT medically eligible for this method.\nDiscuss methods and options to find alternative contraception for the client.",
-        "annotation": "Medical eligibility criteria (MEC) category 3 for initiation \u2013 Use of method not usually recommended unless other more appropriate methods are not available or acceptable.\n\nAny new headaches or marked changes in headaches should be evaluated. Risk of stroke increases with age, hypertension and smoking.",
+        "annotation": "Medical eligibility criteria (MEC) category 3  \u2013 Use of method not usually recommended unless other more appropriate methods are not available or acceptable.\n\nAny new headaches or marked changes in headaches should be evaluated. Risk of stroke increases with age, hypertension and smoking.",
         "action_key": 842
     },
     {
@@ -16392,7 +16392,7 @@
             }
         ],
         "action": "Counsel client that she is NOT medically eligible for this method.\nDiscuss methods and options to find alternative contraception for the client.",
-        "annotation": "Medical eligibility criteria (MEC) category 4 (for continuation) \u2013 Method NOT to be used.\n\nAny new headaches or marked changes in headaches should be evaluated. Risk of stroke increases with age, hypertension and smoking.",
+        "annotation": "Medical eligibility criteria (MEC) category 4  \u2013 Method NOT to be used.\n\nAny new headaches or marked changes in headaches should be evaluated. Risk of stroke increases with age, hypertension and smoking.",
         "action_key": 843
     },
     {
