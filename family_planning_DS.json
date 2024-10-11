@@ -17960,7 +17960,7 @@
     {
         "conditions": [
             {
-                "key": "DAK, Method in use",
+                "key": " ",
                 "value": "DAK, Emergency contraceptive pills (ECPs)",
                 "operator": "="
             },
