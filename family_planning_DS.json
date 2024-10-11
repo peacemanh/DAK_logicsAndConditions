@@ -19539,7 +19539,7 @@
             {
                 "key": "DAK, Diastolic blood pressure",
                 "minValue": 90,
-                "maxValue": 99,
+                "maxValue": 9,
                 "operator": "between, <=, <"
             }
         ],
