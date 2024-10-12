@@ -15110,11 +15110,11 @@
     },
     {
         "conditions": [
-          {
-            "key": "DAK, Method in mind",
-            "value": "DAK, Emergency contraceptive pills (ECPs)",
-            "operator": "="
-          },
+            {
+                "key": "DAK, Method in mind",
+                "value": "DAK, Emergency contraceptive pills (ECPs)",
+                "operator": "="
+            },
             {
                 "key": "DAK, Reasonably certain a woman is not pregnant",
                 "value": "DAK, TRUE OR Pregnancy test result = Not pregnant",
@@ -15127,11 +15127,11 @@
     },
     {
         "conditions": [
-          {
-            "key": "DAK, Method in mind",
-            "value": "DAK, Emergency contraceptive pills (ECPs)",
-            "operator": "="
-          },
+            {
+                "key": "DAK, Method in mind",
+                "value": "DAK, Emergency contraceptive pills (ECPs)",
+                "operator": "="
+            },
             {
                 "key": "DAK, Reasonably certain a woman is not pregnant",
                 "value": "DAK, TRUE OR Pregnancy test result = Not pregnant",
@@ -15144,11 +15144,11 @@
     },
     {
         "conditions": [
-          {
-            "key": "DAK, Method in mind",
-            "value": "DAK, Emergency contraceptive pills (ECPs)",
-            "operator": "="
-          },
+            {
+                "key": "DAK, Method in mind",
+                "value": "DAK, Emergency contraceptive pills (ECPs)",
+                "operator": "="
+            },
             {
                 "key": "DAK, Breastfeeding",
                 "value": true,
@@ -15229,11 +15229,11 @@
     },
     {
         "conditions": [
-          {
-            "key": "DAK, Method in mind",
-            "value": "DAK, Emergency contraceptive pills (ECPs)",
-            "operator": "="
-          },
+            {
+                "key": "DAK, Method in mind",
+                "value": "DAK, Emergency contraceptive pills (ECPs)",
+                "operator": "="
+            },
             {
                 "key": "DAK, Risk factors for venous thromboembolism (VTE)",
                 "value": "DAK, History of deep vein thrombosis (DVT) or PE OR  Acute DVT or PE OR Major or minor surgery with or without prolonged immobilization OR Known thrombogenic mutations",
@@ -16793,30 +16793,30 @@
         "annotation": "Client is medically eligible for sterilization, but the procedure requires a specialized setting with experienced staff, equipment for general anesthesia, and adequate medical support. In the meantime. Discussion on ralternative long-term, highly effective methods with the client and help them choose an interim method until the sterilization procedure can be performed.Discuss permanent sterilization and alternatives.",
         "action_key": 860
     },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Method in mind",
-        "value": "DAK, Female sterilization",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Systolic blood pressure",
-        "minValue": 140,
-        "maxValue": 159,
-        "operator": "between, <=, <="
-      },
-      {
-        "key": "DAK, Diastolic blood pressure",
-        "minValue": 90,
-        "maxValue": 99,
-        "operator": "between, <=, <"
-      }
-    ],
-    "action": "Counsel client that she is medically eligible for this method",
-    "annotation": "Client is medically eligible for this method. Counsel about the permanency of sterilization and the availability of alternative, long-term, highly effective methods.\n\nControl elevated blood pressure before surgery to reduce risks. Uncontrolled hypertension increases anesthesia-related risks and cardiac arrhythmia. Monitor blood pressure closely intraoperatively is necessary.",
-    "action_key": 1015
-  },
+    {
+        "conditions": [
+            {
+                "key": "DAK, Method in mind",
+                "value": "DAK, Female sterilization",
+                "operator": "="
+            },
+            {
+                "key": "DAK, Systolic blood pressure",
+                "minValue": 140,
+                "maxValue": 159,
+                "operator": "between, <=, <="
+            },
+            {
+                "key": "DAK, Diastolic blood pressure",
+                "minValue": 90,
+                "maxValue": 99,
+                "operator": "between, <=, <"
+            }
+        ],
+        "action": "Counsel client that she is medically eligible for this method",
+        "annotation": "Client is medically eligible for this method. Counsel about the permanency of sterilization and the availability of alternative, long-term, highly effective methods.\n\nControl elevated blood pressure before surgery to reduce risks. Uncontrolled hypertension increases anesthesia-related risks and cardiac arrhythmia. Monitor blood pressure closely intraoperatively is necessary.",
+        "action_key": 1015
+    },
     {
         "conditions": [
             {
