@@ -15111,7 +15111,7 @@
     {
         "conditions": [
             {
-                "key": "DAK, Method in use",
+                "key": "DAK, Method in mind",
                 "value": "DAK, Emergency contraceptive pills (ECPs)",
                 "operator": "="
             },
@@ -15128,7 +15128,7 @@
     {
         "conditions": [
             {
-                "key": "DAK, Method in use",
+                "key": "DAK, Method in mind",
                 "value": "DAK, Emergency contraceptive pills (ECPs)",
                 "operator": "="
             },
@@ -15145,7 +15145,7 @@
     {
         "conditions": [
             {
-                "key": "DAK, Method in use",
+                "key": "DAK, Method in mind",
                 "value": "DAK, Emergency contraceptive pills (ECPs)",
                 "operator": "="
             },
@@ -15162,7 +15162,7 @@
     {
         "conditions": [
             {
-                "key": "DAK, Method in use",
+                "key": "DAK, Method in mind",
                 "value": "DAK, Emergency contraceptive pills (ECPs)",
                 "operator": "="
             },
@@ -15179,7 +15179,7 @@
     {
         "conditions": [
             {
-                "key": "DAK, Method in use",
+                "key": "DAK, Method in mind",
                 "value": "DAK, Emergency contraceptive pills (ECPs)",
                 "operator": "="
             },
@@ -15196,7 +15196,7 @@
     {
         "conditions": [
             {
-                "key": "DAK, Method in use",
+                "key": "DAK, Method in mind",
                 "value": "DAK, Emergency contraceptive pills (ECPs)",
                 "operator": "="
             },
@@ -15213,7 +15213,7 @@
     {
         "conditions": [
             {
-                "key": "DAK, Method in use",
+                "key": "DAK, Method in mind",
                 "value": "DAK, Emergency contraceptive pills (ECPs)",
                 "operator": "="
             },
@@ -15230,7 +15230,7 @@
     {
         "conditions": [
             {
-                "key": "DAK, Method in use",
+                "key": "DAK, Method in mind",
                 "value": "DAK, Emergency contraceptive pills (ECPs)",
                 "operator": "="
             },
@@ -16813,9 +16813,9 @@
                 "operator": "between, <=, <"
             }
         ],
-        "action": "Counsel client that she is medically eligible for this ",
+        "action": "Counsel client that she is medically eligible for this method",
         "annotation": "Client is medically eligible for this method. Counsel about the permanency of sterilization and the availability of alternative, long-term, highly effective methods.\n\nControl elevated blood pressure before surgery to reduce risks. Uncontrolled hypertension increases anesthesia-related risks and cardiac arrhythmia. Monitor blood pressure closely intraoperatively is necessary.",
-        "action_key": 861
+        "action_key": 1015
     },
     {
         "conditions": [
