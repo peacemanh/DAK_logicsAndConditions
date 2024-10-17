@@ -17838,7 +17838,7 @@
     "action": "Counsel client that s/he is medically eligible for this method",
     "annotation": "Medical eligibility criteria (MEC) category 1 \u00e2\u20ac\u201c Use method in any circumstanceNote: If the client has any medical condition is taking any medication, there are no restrictions on condom use."
   },
- 
+
   {
     "conditions": [
       {
@@ -17969,7 +17969,7 @@
       {
         "key": "DAK, Risk factors for venous thromboembolism (VTE)",
         "value": "DAK, History of deep vein thrombosis (DVT) or PE OR  Acute DVT or PE OR Major or minor surgery with or without prolonged immobilization OR Known thrombogenic mutations",
-        "orValues": [ "DAK, History of deep vein thrombosis (DVT)", "DAK, Stroke", "DAK, Acute deep vein thrombosis (DVT)", "DAK, Acute pulmonary embolism (PE)", "DAK, Minor surgery without immobilization", "DAK, Major surgery without prolonged immobilization", "DAK, Major surgery with prolonged immobilization"],
+        "orValues": [ "DAK, History of deep vein thrombosis (DVT)", "DAK, Stroke", "DAK, Acute deep vein thrombosis (DVT)", "DAK, Acute pulmonary embolism (PE)", "DAK, Minor surgery without immobilization", "DAK, Major surgery without prolonged immobilization", "DAK, Major surgery with prolonged immobilization" ],
         "operator": "OR"
       }
     ],
@@ -18088,7 +18088,7 @@
       },
       {
         "key": "DAK, Headaches",
-        "orValues": ["DAK, Migraine headache without aura", "DAK, Migraine headache with aura" ],
+        "orValues": [ "DAK, Migraine headache without aura", "DAK, Migraine headache with aura" ],
         "operator": "OR"
       }
     ],
@@ -18096,7 +18096,7 @@
     "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method",
     "action_key": 937
   },
-  
+
   {
     "conditions": [
       {
