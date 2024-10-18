@@ -429,7 +429,7 @@
             {
                 "trigger": "DAK, Method in mind",
                 "orValues": [
-                    
+                    "DAK, Fertility awareness-based methods (FAB)",
                     "DAK, Male sterilization",
                     "DAK, Female sterilization"
                 ],
@@ -1720,11 +1720,11 @@
     },
     {
         "logics": [
-            {
-                "trigger": "DAK, Health condition(s)",
-                "value": "DAK, Diabetes",
-                "operator": "="
-            }
+          {
+            "trigger": "DAK, Health condition(s)",
+            "value": "DAK, Diabetes form",
+            "operator": "="
+          }
         ],
         "action": "show",
         "dependent": "DAK, Diabetes",
@@ -2078,7 +2078,7 @@
     {
         "logics": [
             {
-                "trigger": "DAK, Method in mind",
+                "trigger": "DAK, Method in use",
                 "value": "DAK, Fertility awareness-based methods (FAB)",
                 "operator": "="
             },
@@ -2096,7 +2096,7 @@
     {
         "logics": [
             {
-                "trigger": "DAK, Method in mind",
+                "trigger": "DAK, Method in use",
                 "value": "DAK, Fertility awareness-based methods (FAB)",
                 "operator": "="
             }
@@ -2109,7 +2109,7 @@
     {
         "logics": [
             {
-                "trigger": "DAK, Method in use",
+                "trigger": "DAK, Method in mind",
                 "orValues": [
                     "DAK, Female sterilization",
                     "DAK, Male sterilization"
