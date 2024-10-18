@@ -16222,7 +16222,7 @@
         "operator": "="
       },
       {
-        "trigger": "DAK, Date of last birth",
+        "trigger": "DAK, Time Postpartum",
         "value": 28.0,
         "operator": "<"
       }
@@ -16249,7 +16249,7 @@
         "operator": "="
       },
       {
-        "trigger": "DAK, Date of last birth",
+        "trigger": "DAK, Time Postpartum",
         "value": 28.0,
         "operator": ">="
       }
