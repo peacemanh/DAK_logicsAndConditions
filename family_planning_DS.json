@@ -18500,7 +18500,7 @@
       },
       {
         "key": "DAK, Is client currently breastfeeding?",
-        "value": false,
+        "value": true,
         "operator": "="
       },
       {
