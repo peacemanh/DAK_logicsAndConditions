@@ -17,6 +17,11 @@
                 "trigger": "age",
                 "value": 19,
                 "operator": "<="
+            },
+            {
+                "trigger": "DAK, STI risk assessment conducted",
+                "value": true,
+                "operator": "="
             }
         ],
         "dependentValue": "DAK, Adolescent and Youth",
@@ -18971,23 +18976,6 @@
         ],
         "logic_key": 974,
         "dependentValue": "DAK, Delay",
-        "dependent": "DAK, Medical eligibility category"
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Method in mind",
-                "value": "DAK, Female sterilization",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Conditions relevant to sterilization and FAB",
-                "value": "DAK, Sterilization concurrent with caesarean section",
-                "operator": "="
-            }
-        ],
-        "logic_key": 975,
-        "dependentValue": "DAK, Accept",
         "dependent": "DAK, Medical eligibility category"
     }
 ]
