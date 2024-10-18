@@ -429,7 +429,7 @@
             {
                 "trigger": "DAK, Method in mind",
                 "orValues": [
-                    "DAK, Fertility awareness-based methods (FAB)",
+                    
                     "DAK, Male sterilization",
                     "DAK, Female sterilization"
                 ],
@@ -1257,8 +1257,27 @@
             "DAK, Chosen method after counselling",
             "DAK, Type of postpartum family planning method selected"
         ],
-        "dependent": "DAK, Emergency contraceptive pills (ECPs)",
+        "dependent": "DAK, Levonorgestrel intrauterine device (LNG-IUD)",
         "logic_key": 83
+    },
+    {
+        "logics": [
+            {
+                "trigger": "gender",
+                "value": "F",
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "parents": [
+            "DAK, Method in mind",
+            "DAK, Method in use",
+            "DAK, Methods previously used",
+            "DAK, Chosen method after counselling",
+            "DAK, Type of postpartum family planning method selected"
+        ],
+        "dependent": "DAK, Emergency contraceptive pills (ECPs)",
+        "logic_key": 84
     },
     {
         "logics": [
@@ -1278,7 +1297,7 @@
         ],
         "parent": "DAK, Method in mind",
         "dependent": "DAK, Fertility awareness-based methods (FAB)",
-        "logic_key": 84
+        "logic_key": 85
     },
     {
         "logics": [
@@ -1297,7 +1316,7 @@
             "DAK, Type of postpartum family planning method selected"
         ],
         "dependent": "DAK, Vasectomy",
-        "logic_key": 85
+        "logic_key": 86
     },
     {
         "logics": [
@@ -1316,7 +1335,7 @@
             "DAK, Type of postpartum family planning method selected"
         ],
         "dependent": "DAK, Tubal ligition",
-        "logic_key": 86
+        "logic_key": 87
     },
     {
         "logics": [
@@ -1335,7 +1354,7 @@
             "DAK, Type of postpartum family planning method selected"
         ],
         "dependent": "DAK, Withdrawal",
-        "logic_key": 87
+        "logic_key": 88
     },
     {
         "logics": [
@@ -1354,7 +1373,7 @@
             "DAK, Type of postpartum family planning method selected"
         ],
         "dependent": "DAK, Female relying on male method",
-        "logic_key": 88
+        "logic_key": 89
     },
     {
         "logics": [
@@ -1373,25 +1392,6 @@
             "DAK, Type of postpartum family planning method selected"
         ],
         "dependent": "DAK, Male relying on female method",
-        "logic_key": 89
-    },
-    {
-        "logics": [
-            {
-                "trigger": "gender",
-                "value": "F",
-                "operator": "="
-            }
-        ],
-        "action": "show",
-        "parents": [
-            "DAK, Method in mind",
-            "DAK, Method in use",
-            "DAK, Methods previously used",
-            "DAK, Chosen method after counselling",
-            "DAK, Type of postpartum family planning method selected"
-        ],
-        "dependent": "DAK, Levonorgestrel (LNG) two-rod for four years",
         "logic_key": 90
     },
     {
@@ -1410,7 +1410,7 @@
             "DAK, Chosen method after counselling",
             "DAK, Type of postpartum family planning method selected"
         ],
-        "dependent": "DAK, Levonorgestrel (LNG) two-rod for five years",
+        "dependent": "DAK, Levonorgestrel (LNG) two-rod for four years",
         "logic_key": 91
     },
     {
@@ -1429,7 +1429,7 @@
             "DAK, Chosen method after counselling",
             "DAK, Type of postpartum family planning method selected"
         ],
-        "dependent": "Combined contraceptive vaginal ring (CVR)",
+        "dependent": "DAK, Levonorgestrel (LNG) two-rod for five years",
         "logic_key": 92
     },
     {
@@ -1448,8 +1448,27 @@
             "DAK, Chosen method after counselling",
             "DAK, Type of postpartum family planning method selected"
         ],
-        "dependent": "DAK, Progesterone-releasing vaginal ring (PVR)",
+        "dependent": "Combined contraceptive vaginal ring (CVR)",
         "logic_key": 93
+    },
+    {
+        "logics": [
+            {
+                "trigger": "gender",
+                "value": "F",
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "parents": [
+            "DAK, Method in mind",
+            "DAK, Method in use",
+            "DAK, Methods previously used",
+            "DAK, Chosen method after counselling",
+            "DAK, Type of postpartum family planning method selected"
+        ],
+        "dependent": "DAK, Progesterone-releasing vaginal ring (PVR)",
+        "logic_key": 94
     },
     {
         "logics": [
@@ -1468,7 +1487,7 @@
             "DAK, Type of postpartum family planning method selected"
         ],
         "dependent": "DAK, Male sterilization",
-        "logic_key": 94
+        "logic_key": 95
     },
     {
         "logics": [
@@ -1487,7 +1506,7 @@
             "DAK, Type of postpartum family planning method selected"
         ],
         "dependent": "DAK, Female sterilization",
-        "logic_key": 95
+        "logic_key": 96
     },
     {
         "logics": [
@@ -1506,7 +1525,7 @@
             "DAK, Type of postpartum family planning method selected"
         ],
         "dependent": "DAK, DMPA-SC -SI",
-        "logic_key": 96
+        "logic_key": 97
     },
     {
         "logics": [
@@ -1518,7 +1537,7 @@
         ],
         "action": "hide",
         "dependent": "DAK, Date method administered",
-        "logic_key": 97
+        "logic_key": 98
     },
     {
         "logics": [
@@ -1530,7 +1549,7 @@
         ],
         "action": "show",
         "dependent": "DAK, IUD insertion date",
-        "logic_key": 98
+        "logic_key": 99
     },
     {
         "logics": [
@@ -1542,7 +1561,7 @@
         ],
         "action": "show",
         "dependent": "DAK, IUD insertion date",
-        "logic_key": 99
+        "logic_key": 100
     },
     {
         "logics": [
@@ -1554,16 +1573,16 @@
         ],
         "action": "show",
         "dependent": "DAK, IUD insertion date",
-        "logic_key": 100
+        "logic_key": 101
     },
     {
         "logics": [
             {
                 "trigger": "DAK, Method in use",
                 "orValues": [
-                    "DAK, Etonogestrel (ETG) one-rod", 
-                    "DAK, Etonogestrel (ETG) one-rod implant", 
-                    "DAK, Levonorgestrel (LNG) two-rod(Jadelle)", 
+                    "DAK, Etonogestrel (ETG) one-rod",
+                    "DAK, Etonogestrel (ETG) one-rod implant",
+                    "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
                     "DAK, Unspecified implants",
                     "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
                 ],
@@ -1572,7 +1591,7 @@
         ],
         "action": "show",
         "dependent": "DAK, Implant insertion date",
-        "logic_key": 101
+        "logic_key": 102
     },
     {
         "logics": [
@@ -1584,7 +1603,7 @@
         ],
         "action": "show",
         "dependent": "DAK, Injection date",
-        "logic_key": 104
+        "logic_key": 103
     },
     {
         "logics": [
@@ -1596,7 +1615,7 @@
         ],
         "action": "show",
         "dependent": "DAK, Injection date",
-        "logic_key": 105
+        "logic_key": 104
     },
     {
         "logics": [
@@ -1608,7 +1627,7 @@
         ],
         "action": "show",
         "dependent": "DAK, Injection date",
-        "logic_key": 106
+        "logic_key": 105
     },
     {
         "logics": [
@@ -1620,7 +1639,7 @@
         ],
         "action": "show",
         "dependent": "DAK, Injection date",
-        "logic_key": 107
+        "logic_key": 106
     },
     {
         "logics": [
@@ -1632,7 +1651,7 @@
         ],
         "action": "show",
         "dependent": "DAK, Sterilization date",
-        "logic_key": 108
+        "logic_key": 107
     },
     {
         "logics": [
@@ -1644,7 +1663,7 @@
         ],
         "action": "show",
         "dependent": "DAK, Sterilization date",
-        "logic_key": 109
+        "logic_key": 108
     },
     {
         "logics": [
@@ -1656,7 +1675,7 @@
         ],
         "action": "show",
         "dependent": "DAK, Reason for no contraceptive method",
-        "logic_key": 110
+        "logic_key": 109
     },
     {
         "logics": [
@@ -1668,7 +1687,7 @@
         ],
         "action": "show",
         "dependent": "DAK, Other reason for no contra(specify)",
-        "logic_key": 111
+        "logic_key": 110
     },
     {
         "logics": [
@@ -1680,7 +1699,7 @@
         ],
         "action": "hide",
         "dependent": "DAK, Methods previously used",
-        "logic_key": 112
+        "logic_key": 111
     },
     {
         "logics": [
@@ -1692,7 +1711,7 @@
         ],
         "action": "show",
         "dependent": "DAK, Repeated emergency contraceptive pill (ECP) use",
-        "logic_key": 113
+        "logic_key": 112
     },
     {
         "logics": [
@@ -1704,7 +1723,7 @@
         ],
         "action": "show",
         "dependent": "DAK, Removal Service Provided",
-        "logic_key": 114
+        "logic_key": 113
     },
     {
         "logics": [
@@ -1716,7 +1735,7 @@
         ],
         "action": "show",
         "dependent": "DAK, Abortion/miscarriage",
-        "logic_key": 115
+        "logic_key": 114
     },
     {
         "logics": [
@@ -1728,7 +1747,7 @@
         ],
         "action": "show",
         "dependent": "DAK, Diabetes",
-        "logic_key": 116
+        "logic_key": 115
     },
     {
         "logics": [
@@ -1740,7 +1759,7 @@
         ],
         "action": "show",
         "dependent": "DAK, Risk factors for venous thromboembolism (VTE)",
-        "logic_key": 1167
+        "logic_key": 116
     },
     {
         "logics": [
@@ -2078,7 +2097,7 @@
     {
         "logics": [
             {
-                "trigger": "DAK, Method in use",
+                "trigger": "DAK, Method in mind",
                 "value": "DAK, Fertility awareness-based methods (FAB)",
                 "operator": "="
             },
@@ -2096,7 +2115,7 @@
     {
         "logics": [
             {
-                "trigger": "DAK, Method in use",
+                "trigger": "DAK, Method in mind",
                 "value": "DAK, Fertility awareness-based methods (FAB)",
                 "operator": "="
             }
