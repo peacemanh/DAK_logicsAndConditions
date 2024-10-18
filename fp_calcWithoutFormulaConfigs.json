@@ -16372,7 +16372,7 @@
       },
       {
         "trigger": "DAK, Health condition(s)",
-        "value": "DAK, No reported health logics",
+        "value": "DAK, No reported health conditions",
         "operator": "="
       }
     ],
