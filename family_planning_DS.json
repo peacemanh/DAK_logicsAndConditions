@@ -17693,7 +17693,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 180,
         "operator": ">="
       }
