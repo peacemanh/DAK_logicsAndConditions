@@ -429,7 +429,6 @@
       {
         "trigger": "DAK, Method in mind",
         "orValues": [
-          "DAK, Fertility awareness-based methods (FAB)",
           "DAK, Male sterilization",
           "DAK, Female sterilization"
         ],
@@ -1741,7 +1740,7 @@
     "logics": [
       {
         "trigger": "DAK, Health condition(s)",
-        "value": "DAK, Diabetes form",
+        "value": "DAK, Diabetes",
         "operator": "="
       }
     ],
@@ -2097,7 +2096,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Method in use",
+        "trigger": "DAK, Method in mind",
         "value": "DAK, Fertility awareness-based methods (FAB)",
         "operator": "="
       },
@@ -2115,7 +2114,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Method in use",
+        "trigger": "DAK, Method in mind",
         "value": "DAK, Fertility awareness-based methods (FAB)",
         "operator": "="
       }
@@ -2128,7 +2127,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Method in mind",
+        "trigger": "DAK, Method in use",
         "orValues": [
           "DAK, Female sterilization",
           "DAK, Male sterilization"
@@ -2837,4 +2836,4 @@
     "dependent": "DAK, History of hypertension during pregnancy, and blood pressure can be evaluated",
     "logic_key": 201
   }
-] 
+]
