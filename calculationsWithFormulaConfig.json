@@ -1,33 +1,48 @@
 [
     {
         "resultConcept": "DAK, BMI",
-        "operands": ["DAK, Height", "DAK, Pre-gestational weight"],
+        "operands": [
+            "DAK, Height",
+            "DAK, Pre-gestational weight"
+        ],
         "formula": "(DAK, Pre-gestational weight / (DAK, Height * DAK, Height)) * 10000"
-        
     },
     {
         "resultConcept": "DAK, Parity",
-        "operands": ["DAK, Number of live births", "DAK, Number of stillbirths"],
+        "operands": [
+            "DAK, Number of live births",
+            "DAK, Number of stillbirths"
+        ],
         "formula": "DAK, Number of live births + DAK, Number of stillbirths"
-        
     },
-{
+    {
         "resultConcept": "DAK, Number of previous pregnancies",
-        "operands": ["DAK, Number of pregnancies (gravida)"],
+        "operands": [
+            "DAK, Number of pregnancies (gravida)"
+        ],
         "formula": "DAK, Number of pregnancies (gravida) - 1"
-        
     },
-{
+    {
         "resultConcept": "DAK, Total weight gain (kgTotal weight gain (kg)",
-        "operands": ["DAK, Current weight",  "DAK, Pre-gestational weight"],
+        "operands": [
+            "DAK, Current weight",
+            "DAK, Pre-gestational weight"
+        ],
         "formula": "DAK, Current weight - DAK, Pre-gestational weight"
-        
+    },
+    {
+        "resultConcept": "DAK, Gestational age",
+        "operands": ["DAK, LNMP Date"],
+        "formula": "DAK, LNMP Date / 7",
+        "conditioner": {"key": "DAK, Source of gestational age", "value": "DAK, LNMP"},
+        "dateSource": true
+    },
+    {
+        "resultConcept": "DAK, Expected date of delivery (EDD)",
+        "operands": ["DAK, LNMP Date"],
+        "formula": 282,
+        "conditioner": {"key": "DAK, Source of gestational age", "value": "DAK, LNMP"},
+        "resultType": "Date",
+        "operator": "+"
     }
-
-
-
-
 ]
-
-
-

@@ -1,0 +1,38 @@
+[
+    {
+        "name": {
+            "obs_name": "DAK, Hepatitis C test result",
+            "test_name": [
+                "Hepatitis C antibody"
+            ]
+        },
+        "value": [
+            {
+                "obs_value": "DAK, Hepatitis C positive",
+                "test_value": "Positive"
+            },
+            {
+                "obs_value": "DAK, Hepatitis C negative",
+                "test_value": "Negative"
+            }
+        ]
+    },
+    {
+        "name": {
+            "obs_name": "DAK, Hepatitis B test result",
+            "test_name": [
+                "Hepatitis B surface antigen"
+            ]
+        },
+        "value": [
+            {
+                "obs_value": "DAK, Hepatitis B positive",
+                "test_value": "Positive"
+            },
+            {
+                "obs_value": "DAK, Hepatitis B negative",
+                "test_value": "Negative"
+            }
+        ]
+    }
+]
