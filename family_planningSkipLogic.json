@@ -2835,5 +2835,17 @@
     "parent": "DAK, Hypertension",
     "dependent": "DAK, History of hypertension during pregnancy, and blood pressure can be evaluated",
     "logic_key": 201
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Health condition(s)",
+        "value": "DAK, Pelvic inflammatory disease (PID) FP",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Pelvic inflammatory disease (PID) FP",
+    "logic_key": 202
   }
 ]
