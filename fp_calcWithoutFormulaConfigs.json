@@ -19004,7 +19004,25 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1125,
+    "dependentValue": false,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 12.0,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -19036,7 +19054,30 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1126,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Postpartum",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": true,
+        "operator": "="
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -19078,7 +19119,40 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1127,
+    "dependentValue": false,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Postpartum",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Date of previous delivery/Date last birth",
+        "value": 28,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 12.0,
+        "operator": "<="
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": false,
+        "operator": "="
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -19119,6 +19193,38 @@
       {
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
+        "operator": "="
+      }
+    ],
+    "logic_key": 1128,
+    "dependentValue": false,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Postpartum",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Date of previous delivery/Date last birth",
+        "value": 28,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 12.0,
+        "operator": ">"
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": false,
         "operator": "="
       },
       {
@@ -19179,7 +19285,35 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1130,
+    "dependentValue": false,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Postpartum",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Time since delivery",
+        "value": 28,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": true,
+        "operator": "="
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -19270,7 +19404,35 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1133,
+    "dependentValue": false,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
+        "value": "DAK, First trimester less than 13 weeks GA",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 12.0,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -19307,7 +19469,35 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1134,
+    "dependentValue": false,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
+        "value": "DAK, Second trimester between 13 and 24 Weeks",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 12.0,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -19339,7 +19529,30 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1135,
+    "dependentValue": false,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Keep method?",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -19680,7 +19893,39 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1147,
+    "dependentValue": false,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, Etonogestrel (ETG) one-rod implant",
+          "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+          "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+        ],
+        "operator": "OR"
       },
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "orValues": [
+          "DAK, Combined oral contraceptives (COCs)",
+          "DAK, Progestogen-only pills (POPs)",
+          "DAK, Progesterone-releasing vaginal ring (PVR)",
+          "DAK, Combined contraceptive vaginal ring (CVR) provided"
+        ],
+        "operator": "OR"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -19727,7 +19972,45 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1148,
+    "dependentValue": false,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, Etonogestrel (ETG) one-rod implant",
+          "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+          "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+        ],
+        "operator": "OR"
       },
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "orValues": [
+          "DAK, Male condoms",
+          "DAK, Female condoms",
+          "DAK, Lactational amenorrhea method (LAM)",
+          "DAK, Fertility awareness-based methods (FAB)",
+          "DAK, Withdrawal"
+        ],
+        "operator": "OR"
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 7.0,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -19771,7 +20054,42 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1149,
+    "dependentValue": false,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, Etonogestrel (ETG) one-rod implant",
+          "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+          "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+        ],
+        "operator": "OR"
       },
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "orValues": [
+          "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+          "DAK, Levonorgestrel intrauterine device (LNG-IUD)"
+        ],
+        "operator": "OR"
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 7.0,
+        "operator": "<="
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -19802,7 +20120,29 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1150,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, Etonogestrel (ETG) one-rod implant",
+          "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+          "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+        ],
+        "operator": "OR"
       },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 7.0,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -19838,7 +20178,34 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1151,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, Etonogestrel (ETG) one-rod implant",
+          "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+          "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+        ],
+        "operator": "OR"
       },
+      {
+        "trigger": "DAK, Postpartum",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": true,
+        "operator": "="
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -19879,7 +20246,39 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1152,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, Etonogestrel (ETG) one-rod implant",
+          "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+          "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+        ],
+        "operator": "OR"
       },
+      {
+        "trigger": "DAK, Time since delivery",
+        "value": 42,
+        "operator": ">"
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 7.0,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -19925,7 +20324,44 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1153,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, Etonogestrel (ETG) one-rod implant",
+          "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+          "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+        ],
+        "operator": "OR"
       },
+      {
+        "trigger": "DAK, Postpartum",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Time since delivery",
+        "value": 21,
+        "operator": ">"
+      },
+      {
+        "trigger": "DAK, Is client currently breastfeeding?",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": true,
+        "operator": "="
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -19976,7 +20412,49 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1154,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, Etonogestrel (ETG) one-rod implant",
+          "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+          "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+        ],
+        "operator": "OR"
       },
+      {
+        "trigger": "DAK, Postpartum",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Time since delivery",
+        "value": 21,
+        "operator": ">"
+      },
+      {
+        "trigger": "DAK, Is client currently breastfeeding?",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 7.0,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -20022,7 +20500,44 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1155,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, Etonogestrel (ETG) one-rod implant",
+          "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+          "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+        ],
+        "operator": "OR"
       },
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Related to bleeding",
+        "value": "DAK, Irregular bleeding",
+        "operator": "="
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -20095,7 +20610,45 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1157,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, Etonogestrel (ETG) one-rod implant",
+          "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+          "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+        ],
+        "operator": "OR"
       },
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "orValues": [
+          "DAK, Male condoms",
+          "DAK, Female condoms",
+          "DAK, Lactational amenorrhea method (LAM)",
+          "DAK, Fertility awareness-based methods (FAB)",
+          "DAK, Withdrawal"
+        ],
+        "operator": "OR"
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 7.0,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -20136,7 +20689,39 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1158,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, Etonogestrel (ETG) one-rod implant",
+          "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+          "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+        ],
+        "operator": "OR"
       },
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 7.0,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -20497,6 +21082,42 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1170,
+    "dependentValue": false,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC"
+        ],
+        "operator": "OR"
+      },
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "orValues": [
+          "DAK, Male condoms",
+          "DAK, Female condoms",
+          "DAK, Lactational amenorrhea method (LAM)",
+          "DAK, Fertility awareness-based methods (FAB)",
+          "DAK, Withdrawal"
+        ],
+        "operator": "OR"
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 7.0,
+        "operator": "<="
       },
       {
         "trigger": "DAK, Pregnancy test result",
@@ -20557,7 +21178,28 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1172,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC"
+        ],
+        "operator": "OR"
       },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 7.0,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -20585,6 +21227,77 @@
       },
       {
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "logic_key": 1173,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC"
+        ],
+        "operator": "OR"
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": true,
+        "operator": "="
+      },
+
+      {
+        "trigger": "DAK, Pregnancy test result",
+        "value": "DAK, Not pregnant",
+        "operator": "="
+      }
+    ],
+    "logic_key": 1173,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC"
+        ],
+        "operator": "OR"
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Reasonably certain a woman is not pregnant",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "logic_key": 1173,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC"
+        ],
+        "operator": "OR"
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
         "value": true,
         "operator": "="
       },
@@ -20637,7 +21350,48 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1174,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC"
+        ],
+        "operator": "OR"
       },
+      {
+        "trigger": "DAK, Is client currently breastfeeding?",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, 180 days post-delivery",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Time since delivery",
+        "value": 42,
+        "operator": ">"
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 7.0,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -20682,7 +21436,43 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1175,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC"
+        ],
+        "operator": "OR"
       },
+      {
+        "trigger": "DAK, Is client currently breastfeeding?",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Postpartum",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Time since delivery",
+        "value": 21,
+        "operator": ">"
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": true,
+        "operator": "="
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -20727,7 +21517,43 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1176,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC"
+        ],
+        "operator": "OR"
       },
+      {
+        "trigger": "DAK, Is client currently breastfeeding?",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Postpartum",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 7.0,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -20773,7 +21599,44 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1177,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC"
+        ],
+        "operator": "OR"
       },
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "orValues": [
+          "DAK, Male condoms",
+          "DAK, Female condoms",
+          "DAK, Lactational amenorrhea method (LAM)",
+          "DAK, Fertility awareness-based methods (FAB)",
+          "DAK, Withdrawal"
+        ],
+        "operator": "OR"
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 7.0,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -20818,7 +21681,43 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1178,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC"
+        ],
+        "operator": "OR"
       },
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Related to bleeding",
+        "value": "DAK, Irregular bleeding",
+        "operator": "="
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -20885,6 +21784,42 @@
         "operator": "="
       },
       {
+        "trigger": "DAK, Sexually active",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "logic_key": 1180,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC"
+        ],
+        "operator": "OR"
+      },
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 7,
+        "operator": ">"
+      },
+
+      {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
         "operator": "="
@@ -20929,6 +21864,43 @@
         "value": true,
         "operator": "="
       },
+
+      {
+        "trigger": "DAK, Sexually active",
+        "value": false,
+        "operator": "="
+      }
+    ],
+    "logic_key": 1181,
+    "dependentValue": false,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "orValues": [
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC"
+        ],
+        "operator": "OR"
+      },
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 7,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -21188,7 +22160,35 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1190,
+    "dependentValue": false,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Progestogen-only pills (POPs)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "orValues": [
+          "DAK, Combined oral contraceptives (COCs)",
+          "DAK, Etonogestrel (ETG) one-rod implant",
+          "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+          "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+        ],
+        "operator": "OR"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -21256,7 +22256,41 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1192,
+    "dependentValue": false,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Progestogen-only pills (POPs)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "orValues": [
+          "DAK, Male condoms",
+          "DAK, Female condoms",
+          "DAK, Lactational amenorrhea method (LAM)",
+          "DAK, Fertility awareness-based methods (FAB)",
+          "DAK, Withdrawal"
+        ],
+        "operator": "OR"
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 5.0,
+        "operator": "<="
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -21360,7 +22394,25 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1196,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Progestogen-only pills (POPs)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 5.0,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -21387,7 +22439,25 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1197,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Progestogen-only pills (POPs)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": true,
+        "operator": "="
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -21429,7 +22499,40 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1198,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Progestogen-only pills (POPs)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Is client currently breastfeeding?",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Time since delivery",
+        "value": 42,
+        "operator": ">"
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 5,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -21471,7 +22574,40 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1199,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Progestogen-only pills (POPs)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Is client currently breastfeeding?",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Postpartum",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Time since delivery",
+        "value": 21,
+        "operator": ">"
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": true,
+        "operator": "="
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -21513,7 +22649,40 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1200,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Progestogen-only pills (POPs)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Is client currently breastfeeding?",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Postpartum",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 5.0,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -21555,7 +22724,40 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1201,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Progestogen-only pills (POPs)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Is client currently breastfeeding?",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Postpartum",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 5.0,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -21587,7 +22789,30 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1202,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Progestogen-only pills (POPs)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 7.0,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -21630,7 +22855,41 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1203,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Progestogen-only pills (POPs)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "orValues": [
+          "DAK, Male condoms",
+          "DAK, Female condoms",
+          "DAK, Lactational amenorrhea method (LAM)",
+          "DAK, Fertility awareness-based methods (FAB)",
+          "DAK, Withdrawal"
+        ],
+        "operator": "OR"
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 7.0,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -21684,7 +22943,35 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1205,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Progestogen-only pills (POPs)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 5.0,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -21726,7 +23013,40 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1206,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Progestogen-only pills (POPs)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Related to bleeding",
+        "value": "DAK, Irregular bleeding",
+        "operator": "="
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -21899,7 +23219,36 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1212,
+    "dependentValue": false,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Combined oral contraceptives (COCs)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "orValues": [
+          "DAK, Combined oral contraceptives (COCs)",
+          "DAK, Progestogen-only pills (POPs)",
+          "DAK, Etonogestrel (ETG) one-rod implant",
+          "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+          "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+        ],
+        "operator": "OR"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -21930,7 +23279,7 @@
         ],
         "operator": "OR"
       }
-      
+
     ],
     "logic_key": 1213,
     "dependentValue": false,
@@ -21979,7 +23328,25 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1215,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Combined oral contraceptives (COCs)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 5.0,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -22004,6 +23371,23 @@
       },
       {
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "logic_key": 1216,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Combined oral contraceptives (COCs)",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
         "value": true,
         "operator": "="
       },
@@ -22043,7 +23427,35 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1217,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Combined oral contraceptives (COCs)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Is client currently breastfeeding?",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Time since delivery",
+        "value": 180,
+        "operator": ">"
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": true,
+        "operator": "="
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -22085,6 +23497,39 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+
+    ],
+    "logic_key": 1218,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Combined oral contraceptives (COCs)",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Is client currently breastfeeding?",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Time since delivery",
+        "value": 180,
+        "operator": ">"
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 5.0,
+        "operator": ">"
       },
       {
         "trigger": "DAK, Pregnancy test result",
@@ -22127,7 +23572,40 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1219,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Combined oral contraceptives (COCs)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Is client currently breastfeeding?",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Postpartum",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Medically eligible",
+        "value": true,
+        "operator": "="
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -22174,7 +23652,45 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1220,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Combined oral contraceptives (COCs)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Is client currently breastfeeding?",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Postpartum",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Medically eligible",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 5.0,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -22221,6 +23737,43 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1221,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Combined oral contraceptives (COCs)",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Is client currently breastfeeding?",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Postpartum",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Medically eligible",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 5.0,
+        "operator": ">"
       },
       {
         "trigger": "DAK, Pregnancy test result",
@@ -22253,7 +23806,30 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1222,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Combined oral contraceptives (COCs)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 7.0,
+        "operator": ">"
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -22296,6 +23872,39 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1223,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Combined oral contraceptives (COCs)",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "orValues": [
+          "DAK, Male condoms",
+          "DAK, Female condoms",
+          "DAK, Lactational amenorrhea method (LAM)",
+          "DAK, Fertility awareness-based methods (FAB)",
+          "DAK, Withdrawal"
+        ],
+        "operator": "OR"
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 5.0,
+        "operator": ">"
       },
       {
         "trigger": "DAK, Pregnancy test result",
@@ -22352,6 +23961,39 @@
         "operator": "="
       },
       {
+        "trigger": "DAK, Sexually active",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "logic_key": 1225,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Combined oral contraceptives (COCs)",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 5.0,
+        "operator": ">"
+      },
+
+      {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
         "operator": "="
@@ -22392,6 +24034,38 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      },
+      {
+        "trigger": "DAK, Sexually active",
+        "value": false,
+        "operator": "="
+      }
+    ],
+    "logic_key": 1226,
+    "dependentValue": false,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Combined oral contraceptives (COCs)",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 5.0,
+        "operator": ">"
       },
       {
         "trigger": "DAK, Pregnancy test result",
@@ -22439,7 +24113,40 @@
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
         "operator": "="
+      }
+    ],
+    "logic_key": 1227,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Combined oral contraceptives (COCs)",
+        "operator": "="
       },
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Amenorrhoea",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Related to bleeding",
+        "value": "DAK, Irregular bleeding",
+        "operator": "="
+      },
+
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Not pregnant",
@@ -22549,6 +24256,18 @@
       {
         "trigger": "DAK, Reasonably certain a woman is not pregnant",
         "value": true,
+        "operator": "="
+      }
+    ],
+    "logic_key": 1233,
+    "dependentValue": false,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Female sterilization",
         "operator": "="
       },
       {
