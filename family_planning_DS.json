@@ -634,14 +634,16 @@
   {
     "conditions": [
       {
-        "key": "DAK, Bleeding - Oral contraceptive",
+        "key": "DAK, Issue with injectable contraceptives - Bleeding problems",
         "value": "DAK, Menstrual pain",
         "operator": "="
       },
       {
         "key": "DAK, Method in use",
-        "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+        "Orvalues": [
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -34790,7 +34792,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Bleeding - Oral contraceptive",
+        "key": "DAK, Issue with injectable contraceptives - Bleeding problems",
         "value": "DAK, Unexplained vaginal bleeding",
         "operator": "="
       },
