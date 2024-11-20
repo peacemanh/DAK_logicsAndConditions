@@ -1405,7 +1405,7 @@
     "conditions": [
       {
         "key": "DAK, Pregnancy related concerns",
-        "value": "DAK, Missed pills",
+        "value": "DAK, Missed Pills",
         "operator": "="
       },
       {
@@ -1422,7 +1422,7 @@
     "conditions": [
       {
         "key": "DAK, Pregnancy related concerns",
-        "value": "DAK, Missed pills",
+        "value": "DAK, Missed Pills",
         "operator": "="
       },
       {
@@ -1459,7 +1459,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issue with injectable contraceptives - Bleeding problems",
+        "key": "DAK, Issues related with injectable contraceptives",
         "value": "DAK, Support for self-injection",
         "operator": "="
       },
