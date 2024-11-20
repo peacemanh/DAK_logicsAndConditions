@@ -892,7 +892,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Headache and migraine",
+        "key": "DAK, Issues with injectable contraceptives- Headache related issues",
         "value": "DAK, Migraine headaches",
         "operator": "="
       },
@@ -911,7 +911,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Headache and migraine",
+        "key": "DAK, Headache and migraines - Oral contraceptive",
         "value": "DAK, Migraine headaches",
         "operator": "="
       },
@@ -928,7 +928,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Headache and migraine",
+        "key": "DAK, Headache and migraines - Oral contraceptive",
         "value": "DAK, Migraine headaches",
         "operator": "="
       },
@@ -945,7 +945,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Other Issues related with using oral contraceptive pills",
+        "key": "DAK, Issue with Implant",
         "value": "DAK, Breast tenderness",
         "operator": "="
       },
@@ -971,7 +971,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Other Issues related with using oral contraceptive pills",
+        "key": "DAK, Other conditions",
         "value": "DAK, Breast tenderness",
         "operator": "="
       },
@@ -993,7 +993,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Other Issues related with using oral contraceptive pills",
+        "key": "DAK, Issue with Implant",
         "value": "DAK, Breast tenderness",
         "operator": "="
       },
@@ -1019,7 +1019,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Other Issues related with using oral contraceptive pills",
+        "key": "DAK, Other conditions",
         "value": "DAK, Breast tenderness",
         "operator": "="
       },
@@ -1041,7 +1041,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Other Issues related with using oral contraceptive pills",
+        "key": "DAK, Other conditions",
         "value": "DAK, Breast tenderness",
         "operator": "="
       },
@@ -1058,7 +1058,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Other conditions",
+        "key": "DAK, Issue with Implant",
         "value": "DAK, Weight change",
         "operator": "="
       },
@@ -1079,7 +1079,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Other conditions",
+        "key": "DAK, Issues related with injectable contraceptives",
         "value": "DAK, Weight change",
         "operator": "="
       },
@@ -1115,12 +1115,9 @@
   {
     "conditions": [
       {
-        "key": "DAK, Nausea, vomiting, dizziness, and diarrhoea - Oral contraceptive",
-        "orValues": [
-          "DAK, Nausea",
-          "DAK, Dizziness"
-        ],
-        "operator": "OR"
+        "key": "DAK, Issue with Implant",
+        "value": "DAK, Nausea or dizziness",
+        "operator": "="
       },
       {
         "key": "DAK, Method in use",
@@ -1139,12 +1136,9 @@
   {
     "conditions": [
       {
-        "key": "DAK, Nausea, vomiting, dizziness, and diarrhoea - Oral contraceptive",
-        "orValues": [
-          "DAK, Nausea",
-          "DAK, Dizziness"
-        ],
-        "operator": "OR"
+        "key": "DAK, Issues related with injectable contraceptives",
+        "value": "DAK, Nausea or dizziness",
+        "operator": "="
       },
       {
         "key": "DAK, Method in use",
@@ -1269,7 +1263,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Heart attack - Oral contraceptive",
+        "key": "DAK, Issue with Implant",
         "value": "DAK, Ischaemic heart disease",
         "operator": "="
       },
@@ -1324,7 +1318,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Heart attack - Oral contraceptive",
+        "key": "DAK, Issues related with injectable contraceptives",
         "value": "DAK, Ischaemic heart disease",
         "operator": "="
       },
@@ -1343,7 +1337,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Other conditions",
+        "key": "DAK, Issue with Implant",
         "value": "DAK, Stroke",
         "operator": "="
       },
@@ -1468,7 +1462,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Heart attack - Oral contraceptive",
+        "key": "DAK, Issue with Implant",
         "value": "DAK, Mood changes or changes in sex drive",
         "operator": "="
       },
@@ -1489,7 +1483,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Heart attack - Oral contraceptive",
+        "key": "DAK, Issues related with injectable contraceptives",
         "value": "DAK, Mood changes or changes in sex drive",
         "operator": "="
       },
@@ -1829,7 +1823,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Venous thromboembolism - Oral contraceptive",
+        "key": "DAK, Issue with Implant",
         "value": "DAK, Deep vein thrombosis",
         "operator": "="
       },
@@ -1850,7 +1844,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Venous thromboembolism - Oral contraceptive",
+        "key": "DAK, Issues related with injectable contraceptives",
         "value": "DAK, Deep vein thrombosis",
         "operator": "="
       },
@@ -1903,7 +1897,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Venous thromboembolism - Oral contraceptive",
+        "key": "DAK, Issue with Implant",
         "value": "DAK, Pulmonary embolism",
         "operator": "="
       },
@@ -1924,7 +1918,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Venous thromboembolism - Oral contraceptive",
+        "key": "DAK, Issues related with injectable contraceptives",
         "value": "DAK, Pulmonary embolism",
         "operator": "="
       },
@@ -1977,8 +1971,8 @@
   {
     "conditions": [
       {
-        "key": "DAK, Health condition(s)",
-        "value": "DAK, Liver disorders",
+        "key": "DAK, Issue with Implant",
+        "value": "DAK, Pulmonary embolism",
         "operator": "="
       },
       {
@@ -1998,7 +1992,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Health condition(s)",
+        "key": "DAK, Issues related with injectable contraceptives",
         "value": "DAK, Liver disorders",
         "operator": "="
       },
@@ -2017,7 +2011,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Health condition(s)",
+        "key": "DAK, Venous thromboembolism - Oral contraceptive",
         "value": "DAK, Liver disorders",
         "operator": "="
       },
@@ -2034,7 +2028,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Health condition(s)",
+        "key": "DAK, Venous thromboembolism - Oral contraceptive",
         "value": "DAK, Liver disorders",
         "operator": "="
       },
@@ -2051,7 +2045,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Health condition(s)",
+        "key": "DAK, Returning client with problem in IUD",
         "value": "DAK, Pelvic inflammatory disease (PID)",
         "operator": "="
       },
@@ -2068,7 +2062,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Pregnancy related concerns",
+        "key": "DAK, Returning client with problem in IUD",
         "value": "DAK, Suspected pregnancy",
         "operator": "="
       },
@@ -2085,7 +2079,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Pregnancy related concerns",
+        "key": "DAK, Issues at insertion site (implant insertion)",
         "value": "DAK, Suspected pregnancy",
         "operator": "="
       },
