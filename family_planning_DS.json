@@ -295,7 +295,7 @@
     "conditions": [
       {
         "key": "DAK, Related to bleeding",
-        "value": "DAK, Irregular bleeding",
+        "value": "DAK, Irregular  bleeding",
         "operator": "="
       },
       {
@@ -423,7 +423,7 @@
       }
     ],
     "action": "Discuss issues and concerns.",
-    "annotation": "\u2013 Amenorrhea does not need medical treatment.                                                                                                \u2013  Reassure her that no monthly bleeding is normal with injectable contraceptives and not harmful.Similar to not having periods during pregnancy due to effect of hormones.                                                                                                      \u2013  If amenorrhea is unacceptable for client, assist in selecting an alternative method.",
+    "annotation": "\u2013 Amenorrhea does not need medical treatment.                               \u2013  Reassure her that no monthly bleeding is normal with injectable contraceptives and not harmful.Similar to not having periods during pregnancy due to effect of hormones.                                                                                                      \u2013  If amenorrhea is unacceptable for client, assist in selecting an alternative method.",
     "action_key": 27
   },
   {
@@ -825,7 +825,9 @@
       {
         "key": "DAK, Method in use",
         "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -899,7 +901,9 @@
       {
         "key": "DAK, Method in use",
         "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -1086,7 +1090,9 @@
       {
         "key": "DAK, Method in use",
         "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -1143,7 +1149,9 @@
       {
         "key": "DAK, Method in use",
         "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -1325,7 +1333,9 @@
       {
         "key": "DAK, Method in use",
         "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -1433,7 +1443,9 @@
       {
         "key": "DAK, Method in use",
         "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -1490,7 +1502,9 @@
       {
         "key": "DAK, Method in use",
         "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -1851,7 +1865,9 @@
       {
         "key": "DAK, Method in use",
         "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -1925,7 +1941,9 @@
       {
         "key": "DAK, Method in use",
         "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -1999,7 +2017,9 @@
       {
         "key": "DAK, Method in use",
         "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -2107,7 +2127,9 @@
       {
         "key": "DAK, Method in use",
         "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
