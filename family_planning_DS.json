@@ -1635,7 +1635,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issues at insertion site (implant insertion)",
+        "key": "DAK, Issue with Male or Female sterilization",
         "value": "DAK, Abscess",
         "operator": "="
       },
@@ -1652,7 +1652,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issues at insertion site (implant insertion)",
+        "key": "DAK, Issue with Male or Female sterilization",
         "value": "DAK, Abscess",
         "operator": "="
       },
