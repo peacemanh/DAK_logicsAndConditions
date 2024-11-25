@@ -2859,5 +2859,17 @@
     "action": "show",
     "dependent": "DAK, Others MARPS",
     "logic_key": 203
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for not taking blood pressure",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other reasons BP not taken( Specify)",
+    "logic_key": 204
   }
 ]
