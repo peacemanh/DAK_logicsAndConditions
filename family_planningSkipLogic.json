@@ -2847,5 +2847,17 @@
     "action": "show",
     "dependent": "DAK, Pelvic inflammatory disease (PID) FP",
     "logic_key": 202
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Issues related with injectable contraceptives",
+        "value": "DAK, Issue with injectable contraceptives - Bleeding problems",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Issue with injectable contraceptives - Bleeding problems",
+    "logic_key": 203
   }
 ]

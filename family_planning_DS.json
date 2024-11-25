@@ -146,7 +146,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Bleeding - Oral contraceptive",
+        "key": "DAK, Returning client with problem in IUD",
         "value": "DAK, Spotting or light bleeding",
         "operator": "="
       },
@@ -180,7 +180,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Bleeding - Oral contraceptive",
+        "key": "DAK, Related to bleeding",
         "value": "DAK, Spotting or light bleeding",
         "operator": "="
       },
@@ -201,8 +201,8 @@
   {
     "conditions": [
       {
-        "key": "DAK, Bleeding - Oral contraceptive",
-        "value": "DAK, Heavy or prolonged  bleeding",
+        "key": "DAK, Returning client with problem in IUD",
+        "value": "DAK, Heavy or prolonged vaginal bleeding patterns",
         "operator": "="
       },
       {
@@ -218,7 +218,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Bleeding - Oral contraceptive",
+        "key": "DAK, Related to bleeding",
         "value": "DAK, Heavy or prolonged  bleeding",
         "operator": "="
       },
@@ -239,8 +239,8 @@
   {
     "conditions": [
       {
-        "key": "DAK, Bleeding - Oral contraceptive",
-        "value": "DAK, Heavy or prolonged  bleeding",
+        "key": "DAK, Issue with injectable contraceptives - Bleeding problems",
+        "value": "DAK, Heavy or prolonged vaginal bleeding patterns",
         "operator": "="
       },
       {
@@ -277,7 +277,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issue with injectable contraceptives - Bleeding problems",
+        "key": "DAK, Returning client with problem in IUD",
         "value": "DAK, Irregular vaginal bleeding",
         "operator": "="
       },
@@ -291,34 +291,21 @@
     "annotation": "Reassure client  that irregular bleeding is common with IUD use and usually improves over time. NSAIDs can provide short-term relief. If irregular bleeding persists or occurs after several months of normal bleeding, evaluate for other unrelated underlying conditions unrelated to method use..",
     "action_key": 19
   },
-  {
+   {
     "conditions": [
       {
         "key": "DAK, Related to bleeding",
-        "value": "DAK, Irregular bleeding",
+        "value": "DAK, Irregular  bleeding",
         "operator": "="
       },
       {
         "key": "DAK, Method in use",
-        "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
-        "operator": "="
-      }
-    ],
-    "action": "Discuss issues and concerns.",
-    "annotation": "Reassure client  that irregular bleeding is common with IUD use and usually improves over time. NSAIDs can provide short-term relief. If irregular bleeding persists or occurs after several months of normal bleeding, evaluate for other unrelated underlying conditions unrelated to method use..",
-    "action_key": 20
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Related to bleeding",
-        "value": "DAK, Irregular bleeding",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Method in use",
-        "value": "DAK, Etonogestrel (ETG) one-rod",
-        "operator": "="
+        "orValues": [
+          "DAK, Etonogestrel (ETG) one-rod",
+          "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+          "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+        ],
+        "operator": "OR"
       }
     ],
     "action": "Discuss issues and concerns.",
@@ -328,14 +315,18 @@
   {
     "conditions": [
       {
-        "key": "DAK, Related to bleeding",
-        "value": "DAK, Irregular bleeding",
+        "key": "DAK, Issue with injectable contraceptives - Bleeding problems",
+        "value": "DAK, Irregular vaginal bleeding",
         "operator": "="
       },
       {
         "key": "DAK, Method in use",
-        "value": "DAK, DMPA-IM",
-        "operator": "="
+        "orValues": [
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
+        ],
+        "operator": "OR"
       }
     ],
     "action": "Discuss issues and concerns.",
@@ -345,8 +336,8 @@
   {
     "conditions": [
       {
-        "key": "DAK, Related to bleeding",
-        "value": "DAK, Irregular bleeding",
+        "key": "DAK, Bleeding - Oral contraceptive",
+        "value": "DAK, Irregular blleding at unexpected times that bothers the client",
         "operator": "="
       },
       {
@@ -362,8 +353,8 @@
   {
     "conditions": [
       {
-        "key": "DAK, Related to bleeding",
-        "value": "DAK, Irregular bleeding",
+        "key": "DAK, Bleeding - Oral contraceptive",
+        "value": "DAK, Irregular blleding at unexpected times that bothers the client",
         "operator": "="
       },
       {
@@ -379,7 +370,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Bleeding - Oral contraceptive",
+        "key": "DAK, Returning client with problem in IUD",
         "value": "DAK, Amenorrhoea",
         "operator": "="
       },
@@ -396,14 +387,18 @@
   {
     "conditions": [
       {
-        "key": "DAK, Bleeding - Oral contraceptive",
+        "key": "DAK, Related to bleeding",
         "value": "DAK, Amenorrhoea",
         "operator": "="
       },
       {
         "key": "DAK, Method in use",
-        "value": "DAK, Etonogestrel (ETG) one-rod",
-        "operator": "="
+        "orValues": [
+          "DAK, Etonogestrel (ETG) one-rod",
+          "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+          "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+        ],
+        "operator": "OR"
       }
     ],
     "action": "Discuss issues and concerns.",
@@ -413,18 +408,22 @@
   {
     "conditions": [
       {
-        "key": "DAK, Bleeding - Oral contraceptive",
-        "value": "DAK, Amenorrhoea",
+        "key": "DAK, Issue with injectable contraceptives - Bleeding problems",
+        "value": "DAK, Ammenorhea",
         "operator": "="
       },
       {
         "key": "DAK, Method in use",
-        "value": "DAK, DMPA-IM",
-        "operator": "="
+        "orValues": [
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
+        ],
+        "operator": "OR"
       }
     ],
     "action": "Discuss issues and concerns.",
-    "annotation": "\u2013 Amenorrhea does not need medical treatment.                                                                                                \u2013  Reassure her that no monthly bleeding is normal with injectable contraceptives and not harmful.Similar to not having periods during pregnancy due to effect of hormones.                                                                                                      \u2013  If amenorrhea is unacceptable for client, assist in selecting an alternative method.",
+    "annotation": "\u2013 Amenorrhea does not need medical treatment.                               \u2013  Reassure her that no monthly bleeding is normal with injectable contraceptives and not harmful.Similar to not having periods during pregnancy due to effect of hormones.                                                                                                      \u2013  If amenorrhea is unacceptable for client, assist in selecting an alternative method.",
     "action_key": 27
   },
   {
@@ -491,7 +490,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issue with injectable contraceptives - Bleeding problems",
+        "key": "DAK, Returning client with problem in IUD",
         "value": "DAK, Unexplained vaginal bleeding",
         "operator": "="
       },
@@ -508,14 +507,18 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issue with injectable contraceptives - Bleeding problems",
+        "key": "DAK, Related to bleeding",
         "value": "DAK, Unexplained vaginal bleeding",
         "operator": "="
       },
       {
         "key": "DAK, Method in use",
-        "values": "DAK, Etonogestrel (ETG) one-rod",
-        "operator": "="
+        "orValues": [
+          "DAK, Etonogestrel (ETG) one-rod",
+          "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+          "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+        ],
+        "operator": "OR"
       }
     ],
     "action": "Discuss issues and concerns.",
@@ -546,7 +549,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issue with injectable contraceptives - Bleeding problems",
+        "key": "DAK, Bleeding - Oral contraceptive",
         "value": "DAK, Unexplained vaginal bleeding",
         "operator": "="
       },
@@ -563,7 +566,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issue with injectable contraceptives - Bleeding problems",
+        "key": "DAK, Bleeding - Oral contraceptive",
         "value": "DAK, Unexplained vaginal bleeding",
         "operator": "="
       },
@@ -580,7 +583,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Bleeding - Oral contraceptive",
+        "key": "DAK, Returning client with problem in IUD",
         "value": "DAK, Menstrual pain",
         "operator": "="
       },
@@ -631,14 +634,16 @@
   {
     "conditions": [
       {
-        "key": "DAK, Bleeding - Oral contraceptive",
+        "key": "DAK, Issue with injectable contraceptives - Bleeding problems",
         "value": "DAK, Menstrual pain",
         "operator": "="
       },
       {
         "key": "DAK, Method in use",
-        "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+        "Orvalues": [
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -650,7 +655,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Bleeding - Oral contraceptive",
+        "key": "DAK, Returning client with problem in IUD",
         "value": "DAK, Possible anaemia",
         "operator": "="
       },
@@ -667,7 +672,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issues and concerns (change logic to suit what we have in the logic row)",
+        "key": "DAK, Returning client with problem in IUD",
         "value": "DAK, Partner can feel IUD strings during intercourse",
         "operator": "="
       },
@@ -684,7 +689,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issues and concerns (change logic to suit what we have in the logic row)",
+        "key": "DAK, Returning client with problem in IUD",
         "value": "DAK, Suspected perforation",
         "operator": "="
       },
@@ -722,7 +727,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issues and concerns (change logic to suit what we have in the logic row)",
+        "key": "DAK, Returning client with problem in IUD",
         "value": "DAK, IUD partial expulsion",
         "operator": "="
       },
@@ -739,7 +744,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issues and concerns (change logic to suit what we have in the logic row)",
+        "key": "DAK, Returning client with problem in IUD",
         "value": "DAK, Missing strings",
         "operator": "="
       },
@@ -794,8 +799,8 @@
   {
     "conditions": [
       {
-        "key": "DAK, Headache and migraines - Oral contraceptive",
-        "value": "DAK, Non-migrainous (mild or severe)",
+        "key": "DAK, Headache and migraine",
+        "value": "DAK, Ordinary headache",
         "operator": "="
       },
       {
@@ -815,14 +820,16 @@
   {
     "conditions": [
       {
-        "key": "DAK, Headache and migraines - Oral contraceptive",
+        "key": "DAK, Issues with injectable contraceptives- Headache related issues",
         "value": "DAK, Non-migrainous (mild or severe)",
         "operator": "="
       },
       {
         "key": "DAK, Method in use",
         "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -889,14 +896,16 @@
   {
     "conditions": [
       {
-        "key": "DAK, Headache and migraine",
+        "key": "DAK, Issues with injectable contraceptives- Headache related issues",
         "value": "DAK, Migraine headaches",
         "operator": "="
       },
       {
         "key": "DAK, Method in use",
         "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -908,7 +917,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Headache and migraine",
+        "key": "DAK, Headache and migraines - Oral contraceptive",
         "value": "DAK, Migraine headaches",
         "operator": "="
       },
@@ -925,7 +934,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Headache and migraine",
+        "key": "DAK, Headache and migraines - Oral contraceptive",
         "value": "DAK, Migraine headaches",
         "operator": "="
       },
@@ -942,7 +951,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Other Issues related with using oral contraceptive pills",
+        "key": "DAK, Issue with Implant",
         "value": "DAK, Breast tenderness",
         "operator": "="
       },
@@ -968,7 +977,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Other Issues related with using oral contraceptive pills",
+        "key": "DAK, Other conditions",
         "value": "DAK, Breast tenderness",
         "operator": "="
       },
@@ -990,7 +999,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Other Issues related with using oral contraceptive pills",
+        "key": "DAK, Issue with Implant",
         "value": "DAK, Breast tenderness",
         "operator": "="
       },
@@ -1016,7 +1025,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Other Issues related with using oral contraceptive pills",
+        "key": "DAK, Other conditions",
         "value": "DAK, Breast tenderness",
         "operator": "="
       },
@@ -1038,7 +1047,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Other Issues related with using oral contraceptive pills",
+        "key": "DAK, Other conditions",
         "value": "DAK, Breast tenderness",
         "operator": "="
       },
@@ -1055,7 +1064,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Other conditions",
+        "key": "DAK, Issue with Implant",
         "value": "DAK, Weight change",
         "operator": "="
       },
@@ -1076,14 +1085,16 @@
   {
     "conditions": [
       {
-        "key": "DAK, Other conditions",
+        "key": "DAK, Issues related with injectable contraceptives",
         "value": "DAK, Weight change",
         "operator": "="
       },
       {
         "key": "DAK, Method in use",
         "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -1112,12 +1123,9 @@
   {
     "conditions": [
       {
-        "key": "DAK, Nausea, vomiting, dizziness, and diarrhoea - Oral contraceptive",
-        "orValues": [
-          "DAK, Nausea",
-          "DAK, Dizziness"
-        ],
-        "operator": "OR"
+        "key": "DAK, Issue with Implant",
+        "value": "DAK, Nausea or dizziness",
+        "operator": "="
       },
       {
         "key": "DAK, Method in use",
@@ -1136,17 +1144,16 @@
   {
     "conditions": [
       {
-        "key": "DAK, Nausea, vomiting, dizziness, and diarrhoea - Oral contraceptive",
-        "orValues": [
-          "DAK, Nausea",
-          "DAK, Dizziness"
-        ],
-        "operator": "OR"
+        "key": "DAK, Issues related with injectable contraceptives",
+        "value": "DAK, Nausea or dizziness",
+        "operator": "="
       },
       {
         "key": "DAK, Method in use",
         "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -1266,7 +1273,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Heart attack - Oral contraceptive",
+        "key": "DAK, Issue with Implant",
         "value": "DAK, Ischaemic heart disease",
         "operator": "="
       },
@@ -1321,14 +1328,16 @@
   {
     "conditions": [
       {
-        "key": "DAK, Heart attack - Oral contraceptive",
+        "key": "DAK, Issues related with injectable contraceptives",
         "value": "DAK, Ischaemic heart disease",
         "operator": "="
       },
       {
         "key": "DAK, Method in use",
         "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -1340,7 +1349,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Other conditions",
+        "key": "DAK, Issue with Implant",
         "value": "DAK, Stroke",
         "operator": "="
       },
@@ -1396,7 +1405,7 @@
     "conditions": [
       {
         "key": "DAK, Pregnancy related concerns",
-        "value": "DAK, Missed pills",
+        "value": "DAK, Missed Pills",
         "operator": "="
       },
       {
@@ -1413,7 +1422,7 @@
     "conditions": [
       {
         "key": "DAK, Pregnancy related concerns",
-        "value": "DAK, Missed pills",
+        "value": "DAK, Missed Pills",
         "operator": "="
       },
       {
@@ -1436,7 +1445,9 @@
       {
         "key": "DAK, Method in use",
         "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -1448,7 +1459,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issue with injectable contraceptives - Bleeding problems",
+        "key": "DAK, Issues related with injectable contraceptives",
         "value": "DAK, Support for self-injection",
         "operator": "="
       },
@@ -1465,7 +1476,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Heart attack - Oral contraceptive",
+        "key": "DAK, Issue with Implant",
         "value": "DAK, Mood changes or changes in sex drive",
         "operator": "="
       },
@@ -1486,14 +1497,16 @@
   {
     "conditions": [
       {
-        "key": "DAK, Heart attack - Oral contraceptive",
+        "key": "DAK, Issues related with injectable contraceptives",
         "value": "DAK, Mood changes or changes in sex drive",
         "operator": "="
       },
       {
         "key": "DAK, Method in use",
         "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -1622,7 +1635,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issues at insertion site (implant insertion)",
+        "key": "DAK, Issue with Male or Female sterilization",
         "value": "DAK, Abscess",
         "operator": "="
       },
@@ -1639,7 +1652,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issues at insertion site (implant insertion)",
+        "key": "DAK, Issue with Male or Female sterilization",
         "value": "DAK, Abscess",
         "operator": "="
       },
@@ -1662,7 +1675,7 @@
       },
       {
         "key": "DAK, Method in use",
-        "value": "DAK, Male Condoms",
+        "value": "DAK, Male condoms",
         "operator": "="
       }
     ],
@@ -1826,7 +1839,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Venous thromboembolism - Oral contraceptive",
+        "key": "DAK, Issue with Implant",
         "value": "DAK, Deep vein thrombosis",
         "operator": "="
       },
@@ -1847,14 +1860,16 @@
   {
     "conditions": [
       {
-        "key": "DAK, Venous thromboembolism - Oral contraceptive",
+        "key": "DAK, Issues related with injectable contraceptives",
         "value": "DAK, Deep vein thrombosis",
         "operator": "="
       },
       {
         "key": "DAK, Method in use",
         "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -1900,7 +1915,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Venous thromboembolism - Oral contraceptive",
+        "key": "DAK, Issue with Implant",
         "value": "DAK, Pulmonary embolism",
         "operator": "="
       },
@@ -1921,14 +1936,16 @@
   {
     "conditions": [
       {
-        "key": "DAK, Venous thromboembolism - Oral contraceptive",
+        "key": "DAK, Issues related with injectable contraceptives",
         "value": "DAK, Pulmonary embolism",
         "operator": "="
       },
       {
         "key": "DAK, Method in use",
         "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -1974,8 +1991,8 @@
   {
     "conditions": [
       {
-        "key": "DAK, Health condition(s)",
-        "value": "DAK, Liver disorders",
+        "key": "DAK, Issue with Implant",
+        "value": "DAK, Pulmonary embolism",
         "operator": "="
       },
       {
@@ -1995,14 +2012,16 @@
   {
     "conditions": [
       {
-        "key": "DAK, Health condition(s)",
+        "key": "DAK, Issues related with injectable contraceptives",
         "value": "DAK, Liver disorders",
         "operator": "="
       },
       {
         "key": "DAK, Method in use",
         "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -2014,7 +2033,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Health condition(s)",
+        "key": "DAK, Venous thromboembolism - Oral contraceptive",
         "value": "DAK, Liver disorders",
         "operator": "="
       },
@@ -2031,7 +2050,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Health condition(s)",
+        "key": "DAK, Venous thromboembolism - Oral contraceptive",
         "value": "DAK, Liver disorders",
         "operator": "="
       },
@@ -2048,7 +2067,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Health condition(s)",
+        "key": "DAK, Returning client with problem in IUD",
         "value": "DAK, Pelvic inflammatory disease (PID)",
         "operator": "="
       },
@@ -2065,7 +2084,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Pregnancy related concerns",
+        "key": "DAK, Returning client with problem in IUD",
         "value": "DAK, Suspected pregnancy",
         "operator": "="
       },
@@ -2082,7 +2101,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Pregnancy related concerns",
+        "key": "DAK, Issues at insertion site (implant insertion)",
         "value": "DAK, Suspected pregnancy",
         "operator": "="
       },
@@ -2103,14 +2122,16 @@
   {
     "conditions": [
       {
-        "key": "DAK, Pregnancy related concerns",
+        "key": "DAK, Issues related with injectable contraceptives",
         "value": "DAK, Suspected pregnancy",
         "operator": "="
       },
       {
         "key": "DAK, Method in use",
         "orValues": [
-          "DAK, DMPA-IM OR DMPA-SC OR DMPA-SC-SI"
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
         ],
         "operator": "OR"
       }
@@ -2156,7 +2177,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Pregnancy related concerns",
+        "key": "DAK, Issue with Female condom",
         "value": "DAK, Suspected pregnancy",
         "operator": "="
       },
@@ -2173,7 +2194,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Pregnancy related concerns",
+        "key": "DAK, Issue with Female sterilization",
         "value": "DAK, Suspected pregnancy",
         "operator": "="
       },
@@ -2190,7 +2211,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issues and concerns (change logic to suit what we have in the logic row)",
+        "key": "DAK, Returning client with problem in IUD",
         "value": "DAK, Severe pain in lower abdomen",
         "operator": "="
       },
@@ -2206,20 +2227,14 @@
   },
   {
     "conditions": [
-      {
-        "key": "DAK, Issues and concerns (change logic to suit what we have in the logic row)",
-        "value": "DAK, Severe pain in lower abdomen",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Pregnancy related concerns",
-        "value": "DAK, Suspected pregnancy",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Pregnancy related concerns",
-        "value": "DAK, Ectopic pregnancy",
-        "operator": "="
+   {
+        "key": "DAK, Returning client with problem in IUD",
+        "orValues": [
+          "DAK, Severe pain in lower abdomen",
+          "DAK, Suspected pregnancy",
+          "DAK, Ectopic pregnancy"
+         ],
+        "operator": "OR"
       },
       {
         "key": "DAK, Method in use",
@@ -2234,8 +2249,8 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issues and concerns (change logic to suit what we have in the logic row)",
-        "value": "DAK, Severe pain in lower abdomen",
+        "key": "DAK, Abdominal pain",
+        "value": "DAK, Severe pain in the lower abdomen",
         "operator": "="
       },
       {
@@ -2255,7 +2270,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issues and concerns (change logic to suit what we have in the logic row)",
+        "key": "DAK, Bleeding - Oral contraceptive",
         "value": "DAK, Severe pain in lower abdomen",
         "operator": "="
       },
@@ -2272,7 +2287,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issues and concerns (change logic to suit what we have in the logic row)",
+        "key": "DAK, Issue with Female sterilization",
         "value": "DAK, Severe pain in lower abdomen",
         "operator": "="
       },
@@ -2289,7 +2304,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issues and concerns",
+        "key": "DAK, Issues with using oral contraceptive pills",
         "value": "DAK, Other (specify)",
         "operator": "="
       },
@@ -2306,8 +2321,8 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issues and concerns",
-        "value": "DAK, Other (specify)",
+        "key": "DAK, Issues with condom use",
+        "value": "DAK, Other",
         "operator": "="
       },
       {
@@ -32890,8 +32905,8 @@
         "operator": "="
       }
     ],
-    "action": "Counsel clients on: \u2013\u00e2\u20ac\u201cTest confidentiality \u2013 \u00e2\u20ac\u201cAvailable HIV prevention measures \u2013 \u00e2\u20ac\u201cPartner disclosure and  testing .\u2013 \u00e2\u20ac\u201cCondom use for STI/HIV risk reduction.\u2013 \u00e2\u20ac\u201cConsider Offering  PrEP or PEP for high-risk clients.",
-    "annotation": "\u2013Counsel clients on: \u2013 \u00e2\u20ac\u201cTest confidentiality \u2013 \u00e2\u20ac\u201cAvailable HIV prevention measures \u2013\u00e2\u20ac\u201cPartner disclosure and  testing . \u2013 \u00e2\u20ac\u201cCondom use for STI/HIV risk reduction.\u2013 \u00e2\u20ac\u201cConsider Offering  PrEP or PEP for high-risk clients. ",
+    "action": "Counsel clients on: \u2013- Test confidentiality \u2013 -Available HIV prevention measures \u2013 -Partner disclosure and  testing .\u2013 -Condom use for STI/HIV risk reduction.\u2013 -Consider Offering  PrEP or PEP for high-risk clients.",
+    "annotation": "\u2013Counsel clients on: \u2013 -Test confidentiality \u2013 -Available HIV prevention measures \u2013-Partner disclosure and  testing . \u2013 -Condom use for STI/HIV risk reduction.\u2013 -Consider Offering  PrEP or PEP for high-risk clients. ",
     "action_key": 1344
   },
   {
@@ -32941,7 +32956,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Bleeding - Oral contraceptive",
+        "key": "DAK, Issue with injectable contraceptives - Bleeding problems",
         "value": "DAK, Spotting or light bleeding",
         "operator": "="
       },
@@ -32958,7 +32973,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Bleeding - Oral contraceptive",
+        "key": "DAK, Issue with injectable contraceptives - Bleeding problems",
         "value": "DAK, Spotting or light bleeding",
         "operator": "="
       },
@@ -32975,7 +32990,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Bleeding - Oral contraceptive",
+        "key": "DAK, Issue with injectable contraceptives - Bleeding problems",
         "value": "DAK, Spotting or light bleeding",
         "operator": "="
       },
@@ -34771,7 +34786,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Bleeding - Oral contraceptive",
+        "key": "DAK, Issue with injectable contraceptives - Bleeding problems",
         "value": "DAK, Unexplained vaginal bleeding",
         "operator": "="
       },
@@ -37887,7 +37902,7 @@
     "conditions": [
       {
         "key": "DAK, Bleeding - Oral contraceptive",
-        "value": "DAK, Heavy or prolonged bleeding",
+        "value": "DAK, Heavy or prolonged  bleeding",
         "operator": "="
       },
       {

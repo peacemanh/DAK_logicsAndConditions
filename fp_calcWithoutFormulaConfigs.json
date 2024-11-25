@@ -24636,25 +24636,61 @@
       "dependent": "DAK, Reasonably certain a woman is not pregnant"
   },
   {
-      "logics": [
-          {
-              "trigger": "DAK, Missed or late menses",
-              "value": true,
-              "operator": "="
-          },
-          {
-              "trigger": "DAK, Pregnancy test result",
-              "value": "DAK, Not pregnant",
-              "operator": "="
-          },
-          {
-              "trigger": "DAK, Pregnancy test sensitivity",
-              "value": "DAK, 50 mIU/ml (depends on local setting)",
-              "operator": "="
-          }
-      ],
-      "logic_key": 1161,
-      "dependentValue": true,
-      "dependent": "DAK, Back-up method needed"
+    "logics": [
+      {
+        "trigger": "DAK, Missed or late menses",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Pregnancy test result",
+        "value": "DAK, Not pregnant",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Pregnancy test sensitivity",
+        "value": "DAK, 50 mIU/ml (depends on local setting)",
+        "operator": "="
+      }
+    ],
+    "logic_key": 1161,
+    "dependentValue": true,
+    "dependent": "DAK, Back-up method needed"
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, STI risk assessment conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "logic_key": 1162,
+    "dependentValue": true,
+    "dependent": "DAK, Increased risk of STIs"
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pelvic/genital examination conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "logic_key": 1163,
+    "dependentValue": true,
+    "dependent": "DAK, Increased risk of STIs"
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, DMPA-SC -SI",
+        "operator": "="
+      }
+    ],
+    "logic_key": 1164,
+    "dependentValue": "Number, 1",
+    "dependent": "DAK, Medical eligibility category"
   }
 ]
