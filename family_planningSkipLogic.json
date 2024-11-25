@@ -2871,5 +2871,29 @@
     "action": "show",
     "dependent": "DAK, Other reasons BP not taken( Specify)",
     "logic_key": 204
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for visit",
+        "value": "DAK, Emergency contraception",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "Days since unprotected sex",
+    "logic_key": 205
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for visit",
+        "value": "DAK, Emergency contraception",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Had sexual intercourse since the last day of her mensus",
+    "logic_key": 206
   }
 ]
