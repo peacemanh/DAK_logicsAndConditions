@@ -1675,7 +1675,7 @@
       },
       {
         "key": "DAK, Method in use",
-        "value": "DAK, Male Condoms",
+        "value": "DAK, Male condoms",
         "operator": "="
       }
     ],
@@ -2227,20 +2227,14 @@
   },
   {
     "conditions": [
-      {
+   {
         "key": "DAK, Returning client with problem in IUD",
-        "value": "DAK, Severe pain in lower abdomen",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Pregnancy related concerns",
-        "value": "DAK, Suspected pregnancy",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Pregnancy related concerns",
-        "value": "DAK, Ectopic pregnancy",
-        "operator": "="
+        "orValues": [
+          "DAK, Severe pain in lower abdomen",
+          "DAK, Suspected pregnancy",
+          "DAK, Ectopic pregnancy"
+         ],
+        "operator": "OR"
       },
       {
         "key": "DAK, Method in use",
@@ -2310,7 +2304,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issues and concerns",
+        "key": "DAK, Issues with using oral contraceptive pills",
         "value": "DAK, Other (specify)",
         "operator": "="
       },
@@ -2327,8 +2321,8 @@
   {
     "conditions": [
       {
-        "key": "DAK, Issues and concerns",
-        "value": "DAK, Other (specify)",
+        "key": "DAK, Issues with condom use",
+        "value": "DAK, Other",
         "operator": "="
       },
       {
