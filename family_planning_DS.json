@@ -37939,12 +37939,38 @@
       },
       {
         "key": "DAK, Method in use",
-        "value": "DAK, Levonorgestrel (LNG) two-rod(Levoplant)",
+        "value": "DAK, Etonogestrel (ETG) one-rod",
         "operator": "!="
       }
     ],
     "action": "Counsel client that she is medically eligible for this method",
     "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method for initiation",
     "action_key": 1594
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Method in mind",
+        "orValues": [
+          "DAK, Etonogestrel (ETG) one-rod",
+          "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+          "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+        ],
+        "operator": "OR"
+      },
+      {
+        "key": "DAK, Cardiovascular disease",
+        "value": "DAK, Ischaemic heart disease",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Method in use",
+        "value": "DAK, Levonorgestrel (LNG) two-rod(Levoplant)",
+        "operator": "!="
+      }
+    ],
+    "action": "Counsel client that she is medically eligible for this method",
+    "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method for initiation",
+    "action_key": 1595
   }
 ]
