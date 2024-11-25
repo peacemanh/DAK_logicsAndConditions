@@ -2847,5 +2847,17 @@
     "action": "show",
     "dependent": "DAK, Pelvic inflammatory disease (PID) FP",
     "logic_key": 202
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Target Population Category",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Others MARPS",
+    "logic_key": 203
   }
 ]
