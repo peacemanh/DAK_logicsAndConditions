@@ -2423,18 +2423,8 @@
     "conditions": [
       {
         "key": "DAK, Minimum requirements for IPV assessment FP",
-        "orValues": [
-          "DAK, Private setting: the woman must be alone",
-          "DAK, There is a protocol/standard operating procedure for managing women subjected to violence",
-          "DAK, There has been training on how to ask, minimum response or beyond.",
-          "DAK, Confidentiality is ensured"
-        ],
-        "operator": "OR"
-      },
-      {
-          "key": "DAK, Signs and symptoms for clinical inquiry of IPV",
-          "value": true,
-          "operator": "="
+        "value": "DAK, Signs and symptoms for clinical inquiry of IPV",
+        "operator": "="
       }
     ],
     "action": "Conduct clinical enquiry and discuss concerns",
