@@ -2863,6 +2863,78 @@
   {
     "logics": [
       {
+        "trigger": "DAK, Target Population Category",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Others MARPS",
+    "logic_key": 204
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for not taking blood pressure",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other reasons BP not taken( Specify)",
+    "logic_key": 205
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for visit",
+        "value": "DAK, Emergency contraception",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "Days since unprotected sex",
+    "logic_key": 206
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for visit",
+        "value": "DAK, Emergency contraception",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Had sexual intercourse since the last day of her mensus",
+    "logic_key": 207
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current medications FP",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other (specify) current medication",
+    "logic_key": 208
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Health condition(s)",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other health condition (specify)",
+    "logic_key": 209
+  },
+  {
+    "logics": [
+      {
         "trigger": "DAK, Reason for no method provided",
         "value": "DAK, Other",
         "operator": "="
@@ -2870,6 +2942,186 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason for no method provided other specify",
-    "logic_key": 204
+    "logic_key": 210
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason client did not receive chosen method after counselling",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Reason client did not receive chosen method after counselling other",
+    "logic_key": 211
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Back-up method needed",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Back-up method provided",
+    "logic_key": 212
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Follow-up recommended",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Recommended follow-up date",
+    "logic_key": 213
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Issue with male condom",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Issue with male condom other",
+    "logic_key": 214
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Issues with condom use",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Issues with condom use Other",
+    "logic_key": 215
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, STI risk assessment conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, STI risk  factors",
+    "logic_key": 216
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Cervical Cancer risk assessment conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Cervical Cancer risk factors FP",
+    "logic_key": 217
+  },
+  {
+    "logics": [
+      {
+        "trigger": "gender",
+        "value": "M",
+        "operator": "="
+      }
+    ],
+    "action": "hide",
+    "dependent": "DAK, Cervical Cancer risk assessment conducted",
+    "logic_key": 218
+  },
+  {
+    "logics": [
+      {
+        "trigger": "gender",
+        "value": "M",
+        "operator": "="
+      }
+    ],
+    "action": "hide",
+    "dependent": "DAK, PostAbortion Family Planning Counselling Section",
+    "logic_key": 219
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, HIV risk assessment conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, HIV risk factors",
+    "logic_key": 220
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Issues with using oral contraceptive pills",
+        "value": "DAK, Other (specify)",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Issues with using oral contraceptive pills other",
+    "logic_key": 221
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Dual  method needed",
+        "value": "DAK, Male condoms",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Dual method provided",
+    "logic_key": 222
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Dual  method needed",
+        "value": "DAK, Female condoms",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Dual method provided",
+    "logic_key": 223
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Dual  method needed",
+        "value": "DAK, DMPA-SC -SI",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Dual method provided",
+    "logic_key": 224
+  },
+  {
+    "logics": [
+      {
+        "trigger": "gender",
+        "value": "M",
+        "operator": "="
+      }
+    ],
+    "action": "hide",
+    "dependent": "DAK, Cevical cancer screening conducted",
+    "logic_key": 225
   }
 ]
