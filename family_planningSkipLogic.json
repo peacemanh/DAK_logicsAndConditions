@@ -2909,7 +2909,18 @@
     "action": "show",
     "dependent": "DAK, Other (specify) current medication",
     "logic_key": 207
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Health condition(s)",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other health condition (specify)",
+    "logic_key": 208
   }
-
-
+ 
 ]
