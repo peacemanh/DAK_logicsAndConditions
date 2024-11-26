@@ -939,7 +939,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Date of previous delivery",
+    "dependent": "DAK, Date of last birth",
     "logic_key": 64
   },
   {
