@@ -2853,6 +2853,19 @@
   {
     "logics": [
       {
+        "trigger": "DAK, Issues related with injectable contraceptives",
+        "value": "DAK, Issue with injectable contraceptives - Bleeding problems",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Issue with injectable contraceptives - Bleeding problems",
+    "logic_key": 203
+  },
+
+  {
+    "logics": [
+      {
         "trigger": "DAK, Target Population Category",
         "value": "DAK, Other",
         "operator": "="
@@ -2860,7 +2873,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Others MARPS",
-    "logic_key": 203
+    "logic_key": 204
   },
   {
     "logics": [
@@ -2872,18 +2885,6 @@
     ],
     "action": "show",
     "dependent": "DAK, Other reasons BP not taken( Specify)",
-    "logic_key": 204
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for visit",
-        "value": "DAK, Emergency contraception",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "Days since unprotected sex",
     "logic_key": 205
   },
   {
@@ -2895,8 +2896,20 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Had sexual intercourse since the last day of her mensus",
+    "dependent": "Days since unprotected sex",
     "logic_key": 206
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for visit",
+        "value": "DAK, Emergency contraception",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Had sexual intercourse since the last day of her mensus",
+    "logic_key": 207
   },
   {
     "logics": [
@@ -2908,7 +2921,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other (specify) current medication",
-    "logic_key": 207
+    "logic_key": 208
   },
   {
     "logics": [
@@ -2920,7 +2933,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other health condition (specify)",
-    "logic_key": 208
+    "logic_key": 209
   }
  
 ]
