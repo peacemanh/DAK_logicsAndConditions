@@ -834,6 +834,8 @@
         "value": 1,
         "operator": ">="
       }
+
+
     ],
     "action": "hide",
     "dependent": "DAK, Blood pressure cannot be taken",
@@ -848,7 +850,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Reason for not taking blood pressure",
+    "dependent": "DAK, Reason for not taking blood pressure form",
     "logic_key": 57
   },
   {
@@ -2895,5 +2897,19 @@
     "action": "show",
     "dependent": "DAK, Had sexual intercourse since the last day of her mensus",
     "logic_key": 206
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current medications FP",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other (specify) current medication",
+    "logic_key": 207
   }
+
+
 ]
