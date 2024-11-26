@@ -2859,5 +2859,17 @@
     "action": "show",
     "dependent": "DAK, Issue with injectable contraceptives - Bleeding problems",
     "logic_key": 203
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for no method provided",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Reason for no method provided other specify",
+    "logic_key": 204
   }
 ]
