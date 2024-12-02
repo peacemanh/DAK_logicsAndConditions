@@ -12,7 +12,7 @@
         "operator": "beyond, <, <",
         "minValue": 15,
         "maxValue": 250,
-        "type": "optional",
+        "type": "restrict",
         "message": "Weight should be between 15 Kg and 250 Kg"
     },
     {
@@ -28,7 +28,7 @@
         "operator": "beyond, <=, <=",
         "minValue": 60,
         "maxValue": 260,
-        "type": "optional",
+        "type": "restrict",
         "message": "Systolic blood pressure should be between 60mmHg and 260mmHg"
     },
     {
@@ -36,7 +36,7 @@
         "operator": "beyond, <=, <=",
         "minValue": 60,
         "maxValue": 260,
-        "type": "optional",
+        "type": "restrict",
         "message": "Diastolic blood pressure should be between 60mmHg and 260mmHg"
     }
 ]
