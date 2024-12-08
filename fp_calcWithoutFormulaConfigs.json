@@ -24692,5 +24692,54 @@
     "logic_key": 1164,
     "dependentValue": "Number, 1",
     "dependent": "DAK, Medical eligibility category"
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Date of last birth",
+        "value": 180,
+        "operator": ">"
+      }
+    ],
+    "logic_key": 1165,
+    "dependentValue": true,
+    "dependent": "DAK, 180 days post-delivery"
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
+      }
+    ],
+    "logic_key": 1167,
+    "dependentValue": true,
+    "dependent": "DAK, Miscarriage or abortion within past 4 weeks"
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy in days",
+        "value": 91,
+        "operator": "<"
+      }
+    ],
+    "logic_key": 1168,
+    "dependentValue": "DAK, First trimester less than 13 weeks GA",
+    "dependent": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy"
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy in days",
+        "minValue": 91,
+        "maxValue": 196,
+        "operator": "between, <, <="
+      }
+    ],
+    "logic_key": 1169,
+    "dependentValue": "DAK, Second trimester between 13 and 24 Weeks",
+    "dependent": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy"
   }
 ]

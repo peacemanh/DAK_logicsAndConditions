@@ -3123,5 +3123,17 @@
     "action": "hide",
     "dependent": "DAK, Cevical cancer screening conducted",
     "logic_key": 225
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Time since delivery",
+        "value": 180,
+        "operator": ">"
+    }
+    ],
+    "action": "hide",
+    "dependent": "DAK, Time Postpartum",
+    "logic_key": 226
   }
 ]
