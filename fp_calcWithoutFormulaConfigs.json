@@ -24825,5 +24825,92 @@
     "logic_key": 1175,
     "dependentValue": "DAK, Second trimester between 13 and 24 Weeks",
     "dependent": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy"
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, STI risk assessment conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "logic_key": 1165,
+    "dependentValue": "True",
+    "dependent": "STI risk assessment conducted"
+  },
+  {
+    "logics": [
+      {
+        "trigger": "HIV risk assessment conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "logic_key": 1166,
+    "dependentValue": "true",
+    "dependent": "HIV test screening: Rapid/laboratory test conducted"
+  },
+  {
+    "logics": [
+      {
+        "trigger": "Cervical Cancer risk assessment conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "logic_key": 1167,
+    "dependentValue": "true",
+    "dependent": "Cevical cancer screening conducted "
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Medical eligibility category",
+        "value": "Number, 1",
+        "operator": "="
+      }
+    ],
+    "logic_key": 1168,
+    "dependentValue": "DAK, accept",
+    "dependent": "DAK, Medical eligibility category"
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Medical eligibility category",
+        "value": "Number, 2",
+        "operator": "="
+      }
+    ],
+    "logic_key": 1169,
+    "dependentValue": "DAK, Caution",
+    "dependent": "DAK, Medical eligibility category"
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Medical eligibility category",
+        "value": "Number, 3",
+        "operator": "="
+      }
+    ],
+    "logic_key": 1168,
+    "dependentValue": "DAK, Delay",
+    "dependent": "DAK, Medical eligibility category"
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Medical eligibility category",
+        "value": "Number, 4",
+        "operator": "="
+      }
+    ],
+    "logic_key": 1170,
+    "dependentValue": "DAK, Special",
+    "dependent": "DAK, Medical eligibility category"
   }
+
+
+
 ]
