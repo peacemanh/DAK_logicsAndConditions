@@ -7763,5 +7763,17 @@
     "action": "show",
     "dependent": "DAK, Malaria prophylaxis",
     "logic_key": 559
+  },
+  {
+    "logics": [
+      {
+        "trigger": "activeAncVisit",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "logic_key": 560,
+    "action": "hide",
+    "dependent": "DAK, Pregnancy confirmed"
   }
 ]
