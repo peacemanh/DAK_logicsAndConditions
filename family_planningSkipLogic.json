@@ -89,7 +89,6 @@
           "DAK, Vaginal bleeding patterns",
           "DAK, Reproductive tract infections and disorders",
           "DAK, Vaginitis"
-
         ]
       }
     ],
@@ -3221,7 +3220,6 @@
         "value": true,
         "operator": "="
       }
-
     ],
     "action": "show",
     "dependent": "DAK, Date of last birth",
@@ -3413,11 +3411,11 @@
         "trigger": "DAK, Time since delivery",
         "value": 180,
         "operator": ">"
-    }
+      }
     ],
     "action": "hide",
     "dependent": "DAK, Time Postpartum",
-    "logic_key": 226
+    "logic_key": 249
   },
   {
     "logics": [
@@ -3429,7 +3427,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Blood pressure screening conducted",
-    "logic_key": 226
+    "logic_key": 250
   },
   {
     "logics": [
@@ -3441,7 +3439,7 @@
     ],
     "action": "show",
     "dependent": "DAK, STI risk assessment conducted",
-    "logic_key": 227
+    "logic_key": 251
   },
   {
     "logics": [
@@ -3453,7 +3451,7 @@
     ],
     "action": "show",
     "dependent": "DAK, STI/HIV screening: laboratory tests conducted",
-    "logic_key": 228
+    "logic_key": 252
   },
   {
     "logics": [
@@ -3465,7 +3463,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Haemoglobin levels",
-    "logic_key": 229
+    "logic_key": 253
   },
   {
     "logics": [
@@ -3477,7 +3475,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Type of back-up method selected other",
-    "logic_key": 230
+    "logic_key": 254
   },
   {
     "logics": [
@@ -3489,7 +3487,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
-    "logic_key": 231
+    "logic_key": 255
   },
   {
     "logics": [
@@ -3501,7 +3499,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Has client given birth in the last six months",
-    "logic_key": 232
+    "logic_key": 256
   },
   {
     "logics": [
@@ -3510,11 +3508,10 @@
         "value": true,
         "operator": "="
       }
-
     ],
     "action": "show",
     "dependent": "DAK, Date of last birth",
-    "logic_key": 233
+    "logic_key": 257
   },
   {
     "logics": [
@@ -3526,7 +3523,7 @@
     ],
     "action": "show",
     "dependent": "DAK, 180 days post-delivery",
-    "logic_key": 234
+    "logic_key": 258
   },
   {
     "logics": [
@@ -3538,7 +3535,7 @@
     ],
     "action": "show",
     "dependent": "DAK, P",
-    "logic_key": 235
+    "logic_key": 259
   },
   {
     "logics": [
@@ -3550,7 +3547,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Never used contraception",
-    "logic_key": 236
+    "logic_key": 260
   },
   {
     "logics": [
@@ -3562,7 +3559,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Time since delivery",
-    "logic_key": 237
+    "logic_key": 261
   },
   {
     "logics": [
@@ -3574,7 +3571,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Time Postpartum",
-    "logic_key": 238
+    "logic_key": 262
   },
   {
     "logics": [
@@ -3586,7 +3583,7 @@
     ],
     "action": "required",
     "dependent": "DAK, 180 days post-delivery",
-    "logic_key": 239
+    "logic_key": 263
   },
   {
     "logics": [
@@ -3598,7 +3595,7 @@
     ],
     "action": "required",
     "dependent": "DAK, P",
-    "logic_key": 240
+    "logic_key": 264
   },
   {
     "logics": [
@@ -3610,7 +3607,7 @@
     ],
     "action": "required",
     "dependent": "DAK, Time since delivery",
-    "logic_key": 241
+    "logic_key": 265
   },
   {
     "logics": [
@@ -3622,7 +3619,7 @@
     ],
     "action": "required",
     "dependent": "DAK, Time Postpartum",
-    "logic_key": 242
+    "logic_key": 266
   },
   {
     "logics": [
@@ -3634,7 +3631,7 @@
     ],
     "action": "hide",
     "dependent": "DAK, Method in use",
-    "logic_key": 243
+    "logic_key": 267
   },
   {
     "logics": [
@@ -3646,7 +3643,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Pelvic inflammatory disease (PID) FP",
-    "logic_key": 244
+    "logic_key": 268
   },
   {
     "logics": [
@@ -3658,7 +3655,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason for no method provided",
-    "logic_key": 245
+    "logic_key": 269
   },
   {
     "logics": [
@@ -3670,7 +3667,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Reason client did not receive chosen method after counselling",
-    "logic_key": 246
+    "logic_key": 270
   },
   {
     "logics": [
@@ -3682,7 +3679,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Dual method provided",
-    "logic_key": 247
+    "logic_key": 271
   },
   {
     "logics": [
@@ -3694,10 +3691,6 @@
     ],
     "action": "show",
     "dependent": "DAK, Type of dual method selected",
-    "logic_key": 248
+    "logic_key": 272
   }
-
-
-
-
 ]

@@ -24834,7 +24834,7 @@
         "operator": "="
       }
     ],
-    "logic_key": 1165,
+    "logic_key": 1176,
     "dependentValue": "True",
     "dependent": "STI risk assessment conducted"
   },
@@ -24846,7 +24846,7 @@
         "operator": "="
       }
     ],
-    "logic_key": 1166,
+    "logic_key": 1177,
     "dependentValue": "true",
     "dependent": "HIV test screening: Rapid/laboratory test conducted"
   },
@@ -24858,7 +24858,7 @@
         "operator": "="
       }
     ],
-    "logic_key": 1167,
+    "logic_key": 1178,
     "dependentValue": "true",
     "dependent": "Cevical cancer screening conducted "
   },
@@ -24870,7 +24870,7 @@
         "operator": "="
       }
     ],
-    "logic_key": 1168,
+    "logic_key": 1179,
     "dependentValue": "DAK, accept",
     "dependent": "DAK, Medical eligibility category"
   },
@@ -24882,7 +24882,7 @@
         "operator": "="
       }
     ],
-    "logic_key": 1169,
+    "logic_key": 1180,
     "dependentValue": "DAK, Caution",
     "dependent": "DAK, Medical eligibility category"
   },
@@ -24894,7 +24894,7 @@
         "operator": "="
       }
     ],
-    "logic_key": 1168,
+    "logic_key": 1181,
     "dependentValue": "DAK, Delay",
     "dependent": "DAK, Medical eligibility category"
   },
@@ -24906,11 +24906,8 @@
         "operator": "="
       }
     ],
-    "logic_key": 1170,
+    "logic_key": 1182,
     "dependentValue": "DAK, Special",
     "dependent": "DAK, Medical eligibility category"
   }
-
-
-
 ]
