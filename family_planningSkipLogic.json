@@ -3692,5 +3692,29 @@
     "action": "show",
     "dependent": "DAK, Type of dual method selected",
     "logic_key": 272
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for stopping contraception or method",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other reason for stopping contraception or method",
+    "logic_key": 273
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Cardiovascular disease",
+        "value": "DAK, Other (specify)",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other cardiovascular disease",
+    "logic_key": 274
   }
 ]
