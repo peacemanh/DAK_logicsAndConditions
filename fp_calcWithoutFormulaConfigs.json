@@ -24702,32 +24702,21 @@
       }
     ],
     "logic_key": 1165,
-    "dependentValue": "True",
-    "dependent": "STI risk assessment conducted"
+    "dependentValue": true,
+    "dependent": "DAK, STI risk assessment conducted"
   },
+
   {
     "logics": [
       {
-        "trigger": "HIV risk assessment conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "logic_key": 1166,
-    "dependentValue": "true",
-    "dependent": "HIV test screening: Rapid/laboratory test conducted"
-  },
-  {
-    "logics": [
-      {
-        "trigger": "Cervical Cancer risk assessment conducted",
+        "trigger": "DAK, Cervical Cancer risk assessment conducted",
         "value": true,
         "operator": "="
       }
     ],
     "logic_key": 1167,
-    "dependentValue": "true",
-    "dependent": "Cevical cancer screening conducted "
+    "dependentValue": true,
+    "dependent": "DAK, Cevical cancer screening conducted"
   },
   {
     "logics": [
@@ -24738,7 +24727,7 @@
       }
     ],
     "logic_key": 1168,
-    "dependentValue": "DAK, accept",
+    "dependentValue": "DAK, Accept",
     "dependent": "DAK, Medical eligibility category"
   },
   {

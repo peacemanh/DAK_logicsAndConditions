@@ -138,11 +138,11 @@
     "logics": [
       {
         "trigger": "DAK, Client Current HIV status",
-        "value": "DAK, Client is Known HIV-postive",
+        "value": "DAK, Client is HIV-Negative",
         "operator": "="
       }
     ],
-    "action": "hide",
+    "action": "show",
     "dependent": "DAK, HIV risk assessment conducted",
     "logic_key": 4
   },
@@ -1032,6 +1032,8 @@
       "DAK, Method in use",
       "DAK, Methods previously used",
       "DAK, Chosen method after counselling",
+      "DAK, Method or service provided",
+      "DAK, Chosen method",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
@@ -1049,8 +1051,10 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
       "DAK, Methods previously used",
       "DAK, Chosen method after counselling",
+      "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, Unspecified implants",
@@ -1068,7 +1072,9 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
       "DAK, Methods previously used",
+      "DAK, Method or service provided",
       "DAK, Chosen method after counselling",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1087,8 +1093,10 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
       "DAK, Methods previously used",
       "DAK, Chosen method after counselling",
+      "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, Levonorgestrel (LNG) two-rod",
@@ -1106,8 +1114,10 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
       "DAK, Methods previously used",
       "DAK, Chosen method after counselling",
+      "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, Unspecified injectables",
@@ -1125,8 +1135,10 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
       "DAK, Methods previously used",
       "DAK, Chosen method after counselling",
+      "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, DMPA-IM",
@@ -1144,8 +1156,10 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
       "DAK, Methods previously used",
       "DAK, Chosen method after counselling",
+      "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, DMPA-SC",
@@ -1163,8 +1177,10 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
       "DAK, Methods previously used",
       "DAK, Chosen method after counselling",
+      "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, Progestogen-only pills (POPs)",
@@ -1182,8 +1198,10 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
       "DAK, Methods previously used",
       "DAK, Chosen method after counselling",
+      "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, Combined oral contraceptives (COCs)",
@@ -1201,8 +1219,10 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
       "DAK, Methods previously used",
       "DAK, Chosen method after counselling",
+      "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, Lactational amenorrhea method (LAM)",
@@ -1220,8 +1240,10 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
       "DAK, Methods previously used",
       "DAK, Chosen method after counselling",
+      "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, Male condoms",
@@ -1239,7 +1261,9 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
       "DAK, Methods previously used",
+      "DAK, Method or service provided",
       "DAK, Chosen method after counselling",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1258,7 +1282,9 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
       "DAK, Methods previously used",
+      "DAK, Method or service provided",
       "DAK, Chosen method after counselling",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1276,8 +1302,10 @@
     "action": "show",
     "parents": [
       "DAK, Method in mind",
+      "DAK, Chosen method",
       "DAK, Method in use",
       "DAK, Methods previously used",
+      "DAK, Method or service provided",
       "DAK, Chosen method after counselling",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1296,7 +1324,9 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
       "DAK, Methods previously used",
+      "DAK, Method or service provided",
       "DAK, Chosen method after counselling",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1316,7 +1346,9 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
       "DAK, Methods previously used",
+      "DAK, Method or service provided",
       "DAK, Chosen method after counselling",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1335,7 +1367,9 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
       "DAK, Methods previously used",
+      "DAK, Method or service provided",
       "DAK, Chosen method after counselling",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1354,8 +1388,10 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
       "DAK, Methods previously used",
       "DAK, Chosen method after counselling",
+      "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, Withdrawal",
@@ -1373,7 +1409,9 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
       "DAK, Methods previously used",
+      "DAK, Method or service provided",
       "DAK, Chosen method after counselling",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1391,8 +1429,10 @@
     "action": "show",
     "parents": [
       "DAK, Method in mind",
+      "DAK, Chosen method",
       "DAK, Method in use",
       "DAK, Methods previously used",
+      "DAK, Method or service provided",
       "DAK, Chosen method after counselling",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1411,7 +1451,9 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
       "DAK, Methods previously used",
+      "DAK, Method or service provided",
       "DAK, Chosen method after counselling",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1430,8 +1472,10 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
       "DAK, Methods previously used",
       "DAK, Chosen method after counselling",
+      "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, Levonorgestrel (LNG) two-rod for five years",
@@ -1449,7 +1493,9 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
       "DAK, Methods previously used",
+      "DAK, Method or service provided",
       "DAK, Chosen method after counselling",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1468,8 +1514,10 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
       "DAK, Methods previously used",
       "DAK, Chosen method after counselling",
+      "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, Progesterone-releasing vaginal ring (PVR)",
@@ -1487,6 +1535,8 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
+      "DAK, Method or service provided",
       "DAK, Methods previously used",
       "DAK, Chosen method after counselling",
       "DAK, Type of postpartum family planning method selected"
@@ -1506,6 +1556,8 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
+      "DAK, Method or service provided",
       "DAK, Methods previously used",
       "DAK, Chosen method after counselling",
       "DAK, Type of postpartum family planning method selected"
@@ -1525,7 +1577,9 @@
     "parents": [
       "DAK, Method in mind",
       "DAK, Method in use",
+      "DAK, Chosen method",
       "DAK, Methods previously used",
+      "DAK, Method or service provided",
       "DAK, Chosen method after counselling",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -3067,7 +3121,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, HIV risk factors",
+    "dependent": "DAK, HIV risk assessement",
     "logic_key": 220
   },
   {
@@ -3706,9 +3760,142 @@
     "action": "show",
     "dependent": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy in day",
     "logic_key": 273
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Method in use",
+        "orValues": [
+          "DAK, Emergency contraceptive pills (ECPs)",
+          "DAK, Progestogen-only pills (POPs)"
+        ],
+        "operator": "OR"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Issues with using oral contraceptive pill",
+    "logic_key": 249
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Method in use",
+        "orValues": [
+          "DAK, Etonogestrel (ETG) one-rod",
+          "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
+          "DAK, Levonorgestrel (LNG) two-rod(Levoplant)"
+        ],
+        "operator": "OR"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Issue with Implant",
+    "logic_key": 250
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Method in use",
+        "orValues": [
+          "DAK, DMPA-IM",
+          "DAK, DMPA-SC",
+          "DAK, DMPA-SC -SI"
+        ],
+        "operator": "OR"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Injectable issues",
+    "logic_key": 251
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Issues related with injectable contraceptives",
+        "value": "DAK, Issues with injectable contraceptives- Headache related issues",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Issues with injectable contraceptives- Headache related issues",
+    "logic_key": 252
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Method in use",
+        "orValues": [
+          "DAK, Male condoms",
+          "DAK, Female condoms" 
+        ],
+        "operator": "OR"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Condom issue",
+    "logic_key": 253
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Method in use",
+        "orValues": [
+          "DAK, Female sterilization",
+          "DAK, Male sterilization" 
+        ],
+        "operator": "OR"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Sterilization Issue",
+    "logic_key": 254
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, HIV screening: laboratory tests available",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, HIV test screening: Rapid/laboratory test conducted",
+    "logic_key": 255
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, HIV screening: Rapid tests available",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, HIV test screening: Rapid/laboratory test conducted",
+    "logic_key": 256
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Cevical cancer screening conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Screening Test",
+    "logic_key": 257
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Cevical cancer screening conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Primary Screening Result",
+    "logic_key": 258
   }
-
-
-
-
 ]
