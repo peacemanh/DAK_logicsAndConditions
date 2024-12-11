@@ -4457,7 +4457,7 @@
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Gestational diabetes mellitus (GDM) risk counselling conducted",
+    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
     "action": "Provide counseling on gestational diabetes mellitus (GDM) risk",
     "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m2 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate counseling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
     "action_key": 286
