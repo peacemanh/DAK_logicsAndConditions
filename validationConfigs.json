@@ -20,7 +20,7 @@
         "operator": "beyond, <, <",
         "minValue": 30,
         "maxValue": 180,
-        "type": "optional",
+        "type": "restrict",
         "message": "Weight should be between 30 Kg and 180 Kg"
     },
   {
@@ -28,7 +28,7 @@
         "operator": "beyond, <, <",
         "minValue": 30,
         "maxValue": 180,
-        "type": "optional",
+        "type": "restrict",
         "message": "Weight should be between 30 Kg and 180 Kg"
     },
  
@@ -37,7 +37,7 @@
         "operator": "beyond, <=, <=",
         "minValue": 1,
         "maxValue": 15,
-        "type": "optional",
+        "type": "restrict",
         "message": "Number of pregnancies (gravida) should be between 1 and 15"
     },
     {
@@ -45,7 +45,7 @@
         "operator": "beyond, <=, <=",
         "minValue": 1,
         "maxValue": "DAK, Number of previous pregnancies",
-        "type": "optional",
+        "type": "restrict",
         "message": "Number of pregnancies (gravida) should be less thanNumber of previous pregnancies"
     },
     {
@@ -53,7 +53,7 @@
         "operator": "beyond, <=, <=",
         "minValue": 0,
         "maxValue": "DAK, Number of previous pregnancies - DAK, Number of miscarriages and/or abortions",
-        "type": "optional",
+        "type": "restrict",
         "message": "Number of live births should be less than difference of Number of previous pregnancy and Number of miscarriages and/or abortions"
     },
     {
@@ -61,7 +61,7 @@
         "operator": "beyond, <=, <=",
         "minValue": 0,
         "maxValue": "DAK, Number of previous pregnancies - DAK, Number of miscarriages and/or abortions - DAK, Number of live births",
-        "type": "optional",
+        "type": "restrict",
         "message": "Number of stillbirths should be less than than diffrence of Number of previous pregnancies, Number of miscarriages and/or abortions and Number of live births"
     },
     {
@@ -69,7 +69,7 @@
         "operator": "beyond, <=, <=",
         "minValue": 0,
         "maxValue": "DAK, Parity",
-        "type": "optional",
+        "type": "restrict",
         "message": "Number of caesarian sections should be less than Parity"
     },
     {
@@ -77,7 +77,7 @@
         "operator": "beyond, <=, <=",
         "minValue": 60,
         "maxValue": 260,
-        "type": "optional",
+        "type": "restrict",
         "message": "Systolic blood pressure should be between 60mmHg and 260mmHg"
     },
     {
@@ -85,7 +85,7 @@
         "operator": "beyond, <=, <=",
         "minValue": 60,
         "maxValue": 260,
-        "type": "optional",
+        "type": "restrict",
         "message": "Repeat systolic blood pressure should be between 60mmHg and 260mmHg"
     },
     {
@@ -93,7 +93,7 @@
         "operator": "beyond, <=, <=",
         "minValue": 60,
         "maxValue": 260,
-        "type": "optional",
+        "type": "restrict",
         "message": "Diastolic blood pressure should be between 60mmHg and 260mmHg"
     },
     {
@@ -101,7 +101,7 @@
         "operator": "beyond, <=, <=",
         "minValue": 60,
         "maxValue": 260,
-        "type": "optional",
+        "type": "restrict",
         "message": "Repeat diastolic blood pressure should be between 60mmHg and 260mmHg"
     },
     {
@@ -109,7 +109,7 @@
         "operator": "beyond, <=, <=",
         "minValue": 35,
         "maxValue": 42,
-        "type": "optional",
+        "type": "restrict",
         "message": "Body temperature should be between 350c and 42oc"
     },
     {
@@ -117,7 +117,7 @@
         "operator": "beyond, <=, <=",
         "minValue": 35,
         "maxValue": 42,
-        "type": "optional",
+        "type": "restrict",
         "message": "Second body temperature should be between 350c and 42oc"
     },
     {
@@ -149,7 +149,7 @@
         "operator": "beyond, <=, <=",
         "minValue": 0,
         "maxValue": 10,
-        "type": "optional",
+        "type": "restrict",
         "message": "Cervical dilation should be between 0cm and 10cm"
     },
     {
@@ -157,7 +157,7 @@
         "operator": "beyond, <=, <=",
         "minValue": 0,
         "maxValue": 44,
-        "type": "optional",
+        "type": "restrict",
         "message": "Symphysis-fundal height should be between 0cm and 44cm"
     },
     {
@@ -165,7 +165,7 @@
         "operator": "beyond, <=, <=",
         "minValue": 80,
         "maxValue": 200,
-        "type": "optional",
+        "type": "restrict",
         "message": "Fetal heart rate should be between 80bpm and 200bpm"
     },
     {
@@ -173,7 +173,7 @@
         "operator": "beyond, <=, <=",
         "minValue": 80,
         "maxValue": 200,
-        "type": "optional",
+        "type": "restrict",
         "message": "Second fetal heart rate should be between 80bpm and 200bpm"
     },
     {
@@ -181,7 +181,7 @@
         "operator": "beyond, <=, <=",
         "minValue": 1,
         "maxValue": 8,
-        "type": "optional",
+        "type": "restrict",
         "message": "number of fetuses the woman is carrying should be between 1 and 8"
     },
     {
@@ -196,7 +196,7 @@
         "conceptName": "DAK, Amount of daily aspirin prescribed until delivery",
         "operator": "==",
         "Value": 75,
-        "type": "optional",
+        "type": "restrict",
         "message": "Amount of daily aspirin prescribed until delivery should be 75mg"
     },
     {
@@ -223,14 +223,22 @@
         "type": "restrict",
         "message": "Gestational age should be between 4 and 40"
     },
-    {
-        "conceptName": "DAK, Fetal heart rate",
-        "operator": "beyond, <=, <=",
-        "minValue": 80,
-        "maxValue": 200,
-        "type": "restrict",
-        "message": "Fetal Heart rate should be between 80 bpm and 200 bpm"
-    }
+  {
+    "conceptName": "DAK, Fetal heart rate",
+    "operator": "beyond, <=, <=",
+    "minValue": 80,
+    "maxValue": 200,
+    "type": "restrict",
+    "message": "Fetal Heart rate should be between 80 bpm and 200 bpm"
+  },
+  {
+    "conceptName": "DAK, Birth weight",
+    "operator": "beyond, <=, <=",
+    "minValue": 1,
+    "maxValue": 10,
+    "type": "restrict",
+    "message": "Birth weight should be between 1 and 10 KG"
+  }
      
  ]
  

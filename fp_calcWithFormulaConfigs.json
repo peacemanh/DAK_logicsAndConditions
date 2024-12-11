@@ -10,5 +10,23 @@
         "operands": ["DAK, Last normal menustral period"],
         "formula": "DAK, Last normal menustral period / 1",
         "dateSource": true
+    },
+    {
+        "resultConcept": "DAK, Time since delivery",
+        "operands": ["DAK, Date of last birth"],
+        "formula": "DAK, Date of last birth / 1",
+        "dateSource": true
+    },
+    {
+        "resultConcept": "DAK, Time Postpartum",
+        "operands": ["DAK, Date of last birth"],
+        "formula": "DAK, Date of last birth / 1",
+        "dateSource": true
+    },
+    {
+        "resultConcept": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy in days",
+        "operands": ["DAK, Last normal menustral period", "DAK, Date of miscarriage or abortion FP"],
+        "formula": "DAK, Last normal menustral period - DAK, Date of miscarriage or abortion FP",
+        "dateSource": true
     }
 ]

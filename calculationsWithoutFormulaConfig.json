@@ -786,110 +786,6 @@
   },
   {
     "logics": [
-
-      {
-        "trigger": "DAK, Daily caffeine intake",
-        "orValues": [ "DAK, More than 3 cups of Ethiopian Coffee", "DAK, More than 4 cups of tea", "DAK ,More than 12 bars (50 g) of chocolate" ],
-        "operator": "OR"
-      }
-
-
-    ],
-    "dependentValue": "DAK, High caffeine intake",
-    "dependent": "DAK, Persistent behaviours",
-    "logic_key": 53
-  },
-  {
-    "logics": [
-
-      {
-        "trigger": "DAK, Tobacco use",
-        "value": true,
-        "operator": "="
-      }
-
-
-    ],
-    "dependentValue": "DAK, Tobacco use",
-    "dependent": "DAK, Persistent behaviours",
-    "logic_key": 54
-  },
-  {
-    "logics": [
-
-      {
-        "trigger": "DAK, Recently quit tobacco products",
-        "value": true,
-        "operator": "="
-      }
-
-
-    ],
-    "dependentValue": "DAK, Recently quit tobacco products",
-    "dependent": "DAK, Persistent behaviours",
-    "logic_key": 55
-  },
-  {
-    "logics": [
-
-      {
-        "trigger": "DAK,Male condoms",
-        "value": false,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK,Female condoms",
-        "value": false,
-        "operator": "="
-      }
-
-
-    ],
-    "dependentValue": "DAK, No condom use during sex",
-    "dependent": "DAK, Persistent behaviours",
-    "logic_key": 56
-  },
-  {
-    "logics": [
-
-      {
-        "trigger": "DAK, Current alcohol and/or other substance use",
-        "value": "DAK, Alcohol",
-        "operator": "="
-      }
-    ],
-    "dependentValue": "DAK, Alchol use",
-    "dependent": "DAK, Persistent behaviours",
-    "logic_key": 57
-  },
-  {
-    "logics": [
-
-      {
-        "trigger": "DAK, Current alcohol and/or other substance use",
-        "value": "DAK, Other",
-        "operator": "="
-      }
-    ],
-    "dependentValue": "DAK, Other substance use",
-    "dependent": "DAK, Persistent behaviours",
-    "logic_key": 58
-  },
-  {
-    "logics": [
-
-      {
-        "trigger": "DAK, Current alcohol and/or other substance use",
-        "value": "DAK, khat",
-        "operator": "="
-      }
-    ],
-    "dependentValue": "DAK, Khat use",
-    "dependent": "DAK, Persistent behaviours",
-    "logic_key": 59
-  },
-  {
-    "logics": [
       {
         "trigger": "DAK, Blood haemoglobin test result",
         "value": 110.0,
@@ -2456,8 +2352,252 @@
     "dependentValue": "DAK, Abnormal pulse rate",
     "dependent": "DAK, Current symptoms",
     "logic_key": 159
+  },
+
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Systolic blood pressure",
+        "value": 160.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Repeat systolic blood pressure",
+        "value": 160.0,
+        "operator": ">="
+      },
+
+      {
+        "trigger": "DAK, Urine dipstick result – protein",
+        "value": "DAK, +",
+        "operator": "="
+      }
+    ],
+    "dependentValue": true,
+    "dependent": "DAK, Severe hypertension",
+    "logic_key": 160
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Diastolic blood pressure",
+        "value": 110.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Repeat diastolic blood pressure",
+        "value": 110.0,
+        "operator": ">="
+      },
+
+      {
+        "trigger": "DAK, Urine dipstick result – protein",
+        "value": "DAK, +",
+        "operator": "="
+      }
+    ],
+    "dependentValue": true,
+    "dependent": "DAK, Severe hypertension",
+    "logic_key": 161
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Systolic blood pressure",
+        "value": 160.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Repeat systolic blood pressure",
+        "value": 160.0,
+        "operator": ">="
+      },
+
+      {
+        "trigger": "DAK, Urine dipstick result – protein",
+        "value": "DAK, Negative",
+        "operator": "="
+      }
+    ],
+    "dependentValue": true,
+    "dependent": "DAK, Severe hypertension",
+    "logic_key": 162
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Diastolic blood pressure",
+        "value": 110.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Repeat diastolic blood pressure",
+        "value": 110.0,
+        "operator": ">="
+      },
+
+      {
+        "trigger": "DAK, Urine dipstick result – protein",
+        "value": "DAK, Negative",
+        "operator": "="
+      }
+    ],
+    "dependentValue": true,
+    "dependent": "DAK, Severe hypertension",
+    "logic_key": 163
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Systolic blood pressure",
+        "minValue": 140.0,
+        "maxValue": 160.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "trigger": "DAK, Repeat systolic blood pressure",
+        "minValue": 140.0,
+        "maxValue": 160.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "trigger": "DAK, Urine dipstick result – protein",
+        "value": "DAK, +",
+        "operator": "="
+      }
+    ],
+    "dependentValue": true,
+    "dependent": "DAK, Chronic Hypertension",
+    "logic_key": 164
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Diastolic blood pressure",
+        "minValue": 90.0,
+        "maxValue": 110.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "trigger": "DAK, Repeat diastolic blood pressure",
+        "minValue": 90.0,
+        "maxValue": 110.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "trigger": "DAK, Urine dipstick result – protein",
+        "value": "DAK, +",
+        "operator": "="
+      }
+    ],
+    "dependentValue": true,
+    "dependent": "DAK, Chronic Hypertension",
+    "logic_key": 165
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Systolic blood pressure",
+        "minValue": 140.0,
+        "maxValue": 160.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "trigger": "DAK, Repeat systolic blood pressure",
+        "minValue": 140.0,
+        "maxValue": 160.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "trigger": "DAK, Urine dipstick result – protein",
+        "value": "DAK, Negative",
+        "operator": "="
+      }
+    ],
+    "dependentValue": true,
+    "dependent": "DAK, Chronic Hypertension",
+    "logic_key": 166
+  },
+  {
+    "logics": [
+
+      {
+        "trigger": "DAK, Existing chronic health conditions",
+        "value": "DAK, HIV positive",
+        "operator": "="
+      }
+    ],
+    "dependentValue": "DAK, HIV positive",
+    "dependent": "DAK, HIV status",
+    "logic_key": 167
+  },
+  {
+    "logics": [
+
+      {
+        "trigger": "DAK, Existing chronic health conditions",
+        "value": "DAK, HIV positive",
+        "operator": "="
+      }
+    ],
+    "dependentValue": false,
+    "dependent": "DAK, HIV test required",
+    "logic_key": 168
+  },
+  {
+    "logics": [
+
+      {
+        "trigger": "Malaria-endemic setting",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Current medications",
+        "value": "DAK, Co-trimoxazole",
+        "operator": "="
+      }
+    ],
+    "dependentValue": false,
+    "dependent": "DAK, IPTp-SP dose 1 provided",
+    "logic_key": 169
+  },
+  {
+    "logics": [
+
+      {
+        "trigger": "Malaria-endemic setting",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Current medications",
+        "value": "DAK, Co-trimoxazole",
+        "operator": "="
+      }
+    ],
+    "dependentValue": false,
+    "dependent": "DAK, IPTp-SP dose 2 provided",
+    "logic_key": 170
+  },
+  {
+    "logics": [
+
+      {
+        "trigger": "Malaria-endemic setting",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Current medications",
+        "value": "DAK, Co-trimoxazole",
+        "operator": "="
+      }
+    ],
+    "dependentValue": false,
+    "dependent": "DAK, IPTp-SP dose 3 provided",
+    "logic_key": 171
   }
-  
 
 
 ]
