@@ -3633,7 +3633,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other catagory(specify)",
-    "logic_key": 266
+    "logic_key": 267
   },
   {
     "logics": [
@@ -3645,7 +3645,67 @@
     ],
     "action": "show",
     "dependent": "DAK, Sexually active",
-    "logic_key": 266
+    "logic_key": 268
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Abortion/miscarriage",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other abortion/miscarriage",
+    "logic_key": 269
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Medical conditions during past pregnancy and after childbirth",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other Medical conditions",
+    "logic_key": 270
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Cardiovascular disease",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other cardiovascular disease",
+    "logic_key": 271
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for stopping contraception or method",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other reason for stopping contraception or method",
+    "logic_key": 272
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy in day",
+    "logic_key": 273
   }
 
 
