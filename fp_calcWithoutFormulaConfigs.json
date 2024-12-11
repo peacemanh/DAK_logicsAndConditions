@@ -24944,6 +24944,6 @@
     ],
     "logic_key": 1185,
     "dependentValue": true,
-    "dependent": "DAK, Days since start of last normal menses ≤ 7 days"
+    "dependent": "DAK, Days since start of last normal menses lessthan 7 days"
   }
 ]
