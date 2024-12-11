@@ -3406,6 +3406,246 @@
     "action": "show",
     "dependent": "DAK, Type of dual method selected",
     "logic_key": 248
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Diabetes",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other diabtes",
+    "logic_key": 249
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Hypertension",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other hypertension",
+    "logic_key": 250
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Superficial venous disorders",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other SVD",
+    "logic_key": 251
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Headaches",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other headaches",
+    "logic_key": 252
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Vaginal bleeding patterns",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other vaginal bleeding patterns",
+    "logic_key": 253
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reproductive tract infections and disorders",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other RTI and disorders",
+    "logic_key": 254
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Breast disease",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other breast disease",
+    "logic_key": 255
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Uterine fibroids",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other uterine fibroids",
+    "logic_key": 256
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, STIs",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other STIs",
+    "logic_key": 257
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Thyroid disorders",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other thyroid disorders",
+    "logic_key": 258
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gall bladder disorders",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other gall bladder disorders",
+    "logic_key": 259
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Liver disorders",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other liver disorders",
+    "logic_key": 260
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Anemias",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other anemias",
+    "logic_key": 261
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Other infections (schistosomiasis, tuberculosis, malaria)",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other infections",
+    "logic_key": 262
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Conditions relevant to sterilization and FAB",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other conditions relevant to sterilization and FAB",
+    "logic_key": 263
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Conditions relevant to FAB",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other conditions relevant to FAB",
+    "logic_key": 264
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Risk factors for venous thromboembolism (VTE)",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other risk factors for venous thromboembolism (VTE)",
+    "logic_key": 265
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pelvic inflammatory disease (PID) FP",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other pelvic inflammatory disease (PID)",
+    "logic_key": 266
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other catagory(specify)",
+    "logic_key": 266
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Ever had sex - Reported",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Sexually active",
+    "logic_key": 266
   }
 
 
