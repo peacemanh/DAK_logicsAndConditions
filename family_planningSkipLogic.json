@@ -89,6 +89,7 @@
           "DAK, Vaginal bleeding patterns",
           "DAK, Reproductive tract infections and disorders",
           "DAK, Vaginitis"
+
         ]
       }
     ],
@@ -848,7 +849,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Reason for not taking blood pressure",
+    "dependent": "DAK, Reason for not taking blood pressure form",
     "logic_key": 57
   },
   {
@@ -905,6 +906,11 @@
         "trigger": "DAK, Has client ever been pregnant",
         "value": true,
         "operator": "="
+      },
+      {
+        "trigger": "DAK, Ever had sex - Reported",
+        "value": false,
+        "operator": "="
       }
     ],
     "action": "show",
@@ -937,7 +943,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Date of last birth",
+    "dependent": "DAK, Date of previous delivery",
     "logic_key": 64
   },
   {
@@ -3123,5 +3129,238 @@
     "action": "hide",
     "dependent": "DAK, Cevical cancer screening conducted",
     "logic_key": 225
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood pressure screening available",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Blood pressure screening conducted",
+    "logic_key": 226
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, STI risk assessment: medical history and physical examination available",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, STI risk assessment conducted",
+    "logic_key": 227
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, STI/HIV screening: laboratory tests available",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, STI/HIV screening: laboratory tests conducted",
+    "logic_key": 228
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Haemoglobin test conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Haemoglobin levels",
+    "logic_key": 229
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Type of back-up method selected",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Type of back-up method selected other",
+    "logic_key": 230
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
+    "logic_key": 231
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Has client ever been pregnant",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Has client given birth in the last six months",
+    "logic_key": 232
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Has client given birth in the last six months",
+        "value": true,
+        "operator": "="
+      }
+     
+    ],
+    "action": "show",
+    "dependent": "DAK, Date of last birth",
+    "logic_key": 233
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Has client given birth in the last six months",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, 180 days post-delivery",
+    "logic_key": 234
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Has client given birth in the last six months",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, P",
+    "logic_key": 235
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Ever had sex - Reported",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Never used contraception",
+    "logic_key": 236
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Has client ever been pregnant",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Time since delivery",
+    "logic_key": 237
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Has client ever been pregnant",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Time Postpartum",
+    "logic_key": 238
+  },
+  {
+    "logics": [
+      {
+        "trigger": "gender",
+        "value": "F",
+        "operator": "="
+      }
+    ],
+    "action": "required",
+    "dependent": "DAK, 180 days post-delivery",
+    "logic_key": 239
+  },
+  {
+    "logics": [
+      {
+        "trigger": "gender",
+        "value": "F",
+        "operator": "="
+      }
+    ],
+    "action": "required",
+    "dependent": "DAK, P",
+    "logic_key": 240
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, P",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "required",
+    "dependent": "DAK, Time since delivery",
+    "logic_key": 241
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, P",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "required",
+    "dependent": "DAK, Time Postpartum",
+    "logic_key": 242
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Never used contraception",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "hide",
+    "dependent": "DAK, Method in use",
+    "logic_key": 243
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Health condition(s)",
+        "value": "DAK, Pelvic inflammatory disease",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Pelvic inflammatory disease (PID) FP",
+    "logic_key": 244
   }
+
+
+
+
 ]

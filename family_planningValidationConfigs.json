@@ -2,18 +2,18 @@
     {
         "conceptName": "DAK, Height",
         "operator": "beyond, <, <",
-        "minValue": 100,
-        "maxValue": 200,
+        "minValue": 50,
+        "maxValue": 250,
         "type": "restrict",
-        "message": "Height should be between 100 cm and 200 cm"
+        "message": "Height should be between 50 cm and 250 cm"
     },
     {
         "conceptName": "DAK, Current weight",
         "operator": "beyond, <, <",
-        "minValue": 15,
-        "maxValue": 250,
+        "minValue": 30,
+        "maxValue": 400,
         "type": "restrict",
-        "message": "Weight should be between 15 Kg and 250 Kg"
+        "message": "Weight should be between 30 Kg and 400 Kg"
     },
     {
         "conceptName": "DAK, BMI",
@@ -23,20 +23,28 @@
         "type": "optional",
         "message": "BMI should be between 19 and 25"
     },
-    {
-        "conceptName": "DAK, Systolic blood pressure",
-        "operator": "beyond, <=, <=",
-        "minValue": 60,
-        "maxValue": 260,
-        "type": "restrict",
-        "message": "Systolic blood pressure should be between 60mmHg and 260mmHg"
-    },
-    {
-        "conceptName": "DAK, Diastolic blood pressure",
-        "operator": "beyond, <=, <=",
-        "minValue": 60,
-        "maxValue": 260,
-        "type": "restrict",
-        "message": "Diastolic blood pressure should be between 60mmHg and 260mmHg"
-    }
+  {
+    "conceptName": "DAK, Systolic blood pressure",
+    "operator": "beyond, <=, <=",
+    "minValue": 60,
+    "maxValue": 260,
+    "type": "restrict",
+    "message": "Systolic blood pressure should be between 60mmHg and 260mmHg"
+  },
+  {
+    "conceptName": "DAK, Diastolic blood pressure",
+    "operator": "beyond, <=, <=",
+    "minValue": 60,
+    "maxValue": 260,
+    "type": "restrict",
+    "message": "Diastolic blood pressure should be between 60mmHg and 260mmHg"
+  },
+  {
+    "conceptName": "DAK, Number of previous pregnancies",
+    "operator": "beyond, <=",
+    "minValue": 0,
+    
+    "type": "restrict",
+    "message": "Diastolic blood pressure should be between 60mmHg and 260mmHg"
+  }
 ]

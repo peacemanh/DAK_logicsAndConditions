@@ -12,7 +12,7 @@
         "operator": "beyond, <, <",
         "minValue": 100,
         "maxValue": 200,
-        "type": "restrict",
+        "type": "optional",
         "message": "Height should be between 100 cm and 200 cm"
     },
     {
@@ -188,9 +188,9 @@
         "conceptName": "DAK, ANC Contact Number",
         "operator": "beyond, <=, <=",
         "minValue": 2,
-        "maxValue": 8,
+        "maxValue": 15,
         "type": "restrict",
-        "message": "ANC contact number for scheduled antenatal care should be between 2 and 8"
+        "message": "ANC contact number for scheduled antenatal care should be between 2 and 14"
     },
      {
         "conceptName": "DAK, Amount of daily aspirin prescribed until delivery",
