@@ -2520,6 +2520,30 @@
   },
   {
     "logics": [
+      {
+        "trigger": "DAK, Diastolic blood pressure",
+        "minValue": 90.0,
+        "maxValue": 110.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "trigger": "DAK, Repeat diastolic blood pressure",
+        "minValue": 90.0,
+        "maxValue": 110.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "trigger": "DAK, Urine dipstick result – protein",
+        "value": "DAK, Negative",
+        "operator": "="
+      }
+    ],
+    "dependentValue": true,
+    "dependent": "DAK, Chronic Hypertension",
+    "logic_key": 167
+  },
+  {
+    "logics": [
 
       {
         "trigger": "DAK, Existing chronic health conditions",
@@ -2529,7 +2553,7 @@
     ],
     "dependentValue": "DAK, HIV positive",
     "dependent": "DAK, HIV status",
-    "logic_key": 167
+    "logic_key": 168
   },
   {
     "logics": [
@@ -2542,24 +2566,6 @@
     ],
     "dependentValue": false,
     "dependent": "DAK, HIV test required",
-    "logic_key": 168
-  },
-  {
-    "logics": [
-
-      {
-        "trigger": "Malaria-endemic setting",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Current medications",
-        "value": "DAK, Co-trimoxazole",
-        "operator": "="
-      }
-    ],
-    "dependentValue": false,
-    "dependent": "DAK, IPTp-SP dose 1 provided",
     "logic_key": 169
   },
   {
@@ -2577,7 +2583,7 @@
       }
     ],
     "dependentValue": false,
-    "dependent": "DAK, IPTp-SP dose 2 provided",
+    "dependent": "DAK, IPTp-SP dose 1 provided",
     "logic_key": 170
   },
   {
@@ -2595,8 +2601,26 @@
       }
     ],
     "dependentValue": false,
-    "dependent": "DAK, IPTp-SP dose 3 provided",
+    "dependent": "DAK, IPTp-SP dose 2 provided",
     "logic_key": 171
+  },
+  {
+    "logics": [
+
+      {
+        "trigger": "Malaria-endemic setting",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Current medications",
+        "value": "DAK, Co-trimoxazole",
+        "operator": "="
+      }
+    ],
+    "dependentValue": false,
+    "dependent": "DAK, IPTp-SP dose 3 provided",
+    "logic_key": 172
   }
 
 
