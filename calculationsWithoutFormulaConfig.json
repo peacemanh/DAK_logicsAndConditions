@@ -2621,8 +2621,168 @@
     "dependentValue": false,
     "dependent": "DAK, IPTp-SP dose 3 provided",
     "logic_key": 172
-  }
+  },
+  {
+    "logics": [
 
+      {
+        "trigger": "DAK, BMI",
+        "value": 30.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+        "value": "DAK, Negative",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+        "value": "DAK, Negative",
+        "operator": "="
+      }
+    ],
+    "dependentValue": true,
+    "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
+    "logic_key": 173
+  },
+  {
+    "logics": [
+
+      {
+        "trigger": "DAK, Past pregnancy history",
+        "value": "DAK, Gestational diabetes mellitus",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+        "value": "DAK, Negative",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+        "value": "DAK, Negative",
+        "operator": "="
+      }
+    ],
+    "dependentValue": true,
+    "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
+    "logic_key": 174
+  },
+  {
+    "logics": [
+
+      {
+        "tigger": "DAK, Past pregnancy history",
+        "value": "DAK, Macrosomia",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+        "value": "DAK, Negative",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+        "value": "DAK, Negative",
+        "operator": "="
+      }
+    ],
+    "dependentValue": true,
+    "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
+    "logic_key": 175
+  },
+  {
+    "logics": [
+
+      {
+        "trigger": "DAK, Urine dipstick result \u2013 glucose",
+        "value": "DAK, ++",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+        "value": "DAK, Negative",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+        "value": "DAK, Negative",
+        "operator": "="
+      }
+    ],
+    "dependentValue": true,
+    "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
+    "logic_key": 176
+  },
+  {
+    "logics": [
+
+      {
+        "trigger": "DAK, Urine dipstick result \u2013 glucose",
+        "value": "DAK, +++",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+        "value": "DAK, Negative",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+        "value": "DAK, Negative",
+        "operator": "="
+      }
+    ],
+    "dependentValue": true,
+    "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
+    "logic_key": 177
+  },
+  {
+    "logics": [
+
+      {
+        "trigger": "DAK, Urine dipstick result \u2013 glucose",
+        "value": "DAK, ++++",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+        "value": "DAK, Negative",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+        "value": "DAK, Negative",
+        "operator": "="
+      }
+    ],
+    "dependentValue": true,
+    "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
+    "logic_key": 178
+  },
+  {
+    "logics": [
+
+      {
+        "trigger": "DAK, Urine dipstick result \u2013 glucose",
+        "value": "DAK, +",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+        "value": "DAK, Negative",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+        "value": "DAK, Negative",
+        "operator": "="
+      }
+    ],
+    "dependentValue": true,
+    "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
+    "logic_key": 179
+  }
 
 ]
 
