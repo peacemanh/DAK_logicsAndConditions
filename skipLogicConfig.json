@@ -8034,6 +8034,37 @@
     "action": "show",
     "dependent": "DAK, Reason iron and folic acid not prescribed",
     "logic_key": 585
+  },
+
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fetal heartbeat present",
+        "value": true,
+        "operator": ">"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal heart rate",
+    "logic_key": 586
+  },
+
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Repeat systolic blood pressure",
+        "value": 140,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Repeat diastolic blood pressure",
+        "value": 90,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Symptoms of severe pre-eclampsia",
+    "logic_key": 587
   }
 
 
