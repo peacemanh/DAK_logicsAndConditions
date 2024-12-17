@@ -2552,6 +2552,7 @@
         "value": 20,
         "operator": ">"
       }
+     
     ],
     "action": "show",
     "dependent": "DAK, Fetal heartbeat present",
@@ -3127,11 +3128,17 @@
         "trigger": "DAK, Gestational age",
         "value": 20,
         "operator": ">"
+      },
+      {
+        "trigger": "DAK, Fetal heartbeat present",
+        "value": true,
+        "operator": "="
       }
     ],
     "action": "show",
     "dependent": "DAK, Fetal heart rate",
     "logic_key": 257
+      
   },
   {
     "logics": [
@@ -8036,36 +8043,8 @@
     "logic_key": 585
   },
 
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Fetal heartbeat present",
-        "value": true,
-        "operator": ">"
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Fetal heart rate",
-    "logic_key": 586
-  },
-
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Repeat systolic blood pressure",
-        "value": 140,
-        "operator": ">="
-      },
-      {
-        "trigger": "DAK, Repeat diastolic blood pressure",
-        "value": 90,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Symptoms of severe pre-eclampsia",
-    "logic_key": 587
-  }
+ 
+ 
 
 
 ]
