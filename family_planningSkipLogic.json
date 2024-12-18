@@ -3195,18 +3195,7 @@
     "dependent": "DAK, Blood pressure screening conducted",
     "logic_key": 226
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, STI risk assessment: medical history and physical examination available",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, STI risk assessment conducted",
-    "logic_key": 227
-  },
+
   {
     "logics": [
       {
