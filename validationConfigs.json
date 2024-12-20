@@ -194,7 +194,7 @@
   {
     "conceptName": "DAK, ANC Contact Number",
     "operator": "beyond, <=, <=",
-    "minValue": 2,
+    "minValue": 1,
     "maxValue": 15,
     "type": "restrict",
     "message": "ANC contact number for scheduled antenatal care should be between 2 and 14"
@@ -245,8 +245,15 @@
     "maxValue": 10,
     "type": "restrict",
     "message": "Birth weight should be between 1 and 10 KG"
+  },
+  {
+    "conceptName": "Gestational Age Days in Current Week",
+    "operator": "beyond, <=, <=",
+    "minValue": 0,
+    "maxValue": 6,
+    "type": "restrict",
+    "message": "The number of days must be from 0 to 6."
   }
-
 ]
  
  
