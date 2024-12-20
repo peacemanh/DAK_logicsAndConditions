@@ -2614,5 +2614,46 @@
     "dependentValue": true,
     "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
     "logic_key": 145
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Ultrasound required",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "orValues": [30, 31, 38, 39, 26, 27, 34, 35],
+        "operator": "OR"
+      }
+    ],
+    "conditionType": "either",
+    "dependentValue": true,
+    "dependent": "DAK, Suggested Investigations",
+    "logic_key": 146
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, ANC Contact Number",
+        "orValues": [1, 2, 3, 4, 5, 6, 7],
+        "operator": "OR"
+      }
+    ],
+    "conditionType": "either",
+    "dependentValue": true,
+    "dependent": "DAK, ANC Contact Schedule Needed",
+    "logic_key": 147
   }
 ]
