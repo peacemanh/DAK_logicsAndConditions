@@ -1,6 +1,6 @@
 [
     {
-        "conceptName": "DAK, Height",
+        "conceptName": "DAK, Height FP",
         "operator": "beyond, <, <",
         "minValue": 50,
         "maxValue": 250,
@@ -8,7 +8,7 @@
         "message": "Height should be between 50 cm and 250 cm"
     },
     {
-        "conceptName": "DAK, Current weight",
+        "conceptName": "DAK, Weight FP",
         "operator": "beyond, <, <",
         "minValue": 30,
         "maxValue": 400,
