@@ -8031,7 +8031,7 @@
     "logic_key": 581
   },
   {
-   "logics": [
+    "logics": [
       {
         "trigger": "DAK, Repeat systolic blood pressure",
         "value": 140,
@@ -8046,5 +8046,18 @@
     "action": "show",
     "dependent": "DAK, Symptoms of severe pre-eclampsia",
     "logic_key": 582
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Types of IPV",
+        "value": "DAK, Other",
+        "operator": ">="
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Other type of IPV",
+    "logic_key": 583
   }
 ]
