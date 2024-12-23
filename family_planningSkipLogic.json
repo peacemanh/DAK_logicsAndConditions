@@ -4172,5 +4172,41 @@
     "action": "show",
     "dependent": "DAK, Other reason for stopping contraception or method",
     "logic_key": 311
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Have you had a recent miscarriage or abortion",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Date of miscarriage or abortion FP",
+    "logic_key": 312
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Have you had a recent miscarriage or abortion",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Miscarriage or abortion within past 4 weeks",
+    "logic_key": 313
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Have you had a recent miscarriage or abortion",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy in days",
+    "logic_key": 313
   }
 ]
