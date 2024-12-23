@@ -8052,7 +8052,7 @@
       {
         "trigger": "DAK, Types of IPV",
         "value": "DAK, Other",
-        "operator": ">="
+        "operator": "="
       }
 
     ],
