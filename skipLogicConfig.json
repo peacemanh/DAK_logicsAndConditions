@@ -8059,5 +8059,18 @@
     "action": "show",
     "dependent": "DAK, Other type of IPV",
     "logic_key": 583
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fetal heartbeat present",
+        "value": true,
+        "operator": "="
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal heart rate",
+    "logic_key": 584
   }
 ]
