@@ -110,18 +110,6 @@
   {
       "logics": [
           {
-              "trigger": "DAK, Date of miscarriage or abortion",
-              "value": 28,
-              "operator": "<="
-          }
-      ],
-      "dependentValue": true,
-      "dependent": "DAK, Have you had a recent miscarriage or abortion",
-      "logic_key": 8
-  },
-  {
-      "logics": [
-          {
               "trigger": "DAK, STI risk assessment factors",
               "value": "DAK, Sexually active",
               "operator": "="
@@ -2293,7 +2281,7 @@
           },
           {
               "trigger": "DAK, HIV/AIDS",
-              "orValue": [
+              "orValues": [
                   "DAK, HIV disease stage 1",
                   "DAK, HIV disease stage 2"
               ],
@@ -2318,7 +2306,7 @@
           },
           {
               "trigger": "DAK, HIV/AIDS",
-              "orValue": [
+              "orValues": [
                   "DAK, HIV disease stage 3",
                   "DAK, HIV disease 4"
               ],
@@ -2343,7 +2331,7 @@
           },
           {
               "trigger": "DAK, HIV/AIDS",
-              "orValue": [
+              "orValues": [
                   "DAK, HIV disease stage 3",
                   "DAK, HIV disease 4"
               ],
