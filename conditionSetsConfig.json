@@ -6297,7 +6297,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Amount of daily aspirin prescribed until delivery",
+        "key": "DAK, Amount of daily aspirin prescribed until deliveryy",
         "value": 0,
         "operator": ">"
       }
