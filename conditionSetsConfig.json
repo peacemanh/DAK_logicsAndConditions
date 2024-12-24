@@ -4884,8 +4884,14 @@
         "key": "DAK, Pregnancy confirmed",
         "value": true,
         "operator": "="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 30,
+        "operator": ">="
       }
-    ],
+
+  ],
     "displayPoint": "DAK, Counselling conducted on breastfeeding",
     "action": "Provide counseling on breastfeeding",
     "annotation": "To enable mothers to establish and sustain exclusive breastfeeding for 6 months, WHO and UNICEF recommend:\n\n\u2013 Initiation of breastfeeding within the first hour of life\n\u2013 Exclusive breastfeeding \u2013 that is, the infant receives only breast milk without any additional food or drink, not even water\n\u2013 Breastfeeding on demand \u2013 that is, as often as the child wants food, day and night\n\u2013 No use of bottles, teats or pacifiers",
@@ -4894,9 +4900,14 @@
   {
     "conditions": [
       {
-        "key": "DAK, Age",
+        "key": "age",
         "value": 35.0,
         "operator": ">"
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 30.0,
+        "operator": ">="
       }
     ],
     "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
@@ -4907,7 +4918,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Age",
+        "key": "age",
         "value": 17.0,
         "operator": "<="
       }
@@ -4923,6 +4934,11 @@
         "key": "DAK, Fetal presentation",
         "value": "DAK, Transverse fetal presentation",
         "operator": "="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 30.0,
+        "operator": ">="
       }
     ],
     "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
@@ -4934,8 +4950,13 @@
     "conditions": [
       {
         "key": "DAK, Fetal presentation",
-        "value": "DAK, Other fetal presentation (specify)",
+        "value": "DAK, Other",
         "operator": "="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 30.0,
+        "operator": ">="
       }
     ],
     "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
@@ -4949,6 +4970,11 @@
         "key": "DAK, Number of caesarian sections",
         "value": 0.0,
         "operator": ">"
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 30.0,
+        "operator": ">="
       }
     ],
     "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
@@ -4962,6 +4988,11 @@
         "key": "DAK, Number of fetuses",
         "value": 1.0,
         "operator": ">"
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 30.0,
+        "operator": ">="
       }
     ],
     "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
@@ -4975,6 +5006,11 @@
         "key": "DAK, Type of postpartum family planning method selected",
         "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
         "operator": "="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 30.0,
+        "operator": ">="
       }
     ],
     "displayPoint": "DAK, Counselling on birth preparedness and complications readiness",
@@ -5076,7 +5112,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Current physiological symptoms",
+        "key": "DAK, Current symptoms",
         "value": "DAK, Vaginal bleeding",
         "operator": "="
       }
@@ -7628,9 +7664,15 @@
         "key": "DAK, Pregnancy confirmed",
         "value": true,
         "operator": "="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 12,
+        "operator": ">"
       }
+
     ],
-    "displayPoint": "",
+    "displayPoint": "DAK, Preventive antihelminthic treatment provided",
     "action": "Conduct deworming",
     "annotation": "Possible methods include: Levonorgestrel IUD, copper IUD, implants, LAM, oral contraceptive pills, sterilization, tubal ligation\t\n\nNote: LAM is an effective method for breastfeeding women who are amenorrhoeic and their infant < 6 months of age; \n\nBreastfeeding women < 6 weeks postpartum are generally advised not to use injectables and should not use combined hormonal contraceptive (CHC); \n\nBreastfeeding women \u2265 6 weeks can use injectables without restriction; Breastfeeding women \u2265 6 weeks to < 6 months postpartum (primarily breastfeeding) generally should not use CHCs unless other more appropriate methods are not available or acceptable (16).",
     "action_key": 461

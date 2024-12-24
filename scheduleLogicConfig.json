@@ -4,56 +4,64 @@
         "value": 1,
         "conditioner": "DAK, Gestational age",
         "service": "ANC Contact 2",
-        "type": "contact schedule"
+        "type": "contact schedule",
+        "displayPoint": "DAK, ANC Contact Schedule Needed"
     },
     {
         "triggerEvent": "DAK, Reason for coming to facility",
         "value": "DAK, First antenatal care contact",
         "conditioner": "DAK, Gestational age",
         "service": "ANC Contact 2",
-        "type": "contact schedule"
+        "type": "contact schedule",
+        "displayPoint": "DAK, ANC Contact Schedule Needed"
     },
     {
         "triggerEvent": "DAK, ANC Contact Number",
         "value": 2,
         "conditioner": "DAK, Gestational age",
         "service": "ANC Contact 3",
-        "type": "contact schedule"
+        "type": "contact schedule",
+        "displayPoint": "DAK, ANC Contact Schedule Needed"
     },
     {
         "triggerEvent": "DAK, ANC Contact Number",
         "value": 3,
         "conditioner": "DAK, Gestational age",
         "service": "ANC Contact 4",
-        "type": "contact schedule"
+        "type": "contact schedule",
+        "displayPoint": "DAK, ANC Contact Schedule Needed"
     },
     {
         "triggerEvent": "DAK, ANC Contact Number",
         "value": 4,
         "conditioner": "DAK, Gestational age",
         "service": "ANC Contact 5",
-        "type": "contact schedule"
+        "type": "contact schedule",
+        "displayPoint": "DAK, ANC Contact Schedule Needed"
     },
     {
         "triggerEvent": "DAK, ANC Contact Number",
         "value": 5,
         "conditioner": "DAK, Gestational age",
         "service": "ANC Contact 6",
-        "type": "contact schedule"
+        "type": "contact schedule",
+        "displayPoint": "DAK, ANC Contact Schedule Needed"
     },
     {
         "triggerEvent": "DAK, ANC Contact Number",
         "value": 6,
         "conditioner": "DAK, Gestational age",
         "service": "ANC Contact 7",
-        "type": "contact schedule"
+        "type": "contact schedule",
+        "displayPoint": "DAK, ANC Contact Schedule Needed"
     },
     {
         "triggerEvent": "DAK, ANC Contact Number",
         "value": 7,
         "conditioner": "DAK, Gestational age",
         "service": "ANC Contact 8",
-        "type": "contact schedule"
+        "type": "contact schedule",
+        "displayPoint": "DAK, ANC Contact Schedule Needed"
     },
     {
         "triggerEvent": "DAK, Tetanus Diphtheria Vaccine (TD)",
@@ -61,7 +69,8 @@
         "value": "!DAK, Fully immunized",
         "sceduleDays": "",
         "service": "TDV 1",
-        "type": "special"
+        "type": "special",
+        "displayPoint": "DAK, Tetanus-diphtheria (TD) 1 immunization provided"
     },
     {
         "triggerEvent": "DAK, Tetanus-diphtheria (TD) 1 immunization provided",
@@ -101,7 +110,8 @@
         "value": "",
         "sceduleDays": 91,
         "service": "IPTp-SP dose 1",
-        "type": "special"
+        "type": "special",
+        "displayPoint": "DAK, Malaria Chemo-prophylaxis provided"
     },
     {
         "triggerEvent": "DAK, IPTp-SP dose 1 provided",

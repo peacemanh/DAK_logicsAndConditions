@@ -8,6 +8,11 @@
         "formula": "(DAK, Pre-gestational weight / (DAK, Height * DAK, Height)) * 10000"
     },
     {
+        "resultConcept": "DAK, ANC Contact Number",
+        "operands": ["DAK, ANC Contact Number exist"],
+        "formula": "DAK, ANC Contact Number exist + 1"
+    },
+    {
         "resultConcept": "DAK, Parity",
         "operands": [
             "DAK, Number of live births",
@@ -34,6 +39,23 @@
         "resultConcept": "DAK, Gestational age",
         "operands": ["DAK, LNMP Date"],
         "formula": "DAK, LNMP Date / 7",
+        "conditioner": {"key": "DAK, Source of gestational age", "value": "DAK, LNMP"},
+        "dateSource": true
+    },
+    {
+        "resultConcept": "DAK, Gestational age",
+        "operands": ["DAK, Gestational age exist", "DAK, Gestational Age Days in Current Week exist"],
+        "formula": "((DAK, Gestational age exist * 7) + DAK, Gestational Age Days in Current Week exist) / 7"
+    },
+    {
+        "resultConcept": "DAK, Gestational Age Days in Current Week",
+        "operands": ["DAK, Gestational age exist", "DAK, Gestational Age Days in Current Week exist"],
+        "formula": "((DAK, Gestational age exist * 7) + DAK, Gestational Age Days in Current Week exist) % 7"
+    },
+    {
+        "resultConcept": "DAK, Gestational Age Days in Current Week",
+        "operands": ["DAK, LNMP Date"],
+        "formula": "DAK, LNMP Date % 7",
         "conditioner": {"key": "DAK, Source of gestational age", "value": "DAK, LNMP"},
         "dateSource": true
     },

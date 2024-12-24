@@ -3195,7 +3195,6 @@
     "dependent": "DAK, Blood pressure screening conducted",
     "logic_key": 226
   },
-
   {
     "logics": [
       {
@@ -3259,8 +3258,18 @@
   {
     "logics": [
       {
+        "trigger": "DAK, Has client ever been pregnant",
+        "value": true,
+        "operator": "="
+      },
+      {
         "trigger": "DAK, Has client given birth in the last six months",
         "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "gender",
+        "value": "F",
         "operator": "="
       }
     ],
@@ -3271,8 +3280,18 @@
   {
     "logics": [
       {
+        "trigger": "DAK, Has client ever been pregnant",
+        "value": true,
+        "operator": "="
+      },
+      {
         "trigger": "DAK, Has client given birth in the last six months",
         "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "gender",
+        "value": "F",
         "operator": "="
       }
     ],
@@ -3283,13 +3302,23 @@
   {
     "logics": [
       {
+        "trigger": "DAK, Has client ever been pregnant",
+        "value": true,
+        "operator": "="
+      },
+      {
         "trigger": "DAK, Has client given birth in the last six months",
         "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "gender",
+        "value": "F",
         "operator": "="
       }
     ],
     "action": "show",
-    "dependent": "DAK, P",
+    "dependent": "DAK, Postpartum",
     "logic_key": 235
   },
   {
@@ -3310,6 +3339,16 @@
         "trigger": "DAK, Has client ever been pregnant",
         "value": true,
         "operator": "="
+      },
+      {
+        "trigger": "DAK, Has client given birth in the last six months",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "gender",
+        "value": "F",
+        "operator": "="
       }
     ],
     "action": "show",
@@ -3320,6 +3359,21 @@
     "logics": [
       {
         "trigger": "DAK, Has client ever been pregnant",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Has client given birth in the last six months",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "gender",
+        "value": "F",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Postpartum",
         "value": true,
         "operator": "="
       }
@@ -3349,13 +3403,13 @@
       }
     ],
     "action": "required",
-    "dependent": "DAK, P",
+    "dependent": "DAK, Postpartum",
     "logic_key": 240
   },
   {
     "logics": [
       {
-        "trigger": "DAK, P",
+        "trigger": "DAK, Postpartum",
         "value": true,
         "operator": "="
       }
@@ -3367,7 +3421,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, P",
+        "trigger": "DAK, Postpartum",
         "value": true,
         "operator": "="
       }
@@ -4208,5 +4262,65 @@
     "action": "show",
     "dependent": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy in days",
     "logic_key": 314
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Have you had a recent miscarriage or abortion",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
+    "logic_key": 287
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Method or service provided",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other Method or service provided",
+    "logic_key": 288
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Chosen method after counselling",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other chosen method after counselling",
+    "logic_key": 289
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Method in mind",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other Method in mind",
+    "logic_key": 290
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Chosen method",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other chosen method",
+    "logic_key": 291
   }
 ]
