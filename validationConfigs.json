@@ -92,7 +92,7 @@
     "operator": "beyond, <=, <=",
     "minValue": 60,
     "maxValue": 260,
-    "type": "restrict",
+    "type": "optional",
     "message": "Repeat systolic blood pressure should be between 60mmHg and 260mmHg"
   },
   {
@@ -108,7 +108,7 @@
     "operator": "beyond, <=, <=",
     "minValue": 60,
     "maxValue": 260,
-    "type": "restrict",
+    "type": "optional",
     "message": "Repeat diastolic blood pressure should be between 60mmHg and 260mmHg"
   },
   {

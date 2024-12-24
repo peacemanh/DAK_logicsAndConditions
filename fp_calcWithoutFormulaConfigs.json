@@ -108,6 +108,18 @@
       "logic_key": 7
   },
   {
+    "logics": [
+        {
+            "trigger": "DAK, Date of miscarriage or abortion",
+            "value": 28,
+            "operator": "<="
+        }
+    ],
+    "dependentValue": true,
+    "dependent": "DAK, Have you had a recent miscarriage or abortion",
+    "logic_key": 8
+},
+  {
       "logics": [
           {
               "trigger": "DAK, STI risk assessment factors",

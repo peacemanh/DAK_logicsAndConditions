@@ -1735,7 +1735,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital",
+    "action": "Refer to a hospital if necessary",
     "annotation": "Assess and manage STI using STI syndromic approach, and Refer if neccesary (make sure it's not amniotic fluid)",
     "action_key": 136
   },
@@ -1752,7 +1752,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer urgently to a hospital",
+    "action": "Refer to a hospital if necessary",
     "annotation": "Consider rupture of membrane and Refer",
     "action_key": 137
   },
@@ -1764,7 +1764,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital",
+    "action": "Refer to a hospital if necessary",
     "annotation": "Assess and manage STI using STI syndromic approach, and Refer if neccesary (make sure it's not amniotic fluid)",
     "action_key": 138
   },
@@ -1776,7 +1776,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital",
+    "action": "Refer to a hospital if necessary",
     "annotation": "Assess and manage STI using STI syndromic approach, and Refer if neccesary",
     "action_key": 139
   },
@@ -1788,7 +1788,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital",
+    "action": "Refer to a hospital if necessary",
     "annotation": "Assess and manage STI using STI syndromic approach, and Refer if neccesary",
     "action_key": 140
   },
@@ -1800,7 +1800,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital",
+    "action": "Refer to a hospital if necessary",
     "annotation": "Assess and manage STI using STI syndromic approach, and Refer if neccesary",
     "action_key": 141
   },
@@ -1812,7 +1812,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital",
+    "action": "Refer to a hospital if necessary",
     "annotation": "Assess and manage STI using STI syndromic approach, and Refer if neccesary",
     "action_key": 142
   },
@@ -1824,7 +1824,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital",
+    "action": "Refer to a hospital if necessary",
     "annotation": "Consider cervical cancer and Refer for further evaluation",
     "action_key": 143
   },
@@ -1836,7 +1836,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital",
+    "action": "Refer to a hospital if necessary",
     "annotation": "Assess and manage STI using STI syndromic approach, and Refer if neccesary (make sure it's not amniotic fluid)",
     "action_key": 144
   },
@@ -1848,7 +1848,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital",
+    "action": "Refer to a hospital if necessary",
     "annotation": "Assess and manage STI using STI syndromic approach, and Refer if neccesary",
     "action_key": 145
   },
@@ -1860,7 +1860,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital",
+    "action": "Refer to a hospital if necessary",
     "annotation": "Curd-like vaginal discharge is a cottage cheese like whitsh vaginal discharge with or without itchiness and sourness sensation . Consider vulvo vaginal candidiasis (make sure it's not amniotic fluid)",
     "action_key": 146
   },
@@ -1868,11 +1868,11 @@
     "conditions": [
       {
         "key": "DAK, Pelvic exam result (visual)",
-        "value": "DAK, Lymphadenopathy (pelvic \u00e2\u20ac\u201c unilateral or bilateral)",
+        "value": "DAK, Lymphadenopathy (pelvic – unilateral or bilateral)",
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital",
+    "action": "Refer to a hospital if necessary",
     "annotation": "Assess and manage STI using STI syndromic approach, and refer if necessary",
     "action_key": 147
   },
@@ -1884,7 +1884,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital",
+    "action": "Refer to a hospital if necessary",
     "annotation": "Consider cervical cancer and reffer for further evaluation",
     "action_key": 148
   },
@@ -6333,7 +6333,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Amount of daily aspirin prescribed until delivery",
+        "key": "DAK, Amount of daily aspirin prescribed until deliveryy",
         "value": 0,
         "operator": ">"
       }
@@ -6354,18 +6354,7 @@
     "annotation": "The health worker checking whether the woman is taking her medication for syphilis",
     "action_key": 401
   },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Risk of pre-eclampsia",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "Counselling on risk reduction ",
-    "annotation": "Provide counselling to reduce risk of developing pre-eclampsia if the woman is deemed to be at risk for developing pre-eclampsia",
-    "action_key": 402
-  },
+  
   {
     "conditions": [
       {

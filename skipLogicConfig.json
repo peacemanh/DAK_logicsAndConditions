@@ -1,19 +1,20 @@
 [
   {
-    "logics": [
-      {
-        "hiddenFields": [
-          "DAK, Ultrasound category",
-          "DAK, Has previous history of preterm delivery",
-          "DAK, Medication follow-up",
-          "DAK, Family planning",
-          "DAK, Referral for screening including diagnostics and lab testing"
-        ]
-      }
-    ],
-    "action": "none",
-    "dependent": "none",
-    "logic_key": 0
+      "logics": [
+          {
+            "hiddenFields": [
+              "DAK, Ultrasound category",
+              "DAK, Has previous history of preterm delivery",
+              "DAK, Medication follow-up",
+              "DAK, Family planning",
+              "DAK, Referral for screening including diagnostics and lab testing",
+              "DAK, Fetal heart rate"
+            ]
+          }
+      ],
+      "action": "none",
+      "dependent": "none",
+      "logic_key": 0
   },
   {
     "logics": [
@@ -8116,6 +8117,48 @@
     "action": "show",
     "dependent": "DAK, Delivery complications",
     "logic_key": 588
-  }
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Repeat systolic blood pressure",
+        "value": 140,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Repeat diastolic blood pressure",
+        "value": 90,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Symptoms of severe pre-eclampsia",
+    "logic_key": 582
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Types of IPV",
+        "value": "DAK, Other",
+        "operator": "="
+      }
 
+    ],
+    "action": "show",
+    "dependent": "DAK, Other type of IPV",
+    "logic_key": 583
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fetal heartbeat present",
+        "value": true,
+        "operator": "="
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal heart rate",
+    "logic_key": 584
+  }
 ]

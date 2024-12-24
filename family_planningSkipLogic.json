@@ -954,6 +954,18 @@
       }
     ],
     "action": "show",
+    "dependent": "DAK, Postpartum",
+    "logic_key": 65
+  },
+  {
+    "logics": [
+      {
+        "trigger": "gender",
+        "value": "F",
+        "operator": "="
+      }
+    ],
+    "action": "show",
     "dependent": "DAK, Menstural Cycle Section",
     "logic_key": 66
   },
@@ -3930,6 +3942,294 @@
   {
     "logics": [
       {
+        "trigger": "DAK, Diabetes",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other diabtes",
+    "logic_key": 284
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Hypertension",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other hypertension",
+    "logic_key": 285
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Superficial venous disorders",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other SVD",
+    "logic_key": 286
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Headaches",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other headaches",
+    "logic_key": 287
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Vaginal bleeding patterns",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other vaginal bleeding patterns",
+    "logic_key": 288
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reproductive tract infections and disorders",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other RTI and disorders",
+    "logic_key": 289
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Breast disease",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other breast disease",
+    "logic_key": 290
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Uterine fibroids",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other uterine fibroids",
+    "logic_key": 291
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, STIs",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other STIs",
+    "logic_key": 292
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Thyroid disorders",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other thyroid disorders",
+    "logic_key": 293
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gall bladder disorders",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other gall bladder disorders",
+    "logic_key": 294
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Liver disorders",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other liver disorders",
+    "logic_key": 295
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Anemias",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other anemias",
+    "logic_key": 300
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Other infections (schistosomiasis, tuberculosis, malaria)",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other infections",
+    "logic_key": 301
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Conditions relevant to sterilization and FAB",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other conditions relevant to sterilization and FAB",
+    "logic_key": 302
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Conditions relevant to FAB",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other conditions relevant to FAB",
+    "logic_key": 303
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Risk factors for venous thromboembolism (VTE)",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other risk factors for venous thromboembolism (VTE)",
+    "logic_key": 304
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pelvic inflammatory disease (PID) FP",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other pelvic inflammatory disease (PID)",
+    "logic_key": 305
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other catagory(specify)",
+    "logic_key": 306
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Ever had sex - Reported",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Sexually active",
+    "logic_key": 307
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Abortion/miscarriage",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other abortion/miscarriage",
+    "logic_key": 308
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Medical conditions during past pregnancy and after childbirth",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other Medical conditions",
+    "logic_key": 309
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Cardiovascular disease",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other cardiovascular disease",
+    "logic_key": 310
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for stopping contraception or method",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other reason for stopping contraception or method",
+    "logic_key": 311
+  },
+  {
+    "logics": [
+      {
         "trigger": "DAK, Have you had a recent miscarriage or abortion",
         "value": true,
         "operator": "="
@@ -3937,7 +4237,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Date of miscarriage or abortion FP",
-    "logic_key": 284
+    "logic_key": 312
   },
   {
     "logics": [
@@ -3949,7 +4249,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Miscarriage or abortion within past 4 weeks",
-    "logic_key": 285
+    "logic_key": 313
   },
   {
     "logics": [
@@ -3961,7 +4261,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy in days",
-    "logic_key": 286
+    "logic_key": 314
   },
   {
     "logics": [
@@ -4023,5 +4323,4 @@
     "dependent": "DAK, Other chosen method",
     "logic_key": 291
   }
-
 ]
