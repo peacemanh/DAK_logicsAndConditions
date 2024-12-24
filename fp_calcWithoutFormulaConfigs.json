@@ -24911,15 +24911,63 @@
       "dependent": "DAK, Lifestyle Behaviors"
   },
   {
-      "logics": [
-          {
-              "trigger": "DAK, Days since start of last normal menses",
-              "value": 7,
-              "operator": "<="
-          }
-      ],
-      "logic_key": 1184,
-      "dependentValue": true,
-      "dependent": "DAK, Days since start of last normal menses lessthan 7 days"
+    "logics": [
+      {
+        "trigger": "DAK, Days since start of last normal menses",
+        "value": 7,
+        "operator": "<="
+      }
+    ],
+    "logic_key": 1184,
+    "dependentValue": true,
+    "dependent": "DAK, Days since start of last normal menses lessthan 7 days"
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Client Current HIV status",
+        "value": "DAK, Client is Known HIV-postive",
+        "operator": "="
+      }
+    ],
+    "logic_key": 1185,
+    "dependentValue": "DAK, HIV-positive",
+    "dependent": "DAK, HIV test result"
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Client Current HIV status",
+        "value": "DAK, Client is Known HIV-postive",
+        "operator": "="
+      }
+    ],
+    "logic_key": 1186,
+    "dependentValue": "DAK, HIV positive",
+    "dependent": "DAK, HIV status"
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Cervical Cancer risk assessment conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "logic_key": 1187,
+    "dependentValue": true,
+    "dependent": "DAK, Cevical cancer screening conducted"
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, HIV risk assessment conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "logic_key": 1188,
+    "dependentValue": true,
+    "dependent": "DAK,       HIV test screening: Rapid/laboratory test conducted"
   }
 ]
