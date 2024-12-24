@@ -197,7 +197,7 @@
     "minValue": 1,
     "maxValue": 15,
     "type": "restrict",
-    "message": "ANC contact number for scheduled antenatal care should be between 2 and 14"
+    "message": "ANC contact number should be between 1 and 14"
   },
   {
     "conceptName": "DAK, Amount of daily aspirin prescribed until delivery",
