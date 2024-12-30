@@ -4322,5 +4322,31 @@
     "action": "show",
     "dependent": "DAK, Other chosen method",
     "logic_key": 291
+  },
+ 
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood pressure screening conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Blood Pressure Screening Results",
+    "logic_key": 292
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, STI risk assessment conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Risk Classification for STI Assessment",
+    "logic_key": 293
   }
+
 ]
