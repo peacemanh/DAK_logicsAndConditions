@@ -8175,21 +8175,7 @@
     "parent": "DAK, Cardiac exam result",
     "dependent": "DAK, Tachycardia",
     "logic_key": 585
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Respiratory exam result",
-        "value": "DAK, Bradypnea",
-        "operator": "="
-      }
-
-    ],
-
-    "action": "show",
-    "parent": "DAK, Respiratory exam result",
-    "dependent": "DAK, Tachypnea",
-    "logic_key": 586
   }
+
 
 ]
