@@ -4323,7 +4323,6 @@
     "dependent": "DAK, Other chosen method",
     "logic_key": 291
   },
- 
   {
     "logics": [
       {
@@ -4347,6 +4346,51 @@
     "action": "show",
     "dependent": "DAK, Risk Classification for STI Assessment",
     "logic_key": 293
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Test result of HIV assay 1",
+        "value": "DAK, Reactive",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Test result of HIV assay 2",
+    "logic_key": 294
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Test result of HIV assay 2",
+        "value": "DAK, Reactive",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Test result of HIV assay 3",
+    "logic_key": 295
+  },
+
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Test result of HIV assay 2",
+        "value": "DAK, Non-reactive",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Test result of HIV assay 1",
+        "value": "DAK, Reactive",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Test result of HIV assay 1 repeated",
+    "logic_key": 296
   }
+
+
+
 
 ]
