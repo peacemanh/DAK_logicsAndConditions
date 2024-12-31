@@ -2228,7 +2228,7 @@
     "conditions": [
       {
         "key": "DAK, White blood cell (WBC) count",
-        "value": 16000.0,
+        "value": 11000.0,
         "operator": ">"
       }
     ],
@@ -6159,7 +6159,7 @@
     "conditions": [
       {
         "key": "DAK, White blood cell (WBC) count",
-        "value": 16000.0,
+        "value": 4000.0,
         "operator": "<"
       }
     ],
