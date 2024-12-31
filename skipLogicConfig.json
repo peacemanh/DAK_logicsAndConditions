@@ -5442,7 +5442,7 @@
         "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u00e2\u20ac\u201c 1 hour test result",
         "minValue": 180,
         "maxValue": 200,
-        "operator": "beyond, <, <="
+        "opera, <, <="
       }
     ],
     "action": "noneRequired",
@@ -8160,5 +8160,36 @@
     "action": "show",
     "dependent": "DAK, Fetal heart rate",
     "logic_key": 584
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Cardiac exam result",
+        "value": "DAK, Bradycardia",
+        "operator": "="
+      }
+
+    ],
+
+    "action": "show",
+    "parent": "DAK, Cardiac exam result",
+    "dependent": "DAK, Tachycardia",
+    "logic_key": 585
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Respiratory exam result",
+        "value": "DAK, Bradypnea",
+        "operator": "="
+      }
+
+    ],
+
+    "action": "show",
+    "parent": "DAK, Respiratory exam result",
+    "dependent": "DAK, Tachypnea",
+    "logic_key": 586
   }
+
 ]
