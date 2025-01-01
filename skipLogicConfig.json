@@ -215,7 +215,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Hepatitis C test ordered",
+    "dependent": "DAK, Hepatitis C test required",
     "logic_key": 16
   },
   {
@@ -227,7 +227,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Hepatitis C test ordered",
+    "dependent": "DAK, Hepatitis C test required",
     "logic_key": 17
   },
   {
