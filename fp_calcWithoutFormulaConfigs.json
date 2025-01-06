@@ -24981,5 +24981,44 @@
     "logic_key": 1193,
     "dependentValue": "DAK, HIV negative FP",
     "dependent": "DAK, HIV test result FP"
+  },
+  {
+    "logics": [
+
+      {
+        "trigger": "DAK, HIV test result FP",
+        "value": "DAK, HIV negative FP",
+        "operator": "="
+      }
+    ],
+    "logic_key": 1194,
+    "dependentValue": "DAK, HIV negative",
+    "dependent": "DAK, HIV status"
+  },
+  {
+    "logics": [
+
+      {
+        "trigger": "DAK, HIV test result FP",
+        "value": "DAK, HIV positive FP",
+        "operator": "="
+      }
+    ],
+    "logic_key": 1195,
+    "dependentValue": "DAK, HIV positive",
+    "dependent": "DAK, HIV status"
+  },
+  {
+    "logics": [
+
+      {
+        "trigger": "DAK, HIV test result FP",
+        "value": "DAK, HIV Inconclusive FP",
+        "operator": "="
+      }
+    ],
+    "logic_key": 1196,
+    "dependentValue": "DAK, HIV-inconclusive",
+    "dependent": "DAK, HIV status"
   }
 ]
