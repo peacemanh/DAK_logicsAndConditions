@@ -24850,54 +24850,7 @@
     "dependentValue": "true",
     "dependent": "Cevical cancer screening conducted "
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Medical eligibility category",
-        "value": "Number, 1",
-        "operator": "="
-      }
-    ],
-    "logic_key": 1178,
-    "dependentValue": "DAK, accept",
-    "dependent": "DAK, Medical eligibility category"
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Medical eligibility category",
-        "value": "Number, 2",
-        "operator": "="
-      }
-    ],
-    "logic_key": 1179,
-    "dependentValue": "DAK, Caution",
-    "dependent": "DAK, Medical eligibility category"
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Medical eligibility category",
-        "value": "Number, 3",
-        "operator": "="
-      }
-    ],
-    "logic_key": 1180,
-    "dependentValue": "DAK, Delay",
-    "dependent": "DAK, Medical eligibility category"
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Medical eligibility category",
-        "value": "Number, 4",
-        "operator": "="
-      }
-    ],
-    "logic_key": 1181,
-    "dependentValue": "DAK, Special",
-    "dependent": "DAK, Medical eligibility category"
-  },
+  
   {
     "logics": [
       {
