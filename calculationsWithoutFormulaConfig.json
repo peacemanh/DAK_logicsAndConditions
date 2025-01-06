@@ -2629,7 +2629,7 @@
       },
       {
         "trigger": "DAK, Gestational age",
-        "orValues": [30, 31, 38, 39, 26, 27, 34, 35],
+        "orValues": [ 30, 31, 38, 39, 26, 27, 34, 35 ],
         "operator": "OR"
       }
     ],
@@ -2647,7 +2647,7 @@
       },
       {
         "trigger": "DAK, ANC Contact Number",
-        "orValues": [1, 2, 3, 4, 5, 6, 7],
+        "orValues": [ 1, 2, 3, 4, 5, 6, 7 ],
         "operator": "OR"
       }
     ],
