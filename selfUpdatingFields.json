@@ -1,8 +1,13 @@
 [
-   "DAK, Weight category",
-    "DAK, Expected weight gain",
-    "DAK, Medically eligible",
-    "DAK, HIV status",
-    "DAK, Medical eligibility category",
-    "DAK, Gestational age during Miscarriage or abortion of the last pregnancy"
+  "DAK, Weight category",
+  "DAK, Expected weight gain",
+  "DAK, Medically eligible",
+  "DAK, HIV status",
+  "DAK, Medical eligibility category",
+  "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
+  "DAK, HIV test result FP",
+  "DAK, Partner HIV status - confirmed",
+  "DAK, Hepatitis C diagnosis",
+  "DAK, Syphilis diagnosis"
+
 ]

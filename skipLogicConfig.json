@@ -1,20 +1,20 @@
 [
   {
-      "logics": [
-          {
-            "hiddenFields": [
-              "DAK, Ultrasound category",
-              "DAK, Has previous history of preterm delivery",
-              "DAK, Medication follow-up",
-              "DAK, Family planning",
-              "DAK, Referral for screening including diagnostics and lab testing",
-              "DAK, Fetal heart rate"
-            ]
-          }
-      ],
-      "action": "none",
-      "dependent": "none",
-      "logic_key": 0
+    "logics": [
+      {
+        "hiddenFields": [
+          "DAK, Ultrasound category",
+          "DAK, Has previous history of preterm delivery",
+          "DAK, Medication follow-up",
+          "DAK, Family planning",
+          "DAK, Referral for screening including diagnostics and lab testing",
+          "DAK, Fetal heart rate"
+        ]
+      }
+    ],
+    "action": "none",
+    "dependent": "none",
+    "logic_key": 0
   },
   {
     "logics": [
@@ -215,7 +215,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Hepatitis C test ordered",
+    "dependent": "DAK, Hepatitis C test required",
     "logic_key": 16
   },
   {
@@ -227,7 +227,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Hepatitis C test ordered",
+    "dependent": "DAK, Hepatitis C test required",
     "logic_key": 17
   },
   {
