@@ -4891,7 +4891,7 @@
         "operator": ">="
       }
 
-  ],
+    ],
     "displayPoint": "DAK, Counselling conducted on breastfeeding",
     "action": "Provide counseling on breastfeeding",
     "annotation": "To enable mothers to establish and sustain exclusive breastfeeding for 6 months, WHO and UNICEF recommend:\n\n\u2013 Initiation of breastfeeding within the first hour of life\n\u2013 Exclusive breastfeeding \u2013 that is, the infant receives only breast milk without any additional food or drink, not even water\n\u2013 Breastfeeding on demand \u2013 that is, as often as the child wants food, day and night\n\u2013 No use of bottles, teats or pacifiers",
@@ -6354,7 +6354,7 @@
     "annotation": "The health worker checking whether the woman is taking her medication for syphilis",
     "action_key": 401
   },
-  
+
   {
     "conditions": [
       {
@@ -6408,13 +6408,13 @@
     "conditions": [
       {
         "key": "DAK, Anaemia diagnosis",
-        "value": "DAK, Positive",
+        "value": "DAK, Mild (10-10.9 g/dl)",
         "operator": "="
       }
     ],
     "displayPoint": "DAK, Counselling conducted on anaemia",
     "action": "Counselling on anaemia",
-    "annotation": "If the woman has been diagnosed with anaemia, provide counselling and treatment accordingly",
+    "annotation": "Rule out intestinal infections (and malaria and treat accordingly) , Counsel on compliance with treatment,Reassess at subsequent antenatal visit (4-6 weeks). If anemia persists, refer to hospital. ",
     "action_key": 407
   },
   {
@@ -7868,5 +7868,31 @@
     "action": "Provide hepatitis B counselling",
     "annotation": "Counselling:- Provide post-testing counselling \u2013 Advise retesting if ongoing risk or known exposure",
     "action_key": 475
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Anaemia diagnosis",
+        "value": "DAK, Moderate (7-9.9 g/dl)",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on anaemia",
+    "action": "Counselling on anaemia",
+    "annotation": "Rule out intestinal infections (and malaria and treat accordingly) , Counsel on compliance with treatment,Reassess at subsequent antenatal visit (4-6 weeks). If anemia persists, refer to hospital. ",
+    "action_key": 476
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Anaemia diagnosis",
+        "value": "DAK, Severe (<7g/dl)",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on anaemia",
+    "action": "Refer immediately to hospital",
+    "annotation": "Refer immediately to hospital",
+    "action_key": 477
   }
 ]

@@ -8133,7 +8133,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Symptoms of severe pre-eclampsia",
-    "logic_key": 582
+    "logic_key": 589
   },
   {
     "logics": [
@@ -8146,7 +8146,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other type of IPV",
-    "logic_key": 583
+    "logic_key": 590
   },
   {
     "logics": [
@@ -8159,6 +8159,41 @@
     ],
     "action": "show",
     "dependent": "DAK, Fetal heart rate",
-    "logic_key": 584
+    "logic_key": 591
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Hepatitis B test result",
+        "value": "DAK, Hepatitis B positive",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28,
+        "operator": ">="
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Hep B prophylaxis",
+    "logic_key": 592
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Anaemia diagnosis",
+        "orValues": [
+          "DAK, Moderate (7-9.9 g/dl)",
+          "DAK, Mild (10-10.9 g/dl)",
+          "DAK, Severe (<7g/dl)"
+        ],
+        "operator": "OR"
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on anaemia",
+    "logic_key": 593
   }
 ]
