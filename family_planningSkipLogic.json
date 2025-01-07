@@ -1568,7 +1568,7 @@
     "logics": [
       {
         "trigger": "gender",
-        "value": "M",
+        "value": "F",
         "operator": "="
       }
     ],
@@ -3139,37 +3139,13 @@
     "logics": [
       {
         "trigger": "DAK, Dual  method needed",
-        "value": "DAK, Male condoms",
+        "value": true,
         "operator": "="
       }
     ],
     "action": "show",
     "dependent": "DAK, Dual method provided",
     "logic_key": 222
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Dual  method needed",
-        "value": "DAK, Female condoms",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Dual method provided",
-    "logic_key": 223
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Dual  method needed",
-        "value": "DAK, DMPA-SC -SI",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Dual method provided",
-    "logic_key": 224
   },
   {
     "logics": [
@@ -3477,18 +3453,6 @@
     "action": "show",
     "dependent": "DAK, Reason client did not receive chosen method after counselling",
     "logic_key": 246
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Dual  method needed",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Dual method provided",
-    "logic_key": 247
   },
   {
     "logics": [
@@ -4389,8 +4353,4 @@
     "dependent": "DAK, Test result of HIV assay 1 repeated",
     "logic_key": 296
   }
-
-
-
-
 ]
