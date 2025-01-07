@@ -1564,7 +1564,27 @@
     "dependent": "DAK, Female sterilization",
     "logic_key": 96
   },
-  
+  {
+    "logics": [
+      {
+        "trigger": "gender",
+        "value": "F",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "parents": [
+      "DAK, Method in mind",
+      "DAK, Method in use",
+      "DAK, Chosen method",
+      "DAK, Methods previously used",
+      "DAK, Method or service provided",
+      "DAK, Chosen method after counselling",
+      "DAK, Type of postpartum family planning method selected"
+    ],
+    "dependent": "DAK, DMPA-SC -SI",
+    "logic_key": 97
+  },
   {
     "logics": [
       {
@@ -3127,8 +3147,6 @@
     "dependent": "DAK, Dual method provided",
     "logic_key": 222
   },
-  
-  
   {
     "logics": [
       {
@@ -3436,7 +3454,6 @@
     "dependent": "DAK, Reason client did not receive chosen method after counselling",
     "logic_key": 246
   },
- 
   {
     "logics": [
       {
@@ -4336,8 +4353,4 @@
     "dependent": "DAK, Test result of HIV assay 1 repeated",
     "logic_key": 296
   }
-
-
-
-
 ]
