@@ -561,16 +561,7 @@
   },
   {
     "logics": [
-      {
-        "trigger": "DAK, Pregnancy confirmed",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Syphilis test type",
-        "value": "DAK, Rapid plasma reagin (RPR) test",
-        "operator": "="
-      },
+
       {
         "trigger": "DAK, Syphilis test result",
         "value": "DAK, Syphilis positive",
@@ -583,23 +574,14 @@
   },
   {
     "logics": [
-      {
-        "trigger": "DAK, Pregnancy confirmed",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Syphilis test type",
-        "value": "DAK, VDRL",
-        "operator": "="
-      },
+
       {
         "trigger": "DAK, Syphilis test result",
-        "value": "DAK, Syphilis positive",
+        "value": "DAK, Syphilis negative",
         "operator": "="
       }
     ],
-    "dependentValue": "DAK, Syphilis positive",
+    "dependentValue": "DAK, Syphilis negative",
     "dependent": "DAK, Syphilis diagnosis",
     "logic_key": 30
   },
@@ -2655,5 +2637,17 @@
     "dependentValue": true,
     "dependent": "DAK, ANC Contact Schedule Needed",
     "logic_key": 147
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, HIV test result",
+        "value": "DAK, HIV-inconclusive",
+        "operator": "="
+      }
+    ],
+    "dependentValue": "DAK, HIV-inconclusive",
+    "dependent": "DAK, HIV status",
+    "logic_key": 148
   }
 ]
