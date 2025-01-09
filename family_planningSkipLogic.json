@@ -1568,7 +1568,7 @@
     "logics": [
       {
         "trigger": "gender",
-        "value": "M",
+        "value": "F",
         "operator": "="
       }
     ],
@@ -3139,37 +3139,13 @@
     "logics": [
       {
         "trigger": "DAK, Dual  method needed",
-        "value": "DAK, Male condoms",
+        "value": true,
         "operator": "="
       }
     ],
     "action": "show",
     "dependent": "DAK, Dual method provided",
     "logic_key": 222
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Dual  method needed",
-        "value": "DAK, Female condoms",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Dual method provided",
-    "logic_key": 223
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Dual  method needed",
-        "value": "DAK, DMPA-SC -SI",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Dual method provided",
-    "logic_key": 224
   },
   {
     "logics": [
@@ -3477,18 +3453,6 @@
     "action": "show",
     "dependent": "DAK, Reason client did not receive chosen method after counselling",
     "logic_key": 246
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Dual  method needed",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Dual method provided",
-    "logic_key": 247
   },
   {
     "logics": [
@@ -4322,5 +4286,71 @@
     "action": "show",
     "dependent": "DAK, Other chosen method",
     "logic_key": 291
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood pressure screening conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Blood Pressure Screening Results",
+    "logic_key": 292
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, STI risk assessment conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Risk Classification for STI Assessment",
+    "logic_key": 293
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Test result of HIV assay 1",
+        "value": "DAK, Reactive",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Test result of HIV assay 2",
+    "logic_key": 294
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Test result of HIV assay 2",
+        "value": "DAK, Reactive",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Test result of HIV assay 3",
+    "logic_key": 295
+  },
+
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Test result of HIV assay 2",
+        "value": "DAK, Non-reactive",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Test result of HIV assay 1",
+        "value": "DAK, Reactive",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Test result of HIV assay 1 repeated",
+    "logic_key": 296
   }
 ]

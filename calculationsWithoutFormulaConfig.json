@@ -561,7 +561,11 @@
   },
   {
     "logics": [
+<<<<<<< HEAD
 
+=======
+     
+>>>>>>> 5cee50cd625a2bcb881ccb7ae9da093aaa92ad73
       {
         "trigger": "DAK, Syphilis test result",
         "value": "DAK, Syphilis positive",
