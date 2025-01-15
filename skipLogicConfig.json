@@ -9,6 +9,7 @@
           "DAK, Family planning",
           "DAK, Referral for screening including diagnostics and lab testing",
           "DAK, Fetal heart rate"
+
         ]
       }
     ],
@@ -8189,5 +8190,65 @@
     "action": "show",
     "dependent": "DAK, Counselling conducted on anaemia",
     "logic_key": 593
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Cardiac exam result",
+        "value": "DAK, Bradycardia",
+        "operator": "="
+      }
+
+    ],
+
+    "action": "hide",
+    "parent": "DAK, Cardiac exam result",
+    "dependent": "DAK, Tachycardia",
+    "logic_key": 594
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Cardiac exam result",
+        "value": "DAK, Tachycardia",
+        "operator": "="
+      }
+
+    ],
+
+    "action": "hide",
+    "parent": "DAK, Cardiac exam result",
+    "dependent": "DAK, Bradycardia",
+    "logic_key": 595
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Respiratory exam result",
+        "value": "DAK, Bradypnea",
+        "operator": "="
+      }
+
+    ],
+
+    "action": "hide",
+    "parent": "DAK, Respiratory exam result",
+    "dependent": "DAK, Tachypnea",
+    "logic_key": 596
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Respiratory exam result",
+        "value": "DAK, Tachypnea",
+        "operator": "="
+      }
+
+    ],
+
+    "action": "hide",
+    "parent": "DAK, Respiratory exam result",
+    "dependent": "DAK, Bradypnea",
+    "logic_key": 597
   }
 ]
