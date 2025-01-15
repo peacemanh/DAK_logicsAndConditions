@@ -4590,23 +4590,17 @@
         "trigger": "DAK, Pregnancy confirmed",
         "value": true,
         "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 12,
+        "operator": ">"
       }
+
     ],
     "action": "show",
     "dependent": "DAK, Deworming",
     "logic_key": 369
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Pregnancy confirmed",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Deworming",
-    "logic_key": 370
   },
   {
     "logics": [
