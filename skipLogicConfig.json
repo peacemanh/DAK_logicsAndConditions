@@ -8250,5 +8250,18 @@
     "parent": "DAK, Respiratory exam result",
     "dependent": "DAK, Bradypnea",
     "logic_key": 597
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Persistent behaviours",
+        "value": "DAK, Other substance use",
+        "operator": "="
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Other specify previous behavior",
+    "logic_key": 598
   }
 ]
