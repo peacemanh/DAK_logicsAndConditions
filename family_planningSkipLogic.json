@@ -801,8 +801,8 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Reason for visit",
-        "value": "DAK, Follow-up",
+        "trigger": "DAK, Visit Status",
+        "value": "DAK, Repeat",
         "operator": "="
       }
     ],
@@ -854,7 +854,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Reason for visit",
+        "trigger": "DAK, Visit Status",
         "value": "DAK, Emergency contraception",
         "operator": "="
       }
@@ -866,7 +866,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Reason for visit",
+        "trigger": "DAK, Visit Status",
         "value": "DAK, Emergency contraception",
         "operator": "="
       }
@@ -896,7 +896,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Pregnancy history",
+    "dependent": "DAK, Has client ever been pregnant",
     "logic_key": 61
   },
   {
@@ -945,18 +945,7 @@
     "dependent": "DAK, Date of previous delivery",
     "logic_key": 64
   },
-  {
-    "logics": [
-      {
-        "trigger": "gender",
-        "value": "F",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Postpartum",
-    "logic_key": 65
-  },
+
   {
     "logics": [
       {
@@ -2946,7 +2935,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Reason for visit",
+        "trigger": "DAK, Visit Status",
         "value": "DAK, Emergency contraception",
         "operator": "="
       }
@@ -2958,7 +2947,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Reason for visit",
+        "trigger": "DAK, Visit Status",
         "value": "DAK, Emergency contraception",
         "operator": "="
       }
@@ -4384,7 +4373,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Reason for visit",
+        "trigger": "DAK, Visit Status",
         "value": "DAK, Repeat",
         "operator": "="
       }
@@ -4395,4 +4384,5 @@
     "dependent": "DAK, Repeat Status",
     "logic_key": 299
   }
+
 ]

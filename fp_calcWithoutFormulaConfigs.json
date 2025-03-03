@@ -356,7 +356,7 @@
   {
       "logics": [
           {
-              "trigger": "DAK, Reason for visit",
+              "trigger": "DAK, Visit Status",
               "value": "DAK, Emergency contraception",
               "operator": "="
           }
@@ -19564,7 +19564,7 @@
               "operator": "="
           },
           {
-              "trigger": "DAK, Reason for visit",
+              "trigger": "DAK, Visit Status",
               "value": "DAK, Emergency contraception",
               "operator": "="
           },
@@ -19586,7 +19586,7 @@
               "operator": "="
           },
           {
-              "trigger": "DAK, Reason for visit",
+              "trigger": "DAK, Visit Status",
               "value": "DAK, Emergency contraception",
               "operator": "="
           },
@@ -19613,7 +19613,7 @@
               "operator": "="
           },
           {
-              "trigger": "DAK, Reason for visit",
+              "trigger": "DAK, Visit Status",
               "value": "DAK, Emergency contraception",
               "operator": "="
           }
