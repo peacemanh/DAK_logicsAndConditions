@@ -8263,50 +8263,9 @@
     "action": "show",
     "dependent": "DAK, Other specify previous behavior",
     "logic_key": 598
-  },
-
-  {
-    "logics": [
-      {
-        "trigger": "DAK, HIV screening: laboratory tests available",
-        "value": true,
-        "operator": "="
-      }
-
-    ],
-    "action": "show",
-    "dependent": "DAK, HIV test screening: Rapid/laboratory test conducted",
-    "logic_key": 599
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, HIV screening: Rapid tests available",
-        "value": true,
-        "operator": "="
-      }
-
-    ],
-    "action": "show",
-    "dependent": "DAK, HIV test screening: Rapid/laboratory test conducted",
-    "logic_key": 600
-  },
-
-  {
-    "logics": [
-      {
-        "trigger": "DAK, HIV test screening: Rapid/laboratory test conducted",
-        "value": true,
-        "operator": "="
-      }
-
-    ],
-    "action": "show",
-    "dependent": "DAK, Rapid diagnostic test (Assay) number in testing strategy",
-    "logic_key": 602
   }
 
-
+ 
 
 
 

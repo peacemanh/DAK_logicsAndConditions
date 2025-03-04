@@ -4237,7 +4237,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
-    "logic_key": 287
+    "logic_key": 315
   },
   {
     "logics": [
@@ -4249,7 +4249,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other Method or service provided",
-    "logic_key": 288
+    "logic_key": 316
   },
   {
     "logics": [
@@ -4261,7 +4261,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other chosen method after counselling",
-    "logic_key": 289
+    "logic_key": 317
   },
   {
     "logics": [
@@ -4273,7 +4273,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other Method in mind",
-    "logic_key": 290
+    "logic_key": 318
   },
   {
     "logics": [
@@ -4285,7 +4285,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other chosen method",
-    "logic_key": 291
+    "logic_key": 319
   },
   {
     "logics": [
@@ -4297,7 +4297,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Blood Pressure Screening Results",
-    "logic_key": 292
+    "logic_key": 320
   },
   {
     "logics": [
@@ -4309,7 +4309,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Risk Classification for STI Assessment",
-    "logic_key": 293
+    "logic_key": 321
   },
   {
     "logics": [
@@ -4321,7 +4321,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Test result of HIV assay 2",
-    "logic_key": 294
+    "logic_key": 322
   },
   {
     "logics": [
@@ -4333,7 +4333,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Test result of HIV assay 3",
-    "logic_key": 295
+    "logic_key": 323
   },
 
   {
@@ -4351,6 +4351,61 @@
     ],
     "action": "show",
     "dependent": "DAK, Test result of HIV assay 1 repeated",
-    "logic_key": 296
+    "logic_key": 324
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, HIV screening: laboratory tests available",
+        "value": true,
+        "operator": "="
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, HIV test screening: Rapid/laboratory test conducted",
+    "logic_key": 325
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, HIV screening: Rapid tests available",
+        "value": true,
+        "operator": "="
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, HIV test screening: Rapid/laboratory test conducted",
+    "logic_key": 326
+  },
+
+  {
+    "logics": [
+      {
+        "trigger": "DAK, HIV test screening: Rapid/laboratory test conducted",
+        "value": true,
+        "operator": "="
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Rapid diagnostic test (Assay) number in testing strategy",
+    "logic_key": 327
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Have you had a recent miscarriage or abortion",
+        "value": false,
+        "operator": "="
+      }
+
+    ],
+    "action": "hide",
+    "dependent": "DAK, PostAbortion Family Planning Counselling Section",
+    "logic_key": 328
   }
+
+
 ]
