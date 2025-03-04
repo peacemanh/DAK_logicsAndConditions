@@ -8250,5 +8250,47 @@
     "parent": "DAK, Respiratory exam result",
     "dependent": "DAK, Bradypnea",
     "logic_key": 597
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Methods previously used",
+        "value": "DAK, Other (specify)",
+        "operator": "="
+      }
+
+    ],
+
+    "action": "show",
+    "dependent": "DAK, Other Methods previously used",
+    "logic_key": 598
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      }
+
+    ],
+
+    "action": "show",
+    "dependent": "DAK, Reason for Method change",
+    "logic_key": 599
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for visit",
+        "value": "DAK, Repeat",
+        "operator": "="
+      }
+
+    ],
+
+    "action": "show",
+    "dependent": "DAK, Repeat Status",
+    "logic_key": 600
   }
 ]

@@ -801,8 +801,8 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Reason for visit",
-        "value": "DAK, Follow-up",
+        "trigger": "DAK, Visit Status",
+        "value": "DAK, Repeat",
         "operator": "="
       }
     ],
@@ -854,7 +854,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Reason for visit",
+        "trigger": "DAK, Visit Status",
         "value": "DAK, Emergency contraception",
         "operator": "="
       }
@@ -866,7 +866,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Reason for visit",
+        "trigger": "DAK, Visit Status",
         "value": "DAK, Emergency contraception",
         "operator": "="
       }
@@ -896,7 +896,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Pregnancy history",
+    "dependent": "DAK, Has client ever been pregnant",
     "logic_key": 61
   },
   {
@@ -945,18 +945,7 @@
     "dependent": "DAK, Date of previous delivery",
     "logic_key": 64
   },
-  {
-    "logics": [
-      {
-        "trigger": "gender",
-        "value": "F",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Postpartum",
-    "logic_key": 65
-  },
+
   {
     "logics": [
       {
@@ -2946,7 +2935,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Reason for visit",
+        "trigger": "DAK, Visit Status",
         "value": "DAK, Emergency contraception",
         "operator": "="
       }
@@ -2958,7 +2947,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Reason for visit",
+        "trigger": "DAK, Visit Status",
         "value": "DAK, Emergency contraception",
         "operator": "="
       }
@@ -4352,5 +4341,48 @@
     "action": "show",
     "dependent": "DAK, Test result of HIV assay 1 repeated",
     "logic_key": 296
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Methods previously used",
+        "value": "DAK, Other (specify)",
+        "operator": "="
+      }
+
+    ],
+
+    "action": "show",
+    "dependent": "DAK, Other Methods previously used",
+    "logic_key": 297
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Method change",
+        "operator": "="
+      }
+
+    ],
+
+    "action": "show",
+    "dependent": "DAK, Reason for Method change",
+    "logic_key": 298
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Visit Status",
+        "value": "DAK, Repeat",
+        "operator": "="
+      }
+
+    ],
+
+    "action": "show",
+    "dependent": "DAK, Repeat Status",
+    "logic_key": 299
   }
+
 ]

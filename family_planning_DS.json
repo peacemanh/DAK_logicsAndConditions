@@ -20025,7 +20025,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Visit Status",
         "value": "DAK, Emergency contraception",
         "operator": "="
       },
@@ -20047,7 +20047,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Visit Status",
         "value": "DAK, Emergency contraception",
         "operator": "="
       },
@@ -20069,12 +20069,12 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Visit Status",
         "value": "DAK, Emergency contraception",
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Visit Status",
         "value": "DAK, Emergency contraception",
         "operator": "="
       }
@@ -25577,7 +25577,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Visit Status",
         "value": "DAK, Emergency contraception",
         "operator": "="
       },
@@ -25599,7 +25599,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Visit Status",
         "value": "DAK, Emergency contraception",
         "operator": "="
       },
@@ -25626,7 +25626,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Visit Status",
         "value": "DAK, Emergency contraception",
         "operator": "="
       }
@@ -26735,7 +26735,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -26783,7 +26783,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -26881,7 +26881,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -26903,7 +26903,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -27018,7 +27018,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -27045,7 +27045,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -27197,7 +27197,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -27224,7 +27224,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -27273,7 +27273,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -27300,7 +27300,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -27513,7 +27513,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -27540,7 +27540,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -27562,7 +27562,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -27589,7 +27589,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -27807,7 +27807,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -27851,7 +27851,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -27878,7 +27878,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -27905,7 +27905,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -28047,7 +28047,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -28074,7 +28074,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -28096,7 +28096,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -28123,7 +28123,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -28329,7 +28329,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -28373,7 +28373,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -28400,7 +28400,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -28427,7 +28427,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -28845,7 +28845,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method switch",
         "operator": "="
       },
@@ -28867,7 +28867,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Visit Status",
         "value": "DAK, Emergency contraception",
         "operator": "="
       },
@@ -28889,7 +28889,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Visit Status",
         "value": "DAK, Emergency contraception",
         "operator": "="
       }
@@ -28911,7 +28911,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Visit Status",
         "value": "DAK, Emergency contraception",
         "operator": "="
       }
@@ -29110,7 +29110,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -29137,7 +29137,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -29164,7 +29164,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -29321,7 +29321,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -29370,7 +29370,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
@@ -29397,7 +29397,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Reason for visit",
+        "key": "DAK, Reason for follow-up",
         "value": "DAK, Method Change",
         "operator": "="
       },
