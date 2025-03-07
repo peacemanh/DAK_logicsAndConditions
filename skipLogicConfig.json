@@ -2907,18 +2907,7 @@
     "dependent": "DAK, Platelet count",
     "logic_key": 237
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, TB screening recommended",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, TB screening conducted",
-    "logic_key": 238
-  },
+  
   {
     "logics": [
       {
