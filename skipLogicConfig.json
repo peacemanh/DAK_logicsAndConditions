@@ -2907,18 +2907,7 @@
     "dependent": "DAK, Platelet count",
     "logic_key": 237
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, TB screening recommended",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, TB screening conducted",
-    "logic_key": 238
-  },
+  
   {
     "logics": [
       {
@@ -8254,43 +8243,14 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Methods previously used",
-        "value": "DAK, Other (specify)",
+        "trigger": "DAK, Persistent behaviours",
+        "value": "DAK, Other substance use",
         "operator": "="
       }
 
     ],
-
     "action": "show",
-    "dependent": "DAK, Other Methods previously used",
+    "dependent": "DAK, Other specify previous behavior",
     "logic_key": 598
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for follow-up",
-        "value": "DAK, Method change",
-        "operator": "="
-      }
-
-    ],
-
-    "action": "show",
-    "dependent": "DAK, Reason for Method change",
-    "logic_key": 599
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for visit",
-        "value": "DAK, Repeat",
-        "operator": "="
-      }
-
-    ],
-
-    "action": "show",
-    "dependent": "DAK, Repeat Status",
-    "logic_key": 600
   }
 ]
