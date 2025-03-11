@@ -100,11 +100,6 @@
         "trigger": "DAK, Gestational age",
         "value": 20.0,
         "operator": ">"
-      },
-      {
-        "trigger": "DAK, Fetal heartbeat present",
-        "value": true,
-        "operator": "="
       }
     ],
     "action": "show",
@@ -132,7 +127,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Fetal presentation",
+    "dependent": "DAK, Fetal presentation form",
     "logic_key": 9
   },
   {
@@ -2912,18 +2907,7 @@
     "dependent": "DAK, Platelet count",
     "logic_key": 237
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, TB screening recommended",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, TB screening conducted",
-    "logic_key": 238
-  },
+  
   {
     "logics": [
       {
@@ -3128,7 +3112,18 @@
     "dependent": "DAK, Second pulse rate",
     "logic_key": 255
   },
-
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 20,
+        "operator": ">"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal heart rate",
+    "logic_key": 256
+  },
   {
     "logics": [
       {
@@ -8137,7 +8132,19 @@
     "dependent": "DAK, Other type of IPV",
     "logic_key": 590
   },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fetal heartbeat present",
+        "value": true,
+        "operator": "="
+      }
 
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal heart rate",
+    "logic_key": 591
+  },
   {
     "logics": [
       {
@@ -8232,6 +8239,18 @@
     "parent": "DAK, Respiratory exam result",
     "dependent": "DAK, Bradypnea",
     "logic_key": 597
-  }
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Persistent behaviours",
+        "value": "DAK, Other substance use",
+        "operator": "="
+      }
 
+    ],
+    "action": "show",
+    "dependent": "DAK, Other specify previous behavior",
+    "logic_key": 598
+  }
 ]
