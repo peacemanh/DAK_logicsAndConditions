@@ -12,11 +12,6 @@
         "haveMultipleTriggerEvent": true,
         "triggerEvents": [
             {
-                "trigger": "DAK, Reason for visit",
-                "value": "DAK, Follow-up",
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Reason for follow-up",
                 "orValues": [
                     "DAK, Wishes to stop contraception",
@@ -48,11 +43,6 @@
     {
         "haveMultipleTriggerEvent": true,
         "triggerEvents": [
-            {
-                "trigger": "DAK, Reason for visit",
-                "value": "DAK, Follow-up",
-                "operator": "="
-            },
             {
                 "trigger": "DAK, Reason for follow-up",
                 "orValues": [
@@ -86,11 +76,6 @@
         "haveMultipleTriggerEvent": true,
         "triggerEvents": [
             {
-                "trigger": "DAK, Reason for visit",
-                "value": "DAK, Follow-up",
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Reason for follow-up",
                 "orValues": [
                     "DAK, Wishes to stop contraception",
@@ -122,11 +107,6 @@
     {
         "haveMultipleTriggerEvent": true,
         "triggerEvents": [
-            {
-                "trigger": "DAK, Reason for visit",
-                "value": "DAK, Follow-up",
-                "operator": "="
-            },
             {
                 "trigger": "DAK, Reason for follow-up",
                 "orValues": [
