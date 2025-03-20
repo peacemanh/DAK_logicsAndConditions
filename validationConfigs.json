@@ -18,10 +18,10 @@
   {
     "conceptName": "DAK, Current weight",
     "operator": "beyond, <, <",
-    "minValue": 30,
-    "maxValue": 400,
+    "minValue": 40,
+    "maxValue": 150,
     "type": "restrict",
-    "message": "Weight should be between 30 Kg and 400 Kg"
+    "message": "Weight should be between 40 Kg and 150 Kg"
   },
   {
     "conceptName": "DAK, Pre-gestational weight",
@@ -117,7 +117,7 @@
     "minValue": 35,
     "maxValue": 42,
     "type": "restrict",
-    "message": "Body temperature should be between 350c and 42oc"
+    "message": "Body temperature should be between 35\u00B0c and 42\u00B0c"
   },
   {
     "conceptName": "DAK, Second body temperature",
@@ -125,7 +125,7 @@
     "minValue": 35,
     "maxValue": 42,
     "type": "restrict",
-    "message": "Second body temperature should be between 350c and 42oc"
+    "message": "Second body temperature should be between 35\u00B0c and 42\u00B0c"
   },
   {
     "conceptName": "DAK, Pulse rate",
