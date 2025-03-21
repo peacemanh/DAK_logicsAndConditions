@@ -97,10 +97,11 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Gestational age",
-        "value": 20.0,
-        "operator": ">"
+        "trigger": "DAK, Fetal heartbeat present",
+        "value": true,
+        "operator": "="
       }
+
     ],
     "action": "show",
     "dependent": "DAK, Fetal heart rate",
@@ -124,10 +125,15 @@
         "trigger": "DAK, Gestational age",
         "value": 28.0,
         "operator": ">="
+      },
+      {
+        "trigger": "DAK, Number of fetuses",
+        "value": 1,
+        "operator": "="
       }
     ],
     "action": "show",
-    "dependent": "DAK, Fetal presentation form",
+    "dependent": "DAK, Fetal presentation",
     "logic_key": 9
   },
   {
@@ -156,7 +162,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Clinical enquiry for IPV form",
+    "dependent": "DAK, Clinical enquiry for IPV",
     "logic_key": 11
   },
   {
@@ -2553,12 +2559,18 @@
         "trigger": "DAK, Gestational age",
         "value": 20,
         "operator": ">"
+      },
+      {
+        "trigger": "DAK, Number of fetuses",
+        "value": 1,
+        "operator": "="
       }
     ],
     "action": "show",
     "dependent": "DAK, Fetal heartbeat present",
     "logic_key": 208
   },
+
   {
     "logics": [
       {
@@ -3112,18 +3124,7 @@
     "dependent": "DAK, Second pulse rate",
     "logic_key": 255
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Gestational age",
-        "value": 20,
-        "operator": ">"
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Fetal heart rate",
-    "logic_key": 256
-  },
+
   {
     "logics": [
       {
@@ -8252,5 +8253,309 @@
     "action": "show",
     "dependent": "DAK, Other specify previous behavior",
     "logic_key": 598
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Number of fetuses",
+        "value": 2,
+        "operator": "="
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal heartbeat present one",
+    "logic_key": 599
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Number of fetuses",
+        "value": 2,
+        "operator": "="
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal heartbeat present two",
+    "logic_key": 600
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Number of fetuses",
+        "value": 3,
+        "operator": "="
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal heartbeat present one",
+    "logic_key": 601
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Number of fetuses",
+        "value": 3,
+        "operator": "="
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal heartbeat present two",
+    "logic_key": 602
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Number of fetuses",
+        "value": 3,
+        "operator": "="
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal heartbeat present three",
+    "logic_key": 603
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fetal heartbeat present one",
+        "value": true,
+        "operator": "="
+      }
+
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal heart rate one",
+    "logic_key": 604
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fetal heartbeat present two",
+        "value": true,
+        "operator": "="
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal heart rate two",
+    "logic_key": 605
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fetal heartbeat present three",
+        "value": true,
+        "operator": "="
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal heart rate three",
+    "logic_key": 606
+  },
+ 
+
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fetal heart rate one",
+        "minValue": 100,
+        "maxValue": 180,
+        "operator": "between, <, <"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Second fetal heart rate one",
+    "logic_key": 609
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fetal heart rate two",
+        "minValue": 100,
+        "maxValue": 180,
+        "operator": "between, <, <"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Second fetal heart rate two",
+    "logic_key": 610
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fetal heart rate three",
+        "minValue": 100,
+        "maxValue": 180,
+        "operator": "between, <, <"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Second fetal heart rate three",
+    "logic_key": 611
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Number of fetuses",
+        "value": 2,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal presentation one",
+    "logic_key": 612
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Number of fetuses",
+        "value": 2,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal presentation two",
+    "logic_key": 613
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Number of fetuses",
+        "value": 3,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal presentation one",
+    "logic_key": 614
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Number of fetuses",
+        "value": 3,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal presentation two",
+    "logic_key": 615
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Number of fetuses",
+        "value": 3,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal presentation three",
+    "logic_key": 616
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fetal presentation one",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other Fetal presentation one",
+    "logic_key": 617
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fetal presentation two",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other Fetal presentation two",
+    "logic_key": 618
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fetal presentation three",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other Fetal presentation three",
+    "logic_key": 619
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Has the women been subjected to gender Based violence especially IPV",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Types of IPV",
+    "logic_key": 620
   }
 ]
