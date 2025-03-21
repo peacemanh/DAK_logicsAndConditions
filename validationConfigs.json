@@ -26,10 +26,10 @@
   {
     "conceptName": "DAK, Pre-gestational weight",
     "operator": "beyond, <, <",
-    "minValue": 30,
-    "maxValue": 400,
+    "minValue": 40,
+    "maxValue": 150,
     "type": "restrict",
-    "message": "Weight should be between 30 Kg and 400 Kg"
+    "message": "Weight should be between 40 Kg and 150 Kg"
   },
   {
     "conceptName": "DAK, BMI",
@@ -165,7 +165,7 @@
     "minValue": 0,
     "maxValue": 44,
     "type": "restrict",
-    "message": "Symphysis-fundal height should be between 0cm and 44cm"
+    "message": "Fundal Height (wks) should be between 20 and 44 wks"
   },
   {
     "conceptName": "DAK, Fetal heart rate",
