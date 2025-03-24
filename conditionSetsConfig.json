@@ -7876,5 +7876,18 @@
     "action": "Refer immediately to hospital",
     "annotation": "Refer immediately to hospital",
     "action_key": 477
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, MUAC",
+        "value": 23,
+        "operator": "<"
+      }
+    ],
+   
+    "action": "Provide treatment for acute malnutrition",
+    "annotation": "There is acute malnutrition and is an indication for supplementation with ready-to-use foods (e.g., Plumpy’Nut, corn-soy blend [CSB++]) until the measurement is in the normal range",
+    "action_key": 478
   }
 ]
