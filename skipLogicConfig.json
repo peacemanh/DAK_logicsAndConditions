@@ -98,9 +98,9 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Gestational age",
-        "value": 20.0,
-        "operator": ">"
+        "trigger": "DAK, Fetal heartbeat present",
+        "value": true,
+        "operator": "="
       }
     ],
     "action": "show",
@@ -125,10 +125,15 @@
         "trigger": "DAK, Gestational age",
         "value": 28.0,
         "operator": ">="
+      },
+      {
+        "trigger": "DAK, Number of fetuses",
+        "value": 1,
+        "operator": "="
       }
     ],
     "action": "show",
-    "dependent": "DAK, Fetal presentation form",
+    "dependent": "DAK, Fetal presentation",
     "logic_key": 9
   },
   {
@@ -157,7 +162,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Clinical enquiry for IPV form",
+    "dependent": "DAK, Clinical enquiry for IPV",
     "logic_key": 11
   },
   {
@@ -2554,6 +2559,11 @@
         "trigger": "DAK, Gestational age",
         "value": 20,
         "operator": ">"
+      },
+      {
+        "trigger": "DAK, Number of fetuses",
+        "value": 1,
+        "operator": "="
       }
     ],
     "action": "show",
@@ -3112,18 +3122,6 @@
     "action": "show",
     "dependent": "DAK, Second pulse rate",
     "logic_key": 255
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Gestational age",
-        "value": 20,
-        "operator": ">"
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Fetal heart rate",
-    "logic_key": 256
   },
   {
     "logics": [
@@ -8235,6 +8233,274 @@
   {
     "logics": [
       {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Number of fetuses",
+        "orValues": [2,3],
+        "operator": "OR"
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal heartbeat present one",
+    "logic_key": 599
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Number of fetuses",
+        "orValues": [2, 3],
+        "operator": "OR"
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal heartbeat present two",
+    "logic_key": 600
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Number of fetuses",
+        "value": 3,
+        "operator": "="
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal heartbeat present three",
+    "logic_key": 603
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fetal heartbeat present one",
+        "value": true,
+        "operator": "="
+      }
+
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal heart rate one",
+    "logic_key": 604
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fetal heartbeat present two",
+        "value": true,
+        "operator": "="
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal heart rate two",
+    "logic_key": 605
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fetal heartbeat present three",
+        "value": true,
+        "operator": "="
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal heart rate three",
+    "logic_key": 606
+  },
+ 
+
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fetal heart rate one",
+        "minValue": 100,
+        "maxValue": 180,
+        "operator": "between, <, <"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Second fetal heart rate one",
+    "logic_key": 609
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fetal heart rate two",
+        "minValue": 100,
+        "maxValue": 180,
+        "operator": "between, <, <"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Second fetal heart rate two",
+    "logic_key": 610
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fetal heart rate three",
+        "minValue": 100,
+        "maxValue": 180,
+        "operator": "between, <, <"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Second fetal heart rate three",
+    "logic_key": 611
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Number of fetuses",
+        "value": 2,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal presentation one",
+    "logic_key": 612
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Number of fetuses",
+        "value": 2,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal presentation two",
+    "logic_key": 613
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Number of fetuses",
+        "value": 3,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal presentation one",
+    "logic_key": 614
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Number of fetuses",
+        "value": 3,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal presentation two",
+    "logic_key": 615
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Number of fetuses",
+        "value": 3,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Fetal presentation three",
+    "logic_key": 616
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fetal presentation one",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other Fetal presentation one",
+    "logic_key": 617
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fetal presentation two",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other Fetal presentation two",
+    "logic_key": 618
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fetal presentation three",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other Fetal presentation three",
+    "logic_key": 619
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Has the women been subjected to gender Based violence especially IPV",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Types of IPV",
+    "logic_key": 620
+  },
+  {
+    "logics": [
+      {
         "trigger": "DAK, Current medications",
         "orValues": [
           "DAK, Antiretrovirals (ARVs)",
@@ -8247,7 +8513,7 @@
     "action": "show",
     "parent": "DAK, Persistent behaviours",
     "dependent": "DAK, No condom use during sex",
-    "logic_key": 599
+    "logic_key": 621
 
   },
   {
@@ -8266,7 +8532,7 @@
     "action": "show",
     "parent": "DAK, Persistent behaviours",
     "dependent": "DAK, No condom use during sex",
-    "logic_key": 600
+    "logic_key": 622
 
   },
   {
@@ -8280,7 +8546,7 @@
     "action": "show",
     "parent": "DAK, Persistent behaviours",
     "dependent": "DAK, No condom use during sex",
-    "logic_key": 601
+    "logic_key": 623
 
   },
   {
@@ -8304,7 +8570,7 @@
     "action": "show",
     "parent": "DAK, Persistent behaviours",
     "dependent": "DAK, No condom use during sex",
-    "logic_key": 602
+    "logic_key": 624
 
   },
   {
@@ -8317,7 +8583,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on caffeine reduction",
-    "logic_key": 603
+    "logic_key": 625
   },
   {
     "logics": [
@@ -8329,7 +8595,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on caffeine reduction",
-    "logic_key": 604
+    "logic_key": 626
   },
   {
     "logics": [
@@ -8341,7 +8607,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on caffeine reduction",
-    "logic_key": 605
+    "logic_key": 627
   },
   {
     "logics": [
@@ -8353,7 +8619,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on caffeine reduction",
-    "logic_key": 606
+    "logic_key": 628
   },
   {
     "logics": [
@@ -8365,7 +8631,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on tobacco cessation",
-    "logic_key": 607
+    "logic_key": 629
   },
   {
     "logics": [
@@ -8377,7 +8643,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on tobacco cessation",
-    "logic_key": 608
+    "logic_key": 630
   },
   {
     "logics": [
@@ -8389,7 +8655,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on tobacco cessation",
-    "logic_key": 609
+    "logic_key": 631
   },
   {
     "logics": [
@@ -8401,7 +8667,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on alcohol / substance use",
-    "logic_key": 610
+    "logic_key": 632
   },
   {
     "logics": [
@@ -8413,7 +8679,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on alcohol / substance use",
-    "logic_key": 611
+    "logic_key": 633
   },
   {
     "logics": [
@@ -8425,7 +8691,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on alcohol / substance use",
-    "logic_key": 612
+    "logic_key": 634
   },
   {
     "logics": [
@@ -8437,7 +8703,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on alcohol / substance use",
-    "logic_key": 613
+    "logic_key": 635
   },
   {
     "logics": [
@@ -8449,7 +8715,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on alcohol / substance use",
-    "logic_key": 614
+    "logic_key": 636
   },
   {
     "logics": [
@@ -8461,7 +8727,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on second-hand smoke",
-    "logic_key": 615
+    "logic_key": 637
   },
   {
     "logics": [
@@ -8478,7 +8744,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on non-pharma measures to relieve nausea and vomiting",
-    "logic_key": 616
+    "logic_key": 638
   },
   {
     "logics": [
@@ -8495,7 +8761,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on pharmacological treatments for nausea and vomiting",
-    "logic_key": 617
+    "logic_key": 639
   },
   {
     "logics": [
@@ -8512,7 +8778,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on antacid preparations to relieve heartburn",
-    "logic_key": 618
+    "logic_key": 640
   },
   {
     "logics": [
@@ -8529,7 +8795,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on diet and lifestyle changes to prevent and relieve heartburn",
-    "logic_key": 619
+    "logic_key": 641
   },
   {
     "logics": [
@@ -8541,7 +8807,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling on non-pharmacological treatment for the relief of leg cramps",
-    "logic_key": 620
+    "logic_key": 642
   },
   {
     "logics": [
@@ -8553,7 +8819,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on use of magnesium and calcium to relieve leg cramps",
-    "logic_key": 621
+    "logic_key": 643
   },
   {
     "logics": [
@@ -8565,7 +8831,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on dietary modifications to relieve constipation",
-    "logic_key": 622
+    "logic_key": 644
   },
   {
     "logics": [
@@ -8577,7 +8843,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on use of wheat bran or other fibre supplements to relieve constipation",
-    "logic_key": 623
+    "logic_key": 645
   },
   {
     "logics": [
@@ -8594,7 +8860,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on regular exercie",
-    "logic_key": 624
+    "logic_key": 646
   },
   {
     "logics": [
@@ -8611,7 +8877,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on regular exercie",
-    "logic_key": 625
+    "logic_key": 647
   },
   {
     "logics": [
@@ -8628,7 +8894,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on regular exercie",
-    "logic_key": 626
+    "logic_key": 648
   },
   {
     "logics": [
@@ -8645,7 +8911,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on regular exercie",
-    "logic_key": 627
+    "logic_key": 649
   },
   {
     "logics": [
@@ -8657,7 +8923,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on regular exercie",
-    "logic_key": 628
+    "logic_key": 650
   },
   {
     "logics": [
@@ -8669,7 +8935,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on regular exercie",
-    "logic_key": 629
+    "logic_key": 651
   },
   {
     "logics": [
@@ -8684,7 +8950,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on non-pharmacological options for varicose veins and oedema",
-    "logic_key": 630
+    "logic_key": 652
   },
   {
     "logics": [
@@ -8699,7 +8965,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on non-pharmacological options for varicose veins and oedema",
-    "logic_key": 631
+    "logic_key": 653
   },
   {
     "logics": [
@@ -8714,7 +8980,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on non-pharmacological options for varicose veins and oedema",
-    "logic_key": 632
+    "logic_key": 654
   },
   {
     "logics": [
@@ -8729,7 +8995,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on non-pharmacological options for varicose veins and oedema",
-    "logic_key": 633
+    "logic_key": 655
   },
   {
     "logics": [
@@ -8746,7 +9012,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on increasing daily energy and protein intake",
-    "logic_key": 634
+    "logic_key": 656
   },
   {
     "logics": [
@@ -8758,7 +9024,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on condom use",
-    "logic_key": 635
+    "logic_key": 657
   },
   {
     "logics": [
@@ -8770,7 +9036,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on condom use",
-    "logic_key": 636
+    "logic_key": 658
   },
   {
     "logics": [
@@ -8782,7 +9048,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling on postpartum family planning conducted",
-    "logic_key": 637
+    "logic_key": 659
   },
   {
     "logics": [
@@ -8794,8 +9060,6 @@
     ],
     "action": "show",
     "dependent": "DAK, TB screening conducted",
-    "logic_key": 638
+    "logic_key": 660
   }
-
-
 ]
