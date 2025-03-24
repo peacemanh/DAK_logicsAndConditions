@@ -2492,19 +2492,6 @@
   {
     "conditions": [
       {
-        "key": "DAK,Female condoms",
-        "value": false,
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Counselling conducted on condom use",
-    "action": "Conduct counseling on condom use",
-    "annotation": "Advise to use condoms to prevent HIV and other STIs; if necessary,in the absence of  contraindication reassure it is OK to continue to have sex during pregnancy",
-    "action_key": 190
-  },
-  {
-    "conditions": [
-      {
         "key": "DAK, IF Use of male condoms",
         "value": "DAK, FALSE ON MORE THAN ONE CONTACT",
         "operator": "="
@@ -6199,8 +6186,8 @@
         "operator": "="
       }
     ],
-    "action": "Counselling on personal hygiene and environmental sanitation",
-    "annotation": "Counsel women on the importance of personal hygiene and enviromental sanitation",
+    "action": "Conduct counselling on hygiene",
+    "annotation": "Handwashing with soap is the most important hygiene action she can take, especially before preparing food and after going to the toilet. A pregnant woman should wash her body regularly with clean water. Moreover, regular cleaning of the teeth with a dental stick or a toothbrush and toothpaste is important for dental hygiene",
     "action_key": 389
   },
   {
@@ -7759,11 +7746,6 @@
     "conditions": [
       {
         "key": "DAK,Male condoms",
-        "value": false,
-        "operator": "="
-      },
-      {
-        "key": "DAK,Female condoms",
         "value": false,
         "operator": "="
       }

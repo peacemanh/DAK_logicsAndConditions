@@ -8,7 +8,8 @@
           "DAK, Medication follow-up",
           "DAK, Family planning",
           "DAK, Referral for screening including diagnostics and lab testing",
-          "DAK, Fetal heart rate"
+          "DAK, Fetal heart rate",
+          "DAK, No condom use during sex"
 
         ]
       }
@@ -2907,7 +2908,7 @@
     "dependent": "DAK, Platelet count",
     "logic_key": 237
   },
-  
+
   {
     "logics": [
       {
@@ -3872,18 +3873,7 @@
     "dependent": "DAK,  Condom use",
     "logic_key": 314
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK,Female condoms",
-        "value": false,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK,  Condom use",
-    "logic_key": 315
-  },
+
   {
     "logics": [
       {
@@ -5038,18 +5028,7 @@
     "dependent": "DAK, caffeine reduction",
     "logic_key": 405
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK,  Exposure to second-hand smoke",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Second-hand smoke",
-    "logic_key": 406
-  },
+
   {
     "logics": [
       {
@@ -5802,7 +5781,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Second-hand smoke",
+    "dependent": "DAK, Counselling conducted on second-hand smoke",
     "logic_key": 464
   },
   {
@@ -8252,5 +8231,571 @@
     "action": "show",
     "dependent": "DAK, Other specify previous behavior",
     "logic_key": 598
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current medications",
+        "orValues": [
+          "DAK, Antiretrovirals (ARVs)",
+          "DAK, Oral pre-exposure prophylaxis (PrEP) for HIV"
+
+        ],
+        "operator": "OR"
+      }
+    ],
+    "action": "show",
+    "parent": "DAK, Persistent behaviours",
+    "dependent": "DAK, No condom use during sex",
+    "logic_key": 599
+
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Existing chronic health conditions",
+        "value": "DAK, HIV positive",
+        "operator": "="
+      },
+      {
+        "trigger": "Partner HIV status (reported)",
+        "value": "DAK, HIV negative",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "parent": "DAK, Persistent behaviours",
+    "dependent": "DAK, No condom use during sex",
+    "logic_key": 600
+
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Existing chronic health conditions",
+        "value": "DAK, HIV positive",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "parent": "DAK, Persistent behaviours",
+    "dependent": "DAK, No condom use during sex",
+    "logic_key": 601
+
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current medications",
+        "value": "DAK, Antiretrovirals (ARVs)",
+        "operator": "!="
+      },
+      {
+        "trigger": "DAK, Existing chronic health conditions",
+        "value": "DAK, HIV positive",
+        "operator": "!="
+      },
+      {
+        "trigger": "Partner HIV status (reported)",
+        "value": "DAK, HIV positive",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "parent": "DAK, Persistent behaviours",
+    "dependent": "DAK, No condom use during sex",
+    "logic_key": 602
+
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Daily caffeine intake",
+        "value": "DAK, More than 3 cups of Ethiopian Coffee",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on caffeine reduction",
+    "logic_key": 603
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Daily caffeine intake",
+        "value": "DAK, More than 4 cups of tea",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on caffeine reduction",
+    "logic_key": 604
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Daily caffeine intake",
+        "value": "DAK ,More than 12 bars (50 g) of chocolate",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on caffeine reduction",
+    "logic_key": 605
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Daily caffeine intake",
+        "value": "DAK, More than one can of soda or energy drink",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on caffeine reduction",
+    "logic_key": 606
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Tobacco use",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on tobacco cessation",
+    "logic_key": 607
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Persistent behaviours",
+        "value": "DAK, Tobacco use",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on tobacco cessation",
+    "logic_key": 608
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Recently quit tobacco products",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on tobacco cessation",
+    "logic_key": 609
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current alcohol and/or other substance use",
+        "value": "DAK, Alcohol",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on alcohol / substance use",
+    "logic_key": 610
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current alcohol and/or other substance use",
+        "value": "DAK, khat",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on alcohol / substance use",
+    "logic_key": 611
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current alcohol and/or other substance use",
+        "value": "DAK, Injectable drugs",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on alcohol / substance use",
+    "logic_key": 612
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current alcohol and/or other substance use",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on alcohol / substance use",
+    "logic_key": 613
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Persistent behaviours",
+        "value": "DAK, Other substance use",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on alcohol / substance use",
+    "logic_key": 614
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK,  Exposure to second-hand smoke",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on second-hand smoke",
+    "logic_key": 615
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current symptoms",
+        "value": "DAK, Nausea",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Current symptoms",
+        "value": "DAK, Vomiting",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on non-pharma measures to relieve nausea and vomiting",
+    "logic_key": 616
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Persistent symptoms",
+        "value": "DAK, Nausea",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Persistent symptoms",
+        "value": "DAK, Vomiting",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on pharmacological treatments for nausea and vomiting",
+    "logic_key": 617
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Persistent symptoms",
+        "value": "DAK, Heartburn",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Persistent symptoms",
+        "value": "DAK, Heartburn",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on antacid preparations to relieve heartburn",
+    "logic_key": 618
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current symptoms",
+        "value": "DAK, Heartburn",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Current symptoms",
+        "value": "DAK, Heartburn",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on diet and lifestyle changes to prevent and relieve heartburn",
+    "logic_key": 619
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current symptoms",
+        "value": "DAK, Leg cramps",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling on non-pharmacological treatment for the relief of leg cramps",
+    "logic_key": 620
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Persistent symptoms",
+        "value": "DAK, Leg cramps",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on use of magnesium and calcium to relieve leg cramps",
+    "logic_key": 621
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current symptoms",
+        "value": "DAK, Constipation",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on dietary modifications to relieve constipation",
+    "logic_key": 622
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Persistent symptoms",
+        "value": "DAK, Constipation",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on use of wheat bran or other fibre supplements to relieve constipation",
+    "logic_key": 623
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current symptoms",
+        "positiveValue": "DAK, Pain - Pelvic",
+        "negativeValue": [
+          "DAK, Contractions",
+          "DAK, Pain - During urination (dysuria)",
+          "DAK, Pain - Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)"
+        ],
+        "operator": "exclude"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on regular exercie",
+    "logic_key": 624
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current symptoms",
+        "positiveValue": "DAK, Pain - Low back",
+        "negativeValue": [
+          "DAK, Contractions",
+          "DAK, Pain - During urination (dysuria)",
+          "DAK, Pain - Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)"
+        ],
+        "operator": "exclude"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on regular exercie",
+    "logic_key": 625
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Persistent symptoms",
+        "positiveValue": "DAK, Pain - Pelvic",
+        "negativeValue": [
+          "DAK, Contractions",
+          "DAK, Pain - During urination (dysuria)",
+          "DAK, Pain - Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)"
+        ],
+        "operator": "exclude"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on regular exercie",
+    "logic_key": 626
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Persistent symptoms",
+        "positiveValue": "DAK, Pain - Low back",
+        "negativeValue": [
+          "DAK, Contractions",
+          "DAK, Pain - During urination (dysuria)",
+          "DAK, Pain - Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)"
+        ],
+        "operator": "exclude"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on regular exercie",
+    "logic_key": 627
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current symptoms",
+        "value": "DAK, Pain - Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on regular exercie",
+    "logic_key": 628
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Persistent symptoms",
+        "value": "DAK, Pain - Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on regular exercie",
+    "logic_key": 629
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Persistent symptoms",
+        "positiveValue": "DAK, Varicose veins",
+        "negativeValue": [
+          "DAK, Pain - Leg"
+        ],
+        "operator": "exclude"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on non-pharmacological options for varicose veins and oedema",
+    "logic_key": 630
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Persistent symptoms",
+        "positiveValue": "DAK, Varicose veins",
+        "negativeValue": [
+          "DAK, Oedema"
+        ],
+        "operator": "exclude"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on non-pharmacological options for varicose veins and oedema",
+    "logic_key": 631
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current symptoms",
+        "positiveValue": "DAK, Varicose veins",
+        "negativeValue": [
+          "DAK, Pain - Leg"
+        ],
+        "operator": "exclude"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on non-pharmacological options for varicose veins and oedema",
+    "logic_key": 632
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current symptoms",
+        "positiveValue": "DAK, Varicose veins",
+        "negativeValue": [
+          "DAK, Oedema"
+        ],
+        "operator": "exclude"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on non-pharmacological options for varicose veins and oedema",
+    "logic_key": 633
+  },
+  {
+    "logics": [
+      {
+        "trigger": "Population prevalence of undernourishment",
+        "value": 20,
+        "operator": ">"
+      },
+      {
+        "trigger": "DAK, Weight category",
+        "value": "DAK, Underweight",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on increasing daily energy and protein intake",
+    "logic_key": 634
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK,Male condoms",
+        "value": false,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on condom use",
+    "logic_key": 635
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Persistent behaviours",
+        "value": "DAK, No condom use during sex",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on condom use",
+    "logic_key": 636
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy confirmed",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling on postpartum family planning conducted",
+    "logic_key": 637
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy confirmed",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, TB screening conducted",
+    "logic_key": 638
   }
+
+
 ]
