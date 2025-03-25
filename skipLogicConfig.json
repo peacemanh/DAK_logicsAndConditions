@@ -9063,6 +9063,65 @@
     "action": "show",
     "dependent": "DAK, TB screening conducted",
     "logic_key": 660
+  },
+
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current medications",
+        "orValues": [
+          "DAK, Antiretrovirals (ARVs)",
+          "DAK, Oral pre-exposure prophylaxis (PrEP) for HIV"
+
+        ],
+        "operator": "OR"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK,Male condoms",
+    "logic_key": 661
+
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Existing chronic health conditions",
+        "value": "DAK, HIV positive",
+        "operator": "="
+      },
+      {
+        "trigger": "Partner HIV status (reported)",
+        "value": "DAK, HIV negative",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK,Male condoms",
+    "logic_key": 662
+
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current medications",
+        "value": "DAK, Antiretrovirals (ARVs)",
+        "operator": "!="
+      },
+      {
+        "trigger": "DAK, Existing chronic health conditions",
+        "value": "DAK, HIV positive",
+        "operator": "!="
+      },
+      {
+        "trigger": "Partner HIV status (reported)",
+        "value": "DAK, HIV positive",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK,Male condoms",
+    "logic_key": 663
+
   }
   
 ]
