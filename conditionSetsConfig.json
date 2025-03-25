@@ -2154,7 +2154,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint": "DAK, Urine test type",
+    
     "action": "Do urine dipstick test for protein",
     "annotation": "Given high values (SBP \u2265 140 or DBP \u2265 90) upon second measure, urine dipstick test should be done to check for protein in the urine, a symptom of pre-eclampsia",
     "action_key": 164
@@ -2167,7 +2167,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint": "DAK, Urine test type",
+    
     "action": "Do urine dipstick test for protein",
     "annotation": "Given high values (SBP \u2265 140 or DBP \u2265 90) upon second measure, urine dipstick test should be done to check for protein in the urine, a symptom of pre-eclampsia",
     "action_key": 165
