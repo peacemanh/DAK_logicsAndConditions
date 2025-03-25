@@ -4636,7 +4636,7 @@
         "trigger": "DAK, Fetal heart rate",
         "minValue": 100,
         "maxValue": 180,
-        "operator": "between, <, <"
+        "operator": "beyond, <, <"
       }
     ],
     "action": "show",
@@ -8334,7 +8334,7 @@
         "trigger": "DAK, Fetal heart rate one",
         "minValue": 100,
         "maxValue": 180,
-        "operator": "between, <, <"
+        "operator": "beyond, <, <"
       }
     ],
     "action": "show",
@@ -8347,7 +8347,7 @@
         "trigger": "DAK, Fetal heart rate two",
         "minValue": 100,
         "maxValue": 180,
-        "operator": "between, <, <"
+        "operator": "beyond, <, <"
       }
     ],
     "action": "show",
@@ -8360,7 +8360,7 @@
         "trigger": "DAK, Fetal heart rate three",
         "minValue": 100,
         "maxValue": 180,
-        "operator": "between, <, <"
+        "operator": "beyond, <, <"
       }
     ],
     "action": "show",
@@ -9064,4 +9064,5 @@
     "dependent": "DAK, TB screening conducted",
     "logic_key": 660
   }
+  
 ]
