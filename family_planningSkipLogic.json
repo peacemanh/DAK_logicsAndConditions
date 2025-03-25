@@ -3093,11 +3093,16 @@
     "logics": [
       {
         "trigger": "gender",
-        "value": "M",
+        "value": "F",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Have you had a recent miscarriage or abortion",
+        "value": true,
         "operator": "="
       }
     ],
-    "action": "hide",
+    "action": "show",
     "dependent": "DAK, PostAbortion Family Planning Counselling Section",
     "logic_key": 219
   },
@@ -4386,19 +4391,6 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Have you had a recent miscarriage or abortion",
-        "value": false,
-        "operator": "="
-      }
-
-    ],
-    "action": "hide",
-    "dependent": "DAK, PostAbortion Family Planning Counselling Section",
-    "logic_key": 328
-  },
-  {
-    "logics": [
-      {
         "trigger": "DAK, Methods previously used",
         "value": "DAK, Other (specify)",
         "operator": "="
@@ -4408,7 +4400,7 @@
 
     "action": "show",
     "dependent": "DAK, Other Methods previously used",
-    "logic_key": 297
+    "logic_key": 329
   },
   {
     "logics": [
@@ -4422,6 +4414,6 @@
 
     "action": "show",
     "dependent": "DAK, Reason for Method change",
-    "logic_key": 298
+    "logic_key": 330
   }
 ]

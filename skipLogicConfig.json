@@ -8239,7 +8239,7 @@
       },
       {
         "trigger": "DAK, Number of fetuses",
-        "orValues": [2,3],
+        "orValues": [ 2, 3 ],
         "operator": "OR"
       }
 
@@ -8257,7 +8257,7 @@
       },
       {
         "trigger": "DAK, Number of fetuses",
-        "orValues": [2, 3],
+        "orValues": [ 2, 3 ],
         "operator": "OR"
       }
 
@@ -8324,7 +8324,7 @@
     "dependent": "DAK, Fetal heart rate three",
     "logic_key": 606
   },
- 
+
 
   {
     "logics": [
@@ -8498,6 +8498,8 @@
     "dependent": "DAK, Types of IPV",
     "logic_key": 620
   },
+
+
   {
     "logics": [
       {
@@ -8535,44 +8537,7 @@
     "logic_key": 622
 
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Existing chronic health conditions",
-        "value": "DAK, HIV positive",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "parent": "DAK, Persistent behaviours",
-    "dependent": "DAK, No condom use during sex",
-    "logic_key": 623
 
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Current medications",
-        "value": "DAK, Antiretrovirals (ARVs)",
-        "operator": "!="
-      },
-      {
-        "trigger": "DAK, Existing chronic health conditions",
-        "value": "DAK, HIV positive",
-        "operator": "!="
-      },
-      {
-        "trigger": "Partner HIV status (reported)",
-        "value": "DAK, HIV positive",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "parent": "DAK, Persistent behaviours",
-    "dependent": "DAK, No condom use during sex",
-    "logic_key": 624
-
-  },
   {
     "logics": [
       {

@@ -55,7 +55,7 @@
   {
       "logics": [
           {
-              "trigger": "DAK, Date of miscarriage or abortion",
+              "trigger": "DAK, Date of miscarriage or abortion FP",
               "value": 7,
               "operator": "<="
           }
@@ -67,7 +67,7 @@
   {
       "logics": [
           {
-              "trigger": "DAK, Date of miscarriage or abortion",
+              "trigger": "DAK, Date of miscarriage or abortion FP",
               "minValue": 7,
               "maxValue": 12,
               "operator": "between, <, <="
@@ -110,7 +110,7 @@
   {
       "logics": [
           {
-              "trigger": "DAK, Date of miscarriage or abortion",
+              "trigger": "DAK, Date of miscarriage or abortion FP ",
               "value": 28,
               "operator": "<="
           }
