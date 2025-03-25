@@ -9122,6 +9122,18 @@
     "dependent": "DAK,Male condoms",
     "logic_key": 663
 
-  }
+  },
+  {
+  "logics": [
+    {
+      "trigger": "DAK, Past pregnancy history",
+      "value": "DAK, Pre-eclampsia",
+      "operator": "="
+    }
+  ],
+  "action": "hide",
+  "dependent": "DAK, Risk of pre-eclampsia",
+  "logic_key": 664
+}
   
 ]
