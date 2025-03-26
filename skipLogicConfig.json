@@ -10,7 +10,6 @@
           "DAK, Referral for screening including diagnostics and lab testing",
           "DAK, Fetal heart rate",
           "DAK, No condom use during sex"
-
         ]
       }
     ],
@@ -102,7 +101,6 @@
         "value": true,
         "operator": "="
       }
-
     ],
     "action": "show",
     "dependent": "DAK, Fetal heart rate",
@@ -2571,7 +2569,6 @@
     "dependent": "DAK, Fetal heartbeat present",
     "logic_key": 208
   },
-
   {
     "logics": [
       {
@@ -2920,7 +2917,6 @@
     "dependent": "DAK, Platelet count",
     "logic_key": 237
   },
-
   {
     "logics": [
       {
@@ -3873,7 +3869,6 @@
     "dependent": "DAK,  Condom use",
     "logic_key": 314
   },
-
   {
     "logics": [
       {
@@ -4576,7 +4571,6 @@
         "value": 12,
         "operator": ">"
       }
-
     ],
     "action": "show",
     "dependent": "DAK, Deworming",
@@ -5028,7 +5022,6 @@
     "dependent": "DAK, caffeine reduction",
     "logic_key": 405
   },
-
   {
     "logics": [
       {
@@ -8105,7 +8098,6 @@
         "value": "DAK, Other",
         "operator": "="
       }
-
     ],
     "action": "show",
     "dependent": "DAK, Other type of IPV",
@@ -8118,7 +8110,6 @@
         "value": true,
         "operator": "="
       }
-
     ],
     "action": "show",
     "dependent": "DAK, Fetal heart rate",
@@ -8136,7 +8127,6 @@
         "value": 28,
         "operator": ">="
       }
-
     ],
     "action": "show",
     "dependent": "DAK, Hep B prophylaxis",
@@ -8153,7 +8143,6 @@
         ],
         "operator": "OR"
       }
-
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on anaemia",
@@ -8166,9 +8155,7 @@
         "value": "DAK, Bradycardia",
         "operator": "="
       }
-
     ],
-
     "action": "hide",
     "parent": "DAK, Cardiac exam result",
     "dependent": "DAK, Tachycardia",
@@ -8181,9 +8168,7 @@
         "value": "DAK, Tachycardia",
         "operator": "="
       }
-
     ],
-
     "action": "hide",
     "parent": "DAK, Cardiac exam result",
     "dependent": "DAK, Bradycardia",
@@ -8196,9 +8181,7 @@
         "value": "DAK, Bradypnea",
         "operator": "="
       }
-
     ],
-
     "action": "hide",
     "parent": "DAK, Respiratory exam result",
     "dependent": "DAK, Tachypnea",
@@ -8211,9 +8194,7 @@
         "value": "DAK, Tachypnea",
         "operator": "="
       }
-
     ],
-
     "action": "hide",
     "parent": "DAK, Respiratory exam result",
     "dependent": "DAK, Bradypnea",
@@ -8226,7 +8207,6 @@
         "value": "DAK, Other substance use",
         "operator": "="
       }
-
     ],
     "action": "show",
     "dependent": "DAK, Other specify previous behavior",
@@ -8241,10 +8221,12 @@
       },
       {
         "trigger": "DAK, Number of fetuses",
-        "orValues": [ 2, 3 ],
+        "orValues": [
+          2,
+          3
+        ],
         "operator": "OR"
       }
-
     ],
     "action": "show",
     "dependent": "DAK, Fetal heartbeat present one",
@@ -8259,10 +8241,12 @@
       },
       {
         "trigger": "DAK, Number of fetuses",
-        "orValues": [ 2, 3 ],
+        "orValues": [
+          2,
+          3
+        ],
         "operator": "OR"
       }
-
     ],
     "action": "show",
     "dependent": "DAK, Fetal heartbeat present two",
@@ -8280,7 +8264,6 @@
         "value": 3,
         "operator": "="
       }
-
     ],
     "action": "show",
     "dependent": "DAK, Fetal heartbeat present three",
@@ -8293,8 +8276,6 @@
         "value": true,
         "operator": "="
       }
-
-
     ],
     "action": "show",
     "dependent": "DAK, Fetal heart rate one",
@@ -8307,7 +8288,6 @@
         "value": true,
         "operator": "="
       }
-
     ],
     "action": "show",
     "dependent": "DAK, Fetal heart rate two",
@@ -8320,14 +8300,11 @@
         "value": true,
         "operator": "="
       }
-
     ],
     "action": "show",
     "dependent": "DAK, Fetal heart rate three",
     "logic_key": 606
   },
-
-
   {
     "logics": [
       {
@@ -8500,46 +8477,71 @@
     "dependent": "DAK, Types of IPV",
     "logic_key": 620
   },
-
-
   {
     "logics": [
       {
-        "trigger": "DAK, Current medications",
-        "orValues": [
-          "DAK, Antiretrovirals (ARVs)",
-          "DAK, Oral pre-exposure prophylaxis (PrEP) for HIV"
-
-        ],
-        "operator": "OR"
+        "rules": [
+          {
+            "trigger": "DAK, Current medications",
+            "value": "DAK, Antiretrovirals (ARVs)",
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Partner HIV status (reported)",
+            "value": "DAK, HIV negative",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Existing chronic health conditions",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Partner HIV status (reported)",
+            "value": "DAK, HIV negative",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Current medications",
+            "value": "DAK, Oral pre-exposure prophylaxis (PrEP) for HIV",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Current medications",
+            "value": "DAK, Antiretrovirals (ARVs)",
+            "operator": "!="
+          },
+          {
+            "trigger": "DAK, Existing chronic health conditions",
+            "value": "DAK, HIV positive",
+            "operator": "!="
+          },
+          {
+            "trigger": "DAK, Partner HIV status (reported)",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
       }
     ],
     "action": "show",
+    "conditionType": "deepAnalysis",
     "parent": "DAK, Persistent behaviours",
     "dependent": "DAK, No condom use during sex",
     "logic_key": 621
-
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Existing chronic health conditions",
-        "value": "DAK, HIV positive",
-        "operator": "="
-      },
-      {
-        "trigger": "Partner HIV status (reported)",
-        "value": "DAK, HIV negative",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "parent": "DAK, Persistent behaviours",
-    "dependent": "DAK, No condom use during sex",
-    "logic_key": 622
-
-  },
-
   {
     "logics": [
       {
@@ -9029,7 +9031,6 @@
     "dependent": "DAK, TB screening conducted",
     "logic_key": 660
   },
-
   {
     "logics": [
       {
@@ -9037,7 +9038,6 @@
         "orValues": [
           "DAK, Antiretrovirals (ARVs)",
           "DAK, Oral pre-exposure prophylaxis (PrEP) for HIV"
-
         ],
         "operator": "OR"
       }
@@ -9045,7 +9045,6 @@
     "action": "show",
     "dependent": "DAK,Male condoms",
     "logic_key": 661
-
   },
   {
     "logics": [
@@ -9063,7 +9062,6 @@
     "action": "show",
     "dependent": "DAK,Male condoms",
     "logic_key": 662
-
   },
   {
     "logics": [
@@ -9086,19 +9084,17 @@
     "action": "show",
     "dependent": "DAK,Male condoms",
     "logic_key": 663
-
   },
   {
-  "logics": [
-    {
-      "trigger": "DAK, Past pregnancy history",
-      "value": "DAK, Pre-eclampsia",
-      "operator": "="
-    }
-  ],
-  "action": "hide",
-  "dependent": "DAK, Risk of pre-eclampsia",
-  "logic_key": 664
-}
-  
+    "logics": [
+      {
+        "trigger": "DAK, Past pregnancy history",
+        "value": "DAK, Pre-eclampsia",
+        "operator": "="
+      }
+    ],
+    "action": "hide",
+    "dependent": "DAK, Risk of pre-eclampsia",
+    "logic_key": 664
+  }
 ]
