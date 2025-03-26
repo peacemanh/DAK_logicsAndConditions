@@ -261,5 +261,29 @@
     "maxValue": 47,
     "type": "restrict",
     "message": "MUAC should be between 11 cm and 47 cm"
+  },
+  {
+    "conceptName": "DAK, Fetal heart rate one",
+    "operator": "beyond, <=, <=",
+    "minValue": 80,
+    "maxValue": 200,
+    "type": "restrict",
+    "message": "Fetal Heart rate should be between 80 bpm and 200 bpm"
+  },
+  {
+    "conceptName": "DAK, Fetal heart rate two",
+    "operator": "beyond, <=, <=",
+    "minValue": 80,
+    "maxValue": 200,
+    "type": "restrict",
+    "message": "Fetal Heart rate should be between 80 bpm and 200 bpm"
+  },
+  {
+    "conceptName": "DAK, Fetal heart rate three",
+    "operator": "beyond, <=, <=",
+    "minValue": 80,
+    "maxValue": 200,
+    "type": "restrict",
+    "message": "Fetal Heart rate should be between 80 bpm and 200 bpm"
   }
 ]
