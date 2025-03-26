@@ -9096,5 +9096,29 @@
     "action": "hide",
     "dependent": "DAK, Risk of pre-eclampsia",
     "logic_key": 664
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Hepatitis B test result",
+        "value": "DAK, Hepatitis B negative",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Hepatitis B Counselling",
+    "logic_key": 665
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Hepatitis B test result",
+        "value": "DAK, Hepatitis B negative",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on Hep B negative",
+    "logic_key": 666
   }
 ]
