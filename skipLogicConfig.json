@@ -164,18 +164,7 @@
     "dependent": "DAK, Clinical enquiry for IPV",
     "logic_key": 11
   },
-  {
-    "logics": [
-      {
-        "trigger": "Minimum requirements for IPV assessment",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Types of IPV form",
-    "logic_key": 12
-  },
+
   {
     "logics": [
       {
@@ -1242,12 +1231,12 @@
     "logics": [
       {
         "trigger": "DAK, Presenting signs/conditions for IPV",
-        "value": "DAK, Other",
+        "value": "DAK, Injury – other (specify)",
         "operator": "="
       }
     ],
     "action": "show",
-    "dependent": "DAK, Any other presenting signs or symptoms indicative of violence (specify)",
+    "dependent": "DAK, Injury – other IPV",
     "logic_key": 99
   },
   {
@@ -1266,7 +1255,7 @@
     "logics": [
       {
         "trigger": "DAK, Types of IPV",
-        "value": "DAK, Other",
+        "value": "DAK, Violence by other family members",
         "operator": "="
       }
     ],
@@ -8091,18 +8080,7 @@
     "dependent": "DAK, Symptoms of severe pre-eclampsia",
     "logic_key": 589
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Types of IPV",
-        "value": "DAK, Other",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Other type of IPV",
-    "logic_key": 590
-  },
+
   {
     "logics": [
       {
@@ -8469,6 +8447,11 @@
     "logics": [
       {
         "trigger": "DAK, Has the women been subjected to gender Based violence especially IPV",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "Minimum requirements for IPV assessment",
         "value": true,
         "operator": "="
       }
@@ -9034,56 +9017,66 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Current medications",
-        "orValues": [
-          "DAK, Antiretrovirals (ARVs)",
-          "DAK, Oral pre-exposure prophylaxis (PrEP) for HIV"
-        ],
-        "operator": "OR"
+        "rules": [
+          {
+            "trigger": "DAK, Current medications",
+            "value": "DAK, Antiretrovirals (ARVs)",
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Partner HIV status (reported)",
+            "value": "DAK, HIV negative",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Existing chronic health conditions",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Partner HIV status (reported)",
+            "value": "DAK, HIV negative",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Current medications",
+            "value": "DAK, Oral pre-exposure prophylaxis (PrEP) for HIV",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Current medications",
+            "value": "DAK, Antiretrovirals (ARVs)",
+            "operator": "!="
+          },
+          {
+            "trigger": "DAK, Existing chronic health conditions",
+            "value": "DAK, HIV positive",
+            "operator": "!="
+          },
+          {
+            "trigger": "DAK, Partner HIV status (reported)",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
       }
     ],
     "action": "show",
-    "dependent": "DAK,Male condoms",
+    "conditionType": "deepAnalysis",
+    "dependent": "DAK, Male condoms",
     "logic_key": 661
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Existing chronic health conditions",
-        "value": "DAK, HIV positive",
-        "operator": "="
-      },
-      {
-        "trigger": "Partner HIV status (reported)",
-        "value": "DAK, HIV negative",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK,Male condoms",
-    "logic_key": 662
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Current medications",
-        "value": "DAK, Antiretrovirals (ARVs)",
-        "operator": "!="
-      },
-      {
-        "trigger": "DAK, Existing chronic health conditions",
-        "value": "DAK, HIV positive",
-        "operator": "!="
-      },
-      {
-        "trigger": "Partner HIV status (reported)",
-        "value": "DAK, HIV positive",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK,Male condoms",
-    "logic_key": 663
   },
   {
     "logics": [
@@ -9095,6 +9088,30 @@
     ],
     "action": "hide",
     "dependent": "DAK, Risk of pre-eclampsia",
+    "logic_key": 662
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Presenting signs/conditions for IPV",
+        "value": "DAK, Other presenting signs or symptoms indicative of violence (specify)",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Any other presenting signs or symptoms indicative of violence (specify)",
+    "logic_key": 663
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Clinical enquiry for IPV",
+        "value": false,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Has the women been subjected to gender Based violence especially IPV",
     "logic_key": 664
   }
 ]
