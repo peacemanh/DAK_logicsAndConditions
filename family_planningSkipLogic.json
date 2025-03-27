@@ -802,10 +802,11 @@
     "logics": [
       {
         "trigger": "DAK, Visit Status",
-        "value": "DAK, Repeat",
-        "trigger": "DAK, Visit Status",
-        "value": "DAK, Repeat",
-        "operator": "="
+        "orValues": [
+          "DAK, Repeat",
+          "DAK, New"
+        ],
+        "operator": "OR"
       }
     ],
     "action": "show",
