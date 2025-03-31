@@ -135,8 +135,8 @@
           },
           {
               "trigger": "DAK, Symptoms of severe pre-eclampsia",
-              "value": "DAK, Severe headache",
-              "operator": "="
+               "orValues": ["DAK, Severe headache","DAK, Epigastric pain","DAK, Dizziness","DAK, Visual disturbance","DAK, Vomiting"],
+          "operator": "OR"
           }
       ],
       "dependentValue": true,
@@ -157,168 +157,15 @@
           },
           {
               "trigger": "DAK, Symptoms of severe pre-eclampsia",
-              "value": "DAK, Severe headache",
-              "operator": "="
+              "orValues": ["DAK, Severe headache","DAK, Epigastric pain","DAK, Dizziness","DAK, Visual disturbance","DAK, Vomiting"],
+          "operator": "OR"
           }
       ],
       "dependentValue": true,
       "dependent": "DAK, Severe pre-eclampsia",
       "logic_key": 11
   },
-  {
-      "logics": [
-          {
-              "trigger": "DAK, Systolic blood pressure",
-              "value": 140.0,
-              "operator": ">="
-          },
-          {
-              "trigger": "DAK, Repeat systolic blood pressure",
-              "value": 140.0,
-              "operator": ">="
-          },
-          {
-              "trigger": "DAK, Symptoms of severe pre-eclampsia",
-              "value": "DAK, Epigastric pain",
-              "operator": "="
-          }
-      ],
-      "dependentValue": true,
-      "dependent": "DAK, Severe pre-eclampsia",
-      "logic_key": 12
-  },
-  {
-      "logics": [
-          {
-              "trigger": "DAK, Diastolic blood pressure",
-              "value": 90.0,
-              "operator": ">="
-          },
-          {
-              "trigger": "DAK, Repeat diastolic blood pressure",
-              "value": 90.0,
-              "operator": ">="
-          },
-          {
-              "trigger": "DAK, Symptoms of severe pre-eclampsia",
-              "value": "DAK, Epigastric pain",
-              "operator": "="
-          }
-      ],
-      "dependentValue": true,
-      "dependent": "DAK, Severe pre-eclampsia",
-      "logic_key": 13
-  },
-  {
-      "logics": [
-          {
-              "trigger": "DAK, Systolic blood pressure",
-              "value": 140.0,
-              "operator": ">="
-          },
-          {
-              "trigger": "DAK, Repeat systolic blood pressure",
-              "value": 140.0,
-              "operator": ">="
-          },
-          {
-              "trigger": "DAK, Symptoms of severe pre-eclampsia",
-              "value": "DAK, Dizziness",
-              "operator": "="
-          }
-      ],
-      "dependentValue": true,
-      "dependent": "DAK, Severe pre-eclampsia",
-      "logic_key": 14
-  },
-  {
-      "logics": [
-          {
-              "trigger": "DAK, Diastolic blood pressure",
-              "value": 90.0,
-              "operator": ">="
-          },
-          {
-              "trigger": "DAK, Repeat diastolic blood pressure",
-              "value": 90.0,
-              "operator": ">="
-          },
-          {
-              "trigger": "DAK, Symptoms of severe pre-eclampsia",
-              "value": "DAK, Dizziness",
-              "operator": "="
-          }
-      ],
-      "dependentValue": true,
-      "dependent": "DAK, Severe pre-eclampsia",
-      "logic_key": 15
-  },
-  {
-      "logics": [
-          {
-              "trigger": "DAK, Systolic blood pressure",
-              "value": 140.0,
-              "operator": ">="
-          },
-          {
-              "trigger": "DAK, Repeat systolic blood pressure",
-              "value": 140.0,
-              "operator": ">="
-          },
-          {
-              "trigger": "DAK, Symptoms of severe pre-eclampsia",
-              "value": "DAK, Vomiting",
-              "operator": "="
-          }
-      ],
-      "dependentValue": true,
-      "dependent": "DAK, Severe pre-eclampsia",
-      "logic_key": 16
-  },
-  {
-      "logics": [
-          {
-              "trigger": "DAK, Diastolic blood pressure",
-              "value": 90.0,
-              "operator": ">="
-          },
-          {
-              "trigger": "DAK, Repeat diastolic blood pressure",
-              "value": 90.0,
-              "operator": ">="
-          },
-          {
-              "trigger": "DAK, Symptoms of severe pre-eclampsia",
-              "value": "DAK, Vomiting",
-              "operator": "="
-          }
-      ],
-      "dependentValue": true,
-      "dependent": "DAK, Severe pre-eclampsia",
-      "logic_key": 17
-  },
-  {
-      "logics": [
-          {
-              "trigger": "DAK, Diastolic blood pressure",
-              "value": 90.0,
-              "operator": ">="
-          },
-          {
-              "trigger": "DAK, Repeat diastolic blood pressure",
-              "value": 90.0,
-              "operator": ">="
-          },
-          {
-              "trigger": "DAK, Symptoms of severe pre-eclampsia",
-              "value": "DAK, Vomiting",
-              "operator": "="
-          }
-      ],
-      "dependentValue": true,
-      "dependent": "DAK, Severe pre-eclampsia",
-      "logic_key": 18
-  },
+ 
   {
       "logics": [
           {
@@ -333,19 +180,47 @@
           },
           {
               "trigger": "DAK, Symptoms of severe pre-eclampsia",
-              "value": "DAK, No symptoms of severe pre-eclampsia",
+              "value": "DAK, None",
               "operator": "="
           },
           {
               "trigger": "DAK, Urine dipstick result \u2013 protein",
-              "value": "DAK, ++",
+              "orValues": ["DAK, ++","DAK, +++","DAK, ++++"],
               "operator": "="
           }
       ],
       "dependentValue": true,
-      "dependent": "DAK, Pre-eclampsia",
+      "dependent": "DAK, Severe pre-eclampsia",
       "logic_key": 19
   },
+  {
+    "logics": [
+        {
+            "trigger": "DAK, Diastolic blood pressure",
+            "value": 90.0,
+            "operator": ">="
+        },
+        {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "value": 90.0,
+            "operator": ">="
+        },
+        {
+            "trigger": "DAK, Symptoms of severe pre-eclampsia",
+            "value": "DAK, None",
+            "operator": "OR"
+        },
+        {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": ["DAK, ++","DAK, +++","DAK, ++++"],
+            "operator": "OR"
+        }
+    ],
+    "dependentValue": true,
+    "dependent": "DAK, Severe pre-eclampsia",
+    "logic_key": 11
+},
+  
   {
       "logics": [
           {
@@ -396,8 +271,8 @@
           },
           {
               "trigger": "DAK, Urine dipstick result \u2013 protein",
-              "value": "DAK, +++",
-              "operator": "="
+              "orValues": ["DAK, +++","DAK, ++++"],
+              "operator": "OR"
           }
       ],
       "dependentValue": true,
@@ -425,72 +300,15 @@
           },
           {
               "trigger": "DAK, Urine dipstick result \u2013 protein",
-              "value": "DAK, +++",
-              "operator": "="
+              "orValues": ["DAK, +++","DAK, ++++"],
+              "operator": "OR"
           }
       ],
       "dependentValue": true,
       "dependent": "DAK, Pre-eclampsia",
       "logic_key": 22
   },
-  {
-      "logics": [
-          {
-              "trigger": "DAK, Systolic blood pressure",
-              "minValue": 140.0,
-              "maxValue": 160.0,
-              "operator": "between, <=, <"
-          },
-          {
-              "trigger": "DAK, Repeat systolic blood pressure",
-              "minValue": 140.0,
-              "maxValue": 160.0,
-              "operator": "between, <=, <"
-          },
-          {
-              "trigger": "DAK, Symptoms of severe pre-eclampsia",
-              "value": "DAK, No symptoms of severe pre-eclampsia",
-              "operator": "="
-          },
-          {
-              "trigger": "DAK, Urine dipstick result \u2013 protein",
-              "value": "DAK, ++++",
-              "operator": "="
-          }
-      ],
-      "dependentValue": true,
-      "dependent": "DAK, Pre-eclampsia",
-      "logic_key": 23
-  },
-  {
-      "logics": [
-          {
-              "trigger": "DAK, Diastolic blood pressure",
-              "minValue": 90.0,
-              "maxValue": 110.0,
-              "operator": "between, <=, <"
-          },
-          {
-              "trigger": "DAK, Repeat diastolic blood pressure",
-              "minValue": 90.0,
-              "maxValue": 110.0,
-              "operator": "between, <=, <"
-          },
-          {
-              "trigger": "DAK, Symptoms of severe pre-eclampsia",
-              "value": "DAK, No symptoms of severe pre-eclampsia",
-              "operator": "="
-          },
-          {
-              "trigger": "DAK, Urine dipstick result \u2013 protein",
-              "value": "DAK, ++++",
-              "operator": "="
-          }
-      ],
-      "dependentValue": true,
-      "dependent": "DAK, Pre-eclampsia",
-      "logic_key": 24
-  },
+
   {
       "logics": [
           {
@@ -505,8 +323,8 @@
           },
           {
               "trigger": "DAK, Urine dipstick result \u2013 protein",
-              "value": "DAK, +",
-              "operator": "="
+              "orValues": ["DAK, +","DAK, None"],
+              "operator": "OR"
           }
       ],
       "dependentValue": true,
@@ -527,8 +345,8 @@
           },
           {
               "trigger": "DAK, Urine dipstick result \u2013 protein",
-              "value": "DAK, +",
-              "operator": "="
+              "orValues": ["DAK, +","DAK, None"],
+              "operator": "OR"
           }
       ],
       "dependentValue": true,
@@ -2084,8 +1902,8 @@
           },
           {
               "trigger": "DAK, Urine dipstick result \u2013 protein",
-              "value": "DAK, +",
-              "operator": "="
+              "orValues": ["DAK, +","DAK, None"],
+              "operator": "OR"
           }
       ],
       "dependentValue": true,
@@ -2106,58 +1924,15 @@
           },
           {
               "trigger": "DAK, Urine dipstick result \u2013 protein",
-              "value": "DAK, +",
-              "operator": "="
+              "orValues": ["DAK, +","DAK, None"],
+              "operator": "OR"
           }
       ],
       "dependentValue": true,
       "dependent": "DAK, Severe hypertension",
       "logic_key": 118
   },
-  {
-      "logics": [
-          {
-              "trigger": "DAK, Systolic blood pressure",
-              "value": 160.0,
-              "operator": ">="
-          },
-          {
-              "trigger": "DAK, Repeat systolic blood pressure",
-              "value": 160.0,
-              "operator": ">="
-          },
-          {
-              "trigger": "DAK, Urine dipstick result \u2013 protein",
-              "value": "DAK, Negative",
-              "operator": "="
-          }
-      ],
-      "dependentValue": true,
-      "dependent": "DAK, Severe hypertension",
-      "logic_key": 119
-  },
-  {
-      "logics": [
-          {
-              "trigger": "DAK, Diastolic blood pressure",
-              "value": 110.0,
-              "operator": ">="
-          },
-          {
-              "trigger": "DAK, Repeat diastolic blood pressure",
-              "value": 110.0,
-              "operator": ">="
-          },
-          {
-              "trigger": "DAK, Urine dipstick result \u2013 protein",
-              "value": "DAK, Negative",
-              "operator": "="
-          }
-      ],
-      "dependentValue": true,
-      "dependent": "DAK, Severe hypertension",
-      "logic_key": 120
-  },
+ 
   {
       "logics": [
           {
@@ -2174,8 +1949,8 @@
           },
           {
               "trigger": "DAK, Urine dipstick result \u2013 protein",
-              "value": "DAK, +",
-              "operator": "="
+              "orValues": ["DAK, +","DAK, None"],
+              "operator": "OR"
           }
       ],
       "dependentValue": true,
@@ -2198,62 +1973,16 @@
           },
           {
               "trigger": "DAK, Urine dipstick result \u2013 protein",
-              "value": "DAK, +",
-              "operator": "="
+              "orValues": ["DAK, +","DAK, None"],
+              "operator": "OR"
           }
       ],
       "dependentValue": true,
       "dependent": "DAK, Chronic Hypertension",
       "logic_key": 122
   },
-  {
-      "logics": [
-          {
-              "trigger": "DAK, Systolic blood pressure",
-              "minValue": 140.0,
-              "maxValue": 160.0,
-              "operator": "between, <=, <"
-          },
-          {
-              "trigger": "DAK, Repeat systolic blood pressure",
-              "minValue": 140.0,
-              "maxValue": 160.0,
-              "operator": "between, <=, <"
-          },
-          {
-              "trigger": "DAK, Urine dipstick result \u2013 protein",
-              "value": "DAK, Negative",
-              "operator": "="
-          }
-      ],
-      "dependentValue": true,
-      "dependent": "DAK, Chronic Hypertension",
-      "logic_key": 123
-  },
-  {
-      "logics": [
-          {
-              "trigger": "DAK, Diastolic blood pressure",
-              "minValue": 90.0,
-              "maxValue": 110.0,
-              "operator": "between, <=, <"
-          },
-          {
-              "trigger": "DAK, Repeat diastolic blood pressure",
-              "minValue": 90.0,
-              "maxValue": 110.0,
-              "operator": "between, <=, <"
-          },
-          {
-              "trigger": "DAK, Urine dipstick result \u2013 protein",
-              "value": "DAK, Negative",
-              "operator": "="
-          }
-      ],
-      "dependentValue": true,
-      "dependent": "DAK, Chronic Hypertension",
-      "logic_key": 124
-  },
+
+
   {
       "logics": [
           {
