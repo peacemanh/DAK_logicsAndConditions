@@ -110,7 +110,7 @@
   {
       "logics": [
           {
-              "trigger": "DAK, Date of miscarriage or abortion FP ",
+              "trigger": "DAK, Date of miscarriage or abortion FP",
               "value": 28,
               "operator": "<="
           }
