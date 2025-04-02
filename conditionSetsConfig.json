@@ -6181,8 +6181,8 @@
   {
     "conditions": [
       {
-        "key": "DAK, Counselling conducted on personal hygiene and environmental sanitation",
-        "value": false,
+        "key": "DAK, Pregnancy confirmed",
+        "value": true,
         "operator": "="
       }
     ],
