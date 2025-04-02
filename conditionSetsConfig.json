@@ -3313,6 +3313,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on hypertension",
     "action": "Conduct hypertension counseling and Refer her for further evaluation and manegment",
     "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\ncounseling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available",
     "action_key": 228
@@ -3362,6 +3363,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on hypertension",
     "action": "Conduct hypertension counseling and Refer her for further evaluation and manegment",
     "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\ncounseling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 3 week or at next contact, refer to hospital or discuss case with the doctor, if available",
     "action_key": 230
@@ -3386,6 +3388,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on hypertension",
     "action": "Conduct hypertension counseling and Refer her for further evaluation and manegment",
     "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\ncounseling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 4 week or at next contact, refer to hospital or discuss case with the doctor, if available",
     "action_key": 231
@@ -3410,6 +3413,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on hypertension",
     "action": "Conduct hypertension counseling and Refer her for further evaluation and manegment",
     "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\ncounseling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 5 week or at next contact, refer to hospital or discuss case with the doctor, if available",
     "action_key": 232
