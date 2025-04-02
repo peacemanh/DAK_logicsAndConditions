@@ -5167,7 +5167,14 @@
         "key": "DAK, Pregnancy confirmed",
         "value": true,
         "operator": "="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 20,
+        "operator": ">="
       }
+
+
     ],
     "displayPoint": "DAK, Counselling on postpartum family planning conducted",
     "action": "Conduct counseling on postpartum family planning",
