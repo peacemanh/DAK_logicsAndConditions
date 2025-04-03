@@ -25,6 +25,8 @@
   "DAK, Normal cardiac exam result",
   "DAK, Normal breast exam result",
   "DAK, Normal abdominal exam result",
-  "DAK, Normal pelvic exam (visual) result"
+  "DAK, Normal pelvic exam (visual) result",
+  "DAK, No method"
+  
 
 ]
