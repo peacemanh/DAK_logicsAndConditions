@@ -9138,7 +9138,7 @@
     "action": "show",
     "dependent": "DAK, Other place of delivery",
     "logic_key": 666
-  }
+  },
   {
     "logics": [
       {

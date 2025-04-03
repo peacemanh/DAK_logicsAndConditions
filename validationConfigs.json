@@ -11,7 +11,7 @@
     "conceptName": "DAK, Height",
     "operator": "beyond, <, <",
     "minValue": 50,
-    "maxValue": 250,
+    "maxValue": 205,
     "type": "restrict",
     "message": "Height should be between 50 cm and 205 cm"
   },
