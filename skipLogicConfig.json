@@ -164,18 +164,7 @@
     "dependent": "DAK, Clinical enquiry for IPV",
     "logic_key": 11
   },
-  {
-    "logics": [
-      {
-        "trigger": "Minimum requirements for IPV assessment",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Types of IPV form",
-    "logic_key": 12
-  },
+
   {
     "logics": [
       {
@@ -1242,12 +1231,12 @@
     "logics": [
       {
         "trigger": "DAK, Presenting signs/conditions for IPV",
-        "value": "DAK, Other",
+        "value": "DAK, Injury – other (specify)",
         "operator": "="
       }
     ],
     "action": "show",
-    "dependent": "DAK, Any other presenting signs or symptoms indicative of violence (specify)",
+    "dependent": "DAK, Injury – other IPV",
     "logic_key": 99
   },
   {
@@ -1266,7 +1255,7 @@
     "logics": [
       {
         "trigger": "DAK, Types of IPV",
-        "value": "DAK, Other",
+        "value": "DAK, Violence by other family members",
         "operator": "="
       }
     ],
@@ -8091,18 +8080,7 @@
     "dependent": "DAK, Symptoms of severe pre-eclampsia",
     "logic_key": 589
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Types of IPV",
-        "value": "DAK, Other",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Other type of IPV",
-    "logic_key": 590
-  },
+
   {
     "logics": [
       {
@@ -8469,6 +8447,11 @@
     "logics": [
       {
         "trigger": "DAK, Has the women been subjected to gender Based violence especially IPV",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "Minimum requirements for IPV assessment",
         "value": true,
         "operator": "="
       }
@@ -9034,91 +9017,508 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Current medications",
-        "orValues": [
-          "DAK, Antiretrovirals (ARVs)",
-          "DAK, Oral pre-exposure prophylaxis (PrEP) for HIV"
-        ],
-        "operator": "OR"
+        "rules": [
+          {
+            "trigger": "DAK, Current medications",
+            "value": "DAK, Antiretrovirals (ARVs)",
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Partner HIV status (reported)",
+            "value": "DAK, HIV negative",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Existing chronic health conditions",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Partner HIV status (reported)",
+            "value": "DAK, HIV negative",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Current medications",
+            "value": "DAK, Oral pre-exposure prophylaxis (PrEP) for HIV",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Current medications",
+            "value": "DAK, Antiretrovirals (ARVs)",
+            "operator": "!="
+          },
+          {
+            "trigger": "DAK, Existing chronic health conditions",
+            "value": "DAK, HIV positive",
+            "operator": "!="
+          },
+          {
+            "trigger": "DAK, Partner HIV status (reported)",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
       }
     ],
     "action": "show",
-    "dependent": "DAK,Male condoms",
+    "conditionType": "deepAnalysis",
+    "dependent": "DAK, Male condoms",
     "logic_key": 661
   },
+ 
   {
     "logics": [
       {
-        "trigger": "DAK, Existing chronic health conditions",
-        "value": "DAK, HIV positive",
-        "operator": "="
-      },
-      {
-        "trigger": "Partner HIV status (reported)",
-        "value": "DAK, HIV negative",
+        "trigger": "DAK, Presenting signs/conditions for IPV",
+        "value": "DAK, Other presenting signs or symptoms indicative of violence (specify)",
         "operator": "="
       }
     ],
     "action": "show",
-    "dependent": "DAK,Male condoms",
-    "logic_key": 662
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Current medications",
-        "value": "DAK, Antiretrovirals (ARVs)",
-        "operator": "!="
-      },
-      {
-        "trigger": "DAK, Existing chronic health conditions",
-        "value": "DAK, HIV positive",
-        "operator": "!="
-      },
-      {
-        "trigger": "Partner HIV status (reported)",
-        "value": "DAK, HIV positive",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK,Male condoms",
+    "dependent": "DAK, Any other presenting signs or symptoms indicative of violence (specify)",
     "logic_key": 663
   },
   {
     "logics": [
       {
-        "trigger": "DAK, Past pregnancy history",
-        "value": "DAK, Pre-eclampsia",
-        "operator": "="
-      }
-    ],
-    "action": "hide",
-    "dependent": "DAK, Risk of pre-eclampsia",
-    "logic_key": 664
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Hepatitis B test result",
-        "value": "DAK, Hepatitis B negative",
+        "trigger": "DAK, Clinical enquiry for IPV",
+        "value": false,
         "operator": "="
       }
     ],
     "action": "show",
-    "dependent": "DAK, Hepatitis B Counselling",
+    "dependent": "DAK, Has the women been subjected to gender Based violence especially IPV",
+    "logic_key": 664
+  },
+
+  {
+    "logics": [
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "value": 140.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "value": 140.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Symptoms of severe pre-eclampsia",
+           "orValues": ["DAK, Severe headache","DAK, Epigastric pain","DAK, Dizziness","DAK, Visual disturbance","DAK, Vomiting"],
+          "operator": "OR"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "value": 90.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "value": 90.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Symptoms of severe pre-eclampsia",
+          "orValues": ["DAK, Severe headache","DAK, Epigastric pain","DAK, Dizziness","DAK, Visual disturbance","DAK, Vomiting"],
+          "operator": "OR"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "value": 160.0,
+            "operator": ">"
+        },
+        {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "value": 160.0,
+            "operator": ">"
+        },
+        {
+            "trigger": "DAK, Symptoms of severe pre-eclampsia",
+            "value": "DAK, No symptoms of severe pre-eclampsia",
+            "operator": "="
+        },
+        {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": ["DAK, ++","DAK, +++","DAK, ++++"],
+            "operator": "="
+        }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "value": 90.0,
+            "operator": ">="
+        },
+        {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "value": 90.0,
+            "operator": ">="
+        },
+        {
+            "trigger": "DAK, Symptoms of severe pre-eclampsia",
+            "orValues": ["DAK, No symptoms of severe pre-eclampsia"],
+            "operator": "OR"
+        },
+        {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": ["DAK, ++","DAK, +++","DAK, ++++"],
+            "operator": "OR"
+        }
+        ]
+      }
+
+    ],
+    "action": "show",
+    "conditionType": "deepAnalysis",
+    "dependent": "DAK, Severe pre-eclampsia",
     "logic_key": 665
   },
   {
     "logics": [
       {
-        "trigger": "DAK, Hepatitis B test result",
-        "value": "DAK, Hepatitis B negative",
+        "rules": [
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+        },
+        {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+        },
+        {
+            "trigger": "DAK, Symptoms of severe pre-eclampsia",
+            "value": "DAK, No symptoms of severe pre-eclampsia",
+            "operator": "="
+        },
+        {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "value": "DAK, ++",
+            "operator": "="
+        }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+        },
+        {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+        },
+        {
+            "trigger": "DAK, Symptoms of severe pre-eclampsia",
+            "value": "DAK, No symptoms of severe pre-eclampsia",
+            "operator": "="
+        },
+        {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": ["DAK, +++","DAK, ++++"],
+            "operator": "OR"
+        }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+        },
+        {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+        },
+        {
+            "trigger": "DAK, Symptoms of severe pre-eclampsia",
+            "value": "DAK, No symptoms of severe pre-eclampsia",
+            "operator": "="
+        },
+        {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": ["DAK, +++","DAK, ++++"],
+            "operator": "OR"
+        }
+        ]
+      }
+    ],
+    "action": "show",
+    "conditionType": "deepAnalysis",
+    "dependent": "DAK, Pre-eclampsia",
+    "logic_key": 666
+  },
+  {
+    "logics": [
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "value": 160.0,
+            "operator": ">="
+        },
+        {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "value": 160.0,
+            "operator": ">="
+        },
+        {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": ["DAK, +","DAK, None"],
+            "operator": "OR"
+        }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "value": 110.0,
+            "operator": ">="
+        },
+        {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "value": 110.0,
+            "operator": ">="
+        },
+        {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": ["DAK, +","DAK, None"],
+            "operator": "OR"
+        }
+        ]
+      }
+     
+    ],
+    "action": "show",
+    "conditionType": "deepAnalysis",
+    "dependent": "DAK, Severe hypertension",
+    "logic_key": 667
+  },
+  {
+    "logics": [
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Existing chronic health conditions",
+            "orValues": ["DAK, Autoimmune disease","DAK, Diabetes","DAK, Chronic Hypertensions","DAK, Renal disease"],
+            "operator": "OR"
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 12.0,
+            "operator": ">="
+        }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Past pregnancy history",
+            "orValues": ["DAK, Eclampsia","DAK, Convulsions"],
+            "operator": "OR"
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 12.0,
+            "operator": ">="
+        }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Number of fetuses",
+            "value": 2.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 12.0,
+            "operator": ">="
+        }
+        ]
+      }
+     
+    ],
+    "action": "show",
+    "conditionType": "deepAnalysis",
+    "dependent": "DAK, Risk of pre-eclampsia",
+    "logic_key": 668
+  },
+  {
+    "logics": [
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Existing chronic health conditions",
+            "orValues": ["DAK, Autoimmune disease","DAK, Diabetes","DAK, Chronic Hypertensions","DAK, Renal disease"],
+            "operator": "OR"
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 12.0,
+            "operator": ">="
+        }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Past pregnancy history",
+            "orValues": ["DAK, Eclampsia","DAK, Convulsions"],
+            "operator": "OR"
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 12.0,
+            "operator": ">="
+        }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Number of fetuses",
+            "value": 2.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 12.0,
+            "operator": ">="
+        }
+        ]
+      }
+     
+    ],
+    "action": "show",
+    "conditionType": "deepAnalysis",
+    "dependent": "DAK, Risk of pre-eclampsia",
+    "logic_key": 669
+  },
+  {
+    "logics": [
+      {
+        "rules": [
+          {
+            "trigger": "DAK, BMI",
+            "value": 30.0,
+            "operator": ">="
+        },
+        {
+            "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+            "value": "DAK, Negative",
+            "operator": "="
+        },
+        {
+            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+            "value": "DAK, Negative",
+            "operator": "="
+        }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Past pregnancy history",
+            "orValues": ["DAK, Gestatinal diabetes mellitus","DAK, Macrosomia"],
+            "operator": "OR"
+        },
+        {
+            "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+            "value": "DAK, Negative",
+            "operator": "="
+        },
+        {
+            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+            "value": "DAK, Negative",
+            "operator": "="
+        }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 glucose",
+            "orValues": ["DAK, ++","DAK, +++","DAK, ++++"],
+            "operator": "OR"
+        },
+        {
+            "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+            "value": "DAK, Negative",
+            "operator": "="
+        },
+        {
+            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+            "value": "DAK, Negative",
+            "operator": "="
+        }
+        ]
+      }
+     
+    ],
+    "action": "show",
+    "conditionType": "deepAnalysis",
+    "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
+    "logic_key": 670
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy confirmed",
+        "value": true,
         "operator": "="
       }
     ],
     "action": "show",
-    "dependent": "DAK, Counselling conducted on Hep B negative",
-    "logic_key": 666
-  }
+    "dependent": "DAK, Reason for coming to facility",
+    "logic_key":671
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy confirmed",
+        "value": true,
+        "operator": "="
+      }
+    ]
+
 ]

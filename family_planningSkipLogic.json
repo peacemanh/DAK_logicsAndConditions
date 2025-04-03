@@ -802,10 +802,11 @@
     "logics": [
       {
         "trigger": "DAK, Visit Status",
-        "value": "DAK, Repeat",
-        "trigger": "DAK, Visit Status",
-        "value": "DAK, Repeat",
-        "operator": "="
+        "orValues": [
+          "DAK, Repeat",
+          "DAK, New"
+        ],
+        "operator": "OR"
       }
     ],
     "action": "show",
@@ -4415,5 +4416,33 @@
     "action": "show",
     "dependent": "DAK, Reason for Method change",
     "logic_key": 330
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy test sensitivity",
+        "value": true,
+        "operator": "="
+      }
+
+    ],
+
+    "action": "show",
+    "dependent": "DAK, Pregnancy test sensitivity = 25 mIU/ml",
+    "logic_key": 331
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy test sensitivity",
+        "value": true,
+        "operator": "="
+      }
+
+    ],
+
+    "action": "show",
+    "dependent": "DAK, Pregnancy test sensitivity = 50 mIU/ml",
+    "logic_key": 332
   }
 ]
