@@ -9089,8 +9089,56 @@
     ],
     "action": "show",
     "dependent": "DAK, Any other presenting signs or symptoms indicative of violence (specify)",
+    "logic_key": 662
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Past pregnancy history",
+        "value": "DAK, Pre-eclampsia",
+        "operator": "="
+      }
+    ],
+    "action": "hide",
+    "dependent": "DAK, Risk of pre-eclampsia",
     "logic_key": 663
   },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Hepatitis B test result",
+        "value": "DAK, Hepatitis B negative",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Hepatitis B Counselling",
+    "logic_key": 664
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Hepatitis B test result",
+        "value": "DAK, Hepatitis B negative",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on Hep B negative",
+    "logic_key": 665
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Place of delivery",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other place of delivery",
+    "logic_key": 666
+  }
   {
     "logics": [
       {
@@ -9101,7 +9149,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Has the women been subjected to gender Based violence especially IPV",
-    "logic_key": 664
+    "logic_key": 667
   },
 
   {
@@ -9197,7 +9245,7 @@
     "action": "show",
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Severe pre-eclampsia",
-    "logic_key": 665
+    "logic_key": 668
   },
   {
     "logics": [
@@ -9283,7 +9331,7 @@
     "action": "show",
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Pre-eclampsia",
-    "logic_key": 666
+    "logic_key": 669
   },
   {
     "logics": [
@@ -9330,7 +9378,7 @@
     "action": "show",
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Severe hypertension",
-    "logic_key": 667
+    "logic_key": 670
   },
   {
     "logics": [
@@ -9381,7 +9429,7 @@
     "action": "show",
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Risk of pre-eclampsia",
-    "logic_key": 668
+    "logic_key": 671
   },
   {
     "logics": [
@@ -9432,7 +9480,7 @@
     "action": "show",
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Risk of pre-eclampsia",
-    "logic_key": 669
+    "logic_key": 672
   },
   {
     "logics": [
@@ -9498,7 +9546,59 @@
     "action": "show",
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-    "logic_key": 670
+    "logic_key": 673
+  },
+  {
+    "logics": [
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+        },
+        {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+        },
+        {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": ["DAK, +","DAK, None"],
+            "operator": "OR"
+        }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+        },
+        {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+        },
+        {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": ["DAK, +","DAK, None"],
+            "operator": "OR"
+        }
+        ]
+      }
+      
+     
+    ],
+    "action": "show",
+    "conditionType": "deepAnalysis",
+    "dependent": "DAK, Chronic Hypertension",
+    "logic_key": 674
   },
   {
     "logics": [
@@ -9507,10 +9607,24 @@
         "value": true,
         "operator": "="
       }
+
     ],
     "action": "show",
-    "dependent": "DAK, Reason for coming to facility",
-    "logic_key":671
+  "dependent": "DAK, Danger signs",
+  "logic_key":675
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy confirmed",
+        "value": true,
+        "operator": "="
+      }
+
+    ],
+    "action": "show",
+  "dependent": "DAK, Reason for coming to facility",
+  "logic_key":676
   }
 
 
