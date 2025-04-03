@@ -2,7 +2,7 @@ import json
 
 # Load the configuration from the specified JSON file
 
-with open(r'C:\Users\ZTE\Desktop\CDHi\Dak\DAK_logicsAndConditions\fp_calcWithoutFormulaConfigs.json', 'r') as file:
+with open(r'C:\Users\hp\Desktop\DAK_logicsAndConditions\calculationsWithoutFormulaConfig.json', 'r') as file:
     config = json.load(file)
 
 # Adjust the 'action_key' values sequentially, starting from 0

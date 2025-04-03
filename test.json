@@ -9078,19 +9078,6 @@
     "dependent": "DAK,Male condoms",
     "logic_key": 661
   },
- 
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Presenting signs/conditions for IPV",
-        "value": "DAK, Other presenting signs or symptoms indicative of violence (specify)",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Any other presenting signs or symptoms indicative of violence (specify)",
-    "logic_key": 662
-  },
   {
     "logics": [
       {
@@ -9101,18 +9088,6 @@
     ],
     "action": "hide",
     "dependent": "DAK, Risk of pre-eclampsia",
-    "logic_key": 663
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Hepatitis B test result",
-        "value": "DAK, Hepatitis B negative",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Hepatitis B Counselling",
     "logic_key": 664
   },
   {
@@ -9124,21 +9099,34 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Counselling conducted on Hep B negative",
+    "dependent": "DAK, Hepatitis B Counselling",
     "logic_key": 665
   },
   {
     "logics": [
       {
-        "trigger": "DAK, Place of delivery",
-        "value": "DAK, Other",
+        "trigger": "DAK, Hepatitis B test result",
+        "value": "DAK, Hepatitis B negative",
         "operator": "="
       }
     ],
     "action": "show",
-    "dependent": "DAK, Other place of delivery",
+    "dependent": "DAK, Counselling conducted on Hep B negative",
     "logic_key": 666
   }
+ 
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Presenting signs/conditions for IPV",
+        "value": "DAK, Other presenting signs or symptoms indicative of violence (specify)",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Any other presenting signs or symptoms indicative of violence (specify)",
+    "logic_key": 667
+  },
   {
     "logics": [
       {
@@ -9149,7 +9137,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Has the women been subjected to gender Based violence especially IPV",
-    "logic_key": 667
+    "logic_key": 668
   },
 
   {
@@ -9245,7 +9233,7 @@
     "action": "show",
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Severe pre-eclampsia",
-    "logic_key": 668
+    "logic_key": 669
   },
   {
     "logics": [
@@ -9331,7 +9319,7 @@
     "action": "show",
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Pre-eclampsia",
-    "logic_key": 669
+    "logic_key": 670
   },
   {
     "logics": [
@@ -9378,57 +9366,6 @@
     "action": "show",
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Severe hypertension",
-    "logic_key": 670
-  },
-  {
-    "logics": [
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Existing chronic health conditions",
-            "orValues": ["DAK, Autoimmune disease","DAK, Diabetes","DAK, Chronic Hypertensions","DAK, Renal disease"],
-            "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 12.0,
-            "operator": ">="
-        }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Past pregnancy history",
-            "orValues": ["DAK, Eclampsia","DAK, Convulsions"],
-            "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 12.0,
-            "operator": ">="
-        }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Number of fetuses",
-            "value": 2.0,
-            "operator": ">="
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 12.0,
-            "operator": ">="
-        }
-        ]
-      }
-     
-    ],
-    "action": "show",
-    "conditionType": "deepAnalysis",
-    "dependent": "DAK, Risk of pre-eclampsia",
     "logic_key": 671
   },
   {
@@ -9481,6 +9418,57 @@
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Risk of pre-eclampsia",
     "logic_key": 672
+  },
+  {
+    "logics": [
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Existing chronic health conditions",
+            "orValues": ["DAK, Autoimmune disease","DAK, Diabetes","DAK, Chronic Hypertensions","DAK, Renal disease"],
+            "operator": "OR"
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 12.0,
+            "operator": ">="
+        }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Past pregnancy history",
+            "orValues": ["DAK, Eclampsia","DAK, Convulsions"],
+            "operator": "OR"
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 12.0,
+            "operator": ">="
+        }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Number of fetuses",
+            "value": 2.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 12.0,
+            "operator": ">="
+        }
+        ]
+      }
+     
+    ],
+    "action": "show",
+    "conditionType": "deepAnalysis",
+    "dependent": "DAK, Risk of pre-eclampsia",
+    "logic_key": 673
   },
   {
     "logics": [
@@ -9546,8 +9534,9 @@
     "action": "show",
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-    "logic_key": 673
+    "logic_key": 674
   },
+
   {
     "logics": [
       {
@@ -9598,7 +9587,7 @@
     "action": "show",
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Chronic Hypertension",
-    "logic_key": 674
+    "logic_key": 675
   },
   {
     "logics": [
@@ -9611,8 +9600,24 @@
     ],
     "action": "show",
   "dependent": "DAK, Danger signs",
-  "logic_key":675
-  }
+  "logic_key":672
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy confirmed",
+        "value": true,
+        "operator": "="
+      }
 
+    ],
+    "action": "show",
+  "dependent": "DAK, Reason for coming to facility",
+  "logic_key":676
+  }
+    
+ 
+  
+  
 
 ]
