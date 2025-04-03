@@ -9511,14 +9511,7 @@
     "action": "show",
     "dependent": "DAK, Reason for coming to facility",
     "logic_key":671
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Pregnancy confirmed",
-        "value": true,
-        "operator": "="
-      }
-    ]
+  }
+
 
 ]
