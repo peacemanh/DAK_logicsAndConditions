@@ -88,7 +88,8 @@
           "DAK, History of hypertension during pregnancy, and blood pressure can be evaluated",
           "DAK, Vaginal bleeding patterns",
           "DAK, Reproductive tract infections and disorders",
-          "DAK, Vaginitis"
+          "DAK, Vaginitis",
+          "DAK, New for family planning service"
         ]
       }
     ],
@@ -896,6 +897,11 @@
         "trigger": "DAK, Ever had sex - Reported",
         "value": true,
         "operator": "="
+      },
+      {
+        "trigger": "DAK, Sexually active",
+        "value": true,
+        "operator": "="
       }
     ],
     "action": "show",
@@ -996,18 +1002,7 @@
     "dependent": "DAK, Breastfeeding",
     "logic_key": 69
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Never used contraception",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "hide",
-    "dependent": "DAK, FP History Section",
-    "logic_key": 70
-  },
+  
   {
     "logics": [
       {
@@ -1738,18 +1733,7 @@
     "dependent": "DAK, Other reason for no contra(specify)",
     "logic_key": 110
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Never used contraception",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "hide",
-    "dependent": "DAK, Methods previously used",
-    "logic_key": 111
-  },
+
   {
     "logics": [
       {
@@ -3402,18 +3386,7 @@
     "dependent": "DAK, Time Postpartum",
     "logic_key": 242
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Never used contraception",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "hide",
-    "dependent": "DAK, Method in use",
-    "logic_key": 243
-  },
+
   {
     "logics": [
       {
@@ -4444,5 +4417,60 @@
     "action": "show",
     "dependent": "DAK, Pregnancy test sensitivity = 50 mIU/ml",
     "logic_key": 332
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Never used contraception",
+        "value": false,
+        "operator": "="
+      }
+      
+    ],
+    "action": "show",
+    "dependent": "DAK, Method in use",
+    "logic_key": 333
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Never used contraception",
+        "value": false,
+        "operator": "="
+      }
+      
+    ],
+    "action": "show",
+    "dependent": "DAK, Methods previously used",
+    "logic_key": 334
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Never used contraception",
+        "value": false,
+        "operator": "="
+      }
+      
+    ],
+    "action": "show",
+    "dependent": "DAK, FP History Section",
+    "logic_key": 335
+  },
+
+
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Visit Status",
+        "value": "DAK, Repeat",
+        "operator": "="
+      }
+      
+    ],
+    "action": "hide",
+    "parent":"DAK, Reason for follow-up",
+    "dependent": "DAK, New for family planning service",
+    "logic_key": 336
   }
 ]

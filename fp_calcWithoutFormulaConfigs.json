@@ -25011,5 +25011,17 @@
       "logic_key": 1196,
       "dependentValue": "DAK, HIV-inconclusive",
       "dependent": "DAK, HIV status"
-  }
+  },
+  {
+    "logics": [
+        {
+            "trigger": "DAK, Days since start of last normal menses",
+            "value": 7,
+            "operator": ">"
+        }
+    ],
+    "logic_key": 1184,
+    "dependentValue": false,
+    "dependent": "DAK, Days since start of last normal menses lessthan 7 days"
+}
 ]
