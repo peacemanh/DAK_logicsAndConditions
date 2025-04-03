@@ -9519,10 +9519,6 @@
         "value": true,
         "operator": "="
       }
-    ],
-    "action": "show",
-    "dependent": "DAK, Danger signs",
-    "logic_key":672
-  }
+    ]
 
 ]
