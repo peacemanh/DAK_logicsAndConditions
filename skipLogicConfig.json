@@ -9612,6 +9612,19 @@
     "action": "show",
   "dependent": "DAK, Danger signs",
   "logic_key":675
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy confirmed",
+        "value": true,
+        "operator": "="
+      }
+
+    ],
+    "action": "show",
+  "dependent": "DAK, Reason for coming to facility",
+  "logic_key":676
   }
 
 
