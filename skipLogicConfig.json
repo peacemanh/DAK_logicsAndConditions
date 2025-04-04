@@ -2996,6 +2996,11 @@
         "trigger": "DAK, Amount of daily aspirin prescribed until delivery",
         "value": 1,
         "operator": ">="
+      },
+      {
+        "trigger": "DAK, Risk of pre-eclampsia",
+        "value": true,
+        "operator": "="
       }
     ],
     "action": "hide",
@@ -3433,25 +3438,57 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Systolic blood pressure",
-        "value": 140,
-        "operator": ">="
+        "rules": [
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "value": 140,
+            "operator": ">="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "value": 90,
+            "operator": ">="
+          }
+        ]
       }
+      
+     
     ],
     "action": "show",
-    "dependent": "DAK, Repeat systolic blood pressure",
+    "conditionType": "deepAnalysis",
+    "dependent":"DAK, Repeat systolic blood pressure",
     "logic_key": 282
   },
   {
     "logics": [
       {
-        "trigger": "DAK, Diastolic blood pressure",
-        "value": 90,
-        "operator": ">="
+        "rules": [
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "value": 140,
+            "operator": ">="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "value": 90,
+            "operator": ">="
+          }
+        ]
       }
+      
+     
     ],
     "action": "show",
-    "dependent": "DAK, Repeat diastolic blood pressure",
+    "conditionType": "deepAnalysis",
+    "dependent":"DAK, Repeat diastolic blood pressure",
     "logic_key": 283
   },
   {
@@ -4148,14 +4185,7 @@
         "trigger": "DAK, Past pregnancy history",
         "value": "DAK, Pre-eclampsia",
         "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Pre-eclampsia risk counselling provided",
-    "logic_key": 336
-  },
-  {
-    "logics": [
+      },
       {
         "trigger": "DAK, Number of fetuses",
         "value": 2.0,
@@ -4164,8 +4194,9 @@
     ],
     "action": "show",
     "dependent": "DAK, Pre-eclampsia risk counselling provided",
-    "logic_key": 337
+    "logic_key": 336
   },
+
   {
     "logics": [
       {
@@ -9091,18 +9122,7 @@
     "dependent": "DAK, Any other presenting signs or symptoms indicative of violence (specify)",
     "logic_key": 662
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Past pregnancy history",
-        "value": "DAK, Pre-eclampsia",
-        "operator": "="
-      }
-    ],
-    "action": "hide",
-    "dependent": "DAK, Risk of pre-eclampsia",
-    "logic_key": 663
-  },
+
   {
     "logics": [
       {
@@ -9625,7 +9645,45 @@
     "action": "show",
   "dependent": "DAK, Reason for coming to facility",
   "logic_key":676
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 14,
+        "operator":">="
+      }
+
+    ],
+    "action": "show",
+  "dependent": "DAK, Calcium supplementation",
+  "logic_key":677
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Past pregnancy history",
+        "value": "DAK, Pre-eclampsia",
+        "operator": "!="
+      }
+    ],
+    "action": "show",
+    "dependent":"DAK, Pre-eclampsia risk",
+    "logic_key": 678
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Risk of pre-eclampsia",
+        "value": true,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of daily aspirin prescribed until delivery",
+    "logic_key": 246
   }
+ 
 
 
 ]
