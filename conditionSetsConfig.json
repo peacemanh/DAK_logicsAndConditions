@@ -5171,7 +5171,14 @@
         "key": "DAK, Pregnancy confirmed",
         "value": true,
         "operator": "="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 20,
+        "operator": ">="
       }
+
+
     ],
     "displayPoint": "DAK, Counselling on postpartum family planning conducted",
     "action": "Conduct counseling on postpartum family planning",
@@ -6185,11 +6192,13 @@
   {
     "conditions": [
       {
-        "key": "DAK, Counselling conducted on personal hygiene and environmental sanitation",
-        "value": false,
+        "key": "DAK, Pregnancy confirmed",
+        "value": true,
         "operator": "="
       }
+
     ],
+    "displayPoint": "DAK, Counselling conducted on personal hygiene and environmental sanitation",
     "action": "Conduct counselling on hygiene",
     "annotation": "Handwashing with soap is the most important hygiene action she can take, especially before preparing food and after going to the toilet. A pregnant woman should wash her body regularly with clean water. Moreover, regular cleaning of the teeth with a dental stick or a toothbrush and toothpaste is important for dental hygiene",
     "action_key": 389
