@@ -897,11 +897,6 @@
         "trigger": "DAK, Ever had sex - Reported",
         "value": true,
         "operator": "="
-      },
-      {
-        "trigger": "DAK, Sexually active",
-        "value": true,
-        "operator": "="
       }
     ],
     "action": "show",
@@ -4472,5 +4467,19 @@
     "parent":"DAK, Reason for follow-up",
     "dependent": "DAK, New for family planning service",
     "logic_key": 336
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Wanting to get pregnant",
+        "value": true,
+        "operator": "="
+      }
+
+    ],
+
+    "action": "hide",
+    "dependent": "DAK, Have a method in mind",
+    "logic_key": 333
   }
 ]
