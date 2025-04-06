@@ -3,27 +3,19 @@
         "conceptName": "DAK, Height FP",
         "operator": "beyond, <, <",
         "minValue": 50,
-        "maxValue": 250,
+        "maxValue": 205,
         "type": "restrict",
-        "message": "Height should be between 50 cm and 250 cm"
+        "message": "Height should be between 50 cm and 205 cm"
     },
     {
         "conceptName": "DAK, Weight FP",
         "operator": "beyond, <, <",
-        "minValue": 30,
-        "maxValue": 400,
+        "minValue": 40,
+        "maxValue": 150,
         "type": "restrict",
-        "message": "Weight should be between 30 Kg and 400 Kg"
+        "message": "Weight should be between 40 Kg and 150 Kg"
     },
     {
-        "conceptName": "DAK, BMI",
-        "operator": "beyond, <, <",
-        "minValue": 19,
-        "maxValue": 25,
-        "type": "optional",
-        "message": "BMI should be between 19 and 25"
-    },
-  {
     "conceptName": "DAK, Systolic blood pressure",
     "operator": "beyond, <=, <=",
     "minValue": 60,
