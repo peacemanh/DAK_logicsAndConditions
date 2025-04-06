@@ -7893,5 +7893,18 @@
     "action": "Provide treatment for acute malnutrition",
     "annotation": "There is acute malnutrition and is an indication for supplementation with ready-to-use foods (e.g., Plumpy’Nut, corn-soy blend [CSB++]) until the measurement is in the normal range",
     "action_key": 478
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Pregnancy confirmed",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on healthy eating and keeping physically active",
+    "action": "Conduct counseling on increasing daily energy and  protien intake",
+    "annotation": "Counseling on increasing daily energy and protein intake to reduce the risk of low-birth-weight neonates Protein Sources like Beef, fish, chicken, eggs, milk, cheese, beans and peas, nuts, seeds, etcEnergy sources like Grains (wheat, sorghum, corn, barley), dairy products (milk, cheese,butter), fruits, poultry (egg, chicken), fats and oils, sugar, honey, etc.Promote physical exercise to prevent maternal overweight and obesity during pregnancy.",
+    "action_key": 479
   }
 ]
