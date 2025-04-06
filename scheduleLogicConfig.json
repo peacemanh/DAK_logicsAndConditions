@@ -64,15 +64,6 @@
         "displayPoint": "DAK, ANC Contact Schedule Needed"
     },
     {
-        "triggerEvent": "DAK, Tetanus Diphtheria Vaccine (TD)",
-        "triggerDate": "contact date",
-        "value": "!DAK, Fully immunized",
-        "sceduleDays": "",
-        "service": "TDV 1",
-        "type": "special",
-        "displayPoint": "DAK, Tetanus-diphtheria (TD) 1 immunization provided"
-    },
-    {
         "triggerEvent": "DAK, Tetanus-diphtheria (TD) 1 immunization provided",
         "triggerDate": "DAK, Date Tetanus-diphtheria (TD) 1 immunization was received",
         "value": true,

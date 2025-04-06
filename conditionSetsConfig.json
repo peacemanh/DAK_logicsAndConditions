@@ -7912,5 +7912,17 @@
     "action": "Conduct counseling on increasing daily energy and  protien intake",
     "annotation": "Counseling on increasing daily energy and protein intake to reduce the risk of low-birth-weight neonates Protein Sources like Beef, fish, chicken, eggs, milk, cheese, beans and peas, nuts, seeds, etcEnergy sources like Grains (wheat, sorghum, corn, barley), dairy products (milk, cheese,butter), fruits, poultry (egg, chicken), fats and oils, sugar, honey, etc.Promote physical exercise to prevent maternal overweight and obesity during pregnancy.",
     "action_key": 479
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Tetanus Diphtheria Vaccine (TD)",
+        "orValues": ["DAK, Unknown", "DAK, No doses", "DAK, Under-immunized"],
+        "operator": "OR"
+      }
+    ],
+    "action": "Provide TDV-1",
+    "annotation": "TDV 1 should be provided during the first contact if the woman has not previously had any TDV and/or if her immunization status is unknown",
+    "action_key": 480
   }
 ]
