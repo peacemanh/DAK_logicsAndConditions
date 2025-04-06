@@ -16,14 +16,6 @@
         "message": "Weight should be between 40 Kg and 150 Kg"
     },
     {
-        "conceptName": "DAK, BMI",
-        "operator": "beyond, <, <",
-        "minValue": 19,
-        "maxValue": 25,
-        "type": "optional",
-        "message": "BMI should be between 19 and 25"
-    },
-  {
     "conceptName": "DAK, Systolic blood pressure",
     "operator": "beyond, <=, <=",
     "minValue": 60,

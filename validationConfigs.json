@@ -31,15 +31,7 @@
     "type": "restrict",
     "message": "Weight should be between 40 Kg and 150 Kg"
   },
-  {
-    "conceptName": "DAK, BMI",
-    "operator": "beyond, <, <",
-    "minValue": 19,
-    "maxValue": 25,
-    "type": "optional",
-    "message": "BMI should be between 19 and 25"
-  },
-  {
+ {
     "conceptName": "DAK, Number of pregnancies (gravida)",
     "operator": "beyond, <=, <=",
     "minValue": 1,
