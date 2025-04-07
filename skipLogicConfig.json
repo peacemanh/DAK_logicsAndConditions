@@ -3387,8 +3387,9 @@
         "rules": [
           {
             "trigger": "DAK, Systolic blood pressure",
-            "value": 140,
-            "operator": ">="
+            "minValue": 60,
+            "maxValue": 140,
+            "operator": "beyond, <=, <="
           }
         ]
       },
@@ -3396,8 +3397,9 @@
         "rules": [
           {
             "trigger": "DAK, Diastolic blood pressure",
-            "value": 90,
-            "operator": ">="
+            "minValue": 60,
+            "maxValue": 90,
+           "operator": "beyond, <=, <="
           }
         ]
       }
@@ -3413,8 +3415,9 @@
         "rules": [
           {
             "trigger": "DAK, Systolic blood pressure",
-            "value": 140,
-            "operator": ">="
+            "minValue": 60,
+            "maxValue": 140,
+            "operator": "beyond, <=, <="
           }
         ]
       },
@@ -3422,8 +3425,9 @@
         "rules": [
           {
             "trigger": "DAK, Diastolic blood pressure",
-            "value": 90,
-            "operator": ">="
+            "minValue": 60,
+            "maxValue": 90,
+           "operator": "beyond, <=, <="
           }
         ]
       }
@@ -8594,118 +8598,7 @@
     "dependent": "DAK, Diabetes risk",
     "logic_key": 678
   },
-  {
-    "logics": [
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Blood haemoglobin test result",
-            "value": 11.0,
-            "operator": "<"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 12,
-            "operator": "<="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Blood haemoglobin test result",
-            "value": 11.0,
-            "operator": "<"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 28,
-            "operator": ">="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Blood haemoglobin test result",
-            "value": 11.0,
-            "operator": "<"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 28,
-            "operator": ">="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Blood haemoglobin test result",
-            "value": 10.5,
-            "operator": "<"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "minValue": 13.0,
-            "maxValue": 27.0,
-            "operator": "between, <=, <="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Blood haemoglobin test conducted",
-            "value": false,
-            "operator": "="
-          },
-          {
-            "trigger": "DAK, Pallor",
-            "value": true,
-            "operator": "="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Blood haemoglobin test result",
-            "value": 11.0,
-            "operator": ">="
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 12.0,
-            "operator": "<="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Blood haemoglobin test result",
-            "value": 11.0,
-            "operator": ">="
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 12.0,
-            "operator": "<="
-          },
-          {
-            "trigger": "DAK, Has side-effects from iron and folic acid supplements",
-            "value": false,
-            "operator": "="
-          }
-        ]
-      }
-    ],
-    "action": "show",
-    "conditionType": "deepAnalysis",
-    "dependent": "DAK, Amount of iron prescribed",
-    "logic_key": 679
-  },
+
   {
     "logics": [
       {
