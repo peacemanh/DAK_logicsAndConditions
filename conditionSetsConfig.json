@@ -1154,7 +1154,7 @@
       {
         "key": "DAK, Systolic blood pressure",
         "value": 140.0,
-        "operator": ">="
+        "operator": ">"
       }
     ],
     "action": "Measure BP again after 10\u201315 minutes rest",
@@ -1166,7 +1166,7 @@
       {
         "key": "DAK, Diastolic blood pressure",
         "value": 90.0,
-        "operator": ">="
+        "operator": ">"
       }
     ],
     "action": "Measure BP again after 10\u201315 minutes rest",
@@ -6515,24 +6515,7 @@
     "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct counseling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
     "action_key": 414
   },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Blood haemoglobin test result",
-        "value": 11.0,
-        "operator": "<"
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 28.0,
-        "operator": ">="
-      }
-    ],
-    "displayPoint": "DAK, Amount of daily dose of folic acid prescribed",
-    "action": "Amount of daily dose of folic acid prescribed= 0.4mg",
-    "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct counseling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
-    "action_key": 415
-  },
+  
   {
     "conditions": [
       {
@@ -6569,24 +6552,7 @@
     "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct counseling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
     "action_key": 417
   },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Blood haemoglobin test result",
-        "value": 11.0,
-        "operator": "<"
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 28.0,
-        "operator": ">="
-      }
-    ],
-    "displayPoint": "DAK, Amount of daily dose of folic acid prescribed",
-    "action": "Amount of daily dose of folic acid prescribed= 0.4mg",
-    "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct counseling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
-    "action_key": 418
-  },
+  
   {
     "conditions": [
       {
