@@ -6861,18 +6861,7 @@
     "action": "hide",
     "dependent": "DAK, Ultrasound done"
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Gestational age exist",
-        "value": 0,
-        "operator": ">"
-      }
-    ],
-    "logic_key": 585,
-    "action": "hide",
-    "dependent": "DAK, Ultrasound date"
-  },
+ 
   {
     "logics": [
       {
