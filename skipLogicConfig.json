@@ -4125,23 +4125,7 @@
     "dependent": "DAK, Blood haemoglobin test ordered",
     "logic_key": 335
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Past pregnancy history",
-        "value": "DAK, Pre-eclampsia",
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Number of fetuses",
-        "value": 2.0,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Pre-eclampsia risk counselling provided",
-    "logic_key": 336
-  },
+  
   {
     "logics": [
       {
