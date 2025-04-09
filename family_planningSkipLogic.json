@@ -4458,12 +4458,12 @@
     "logics": [
       {
         "trigger": "DAK, Visit Status",
-        "value": "DAK, Repeat",
+        "value": "DAK, New",
         "operator": "="
       }
       
     ],
-    "action": "hide",
+    "action": "show",
     "parent":"DAK, Reason for follow-up",
     "dependent": "DAK, New for family planning service",
     "logic_key": 336
