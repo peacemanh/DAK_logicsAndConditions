@@ -3387,9 +3387,9 @@
         "rules": [
           {
             "trigger": "DAK, Systolic blood pressure",
-            "minValue": 60,
-            "maxValue": 140,
-            "operator": "beyond, <=, <="
+            "minValue": 140,
+            "maxValue": 160,
+            "operator": "between, <=, <"
           }
         ]
       },
@@ -3397,9 +3397,9 @@
         "rules": [
           {
             "trigger": "DAK, Diastolic blood pressure",
-            "minValue": 60,
-            "maxValue": 90,
-           "operator": "beyond, <=, <="
+            "minValue": 90,
+            "maxValue": 110,
+           "operator": "between, <=, <"
           }
         ]
       }
@@ -3415,9 +3415,9 @@
         "rules": [
           {
             "trigger": "DAK, Systolic blood pressure",
-            "minValue": 60,
-            "maxValue": 140,
-            "operator": "beyond, <=, <="
+            "minValue": 140,
+            "maxValue": 160,
+            "operator": "between, <=, <"
           }
         ]
       },
@@ -3425,9 +3425,9 @@
         "rules": [
           {
             "trigger": "DAK, Diastolic blood pressure",
-            "minValue": 60,
-            "maxValue": 90,
-           "operator": "beyond, <=, <="
+            "minValue": 90,
+            "maxValue": 110,
+           "operator": "between, <=, <"
           }
         ]
       }
