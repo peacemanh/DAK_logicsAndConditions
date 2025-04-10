@@ -4491,13 +4491,13 @@
     "logics": [
       {
         "trigger": "DAK, Cevical cancer screening conducted",
-        "value": false,
+        "value": true,
         "operator": "="
       }
 
     ],
 
-    "action": "hide",
+    "action": "show",
     "dependent": "DAK, Triage Test Result",
     "logic_key": 334
   },
@@ -4505,13 +4505,13 @@
     "logics": [
       {
         "trigger": "DAK, Cevical cancer screening conducted",
-        "value": false,
+        "value": true,
         "operator": "="
       }
 
     ],
 
-    "action": "hide",
+    "action": "show",
     "dependent": "DAK, Follow-Up Evaluation Interval",
     "logic_key": 335
   },
@@ -4519,13 +4519,13 @@
     "logics": [
       {
         "trigger": "DAK, Cevical cancer screening conducted",
-        "value": false,
+        "value": true,
         "operator": "="
       }
 
     ],
 
-    "action": "hide",
+    "action": "show",
     "dependent": "DAK, Treatment Methods",
     "logic_key": 336
   },
@@ -4533,13 +4533,13 @@
     "logics": [
       {
         "trigger": "DAK, Cevical cancer screening conducted",
-        "value": false,
+        "value": true,
         "operator": "="
       }
 
     ],
 
-    "action": "hide",
+    "action": "show",
     "dependent": "DAK, Follow-Up at 1 Year",
     "logic_key": 337
   },
@@ -4547,13 +4547,13 @@
     "logics": [
       {
         "trigger": "DAK, Cevical cancer screening conducted",
-        "value": false,
+        "value": true,
         "operator": "="
       }
 
     ],
 
-    "action": "hide",
+    "action": "show",
     "dependent": "DAK, Vaccine Available for Prevention",
     "logic_key": 338
   },
