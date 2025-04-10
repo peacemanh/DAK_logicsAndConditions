@@ -11,5 +11,6 @@
   "DAK, Syphilis diagnosis",
   "DAK, Hepatitis B diagnosis",
   "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-  "DAK, Gestational diabetes mellitus (GDM) diagnosis"
+  "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+  "DAK, Days since start of last normal menses lessthan 7 days"
 ]
