@@ -1002,7 +1002,7 @@
     "dependent": "DAK, Breastfeeding",
     "logic_key": 69
   },
-  
+
   {
     "logics": [
       {
@@ -4425,7 +4425,7 @@
         "value": false,
         "operator": "="
       }
-      
+
     ],
     "action": "show",
     "dependent": "DAK, Method in use",
@@ -4438,7 +4438,7 @@
         "value": false,
         "operator": "="
       }
-      
+
     ],
     "action": "show",
     "dependent": "DAK, Methods previously used",
@@ -4451,7 +4451,7 @@
         "value": false,
         "operator": "="
       }
-      
+
     ],
     "action": "show",
     "dependent": "DAK, FP History Section",
@@ -4466,10 +4466,10 @@
         "value": "DAK, New",
         "operator": "="
       }
-      
+
     ],
     "action": "show",
-    "parent":"DAK, Reason for follow-up",
+    "parent": "DAK, Reason for follow-up",
     "dependent": "DAK, New for family planning service",
     "logic_key": 336
   },
@@ -4556,5 +4556,51 @@
     "action": "hide",
     "dependent": "DAK, Vaccine Available for Prevention",
     "logic_key": 338
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Method in use",
+        "value": "DAK, Unspecified implants",
+        "operator": "="
+      }
+
+    ],
+
+    "action": "show",
+    "dependent": "DAK, Issues at insertion site (implant insertion)",
+    "logic_key": 339
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Method in use",
+        "value": "DAK, Unspecified implants",
+        "operator": "="
+      }
+
+    ],
+
+    "action": "show",
+    "dependent": "DAK, Implant issue",
+    "logic_key": 340
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Medical eligibility category",
+        "orValues": [
+          "DAK, Accept",
+          "DAK, Caution",
+          "DAK, Delay",
+          "DAK, Special"
+
+        ],
+        "operator": "OR"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Medically eligible",
+    "logic_key": 341
   }
 ]

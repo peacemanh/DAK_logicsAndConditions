@@ -3399,7 +3399,7 @@
             "trigger": "DAK, Diastolic blood pressure",
             "minValue": 90,
             "maxValue": 110,
-           "operator": "between, <=, <"
+            "operator": "between, <=, <"
           }
         ]
       }
@@ -3427,7 +3427,7 @@
             "trigger": "DAK, Diastolic blood pressure",
             "minValue": 90,
             "maxValue": 110,
-           "operator": "between, <=, <"
+            "operator": "between, <=, <"
           }
         ]
       }
@@ -4125,7 +4125,7 @@
     "dependent": "DAK, Blood haemoglobin test ordered",
     "logic_key": 335
   },
-  
+
   {
     "logics": [
       {
@@ -6849,7 +6849,7 @@
     "action": "hide",
     "dependent": "DAK, Ultrasound done"
   },
- 
+
   {
     "logics": [
       {
@@ -8762,5 +8762,17 @@
     "action": "show",
     "dependent": "DAK, Ultrasound required",
     "logic_key": 683
+  },
+  {
+    "logics": [
+      {
+        "trigger": "Malaria-endemic setting",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling on malaria prevention",
+    "logic_key": 684
   }
 ]
