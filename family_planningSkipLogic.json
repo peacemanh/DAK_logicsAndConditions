@@ -897,6 +897,11 @@
         "trigger": "DAK, Ever had sex - Reported",
         "value": true,
         "operator": "="
+      },
+      {
+        "trigger": "DAK, Sexually active",
+        "value": true,
+        "operator": "="
       }
     ],
     "action": "show",
