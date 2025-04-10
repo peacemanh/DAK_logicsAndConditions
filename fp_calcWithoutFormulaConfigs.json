@@ -24410,11 +24410,7 @@
   },
   {
       "logics": [
-          {
-              "trigger": "DAK, Missed or late menses",
-              "value": false,
-              "operator": "="
-          },
+          
           {
               "trigger": "DAK, Time since delivery",
               "value": 180.0,
