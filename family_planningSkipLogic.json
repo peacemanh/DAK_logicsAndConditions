@@ -893,11 +893,7 @@
   },
   {
     "logics": [
-      {
-        "trigger": "DAK, Ever had sex - Reported",
-        "value": true,
-        "operator": "="
-      },
+      
       {
         "trigger": "DAK, Sexually active",
         "value": true,
@@ -3663,18 +3659,7 @@
     "dependent": "DAK, Other catagory(specify)",
     "logic_key": 267
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Ever had sex - Reported",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Sexually active",
-    "logic_key": 268
-  },
+ 
   {
     "logics": [
       {
@@ -4099,18 +4084,6 @@
     "action": "show",
     "dependent": "DAK, Other catagory(specify)",
     "logic_key": 306
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Ever had sex - Reported",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Sexually active",
-    "logic_key": 307
   },
   {
     "logics": [
@@ -4602,5 +4575,18 @@
     "action": "show",
     "dependent": "DAK, Medically eligible",
     "logic_key": 341
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Lifestyle Behaviors",
+        "value": "DAK, Other", 
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other Lifestyle behaviour",
+    "logic_key": 341
   }
+  
 ]
