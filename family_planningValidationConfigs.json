@@ -1,27 +1,27 @@
 [
-    {
-        "conceptName": "DAK, Height FP",
-        "operator": "beyond, <, <",
-        "minValue": 50,
-        "maxValue": 205,
-        "type": "restrict",
-        "message": "Height should be between 50 cm and 205 cm"
-    },
-    {
-        "conceptName": "DAK, Weight FP",
-        "operator": "beyond, <, <",
-        "minValue": 40,
-        "maxValue": 150,
-        "type": "restrict",
-        "message": "Weight should be between 40 Kg and 150 Kg"
-    },
-    {
+  {
+    "conceptName": "DAK, Height FP",
+    "operator": "beyond, <, <",
+    "minValue": 50,
+    "maxValue": 205,
+    "type": "optional",
+    "message": "Warning - Please check the height"
+  },
+  {
+    "conceptName": "DAK, Weight FP",
+    "operator": "beyond, <, <",
+    "minValue": 40,
+    "maxValue": 150,
+    "type": "optional",
+    "message": "Warning - Please check the weight"
+  },
+  {
     "conceptName": "DAK, Systolic blood pressure",
     "operator": "beyond, <=, <=",
     "minValue": 60,
     "maxValue": 260,
     "type": "restrict",
-    "message": "Systolic blood pressure should be between 60mmHg and 260mmHg"
+    "message": "The system accpets the range from  60mmHg and 260mmHg"
   },
   {
     "conceptName": "DAK, Diastolic blood pressure",
@@ -29,13 +29,13 @@
     "minValue": 60,
     "maxValue": 260,
     "type": "restrict",
-    "message": "Diastolic blood pressure should be between 60mmHg and 260mmHg"
+    "message": "The system accpets the range from 60mmHg and 260mmHg"
   },
   {
     "conceptName": "DAK, Number of previous pregnancies",
     "operator": "beyond, <=",
     "minValue": 0,
-    
+
     "type": "restrict",
     "message": "Diastolic blood pressure should be between 60mmHg and 260mmHg"
   }
