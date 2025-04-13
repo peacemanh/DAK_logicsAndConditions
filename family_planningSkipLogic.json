@@ -945,18 +945,6 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Has client given birth in the last six months",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Date of previous delivery",
-    "logic_key": 64
-  },
-  {
-    "logics": [
-      {
         "trigger": "gender",
         "value": "F",
         "operator": "="
@@ -965,18 +953,6 @@
     "action": "show",
     "dependent": "DAK, Menstural Cycle Section",
     "logic_key": 66
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "required",
-    "dependent": "DAK, Date of last birth",
-    "logic_key": 67
   },
   {
     "logics": [
@@ -1002,7 +978,6 @@
     "dependent": "DAK, Breastfeeding",
     "logic_key": 69
   },
-
   {
     "logics": [
       {
@@ -1733,7 +1708,6 @@
     "dependent": "DAK, Other reason for no contra(specify)",
     "logic_key": 110
   },
-
   {
     "logics": [
       {
@@ -2799,9 +2773,9 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       }
     ],
     "action": "required",
@@ -2811,9 +2785,9 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "!="
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": ">"
       }
     ],
     "action": "noneRequired",
@@ -2823,9 +2797,9 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       }
     ],
     "action": "required",
@@ -2835,9 +2809,9 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "!="
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": ">"
       }
     ],
     "action": "noneRequired",
@@ -3190,9 +3164,9 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       }
     ],
     "action": "show",
@@ -3208,74 +3182,8 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Has client given birth in the last six months",
-    "logic_key": 232
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Has client ever been pregnant",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Has client given birth in the last six months",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "trigger": "gender",
-        "value": "F",
-        "operator": "="
-      }
-    ],
-    "action": "show",
     "dependent": "DAK, Date of last birth",
-    "logic_key": 233
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Has client ever been pregnant",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Has client given birth in the last six months",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "trigger": "gender",
-        "value": "F",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, 180 days post-delivery",
-    "logic_key": 234
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Has client ever been pregnant",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Has client given birth in the last six months",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "trigger": "gender",
-        "value": "F",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Postpartum",
-    "logic_key": 235
+    "logic_key": 232
   },
   {
     "logics": [
@@ -3289,104 +3197,6 @@
     "dependent": "DAK, Never used contraception",
     "logic_key": 236
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Has client ever been pregnant",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Has client given birth in the last six months",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "trigger": "gender",
-        "value": "F",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Time since delivery",
-    "logic_key": 237
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Has client ever been pregnant",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Has client given birth in the last six months",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "trigger": "gender",
-        "value": "F",
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Time Postpartum",
-    "logic_key": 238
-  },
-  {
-    "logics": [
-      {
-        "trigger": "gender",
-        "value": "F",
-        "operator": "="
-      }
-    ],
-    "action": "required",
-    "dependent": "DAK, 180 days post-delivery",
-    "logic_key": 239
-  },
-  {
-    "logics": [
-      {
-        "trigger": "gender",
-        "value": "F",
-        "operator": "="
-      }
-    ],
-    "action": "required",
-    "dependent": "DAK, Postpartum",
-    "logic_key": 240
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "required",
-    "dependent": "DAK, Time since delivery",
-    "logic_key": 241
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "required",
-    "dependent": "DAK, Time Postpartum",
-    "logic_key": 242
-  },
-
   {
     "logics": [
       {
@@ -3726,9 +3536,9 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       }
     ],
     "action": "show",
@@ -4181,18 +3991,6 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Miscarriage or abortion within past 4 weeks",
-    "logic_key": 313
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Have you had a recent miscarriage or abortion",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
     "dependent": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy in days",
     "logic_key": 314
   },
@@ -4304,7 +4102,6 @@
     "dependent": "DAK, Test result of HIV assay 3",
     "logic_key": 323
   },
-
   {
     "logics": [
       {
@@ -4329,7 +4126,6 @@
         "value": true,
         "operator": "="
       }
-
     ],
     "action": "show",
     "dependent": "DAK, HIV test screening: Rapid/laboratory test conducted",
@@ -4342,13 +4138,11 @@
         "value": true,
         "operator": "="
       }
-
     ],
     "action": "show",
     "dependent": "DAK, HIV test screening: Rapid/laboratory test conducted",
     "logic_key": 326
   },
-
   {
     "logics": [
       {
@@ -4356,7 +4150,6 @@
         "value": true,
         "operator": "="
       }
-
     ],
     "action": "show",
     "dependent": "DAK, Rapid diagnostic test (Assay) number in testing strategy",
@@ -4369,9 +4162,7 @@
         "value": "DAK, Other (specify)",
         "operator": "="
       }
-
     ],
-
     "action": "show",
     "dependent": "DAK, Other Methods previously used",
     "logic_key": 329
@@ -4383,9 +4174,7 @@
         "value": "DAK, Method change",
         "operator": "="
       }
-
     ],
-
     "action": "show",
     "dependent": "DAK, Reason for Method change",
     "logic_key": 330
@@ -4397,9 +4186,7 @@
         "value": true,
         "operator": "="
       }
-
     ],
-
     "action": "show",
     "dependent": "DAK, Pregnancy test sensitivity = 25 mIU/ml",
     "logic_key": 331
@@ -4411,9 +4198,7 @@
         "value": true,
         "operator": "="
       }
-
     ],
-
     "action": "show",
     "dependent": "DAK, Pregnancy test sensitivity = 50 mIU/ml",
     "logic_key": 332
@@ -4425,7 +4210,6 @@
         "value": false,
         "operator": "="
       }
-
     ],
     "action": "show",
     "dependent": "DAK, Method in use",
@@ -4438,7 +4222,6 @@
         "value": false,
         "operator": "="
       }
-
     ],
     "action": "show",
     "dependent": "DAK, Methods previously used",
@@ -4451,14 +4234,11 @@
         "value": false,
         "operator": "="
       }
-
     ],
     "action": "show",
     "dependent": "DAK, FP History Section",
     "logic_key": 335
   },
-
-
   {
     "logics": [
       {
@@ -4466,7 +4246,6 @@
         "value": "DAK, New",
         "operator": "="
       }
-
     ],
     "action": "show",
     "parent": "DAK, Reason for follow-up",
@@ -4480,9 +4259,7 @@
         "value": true,
         "operator": "="
       }
-
     ],
-
     "action": "hide",
     "dependent": "DAK, Have a method in mind",
     "logic_key": 333
@@ -4494,9 +4271,7 @@
         "value": true,
         "operator": "="
       }
-
     ],
-
     "action": "show",
     "dependent": "DAK, Triage Test Result",
     "logic_key": 334
@@ -4508,9 +4283,7 @@
         "value": true,
         "operator": "="
       }
-
     ],
-
     "action": "show",
     "dependent": "DAK, Follow-Up Evaluation Interval",
     "logic_key": 335
@@ -4522,9 +4295,7 @@
         "value": true,
         "operator": "="
       }
-
     ],
-
     "action": "show",
     "dependent": "DAK, Treatment Methods",
     "logic_key": 336
@@ -4536,9 +4307,7 @@
         "value": true,
         "operator": "="
       }
-
     ],
-
     "action": "show",
     "dependent": "DAK, Follow-Up at 1 Year",
     "logic_key": 337
@@ -4550,9 +4319,7 @@
         "value": true,
         "operator": "="
       }
-
     ],
-
     "action": "show",
     "dependent": "DAK, Vaccine Available for Prevention",
     "logic_key": 338
@@ -4564,9 +4331,7 @@
         "value": "DAK, Unspecified implants",
         "operator": "="
       }
-
     ],
-
     "action": "show",
     "dependent": "DAK, Issues at insertion site (implant insertion)",
     "logic_key": 339
@@ -4578,9 +4343,7 @@
         "value": "DAK, Unspecified implants",
         "operator": "="
       }
-
     ],
-
     "action": "show",
     "dependent": "DAK, Implant issue",
     "logic_key": 340
@@ -4594,7 +4357,6 @@
           "DAK, Caution",
           "DAK, Delay",
           "DAK, Special"
-
         ],
         "operator": "OR"
       }
