@@ -4602,5 +4602,40 @@
     "action": "show",
     "dependent": "DAK, Medically eligible",
     "logic_key": 341
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Service for clients with special needs",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+
+    ],
+
+    "action": "show",
+    "dependent": "DAK, Other special need",
+    "logic_key": 342
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Issues and concerns/ method failure",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "value": "DAK, None",
+        "operator": "!="
+      }
+
+    ],
+
+    "action": "show",
+    "dependent": "DAK, Issues and Concerns Section",
+    "logic_key": 343
   }
+
+
 ]

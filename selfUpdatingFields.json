@@ -12,5 +12,7 @@
   "DAK, Hepatitis B diagnosis",
   "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
   "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-  "DAK, Days since start of last normal menses lessthan 7 days"
+  "DAK, Days since start of last normal menses lessthan 7 days",
+  "DAK, Reasonably certain a woman is not pregnant",
+  "DAK, Amenorrhoea"
 ]
