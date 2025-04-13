@@ -31,7 +31,7 @@
     {
         "logics": [
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 7,
                 "operator": "<="
             }
@@ -39,18 +39,6 @@
         "dependentValue": "DAK, Gave birth in the last 4 weeks",
         "dependent": "DAK, Reason for being certain",
         "logic_key": 2
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 42,
-                "operator": "<="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Postpartum",
-        "logic_key": 3
     },
     {
         "logics": [
@@ -106,18 +94,6 @@
         "dependentValue": false,
         "dependent": "DAK, Medically eligible",
         "logic_key": 7
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Date of miscarriage or abortion FP",
-                "value": 28,
-                "operator": "<="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Have you had a recent miscarriage or abortion",
-        "logic_key": 8
     },
     {
         "logics": [
@@ -322,36 +298,6 @@
         "dependentValue": true,
         "dependent": "DAK, Increased risk of STIs",
         "logic_key": 25
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, HIV test result",
-                "value": "DAK, HIV-positive",
-                "operator": "="
-            },
-            {
-                "trigger": "Chronic or past health conditions",
-                "value": "DAK, HIV-positive",
-                "operator": "="
-            }
-        ],
-        "dependentValue": "DAK, HIV positive",
-        "conditionType": "either",
-        "dependent": "DAK, HIV status",
-        "logic_key": 26
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, HIV test result",
-                "value": "DAK, HIV-negative",
-                "operator": "="
-            }
-        ],
-        "dependentValue": "DAK, HIV negative",
-        "dependent": "DAK, HIV status",
-        "logic_key": 27
     },
     {
         "logics": [
@@ -609,12 +555,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 2,
                 "operator": "<"
             }
@@ -631,12 +572,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "minValue": 2,
                 "maxValue": 28,
                 "operator": "between, <=, <"
@@ -654,14 +590,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 28.0,
-                "operator": ">="
+                "trigger": "DAK, Date of last birth",
+                "minValue": 28,
+                "maxValue": 42,
+                "operator": "between, <=, <="
             }
         ],
         "logic_key": 45,
@@ -676,9 +608,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": "<="
             },
             {
                 "trigger": "DAK, Medical conditions during past pregnancy and after childbirth",
@@ -698,10 +630,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
+      },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, First trimester: <13 weeks GA",
@@ -720,10 +652,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
+      },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Second trimester between 13 and 24 Weeks",
@@ -3570,7 +3502,7 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Pregnancy test result",
+                "trigger": "DAK, Pregnancy test result",
                 "value": "DAK, Not pregnant",
                 "operator": "="
             }
@@ -3655,12 +3587,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 2,
                 "operator": "<"
             },
@@ -3682,12 +3609,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 2,
                 "operator": "<"
             },
@@ -3709,12 +3631,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "minValue": 2,
                 "maxValue": 28,
                 "operator": "between, <=, <"
@@ -3732,14 +3649,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 28,
-                "operator": ">="
+                "trigger": "DAK, Date of last birth",
+                "minValue": 28,
+                "maxValue": 42,
+                "operator": "between, <=, <="
             }
         ],
         "logic_key": 199,
@@ -3754,9 +3667,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": "<="
             },
             {
                 "trigger": "DAK, Medical logics during past pregnancy and after childbirth",
@@ -3776,10 +3689,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
+      },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, First trimester less than 13 weeks GA",
@@ -3798,10 +3711,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
+      },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Second trimester between 13 and 24 Weeks",
@@ -3820,10 +3733,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
+      },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Immediate post septic abortion",
@@ -6684,12 +6597,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 42,
                 "operator": "<"
             }
@@ -6714,14 +6622,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 42,
-                "operator": ">="
+                "operator": ">"
             }
         ],
         "dependentValue": "DAK, Accept",
@@ -6744,12 +6647,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 42,
                 "operator": "<"
             }
@@ -6774,14 +6672,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 42,
-                "operator": ">="
+                "operator": "<="
             }
         ],
         "dependentValue": "DAK, Accept",
@@ -6799,10 +6692,10 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
+      },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, First trimester less than 13 weeks GA",
@@ -6824,10 +6717,10 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
+      },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Second trimester between 13 and 24 Weeks",
@@ -6849,10 +6742,10 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
+      },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Immediate post septic abortion",
@@ -8956,12 +8849,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 2,
                 "operator": "<"
             }
@@ -8983,12 +8871,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 2,
                 "operator": "<"
             }
@@ -9005,12 +8888,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "minValue": 2,
                 "maxValue": 28,
                 "operator": "between, <=, <"
@@ -9028,14 +8906,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 28,
-                "operator": ">="
+                "trigger": "DAK, Date of last birth",
+                "minValue": 28,
+                "maxValue": 42,
+                "operator": "between, <=, <="
             }
         ],
         "dependentValue": "DAK, Accept",
@@ -9050,14 +8924,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 28,
-                "operator": ">="
+                "trigger": "DAK, Date of last birth",
+                "minValue": 28,
+                "maxValue": 42,
+                "operator": "between, <=, <="
             }
         ],
         "dependentValue": "DAK, Accept",
@@ -9201,12 +9071,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 42,
                 "operator": "<"
             }
@@ -9231,14 +9096,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 42,
-                "operator": ">="
+                "operator": ">"
             }
         ],
         "logic_key": 461,
@@ -9261,14 +9121,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 0.0,
-                "operator": ">="
+                "trigger": "DAK, Date of last birth",
+                "minValue": 0,
+                "maxValue": 42,
+                "operator": "between, <=, <="
             }
         ],
         "logic_key": 462,
@@ -9286,10 +9142,10 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
+      },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, First trimester less than 13 weeks GA",
@@ -9311,10 +9167,10 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
+      },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Second trimester between 13 and 24 Weeks",
@@ -9336,10 +9192,10 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
+      },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Immediate post septic abortion",
@@ -9401,7 +9257,7 @@
                 "operator": "OR"
             },
             {
-                "key": "DAK, Risk factors for venous thromboembolism (VTE)",
+                "trigger": "DAK, Risk factors for venous thromboembolism (VTE)",
                 "orValues": [
                     "DAK, Client smokes < 15 cigarettes per day",
                     "DAK, Client smokes >= 15 cigarettes per day"
@@ -11631,12 +11487,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 42,
                 "operator": "<"
             }
@@ -11658,14 +11509,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 42,
-                "operator": ">="
+                "operator": ">"
             }
         ],
         "dependentValue": "DAK, Accept",
@@ -11685,14 +11531,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 0,
-                "operator": ">="
+                "trigger": "DAK, Date of last birth",
+                "minValue": 0,
+                "maxValue": 42,
+                "operator": "between, <=, <="
             }
         ],
         "dependentValue": "DAK, Accept",
@@ -11707,12 +11549,12 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
+      },
             {
-                "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
+                "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Second trimester between 13 and 24 Weeks",
                 "operator": "="
             }
@@ -11729,10 +11571,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
+      },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Immediate post septic abortion",
@@ -11785,7 +11627,7 @@
                 "operator": "="
             },
             {
-                "key": "DAK, Risk factors for venous thromboembolism (VTE)",
+                "trigger": "DAK, Risk factors for venous thromboembolism (VTE)",
                 "orValues": [
                     "DAK, Client smokes < 15 cigarettes per day",
                     "DAK, Client smokes >= 15 cigarettes per day"
@@ -13613,12 +13455,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 42,
                 "operator": "<"
             }
@@ -13640,9 +13477,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": false,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": ">"
             },
             {
                 "trigger": "age",
@@ -13668,14 +13505,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 180,
-                "operator": ">="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": ">"
             }
         ],
         "dependentValue": "DAK, Caution",
@@ -13695,7 +13527,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 21,
                 "operator": "<"
             }
@@ -13740,7 +13572,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 180,
                 "operator": "<"
             }
@@ -13757,10 +13589,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
+      },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, First trimester: \u226513 to \u226426 GA",
@@ -13779,10 +13611,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
+      },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Second trimester: \u226513 to \u226426 GA",
@@ -13801,10 +13633,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
+      },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Immediate post septic abortion",
@@ -16114,10 +15946,10 @@
     {
         "logics": [
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            }
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
+      }
         ],
         "logic_key": 813,
         "dependentValue": "DAK, Caution",
@@ -16170,9 +16002,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Has client given birth in the last six months",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 180,
+                "operator": "<="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -16197,14 +16029,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Date of last birth",
-                "value": 28.0,
-                "operator": "<"
+                "minValue": 28,
+                "maxValue": 42,
+                "operator": "between, <=, <="
             }
         ],
         "logic_key": 817,
@@ -16224,14 +16052,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Date of last birth",
-                "value": 28.0,
-                "operator": ">="
+                "minValue": 28,
+                "maxValue": 42,
+                "operator": "between, <=, <="
             }
         ],
         "logic_key": 818,
@@ -16246,10 +16070,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            }
+        "trigger": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
+      }
         ],
         "logic_key": 819,
         "dependentValue": "DAK, Delay",
@@ -16842,11 +16666,6 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Date of last birth",
                 "value": 7.0,
                 "operator": "<"
@@ -16861,11 +16680,6 @@
             {
                 "trigger": "DAK, Method in mind",
                 "value": "DAK, Female sterilization",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Postpartum",
-                "value": true,
                 "operator": "="
             },
             {
@@ -16887,14 +16701,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": false,
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Date of last birth",
-                "value": 180.0,
-                "operator": "<"
+                "minValue": 42,
+                "maxValue": 180,
+                "operator": "between, <, <"
             }
         ],
         "logic_key": 854,
@@ -18979,7 +18789,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 12.0,
                 "operator": "<="
             }
@@ -18996,7 +18806,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 12.0,
                 "operator": ">"
             },
@@ -19018,7 +18828,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 12.0,
                 "operator": ">"
             },
@@ -19040,9 +18850,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": false,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": ">"
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -19067,9 +18877,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": false,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": ">"
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -19094,17 +18904,13 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "minValue": 28.0,
+                "maxValue": 42,
+                "operator": "between, <=, <="
             },
             {
-                "trigger": "DAK, Date of previous delivery/Date last birth",
-                "value": 28,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 12.0,
                 "operator": "<="
             },
@@ -19131,17 +18937,13 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "minValue": 28.0,
+                "maxValue": 42,
+                "operator": "between, <=, <="
             },
             {
-                "trigger": "DAK, Date of previous delivery/Date last birth",
-                "value": 28,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 12.0,
                 "operator": "<="
             },
@@ -19168,17 +18970,13 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "minValue": 28.0,
+                "maxValue": 42,
+                "operator": "between, <=, <="
             },
             {
-                "trigger": "DAK, Date of previous delivery/Date last birth",
-                "value": 28,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 12.0,
                 "operator": ">"
             },
@@ -19205,17 +19003,13 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "minValue": 28.0,
+                "maxValue": 42,
+                "operator": "between, <=, <="
             },
             {
-                "trigger": "DAK, Date of previous delivery/Date last birth",
-                "value": 28,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 12.0,
                 "operator": ">"
             },
@@ -19242,12 +19036,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 2,
                 "operator": "<="
             }
@@ -19264,14 +19053,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 28,
-                "operator": ">="
+                "trigger": "DAK, Date of last birth",
+                "minValue": 28,
+                "maxValue": 42,
+                "operator": "between, <=, <="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -19296,14 +19081,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 28,
-                "operator": ">="
+                "trigger": "DAK, Date of last birth",
+                "minValue": 28,
+                "maxValue": 42,
+                "operator": "between, <=, <="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -19328,19 +19109,15 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, First trimester less than 13 weeks GA",
                 "operator": "="
             },
             {
                 "trigger": "DAK, Date of miscarriage or abortion FP",
-                "value": 12.0,
-                "operator": "<="
+                "minValue": 12.0,
+                "maxValue": 28,
+                "operator": "between, <=, <="
             }
         ],
         "logic_key": 985,
@@ -19355,19 +19132,15 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Second trimester between 13 and 24 Weeks",
                 "operator": "="
             },
             {
                 "trigger": "DAK, Date of miscarriage or abortion FP",
-                "value": 12.0,
-                "operator": "<="
+                "minValue": 12.0,
+                "maxValue": 28,
+                "operator": "between, <=, <="
             }
         ],
         "logic_key": 986,
@@ -19382,19 +19155,15 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, First trimester less than 13 weeks GA",
                 "operator": "="
             },
             {
                 "trigger": "DAK, Date of miscarriage or abortion FP",
-                "value": 12.0,
-                "operator": ">"
+                "minValue": 12.0,
+                "maxValue": 28,
+                "operator": "between, <=, <="
             },
             {
                 "trigger": "DAK, Reasonably certain a woman is not pregnant",
@@ -19414,19 +19183,15 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, First trimester less than 13 weeks GA",
                 "operator": "="
             },
             {
                 "trigger": "DAK, Date of miscarriage or abortion FP",
-                "value": 12.0,
-                "operator": ">"
+                "minValue": 12.0,
+                "maxValue": 28,
+                "operator": "between, <=, <="
             },
             {
                 "trigger": "DAK, Pregnancy test result",
@@ -19446,19 +19211,15 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Second trimester between 13 and 24 Weeks",
                 "operator": "="
             },
             {
                 "trigger": "DAK, Date of miscarriage or abortion FP",
-                "value": 12.0,
-                "operator": ">"
+                "minValue": 12.0,
+                "maxValue": 28,
+                "operator": "between, <=, <="
             },
             {
                 "trigger": "DAK, Reasonably certain a woman is not pregnant",
@@ -19478,19 +19239,15 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Second trimester between 13 and 24 Weeks",
                 "operator": "="
             },
             {
                 "trigger": "DAK, Date of miscarriage or abortion FP",
-                "value": 12.0,
-                "operator": ">"
+                "minValue": 12.0,
+                "maxValue": 28,
+                "operator": "between, <=, <="
             },
             {
                 "trigger": "DAK, Pregnancy test result",
@@ -19634,9 +19391,9 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": "<="
             },
             {
                 "trigger": "DAK, Is client currently breastfeeding?",
@@ -19660,7 +19417,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "minValue": 42,
                 "maxValue": 180,
                 "operator": "between, >=, <="
@@ -19687,7 +19444,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "minValue": 42,
                 "maxValue": 180,
                 "operator": "between, >, <="
@@ -19723,7 +19480,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 12.0,
                 "operator": "<="
             }
@@ -19744,7 +19501,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 42,
                 "operator": ">"
             },
@@ -19754,7 +19511,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": "<="
             }
@@ -19775,14 +19532,10 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 21,
-                "operator": ">"
+                "trigger": "DAK, Date of last birth",
+                "minValue": 21,
+                "maxValue": 42,
+                "operator": "between, <, <="
             },
             {
                 "trigger": "DAK, Is client currently breastfeeding?",
@@ -19806,9 +19559,9 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": "<="
             },
             {
                 "trigger": "DAK, Is client currently breastfeeding?",
@@ -19821,7 +19574,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": "<="
             }
@@ -19842,14 +19595,10 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Date of miscarriage or abortion FP",
-                "value": 7,
-                "operator": "<="
+                "minValue": 7.0,
+                "maxValue": 28,
+                "operator": "between, <=, <="
             }
         ],
         "logic_key": 1003,
@@ -19956,7 +19705,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": ">"
             },
@@ -19998,7 +19747,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": ">"
             },
@@ -20037,7 +19786,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": "<="
             },
@@ -20076,7 +19825,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": "<="
             },
@@ -20102,7 +19851,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": ">"
             },
@@ -20128,7 +19877,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": ">"
             },
@@ -20154,9 +19903,9 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": false,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": ">"
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -20185,9 +19934,9 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": false,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": ">"
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -20216,7 +19965,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 42,
                 "operator": ">"
             },
@@ -20226,7 +19975,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": ">"
             },
@@ -20252,7 +20001,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 42,
                 "operator": ">"
             },
@@ -20262,7 +20011,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": ">"
             },
@@ -20288,14 +20037,10 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 21,
-                "operator": ">"
+                "trigger": "DAK, Date of last birth",
+                "minValue": 21,
+                "maxValue": 42,
+                "operator": "between, <, <="
             },
             {
                 "trigger": "DAK, Is client currently breastfeeding?",
@@ -20329,14 +20074,10 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 21,
-                "operator": ">"
+                "trigger": "DAK, Date of last birth",
+                "minValue": 21,
+                "maxValue": 42,
+                "operator": "between, <, <="
             },
             {
                 "trigger": "DAK, Is client currently breastfeeding?",
@@ -20370,14 +20111,10 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 21,
-                "operator": ">"
+                "trigger": "DAK, Date of last birth",
+                "minValue": 21,
+                "maxValue": 42,
+                "operator": "between, <, <="
             },
             {
                 "trigger": "DAK, Is client currently breastfeeding?",
@@ -20390,7 +20127,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": ">"
             },
@@ -20416,14 +20153,10 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 21,
-                "operator": ">"
+                "trigger": "DAK, Date of last birth",
+                "minValue": 21,
+                "maxValue": 42,
+                "operator": "between, <, <="
             },
             {
                 "trigger": "DAK, Is client currently breastfeeding?",
@@ -20436,7 +20169,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": ">"
             },
@@ -20544,14 +20277,10 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Date of miscarriage or abortion FP",
-                "value": 7,
-                "operator": ">"
+                "minValue": 7.0,
+                "maxValue": 28,
+                "operator": "between, <=, <="
             }
         ],
         "logic_key": 1022,
@@ -20586,7 +20315,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": ">"
             },
@@ -20628,7 +20357,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": ">"
             },
@@ -20664,7 +20393,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": ">"
             },
@@ -20700,7 +20429,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": ">"
             },
@@ -20780,7 +20509,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "minValue": 42,
                 "maxValue": 180,
                 "operator": "between, >, <="
@@ -20811,7 +20540,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "minValue": 42,
                 "maxValue": 180,
                 "operator": "between, >, <="
@@ -20851,7 +20580,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 21,
                 "operator": "<"
             }
@@ -20925,7 +20654,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": "<="
             }
@@ -20960,7 +20689,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": "<="
             }
@@ -20985,9 +20714,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": "<="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -20995,7 +20724,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": "<="
             }
@@ -21015,14 +20744,10 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Date of miscarriage or abortion FP",
-                "value": 7.0,
-                "operator": "<="
+                "minValue": 7.0,
+                "maxValue": 28,
+                "operator": "between, <=, <="
             }
         ],
         "logic_key": 1037,
@@ -21056,7 +20781,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": "<="
             },
@@ -21097,7 +20822,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": "<="
             },
@@ -21132,7 +20857,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": "<="
             }
@@ -21152,7 +20877,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": ">"
             },
@@ -21177,7 +20902,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": ">"
             },
@@ -21307,14 +21032,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, 180 days post-delivery",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 42,
-                "operator": ">"
+                "trigger": "DAK, Date of last birth",
+                "minValue": 42.0,
+                "maxValue": 180,
+                "operator": "between, <, <"
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -21322,7 +21043,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": ">"
             },
@@ -21352,13 +21073,8 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, 180 days post-delivery",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 42,
+                "trigger": "DAK, Date of last birth",
+                "value": 180,
                 "operator": ">"
             },
             {
@@ -21367,7 +21083,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": ">"
             },
@@ -21397,14 +21113,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 21,
-                "operator": ">"
+                "trigger": "DAK, Date of last birth",
+                "minValue": 21,
+                "maxValue": 42,
+                "operator": "between, <, <="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -21437,14 +21149,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 21,
-                "operator": ">"
+                "trigger": "DAK, Date of last birth",
+                "minValue": 21,
+                "maxValue": 42,
+                "operator": "between, <, <="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -21477,9 +21185,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": "<="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -21487,7 +21195,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": ">"
             },
@@ -21517,9 +21225,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": "<="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -21527,7 +21235,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": ">"
             },
@@ -21568,7 +21276,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": ">"
             },
@@ -21609,7 +21317,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": ">"
             },
@@ -21714,14 +21422,10 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Date of miscarriage or abortion FP",
-                "value": 7.0,
-                "operator": ">"
+                "minValue": 7.0,
+                "maxValue": 28,
+                "operator": "between, <=, <="
             }
         ],
         "logic_key": 1057,
@@ -21749,7 +21453,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7,
                 "operator": ">"
             },
@@ -21789,7 +21493,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7,
                 "operator": ">"
             },
@@ -21829,7 +21533,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7,
                 "operator": ">"
             },
@@ -21869,7 +21573,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7,
                 "operator": ">"
             },
@@ -21916,7 +21620,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": "<="
             }
@@ -21938,9 +21642,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": "<="
             },
             {
                 "trigger": "DAK, Breastfeeding",
@@ -21969,10 +21673,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Time Postpartum",
+                "trigger": "DAK, Date of last birth",
                 "minValue": 42,
                 "maxValue": 180,
-                "operator": "between, >, <="
+                "operator": "between, <, <="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -22006,7 +21710,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 42,
                 "operator": ">"
             },
@@ -22016,7 +21720,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": "<="
             }
@@ -22038,14 +21742,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 21.0,
-                "operator": "<"
+                "trigger": "DAK, Date of last birth",
+                "minValue": 21,
+                "maxValue": 42,
+                "operator": "between, <, <="
             }
         ],
         "logic_key": 1067,
@@ -22065,9 +21765,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": "<="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -22075,7 +21775,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": "<="
             }
@@ -22092,14 +21792,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Date of miscarriage or abortion FP",
-                "value": 7.0,
-                "operator": "<="
+                "minValue": 7.0,
+                "maxValue": 28,
+                "operator": "between, <=, <="
             }
         ],
         "logic_key": 1069,
@@ -22219,7 +21915,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": "<="
             },
@@ -22257,7 +21953,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": "<="
             },
@@ -22289,7 +21985,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": "<="
             }
@@ -22311,9 +22007,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": "<="
             }
         ],
         "logic_key": 1076,
@@ -22333,10 +22029,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Time Postpartum",
+                "trigger": "DAK, Date of last birth",
                 "minValue": 42,
                 "maxValue": 180,
-                "operator": "between, >, <="
+                "operator": "between, <, <="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -22356,7 +22052,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": ">"
             },
@@ -22378,7 +22074,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": ">"
             },
@@ -22449,7 +22145,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 42,
                 "operator": ">"
             },
@@ -22459,7 +22155,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5,
                 "operator": ">"
             },
@@ -22486,7 +22182,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 42,
                 "operator": ">"
             },
@@ -22496,7 +22192,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5,
                 "operator": ">"
             },
@@ -22523,14 +22219,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 21,
-                "operator": ">"
+                "trigger": "DAK, Date of last birth",
+                "minValue": 21,
+                "maxValue": 42,
+                "operator": "between, <, <="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -22560,14 +22252,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 21,
-                "operator": ">"
+                "trigger": "DAK, Date of last birth",
+                "minValue": 21,
+                "maxValue": 42,
+                "operator": "between, <, <="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -22597,9 +22285,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": "<="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -22607,7 +22295,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": ">"
             },
@@ -22634,9 +22322,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": "<="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -22644,7 +22332,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": ">"
             },
@@ -22671,9 +22359,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": "<="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -22681,7 +22369,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": ">"
             },
@@ -22708,9 +22396,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": "<="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -22718,7 +22406,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": ">"
             },
@@ -22740,14 +22428,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Date of miscarriage or abortion FP",
-                "value": 7.0,
-                "operator": ">"
+                "minValue": 7.0,
+                "maxValue": 28,
+                "operator": "between, <=, <="
             },
             {
                 "trigger": "DAK, Reasonably certain a woman is not pregnant",
@@ -22767,14 +22451,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Date of miscarriage or abortion FP",
-                "value": 7.0,
-                "operator": ">"
+                "minValue": 7.0,
+                "maxValue": 28,
+                "operator": "between, <=, <="
             },
             {
                 "trigger": "DAK, Pregnancy test result",
@@ -22810,7 +22490,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": ">"
             },
@@ -22848,7 +22528,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7.0,
                 "operator": ">"
             },
@@ -22897,7 +22577,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": ">"
             },
@@ -22929,7 +22609,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": ">"
             },
@@ -23025,7 +22705,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": "<="
             }
@@ -23047,7 +22727,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 180,
                 "operator": ">"
             },
@@ -23057,7 +22737,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": "<="
             }
@@ -23079,14 +22759,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 42,
-                "operator": ">"
+                "operator": "<="
             }
         ],
         "logic_key": 1101,
@@ -23106,9 +22781,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": "<="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -23121,7 +22796,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": "<="
             }
@@ -23261,7 +22936,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": "<="
             }
@@ -23278,7 +22953,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": ">"
             },
@@ -23300,7 +22975,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": ">"
             },
@@ -23371,7 +23046,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 180,
                 "operator": ">"
             },
@@ -23403,7 +23078,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 180,
                 "operator": ">"
             },
@@ -23435,7 +23110,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 180,
                 "operator": ">"
             },
@@ -23445,7 +23120,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": ">"
             },
@@ -23472,7 +23147,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 180,
                 "operator": ">"
             },
@@ -23482,7 +23157,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": ">"
             },
@@ -23509,9 +23184,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": "<="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -23546,9 +23221,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": "<="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -23583,9 +23258,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": "<="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -23598,7 +23273,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": ">"
             },
@@ -23625,9 +23300,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": "<="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -23640,7 +23315,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": ">"
             },
@@ -23667,9 +23342,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": "<="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -23682,7 +23357,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": ">"
             },
@@ -23709,9 +23384,9 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Postpartum",
-                "value": true,
-                "operator": "="
+                "trigger": "DAK, Date of last birth",
+                "value": 42,
+                "operator": "<="
             },
             {
                 "trigger": "DAK, Amenorrhoea",
@@ -23724,7 +23399,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": ">"
             },
@@ -23746,14 +23421,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Date of miscarriage or abortion FP",
-                "value": 7.0,
-                "operator": ">"
+                "minValue": 7.0,
+                "maxValue": 28,
+                "operator": "between, <=, <="
             },
             {
                 "trigger": "DAK, Reasonably certain a woman is not pregnant",
@@ -23773,14 +23444,10 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Miscarriage or abortion within past 4 weeks",
-                "value": true,
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Date of miscarriage or abortion FP",
-                "value": 7.0,
-                "operator": ">"
+                "minValue": 7.0,
+                "maxValue": 28,
+                "operator": "between, <=, <="
             },
             {
                 "trigger": "DAK, Pregnancy test result",
@@ -23816,7 +23483,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": ">"
             },
@@ -23854,7 +23521,7 @@
                 "operator": "OR"
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": ">"
             },
@@ -23903,7 +23570,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": ">"
             },
@@ -23940,7 +23607,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": ">"
             },
@@ -23977,7 +23644,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": ">"
             },
@@ -24014,7 +23681,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 5.0,
                 "operator": ">"
             },
@@ -24127,7 +23794,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 180,
                 "operator": "<="
             },
@@ -24238,7 +23905,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7,
                 "operator": "<="
             }
@@ -24255,7 +23922,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7,
                 "operator": "<="
             }
@@ -24272,7 +23939,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Days since start of last normal menses",
+                "trigger": "DAK, Last normal menustral period",
                 "value": 7,
                 "operator": "<="
             }
@@ -24357,7 +24024,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 28,
                 "operator": "<="
             }
@@ -24374,7 +24041,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 28,
                 "operator": "<="
             }
@@ -24391,7 +24058,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 28,
                 "operator": "<="
             },
@@ -24410,26 +24077,13 @@
     },
     {
         "logics": [
-            
-            {
-                "trigger": "DAK, Time since delivery",
-                "value": 180.0,
-                "operator": "<="
-            }
-        ],
-        "logic_key": 1150,
-        "dependentValue": true,
-        "dependent": "DAK, 180 days post-delivery"
-    },
-    {
-        "logics": [
             {
                 "trigger": "DAK, Missed or late menses",
                 "value": false,
                 "operator": "="
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 180.0,
                 "operator": "<="
             }
@@ -24446,7 +24100,7 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Time since delivery",
+                "trigger": "DAK, Date of last birth",
                 "value": 180.0,
                 "operator": "<="
             }
@@ -24716,30 +24370,6 @@
     {
         "logics": [
             {
-                "trigger": "DAK, Date of last birth",
-                "value": 180,
-                "operator": ">"
-            }
-        ],
-        "logic_key": 1171,
-        "dependentValue": true,
-        "dependent": "DAK, 180 days post-delivery"
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Date of miscarriage or abortion FP",
-                "value": 28,
-                "operator": "<="
-            }
-        ],
-        "logic_key": 1172,
-        "dependentValue": true,
-        "dependent": "DAK, Miscarriage or abortion within past 4 weeks"
-    },
-    {
-        "logics": [
-            {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy in days",
                 "value": 91,
                 "operator": "<"
@@ -24825,42 +24455,6 @@
     {
         "logics": [
             {
-                "trigger": "DAK, Days since start of last normal menses",
-                "value": 7,
-                "operator": "<="
-            }
-        ],
-        "logic_key": 1184,
-        "dependentValue": true,
-        "dependent": "DAK, Days since start of last normal menses lessthan 7 days"
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Client Current HIV status",
-                "value": "DAK, Client is Known HIV-postive",
-                "operator": "="
-            }
-        ],
-        "logic_key": 1185,
-        "dependentValue": "DAK, HIV-positive",
-        "dependent": "DAK, HIV test result"
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Client Current HIV status",
-                "value": "DAK, Client is Known HIV-postive",
-                "operator": "="
-            }
-        ],
-        "logic_key": 1186,
-        "dependentValue": "DAK, HIV positive",
-        "dependent": "DAK, HIV status"
-    },
-    {
-        "logics": [
-            {
                 "trigger": "DAK, Cervical Cancer risk assessment conducted",
                 "value": true,
                 "operator": "="
@@ -24873,23 +24467,6 @@
     {
         "logics": [
             {
-                "trigger": "DAK, HIV risk assessment conducted",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "logic_key": 1188,
-        "dependentValue": true,
-        "dependent": "DAK,       HIV test screening: Rapid/laboratory test conducted"
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Test result of HIV assay 1",
-                "value": "DAK, Reactive",
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Test result of HIV assay 2",
                 "value": "DAK, Reactive",
                 "operator": "="
@@ -24901,6 +24478,7 @@
             }
         ],
         "logic_key": 1189,
+        "conditionType": "either",
         "dependentValue": "DAK, HIV positive FP",
         "dependent": "DAK, HIV test result FP"
     },
@@ -24910,23 +24488,6 @@
                 "trigger": "DAK, Test result of HIV assay 1",
                 "value": "DAK, Non-reactive",
                 "operator": "="
-            }
-        ],
-        "logic_key": 1190,
-        "dependentValue": "DAK, HIV negative FP",
-        "dependent": "DAK, HIV test result FP"
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Test result of HIV assay 1",
-                "value": "DAK, Reactive",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Test result of HIV assay 2",
-                "value": "DAK, Reactive",
-                "operator": "="
             },
             {
                 "trigger": "DAK, Test result of HIV assay 3",
@@ -24935,89 +24496,26 @@
             }
         ],
         "logic_key": 1191,
-        "dependentValue": "DAK, HIV Inconclusive FP",
-        "dependent": "DAK, HIV test result FP"
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Test result of HIV assay 1 repeated",
-                "value": "DAK, Reactive",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Test result of HIV assay 2",
-                "value": "DAK, Non-reactive",
-                "operator": "="
-            }
-        ],
-        "logic_key": 1192,
-        "dependentValue": "DAK, HIV Inconclusive FP",
-        "dependent": "DAK, HIV test result FP"
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Test result of HIV assay 1 repeated",
-                "value": "DAK, Non-reactive",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Test result of HIV assay 2",
-                "value": "DAK, Non-reactive",
-                "operator": "="
-            }
-        ],
-        "logic_key": 1193,
+        "conditionType": "either",
         "dependentValue": "DAK, HIV negative FP",
         "dependent": "DAK, HIV test result FP"
     },
     {
         "logics": [
             {
-                "trigger": "DAK, HIV test result FP",
-                "value": "DAK, HIV negative FP",
+                "trigger": "DAK, Test result of HIV assay 2",
+                "value": "DAK, Non-reactive",
                 "operator": "="
-            }
-        ],
-        "logic_key": 1194,
-        "dependentValue": "DAK, HIV negative",
-        "dependent": "DAK, HIV status"
-    },
-    {
-        "logics": [
+            },
             {
-                "trigger": "DAK, HIV test result FP",
-                "value": "DAK, HIV positive FP",
-                "operator": "="
-            }
+                "trigger": "DAK, Rapid diagnostic test (Assay) number in testing strategy",
+                "positiveValue": "DAK, Assay 2",
+                "negativeValue": ["DAK, Assay 3"],
+                "operator": "exclude"
+              }
         ],
-        "logic_key": 1195,
-        "dependentValue": "DAK, HIV positive",
-        "dependent": "DAK, HIV status"
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, HIV test result FP",
-                "value": "DAK, HIV Inconclusive FP",
-                "operator": "="
-            }
-        ],
-        "logic_key": 1196,
-        "dependentValue": "DAK, HIV-inconclusive",
-        "dependent": "DAK, HIV status"
-    },
-    {
-      "logics": [
-          {
-              "trigger": "DAK, Days since start of last normal menses",
-              "value": 7,
-              "operator": ">"
-          }
-      ],
-      "logic_key": 1184,
-      "dependentValue": false,
-      "dependent": "DAK, Days since start of last normal menses lessthan 7 days"
-  }
-  ]
+        "logic_key": 1193,
+        "dependentValue": "DAK, HIV Inconclusive FP",
+        "dependent": "DAK, HIV test result FP"
+    }
+]

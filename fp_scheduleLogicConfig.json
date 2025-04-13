@@ -3,7 +3,7 @@
         "triggerEvent": "DAK, Method or service provided",
         "triggerDate": "contact date",
         "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
-        "sceduleDays": 28,
+        "sceduleDays": 365,
         "service": "Post-Cu-IUD Insertion Follow-up",
         "serviceDescription": "Copper-bearing intrauterine device (Cu-IUD) insertion Follow-up",
         "type": "FP"
@@ -36,7 +36,7 @@
         "triggerEvent": "DAK, Method or service provided",
         "triggerDate": "contact date",
         "value": "DAK, Etonogestrel (ETG) one-rod implant",
-        "sceduleDays": 28,
+        "sceduleDays": 365,
         "service": "Post-ETG one-rod implant insertion Follow-up",
         "type": "FP"
     },
@@ -68,7 +68,7 @@
         "triggerEvent": "DAK, Method or service provided",
         "triggerDate": "contact date",
         "value": "DAK, Levonorgestrel (LNG) two-rod(Jadelle)",
-        "sceduleDays": 21,
+        "sceduleDays": 365,
         "service": "Post-LNG two-rod (Jadele) insertion Follow-up",
         "type": "FP"
     },
@@ -100,7 +100,7 @@
         "triggerEvent": "DAK, Method or service provided",
         "triggerDate": "contact date",
         "value": "DAK, Levonorgestrel (LNG) two-rod(Levoplant)",
-        "sceduleDays": 28,
+        "sceduleDays": 365,
         "service": "Post-LNG two-rod implant (Levoplant) follow-up",
         "type": "FP"
     },
@@ -132,7 +132,7 @@
         "triggerEvent": "DAK, Method or service provided",
         "triggerDate": "contact date",
         "value": "DAK, DMPA-IM",
-        "sceduleDays": 84,
+        "sceduleDays": 90,
         "service": "DMPA-IM next injection",
         "type": "FP"
     },
@@ -140,7 +140,7 @@
         "triggerEvent": "DAK, Method or service provided",
         "triggerDate": "contact date",
         "value": "DAK, DMPA-SC",
-        "sceduleDays": 84,
+        "sceduleDays": 90,
         "service": "DMPA-SC next injection",
         "type": "FP"
     },
@@ -148,7 +148,7 @@
         "triggerEvent": "DAK, Method or service provided",
         "triggerDate": "contact date",
         "value": "DAK, Progestogen-only pills (POPs)",
-        "sceduleDays": 28,
+        "sceduleDays": 90,
         "service": "Post-Progestogen-only pills (POPs) follow-up",
         "type": "FP"
     },
@@ -156,7 +156,7 @@
         "triggerEvent": "DAK, Method or service provided",
         "triggerDate": "contact date",
         "value": "DAK, Combined oral contraceptives (COCs)",
-        "sceduleDays": 84,
+        "sceduleDays": 90,
         "service": "Combined oral contraceptives - Quarter visit",
         "type": "FP"
     },

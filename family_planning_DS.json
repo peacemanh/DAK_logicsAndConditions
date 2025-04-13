@@ -79,8 +79,9 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Cervical Cancer risk factors FP",
     "action": "Counsel on safer sexual practices, smoking cessation, and the importance of regular screening and Conduct STI screening, treatment, and provide counseling on regular cancer  screening.",
-    "annotation": "\u00e2\u20ac\u201cIncreased risk of HPV infection and cervical cancer.\n  \u00e2\u20ac\u201cProvide safe sex counselling \n\u00e2\u20ac\u201cRecommended regular screening \n\u00e2\u20ac\u201cProvide counseling on smoking cessation and regular screening.\n\u00e2\u20ac\u201cScreen for STIs and provide appropriate treatment. \n\u00e2\u20ac\u201cProvide Partner counselling and access to  Voluntary medical male circumsision (VMMC )services ",
+    "annotation": "\u2013Increased risk of HPV infection and cervical cancer.\n  \u2013Provide safe sex counselling \u2013Recommended regular screening \n\u2013Provide counseling on smoking cessation and regular screening.\n\u2013Screen for STIs and provide appropriate treatment. \n\u2013Provide Partner counselling and access to  Voluntary medical male circumsision (VMMC )services ",
     "action_key": 6
   },
   {
@@ -2586,12 +2587,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 42.0,
         "operator": "<"
       }
@@ -2617,14 +2613,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": false,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 42.0,
-        "operator": ">="
+        "operator": ">"
       }
     ],
     "action": "Counsel client that she is medically eligible for this method",
@@ -2648,14 +2639,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 42.0,
-        "operator": "<"
+        "operator": "<="
       }
     ],
     "action": "Counsel client that she is medically eligible for this method",
@@ -2679,14 +2665,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": false,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 42.0,
-        "operator": ">="
+        "operator": ">"
       }
     ],
     "action": "Counsel client that she is medically eligible for this method",
@@ -2705,9 +2686,9 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
@@ -2731,9 +2712,9 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
@@ -2757,9 +2738,9 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
@@ -5038,11 +5019,6 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of last birth",
         "value": 2,
         "operator": "<"
@@ -5057,11 +5033,6 @@
       {
         "key": "DAK, Method in mind",
         "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Postpartum",
-        "value": true,
         "operator": "="
       },
       {
@@ -5083,14 +5054,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of last birth",
-        "value": 28.0,
-        "operator": ">="
+        "minValue": 28.0,
+        "maxValue": 42,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Counsel client that she is medically eligible for this method",
@@ -5105,9 +5072,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Medical conditions during past pregnancy and after childbirth",
@@ -5127,9 +5094,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
@@ -5149,9 +5116,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
@@ -5171,9 +5138,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
@@ -8285,11 +8252,6 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of last birth",
         "value": 42,
         "operator": "<"
@@ -8312,11 +8274,6 @@
       {
         "key": "DAK, Is client currently breastfeeding?",
         "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Postpartum",
-        "value": false,
         "operator": "="
       },
       {
@@ -8345,14 +8302,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of last birth",
-        "value": 0.0,
-        "operator": ">="
+        "minValue": 0.0,
+        "maxValue": 42,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Counsel client that she is medically eligible for this method",
@@ -8370,9 +8323,9 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
@@ -8395,9 +8348,9 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
@@ -8420,9 +8373,9 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
@@ -10721,11 +10674,6 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of last birth",
         "value": 42,
         "operator": "<"
@@ -10748,14 +10696,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": false,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of last birth",
         "value": 42,
-        "operator": ">="
+        "operator": ">"
       }
     ],
     "action_key": 528,
@@ -10775,14 +10718,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of last birth",
-        "value": 0,
-        "operator": ">="
+        "value": 42,
+        "operator": "<="
       }
     ],
     "action_key": 529,
@@ -10797,9 +10735,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
@@ -10822,9 +10760,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
@@ -12794,11 +12732,6 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of last birth",
         "value": 42,
         "operator": "<"
@@ -12818,11 +12751,6 @@
       {
         "key": "DAK, Is client currently breastfeeding?",
         "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Postpartum",
-        "value": false,
         "operator": "="
       },
       {
@@ -12846,11 +12774,6 @@
       {
         "key": "DAK, Is client currently breastfeeding?",
         "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Postpartum",
-        "value": false,
         "operator": "="
       },
       {
@@ -12967,13 +12890,9 @@
       },
       {
         "key": "DAK, Date of last birth",
-        "value": 42,
-        "operator": ">"
-      },
-      {
-        "key": "DAK, Date of last birth",
-        "value": 180,
-        "operator": "<"
+        "minValue": 42,
+        "maxValue": 180,
+        "operator": "between, <, <"
       }
     ],
     "action": "Counsel client that she is medically eligible for this method",
@@ -12988,9 +12907,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
@@ -13010,9 +12929,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
@@ -13032,9 +12951,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
@@ -15094,7 +15013,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 180,
         "operator": ">="
       }
@@ -15713,7 +15632,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 42,
         "operator": "<"
       }
@@ -15735,7 +15654,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 42,
         "operator": "<"
       }
@@ -15757,7 +15676,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "minValue": 42,
         "maxValue": 180,
         "operator": "between, <, <"
@@ -15780,7 +15699,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "minValue": 42,
         "maxValue": 180,
         "operator": "between, <, <"
@@ -15803,7 +15722,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 180,
         "operator": "<"
       },
@@ -15830,7 +15749,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 28,
         "operator": "<"
       }
@@ -15852,7 +15771,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 28,
         "operator": ">="
       }
@@ -15864,9 +15783,9 @@
   {
     "conditions": [
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       }
     ],
     "action": "Counsel client that she is medically eligible for this method if she has no infection-related secretions or bleeding due to injury to the genital tract.",
@@ -15920,9 +15839,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Has client given birth in the last six months",
-        "value": true,
-        "operator": "="
+        "trigger": "DAK, Date of last birth",
+        "value": 180,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -15947,14 +15866,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time Postpartum",
-        "value": 28.0,
-        "operator": "<"
+        "key": "DAK, Date of last birth",
+        "value": 28,
+        "operator": "<="
       }
     ],
     "action": "Counsel client to delay use of this method",
@@ -15974,14 +15888,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time Postpartum",
-        "value": 28.0,
-        "operator": ">="
+        "key": "DAK, Date of last birth",
+        "minValue": 28,
+        "maxValue": 42,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Counsel client to delay use of this method",
@@ -15996,9 +15906,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       }
     ],
     "action": "Counsel client to delay use of this method until the start of her next monthly bleeding when she can start if she has no bleeding due to injury to the genital tract.",
@@ -16592,13 +16502,8 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time Postpartum",
-        "value": 7.0,
+        "key": "DAK, Date of last birth",
+        "value": 7,
         "operator": "<"
       }
     ],
@@ -16614,12 +16519,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time Postpartum",
+        "key": "DAK, Date of last birth",
         "minValue": 7,
         "maxValue": 42,
         "operator": "between, <=, <"
@@ -16637,14 +16537,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": false,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 180.0,
-        "operator": "<"
+        "key": "DAK, Date of last birth",
+        "minValue": 42.0,
+        "maxValue": 180,
+        "operator": "between, <, <"
       }
     ],
     "action": "Counsel client that she is medically eligible for this method",
@@ -18729,7 +18625,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7,
         "operator": "<="
       }
@@ -18746,7 +18642,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7,
         "operator": "<="
       }
@@ -18831,7 +18727,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 28,
         "operator": "<="
       }
@@ -18848,7 +18744,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 28,
         "operator": "<="
       }
@@ -18865,7 +18761,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 28,
         "operator": "<="
       },
@@ -18890,7 +18786,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 180.0,
         "operator": "<="
       }
@@ -19240,23 +19136,6 @@
     "conditions": [
       {
         "key": "DAK, Chosen method",
-        "value": "DAK, Copper-bearing intrauterine device (Cu-IUD)",
-        "operator": "="
-      },
-      {
-        "key": "DAK, STI risk assessment: medical history and physical examination available",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "\u2013 Perform a pelvic/genital examination\n\u2013 Conduct an STI risk assessment (if not already conducted during counselling)\n\u2013 If available, perform haemoglobin test and/or STI/HIV screening: laboratory test",
-    "annotation": "\u2013 In healthy women, the only examinations and tests that are essential and mandatory before IUD insertion are a pelvic/genital examination and STI risk assessment. \n\u2013 A \"Pelvic/genital examination\" and \"STI risk assessment: medical history and physical examination\" are Class A: Essential and mandatory in all circumstances for safe and effective use of the contraceptive method. \n\u2013 \"STI/HIV screening: laboratory tests\" and \"Haemoglobin test\" are Class B: The examination or test contributes substantially to safe and effective use, but implementation may be considered within the public health and/or service context. The risk of not performing the examination or test should be balanced against the benefits of making the contraceptive method available, i.e. they contribute substantially to safe and effective use.",
-    "action_key": 988
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Chosen method",
         "value": "DAK, Male sterilization",
         "operator": "="
       }
@@ -19381,7 +19260,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 12.0,
         "operator": "<="
       }
@@ -19398,7 +19277,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 12.0,
         "operator": ">"
       },
@@ -19425,9 +19304,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": false,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42.0,
+        "operator": ">"
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -19453,9 +19332,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": false,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42.0,
+        "operator": ">"
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -19481,14 +19360,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 28,
-        "operator": ">="
+        "key": "DAK, Date of last birth",
+        "minValue": 28,
+        "maxValue": 42,
+        "operator": "between, <=,<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -19496,7 +19371,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 12,
         "operator": "<="
       },
@@ -19518,14 +19393,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 28,
-        "operator": ">="
+        "key": "DAK, Date of last birth",
+        "minValue": 28,
+        "maxValue": 42,
+        "operator": "between, <=,<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -19533,7 +19404,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 12,
         "operator": "<="
       },
@@ -19555,14 +19426,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 28,
-        "operator": ">="
+        "key": "DAK, Date of last birth",
+        "minValue": 28,
+        "maxValue": 42,
+        "operator": "between, <=,<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -19570,7 +19437,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 12,
         "operator": ">"
       },
@@ -19592,14 +19459,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 28,
-        "operator": ">="
+        "key": "DAK, Date of last birth",
+        "minValue": 28,
+        "maxValue": 42,
+        "operator": "between, <=,<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -19607,7 +19470,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 12,
         "operator": ">"
       },
@@ -19629,12 +19492,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 2,
         "operator": "<="
       }
@@ -19651,14 +19509,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since deliver",
-        "value": 28,
-        "operator": ">"
+        "key": "DAK, Date of last birth",
+        "minValue": 28,
+        "maxValue": 42,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -19688,14 +19542,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since deliver",
-        "value": 28,
-        "operator": ">"
+        "key": "DAK, Date of last birth",
+        "minValue": 28,
+        "maxValue": 42,
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -19725,14 +19575,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since deliver",
-        "value": 28,
-        "operator": ">"
+        "key": "DAK, Date of last birth",
+        "minValue": 28,
+        "maxValue": 42,
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -19762,14 +19608,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since deliver",
-        "value": 28,
-        "operator": ">"
+        "key": "DAK, Date of last birth",
+        "minValue": 28,
+        "maxValue": 42,
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -19799,19 +19641,15 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
         "value": "DAK, First trimester less than 13 weeks GA",
         "operator": "="
       },
       {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 12,
-        "operator": "<="
+        "minValue": 12,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "A Cu-IUD can be inserted immediately after a first-trimester abortion or miscarriage if no infection is present",
@@ -19826,19 +19664,15 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "minValue": 12,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
         "value": "DAK, Second trimester between 13 and 24 Weeks",
         "operator": "="
-      },
-      {
-        "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 12,
-        "operator": "<="
       }
     ],
     "action": "A Cu-IUD can be inserted immediately after a second-trimester abortion or miscarriage if no infection is present",
@@ -19853,11 +19687,6 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
         "value": "DAK, First trimester less than 13 weeks GA",
         "operator": "="
@@ -19868,9 +19697,10 @@
         "operator": ">"
       },
       {
-        "key": "DAK, Reasonably certain a woman is not pregnant",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "minValue": 12,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "A Cu-IUD can be inserted any time after a first-trimester abortion or miscarriage if no infection is present and it is reasonably certain she is not pregnant",
@@ -19885,19 +19715,15 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
         "value": "DAK, First trimester less than 13 weeks GA",
         "operator": "="
       },
       {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 12,
-        "operator": ">"
+        "minValue": 12,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Pregnancy test result",
@@ -19917,11 +19743,6 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
         "value": "DAK, Second trimester between 13 and 24 Weeks",
         "operator": "="
@@ -19932,9 +19753,10 @@
         "operator": ">"
       },
       {
-        "key": "DAK, Reasonably certain a woman is not pregnant",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "minValue": 12,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "To be considered--Method to be provided by a provider with specific training.",
@@ -19949,19 +19771,15 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
         "value": "DAK, Second trimester between 13 and 24 Weeks",
         "operator": "="
       },
       {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 12,
-        "operator": ">"
+        "minValue": 12,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Pregnancy test result",
@@ -20108,9 +19926,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
@@ -20130,15 +19948,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "minValue": 28,
         "maxValue": 42,
-        "operator": "beyond, <=, >="
+        "operator": "beyond, <=, <="
       }
     ],
     "action": "Delay until 4 weeks or more after delivery.",
@@ -20157,9 +19970,9 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Is client currently breastfeeding?",
@@ -20183,13 +19996,8 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 180,
+        "key": "DAK, Date of last birth",
+        "value": 42,
         "operator": "<="
       },
       {
@@ -20219,15 +20027,10 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, 180 days post-delivery",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "minValue": 42,
         "maxValue": 180,
-        "operator": "beyound, <=,>="
+        "operator": "beyound, <=,<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -20260,7 +20063,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7,
         "operator": "<="
       }
@@ -20281,13 +20084,8 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, 180 days post-delivery",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": "42",
+        "key": "DAK, Date of last birth",
+        "value": 180,
         "operator": ">"
       },
       {
@@ -20296,7 +20094,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7,
         "operator": "<="
       }
@@ -20317,13 +20115,8 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": "21",
+        "key": "DAK, Date of last birth",
+        "value": 21,
         "operator": "<"
       },
       {
@@ -20348,14 +20141,10 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": "21",
-        "operator": ">"
+        "key": "DAK, Date of last birth",
+        "minValue": 21,
+        "maxValue": 42,
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Is client currently breastfeeding?",
@@ -20368,7 +20157,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       }
@@ -20389,14 +20178,10 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 7.0,
-        "operator": "<="
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Insert implant at the time of consultation",
@@ -20499,7 +20284,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       }
@@ -20530,7 +20315,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       }
@@ -20551,7 +20336,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -20577,7 +20362,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -20603,9 +20388,9 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Postpartum",
-        "value": false,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42.0,
+        "operator": ">"
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -20634,9 +20419,9 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Postpartum",
-        "value": false,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42.0,
+        "operator": ">"
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -20665,13 +20450,8 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, 180 days post-delivery",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 42,
+        "key": "DAK, Date of last birth",
+        "value": 180,
         "operator": ">"
       },
       {
@@ -20680,7 +20460,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -20706,13 +20486,8 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, 180 days post-delivery",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 42,
+        "key": "DAK, Date of last birth",
+        "value": 180,
         "operator": ">"
       },
       {
@@ -20721,7 +20496,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -20747,14 +20522,10 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 21,
-        "operator": ">"
+        "key": "DAK, Date of last birth",
+        "minValue": 21,
+        "maxValue": 42,
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Is client currently breastfeeding?",
@@ -20788,14 +20559,10 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 21,
-        "operator": ">"
+        "key": "DAK, Date of last birth",
+        "minValue": 21,
+        "maxValue": 42,
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Is client currently breastfeeding?",
@@ -20829,14 +20596,10 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 21,
-        "operator": ">"
+        "key": "DAK, Date of last birth",
+        "minValue": 21,
+        "maxValue": 42,
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Is client currently breastfeeding?",
@@ -20849,7 +20612,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -20875,14 +20638,10 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 21,
-        "operator": ">"
+        "key": "DAK, Date of last birth",
+        "minValue": 21,
+        "maxValue": 42,
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Is client currently breastfeeding?",
@@ -20895,7 +20654,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -21003,14 +20762,10 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 7.0,
-        "operator": ">"
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Reasonably certain a woman is not pregnant",
@@ -21034,14 +20789,10 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 7.0,
-        "operator": ">"
+        "minValue": 12,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Pregnancy test result",
@@ -21081,7 +20832,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -21123,7 +20874,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -21159,7 +20910,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -21195,7 +20946,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -21231,7 +20982,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -21267,7 +21018,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -21347,10 +21098,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "minValue": 42.0,
         "maxValue": 180.0,
-        "operator": "between, >, <="
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -21378,10 +21129,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "minValue": 49.0,
         "maxValue": 180.0,
-        "operator": "between, >, <="
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -21418,12 +21169,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 21.0,
         "operator": "<"
       }
@@ -21502,7 +21248,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       }
@@ -21527,13 +21273,8 @@
         "operator": "="
       },
       {
-        "key": "DAK, 180 days post-delivery",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 294,
+        "key": "DAK, Date of last birth",
+        "value": 180,
         "operator": ">"
       },
       {
@@ -21542,7 +21283,7 @@
         "operator": ">"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       }
@@ -21567,9 +21308,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": " DAK, Amenorrhoea",
@@ -21577,7 +21318,7 @@
         "operator": ">"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       }
@@ -21597,14 +21338,10 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 7.0,
-        "operator": "<="
+        "minValue": 12,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Provide injection at the time of consultation or at a time convenient for the client at a later date through an appropriate service",
@@ -21633,7 +21370,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       },
@@ -21669,7 +21406,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       },
@@ -21707,7 +21444,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       }
@@ -21727,7 +21464,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       },
@@ -21752,7 +21489,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       },
@@ -21832,10 +21569,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "minValue": 42.0,
         "maxValue": 180.0,
-        "operator": "between, >, <"
+        "operator": "between, <, <"
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -21843,7 +21580,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -21873,10 +21610,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "minValue": 42.0,
         "maxValue": 180.0,
-        "operator": "between, >, <"
+        "operator": "between, <, <"
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -21884,7 +21621,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -21914,14 +21651,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "values": 21,
-        "operator": ">"
+        "key": "DAK, Date of last birth",
+        "minValue": 21,
+        "maxValue": 42,
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -21954,14 +21687,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "values": 21,
-        "operator": ">"
+        "key": "DAK, Date of last birth",
+        "minValue": 21,
+        "maxValue": 42,
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -21994,9 +21723,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -22004,7 +21733,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -22034,9 +21763,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -22044,7 +21773,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -22085,7 +21814,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -22126,7 +21855,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -22237,14 +21966,10 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 7.0,
-        "operator": ">"
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Provide injection at the time of consultation or at a time convenient for the client at a later date through an appropriate service. Provide back-up method.",
@@ -22275,7 +22000,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -22318,7 +22043,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -22361,7 +22086,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -22404,7 +22129,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -22459,9 +22184,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       }
     ],
     "action": "Method should not be started. Counsel and discuss alternative options.",
@@ -22484,9 +22209,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Breastfeeding",
@@ -22506,7 +22231,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -22528,9 +22253,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Has client given birth in the last six months",
-        "value": true,
-        "operator": "="
+        "trigger": "DAK, Date of last birth",
+        "value": 180,
+        "operator": "<="
       },
       {
         "key": "DAK, Breastfeeding",
@@ -22559,15 +22284,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, 180 days post-delivery",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "minValue": 42,
-        "maxValue": 180,
-        "operator": "between, >, <="
+        "key": "DAK, Date of last birth",
+        "value": 180,
+        "operator": ">"
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -22601,13 +22320,8 @@
         "operator": "="
       },
       {
-        "key": "DAK, 180 days post-delivery",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 42,
+        "key": "DAK, Date of last birth",
+        "value": 180,
         "operator": ">"
       },
       {
@@ -22616,7 +22330,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -22635,11 +22349,6 @@
       {
         "key": "DAK, Is client currently breastfeeding?",
         "value": false,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Postpartum",
-        "value": true,
         "operator": "="
       },
       {
@@ -22665,9 +22374,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -22675,7 +22384,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -22692,14 +22401,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 7.0,
-        "operator": "<="
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Provide up to 1 year's supply of POPs with appropriate instructions on initiation",
@@ -22821,7 +22526,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -22848,7 +22553,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -22870,9 +22575,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       }
     ],
     "action": "Provide up to 1 year's supply POPs with appropriate instructions on initiation",
@@ -22892,15 +22597,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, 180 days post-delivery",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "minValue": 42,
-        "maxValue": 180,
-        "operator": "between, >, <="
+        "key": "DAK, Date of last birth",
+        "value": 180,
+        "operator": ">"
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -22969,13 +22668,8 @@
         "operator": "="
       },
       {
-        "key": "DAK, 180 days post-delivery",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 42,
+        "key": "DAK, Date of last birth",
+        "value": 180,
         "operator": ">"
       },
       {
@@ -22984,7 +22678,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -23011,13 +22705,8 @@
         "operator": "="
       },
       {
-        "key": "DAK, 180 days post-delivery",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 42,
+        "key": "DAK, Date of last birth",
+        "value": 180,
         "operator": ">"
       },
       {
@@ -23026,7 +22715,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -23053,14 +22742,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of last birth",
-        "value": 21,
-        "operator": ">"
+        "minValue": 21,
+        "maxValue": 42,
+        "operator": "between, <, <="
       }
     ],
     "action": "Provide up to 1 year's supply POPs with appropriate instructions on initiation. Provide back-up method.",
@@ -23080,9 +22765,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -23090,7 +22775,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -23117,9 +22802,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -23127,7 +22812,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -23149,14 +22834,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 7.0,
-        "operator": ">"
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Reasonably certain a woman is not pregnant",
@@ -23176,14 +22857,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 7.0,
-        "operator": ">"
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Pregnancy test result",
@@ -23224,7 +22901,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -23267,7 +22944,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -23324,7 +23001,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -23369,7 +23046,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -23414,7 +23091,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -23459,7 +23136,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -23486,7 +23163,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -23508,7 +23185,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -23620,7 +23297,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -23642,7 +23319,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 180,
         "operator": ">"
       },
@@ -23652,7 +23329,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -23674,14 +23351,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 21,
-        "operator": ">"
+        "key": "DAK, Date of last birth",
+        "minValue": 21,
+        "maxValue": 42,
+        "operator": "between, <, <="
       }
     ],
     "action": "Provide as much as possible up to 3 packs (for three months) supply COCs,  with appropriate instructions on initiation",
@@ -23701,9 +23374,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -23716,7 +23389,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -23733,13 +23406,8 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 7.0,
+        "value": 28,
         "operator": "<="
       }
     ],
@@ -23910,7 +23578,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -23932,7 +23600,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -23949,7 +23617,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -23971,7 +23639,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -24042,7 +23710,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 180,
         "operator": ">"
       },
@@ -24074,7 +23742,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 180,
         "operator": ">"
       },
@@ -24106,7 +23774,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 180,
         "operator": ">"
       },
@@ -24116,7 +23784,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -24143,7 +23811,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 180,
         "operator": ">"
       },
@@ -24153,7 +23821,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -24180,9 +23848,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -24217,9 +23885,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -24254,9 +23922,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -24269,7 +23937,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -24296,9 +23964,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -24311,7 +23979,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -24333,14 +24001,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 7.0,
-        "operator": ">"
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Reasonably certain a woman is not pregnant",
@@ -24360,14 +24024,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 7.0,
-        "operator": ">"
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Pregnancy test result",
@@ -24403,7 +24063,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -24441,7 +24101,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -24493,7 +24153,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -24533,7 +24193,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -24573,7 +24233,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -24613,7 +24273,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -24719,9 +24379,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       }
     ],
     "action": "Method should not be started. Counsel and discuss alternative options. \nOR\nProvide COCs,  with appropriate instructions on initiation to start 6 weeks after giving birth. Provide back-up method.",
@@ -24741,15 +24401,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, 180 days post-delivery",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "minValue": 42.0,
-        "maxValue": 180,
-        "operator": "between, >, <="
+        "key": "DAK, Date of last birth",
+        "value": 180,
+        "operator": ">"
       }
     ],
     "action": "Method should not be started. Counsel and discuss alternative options.",
@@ -24769,12 +24423,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 21.0,
         "operator": "<"
       }
@@ -24803,7 +24452,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 180.0,
         "operator": "<="
       },
@@ -24839,7 +24488,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 180.0,
         "operator": ">"
       }
@@ -24914,7 +24563,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Chosen method after counselling",
+        "key": "DAK, Chosen method",
         "value": "DAK, Male sterilization",
         "operator": "="
       }
@@ -24926,7 +24575,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Chosen method after counselling",
+        "key": "DAK, Chosen method",
         "value": "DAK, Female sterilization",
         "operator": "="
       },
@@ -24943,7 +24592,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Chosen method after counselling",
+        "key": "DAK, Chosen method",
         "value": "DAK, Female sterilization",
         "operator": "="
       },
@@ -24965,7 +24614,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 12.0,
         "operator": "<="
       }
@@ -24982,7 +24631,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 12.0,
         "operator": ">"
       },
@@ -25004,7 +24653,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 12.0,
         "operator": ">"
       },
@@ -25026,9 +24675,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": false,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42.0,
+        "operator": ">"
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -25053,9 +24702,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": false,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42.0,
+        "operator": ">"
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -25080,17 +24729,13 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "minValue": 28.0,
+        "maxValue": 42,
+        "operator": "between, <=, <="
       },
       {
-        "key": "DAK, Date of previous delivery/Date last birth",
-        "value": 28,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 12.0,
         "operator": "<="
       },
@@ -25117,17 +24762,13 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "minValue": 28.0,
+        "maxValue": 42,
+        "operator": "between, <=, <="
       },
       {
-        "key": "DAK, Date of previous delivery/Date last birth",
-        "value": 28,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 12.0,
         "operator": "<="
       },
@@ -25154,17 +24795,13 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "minValue": 28,
+        "maxValue": 42,
+        "operator": "between, <=, <="
       },
       {
-        "key": "DAK, Time since delivery",
-        "value": 28,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 12.0,
         "operator": ">"
       },
@@ -25191,17 +24828,13 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "minValue": 28,
+        "maxValue": 42,
+        "operator": "between, <=, <="
       },
       {
-        "key": "DAK, Time since delivery",
-        "value": 28,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 12.0,
         "operator": ">"
       },
@@ -25228,12 +24861,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 2,
         "operator": "<="
       }
@@ -25250,14 +24878,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 28,
-        "operator": ">="
+        "key": "DAK, Date of last birth",
+        "minValue": 28,
+        "maxValue": 42,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -25282,14 +24906,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 28,
-        "operator": ">="
+        "key": "DAK, Date of last birth",
+        "minValue": 28,
+        "maxValue": 42,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -25314,14 +24934,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 4.0,
-        "operator": ">="
+        "key": "DAK, Date of last birth",
+        "minValue": 4,
+        "maxValue": 42,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -25341,19 +24957,15 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
         "value": "DAK, First trimester less than 13 weeks GA",
         "operator": "="
       },
       {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 12.0,
-        "operator": "<="
+        "minValue": 12,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Discuss dual protection",
@@ -25368,19 +24980,15 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "minValue": 12,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
         "value": "DAK, Second trimester between 13 and 24 Weeks",
         "operator": "="
-      },
-      {
-        "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 12.0,
-        "operator": "<="
       }
     ],
     "action": "Discuss dual protection",
@@ -25395,19 +25003,15 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
         "value": "DAK, First trimester less than 13 weeks GA",
         "operator": "="
       },
       {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 12.0,
-        "operator": ">"
+        "minValue": 12,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Reasonably certain a woman is not pregnant",
@@ -25427,19 +25031,15 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
         "value": "DAK, First trimester less than 13 weeks GA",
         "operator": "="
       },
       {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 12.0,
-        "operator": ">"
+        "minValue": 12,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Pregnancy test result",
@@ -25459,19 +25059,15 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
         "value": "DAK, Second trimester between 13 and 24 Weeks",
         "operator": "="
       },
       {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 12.0,
-        "operator": ">"
+        "minValue": 12,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Reasonably certain a woman is not pregnant",
@@ -25491,19 +25087,15 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
         "value": "DAK, Second trimester between 13 and 24 Weeks",
         "operator": "="
       },
       {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 12.0,
-        "operator": ">"
+        "minValue": 12,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Pregnancy test result",
@@ -25647,9 +25239,9 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Is client currently breastfeeding?",
@@ -25673,7 +25265,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "minValue": 42,
         "maxValue": 180,
         "operator": "between, >=, <="
@@ -25700,10 +25292,10 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "minValue": 42,
         "maxValue": 180,
-        "operator": "between, >, <="
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -25736,7 +25328,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 12.0,
         "operator": "<="
       }
@@ -25757,7 +25349,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 42,
         "operator": ">"
       },
@@ -25767,7 +25359,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       }
@@ -25788,14 +25380,10 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 21,
-        "operator": ">"
+        "key": "DAK, Date of last birth",
+        "minValue": 21,
+        "maxValue": 42,
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Is client currently breastfeeding?",
@@ -25819,9 +25407,9 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Is client currently breastfeeding?",
@@ -25834,7 +25422,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       }
@@ -25855,14 +25443,10 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 7,
-        "operator": "<="
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Discuss dual protection",
@@ -25969,7 +25553,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -26011,7 +25595,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -26050,7 +25634,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       },
@@ -26089,7 +25673,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       },
@@ -26115,7 +25699,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -26141,7 +25725,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -26167,9 +25751,9 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Postpartum",
-        "value": false,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42.0,
+        "operator": ">"
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -26198,9 +25782,9 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Postpartum",
-        "value": false,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42.0,
+        "operator": ">"
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -26229,7 +25813,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 42,
         "operator": ">"
       },
@@ -26239,7 +25823,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -26265,7 +25849,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 42,
         "operator": ">"
       },
@@ -26275,7 +25859,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -26301,14 +25885,10 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 21,
-        "operator": ">"
+        "key": "DAK, Date of last birth",
+        "minValue": 21,
+        "maxValue": 42,
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Is client currently breastfeeding?",
@@ -26342,14 +25922,10 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 21,
-        "operator": ">"
+        "key": "DAK, Date of last birth",
+        "minValue": 21,
+        "maxValue": 42,
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Is client currently breastfeeding?",
@@ -26383,14 +25959,10 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 21,
-        "operator": ">"
+        "key": "DAK, Date of last birth",
+        "minValue": 21,
+        "maxValue": 42,
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Is client currently breastfeeding?",
@@ -26403,7 +25975,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -26429,14 +26001,10 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 21,
-        "operator": ">"
+        "key": "DAK, Date of last birth",
+        "minValue": 21,
+        "maxValue": 42,
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Is client currently breastfeeding?",
@@ -26449,7 +26017,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -26557,14 +26125,10 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 7,
-        "operator": ">"
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Discuss dual protection and provide back-up method",
@@ -26599,7 +26163,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -26641,7 +26205,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -26677,7 +26241,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -26713,7 +26277,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -26745,7 +26309,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       }
@@ -26864,7 +26428,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 21.0,
         "operator": "<"
       }
@@ -26925,7 +26489,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       }
@@ -26947,7 +26511,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 6.0,
         "operator": ">"
       },
@@ -26974,9 +26538,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -26996,14 +26560,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 7.0,
-        "operator": "<="
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Discuss dual protection",
@@ -27028,7 +26588,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       }
@@ -27055,7 +26615,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       }
@@ -27072,7 +26632,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -27148,9 +26708,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Visit date \u2013 Date of delivery",
@@ -27175,9 +26735,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -27207,7 +26767,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       }
@@ -27251,14 +26811,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Visit date \u2013 Date of miscarriage or abortion",
-        "value": 7.0,
-        "operator": ">"
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Discuss dual protection and provide back-up method",
@@ -27283,7 +26839,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       }
@@ -27310,7 +26866,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       }
@@ -27344,7 +26900,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -27366,9 +26922,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Breastfeeding status",
@@ -27415,7 +26971,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 6.0,
         "operator": ">"
       },
@@ -27442,9 +26998,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Visit date \u2013 Date of delivery",
@@ -27469,9 +27025,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -27491,14 +27047,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Visit date \u2013 Date of miscarriage or abortion",
-        "value": 7.0,
-        "operator": "<="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Discuss dual protection",
@@ -27572,7 +27124,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -27599,7 +27151,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -27621,9 +27173,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       }
     ],
     "action": "Discuss dual protection",
@@ -27660,7 +27212,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -27709,7 +27261,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 6.0,
         "operator": ">"
       }
@@ -27731,9 +27283,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Visit date \u2013 Date of delivery",
@@ -27758,9 +27310,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -27780,14 +27332,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Visit date \u2013 Date of miscarriage or abortion",
-        "value": 7.0,
-        "operator": ">"
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Reasonably certain a woman is not pregnant",
@@ -27817,7 +27365,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       }
@@ -27861,7 +27409,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       }
@@ -27888,7 +27436,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       }
@@ -27932,7 +27480,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -27954,7 +27502,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery'",
+        "key": "DAK, Date of last birth'",
         "value": 6.0,
         "operator": ">"
       },
@@ -27981,9 +27529,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       }
     ],
     "action": "Discuss dual protection",
@@ -28003,9 +27551,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -28025,14 +27573,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Visit date \u2013 Date of miscarriage or abortion",
-        "value": 7.0,
-        "operator": "<="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Discuss dual protection",
@@ -28106,7 +27650,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -28133,7 +27677,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -28150,7 +27694,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -28199,7 +27743,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery'",
+        "key": "DAK, Date of last birth'",
         "value": 6.0,
         "operator": ">"
       },
@@ -28226,7 +27770,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery'",
+        "key": "DAK, Date of last birth'",
         "value": 6.0,
         "operator": ">"
       },
@@ -28253,9 +27797,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -28280,9 +27824,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -28302,14 +27846,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Visit date \u2013 Date of miscarriage or abortion",
-        "value": 7.0,
-        "operator": ">"
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Reasonably certain a woman is not pregnant",
@@ -28339,7 +27879,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       }
@@ -28383,7 +27923,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       }
@@ -28410,7 +27950,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       }
@@ -28546,7 +28086,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 12.0,
         "operator": "<="
       }
@@ -28563,7 +28103,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 12.0,
         "operator": ">"
       },
@@ -28585,9 +28125,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": false,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42.0,
+        "operator": ">"
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -28612,7 +28152,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 4.0,
         "operator": ">="
       },
@@ -28634,14 +28174,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 4.0,
-        "operator": ">="
+        "key": "DAK, Date of last birth",
+        "minValue": 4,
+        "maxValue": 42,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -28661,13 +28197,8 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 48.0,
+        "key": "DAK, Date of last birth",
+        "value": 42,
         "operator": "<="
       }
     ],
@@ -28683,14 +28214,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 4.0,
-        "operator": ">="
+        "key": "DAK, Date of last birth",
+        "minValue": 4,
+        "maxValue": 42,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -28710,14 +28237,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 4.0,
-        "operator": ">="
+        "key": "DAK, Date of last birth",
+        "minValue": 4,
+        "maxValue": 42,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -28737,19 +28260,15 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Miscarriage or abortion stage of pregnancy",
         "value": "DAK, First trimester less than 13 weeks GA",
         "operator": "="
       },
       {
-        "key": "DAK, Visit date \u2013 Date of miscarriage or abortion",
-        "value": 12.0,
-        "operator": "<="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "minValue": 12,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Discuss dual protection",
@@ -28764,19 +28283,15 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Miscarriage or abortion stage of pregnancy",
         "value": "DAK, Second trimester",
         "operator": "="
       },
       {
-        "key": "DAK, Visit date \u2013 Date of miscarriage or abortion",
-        "value": 12.0,
-        "operator": "<="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "minValue": 12,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Discuss dual protection",
@@ -28791,19 +28306,15 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Miscarriage or abortion stage of pregnancy",
         "value": "DAK, First trimester less than 13 weeks GA",
         "operator": "="
       },
       {
-        "key": "DAK, Visit date \u2013 Date of miscarriage or abortion",
-        "value": 12.0,
-        "operator": ">"
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "minValue": 12,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Discuss dual protection",
@@ -28818,19 +28329,15 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Miscarriage or abortion stage of pregnancy",
         "value": "DAK, Second trimester",
         "operator": "="
       },
       {
-        "key": "DAK, Visit date \u2013 Date of miscarriage or abortion",
-        "value": 12.0,
-        "operator": ">"
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "minValue": 12,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Discuss dual protection",
@@ -28928,9 +28435,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Breastfeeding",
@@ -28967,7 +28474,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "minValue": 6.0,
         "maxValue": 6.0,
         "operator": "between"
@@ -28995,7 +28502,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       }
@@ -29012,7 +28519,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 6.0,
         "operator": ">"
       },
@@ -29022,7 +28529,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       }
@@ -29039,14 +28546,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 21.0,
-        "operator": ">"
+        "key": "DAK, Date of last birth",
+        "minValue": 21,
+        "maxValue": 42,
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Breastfeeding",
@@ -29066,9 +28569,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Breastfeeding",
@@ -29088,14 +28591,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 7.0,
-        "operator": "<="
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Discuss dual protection",
@@ -29147,7 +28646,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       }
@@ -29174,7 +28673,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       }
@@ -29191,7 +28690,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -29213,9 +28712,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": false,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42.0,
+        "operator": ">"
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -29240,7 +28739,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 6.0,
         "operator": ">"
       },
@@ -29250,7 +28749,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       }
@@ -29267,9 +28766,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Visit date \u2013 Date of delivery",
@@ -29294,9 +28793,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Visit date \u2013 Date of delivery",
@@ -29348,14 +28847,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Visit date \u2013 Date of miscarriage or abortion",
-        "value": 7.0,
-        "operator": ">"
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Discuss dual protection and provide back-up method",
@@ -29380,7 +28875,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       }
@@ -29407,7 +28902,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       }
@@ -29482,10 +28977,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "minValue": 42,
         "maxValue": 180,
-        "operator": "between, >, <="
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -29513,10 +29008,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "minValue": 42,
         "maxValue": 180,
-        "operator": "between, >, <="
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -29553,7 +29048,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 21,
         "operator": "<"
       }
@@ -29627,7 +29122,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       }
@@ -29662,7 +29157,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       }
@@ -29687,9 +29182,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -29697,7 +29192,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       }
@@ -29717,14 +29212,10 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 7.0,
-        "operator": "<="
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Discuss dual protection",
@@ -29758,7 +29249,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       },
@@ -29799,7 +29290,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       },
@@ -29834,7 +29325,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": "<="
       }
@@ -29854,7 +29345,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -29879,7 +29370,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -29959,13 +29450,8 @@
         "operator": "="
       },
       {
-        "key": "DAK, 180 days post-delivery",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 42,
+        "key": "DAK, Date of last birth",
+        "value": 180,
         "operator": ">"
       },
       {
@@ -29974,7 +29460,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -30004,13 +29490,8 @@
         "operator": "="
       },
       {
-        "key": "DAK, 180 days post-delivery",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 42,
+        "key": "DAK, Date of last birth",
+        "value": 180,
         "operator": ">"
       },
       {
@@ -30019,7 +29500,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -30049,14 +29530,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 21,
-        "operator": ">"
+        "key": "DAK, Date of last birth",
+        "minValue": 21,
+        "maxValue": 42,
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -30089,14 +29566,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 21,
-        "operator": ">"
+        "key": "DAK, Date of last birth",
+        "minValue": 21,
+        "maxValue": 42,
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -30129,9 +29602,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -30139,7 +29612,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -30169,9 +29642,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -30179,7 +29652,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -30220,7 +29693,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -30261,7 +29734,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -30366,14 +29839,10 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 7.0,
-        "operator": ">"
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Discuss dual protection and provide back-up method",
@@ -30401,7 +29870,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7,
         "operator": ">"
       },
@@ -30441,7 +29910,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7,
         "operator": ">"
       },
@@ -30481,7 +29950,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7,
         "operator": ">"
       },
@@ -30521,7 +29990,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7,
         "operator": ">"
       },
@@ -30568,7 +30037,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -30590,9 +30059,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Breastfeeding",
@@ -30621,10 +30090,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time Postpartum",
+        "key": "DAK, Date of last birth",
         "minValue": 42,
         "maxValue": 180,
-        "operator": "between, >, <="
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -30658,7 +30127,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 42,
         "operator": ">"
       },
@@ -30668,7 +30137,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -30690,12 +30159,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 21.0,
         "operator": "<"
       }
@@ -30717,9 +30181,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -30727,7 +30191,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -30744,14 +30208,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 7.0,
-        "operator": "<="
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Discuss dual protection",
@@ -30871,7 +30331,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       },
@@ -30909,7 +30369,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       },
@@ -30941,7 +30401,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -30963,9 +30423,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       }
     ],
     "action": "Discuss dual protection",
@@ -30985,10 +30445,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time Postpartum",
+        "key": "DAK, Date of last birth",
         "minValue": 42,
         "maxValue": 180,
-        "operator": "between, >, <="
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -31008,7 +30468,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -31030,7 +30490,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -31101,7 +30561,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 42,
         "operator": ">"
       },
@@ -31111,7 +30571,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5,
         "operator": ">"
       },
@@ -31138,7 +30598,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 42,
         "operator": ">"
       },
@@ -31148,7 +30608,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5,
         "operator": ">"
       },
@@ -31175,14 +30635,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 21,
-        "operator": ">"
+        "key": "DAK, Date of last birth",
+        "minValue": 21,
+        "maxValue": 42,
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -31212,14 +30668,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
-        "value": 21,
-        "operator": ">"
+        "key": "DAK, Date of last birth",
+        "minValue": 21,
+        "maxValue": 42,
+        "operator": "between, <, <="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -31249,9 +30701,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -31259,7 +30711,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -31286,9 +30738,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -31296,7 +30748,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -31318,14 +30770,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 7.0,
-        "operator": ">"
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Reasonably certain a woman is not pregnant",
@@ -31345,14 +30793,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 7.0,
-        "operator": ">"
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Pregnancy test result",
@@ -31388,7 +30832,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -31426,7 +30870,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 7.0,
         "operator": ">"
       },
@@ -31475,7 +30919,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -31507,7 +30951,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -31603,7 +31047,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -31625,7 +31069,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 180,
         "operator": ">"
       },
@@ -31635,7 +31079,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -31657,14 +31101,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 42,
-        "operator": ">"
+        "operator": "<="
       }
     ],
     "action": "Discuss dual protection",
@@ -31684,9 +31123,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -31699,7 +31138,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -31845,7 +31284,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -31872,7 +31311,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": "<="
       }
@@ -31889,7 +31328,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -31911,7 +31350,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -31982,7 +31421,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 180,
         "operator": ">"
       },
@@ -32014,7 +31453,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 180,
         "operator": ">"
       },
@@ -32046,7 +31485,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 180,
         "operator": ">"
       },
@@ -32056,7 +31495,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -32083,7 +31522,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 180,
         "operator": ">"
       },
@@ -32093,7 +31532,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -32120,9 +31559,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -32157,9 +31596,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -32194,9 +31633,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -32209,7 +31648,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -32236,9 +31675,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -32251,7 +31690,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -32273,14 +31712,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 7.0,
-        "operator": ">"
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Reasonably certain a woman is not pregnant",
@@ -32300,14 +31735,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of miscarriage or abortion FP",
-        "value": 7.0,
-        "operator": ">"
+        "minValue": 7,
+        "maxValue": 28,
+        "operator": "between, <=, <="
       },
       {
         "key": "DAK, Pregnancy test result",
@@ -32343,7 +31774,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -32381,7 +31812,7 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -32430,7 +31861,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -32467,7 +31898,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -32504,7 +31935,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -32541,7 +31972,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Days since start of last normal menses",
+        "key": "DAK, Last normal menustral period",
         "value": 5.0,
         "operator": ">"
       },
@@ -32654,7 +32085,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 180,
         "operator": "<="
       },
@@ -32777,9 +32208,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": false,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42.0,
+        "operator": ">"
       },
       {
         "key": "DAK, Amenorrhoea",
@@ -33098,12 +32529,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 42.0,
         "operator": "<"
       }
@@ -33125,14 +32551,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": false,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 42.0,
-        "operator": ">="
+        "operator": ">"
       }
     ],
     "action": "Counsel client that she is medically eligible for this method",
@@ -33152,12 +32573,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 42.0,
         "operator": "<"
       }
@@ -33179,14 +32595,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": false,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 42.0,
-        "operator": ">="
+        "operator": ">"
       }
     ],
     "action": "Counsel client that she is medically eligible for this method",
@@ -33201,9 +32612,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
@@ -33223,9 +32634,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
@@ -33245,9 +32656,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
@@ -34449,7 +33860,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 180,
         "operator": "<"
       },
@@ -34485,7 +33896,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 180,
         "operator": "<"
       },
@@ -34829,12 +34240,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 2,
         "operator": "<"
       },
@@ -34856,12 +34262,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "value": 2,
         "operator": "<"
       },
@@ -34883,12 +34284,7 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time since delivery",
+        "key": "DAK, Date of last birth",
         "minValue": 2.0,
         "maxValue": 28.0,
         "operator": "between, <=, <"
@@ -34906,14 +34302,10 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Time Postpartum",
-        "value": 28,
-        "operator": ">="
+        "key": "DAK, Date of last birth",
+        "minValue": 28,
+        "maxValue": 42,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Counsel client that she is medically eligible for this method",
@@ -34928,9 +34320,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Postpartum",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
       },
       {
         "key": "DAK, Medical conditions during past pregnancy and after childbirth",
@@ -34950,9 +34342,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
@@ -34972,9 +34364,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
@@ -34994,9 +34386,9 @@
         "operator": "="
       },
       {
-        "key": "DAK, Miscarriage or abortion within past 4 weeks",
-        "value": true,
-        "operator": "="
+        "key": "DAK, Date of miscarriage or abortion FP",
+        "value": 28,
+        "operator": "<="
       },
       {
         "key": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
@@ -37733,13 +37125,8 @@
         "operator": "OR"
       },
       {
-        "key": "DAK, postpartum",
-        "value": true,
-        "operator": "="
-      },
-      {
         "key": "DAK, Date of last birth",
-        "value": 180,
+        "value": 42,
         "operator": "<="
       },
       {
