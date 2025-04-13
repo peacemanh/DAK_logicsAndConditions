@@ -302,36 +302,6 @@
     {
         "logics": [
             {
-                "trigger": "DAK, HIV test result",
-                "value": "DAK, HIV-positive",
-                "operator": "="
-            },
-            {
-                "trigger": "Chronic or past health conditions",
-                "value": "DAK, HIV-positive",
-                "operator": "="
-            }
-        ],
-        "dependentValue": "DAK, HIV positive",
-        "conditionType": "either",
-        "dependent": "DAK, HIV status",
-        "logic_key": 26
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, HIV test result",
-                "value": "DAK, HIV-negative",
-                "operator": "="
-            }
-        ],
-        "dependentValue": "DAK, HIV negative",
-        "dependent": "DAK, HIV status",
-        "logic_key": 27
-    },
-    {
-        "logics": [
-            {
                 "trigger": "DAK, Visit Status",
                 "value": "DAK, Emergency contraception",
                 "operator": "="
@@ -24485,30 +24455,6 @@
     {
         "logics": [
             {
-                "trigger": "DAK, Client Current HIV status",
-                "value": "DAK, Client is Known HIV-postive",
-                "operator": "="
-            }
-        ],
-        "logic_key": 1185,
-        "dependentValue": "DAK, HIV-positive",
-        "dependent": "DAK, HIV test result"
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Client Current HIV status",
-                "value": "DAK, Client is Known HIV-postive",
-                "operator": "="
-            }
-        ],
-        "logic_key": 1186,
-        "dependentValue": "DAK, HIV positive",
-        "dependent": "DAK, HIV status"
-    },
-    {
-        "logics": [
-            {
                 "trigger": "DAK, Cervical Cancer risk assessment conducted",
                 "value": true,
                 "operator": "="
@@ -24521,23 +24467,6 @@
     {
         "logics": [
             {
-                "trigger": "DAK, HIV risk assessment conducted",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "logic_key": 1188,
-        "dependentValue": true,
-        "dependent": "DAK,       HIV test screening: Rapid/laboratory test conducted"
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Test result of HIV assay 1",
-                "value": "DAK, Reactive",
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Test result of HIV assay 2",
                 "value": "DAK, Reactive",
                 "operator": "="
@@ -24549,6 +24478,7 @@
             }
         ],
         "logic_key": 1189,
+        "conditionType": "either",
         "dependentValue": "DAK, HIV positive FP",
         "dependent": "DAK, HIV test result FP"
     },
@@ -24558,23 +24488,6 @@
                 "trigger": "DAK, Test result of HIV assay 1",
                 "value": "DAK, Non-reactive",
                 "operator": "="
-            }
-        ],
-        "logic_key": 1190,
-        "dependentValue": "DAK, HIV negative FP",
-        "dependent": "DAK, HIV test result FP"
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Test result of HIV assay 1",
-                "value": "DAK, Reactive",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Test result of HIV assay 2",
-                "value": "DAK, Reactive",
-                "operator": "="
             },
             {
                 "trigger": "DAK, Test result of HIV assay 3",
@@ -24583,77 +24496,26 @@
             }
         ],
         "logic_key": 1191,
-        "dependentValue": "DAK, HIV Inconclusive FP",
-        "dependent": "DAK, HIV test result FP"
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Test result of HIV assay 1 repeated",
-                "value": "DAK, Reactive",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Test result of HIV assay 2",
-                "value": "DAK, Non-reactive",
-                "operator": "="
-            }
-        ],
-        "logic_key": 1192,
-        "dependentValue": "DAK, HIV Inconclusive FP",
-        "dependent": "DAK, HIV test result FP"
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Test result of HIV assay 1 repeated",
-                "value": "DAK, Non-reactive",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Test result of HIV assay 2",
-                "value": "DAK, Non-reactive",
-                "operator": "="
-            }
-        ],
-        "logic_key": 1193,
+        "conditionType": "either",
         "dependentValue": "DAK, HIV negative FP",
         "dependent": "DAK, HIV test result FP"
     },
     {
         "logics": [
             {
-                "trigger": "DAK, HIV test result FP",
-                "value": "DAK, HIV negative FP",
+                "trigger": "DAK, Test result of HIV assay 2",
+                "value": "DAK, Non-reactive",
                 "operator": "="
-            }
-        ],
-        "logic_key": 1194,
-        "dependentValue": "DAK, HIV negative",
-        "dependent": "DAK, HIV status"
-    },
-    {
-        "logics": [
+            },
             {
-                "trigger": "DAK, HIV test result FP",
-                "value": "DAK, HIV positive FP",
-                "operator": "="
-            }
+                "trigger": "DAK, Rapid diagnostic test (Assay) number in testing strategy",
+                "positiveValue": "DAK, Assay 2",
+                "negativeValue": ["DAK, Assay 3"],
+                "operator": "exclude"
+              }
         ],
-        "logic_key": 1195,
-        "dependentValue": "DAK, HIV positive",
-        "dependent": "DAK, HIV status"
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, HIV test result FP",
-                "value": "DAK, HIV Inconclusive FP",
-                "operator": "="
-            }
-        ],
-        "logic_key": 1196,
-        "dependentValue": "DAK, HIV-inconclusive",
-        "dependent": "DAK, HIV status"
+        "logic_key": 1193,
+        "dependentValue": "DAK, HIV Inconclusive FP",
+        "dependent": "DAK, HIV test result FP"
     }
 ]

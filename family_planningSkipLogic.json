@@ -137,9 +137,9 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Client Current HIV status",
-        "value": "DAK, Client is HIV-Negative",
-        "operator": "="
+        "trigger": "DAK, Health condition(s)",
+        "value": "DAK, HIV/AIDS",
+        "operator": "!="
       }
     ],
     "action": "show",
@@ -334,7 +334,7 @@
         "operator": "="
       },
       {
-        "trigger": "DAK, Chosen method after counselling",
+        "trigger": "DAK, Chosen method",
         "orValues": [
           "DAK, Copper-bearing intrauterine device (Cu-IUD)",
           "DAK, Levonorgestrel intrauterine device (LNG-IUD)",
@@ -471,7 +471,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, HIV test conducted",
+        "trigger": "DAK, HIV test screening: Rapid/laboratory test conducted",
         "value": true,
         "operator": "="
       }
@@ -702,7 +702,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Chosen method after counselling",
+        "trigger": "DAK, Chosen method",
         "orValues": [
           "DAK, Copper-bearing intrauterine device (Cu-IUD)",
           "DAK, Levonorgestrel-releasing IUD (LNG-IUD)"
@@ -714,42 +714,6 @@
     "parent": "DAK, Reason for no method at exit",
     "dependent": "DAK, IUD insertion attempted but not done",
     "logic_key": 46
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, HIV test type",
-        "value": "DAK, HIV self-test",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, HIV self-test result",
-    "logic_key": 47
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, HIV test type",
-        "value": "DAK, HIV self-test",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, HIV self-test date",
-    "logic_key": 48
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Hepatitis B diagnosis",
-        "value": "DAK, Hepatitis B negative",
-        "operator": "="
-      }
-    ],
-    "action": "hide",
-    "dependent": "DAK, HIV positive counselling conducted",
-    "logic_key": 49
   },
   {
     "logics": [
@@ -897,33 +861,11 @@
         "trigger": "DAK, Ever had sex - Reported",
         "value": true,
         "operator": "="
-      },
-      {
-        "trigger": "DAK, Sexually active",
-        "value": true,
-        "operator": "="
       }
     ],
     "action": "show",
     "dependent": "DAK, Has client ever been pregnant",
     "logic_key": 61
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Has client ever been pregnant",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Ever had sex - Reported",
-        "value": false,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Number of previous pregnancies",
-    "logic_key": 62
   },
   {
     "logics": [
@@ -991,7 +933,7 @@
       "DAK, Method in mind",
       "DAK, Method in use",
       "DAK, Methods previously used",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Method or service provided",
       "DAK, Chosen method",
       "DAK, Type of postpartum family planning method selected"
@@ -1013,7 +955,7 @@
       "DAK, Method in use",
       "DAK, Chosen method",
       "DAK, Methods previously used",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1035,7 +977,7 @@
       "DAK, Chosen method",
       "DAK, Methods previously used",
       "DAK, Method or service provided",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, Etonogestrel (ETG) one-rod",
@@ -1055,7 +997,7 @@
       "DAK, Method in use",
       "DAK, Chosen method",
       "DAK, Methods previously used",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1076,7 +1018,7 @@
       "DAK, Method in use",
       "DAK, Chosen method",
       "DAK, Methods previously used",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1097,7 +1039,7 @@
       "DAK, Method in use",
       "DAK, Chosen method",
       "DAK, Methods previously used",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1118,7 +1060,7 @@
       "DAK, Method in use",
       "DAK, Chosen method",
       "DAK, Methods previously used",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1139,7 +1081,7 @@
       "DAK, Method in use",
       "DAK, Chosen method",
       "DAK, Methods previously used",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1160,7 +1102,7 @@
       "DAK, Method in use",
       "DAK, Chosen method",
       "DAK, Methods previously used",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1181,7 +1123,7 @@
       "DAK, Method in use",
       "DAK, Chosen method",
       "DAK, Methods previously used",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1202,7 +1144,7 @@
       "DAK, Method in use",
       "DAK, Chosen method",
       "DAK, Methods previously used",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1224,7 +1166,7 @@
       "DAK, Chosen method",
       "DAK, Methods previously used",
       "DAK, Method or service provided",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, Female condoms",
@@ -1245,7 +1187,7 @@
       "DAK, Chosen method",
       "DAK, Methods previously used",
       "DAK, Method or service provided",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, Levonorgestrel intrauterine device (LNG-IUD)",
@@ -1266,7 +1208,7 @@
       "DAK, Method in use",
       "DAK, Methods previously used",
       "DAK, Method or service provided",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, Emergency contraceptive pills (ECPs)",
@@ -1287,7 +1229,7 @@
       "DAK, Chosen method",
       "DAK, Methods previously used",
       "DAK, Method or service provided",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Type of postpartum family planning method selected"
     ],
     "parent": "DAK, Method in mind",
@@ -1309,7 +1251,7 @@
       "DAK, Chosen method",
       "DAK, Methods previously used",
       "DAK, Method or service provided",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, Vasectomy",
@@ -1330,7 +1272,7 @@
       "DAK, Chosen method",
       "DAK, Methods previously used",
       "DAK, Method or service provided",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, Tubal ligition",
@@ -1350,7 +1292,7 @@
       "DAK, Method in use",
       "DAK, Chosen method",
       "DAK, Methods previously used",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1372,7 +1314,7 @@
       "DAK, Chosen method",
       "DAK, Methods previously used",
       "DAK, Method or service provided",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, Female relying on male method",
@@ -1393,7 +1335,7 @@
       "DAK, Method in use",
       "DAK, Methods previously used",
       "DAK, Method or service provided",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, Male relying on female method",
@@ -1414,7 +1356,7 @@
       "DAK, Chosen method",
       "DAK, Methods previously used",
       "DAK, Method or service provided",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, Levonorgestrel (LNG) two-rod for four years",
@@ -1434,7 +1376,7 @@
       "DAK, Method in use",
       "DAK, Chosen method",
       "DAK, Methods previously used",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1456,7 +1398,7 @@
       "DAK, Chosen method",
       "DAK, Methods previously used",
       "DAK, Method or service provided",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "Combined contraceptive vaginal ring (CVR)",
@@ -1476,7 +1418,7 @@
       "DAK, Method in use",
       "DAK, Chosen method",
       "DAK, Methods previously used",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Method or service provided",
       "DAK, Type of postpartum family planning method selected"
     ],
@@ -1498,7 +1440,7 @@
       "DAK, Chosen method",
       "DAK, Method or service provided",
       "DAK, Methods previously used",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, Male sterilization",
@@ -1519,7 +1461,7 @@
       "DAK, Chosen method",
       "DAK, Method or service provided",
       "DAK, Methods previously used",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, Female sterilization",
@@ -1540,7 +1482,7 @@
       "DAK, Chosen method",
       "DAK, Methods previously used",
       "DAK, Method or service provided",
-      "DAK, Chosen method after counselling",
+      "DAK, Chosen method",
       "DAK, Type of postpartum family planning method selected"
     ],
     "dependent": "DAK, DMPA-SC -SI",
@@ -2534,10 +2476,32 @@
         "trigger": "DAK, Primary Screening Result",
         "value": "DAK, Positive",
         "operator": "="
+      },
+      {
+        "trigger": "DAK, Triage Test Result",
+        "value": "DAK, Positive",
+        "operator": "="
       }
     ],
     "action": "show",
     "dependent": "DAK, Treatment Provided",
+    "logic_key": 176
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Primary Screening Result",
+        "value": "DAK, Positive",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Triage Test Result",
+        "value": "DAK, Positive",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Treatment Methods",
     "logic_key": 176
   },
   {
@@ -2713,7 +2677,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Chosen method after counselling",
+        "trigger": "DAK, Chosen method",
         "value": "DAK, No method provided",
         "operator": "="
       }
@@ -2725,7 +2689,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Chosen method after counselling",
+        "trigger": "DAK, Chosen method",
         "value": "DAK, No method provided",
         "operator": "!="
       }
@@ -2749,19 +2713,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Primary Screening Result",
-        "value": "DAK, Positive",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Triage Tests for Positive Screening Result",
-    "logic_key": 194
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Chosen method after counselling",
+        "trigger": "DAK, Chosen method",
         "value": "DAK, No method provided",
         "operator": "="
       }
@@ -3068,18 +3020,6 @@
   {
     "logics": [
       {
-        "trigger": "DAK, HIV risk assessment conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, HIV risk assessement",
-    "logic_key": 220
-  },
-  {
-    "logics": [
-      {
         "trigger": "DAK, Issues with using oral contraceptive pills",
         "value": "DAK, Other (specify)",
         "operator": "="
@@ -3182,8 +3122,8 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Date of last birth",
-    "logic_key": 232
+    "dependent": "DAK, Number of previous pregnancies",
+    "logic_key": 12322
   },
   {
     "logics": [
@@ -3224,7 +3164,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Chosen method after counselling",
+        "trigger": "DAK, Chosen method",
         "value": "DAK, No method provided",
         "operator": "="
       }
@@ -3476,18 +3416,6 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Ever had sex - Reported",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Sexually active",
-    "logic_key": 268
-  },
-  {
-    "logics": [
-      {
         "trigger": "DAK, Abortion/miscarriage",
         "value": "DAK, Other",
         "operator": "="
@@ -3637,6 +3565,36 @@
   {
     "logics": [
       {
+        "trigger": "DAK, Health condition(s)",
+        "value": "DAK, HIV/AIDS",
+        "operator": "!="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, HIV screening: laboratory tests available",
+    "logic_key": 28000
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Health condition(s)",
+        "value": "DAK, HIV/AIDS",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, HIV test result FP",
+        "value": "DAK, HIV positive FP",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "conditionType": "either",
+    "dependent": "DAK, HIV positive counselling conducted",
+    "logic_key": 28700
+  },
+  {
+    "logics": [
+      {
         "trigger": "DAK, HIV screening: laboratory tests available",
         "value": true,
         "operator": "="
@@ -3649,14 +3607,38 @@
   {
     "logics": [
       {
-        "trigger": "DAK, HIV screening: Rapid tests available",
+        "trigger": "DAK, HIV test screening: Rapid/laboratory test conducted",
         "value": true,
         "operator": "="
       }
     ],
     "action": "show",
-    "dependent": "DAK, HIV test screening: Rapid/laboratory test conducted",
-    "logic_key": 281
+    "dependent": "DAK, HIV test result FP",
+    "logic_key": 28800
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, HIV test result FP",
+        "value": "DAK, HIV negative FP",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, HIV Negative counselling conducted",
+    "logic_key": 28100
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, HIV test screening: Rapid/laboratory test conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, HIV test date",
+    "logic_key": 29800
   },
   {
     "logics": [
@@ -3913,18 +3895,6 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Ever had sex - Reported",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Sexually active",
-    "logic_key": 307
-  },
-  {
-    "logics": [
-      {
         "trigger": "DAK, Abortion/miscarriage",
         "value": "DAK, Other",
         "operator": "="
@@ -4021,7 +3991,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Chosen method after counselling",
+        "trigger": "DAK, Chosen method",
         "value": "DAK, Other",
         "operator": "="
       }
@@ -4081,71 +4051,6 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Test result of HIV assay 1",
-        "value": "DAK, Reactive",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Test result of HIV assay 2",
-    "logic_key": 322
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Test result of HIV assay 2",
-        "value": "DAK, Reactive",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Test result of HIV assay 3",
-    "logic_key": 323
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Test result of HIV assay 2",
-        "value": "DAK, Non-reactive",
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Test result of HIV assay 1",
-        "value": "DAK, Reactive",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Test result of HIV assay 1 repeated",
-    "logic_key": 324
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, HIV screening: laboratory tests available",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, HIV test screening: Rapid/laboratory test conducted",
-    "logic_key": 325
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, HIV screening: Rapid tests available",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, HIV test screening: Rapid/laboratory test conducted",
-    "logic_key": 326
-  },
-  {
-    "logics": [
-      {
         "trigger": "DAK, HIV test screening: Rapid/laboratory test conducted",
         "value": true,
         "operator": "="
@@ -4153,7 +4058,58 @@
     ],
     "action": "show",
     "dependent": "DAK, Rapid diagnostic test (Assay) number in testing strategy",
-    "logic_key": 327
+    "logic_key": 322
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Rapid diagnostic test (Assay) number in testing strategy",
+        "value": "DAK, Assay 1",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Test result of HIV assay 1",
+    "logic_key": 323
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Test result of HIV assay 1",
+        "value": "DAK, Reactive",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Rapid diagnostic test (Assay) number in testing strategy",
+        "value": "DAK, Assay 2",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Test result of HIV assay 2",
+    "logic_key": 324
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Test result of HIV assay 1",
+        "value": "DAK, Reactive",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Test result of HIV assay 2",
+        "value": "DAK, Non-reactive",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Rapid diagnostic test (Assay) number in testing strategy",
+        "value": "DAK, Assay 3",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Test result of HIV assay 3",
+    "logic_key": 325
   },
   {
     "logics": [
@@ -4207,31 +4163,7 @@
     "logics": [
       {
         "trigger": "DAK, Never used contraception",
-        "value": false,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Method in use",
-    "logic_key": 333
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Never used contraception",
-        "value": false,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Methods previously used",
-    "logic_key": 334
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Never used contraception",
-        "value": false,
+        "value": true,
         "operator": "="
       }
     ],
@@ -4297,18 +4229,6 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Treatment Methods",
-    "logic_key": 336
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Cevical cancer screening conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
     "dependent": "DAK, Follow-Up at 1 Year",
     "logic_key": 337
   },
@@ -4364,5 +4284,50 @@
     "action": "show",
     "dependent": "DAK, Medically eligible",
     "logic_key": 341
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Date of last birth",
+        "value": 42,
+        "operator": "<="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Post Partum",
+    "logic_key": 342211
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Service for clients with special needs",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+
+    ],
+
+    "action": "show",
+    "dependent": "DAK, Other special need",
+    "logic_key": 342
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for follow-up",
+        "value": "DAK, Issues and concerns/ method failure",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Method in use",
+        "value": "DAK, None",
+        "operator": "!="
+      }
+
+    ],
+
+    "action": "show",
+    "dependent": "DAK, Issues and Concerns Section",
+    "logic_key": 343
   }
 ]

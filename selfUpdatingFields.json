@@ -2,7 +2,6 @@
   "DAK, Weight category",
   "DAK, Expected weight gain",
   "DAK, Medically eligible",
-  "DAK, HIV status",
   "DAK, Medical eligibility category",
   "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
   "DAK, HIV test result FP",
@@ -11,5 +10,7 @@
   "DAK, Syphilis diagnosis",
   "DAK, Hepatitis B diagnosis",
   "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-  "DAK, Gestational diabetes mellitus (GDM) diagnosis"
+  "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+  "DAK, Reasonably certain a woman is not pregnant",
+   "DAK, Amenorrhoea"
 ]
