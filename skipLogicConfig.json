@@ -8774,5 +8774,18 @@
     "action": "show",
     "dependent": "DAK, Counselling on malaria prevention",
     "logic_key": 684
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Danger signs",
+        "value": "DAK, Others danger signs",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other danger sign",
+    "logic_key": 685
   }
+  
 ]
