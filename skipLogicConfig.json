@@ -4525,18 +4525,7 @@
     "dependent": "DAK, Deworming",
     "logic_key": 369
   },
-  {
-    "logics": [
-      {
-        "trigger": "Malaria-endemic setting",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Counselling on malaria prevention",
-    "logic_key": 371
-  },
+ 
   {
     "logics": [
       {
