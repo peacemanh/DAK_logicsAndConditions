@@ -6538,18 +6538,7 @@
     "dependent": "DAK, Counselling conducted on breastfeeding",
     "logic_key": 559
   },
-  {
-    "logics": [
-      {
-        "trigger": "Malaria-endemic setting",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Malaria prophylaxis",
-    "logic_key": 560
-  },
+ 
   {
     "logics": [
       {
@@ -8752,18 +8741,7 @@
     "dependent": "DAK, Ultrasound required",
     "logic_key": 683
   },
-  {
-    "logics": [
-      {
-        "trigger": "Malaria-endemic setting",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Counselling on malaria prevention",
-    "logic_key": 684
-  },
+  
   {
     "logics": [
       {
