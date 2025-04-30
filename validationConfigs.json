@@ -43,7 +43,7 @@
     "conceptName": "DAK, Number of miscarriages and/or abortions",
     "operator": "beyond, <=, <=",
     "minValue": 1,
-    "maxValue": "DAK, Number of previous pregnancies",
+    "maxValue": "DAK, Number of pregnancies (gravida)",
     "type": "restrict",
     "message": "Number of pregnancies (gravida) should be less thanNumber of previous pregnancies"
   },
@@ -51,7 +51,7 @@
     "conceptName": "DAK, Number of live births",
     "operator": "beyond, <=, <=",
     "minValue": 0,
-    "maxValue": "DAK, Number of previous pregnancies - DAK, Number of miscarriages and/or abortions",
+    "maxValue": "DAK, Number of pregnancies (gravida) - DAK, Number of miscarriages and/or abortions",
     "type": "restrict",
     "message": "Number of live births should be less than difference of Number of previous pregnancy and Number of miscarriages and/or abortions"
   },
@@ -59,7 +59,7 @@
     "conceptName": "DAK, Number of stillbirths",
     "operator": "beyond, <=, <=",
     "minValue": 0,
-    "maxValue": "DAK, Number of previous pregnancies - DAK, Number of miscarriages and/or abortions - DAK, Number of live births",
+    "maxValue": "DAK, Number of pregnancies (gravida) - DAK, Number of miscarriages and/or abortions - DAK, Number of live births",
     "type": "restrict",
     "message": "Number of stillbirths should be less than than diffrence of Number of previous pregnancies, Number of miscarriages and/or abortions and Number of live births"
   },
@@ -186,10 +186,10 @@
   {
     "conceptName": "DAK, ANC Contact Number",
     "operator": "beyond, <=, <=",
-    "minValue": 1,
-    "maxValue": 15,
+    "minValue": 2,
+    "maxValue": 14,
     "type": "restrict",
-    "message": "ANC contact number should be between 1 and 14"
+    "message": "ANC contact number should be between 2 and 14"
   },
   {
     "conceptName": "DAK, Amount of daily aspirin prescribed until delivery",

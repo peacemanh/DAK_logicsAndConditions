@@ -1985,7 +1985,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Number of previous pregnancies",
+        "trigger": "DAK, Number of pregnancies (gravida)",
         "value": 1,
         "operator": ">="
       }
@@ -5599,7 +5599,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Number of previous pregnancies",
+        "trigger": "DAK, Number of pregnancies (gravida)",
         "value": 1,
         "operator": ">="
       },
@@ -8038,7 +8038,7 @@
           },
           {
             "trigger": "DAK, Symptoms of severe pre-eclampsia",
-            "value": "DAK, None",
+            "value": "DAK, No symptoms of severe pre-eclampsia",
             "operator": "="
           },
           {
@@ -8066,7 +8066,7 @@
           },
           {
             "trigger": "DAK, Symptoms of severe pre-eclampsia",
-            "value": "DAK, None",
+            "value": "DAK, No symptoms of severe pre-eclampsia",
             "operator": "="
           },
           {
@@ -8894,6 +8894,78 @@
   {
     "logics": [
       {
+        "trigger": "DAK, Malaria endemic area",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on malaria prevention",
+    "logic_key": 695
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Specific health concern(s)",
+        "value": "DAK, Pain - Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Pain - Other (specify)",
+    "logic_key": 696
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Specific health concern(s)",
+        "value": "DAK, Mental health – Other psychological symptoms",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Mental health – Other (specify)",
+    "logic_key": 697
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Specific health concern(s)",
+        "value": "DAK, Other bleeding",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other bleeding (specify)",
+    "logic_key": 698
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Specific health concern(s)",
+        "value": "DAK, Other skin disorder",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other skin disorder (specify)",
+    "logic_key": 699
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Specific health concern(s)",
+        "value": "DAK, Other types of violence",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other types of violence (specify)",
+    ",logic_key": 700
+  },
+  {
+    "logics": [
+      {
         "trigger": "DAK, Current symptoms",
         "positiveValue": "DAK, Oedema",
         "negativeValue": [
@@ -8904,7 +8976,7 @@
     ],
     "action": "show",
     "dependent": "DAK,  Non-pharmacological options for varicose veins and oedema",
-    "logic_key": 695
+    "logic_key": 701
   },
   {
     "logics": [
@@ -8919,7 +8991,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Counselling conducted on non-pharmacological options for varicose veins and oedema",
-    "logic_key": 696
+    "logic_key": 702
   },
   {
     "logics": [
@@ -8936,7 +9008,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Hepatitis B Counselling",
-    "logic_key": 697
+    "logic_key": 703
   },
   {
     "logics": [
@@ -8945,11 +9017,10 @@
         "value": "DAK, Other",
         "operator": "="
       }
-
     ],
     "action": "show",
     "dependent": "DAK, Other (specify)",
-    "logic_key": 698
+    "logic_key": 704
   },
   {
     "logics": [
@@ -8958,11 +9029,10 @@
         "value": true,
         "operator": "="
       }
-
     ],
     "action": "show",
     "dependent": "DAK, Has side-effects from Aspirin tablet",
-    "logic_key": 699
+    "logic_key": 705
   },
   {
     "logics": [
@@ -8974,7 +9044,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Medication follow-up",
-    "logic_key": 700
+    "logic_key": 706
   },
   {
     "logics": [
@@ -8986,7 +9056,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Other (specify)",
-    "logic_key": 701
+    "logic_key": 707
   },
   {
     "logics": [
@@ -8998,7 +9068,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-    "logic_key": 703
+    "logic_key": 708
   },
   {
     "logics": [
@@ -9010,7 +9080,6 @@
     ],
     "action": "show",
     "dependent": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-    "logic_key": 705
+    "logic_key": 709
   }
-
 ]

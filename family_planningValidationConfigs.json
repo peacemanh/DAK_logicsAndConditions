@@ -26,10 +26,10 @@
   {
     "conceptName": "DAK, Diastolic blood pressure",
     "operator": "beyond, <=, <=",
-    "minValue": 60,
+    "minValue": 30,
     "maxValue": 260,
     "type": "restrict",
-    "message": "The system accpets the range from 60mmHg and 260mmHg"
+    "message": "The system accpets the range from 30mmHg and 260mmHg"
   },
   {
     "conceptName": "DAK, Number of previous pregnancies",
