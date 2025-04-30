@@ -630,10 +630,10 @@
                 "operator": "="
             },
             {
-        "trigger": "DAK, Date of miscarriage or abortion FP",
-        "value": 28,
-        "operator": "<="
-      },
+                "trigger": "DAK, Date of miscarriage or abortion FP",
+                "value": 28,
+                "operator": "<="
+            },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, First trimester: <13 weeks GA",
@@ -652,10 +652,10 @@
                 "operator": "="
             },
             {
-        "trigger": "DAK, Date of miscarriage or abortion FP",
-        "value": 28,
-        "operator": "<="
-      },
+                "trigger": "DAK, Date of miscarriage or abortion FP",
+                "value": 28,
+                "operator": "<="
+            },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Second trimester between 13 and 24 Weeks",
@@ -3689,10 +3689,10 @@
                 "operator": "="
             },
             {
-        "trigger": "DAK, Date of miscarriage or abortion FP",
-        "value": 28,
-        "operator": "<="
-      },
+                "trigger": "DAK, Date of miscarriage or abortion FP",
+                "value": 28,
+                "operator": "<="
+            },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, First trimester less than 13 weeks GA",
@@ -3711,10 +3711,10 @@
                 "operator": "="
             },
             {
-        "trigger": "DAK, Date of miscarriage or abortion FP",
-        "value": 28,
-        "operator": "<="
-      },
+                "trigger": "DAK, Date of miscarriage or abortion FP",
+                "value": 28,
+                "operator": "<="
+            },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Second trimester between 13 and 24 Weeks",
@@ -3733,10 +3733,10 @@
                 "operator": "="
             },
             {
-        "trigger": "DAK, Date of miscarriage or abortion FP",
-        "value": 28,
-        "operator": "<="
-      },
+                "trigger": "DAK, Date of miscarriage or abortion FP",
+                "value": 28,
+                "operator": "<="
+            },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Immediate post septic abortion",
@@ -6692,10 +6692,10 @@
                 "operator": "OR"
             },
             {
-        "trigger": "DAK, Date of miscarriage or abortion FP",
-        "value": 28,
-        "operator": "<="
-      },
+                "trigger": "DAK, Date of miscarriage or abortion FP",
+                "value": 28,
+                "operator": "<="
+            },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, First trimester less than 13 weeks GA",
@@ -6717,10 +6717,10 @@
                 "operator": "OR"
             },
             {
-        "trigger": "DAK, Date of miscarriage or abortion FP",
-        "value": 28,
-        "operator": "<="
-      },
+                "trigger": "DAK, Date of miscarriage or abortion FP",
+                "value": 28,
+                "operator": "<="
+            },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Second trimester between 13 and 24 Weeks",
@@ -6742,10 +6742,10 @@
                 "operator": "OR"
             },
             {
-        "trigger": "DAK, Date of miscarriage or abortion FP",
-        "value": 28,
-        "operator": "<="
-      },
+                "trigger": "DAK, Date of miscarriage or abortion FP",
+                "value": 28,
+                "operator": "<="
+            },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Immediate post septic abortion",
@@ -9142,10 +9142,10 @@
                 "operator": "OR"
             },
             {
-        "trigger": "DAK, Date of miscarriage or abortion FP",
-        "value": 28,
-        "operator": "<="
-      },
+                "trigger": "DAK, Date of miscarriage or abortion FP",
+                "value": 28,
+                "operator": "<="
+            },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, First trimester less than 13 weeks GA",
@@ -9167,10 +9167,10 @@
                 "operator": "OR"
             },
             {
-        "trigger": "DAK, Date of miscarriage or abortion FP",
-        "value": 28,
-        "operator": "<="
-      },
+                "trigger": "DAK, Date of miscarriage or abortion FP",
+                "value": 28,
+                "operator": "<="
+            },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Second trimester between 13 and 24 Weeks",
@@ -9192,10 +9192,10 @@
                 "operator": "OR"
             },
             {
-        "trigger": "DAK, Date of miscarriage or abortion FP",
-        "value": 28,
-        "operator": "<="
-      },
+                "trigger": "DAK, Date of miscarriage or abortion FP",
+                "value": 28,
+                "operator": "<="
+            },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Immediate post septic abortion",
@@ -11549,10 +11549,10 @@
                 "operator": "="
             },
             {
-        "trigger": "DAK, Date of miscarriage or abortion FP",
-        "value": 28,
-        "operator": "<="
-      },
+                "trigger": "DAK, Date of miscarriage or abortion FP",
+                "value": 28,
+                "operator": "<="
+            },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Second trimester between 13 and 24 Weeks",
@@ -11571,10 +11571,10 @@
                 "operator": "="
             },
             {
-        "trigger": "DAK, Date of miscarriage or abortion FP",
-        "value": 28,
-        "operator": "<="
-      },
+                "trigger": "DAK, Date of miscarriage or abortion FP",
+                "value": 28,
+                "operator": "<="
+            },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Immediate post septic abortion",
@@ -13589,10 +13589,10 @@
                 "operator": "="
             },
             {
-        "trigger": "DAK, Date of miscarriage or abortion FP",
-        "value": 28,
-        "operator": "<="
-      },
+                "trigger": "DAK, Date of miscarriage or abortion FP",
+                "value": 28,
+                "operator": "<="
+            },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, First trimester: \u226513 to \u226426 GA",
@@ -13611,10 +13611,10 @@
                 "operator": "="
             },
             {
-        "trigger": "DAK, Date of miscarriage or abortion FP",
-        "value": 28,
-        "operator": "<="
-      },
+                "trigger": "DAK, Date of miscarriage or abortion FP",
+                "value": 28,
+                "operator": "<="
+            },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Second trimester: \u226513 to \u226426 GA",
@@ -13633,10 +13633,10 @@
                 "operator": "="
             },
             {
-        "trigger": "DAK, Date of miscarriage or abortion FP",
-        "value": 28,
-        "operator": "<="
-      },
+                "trigger": "DAK, Date of miscarriage or abortion FP",
+                "value": 28,
+                "operator": "<="
+            },
             {
                 "trigger": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
                 "value": "DAK, Immediate post septic abortion",
@@ -15946,10 +15946,10 @@
     {
         "logics": [
             {
-        "trigger": "DAK, Date of miscarriage or abortion FP",
-        "value": 28,
-        "operator": "<="
-      }
+                "trigger": "DAK, Date of miscarriage or abortion FP",
+                "value": 28,
+                "operator": "<="
+            }
         ],
         "logic_key": 813,
         "dependentValue": "DAK, Caution",
@@ -16070,10 +16070,10 @@
                 "operator": "="
             },
             {
-        "trigger": "DAK, Date of miscarriage or abortion FP",
-        "value": 28,
-        "operator": "<="
-      }
+                "trigger": "DAK, Date of miscarriage or abortion FP",
+                "value": 28,
+                "operator": "<="
+            }
         ],
         "logic_key": 819,
         "dependentValue": "DAK, Delay",
@@ -24346,18 +24346,6 @@
     {
         "logics": [
             {
-                "trigger": "DAK, STI risk assessment conducted",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "logic_key": 1165,
-        "dependentValue": true,
-        "dependent": "DAK, STI risk assessment conducted"
-    },
-    {
-        "logics": [
-            {
                 "trigger": "DAK, Cervical Cancer risk assessment conducted",
                 "value": true,
                 "operator": "="
@@ -24391,18 +24379,6 @@
         "logic_key": 1174,
         "dependentValue": "DAK, Second trimester between 13 and 24 Weeks",
         "dependent": "DAK, Gestational age during Miscarriage or abortion of the last pregnancy"
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, STI risk assessment conducted",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "logic_key": 1175,
-        "dependentValue": "True",
-        "dependent": "STI risk assessment conducted"
     },
     {
         "logics": [
@@ -24510,12 +24486,38 @@
             {
                 "trigger": "DAK, Rapid diagnostic test (Assay) number in testing strategy",
                 "positiveValue": "DAK, Assay 2",
-                "negativeValue": ["DAK, Assay 3"],
+                "negativeValue": [
+                    "DAK, Assay 3"
+                ],
                 "operator": "exclude"
-              }
+            }
         ],
         "logic_key": 1193,
         "dependentValue": "DAK, HIV Inconclusive FP",
+        "dependent": "DAK, HIV test result FP"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Cervical Cancer risk assessment conducted",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "logic_key": 1188,
+        "dependentValue": true,
+        "dependent": "DAK, Cevical cancer screening conducted"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Test result of HIV assay 1",
+                "value": "DAK, Reactive",
+                "operator": "="
+            }
+        ],
+        "logic_key": 1191,
+        "dependentValue": "DAK, HIV positive FP",
         "dependent": "DAK, HIV test result FP"
     }
 ]

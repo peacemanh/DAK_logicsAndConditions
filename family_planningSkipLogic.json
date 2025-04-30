@@ -2713,6 +2713,19 @@
   {
     "logics": [
       {
+
+        "trigger": "DAK, Primary Screening Result",
+        "value": "DAK, Positive",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Triage Tests for Positive Screening Result",
+    "logic_key": 194
+  },
+  {
+    "logics": [
+      {
         "trigger": "DAK, Chosen method",
         "value": "DAK, No method provided",
         "operator": "="
@@ -3045,11 +3058,11 @@
     "logics": [
       {
         "trigger": "gender",
-        "value": "M",
+        "value": "F",
         "operator": "="
       }
     ],
-    "action": "hide",
+    "action": "show",
     "dependent": "DAK, Cevical cancer screening conducted",
     "logic_key": 225
   },
@@ -4039,18 +4052,6 @@
   {
     "logics": [
       {
-        "trigger": "DAK, STI risk assessment conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Risk Classification for STI Assessment",
-    "logic_key": 321
-  },
-  {
-    "logics": [
-      {
         "trigger": "DAK, HIV test screening: Rapid/laboratory test conducted",
         "value": true,
         "operator": "="
@@ -4329,5 +4330,117 @@
     "action": "show",
     "dependent": "DAK, Issues and Concerns Section",
     "logic_key": 343
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Test results",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+
+    "action": "show",
+    "dependent": "DAK, Other Pelvic/genital examination test results",
+    "logic_key": 344
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Visit Status",
+        "value": "DAK, New",
+        "operator": "!="
+      }
+    ],
+
+    "action": "show",
+    "dependent": "DAK, Method removal procedure required",
+    "logic_key": 345
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Type of dual method selected",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+
+    "action": "show",
+    "dependent": "DAK, Other (specify)",
+    "logic_key": 346
+
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Method in use",
+        "orValues": [
+          "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+          "DAK, Levonorgestrel intrauterine device (LNG-IUD)"
+        ],
+        "operator": "OR"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, IUD issues",
+    "logic_key": 347
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Method in use",
+        "orValues": [
+          "DAK, Copper-bearing intrauterine device (Cu-IUD)",
+          "DAK, Levonorgestrel intrauterine device (LNG-IUD)"
+        ],
+        "operator": "OR"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Issues and Concerns Section",
+    "logic_key": 348
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Method removal procedure required",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Date of removal",
+    "logic_key": 349
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, STI risk assessment conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, STI/HIV screening: laboratory tests available",
+    "logic_key": 350
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Health condition(s)",
+        "value": "DAK, HIV/AIDS",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, HIV test result FP",
+        "value": "DAK, HIV positive FP",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "conditionType": "either",
+    "dependent": "DAK, HIV positive Linked to enrollment in care and ART initiation",
+    "logic_key": 351
   }
 ]

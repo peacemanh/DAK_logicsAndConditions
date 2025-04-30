@@ -157,7 +157,7 @@
       {
         "trigger": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, No presenting signs or symptoms indicative of IPV",
-        "operator": "="
+        "operator": "!="
       }
     ],
     "action": "show",
@@ -2040,7 +2040,7 @@
     "logics": [
       {
         "trigger": "DAK, Current medications",
-        "value": "DAK, Other antibiotics",
+        "value": "DAK, Penicillin",
         "operator": "="
       }
     ],
@@ -2779,9 +2779,20 @@
         "trigger": "DAK, Blood glucose test conducted",
         "value": true,
         "operator": "="
+      },
+      {
+        "trigger": "DAK, Random blood sugar test result",
+        "value": 0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Fasting Blood sugar test result",
+        "value": 0,
+        "operator": ">="
       }
     ],
     "action": "show",
+    "conditionType": "either",
     "dependent": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
     "logic_key": 229
   },
@@ -4125,7 +4136,6 @@
     "dependent": "DAK, Blood haemoglobin test ordered",
     "logic_key": 335
   },
-
   {
     "logics": [
       {
@@ -4525,7 +4535,18 @@
     "dependent": "DAK, Deworming",
     "logic_key": 369
   },
- 
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Malaria endemic area",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling on malaria prevention",
+    "logic_key": 371
+  },
   {
     "logics": [
       {
@@ -6541,7 +6562,7 @@
   {
     "logics": [
       {
-        "trigger": "Malaria-endemic setting",
+        "trigger": "DAK, Malaria endemic area",
         "value": true,
         "operator": "="
       }
@@ -6838,7 +6859,6 @@
     "action": "hide",
     "dependent": "DAK, Ultrasound done"
   },
-
   {
     "logics": [
       {
@@ -8571,7 +8591,6 @@
     "dependent": "DAK, Diabetes risk",
     "logic_key": 678
   },
-
   {
     "logics": [
       {
@@ -8755,13 +8774,243 @@
   {
     "logics": [
       {
-        "trigger": "Malaria-endemic setting",
-        "value": true,
+        "trigger": "DAK, Persistent behaviours",
+        "value": "DAK, High caffeine intake",
         "operator": "="
       }
     ],
     "action": "show",
-    "dependent": "DAK, Counselling on malaria prevention",
-    "logic_key": 684
+    "dependent": "DAK, Counselling conducted on caffeine reduction",
+    "logic_key": 685
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Danger signs",
+        "value": "DAK, Others danger signs",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other danger sign",
+    "logic_key": 686
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current alcohol and/or other substance use",
+        "value": "DAK, Alcohol",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on alcohol / substance use",
+    "logic_key": 687
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current alcohol and/or other substance use",
+        "value": "DAK, khat",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on alcohol / substance use",
+    "logic_key": 688
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current alcohol and/or other substance use",
+        "value": "DAK, Injectable drugs",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on alcohol / substance use",
+    "logic_key": 689
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current alcohol and/or other substance use",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on alcohol / substance use",
+    "logic_key": 690
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Persistent behaviours",
+        "value": "DAK, Other substance use",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on alcohol / substance use",
+    "logic_key": 691
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Persistent behaviours",
+        "value": "DAK, Alchol use",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on alcohol / substance use",
+    "logic_key": 692
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Persistent behaviours",
+        "value": "DAK, Tobacco use",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on tobacco cessation",
+    "logic_key": 693
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Persistent behaviours",
+        "value": "DAK, Recently quit tobacco products",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on tobacco cessation",
+    "logic_key": 694
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current symptoms",
+        "positiveValue": "DAK, Oedema",
+        "negativeValue": [
+          "DAK, Pain - Leg"
+        ],
+        "operator": "exclude"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK,  Non-pharmacological options for varicose veins and oedema",
+    "logic_key": 695
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current symptoms",
+        "positiveValue": "DAK, Oedema",
+        "negativeValue": [
+          "DAK, Pain - Leg"
+        ],
+        "operator": "exclude"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on non-pharmacological options for varicose veins and oedema",
+    "logic_key": 696
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Hepatitis B test result",
+        "value": "DAK, Hepatitis B positive",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 28,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Hepatitis B Counselling",
+    "logic_key": 697
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Persistent symptoms",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Other (specify)",
+    "logic_key": 698
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Taking aspirin tablets",
+        "value": true,
+        "operator": "="
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, Has side-effects from Aspirin tablet",
+    "logic_key": 699
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Current medications",
+        "value": "DAK, Penicillin",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Medication follow-up",
+    "logic_key": 700
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other (specify)",
+    "logic_key": 701
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Fasting Blood sugar test result",
+        "value": 0,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+    "logic_key": 703
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Random blood sugar test result",
+        "value": 0,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+    "logic_key": 705
   }
+
 ]

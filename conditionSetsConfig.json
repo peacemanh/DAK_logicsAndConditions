@@ -2156,7 +2156,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint":"DAK, Urine dipstick result – protein",
+    "displayPoint": "DAK, Urine dipstick result – protein",
     "action": "Do urine dipstick test for protein",
     "annotation": "Given high values (SBP \u2265 140 or DBP \u2265 90) upon second measure, urine dipstick test should be done to check for protein in the urine, a symptom of pre-eclampsia",
     "action_key": 164
@@ -5907,12 +5907,12 @@
   {
     "conditions": [
       {
-        "key": "Malaria-endemic setting",
+        "key": "DAK, Malaria endemic area",
         "value": true,
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Malaria prophylaxis",
+    "displayPoint": "DAK, Malaria Chemo-prophylaxis provided",
     "action": "Provide malaria prophylaxis",
     "annotation": "Sleeping under an insecticide-treated bednet and the importance of seeking care and getting treatment as soon as she has any symptoms. \n- Wear loose-fitting long-sleeved closes",
     "action_key": 370
@@ -5920,7 +5920,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Malaria-endemic setting",
+        "key": "DAK, Malaria endemic area",
         "value": true,
         "operator": "="
       },
@@ -5930,7 +5930,7 @@
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Malaria prophylaxis",
+    "displayPoint": "DAK, Malaria Chemo-prophylaxis provided",
     "action": "Do not give IPTp-SP, because woman is taking co-trimoxazole",
     "annotation": "IF the woman is currently taking co-trimoxazole, even in a malaria-endemic setting, she should not receive any dose of IPTp-SP. Taking both co-trimoxazole and IPTp-SP together can enhance side-effects, especially haematological side-effects such as anaemia.",
     "action_key": 371
@@ -6290,12 +6290,12 @@
   {
     "conditions": [
       {
-        "key": "Malaria-endemic setting",
+        "key": "DAK, Malaria endemic area",
         "value": true,
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Malaria prophylaxis",
+    "displayPoint": "DAK, Counselling conducted on malaria prevention",
     "action": "Counselling on malaria prevention",
     "annotation": "Counselling on malaria prevention should be conducted during every contact in malaria-endemic settings (where there is moderate to high malaria transmission)",
     "action_key": 397
@@ -6517,7 +6517,7 @@
     "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct counseling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
     "action_key": 414
   },
-  
+
   {
     "conditions": [
       {
@@ -6554,7 +6554,7 @@
     "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct counseling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
     "action_key": 417
   },
-  
+
   {
     "conditions": [
       {
@@ -7863,7 +7863,7 @@
         "operator": "<"
       }
     ],
-   
+
     "action": "Provide treatment for acute malnutrition",
     "annotation": "There is acute malnutrition and is an indication for supplementation with ready-to-use foods (e.g., Plumpy’Nut, corn-soy blend [CSB++]) until the measurement is in the normal range",
     "action_key": 478
@@ -7885,7 +7885,7 @@
     "conditions": [
       {
         "key": "DAK, Tetanus Diphtheria Vaccine (TD)",
-        "orValues": ["DAK, Unknown", "DAK, No doses", "DAK, Under-immunized"],
+        "orValues": [ "DAK, Unknown", "DAK, No doses", "DAK, Under-immunized" ],
         "operator": "OR"
       }
     ],
@@ -7897,23 +7897,49 @@
     "conditions": [
       {
         "key": "DAK, Systolic blood pressure",
-        "value":160,
+        "value": 160,
         "operator": ">="
       }
     ],
-    "action": "Give initial dose of antihypertensive if the systolic blood pressure is 160 mmHg or higher and/or the diastolic blood pressure is 110 mmHg or higher",  
+    "action": "Give initial dose of antihypertensive if the systolic blood pressure is 160 mmHg or higher and/or the diastolic blood pressure is 110 mmHg or higher",
     "action_key": 481
   },
   {
     "conditions": [
       {
         "key": "DAK, Diastolic blood pressure",
-        "value":110,
+        "value": 110,
         "operator": ">="
       }
     ],
     "action": "Give initial dose of antihypertensive if the systolic blood pressure is 160 mmHg or higher and/or the diastolic blood pressure is 110 mmHg or higher",
     "action_key": 482
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Amniotic fluid level",
+        "value": "DAK, Reduced amniotic fluid level",
+        "operator": "="
+      }
+    ],
+    "action": "Refer her to a hospital",
+    "annotation": null,
+    "action_key": 483
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Amniotic fluid level",
+        "value": "DAK, Increased amniotic fluid level",
+        "operator": "="
+      }
+    ],
+    "action": "Refer her to a hospital",
+    "annotation": null,
+    "action_key": 484
   }
+
+
 
 ]

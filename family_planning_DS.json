@@ -19,8 +19,8 @@
         "operator": "="
       }
     ],
-    "action": "Provide Treatment Counsel on dual protection , Partner notification.  Offer routine HIV and STI testing",
-    "annotation": "\u2013Provide testing, diagnosis and  immediate treatment of  STIs based on signs/symptoms.\u2013Offer HIV testing and counseling \u2013 Support Partner notification of diagnosis   symptoms \u2013 Promote condom/lubricant use, combination  of condoms with other FP methods,  mutually faithful relationships and engagement in non-penetrative sexual intimacy to prevent STIs.",
+    "action": "Provide Treatment Counsel on dual protection , Partner notification.  Offer routine HIV and STI testing. \u2013 Link with OPD for STI treatment",
+    "annotation": "\u2013Provide testing, diagnosis and  immediate treatment of  STIs based on signs/symptoms.\u2013Offer HIV testing and counseling \u2013 Support Partner notification of diagnosis   symptoms \u2013 Promote condom/lubricant use, combination  of condoms with other FP methods,  mutually faithful relationships and engagement in non-penetrative sexual intimacy to prevent STIs.\n Link with OPD for STI treatment",
     "action_key": 1
   },
   {
@@ -31,8 +31,8 @@
         "operator": "="
       }
     ],
-    "action": "Prompt diagnosis and treatment based on syndromic diagnosis or perform STI testing.",
-    "annotation": "\u2013Provide testing, diagnosis and  immediate treatment of  STIs based on signs/symptoms. \u2013Offer HIV testing and counseling \u2013 Support Partner notification of diagnosis   symptoms \u2013 Promote condom/lubricant use, combination  of condoms with other FP methods,  mutually faithful relationships and engagement in non-penetrative sexual intimacy to prevent STIs.",
+    "action": " Link to STI testing. Prompt diagnosis and treatment based on syndromic diagnosis or perform STI testing. Link to STI testing",
+    "annotation": "The patient should be linked for diagnosis and treatement \u2013Provide testing, diagnosis and  immediate treatment of  STIs based on signs/symptoms. \u2013Offer HIV testing and counseling \u2013 Support Partner notification of diagnosis   symptoms \u2013 Promote condom/lubricant use, combination  of condoms with other FP methods,  mutually faithful relationships and engagement in non-penetrative sexual intimacy to prevent STIs.",
     "action_key": 2
   },
   {
@@ -80,8 +80,8 @@
       }
     ],
     "displayPoint": "DAK, Cervical Cancer risk factors FP",
-    "action": "Counsel on safer sexual practices, smoking cessation, and the importance of regular screening and Conduct STI screening, treatment, and provide counseling on regular cancer  screening.",
-    "annotation": "\u2013Increased risk of HPV infection and cervical cancer.\n  \u2013Provide safe sex counselling \u2013Recommended regular screening \n\u2013Provide counseling on smoking cessation and regular screening.\n\u2013Screen for STIs and provide appropriate treatment. \n\u2013Provide Partner counselling and access to  Voluntary medical male circumsision (VMMC )services ",
+    "action": "- Discuss the reason for cervical cancer risk assessment was not performed due to [e.g., client below eligible age, pregnancy, client declined, service not available, etc.]. - Advise the client to undergo the assessment at a more appropriate time (e.g., during the next scheduled visit or post-delivery). -Provided brief counseling on the importance of cervical cancer risk assessment and regular screening. -Discuss about future screening or risk assessment to be recommended or scheduled in alignment with national guidelines.",
+    "annotation": "\u2013 -Detail discussion on the reason for cervical cancer risk assessment was deferred during this visit due to [specific reason — e.g., ineligible age, unavailability of services, client refusal]. \u2013 - Inform the client about the purpose and appropriate timing for screening and encouraged to return when eligible. \u2013 - Discuss on the assessment postponed and planned for the next routine visit or when conditions allow.\u2013-Discuss about no medical contraindications identified; assessment delay attributed to eligibility or service-related factors.",
     "action_key": 6
   },
   {
@@ -104,7 +104,7 @@
         "operator": "="
       }
     ],
-    "action": "Counsel on early fertility return  8-11 days post abortion ,contraceptive methods, failure rates and provide back up methods",
+    "action": "Counsel on early fertility return  8-10 days post abortion ,contraceptive methods, failure rates and provide back up methods",
     "annotation": "",
     "action_key": 8
   },
@@ -116,7 +116,7 @@
         "operator": "="
       }
     ],
-    "action": "Counsel on early fertility return  8-12 days postabortion ,contraceptive methods, failure rates and provide back up methods",
+    "action": "Counsel on early fertility return  8-10 days postabortion ,contraceptive methods, failure rates and provide back up methods",
     "annotation": "",
     "action_key": 9
   },
@@ -213,7 +213,7 @@
       }
     ],
     "action": "Discuss issues and concerns.",
-    "annotation": "\u2013 Reassure clients that heavy or prolonged bleeding with IUD use is common and generally not harmful but improves over time.                                                                                                   \u2013 Initial Cu-IUD use may cause heavier or longer menstrual bleeding, which improves over time.                                                                                                                                                          \u2013 Offer treatment options like NSAIDs or tranexamic acid for menstrual bleeding.Aspirin should NOT be used. Exclude gynecologic issues and provide treatment or referral if necessary.                                                                                                                                                   \u2013 If bleeding remains excessive or unacceptable especially if there are clinical signs of anaemia, discuss IUD removal and alternative methods. Recommend iron supplements and iron-rich foods to prevent anaemia",
+    "annotation": "\u2013 Reassure clients that heavy or prolonged bleeding with IUD use is common and generally not harmful but improves over time.\u2013 If bleeding remains excessive or unacceptable especially if there are clinical signs of anaemia, discuss IUD removal and alternative methods. Recommend iron supplements and iron-rich foods to prevent anaemia",
     "action_key": 15
   },
   {
@@ -18326,17 +18326,17 @@
       },
       {
         "key": "DAK, Haemoglobin levels",
-        "value": 7.0,
-        "operator": "<"
+        "value": "DAK, <=7g/dl",
+        "operator": "="
       },
       {
-        "key": "DAK, Haemoglobin test available",
+        "key": "DAK, Haemoglobin test conducted",
         "value": true,
         "operator": "="
       }
     ],
-    "action": "\"Haemoglobin test needed\" = TRUE",
-    "annotation": "Client is medically eligible for this method, but postpone female sterilization until condition resolved . Assist the client in selecting an alternative contraceptive method until the procedure can be performed. Provide counseling on the permanent nature of sterilization and present other long-term, highly effective contraceptive options                                                                           Identify underlying disease. Consider preoperative Hb level, blood loss, and wound healing in anaemic women.nadequate peripheral perfusion may adversely affect wound healing.",
+    "action": "Perform immediate action: Client diagnosed with severe anemia.Consider Referral: Refer the client to a healthcare facility for further evaluation and management (e.g., hematology assessment, intravenous iron therapy, blood transfusion if needed). Provide to Initiate Treatment: Administer iron supplements as per national guidelines and provide advice on dietary changes to increase iron intake.  Discuss on review Family Planning Method: Assess whether the current FP method may contribute to excessive bleeding (e.g., copper IUD). Consider switching method if necessary.  Plan to monitor: Schedule follow-up visits for reassessment of hemoglobin levels and to monitor progress",
+    "annotation": "\u2013 Discuss “Hemoglobin level ≤ 7g/dL, indicating severe anemia. Immediate referral to higher-level healthcare facility recommended for further management.\u2013 Provide that the client should be counseled on iron supplementation and dietary changes (iron-rich foods).\u2013 Discuss about FP method reassessed due to potential association with excessive menstrual bleeding (e.g., copper IUD); alternative methods discussed.  Plan Follow-up visit scheduled to monitor Hb level and overall health status.",
     "action_key": 945
   },
   {
@@ -18348,18 +18348,17 @@
       },
       {
         "key": "DAK, Haemoglobin levels",
-        "minValue": 7.0,
-        "maxValue": 10.0,
-        "operator": "between"
+        "value": "DAK, 7-10 g/dl",
+        "operator": "="
       },
       {
-        "key": "DAK, Haemoglobin test available",
+        "key": "DAK, Haemoglobin test conducted",
         "value": true,
         "operator": "="
       }
     ],
-    "action": "\"Haemoglobin test needed\" = TRUE",
-    "annotation": "Client is medically eligible for this method, but postpone female sterilization until condition resolved . Assist the client in selecting an alternative contraceptive method until the procedure can be performed. Provide counseling on the permanent nature of sterilization and present other long-term, highly effective contraceptive options                                                                           Identify underlying disease. Consider preoperative Hb level, blood loss, and wound healing in anaemic women.nadequate peripheral perfusion may adversely affect wound healing.",
+    "action": " Plan to monitor: Client is within normal hemoglobin range and does not require immediate intervention.Discuss about continue Routine Care: Continue with the current family planning method as long as there are no other clinical concerns. Provide Health Education: Reinforce the importance of maintaining good nutrition, including iron-rich foods, and inform the client about recognizing symptoms of anemia.Discuss Scheduled Screening: Ensure the client is scheduled for routine follow-up screening as per the national guidelines for future check-ups.",
+    "annotation": "\u2013 Discuss about Hemoglobin level > 7g/dL, indicating normal hemoglobin levels. \u2013 Provide client educated on healthy eating and prevention of anemia. \u2013 Discuss FP method continued; no further action required at this time. \u2013  Plan and discuss Follow-up scheduled for routine screening in specified timeframe, and client advised to seek care if symptoms of anemia develop.",
     "action_key": 946
   },
   {
@@ -37238,5 +37237,18 @@
     "action": "Counsel client that she is medically eligible for this method",
     "annotation": "Medical eligibility criteria (MEC) category 2 \u2013 Generally use method for initiation",
     "action_key": 1700
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, HIV test result FP",
+        "value": "DAK, HIV positive FP",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, HIV positive Linked to enrollment in care and ART initiation",
+    "action": "Link with ART",
+    "annotation": "",
+    "action_key": 1701
   }
 ]
