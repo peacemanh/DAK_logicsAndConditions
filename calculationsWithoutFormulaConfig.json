@@ -2486,5 +2486,77 @@
         "dependentValue": "DAK, Increased amniotic fluid level",
         "dependent": "DAK, Amniotic fluid level",
         "logic_key": 146
+    },
+    {
+        "logics": [
+            {
+                "rules": [
+                    {
+                        "trigger": "DAK, BMI",
+                        "value": 30.0,
+                        "operator": ">="
+                    },
+                    {
+                        "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+                        "value": "DAK, Negative",
+                        "operator": "="
+                    },
+                    {
+                        "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+                        "value": "DAK, Negative",
+                        "operator": "="
+                    }
+                ]
+            },
+            {
+                "rules": [
+                    {
+                        "trigger": "DAK, Past pregnancy history",
+                        "orValues": [
+                            "DAK, Gestatinal diabetes mellitus",
+                            "DAK, Macrosomia"
+                        ],
+                        "operator": "OR"
+                    },
+                    {
+                        "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+                        "value": "DAK, Negative",
+                        "operator": "="
+                    },
+                    {
+                        "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+                        "value": "DAK, Negative",
+                        "operator": "="
+                    }
+                ]
+            },
+            {
+                "rules": [
+                    {
+                        "trigger": "DAK, Urine dipstick result \u2013 glucose",
+                        "orValues": [
+                            "DAK, ++",
+                            "DAK, +++",
+                            "DAK, ++++"
+                        ],
+                        "operator": "OR"
+                    },
+                    {
+                        "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+                        "value": "DAK, Negative",
+                        "operator": "="
+                    },
+                    {
+                        "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+                        "value": "DAK, Negative",
+                        "operator": "="
+                    }
+                ]
+            }
+        ],
+        "action": true,
+        "conditionType": "deepAnalysis",
+        "dependent": "DAK, Diabetes risk",
+        "logic_key": 678
     }
 ]

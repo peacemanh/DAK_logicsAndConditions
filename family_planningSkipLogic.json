@@ -4334,15 +4334,50 @@
   {
     "logics": [
       {
+        "trigger": "DAK, Has client ever been pregnant",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Date of last birth",
+    "logic_key": 344
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Lifestyle Behaviors",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other Lifestyle behaviour",
+    "logic_key": 345
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for Method change",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other reason for MC",
+    "logic_key": 346
+  },
+  {
+    "logics": [
+      {
         "trigger": "DAK, Test results",
         "value": "DAK, Other",
         "operator": "="
       }
     ],
-
     "action": "show",
     "dependent": "DAK, Other Pelvic/genital examination test results",
-    "logic_key": 344
+    "logic_key": 347
   },
   {
     "logics": [
@@ -4355,7 +4390,7 @@
 
     "action": "show",
     "dependent": "DAK, Method removal procedure required",
-    "logic_key": 345
+    "logic_key": 348
   },
   {
     "logics": [
@@ -4368,7 +4403,7 @@
 
     "action": "show",
     "dependent": "DAK, Other (specify)",
-    "logic_key": 346
+    "logic_key": 349
 
   },
   {
@@ -4384,7 +4419,7 @@
     ],
     "action": "show",
     "dependent": "DAK, IUD issues",
-    "logic_key": 347
+    "logic_key": 350
   },
   {
     "logics": [
@@ -4399,7 +4434,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Issues and Concerns Section",
-    "logic_key": 348
+    "logic_key": 351
   },
   {
     "logics": [
@@ -4411,7 +4446,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Date of removal",
-    "logic_key": 349
+    "logic_key": 352
   },
   {
     "logics": [
@@ -4423,7 +4458,7 @@
     ],
     "action": "show",
     "dependent": "DAK, STI/HIV screening: laboratory tests available",
-    "logic_key": 350
+    "logic_key": 353
   },
   {
     "logics": [
@@ -4441,6 +4476,6 @@
     "action": "show",
     "conditionType": "either",
     "dependent": "DAK, HIV positive Linked to enrollment in care and ART initiation",
-    "logic_key": 351
+    "logic_key": 354
   }
 ]
