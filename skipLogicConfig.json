@@ -4,7 +4,6 @@
       {
         "hiddenFields": [
           "DAK, Ultrasound category",
-          "DAK, Has previous history of preterm delivery",
           "DAK, Medication follow-up",
           "DAK, Family planning",
           "DAK, Referral for screening including diagnostics and lab testing",
@@ -1991,8 +1990,7 @@
       }
     ],
     "action": "show",
-    "parent": "DaK, Hx of previous Preterm delivery",
-    "dependent": "DAK, Has previous history of preterm delivery",
+     "dependent": "DaK, Hx of previous Preterm delivery",
     "logic_key": 164
   },
   {
