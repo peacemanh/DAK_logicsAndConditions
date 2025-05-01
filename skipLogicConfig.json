@@ -1918,7 +1918,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Were the miscarriage and/or abortions consecutive and spontaneous?",
+    "dependent": "DAK, Were the abortions spontaneous?",
     "logic_key": 158
   },
   {
@@ -9079,5 +9079,17 @@
     "action": "show",
     "dependent": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
     "logic_key": 709
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Number of miscarriages and/or abortions",
+        "value": 2,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent":"DAK, Were the abortions consecutive?",
+    "logic_key": 710
   }
 ]
