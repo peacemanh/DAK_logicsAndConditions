@@ -9089,7 +9089,19 @@
       }
     ],
     "action": "show",
-    "dependent":"DAK, Were the abortions consecutive?",
+    "dependent":"DAK, Were the abortions consecutive?", 
     "logic_key": 710
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Existing chronic health conditions",
+        "value": "DAK, Cancer – other site (specify)",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent":"DAK, Cancer-other site (specify) text",   
+    "logic_key": 711
   }
 ]
