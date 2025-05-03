@@ -3381,57 +3381,38 @@
   },
   {
     "logics": [
+      
       {
-        "rules": [
-          {
-            "trigger": "DAK, Systolic blood pressure",
-            "minValue": 140,
-            "maxValue": 160,
-            "operator": "between, <=, <"
-          }
-        ]
-      },
+        "trigger": "DAK, Systolic blood pressure",
+        "value": 140,
+        "operator": ">="
+      },  
       {
-        "rules": [
-          {
-            "trigger": "DAK, Diastolic blood pressure",
-            "minValue": 90,
-            "maxValue": 110,
-            "operator": "between, <=, <"
-          }
-        ]
+        "trigger": "DAK, Diastolic blood pressure",
+        "value": 90,
+        "operator": ">="
       }
     ],
     "action": "show",
-    "conditionType": "deepAnalysis",
     "dependent": "DAK, Repeat systolic blood pressure",
     "logic_key": 282
   },
   {
     "logics": [
-      {
-        "rules": [
+      
           {
             "trigger": "DAK, Systolic blood pressure",
-            "minValue": 140,
-            "maxValue": 160,
-            "operator": "between, <=, <"
-          }
-        ]
-      },
-      {
-        "rules": [
+            "value": 140,
+            "operator": ">="
+          },  
           {
             "trigger": "DAK, Diastolic blood pressure",
-            "minValue": 90,
-            "maxValue": 110,
-            "operator": "between, <=, <"
+            "value": 90,
+            "operator": ">="
           }
-        ]
-      }
+     
     ],
     "action": "show",
-    "conditionType": "deepAnalysis",
     "dependent": "DAK, Repeat diastolic blood pressure",
     "logic_key": 283
   },
