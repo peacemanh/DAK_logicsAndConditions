@@ -75,64 +75,56 @@
     "conceptName": "DAK, Systolic blood pressure",
     "operator": "beyond, <=, <=",
     "minValue": 60,
-    "maxValue": 260,
+    "maxValue": 280,
     "type": "restrict",
-    "message": "Systolic blood pressure should be between 60mmHg and 260mmHg"
+    "message": "Systolic blood pressure should be in range of 60mmHg and 280mmHg"
   },
   {
     "conceptName": "DAK, Repeat systolic blood pressure",
     "operator": "beyond, <=, <=",
     "minValue": 60,
-    "maxValue": 260,
+    "maxValue": 280,
     "type": "optional",
-    "message": "Repeat systolic blood pressure should be between 60mmHg and 260mmHg"
+    "message": "Repeat systolic blood pressure should be in range of 60mmHg and 280mmHg"
   },
   {
     "conceptName": "DAK, Diastolic blood pressure",
     "operator": "beyond, <=, <=",
-    "minValue": 60,
-    "maxValue": 260,
+    "minValue": 40,
+    "maxValue": 200,
     "type": "restrict",
-    "message": "Diastolic blood pressure should be between 60mmHg and 260mmHg"
+    "message": "Diastolic blood pressure should be in range of 40mmHg and 200mmHg"
   },
   {
     "conceptName": "DAK, Repeat diastolic blood pressure",
     "operator": "beyond, <=, <=",
-    "minValue": 60,
-    "maxValue": 260,
+    "minValue": 40,
+    "maxValue": 200,
     "type": "optional",
-    "message": "Repeat diastolic blood pressure should be between 60mmHg and 260mmHg"
+    "message": "Repeat diastolic blood pressure should be in range of 40mmHg and 200mmHg"
   },
   {
     "conceptName": "DAK, Body temperature",
     "operator": "beyond, <=, <=",
-    "minValue": 35,
-    "maxValue": 42,
+    "minValue": 25,
+    "maxValue": 46,
     "type": "restrict",
-    "message": "Body temperature should be between 35\u00B0c and 42\u00B0c"
-  },
-  {
-    "conceptName": "DAK, Second body temperature",
-    "operator": "beyond, <=, <=",
-    "minValue": 35,
-    "maxValue": 42,
-    "type": "restrict",
-    "message": "Second body temperature should be between 35\u00B0c and 42\u00B0c"
+    "message": "Body temperature should be in range of 25\u00B0c and 46\u00B0c"
   },
   {
     "conceptName": "DAK, Pulse rate",
     "operator": "beyond, <=, <=",
-    "minValue": 50,
-    "maxValue": 200,
+    "minValue": 40,
+    "maxValue": 220,
     "type": "restrict",
-    "message": "Pulse rate should be between 50bpm and 200bpm"
+    "message": "Pulse rate should be in range 40bpm and 220bpm"
   },
   {
     "conceptName": "DAK, Second pulse rate",
     "operator": "beyond, <=, <=",
-    "minValue": 50,
-    "maxValue": 200,
-    "type": "restrict",
+    "minValue": 40,
+    "maxValue": 220,
+    "type": "optional",
     "message": "Second pulse rate should be between 50bpm and 200bpm"
   },
   {

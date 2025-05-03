@@ -2558,5 +2558,29 @@
         "conditionType": "deepAnalysis",
         "dependent": "DAK, Diabetes risk",
         "logic_key": 678
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Pulse rate",
+                "value": 60,
+                "operator": "<"
+            }
+        ],
+        "dependentValue": "DAK, Bradycardia",
+        "dependent": "DAK, Cardiac exam result",
+        "logic_key": 679
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Pulse rate",
+                "value": 100,
+                "operator": ">"
+            }
+        ],
+        "dependentValue": "DAK, Tachycardia",
+        "dependent": "DAK, Cardiac exam result",
+        "logic_key": 700
     }
 ]

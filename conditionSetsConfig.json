@@ -1170,30 +1170,14 @@
     "conditions": [
       {
         "key": "DAK, Body temperature",
-        "value": 37.5,
-        "operator": ">="
+        "minValue": 35,
+        "maxValue": 37.5,
+        "operator": "beyond, <, <="
       }
     ],
-    "action": "Measure temperature again",
-    "annotation": "The health worker should retake the woman's temperature if the first reading is over 37.5\u00b0C",
+    "action": "Conduct further investigation, manage accordingly, or refer if necessary.",
+    "annotation": "If the body temperature is <35\u00b0C or ≥37.5\u00b0C, identify the cause, manage accordingly, or refer. 37.5",
     "action_key": 92
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Body temperature",
-        "value": 37.5,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Second body temperature",
-        "value": 37.5,
-        "operator": ">="
-      }
-    ],
-    "action": "Conduct further investigation and, if necessary, refer urgently if treatment not available at your facility",
-    "annotation": "If the second measurement is \u00e2\u2030\u00a5 37.5 0c , indentify the cause and manage accordingly or refer",
-    "action_key": 93
   },
   {
     "conditions": [
@@ -7943,6 +7927,24 @@
     "action": "Measure blood pressure again after 4 hours",
     "annotation": "Given high values (SBP ≥ 140 and/or DBP ≥ 90), blood pressure should be measured again after 4 hours. Ensure there is appropriate spacing for both the systolic and diastolic BP values",
     "action_key": 485
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Pulse rate",
+        "value": 60,
+        "operator": "<"
+    },
+    {
+      "trigger": "DAK, Pulse rate",
+      "value": 100,
+      "operator": ">"
+  }
+    ],
+    "conditionType": "either",
+    "action": "Conduct further investigation, manage accordingly, or refer if necessary",
+    "annotation": "If the pulse rate is <60 bpm (Bradycardia) or >100 bpm (Tachycardia), identify the cause, manage accordingly, or refer",
+    "action_key": 486
   }
 
 
