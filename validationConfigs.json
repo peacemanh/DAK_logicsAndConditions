@@ -18,16 +18,16 @@
   {
     "conceptName": "DAK, Current weight",
     "operator": "beyond, <, <",
-    "minValue": 40,
-    "maxValue": 150,
+    "minValue": 30,
+    "maxValue": 180,
     "type": "restrict",
     "message": "Weight should be between 40 Kg and 150 Kg"
   },
   {
     "conceptName": "DAK, Pre-gestational weight",
     "operator": "beyond, <, <",
-    "minValue": 40,
-    "maxValue": 150,
+    "minValue": 30,
+    "maxValue": 180,
     "type": "restrict",
     "message": "Weight should be between 40 Kg and 150 Kg"
   },

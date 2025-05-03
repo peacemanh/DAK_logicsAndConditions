@@ -78,7 +78,7 @@
       }
     ],
     "action": "hide",
-    "dependent": "DAK, Blood pressure cannot be taken",
+    "dependent": "DAK, Reason blood pressure cannot be taken form",
     "logic_key": 5
   },
   {
@@ -1813,18 +1813,7 @@
     "dependent": "DAK, Other (specify)",
     "logic_key": 149
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Blood pressure cannot be taken",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Reason blood pressure cannot be taken form",
-    "logic_key": 150
-  },
+  
   {
     "logics": [
       {
@@ -5749,30 +5738,6 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Reason for coming to facility",
-        "value": "DAK, First antenatal care contact",
-        "operator": "="
-      }
-    ],
-    "action": "required",
-    "dependent": "DAK, BMI",
-    "logic_key": 466
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for coming to facility",
-        "value": "DAK, First antenatal care contact",
-        "operator": "!="
-      }
-    ],
-    "action": "noneRequired",
-    "dependent": "DAK, BMI",
-    "logic_key": 467
-  },
-  {
-    "logics": [
-      {
         "trigger": "DAK, Systolic blood pressure",
         "minValue": 140.0,
         "maxValue": 160.0,
@@ -9103,5 +9068,53 @@
     "action": "show",
     "dependent":"DAK, Cancer-other site (specify) text",   
     "logic_key": 711
-  }
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pre-gestational weight",
+        "value": 0,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent":"DAK, BMI",   
+    "logic_key": 712
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pre-gestational weight",
+        "value": 0,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent":"DAK, Weight category",   
+    "logic_key": 713
+  },
+{
+  "logics": [
+    {
+      "trigger": "DAK, Pre-gestational weight",
+      "value": 0,
+      "operator": ">="
+    }
+  ],
+  "action": "show",
+  "dependent":"DAK, Expected weight gain",   
+  "logic_key": 714
+},
+{
+  "logics": [
+    {
+      "trigger": "DAK, Pre-gestational weight",
+      "value": 0,
+      "operator": ">="
+    }
+  ],
+  "action": "show",
+  "dependent":"DAK, Total weight gain (kgTotal weight gain (kg)",   
+  "logic_key": 715
+}
 ]
