@@ -181,17 +181,17 @@
         "logics": [
             {
                 "trigger": "DAK, Systolic blood pressure",
-                "value": 160.0,
-                "operator": ">"
+                "value": 140.0,
+                "operator": ">="
             },
             {
                 "trigger": "DAK, Repeat systolic blood pressure",
-                "value": 160.0,
-                "operator": ">"
+                "value": 140.0,
+                "operator": ">="
             },
             {
                 "trigger": "DAK, Symptoms of severe pre-eclampsia",
-                "value": "DAK, None",
+                "value": "DAK, No symptoms of severe pre-eclampsia",
                 "operator": "="
             },
             {
@@ -222,8 +222,8 @@
             },
             {
                 "trigger": "DAK, Symptoms of severe pre-eclampsia",
-                "value": "DAK, None",
-                "operator": "OR"
+                "value": "DAK, No symptoms of severe pre-eclampsia",
+                "operator": "="
             },
             {
                 "trigger": "DAK, Urine dipstick result \u2013 protein",
@@ -242,16 +242,14 @@
     {
         "logics": [
             {
-                "trigger": "DAK, Diastolic blood pressure",
-                "minValue": 90.0,
-                "maxValue": 110.0,
-                "operator": "between, <=, <"
+                "trigger": "DAK, Systolic blood pressure",
+                "value": 160.0,
+                "operator": ">="
             },
             {
-                "trigger": "DAK, Repeat diastolic blood pressure",
-                "minValue": 90.0,
-                "maxValue": 110.0,
-                "operator": "between, <=, <"
+                "trigger": "DAK, Repeat systolic blood pressure",
+                "value": 160.0,
+                "operator": ">="
             },
             {
                 "trigger": "DAK, Symptoms of severe pre-eclampsia",
@@ -290,6 +288,7 @@
             {
                 "trigger": "DAK, Urine dipstick result \u2013 protein",
                 "orValues": [
+                    
                     "DAK, +++",
                     "DAK, ++++"
                 ],
@@ -322,6 +321,7 @@
             {
                 "trigger": "DAK, Urine dipstick result \u2013 protein",
                 "orValues": [
+                    "DAK, ++",
                     "DAK, +++",
                     "DAK, ++++"
                 ],
@@ -1921,56 +1921,6 @@
         "logics": [
             {
                 "trigger": "DAK, Systolic blood pressure",
-                "value": 160.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Repeat systolic blood pressure",
-                "value": 160.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Urine dipstick result \u2013 protein",
-                "orValues": [
-                    "DAK, +",
-                    "DAK, None"
-                ],
-                "operator": "OR"
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Severe hypertension",
-        "logic_key": 117
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Diastolic blood pressure",
-                "value": 110.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Repeat diastolic blood pressure",
-                "value": 110.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Urine dipstick result \u2013 protein",
-                "orValues": [
-                    "DAK, +",
-                    "DAK, None"
-                ],
-                "operator": "OR"
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Severe hypertension",
-        "logic_key": 118
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Systolic blood pressure",
                 "minValue": 140.0,
                 "maxValue": 160.0,
                 "operator": "between, <=, <"
@@ -1988,7 +1938,13 @@
                     "DAK, None"
                 ],
                 "operator": "OR"
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value":20,
+                "operator": "<"
             }
+
         ],
         "dependentValue": true,
         "dependent": "DAK, Chronic Hypertension",
@@ -2015,6 +1971,11 @@
                     "DAK, None"
                 ],
                 "operator": "OR"
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value":20,
+                "operator": "<"
             }
         ],
         "dependentValue": true,
@@ -2606,5 +2567,94 @@
         "dependentValue": "DAK, Tachypnea",
         "dependent": "DAK, Respiratory exam result",
         "logic_key": 151
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Number of caesarian sections",
+                "value": 1,
+                "operator": ">"
+            }
+        ],
+        "dependentValue": "DAK, Caesarean section delivery",
+        "dependent": "DAK, Past pregnancy history",
+        "logic_key": 152
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Number of miscarriages or abortions",
+                "value": 1,
+                "operator": ">"
+            }
+        ],
+        "dependentValue": "DAK, Abortion",
+        "dependent": "DAK, Past pregnancy history",
+        "logic_key": 153
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Systolic blood pressure",
+                "minValue": 140.0,
+                "maxValue": 160.0,
+                "operator": "between, <=, <"
+            },
+            {
+                "trigger": "DAK, Repeat systolic blood pressure",
+                "minValue": 140.0,
+                "maxValue": 160.0,
+                "operator": "between, <=, <"
+            },
+            {
+                "trigger": "DAK, Urine dipstick result \u2013 protein",
+                "orValues": [
+                    "DAK, +",
+                    "DAK, None"
+                ],
+                "operator": "OR"
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value":20,
+                "operator": ">"
+            }
+
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Gestational Hypertension",
+        "logic_key": 154
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Diastolic blood pressure",
+                "minValue": 90.0,
+                "maxValue": 110.0,
+                "operator": "between, <=, <"
+            },
+            {
+                "trigger": "DAK, Repeat diastolic blood pressure",
+                "minValue": 90.0,
+                "maxValue": 110.0,
+                "operator": "between, <=, <"
+            },
+            {
+                "trigger": "DAK, Urine dipstick result \u2013 protein",
+                "orValues": [
+                    "DAK, +",
+                    "DAK, None"
+                ],
+                "operator": "OR"
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value":20,
+                "operator": ">"
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Gestational Hypertension",
+        "logic_key": 155
     }
 ]

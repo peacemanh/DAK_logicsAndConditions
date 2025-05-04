@@ -1628,7 +1628,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital if necessary",
+    "action": "Conduct further investigation, manage the case using a syndromic approach, and refer if necessary",
     "annotation": "Assess and manage STI using STI syndromic approach, and Refer if neccesary (make sure it's not amniotic fluid)",
     "action_key": 136
   },
@@ -1645,7 +1645,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital if necessary",
+    "action": "Consider (premature) rupture of membranes and refer if necessary",
     "annotation": "Consider rupture of membrane and Refer",
     "action_key": 137
   },
@@ -1669,7 +1669,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital if necessary",
+    "action": "Conduct further investigation, manage the case using a syndromic approach, and refer if necessary",
     "annotation": "Assess and manage STI using STI syndromic approach, and Refer if neccesary",
     "action_key": 139
   },
@@ -1681,7 +1681,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital if necessary",
+    "action": "Conduct further investigation, manage the case using a syndromic approach, and refer if necessary",
     "annotation": "Assess and manage STI using STI syndromic approach, and Refer if neccesary",
     "action_key": 140
   },
@@ -1693,7 +1693,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital if necessary",
+    "action": "Conduct further investigation, manage the case using a syndromic approach, and refer if necessary",
     "annotation": "Assess and manage STI using STI syndromic approach, and Refer if neccesary",
     "action_key": 141
   },
@@ -1729,7 +1729,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital if necessary",
+    "action": "Conduct further investigation, manage the case using a syndromic approach, and refer if necessary",
     "annotation": "Assess and manage STI using STI syndromic approach, and Refer if neccesary (make sure it's not amniotic fluid)",
     "action_key": 144
   },
@@ -1765,7 +1765,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital if necessary",
+    "action": "Conduct further investigation, manage the case using a syndromic approach, and refer if necessary",
     "annotation": "Assess and manage STI using STI syndromic approach, and refer if necessary",
     "action_key": 147
   },
@@ -1778,7 +1778,7 @@
       }
     ],
     "action": "Refer to a hospital if necessary",
-    "annotation": "Consider cervical cancer and reffer for further evaluation",
+    "annotation": "Consider cervical cancer and refer for further evaluation",
     "action_key": 148
   },
   {
@@ -6310,32 +6310,6 @@
   {
     "conditions": [
       {
-        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-        "value": "DAK, Positive",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and reffer",
-    "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
-    "action_key": 408
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-        "value": "DAK, Positive",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
-    "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counselling and reffer",
-    "annotation": "If the woman is diagnosed with GDM, provide treatment and counselling accordingly",
-    "action_key": 409
-  },
-  {
-    "conditions": [
-      {
         "key": "DAK, Syphilis test result",
         "value": "DAK, Syphilis positive",
         "operator": "="
@@ -7857,12 +7831,160 @@
       "operator": ">"
   }
     ],
-    "conditionType": "either",
+    
     "action": "Conduct further investigation, manage accordingly, or refer if necessary",
     "annotation": "If the pulse rate is <60 bpm (Bradycardia) or >100 bpm (Tachycardia), identify the cause, manage accordingly, or refer",
     "action_key": 486
-  }
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Oedema type",
+       "orValues": ["DAK, Pitting ankle oedema", "DAK, Oedema of the hands and feet", "DAK, Pitting lower back oedema" , "DAK, Non pitting leg oedema", "DAK, Facial puffiness"],
+        "operator": "OR" 
+    }
+    ],
+    
+    "action": "Conduct further investigation and manage accordingly.",
+    "annotation": "Ensure that blood pressure is within the normal range. Rule out renal, cardiovascular, and other medical conditions",
+    "action_key": 487
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Symphysis-fundal height (SFH)",
+       "formula": "DAK, Gestational age- 3" ,
+       "operator": "<="
+      } 
+    ],
+    
+    "action": "Conduct further investigation and manage accordingly.",
+    "annotation": "Ensure that blood pressure is within the normal range. Rule out renal, cardiovascular, and other medical conditions",
+    "action_key": 488
+  },
 
+    {
+      "conditions": [
+        {
+          "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+          "value": 126.0,
+          "operator": ">="
+        }
+      ],
+      "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
+      "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+      "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
+      "action_key": 489
+    },
+    {
+      "conditions": [
+        {
+          "trigger": "DAK, Fasting Blood sugar test result",
+          "value": 126.0,
+          "operator": ">="
+        }
+      ],
+      "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
+      "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+      "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
+      "action_key": 490
+    },
+    {
+      "conditions": [
+        {
+          "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) – 1 hour test result",
+          "value": 200.0,
+          "operator": ">="
+        }
+      ],
+      "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
+      "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+      "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
+      "action_key": 491
+    },
+    {
+      "conditions": [
+        {
+          "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) – 2 hours test result",
+          "value": 200.0,
+          "operator": ">="
+        }
+      ],
+      "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
+      "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+      "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
+      "action_key": 492
+    },
+    {
+      "conditions": [
+        {
+          "trigger": "DAK, Random blood sugar test result",
+          "value": 200.0,
+          "operator": ">="
+        }
+      ],
+      "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
+      "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+      "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
+      "action_key": 493
+    },
+
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Fasting Blood sugar test result",
+        "minValue": 92.0,
+        "maxValue": 126.0,
+        "operator": "between, <=, <"
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
+    "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counselling and refer",
+    "annotation": "If the woman is diagnosed with GDM, provide treatment and counselling accordingly",
+    "action_key": 494
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+        "minValue": 92.0,
+        "maxValue": 126.0,
+        "operator": "between, <=, <"
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
+    "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counselling and refer",
+    "annotation": "If the woman is diagnosed with GDM, provide treatment and counselling accordingly",
+    "action_key": 495
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) – 1 hour test result",
+        "minValue": 180.0,
+        "maxValue": 200.0,
+        "operator": "between, <=, <"
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
+    "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counselling and refer",
+    "annotation": "If the woman is diagnosed with GDM, provide treatment and counselling accordingly",
+    "action_key": 496
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) – 2 hours test result",
+        "minValue": 153.0,
+        "maxValue": 200.0,
+        "operator": "between, <=, <"
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
+    "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counselling and refer",
+    "annotation": "If the woman is diagnosed with GDM, provide treatment and counselling accordingly",
+    "action_key": 497
+  }
 
 
 ]

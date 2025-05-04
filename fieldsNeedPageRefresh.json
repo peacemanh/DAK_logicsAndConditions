@@ -22,7 +22,8 @@
         "DAK, Reason for no method at exit",
         "DAK, Cardiac exam result",
         "DAK, Respiratory exam result",
-        "DAK, Reason for follow-up"
+        "DAK, Reason for follow-up",
+        "DAK, Past pregnancy history"
       ]
  }
 ]

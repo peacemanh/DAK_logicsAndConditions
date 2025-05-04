@@ -1,19 +1,11 @@
 [
   {
-    "conceptName": "DAK, Fetal heart rate",
-    "operator": "beyond, <=, <=",
-    "minValue": 80,
-    "maxValue": 200,
-    "type": "restrict",
-    "message": "Fetal Heart rate should be between 80 bpm and 200 bpm"
-  },
-  {
     "conceptName": "DAK, Height",
     "operator": "beyond, <, <",
-    "minValue": 50,
+    "minValue": 40,
     "maxValue": 205,
     "type": "restrict",
-    "message": "Height should be between 50 cm and 205 cm"
+    "message": "Height in range of 40 cm and 205 cm is acceptable"
   },
   {
     "conceptName": "DAK, Current weight",
@@ -21,7 +13,7 @@
     "minValue": 30,
     "maxValue": 180,
     "type": "restrict",
-    "message": "Weight should be between 40 Kg and 150 Kg"
+    "message": "Weight  in range of 30 Kg and 180 Kg is acceptable"
   },
   {
     "conceptName": "DAK, Pre-gestational weight",
@@ -29,7 +21,7 @@
     "minValue": 30,
     "maxValue": 180,
     "type": "restrict",
-    "message": "Weight should be between 40 Kg and 150 Kg"
+    "message": "Weight  in range of 30 Kg and 180 Kg is acceptable"
   },
  {
     "conceptName": "DAK, Number of pregnancies gravida",
@@ -40,28 +32,28 @@
     "message": "Number of pregnancies (gravida) should be between 1 and 15"
   },
   {
-    "conceptName": "DAK, Number of miscarriages and/or abortions",
+    "conceptName": "DAK, Number of miscarriages or abortions",
     "operator": "beyond, <=, <=",
     "minValue": 1,
     "maxValue": "DAK, Number of pregnancies gravida",
     "type": "restrict",
-    "message": "Number of pregnancies (gravida) should be less thanNumber of previous pregnancies"
+    "message": "Number of pregnancies (gravida) should be less than Number of pregnancies"
   },
   {
     "conceptName": "DAK, Number of live births",
     "operator": "beyond, <=, <=",
     "minValue": 0,
-    "maxValue": "DAK, Number of pregnancies gravida - DAK, Number of miscarriages and/or abortions",
+    "maxValue": "DAK, Number of pregnancies gravida - DAK, Number of miscarriages or abortions",
     "type": "restrict",
-    "message": "Number of live births should be less than difference of Number of previous pregnancy and Number of miscarriages and/or abortions"
+    "message": "Number of live births should be less than difference of Number of previous pregnancy and DAK, Number of miscarriages or abortions"
   },
   {
     "conceptName": "DAK, Number of stillbirths",
     "operator": "beyond, <=, <=",
     "minValue": 0,
-    "maxValue": "DAK, Number of pregnancies gravida - DAK, Number of miscarriages and/or abortions - DAK, Number of live births",
+    "maxValue": "DAK, Number of pregnancies gravida - DAK, Number of miscarriages or abortions - DAK, Number of live births",
     "type": "restrict",
-    "message": "Number of stillbirths should be less than than diffrence of Number of previous pregnancies, Number of miscarriages and/or abortions and Number of live births"
+    "message": "Number of stillbirths should be less than than diffrence of Number of previous pregnancies, DAK, Number of miscarriages or abortions and Number of live births"
   },
   {
     "conceptName": "DAK, Number of caesarian sections",
@@ -77,7 +69,7 @@
     "minValue": 60,
     "maxValue": 280,
     "type": "restrict",
-    "message": "Systolic blood pressure should be in range of 60mmHg and 280mmHg"
+    "message": "Systolic blood pressure in range of 60mmHg and 280mmHg is acceptable"
   },
   {
     "conceptName": "DAK, Repeat systolic blood pressure",
@@ -85,7 +77,7 @@
     "minValue": 60,
     "maxValue": 280,
     "type": "optional",
-    "message": "Repeat systolic blood pressure should be in range of 60mmHg and 280mmHg"
+    "message": "Repeat systolic blood pressure in range of 60mmHg and 280mmHg is acceptable"
   },
   {
     "conceptName": "DAK, Diastolic blood pressure",
@@ -93,7 +85,7 @@
     "minValue": 40,
     "maxValue": 200,
     "type": "restrict",
-    "message": "Diastolic blood pressure should be in range of 40mmHg and 200mmHg"
+    "message": "Diastolic blood pressure in range of 40mmHg and 200mmHg is acceptable"
   },
   {
     "conceptName": "DAK, Repeat diastolic blood pressure",
@@ -101,7 +93,7 @@
     "minValue": 40,
     "maxValue": 200,
     "type": "optional",
-    "message": "Repeat diastolic blood pressure should be in range of 40mmHg and 200mmHg"
+    "message": "Repeat diastolic blood pressure in range of 40mmHg and 200mmHg is acceptable"
   },
   {
     "conceptName": "DAK, Body temperature",
@@ -109,7 +101,7 @@
     "minValue": 25,
     "maxValue": 46,
     "type": "restrict",
-    "message": "Body temperature should be in range of 25\u00B0c and 46\u00B0c"
+    "message": "Body temperature in range of 25\u00B0c and 46\u00B0c is acceptable"
   },
   {
     "conceptName": "DAK, Pulse rate",
@@ -117,7 +109,7 @@
     "minValue": 40,
     "maxValue": 220,
     "type": "restrict",
-    "message": "Pulse rate should be in range 40bpm and 220bpm"
+    "message": "Pulse rate  in range of 40bpm and 220bpm is acceptable"
   },
   {
     "conceptName": "DAK, Second pulse rate",
@@ -125,7 +117,7 @@
     "minValue": 40,
     "maxValue": 220,
     "type": "optional",
-    "message": "Second pulse rate should be between 50bpm and 200bpm"
+    "message": "Second pulse rate in range of 50bpm and 200bpm is acceptable"
   },
   {
     "conceptName": "DAK, Respiratory rate",
@@ -133,7 +125,7 @@
     "minValue": 8,
     "maxValue": 40,
     "type": "restrict",
-    "message": "Pulse rate should be in range 8bpm and 40bpm"
+    "message": "Pulse rate in range of 8bpm and 40bpm is acceptable"
   },
   {
     "conceptName": "DAK, Oxygen Saturation",
@@ -141,7 +133,7 @@
     "minValue": 0,
     "maxValue": 100,
     "type": "restrict",
-    "message": "Oxygen Saturation should be between 0% and 100%"
+    "message": "Oxygen Saturation in range of between 0% and 100% is acceptable"
   },
   {
     "conceptName": "DAK, Cervical dilation",
@@ -149,7 +141,7 @@
     "minValue": 0,
     "maxValue": 10,
     "type": "restrict",
-    "message": "Cervical dilation should be between 0cm and 10cm"
+    "message": "Cervical dilation in range of  0cm and 10cm is acceptable"
   },
   {
     "conceptName": "DAK, Symphysis-fundal height (SFH)",
@@ -157,23 +149,7 @@
     "minValue": 0,
     "maxValue": 44,
     "type": "restrict",
-    "message": "Fundal Height (wks) should be between 20 and 44 wks"
-  },
-  {
-    "conceptName": "DAK, Fetal heart rate",
-    "operator": "beyond, <=, <=",
-    "minValue": 80,
-    "maxValue": 200,
-    "type": "restrict",
-    "message": "Fetal heart rate should be between 80bpm and 200bpm"
-  },
-  {
-    "conceptName": "DAK, Second fetal heart rate",
-    "operator": "beyond, <=, <=",
-    "minValue": 80,
-    "maxValue": 200,
-    "type": "restrict",
-    "message": "Second fetal heart rate should be between 80bpm and 200bpm"
+    "message": "Fundal Height (wks) in range of 20 and 44 wks is acceptable"
   },
   {
     "conceptName": "DAK, Number of fetuses",
@@ -181,7 +157,7 @@
     "minValue": 1,
     "maxValue": 8,
     "type": "restrict",
-    "message": "number of fetuses the woman is carrying should be between 1 and 8"
+    "message": "number of fetuses the woman is carrying in range of 1 and 8 is acceptable"
   },
   {
     "conceptName": "DAK, ANC Contact Number",
@@ -189,7 +165,7 @@
     "minValue": 2,
     "maxValue": 14,
     "type": "restrict",
-    "message": "ANC contact number should be between 2 and 14"
+    "message": "ANC contact number in range of 2 and 14 is acceptable"
   },
   {
     "conceptName": "DAK, Amount of daily aspirin prescribed until delivery",
@@ -204,7 +180,7 @@
     "minValue": 30,
     "maxValue": 500,
     "type": "restrict",
-    "message": "Fasting Blood sugar test result should be between 30 and 500"
+    "message": "Fasting Blood sugar test result in range of between 30 and 500 is acceptable"
   },
   {
     "conceptName": "DAK, Blood haemoglobin test result",
@@ -212,7 +188,7 @@
     "minValue": 0,
     "maxValue": 25,
     "type": "restrict",
-    "message": "Blood haemoglobin test result should be between 0 and 25"
+    "message": "Blood haemoglobin test result in range of 0 and 25 is acceptable"
   },
   {
     "conceptName": "DAK, Gestational age",
@@ -220,15 +196,7 @@
     "minValue": 4,
     "maxValue": 40,
     "type": "restrict",
-    "message": "Gestational age should be between 4 and 40"
-  },
-  {
-    "conceptName": "DAK, Fetal heart rate",
-    "operator": "beyond, <=, <=",
-    "minValue": 80,
-    "maxValue": 200,
-    "type": "restrict",
-    "message": "Fetal Heart rate should be between 80 bpm and 200 bpm"
+    "message": "Gestational age in range of 4 and 40 is acceptable"
   },
   {
     "conceptName": "DAK, Birth weight",
@@ -236,7 +204,7 @@
     "minValue": 1,
     "maxValue": 10,
     "type": "restrict",
-    "message": "Birth weight should be between 1 and 10 KG"
+    "message": "Birth weight in range of 1 and 10 KG is acceptable"
   },
   {
     "conceptName": "Gestational Age Days in Current Week",
@@ -252,30 +220,7 @@
     "minValue": 11,
     "maxValue": 47,
     "type": "restrict",
-    "message": "MUAC should be between 11 cm and 47 cm"
-  },
-  {
-    "conceptName": "DAK, Fetal heart rate one",
-    "operator": "beyond, <=, <=",
-    "minValue": 80,
-    "maxValue": 200,
-    "type": "restrict",
-    "message": "Fetal Heart rate should be between 80 bpm and 200 bpm"
-  },
-  {
-    "conceptName": "DAK, Fetal heart rate two",
-    "operator": "beyond, <=, <=",
-    "minValue": 80,
-    "maxValue": 200,
-    "type": "restrict",
-    "message": "Fetal Heart rate should be between 80 bpm and 200 bpm"
-  },
-  {
-    "conceptName": "DAK, Fetal heart rate three",
-    "operator": "beyond, <=, <=",
-    "minValue": 80,
-    "maxValue": 200,
-    "type": "restrict",
-    "message": "Fetal Heart rate should be between 80 bpm and 200 bpm"
+    "message": "MUAC in range of 11 cm and 47 cm is acceptable"
   }
+ 
 ]

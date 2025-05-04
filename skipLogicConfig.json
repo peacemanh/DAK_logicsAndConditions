@@ -8,7 +8,10 @@
           "DAK, Family planning",
           "DAK, Referral for screening including diagnostics and lab testing",
           "DAK, Fetal heart rate",
-          "DAK, No condom use during sex"
+          "DAK, No condom use during sex",
+          "DAK, First antenatal care contact",
+          "DAK, Caesarean section delivery",
+          "DAK, Abortion"
         ]
       }
     ],
@@ -1901,13 +1904,13 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Number of miscarriages and/or abortions",
+        "trigger": "DAK, Number of miscarriages or abortions",
         "value": 2,
         "operator": ">="
       }
     ],
     "action": "show",
-    "dependent": "DAK, Were the abortions spontaneous?",
+    "dependent": "DAK, Were the abortions spontaneous",
     "logic_key": 158
   },
   {
@@ -2712,18 +2715,7 @@
     "dependent": "DAK, Syphilis test required",
     "logic_key": 224
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Blood glucose test ordered",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Blood glucose test conducted",
-    "logic_key": 225
-  },
+
   {
     "logics": [
       {
@@ -5795,111 +5787,66 @@
         "minValue": 92.0,
         "maxValue": 126.0,
         "operator": "between, <=, <"
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
-    "logic_key": 471
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT)-fasting glucose test result",
+    },
+    {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
         "minValue": 92.0,
         "maxValue": 126.0,
-        "operator": "between, <=, <="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
-    "logic_key": 472
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u00e2\u20ac\u201c 1 hour test result",
+        "operator": "between, <=, <"
+    },
+    {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u2013 1 hour test result",
         "minValue": 180.0,
         "maxValue": 200.0,
         "operator": "between, <=, <"
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
-    "logic_key": 473
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u00e2\u20ac\u201c 2 hours test result",
+    },
+    {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u2013 2 hours test result",
         "minValue": 153.0,
         "maxValue": 200.0,
         "operator": "between, <=, <"
-      }
+    }
     ],
     "action": "show",
+    "conditionType":"either",
     "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
     "logic_key": 474
   },
+
   {
     "logics": [
       {
         "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
         "value": 126.0,
         "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "logic_key": 475
-  },
-  {
-    "logics": [
-      {
+    },
+    {
         "trigger": "DAK, Fasting Blood sugar test result",
         "value": 126.0,
         "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "logic_key": 476
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u00e2\u20ac\u201c 1 hour test result",
+    },
+    {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u2013 1 hour test result",
         "value": 200.0,
         "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "logic_key": 477
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u00e2\u20ac\u201c 2 hours test result",
+    },
+    {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u2013 2 hours test result",
         "value": 200.0,
         "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "logic_key": 478
-  },
-  {
-    "logics": [
-      {
+    },
+    {
         "trigger": "DAK, Random blood sugar test result",
         "value": 200.0,
         "operator": ">="
-      }
+    }
     ],
     "action": "show",
+    "conditionType":"either",
     "dependent": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "logic_key": 479
+    "logic_key": 475
   },
+
   {
     "logics": [
       {
@@ -8035,17 +7982,15 @@
       {
         "rules": [
           {
-            "trigger": "DAK, Diastolic blood pressure",
-            "minValue": 90.0,
-            "maxValue": 110.0,
-            "operator": "between, <=, <"
-          },
-          {
-            "trigger": "DAK, Repeat diastolic blood pressure",
-            "minValue": 90.0,
-            "maxValue": 110.0,
-            "operator": "between, <=, <"
-          },
+            "trigger": "DAK, Systolic blood pressure",
+            "value": 160.0,
+            "operator": ">="
+        },
+        {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "value": 160.0,
+            "operator": ">="
+        },
           {
             "trigger": "DAK, Symptoms of severe pre-eclampsia",
             "value": "DAK, No symptoms of severe pre-eclampsia",
@@ -8109,6 +8054,7 @@
           {
             "trigger": "DAK, Urine dipstick result \u2013 protein",
             "orValues": [
+              "DAK, ++",
               "DAK, +++",
               "DAK, ++++"
             ],
@@ -8394,7 +8340,12 @@
               "DAK, None"
             ],
             "operator": "OR"
-          }
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value":20,
+            "operator": "<"
+        }
         ]
       },
       {
@@ -8418,7 +8369,12 @@
               "DAK, None"
             ],
             "operator": "OR"
-          }
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value":20,
+            "operator": "<"
+        }
         ]
       }
     ],
@@ -9029,13 +8985,13 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Number of miscarriages and/or abortions",
+        "trigger": "DAK, Number of miscarriages or abortions",
         "value": 2,
         "operator": ">="
       }
     ],
     "action": "show",
-    "dependent":"DAK, Were the abortions consecutive?", 
+    "dependent":"DAK, Were the abortions consecutive", 
     "logic_key": 710
   },
   {
@@ -9097,5 +9053,126 @@
   "action": "show",
   "dependent":"DAK, Total weight gain (kgTotal weight gain (kg)",   
   "logic_key": 715
+},
+{
+  "logics": [
+    {
+      "trigger": "DAK, Reason for refferal",
+      "value": "DAK, Referral other",
+      "operator": "="
+    }
+  ],
+  "action": "show",
+  "dependent":"DAK, Other referral specify",   
+  "logic_key": 716
+},
+{
+  "logics": [
+    {
+      "trigger": "DAK, ANC Contact Number",
+      "value": 1,
+      "operator": "<"
+    }
+  ],
+  "action": "show",
+  "index":0,
+  "parent": "DAK, Reason for coming to facility",
+  "dependent": "DAK, First antenatal care contact",
+  "logic_key": 717
+},
+{
+  "logics": [
+    {
+      "trigger": "DAK, Number of caesarian sections",
+      "value": 1,
+      "operator": ">"
+    }
+  ],
+  "action": "show",
+  "index":0,
+  "parent": "DAK, Past pregnancy history",
+  "dependent": "DAK, Caesarean section delivery",
+  "logic_key": 718
+},
+{
+  "logics": [
+    {
+      "trigger": "DAK, Number of miscarriages or abortions",
+      "value": 1,
+      "operator": ">"
+    }
+  ],
+  "action": "show",
+  "index":0,
+  "parent": "DAK, Past pregnancy history",
+  "dependent": "DAK, Abortion",
+  "logic_key": 719
+},
+{
+  "logics": [
+    {
+      "rules": [
+        {
+          "trigger": "DAK, Systolic blood pressure",
+          "minValue": 140.0,
+          "maxValue": 160.0,
+          "operator": "between, <=, <"
+        },
+        {
+          "trigger": "DAK, Repeat systolic blood pressure",
+          "minValue": 140.0,
+          "maxValue": 160.0,
+          "operator": "between, <=, <"
+        },
+        {
+          "trigger": "DAK, Urine dipstick result \u2013 protein",
+          "orValues": [
+            "DAK, +",
+            "DAK, None"
+          ],
+          "operator": "OR"
+        },
+        {
+          "trigger": "DAK, Gestational age",
+          "value":20,
+          "operator": ">"
+      }
+      ]
+    },
+    {
+      "rules": [
+        {
+          "trigger": "DAK, Diastolic blood pressure",
+          "minValue": 90.0,
+          "maxValue": 110.0,
+          "operator": "between, <=, <"
+        },
+        {
+          "trigger": "DAK, Repeat diastolic blood pressure",
+          "minValue": 90.0,
+          "maxValue": 110.0,
+          "operator": "between, <=, <"
+        },
+        {
+          "trigger": "DAK, Urine dipstick result \u2013 protein",
+          "orValues": [
+            "DAK, +",
+            "DAK, None"
+          ],
+          "operator": "OR"
+        },
+        {
+          "trigger": "DAK, Gestational age",
+          "value":20,
+          "operator": ">"
+      }
+      ]
+    }
+  ],
+  "action": "show",
+  "conditionType": "deepAnalysis",
+  "dependent": "DAK, Gestational Hypertension",
+  "logic_key": 720
 }
+
 ]
