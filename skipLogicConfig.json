@@ -3683,8 +3683,8 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Tobacco use",
-        "value": true,
+        "trigger": "DAK, Current alcohol and/or other substance use",
+        "value": "DAK, Smoking",
         "operator": "="
       }
     ],
@@ -7301,8 +7301,8 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Tobacco use",
-        "value": true,
+        "trigger": "DAK, Current alcohol and/or other substance use",
+        "value": "DAK, Smoking",
         "operator": "="
       }
     ],

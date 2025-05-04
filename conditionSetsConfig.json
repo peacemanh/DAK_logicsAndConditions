@@ -7549,8 +7549,8 @@
   {
     "conditions": [
       {
-        "key": "DAK, Tobacco use",
-        "value": true,
+        "key": "DAK, Current alcohol and/or other substance use",
+        "value": "DAK, Smoking",
         "operator": "="
       }
     ],
@@ -7575,8 +7575,8 @@
   {
     "conditions": [
       {
-        "key": "DAK, Exposure to second-hand smoke",
-        "value": true,
+        "key": "DAK, Current alcohol and/or other substance use",
+        "value": "DAK, Exposure to second hand smoke",
         "operator": "="
       }
     ],
@@ -7844,7 +7844,7 @@
         "operator": "OR" 
     }
     ],
-    
+    "displayPoint": "DAK, Oedema type",
     "action": "Conduct further investigation and manage accordingly.",
     "annotation": "Ensure that blood pressure is within the normal range. Rule out renal, cardiovascular, and other medical conditions",
     "action_key": 487
