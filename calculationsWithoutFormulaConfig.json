@@ -2557,7 +2557,7 @@
         "action": true,
         "conditionType": "deepAnalysis",
         "dependent": "DAK, Diabetes risk",
-        "logic_key": 678
+        "logic_key": 147
     },
     {
         "logics": [
@@ -2569,7 +2569,7 @@
         ],
         "dependentValue": "DAK, Bradycardia",
         "dependent": "DAK, Cardiac exam result",
-        "logic_key": 679
+        "logic_key": 148
     },
     {
         "logics": [
@@ -2581,6 +2581,30 @@
         ],
         "dependentValue": "DAK, Tachycardia",
         "dependent": "DAK, Cardiac exam result",
-        "logic_key": 700
+        "logic_key": 149
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Respiratory rate",
+                "value": 12,
+                "operator": "<"
+            }
+        ],
+        "dependentValue": "DAK, Bradypnea",
+        "dependent": "DAK, Respiratory exam result",
+        "logic_key": 150
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Respiratory rate",
+                "value": 24,
+                "operator": ">"
+            }
+        ],
+        "dependentValue": "DAK, Tachypnea",
+        "dependent": "DAK, Respiratory exam result",
+        "logic_key": 151
     }
 ]

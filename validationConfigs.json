@@ -128,6 +128,14 @@
     "message": "Second pulse rate should be between 50bpm and 200bpm"
   },
   {
+    "conceptName": "DAK, Respiratory rate",
+    "operator": "beyond, <=, <=",
+    "minValue": 8,
+    "maxValue": 40,
+    "type": "restrict",
+    "message": "Pulse rate should be in range 8bpm and 40bpm"
+  },
+  {
     "conceptName": "DAK, Oxygen Saturation",
     "operator": "beyond, <=, <=",
     "minValue": 0,
