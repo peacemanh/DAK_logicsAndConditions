@@ -67,7 +67,7 @@
         "triggerEvent": "DAK, Tetanus-diphtheria (TD) 1 immunization provided",
         "triggerDate": "DAK, Date Tetanus-diphtheria (TD) 1 immunization was received",
         "value": true,
-        "sceduleDays": 30,
+        "sceduleDays": 28,
         "service": "TDV 2",
         "type": "other"
     },

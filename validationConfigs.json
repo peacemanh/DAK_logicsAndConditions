@@ -32,7 +32,7 @@
     "message": "Weight should be between 40 Kg and 150 Kg"
   },
  {
-    "conceptName": "DAK, Number of pregnancies (gravida)",
+      "conceptName": "DAK, Number of pregnancies gravida",
     "operator": "beyond, <=, <=",
     "minValue": 1,
     "maxValue": 15,
@@ -40,18 +40,18 @@
     "message": "Number of pregnancies (gravida) should be between 1 and 15"
   },
   {
-    "conceptName": "DAK, Number of miscarriages and/or abortions",
+      "conceptName": "DAK, Number of miscarriages and or abortions",
     "operator": "beyond, <=, <=",
-    "minValue": 1,
-    "maxValue": "DAK, Number of pregnancies (gravida)",
+      "minValue": 0,
+      "maxValue": "DAK, Number of pregnancies gravida",
     "type": "restrict",
-    "message": "Number of pregnancies (gravida) should be less thanNumber of previous pregnancies"
+      "message": "Number of miscarriages and/or abortions should be less than Number of previous pregnancies"
   },
   {
     "conceptName": "DAK, Number of live births",
     "operator": "beyond, <=, <=",
     "minValue": 0,
-    "maxValue": "DAK, Number of pregnancies (gravida) - DAK, Number of miscarriages and/or abortions",
+      "maxValue": "DAK, Number of pregnancies gravida - DAK, Number of miscarriages and or abortions",
     "type": "restrict",
     "message": "Number of live births should be less than difference of Number of previous pregnancy and Number of miscarriages and/or abortions"
   },
@@ -59,7 +59,7 @@
     "conceptName": "DAK, Number of stillbirths",
     "operator": "beyond, <=, <=",
     "minValue": 0,
-    "maxValue": "DAK, Number of pregnancies (gravida) - DAK, Number of miscarriages and/or abortions - DAK, Number of live births",
+      "maxValue": "DAK, Number of pregnancies gravida - DAK, Number of miscarriages and or abortions - DAK, Number of live births",
     "type": "restrict",
     "message": "Number of stillbirths should be less than than diffrence of Number of previous pregnancies, Number of miscarriages and/or abortions and Number of live births"
   },

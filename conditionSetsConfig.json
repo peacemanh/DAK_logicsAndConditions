@@ -857,7 +857,7 @@
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Urine test ordered",
+    "displayPoint": "DAK, Urine test conducted",
     "action": "Conduct laboratory tests (i.e urine analysis)",
     "annotation": "Please investigate urinary tract infection and treat if positive.If symptoms persist after treatment, Refer for further evaluation managment.",
     "action_key": 66
@@ -870,7 +870,7 @@
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Urine test ordered",
+    "displayPoint": "DAK, Urine test conducted",
     "action": "Conduct laboratory tests (i.e urine analysis)",
     "annotation": "",
     "action_key": 67
@@ -1950,7 +1950,7 @@
         "operator": "<"
       }
     ],
-    "displayPoint": "DAK, Ultrasound required",
+    "displayPoint": "DAK, Ultrasound scan conducted",
     "action": "Conduct ultrasound at the health-care facility or the referral facility",
     "annotation": "An ultrasound is recommended for all women before 24 weeks gestation",
     "action_key": 152
@@ -1963,7 +1963,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint": "DAK, Ultrasound required",
+    "displayPoint": "DAK, Ultrasound scan conducted",
     "action": "Conduct ultrasound at the health-care facility or the referral facility optional if deemed necessary by the health worker",
     "annotation": "An ultrasound is recommended for all women even after 24 weeks gestation if deemed necessary (e.g. to identify the number of fetuses, fetal presentation,placenta location, assess fetal growth and amniotic fluid volume)",
     "action_key": 153
@@ -2032,7 +2032,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint": "DAK, Ultrasound required",
+    "displayPoint": "DAK, Ultrasound scan conducted",
     "action": "Ultrasound scan is required",
     "annotation": "An ultrasound is recommended for all women even after 24 weeks gestation(e.g. to identify the number of fetuses, fetal presentation,placenta location, asses fetal growth and amniotic fluild volume)",
     "action_key": 156
@@ -2104,7 +2104,7 @@
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Syphilis test required",
+    "displayPoint": "DAK, Syphilis test conducted",
     "action": "syphilis test is required",
     "annotation": "A syphilis test is recommended for all pregnant women at the first contact",
     "action_key": 160
@@ -2117,7 +2117,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint": "DAK, Syphilis test required",
+    "displayPoint": "DAK, Syphilis test conducted",
     "action": "Conduct syphilis test",
     "annotation": "If the woman first syphlis test result was negative, retest for syphlis  with risk assessment after  the gestational age \u2265 30 weeks ( the interval between the two tests should be greater than 6 months)",
     "action_key": 161
@@ -2125,12 +2125,12 @@
   {
     "conditions": [
       {
-        "key": "DAK, Syphilis diagnosis",
+        "key": "DAK, Syphilis test result",
         "value": "DAK, Syphilis positive",
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Syphilis test required",
+    "displayPoint": "DAK, Syphilis test conducted",
     "action": "No syphilis test required",
     "annotation": "Women who are already confirmed positive for syphilis do not need to be tested",
     "action_key": 162
@@ -2143,7 +2143,7 @@
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Urine test required",
+    "displayPoint": "DAK, Urine test conducted",
     "action": "Conduct urine test",
     "annotation": "Urine test is required any time the woman reports pain during urination (dysuria)",
     "action_key": 163
@@ -2169,7 +2169,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint": "DAK, Urine test required",
+    "displayPoint": "DAK, Urine test conducted",
     "action": "Do urine dipstick test for protein",
     "annotation": "Given high values (SBP \u2265 140 or DBP \u2265 90) upon second measure, urine dipstick test should be done to check for protein in the urine, a symptom of pre-eclampsia",
     "action_key": 165
@@ -2182,7 +2182,7 @@
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Urine test required",
+    "displayPoint": "DAK, Urine test conducted",
     "action": "Conduct urine test",
     "annotation": "The urine dipstick test is important for identifying hypertensive disorders ( protein uria), DM (glucose uria), asymptomatic bacteriuria (ASB) and UTI.  Midstream culture and gram -staining are the standard tests  for diagnosis of ASB if available.",
     "action_key": 166
@@ -2195,7 +2195,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint": "DAK, Urine test required",
+    "displayPoint": "DAK, Urine test conducted",
     "action": "Conduct urine test",
     "annotation": "The urine dipstick test is important for identifying hypertensive disorders ( protein uria), DM (glucose uria), asymptomatic bacteriuria (ASB) and UTI.  Midstream culture and gram -staining are the standard tests  for diagnosis of ASB if available.",
     "action_key": 167
@@ -2208,7 +2208,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint": "DAK, Urine test required",
+    "displayPoint": "DAK, Urine test conducted",
     "action": "Conduct urine test if necessary",
     "annotation": "The urine dipstick test is important for identifying hypertensive disorders ( protein uria), DM (glucose uria), asymptomatic bacteriuria (ASB) and UTI.  Midstream culture and gram -staining are the standard tests  for diagnosis of ASB if available.",
     "action_key": 168
@@ -3440,7 +3440,7 @@
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, HIV positive counselling conducted",
+    "displayPoint": "DAK, Counselling conducted on HIV positive",
     "action": "Conduct HIV positive counseling and link her to PMTCT service",
     "annotation": "\u2013 Counsel for HIV positive test result\n\u2013 Confirm by retesting \n\u2013  Initiate PMTCT of HIV services\n\u2013 Advise on opportunistic infections and need to seek medical help\n\u2013 Proceed with systematic screening for active TB",
     "action_key": 234
@@ -3525,9 +3525,9 @@
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Asymptomatic bacteriuria (ASB) diagnosis",
+    "displayPoint": "DAK, seven-day antibiotic regimen for asymptomatic bacteriuria (ASB) not provided",
     "action": "Provide 7-day antibiotic regimen for asymptomatic bacteriuria (ASB)",
-    "annotation": "A woman is considered to have ASB if she has one of the following test results:\n\n\u2013 Gram-staining positive\n\u2013 Urine dipstick test positive (nitrites or leukocytes)\n\nSeven-day antibiotic regimen is recommended for all pregnant women with asymptomatic bacteriuria (ASB) to prevent persistent bacteriuria, preterm birth and low birth weight.",
+    "annotation": "A woman is considered to have ASB when she has no urinary symptoms but either positive gram staining or positive urine dipstick test (nitrites or leukocytes). A seven-day antibiotic regimen is recommended for all pregnant women with asymptomatic bacteriuria (ASB) to prevent persistent bacteriuria, preterm birth, and low birth weight.",
     "action_key": 239
   },
   {
@@ -3578,7 +3578,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on TB screening positive",
-    "action": "Conduct TB screening positive counseling and Refer for further evaluation and manegment",
+    "action": "Conduct counseling and refer her for further management",
     "annotation": "If TB screening  is positive, counsel on the need of confirmatory test and timely initiation of manegment, and Refer for further evaluation and manegment.",
     "action_key": 243
   },
@@ -4749,8 +4749,8 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on Rh factor negative",
-    "action": "Provide counseling on Rh factor negative",
-    "annotation": "\u2013 Woman is at risk of alloimmunization if the baby's father is Rh positive or unknown\n\u2013 Proceed with local protocol to investigate sensitization and the need for referral \n\u2013 If non-sensitized, woman should receive anti-D prophylaxis postnatally if the baby is Rh positive",
+    "action": "Conduct further investigation and management on Rh-negative",
+    "annotation": "\u2013 Do indirect Coombs test to assess for sensitization. If the result is negative, the woman should receive anti-D prophylaxis at the 28th week and postnatally if the baby is Rh-positive. If the result is positive, refer her for specialized care.",
     "action_key": 302
   },
   {
@@ -4887,7 +4887,7 @@
     ],
     "displayPoint": "DAK, Counselling conducted on breastfeeding",
     "action": "Provide counseling on breastfeeding",
-    "annotation": "To enable mothers to establish and sustain exclusive breastfeeding for 6 months, WHO and UNICEF recommend:\n\n\u2013 Initiation of breastfeeding within the first hour of life\n\u2013 Exclusive breastfeeding \u2013 that is, the infant receives only breast milk without any additional food or drink, not even water\n\u2013 Breastfeeding on demand \u2013 that is, as often as the child wants food, day and night\n\u2013 No use of bottles, teats or pacifiers",
+    "annotation": "Counsel the woman on the importance of exclusive breastfeeding for the first six months after birth, followed by the introduction of complementary feeding while continuing breastfeeding until the child is two years old",
     "action_key": 310
   },
   {
@@ -5979,7 +5979,7 @@
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, HIV test required",
+    "displayPoint": "DAK, HIV test conducted",
     "action": "HIV test is not required",
     "annotation": "A test is not required if the woman is already confirmed HIV positive",
     "action_key": 374
@@ -6044,78 +6044,6 @@
         "key": "DAK, Pregnancy confirmed",
         "value": true,
         "operator": "="
-      },
-      {
-        "key": "DAK, Syphilis test result",
-        "value": "DAK, Syphilis positive",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Syphilis test type",
-        "value": "DAK, Rapid plasma reagin (RPR) test",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Syphilis counselling and treatment",
-    "action": "Conduct syphilis treatment and counselling",
-    "annotation": "Provide treatment according to the clinical phase of syphilis.",
-    "action_key": 379
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Pregnancy confirmed",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Syphilis test result",
-        "value": "DAK, Syphilis positive",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Syphilis test type",
-        "value": "DAK, VDRL",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Syphilis counselling and treatment",
-    "action": "Conduct syphilis treatment and counselling",
-    "annotation": "Provide treatment according to the clinical phase of syphilis",
-    "action_key": 380
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Reason for coming to facility",
-        "value": "DAK, First antenatal care contact",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Syphilis test conducted",
-    "action": "Conduct syphilis test",
-    "annotation": "A syphilis test is recommended for all pregnant women at the first contact",
-    "action_key": 381
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Reason for coming to facility",
-        "value": "DAK, First antenatal care contact",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Syphilis test conducted",
-    "action": "Conduct syphilis test",
-    "annotation": "A syphilis test is recommended for all pregnant women at the first contact",
-    "action_key": 382
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Pregnancy confirmed",
-        "value": true,
-        "operator": "="
       }
     ],
     "displayPoint": "DAK, TB screening conducted",
@@ -6125,11 +6053,6 @@
   },
   {
     "conditions": [
-      {
-        "key": "DAK, Hepatitis B test required",
-        "value": true,
-        "operator": "="
-      },
       {
         "key": "DAK, Reason for coming to facility",
         "value": "DAK, First antenatal care contact",
@@ -6180,18 +6103,6 @@
   {
     "conditions": [
       {
-        "key": "DAK, Counselling conducted on healthy eating and keeping physically active",
-        "value": false,
-        "operator": "="
-      }
-    ],
-    "action": "Counselling on diet",
-    "annotation": "Healthy eating and keeping physically active during pregnancy is recommended for pregnant women to stay healthy and to prevent excessive weight gain during pregnancy",
-    "action_key": 388
-  },
-  {
-    "conditions": [
-      {
         "key": "DAK, Pregnancy confirmed",
         "value": true,
         "operator": "="
@@ -6217,11 +6128,12 @@
   {
     "conditions": [
       {
-        "key": "DAK, Counselling conducted on seeking care when danger signs occur",
-        "value": false,
+        "key": "DAK, Pregnancy confirmed",
+        "value": true,
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Counselling conducted on seeking care when danger signs occur",
     "action": "Counselling on danger signs",
     "annotation": "Counsel women on how to look out for danger signs and seek care accordingly",
     "action_key": 391
@@ -6273,19 +6185,6 @@
     "action": "Counselling on family planning",
     "annotation": "Counsel woman on postpartum family planning methods",
     "action_key": 395
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Counselling conducted on breastfeeding",
-        "value": false,
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Counselling conducted on breastfeeding",
-    "action": "Counselling on breastfeeding",
-    "annotation": "Counsel women on the importance of breastfeeding for 6 months after birth",
-    "action_key": 396
   },
   {
     "conditions": [
@@ -6344,11 +6243,12 @@
   {
     "conditions": [
       {
-        "key": "DAK, Syphilis diagnosis",
+        "key": "DAK, Syphilis test result",
         "value": "DAK, Syphilis positive",
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, Syphilis counselling and treatment",
     "action": "Treatment for syphilis check",
     "annotation": "The health worker checking whether the woman is taking her medication for syphilis",
     "action_key": 401
@@ -6390,19 +6290,7 @@
     "annotation": "Provide counselling to reduce risk of developing GDM if the woman is deemed to be at risk of developing GDM",
     "action_key": 405
   },
-  {
-    "conditions": [
-      {
-        "key": "DAK, HIV test result",
-        "value": "DAK, HIV-positive",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Counselling conducted on HIV positive",
-    "action": "Counselling on HIV-positive",
-    "annotation": "Counselling when a woman has tested positive for HIV",
-    "action_key": 406
-  },
+
   {
     "conditions": [
       {
@@ -6465,7 +6353,7 @@
     ],
     "displayPoint": "DAK, Counselling conducted on hepatitis B positive",
     "action": "Counselling on hepatitis B positive",
-    "annotation": "If woman tested positive for hepatitis B, provide counselling",
+    "annotation": " Provide post-testing counselling and education on measures to reduce the risk of transmitting HBV to the infant, encourage partner testing, and ensure linkage to care of HBsAg positive. Refer to a hospital if necessary.",
     "action_key": 411
   },
   {
@@ -6476,7 +6364,7 @@
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Hepatitis C test required",
+    "displayPoint": "DAK, Hepatitis C test conducted",
     "action": "Conduct hepatitis C test",
     "annotation": "Hepatitis C test required for all pregnant women ,if the test is available.Anti-HCV laboratory-based immunoassay is the preferred method for testing for Hep C infection in pregnancy; if immunoassay is not available, anti-HCV rapid diagnostic test (RDT) is recommended over dried blood spot (DBS) anti-HCV testing.",
     "action_key": 412
@@ -7639,47 +7527,8 @@
     ],
     "displayPoint": "DAK, Preventive antihelminthic treatment provided",
     "action": "Conduct deworming",
-    "annotation": "Possible methods include: Levonorgestrel IUD, copper IUD, implants, LAM, oral contraceptive pills, sterilization, tubal ligation\t\n\nNote: LAM is an effective method for breastfeeding women who are amenorrhoeic and their infant < 6 months of age; \n\nBreastfeeding women < 6 weeks postpartum are generally advised not to use injectables and should not use combined hormonal contraceptive (CHC); \n\nBreastfeeding women \u2265 6 weeks can use injectables without restriction; Breastfeeding women \u2265 6 weeks to < 6 months postpartum (primarily breastfeeding) generally should not use CHCs unless other more appropriate methods are not available or acceptable (16).",
+    "annotation": "Preventive anthelminthic treatment is recommended for all pregnant women after the first trimester.",
     "action_key": 461
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Blood type test ordered",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Blood type test conducted",
-    "action": "Conduct Blood type test",
-    "annotation": "",
-    "action_key": 462
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Urine test ordered",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Urine test conducted",
-    "action": "Conduct Urine test",
-    "annotation": "",
-    "action_key": 463
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Blood glucose test ordered",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Blood glucose test conducted",
-    "action": "Conduct Blood glucose test",
-    "annotation": "",
-    "action_key": 464
   },
   {
     "conditions": [
@@ -7878,7 +7727,7 @@
     ],
     "displayPoint": "DAK, Counselling conducted on healthy eating and keeping physically active",
     "action": "Conduct counseling on increasing daily energy and  protien intake",
-    "annotation": "Counseling on increasing daily energy and protein intake to reduce the risk of low-birth-weight neonates Protein Sources like Beef, fish, chicken, eggs, milk, cheese, beans and peas, nuts, seeds, etcEnergy sources like Grains (wheat, sorghum, corn, barley), dairy products (milk, cheese,butter), fruits, poultry (egg, chicken), fats and oils, sugar, honey, etc.Promote physical exercise to prevent maternal overweight and obesity during pregnancy.",
+    "annotation": "Recommended food groups for pregnant women—at least five out of ten: ((1) Grains, white roots and tubers, and plantains (“starchy staples”), (2) Pulses (beans, peas, and lentils), (3)Nuts and seeds, (4)Dairy, (5)Meat, poultry, and fish, (6)Eggs, (7)Dark-green leafy vegetables (8)Other vitamin A-rich fruits and vegetables (9)Other vegetables, (10) Other fruits. Promote physical exercise to prevent maternal overweight and obesity during pregnancy",
     "action_key": 479
   },
   {
@@ -7938,8 +7787,66 @@
     "action": "Refer her to a hospital",
     "annotation": null,
     "action_key": 484
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Urine dipstick result – ketone",
+        "orValues": [
+          "DAK, +",
+          "DAK, ++",
+          "DAK, +++",
+          "DAK, ++++"
+        ],
+        "operator": "OR"
+      }
+    ],
+    "action": "Consider hyperemesis gravidarum and diabetes mellitus with its complications",
+    "annotation": null,
+    "action_key": 485
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Urine Culture",
+        "value": "DAK, Positive – any agent",
+        "operator": "="
+      }
+    ],
+    "action": "Provide antibiotic treatment based on the culture and sensitivity result.",
+    "annotation": null,
+    "action_key": 486
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Pregnancy confirmed",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Counselling on avoidance of harmful traditional practices",
+    "action": "Conduct counseling on harmful traditional practices during pregnancy, childbirth, and postpartum",
+    "annotation": null,
+    "action_key": 487
+  },
+  {
+    "conditions": [
+
+      {
+        "key": "DAK, Urine dipstick result – nitrites",
+        "value": "DAK, Positive",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Urine dipstick result – leukocytes",
+        "value": "DAK, Positive",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, seven-day antibiotic regimen for asymptomatic bacteriuria (ASB) not provided",
+    "action": "Provide 7-day antibiotic regimen for asymptomatic bacteriuria (ASB)",
+    "annotation": "A woman is considered to have ASB when she has no urinary symptoms but either positive gram staining or positive urine dipstick test (nitrites or leukocytes). A seven-day antibiotic regimen is recommended for all pregnant women with asymptomatic bacteriuria (ASB) to prevent persistent bacteriuria, preterm birth, and low birth weight.",
+    "action_key": 239
   }
-
-
-
 ]
