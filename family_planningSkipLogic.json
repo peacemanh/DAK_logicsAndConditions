@@ -3144,6 +3144,11 @@
         "trigger": "DAK, Ever had sex - Reported",
         "value": true,
         "operator": "="
+      },
+      {
+        "trigger": "DAK, Visit Status",
+        "value": "DAK, New",
+        "operator": "!="
       }
     ],
     "action": "show",
@@ -4181,6 +4186,7 @@
       }
     ],
     "action": "show",
+    "index":0,
     "parent": "DAK, Reason for follow-up",
     "dependent": "DAK, New for family planning service",
     "logic_key": 336
@@ -4477,5 +4483,53 @@
     "conditionType": "either",
     "dependent": "DAK, HIV positive Linked to enrollment in care and ART initiation",
     "logic_key": 354
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for emergency referral",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other referral specify",
+    "logic_key": 355
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Emergency referral",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Reason for emergency referral",
+    "logic_key": 356
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for referral",
+        "value": "DAK, Referral for other reason",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other referral",
+    "logic_key": 357
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Emergency referral",
+        "value": false,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Reason for referral",
+    "logic_key": 358
   }
 ]

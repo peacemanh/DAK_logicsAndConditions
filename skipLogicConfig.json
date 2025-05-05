@@ -1976,7 +1976,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Number of pregnancies (gravida)",
+        "trigger": "DAK, Number of pregnancies gravida",
         "value": 1,
         "operator": ">="
       }
@@ -9293,6 +9293,54 @@
   "action": "noneRequired",
   "dependent": "DAK, Existing chronic health conditions",
   "logic_key": 730
+},
+{
+  "logics": [
+    {
+      "trigger": "DAK, Reason for referral",
+      "value": "DAK, Referral for other reason",
+      "operator": "="
+    }
+  ],
+  "action": "show",
+  "dependent": "DAK, Other referral",
+  "logic_key": 731
+},
+{
+  "logics": [
+    {
+      "trigger": "DAK, Reason for emergency referral",
+      "value": "DAK, Other",
+      "operator": "="
+    }
+  ],
+  "action": "show",
+  "dependent": "DAK, Other referral specify",
+  "logic_key": 732
+},
+{
+  "logics": [
+    {
+      "trigger": "DaK, Hx of previous Preterm delivery",
+      "value": "DAK, Has previous history of preterm delivery",
+      "operator": "="
+    }
+  ],
+  "action": "show",
+   "parent": "DAK, Past pregnancy history",
+  "dependent": "DAK, Preterm delivery",
+  "logic_key": 733
+},
+{
+  "logics": [
+    {
+      "trigger": "DAK, Number of pregnancies gravida",
+      "value": 1,
+      "operator": ">="
+    }
+  ],
+  "action": "show",
+   "dependent": "DAK, Past pregnancy history from",
+  "logic_key": 734
 }
-
 ]
