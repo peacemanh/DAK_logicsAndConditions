@@ -1153,22 +1153,13 @@
     "conditions": [
       {
         "key": "DAK, Systolic blood pressure",
-        "minValue": 140,
-        "maxValue": 160,
-        "operator": "between, <=, <"
-      }
-    ],
-    "action": "Measure BP again after 10\u201315 minutes rest",
-    "annotation": "Given high values (SBP \u00e2\u2030\u00a5 140 and/or DBP \u00e2\u2030\u00a5 90) upon first measure, blood pressure should be measured again",
-    "action_key": 90
-  },
-  {
-    "conditions": [
+        "value": 140,
+        "operator": ">="
+      },
       {
         "key": "DAK, Diastolic blood pressure",
-        "minValue": 90,
-        "maxValue": 110,
-        "operator": "between, <=, <"
+        "value": 90,
+        "operator": ">="
       }
     ],
     "action": "Measure BP again after 10\u201315 minutes rest",
@@ -1179,30 +1170,14 @@
     "conditions": [
       {
         "key": "DAK, Body temperature",
-        "value": 37.5,
-        "operator": ">="
+        "minValue": 35,
+        "maxValue": 37.5,
+        "operator": "beyond, <, <="
       }
     ],
-    "action": "Measure temperature again",
-    "annotation": "The health worker should retake the woman's temperature if the first reading is over 37.5\u00b0C",
+    "action": "Conduct further investigation, manage accordingly, or refer if necessary.",
+    "annotation": "If the body temperature is <35\u00b0C or ≥37.5\u00b0C, identify the cause, manage accordingly, or refer. 37.5",
     "action_key": 92
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Body temperature",
-        "value": 37.5,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Second body temperature",
-        "value": 37.5,
-        "operator": ">="
-      }
-    ],
-    "action": "Conduct further investigation and, if necessary, refer urgently if treatment not available at your facility",
-    "annotation": "If the second measurement is \u00e2\u2030\u00a5 37.5 0c , indentify the cause and manage accordingly or refer",
-    "action_key": 93
   },
   {
     "conditions": [
@@ -1225,8 +1200,8 @@
         "operator": "="
       }
     ],
-    "action": "Conduct oxygen saturation test",
-    "annotation": "If the woman has an abnormal respiratory exam result or respiratory distress, conduct oxygen saturation test. Identify the cause and manage accordingly or Refer",
+    "action": "Measure oxygen saturation",
+    "annotation": "If the woman has an abnormal respiratory exam result or respiratory distress, Measure oxygen saturation. Identify the cause and manage accordingly or Refer",
     "action_key": 95
   },
   {
@@ -1237,8 +1212,8 @@
         "operator": "="
       }
     ],
-    "action": "Conduct oxygen saturation test",
-    "annotation": "If the woman has an abnormal respiratory exam result or respiratory distress, conduct oxygen saturation test. Identify the cause and manage accordingly or Refer",
+    "action": "Measure oxygen saturation",
+    "annotation": "If the woman has an abnormal respiratory exam result or respiratory distress, Measure oxygen saturation. Identify the cause and manage accordingly or Refer",
     "action_key": 96
   },
   {
@@ -1249,8 +1224,8 @@
         "operator": "="
       }
     ],
-    "action": "Conduct oxygen saturation test",
-    "annotation": "If the woman has an abnormal respiratory exam result or respiratory distress, conduct oxygen saturation test. Identify the cause and manage accordingly or Refer",
+    "action": "Measure oxygen saturation",
+    "annotation": "If the woman has an abnormal respiratory exam result or respiratory distress, Measure oxygen saturation. Identify the cause and manage accordingly or Refer",
     "action_key": 97
   },
   {
@@ -1261,8 +1236,8 @@
         "operator": "="
       }
     ],
-    "action": "Conduct oxygen saturation test",
-    "annotation": "If the woman has an abnormal respiratory exam result or respiratory distress, conduct oxygen saturation test. Identify the cause and manage accordingly or Refer",
+    "action": "Measure oxygen saturation",
+    "annotation": "If the woman has an abnormal respiratory exam result or respiratory distress, Measure oxygen saturation. Identify the cause and manage accordingly or Refer",
     "action_key": 98
   },
   {
@@ -1273,8 +1248,8 @@
         "operator": "="
       }
     ],
-    "action": "Conduct oxygen saturation test",
-    "annotation": "If the woman has an abnormal respiratory exam result or respiratory distress, conduct oxygen saturation test. Identify the cause and manage accordingly or Refer",
+    "action": "Measure oxygen saturation",
+    "annotation": "If the woman has an abnormal respiratory exam result or respiratory distress, Measure oxygen saturation. Identify the cause and manage accordingly or Refer",
     "action_key": 99
   },
   {
@@ -1285,8 +1260,8 @@
         "operator": "="
       }
     ],
-    "action": "Conduct oxygen saturation test",
-    "annotation": "If the woman has an abnormal respiratory exam result or respiratory distress, conduct oxygen saturation test. Identify the cause and manage accordingly or Refer",
+    "action": "Measure oxygen saturation",
+    "annotation": "If the woman has an abnormal respiratory exam result or respiratory distress, Measure oxygen saturation. Identify the cause and manage accordingly or Refer",
     "action_key": 100
   },
   {
@@ -1297,8 +1272,8 @@
         "operator": "="
       }
     ],
-    "action": "Conduct oxygen saturation test",
-    "annotation": "If the woman has an abnormal respiratory exam result or respiratory distress, conduct oxygen saturation test. Identify the cause and manage accordingly or Refer",
+    "action": "Measure oxygen saturation",
+    "annotation": "If the woman has an abnormal respiratory exam result or respiratory distress, Measure oxygen saturation. Identify the cause and manage accordingly or Refer",
     "action_key": 101
   },
   {
@@ -1393,91 +1368,7 @@
     "annotation": "If the second measurement is  <60 or >100 , indentify the cause and manage accordingly  or Refer",
     "action_key": 107
   },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Respiratory exam result",
-        "value": "DAK, Dyspnoea",
-        "operator": "="
-      }
-    ],
-    "action": "Refer urgently to a hospital",
-    "annotation": "Woman has respiratory distress \u2013 refer urgently to the hospital!",
-    "action_key": 108
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Respiratory exam result",
-        "value": "DAK, Cough",
-        "operator": "="
-      }
-    ],
-    "action": "Refer urgently to a hospital",
-    "annotation": "Woman has respiratory distress \u2013 refer urgently to the hospital!",
-    "action_key": 109
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Respiratory exam result",
-        "value": "DAK, Rapid breathing",
-        "operator": "="
-      }
-    ],
-    "action": "Refer urgently to a hospital",
-    "annotation": "Woman has respiratory distress \u2013 refer urgently to the hospital!",
-    "action_key": 110
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Respiratory exam result",
-        "value": "DAK, Slow breathing",
-        "operator": "="
-      }
-    ],
-    "action": "Refer urgently to a hospital",
-    "annotation": "Woman has respiratory distress \u2013 refer urgently to the hospital!",
-    "action_key": 111
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Respiratory exam result",
-        "value": "DAK, Wheezing",
-        "operator": "="
-      }
-    ],
-    "action": "Refer urgently to a hospital",
-    "annotation": "Woman has respiratory distress \u2013 refer urgently to the hospital!",
-    "action_key": 112
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Respiratory exam result",
-        "value": "DAK, Rales",
-        "operator": "="
-      }
-    ],
-    "action": "Refer urgently to a hospital",
-    "annotation": "Woman has respiratory distress \u2013 refer urgently to the hospital!",
-    "action_key": 113
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Respiratory exam result",
-        "value": "DAK, Other",
-        "operator": "="
-      }
-    ],
-    "action": "Refer urgently to a hospital",
-    "annotation": "Woman has respiratory distress \u2013 refer urgently to the hospital!",
-    "action_key": 114
-  },
-  {
+    {
     "conditions": [
       {
         "key": "DAK, Oxygen Saturation",
@@ -1737,7 +1628,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital if necessary",
+    "action": "Conduct further investigation, manage the case using a syndromic approach, and refer if necessary",
     "annotation": "Assess and manage STI using STI syndromic approach, and Refer if neccesary (make sure it's not amniotic fluid)",
     "action_key": 136
   },
@@ -1754,7 +1645,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital if necessary",
+    "action": "Consider (premature) rupture of membranes and refer if necessary",
     "annotation": "Consider rupture of membrane and Refer",
     "action_key": 137
   },
@@ -1778,7 +1669,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital if necessary",
+    "action": "Conduct further investigation, manage the case using a syndromic approach, and refer if necessary",
     "annotation": "Assess and manage STI using STI syndromic approach, and Refer if neccesary",
     "action_key": 139
   },
@@ -1790,7 +1681,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital if necessary",
+    "action": "Conduct further investigation, manage the case using a syndromic approach, and refer if necessary",
     "annotation": "Assess and manage STI using STI syndromic approach, and Refer if neccesary",
     "action_key": 140
   },
@@ -1802,7 +1693,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital if necessary",
+    "action": "Conduct further investigation, manage the case using a syndromic approach, and refer if necessary",
     "annotation": "Assess and manage STI using STI syndromic approach, and Refer if neccesary",
     "action_key": 141
   },
@@ -1838,7 +1729,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital if necessary",
+    "action": "Conduct further investigation, manage the case using a syndromic approach, and refer if necessary",
     "annotation": "Assess and manage STI using STI syndromic approach, and Refer if neccesary (make sure it's not amniotic fluid)",
     "action_key": 144
   },
@@ -1874,7 +1765,7 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital if necessary",
+    "action": "Conduct further investigation, manage the case using a syndromic approach, and refer if necessary",
     "annotation": "Assess and manage STI using STI syndromic approach, and refer if necessary",
     "action_key": 147
   },
@@ -1887,7 +1778,7 @@
       }
     ],
     "action": "Refer to a hospital if necessary",
-    "annotation": "Consider cervical cancer and reffer for further evaluation",
+    "annotation": "Consider cervical cancer and refer for further evaluation",
     "action_key": 148
   },
   {
@@ -6290,7 +6181,6 @@
     "annotation": "Provide counselling to reduce risk of developing GDM if the woman is deemed to be at risk of developing GDM",
     "action_key": 405
   },
-
   {
     "conditions": [
       {
@@ -6303,32 +6193,6 @@
     "action": "Counselling on anaemia",
     "annotation": "Rule out intestinal infections (and malaria and treat accordingly) , Counsel on compliance with treatment,Reassess at subsequent antenatal visit (4-6 weeks). If anemia persists, refer to hospital. ",
     "action_key": 407
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-        "value": "DAK, Positive",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and reffer",
-    "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
-    "action_key": 408
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-        "value": "DAK, Positive",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
-    "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counselling and reffer",
-    "annotation": "If the woman is diagnosed with GDM, provide treatment and counselling accordingly",
-    "action_key": 409
   },
   {
     "conditions": [
@@ -7559,8 +7423,8 @@
   {
     "conditions": [
       {
-        "key": "DAK, Exposure to second-hand smoke",
-        "value": true,
+        "key": "DAK, Current alcohol and/or other substance use",
+        "value": "DAK, Exposure to second hand smoke",
         "operator": "="
       }
     ],
@@ -7745,23 +7609,18 @@
   {
     "conditions": [
       {
-        "key": "DAK, Systolic blood pressure",
+        "key": "DAK, Repeat systolic blood pressure",
         "value": 160,
         "operator": ">="
-      }
-    ],
-    "action": "Give initial dose of antihypertensive if the systolic blood pressure is 160 mmHg or higher and/or the diastolic blood pressure is 110 mmHg or higher",
-    "action_key": 481
   },
   {
-    "conditions": [
-      {
-        "key": "DAK, Diastolic blood pressure",
+        "key": "DAK, Repeat diastolic blood pressure",
         "value": 110,
         "operator": ">="
       }
     ],
-    "action": "Give initial dose of antihypertensive if the systolic blood pressure is 160 mmHg or higher and/or the diastolic blood pressure is 110 mmHg or higher",
+    "action": "Provide antihypertensive and anticonvulsant treatment as per protocol, and refer",
+    "annotation": "Antihypertensives: Hydralazine is the drug of choice for acute therapy. Administer 5 mg IV slowly every 20 minutes until the blood pressure is lowered to a diastolic level of <110 mmHg. The maximum dose is 20 mg within 24 hours. If Hydralazine is unavailable, alternative drugs such as Nifedipine can be used.Anticonvulsants: Administer magnesium sulfate (MgSO₄) as the first-line treatment. If MgSO₄ is unavailable, provide alternative anticonvulsants as per protocol",
     "action_key": 482
   },
   {
@@ -7791,6 +7650,192 @@
   {
     "conditions": [
       {
+        "key": "DAK, Repeat systolic blood pressure",
+        "minValue": 140,
+        "maxValue": 160,
+        "operator": "between, <=, <"
+      },
+      {
+        "key": "DAK, Repeat diastolic blood pressure",
+        "minValue": 90,
+        "maxValue": 110,
+        "operator": "between, <=, <"
+      }
+    ],
+    "action": "Measure blood pressure again after 4 hours",
+    "annotation": "Given high values (SBP ≥ 140 and/or DBP ≥ 90), blood pressure should be measured again after 4 hours. Ensure there is appropriate spacing for both the systolic and diastolic BP values",
+    "action_key": 485
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Pulse rate",
+        "value": 60,
+        "operator": "<"
+    },
+    {
+      "trigger": "DAK, Pulse rate",
+      "value": 100,
+      "operator": ">"
+  }
+    ],
+    
+    "action": "Conduct further investigation, manage accordingly, or refer if necessary",
+    "annotation": "If the pulse rate is <60 bpm (Bradycardia) or >100 bpm (Tachycardia), identify the cause, manage accordingly, or refer",
+    "action_key": 486
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Oedema type",
+       "orValues": ["DAK, Pitting ankle oedema", "DAK, Oedema of the hands and feet", "DAK, Pitting lower back oedema" , "DAK, Non pitting leg oedema", "DAK, Facial puffiness"],
+        "operator": "OR" 
+    }
+    ],
+    "displayPoint": "DAK, Oedema type",
+    "action": "Conduct further investigation and manage accordingly.",
+    "annotation": "Ensure that blood pressure is within the normal range. Rule out renal, cardiovascular, and other medical conditions",
+    "action_key": 487
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Symphysis-fundal height (SFH)",
+       "formula": "DAK, Gestational age- 3" ,
+       "operator": "<="
+      } 
+    ],
+    
+    "action": "Conduct further investigation and manage accordingly.",
+    "annotation": "Ensure that blood pressure is within the normal range. Rule out renal, cardiovascular, and other medical conditions",
+    "action_key": 488
+  },
+
+    {
+      "conditions": [
+        {
+          "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+          "value": 126.0,
+          "operator": ">="
+        }
+      ],
+      "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
+      "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+      "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
+      "action_key": 489
+    },
+    {
+      "conditions": [
+        {
+          "trigger": "DAK, Fasting Blood sugar test result",
+          "value": 126.0,
+          "operator": ">="
+        }
+      ],
+      "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
+      "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+      "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
+      "action_key": 490
+    },
+    {
+      "conditions": [
+        {
+          "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) – 1 hour test result",
+          "value": 200.0,
+          "operator": ">="
+        }
+      ],
+      "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
+      "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+      "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
+      "action_key": 491
+    },
+    {
+      "conditions": [
+        {
+          "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) – 2 hours test result",
+          "value": 200.0,
+          "operator": ">="
+        }
+      ],
+      "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
+      "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+      "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
+      "action_key": 492
+    },
+    {
+      "conditions": [
+        {
+          "trigger": "DAK, Random blood sugar test result",
+          "value": 200.0,
+          "operator": ">="
+        }
+      ],
+      "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
+      "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+      "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
+      "action_key": 493
+    },
+
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, Fasting Blood sugar test result",
+        "minValue": 92.0,
+        "maxValue": 126.0,
+        "operator": "between, <=, <"
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
+    "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counselling and refer",
+    "annotation": "If the woman is diagnosed with GDM, provide treatment and counselling accordingly",
+    "action_key": 494
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+        "minValue": 92.0,
+        "maxValue": 126.0,
+        "operator": "between, <=, <"
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
+    "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counselling and refer",
+    "annotation": "If the woman is diagnosed with GDM, provide treatment and counselling accordingly",
+    "action_key": 495
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) – 1 hour test result",
+        "minValue": 180.0,
+        "maxValue": 200.0,
+        "operator": "between, <=, <"
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
+    "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counselling and refer",
+    "annotation": "If the woman is diagnosed with GDM, provide treatment and counselling accordingly",
+    "action_key": 496
+  },
+  {
+    "conditions": [
+      {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) – 2 hours test result",
+        "minValue": 153.0,
+        "maxValue": 200.0,
+        "operator": "between, <=, <"
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
+    "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counselling and refer",
+    "annotation": "If the woman is diagnosed with GDM, provide treatment and counselling accordingly",
+    "action_key": 497
+  },
+  {
+    "conditions": [
+      {
         "key": "DAK, Urine dipstick result – ketone",
         "orValues": [
           "DAK, +",
@@ -7803,7 +7848,7 @@
     ],
     "action": "Consider hyperemesis gravidarum and diabetes mellitus with its complications",
     "annotation": null,
-    "action_key": 485
+    "action_key": 498
   },
   {
     "conditions": [
@@ -7815,7 +7860,7 @@
     ],
     "action": "Provide antibiotic treatment based on the culture and sensitivity result.",
     "annotation": null,
-    "action_key": 486
+    "action_key": 499
   },
   {
     "conditions": [
@@ -7828,7 +7873,7 @@
     "displayPoint": "DAK, Counselling on avoidance of harmful traditional practices",
     "action": "Conduct counseling on harmful traditional practices during pregnancy, childbirth, and postpartum",
     "annotation": null,
-    "action_key": 487
+    "action_key": 450
   },
   {
     "conditions": [
@@ -7847,6 +7892,6 @@
     "displayPoint": "DAK, seven-day antibiotic regimen for asymptomatic bacteriuria (ASB) not provided",
     "action": "Provide 7-day antibiotic regimen for asymptomatic bacteriuria (ASB)",
     "annotation": "A woman is considered to have ASB when she has no urinary symptoms but either positive gram staining or positive urine dipstick test (nitrites or leukocytes). A seven-day antibiotic regimen is recommended for all pregnant women with asymptomatic bacteriuria (ASB) to prevent persistent bacteriuria, preterm birth, and low birth weight.",
-    "action_key": 239
+    "action_key": 451
   }
 ]

@@ -2,32 +2,32 @@
   {
     "conceptName": "DAK, Height FP",
     "operator": "beyond, <, <",
-    "minValue": 50,
+    "minValue": 40,
     "maxValue": 205,
-    "type": "optional",
-    "message": "Warning - Please check the height"
+    "type": "restrict",
+    "message": "Height in range of 40 cm and 205 cm is acceptable"
   },
   {
     "conceptName": "DAK, Weight FP",
     "operator": "beyond, <, <",
-    "minValue": 40,
-    "maxValue": 150,
-    "type": "optional",
-    "message": "Warning - Please check the weight"
+    "minValue": 30,
+    "maxValue": 180,
+    "type": "restrict",
+    "message": "Weight  in range of 30 Kg and 180 Kg is acceptable"
   },
   {
     "conceptName": "DAK, Systolic blood pressure",
     "operator": "beyond, <=, <=",
     "minValue": 60,
-    "maxValue": 260,
+    "maxValue": 280,
     "type": "restrict",
-    "message": "The system accpets the range from  60mmHg and 260mmHg"
+    "message": "The system accpets the range from  60mmHg and 280mmHg"
   },
   {
     "conceptName": "DAK, Diastolic blood pressure",
     "operator": "beyond, <=, <=",
     "minValue": 30,
-    "maxValue": 260,
+    "maxValue": 280,
     "type": "restrict",
     "message": "The system accpets the range from 30mmHg and 260mmHg"
   },
