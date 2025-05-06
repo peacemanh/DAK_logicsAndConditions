@@ -24,7 +24,7 @@
     "message": "Weight  in range of 30 Kg and 180 Kg is acceptable"
   },
  {
-    "conceptName": "DAK, Number of pregnancies gravida",
+      "conceptName": "DAK, Number of pregnancies gravida",
     "operator": "beyond, <=, <=",
     "minValue": 1,
     "maxValue": 15,
@@ -32,12 +32,12 @@
     "message": "Number of pregnancies (gravida) should be between 1 and 15"
   },
   {
-    "conceptName": "DAK, Number of miscarriages or abortions",
+      "conceptName": "DAK, Number of miscarriages or abortions",
     "operator": "beyond, <=, <=",
-    "minValue": 1,
-    "maxValue": "DAK, Number of pregnancies gravida",
+      "minValue": 0,
+      "maxValue": "DAK, Number of pregnancies gravida",
     "type": "restrict",
-    "message": "Number of pregnancies (gravida) should be less than Number of pregnancies"
+      "message": "Number of miscarriages and/or abortions should be less than Number of previous pregnancies"
   },
   {
     "conceptName": "DAK, Number of live births",
@@ -222,5 +222,4 @@
     "type": "restrict",
     "message": "MUAC in range of 11 cm and 47 cm is acceptable"
   }
- 
 ]

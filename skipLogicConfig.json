@@ -211,7 +211,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Hepatitis C test required",
+    "dependent": "DAK, Hepatitis C test conducted",
     "logic_key": 16
   },
   {
@@ -223,44 +223,56 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Hepatitis C test required",
+    "dependent": "DAK, Hepatitis C test conducted",
     "logic_key": 17
   },
   {
     "logics": [
       {
-        "trigger": "DAK, Specific complaint(s)",
-        "value": "DAK, Pain during urination (dysuria)",
+        "trigger": "DAK, Specific health concern(s)",
+        "value": "DAK, Pain - During urination (dysuria)",
         "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Urine test conducted",
-    "logic_key": 18
-  },
-  {
-    "logics": [
+      },
+      {
+        "trigger": "DAK, Repeat systolic blood pressure",
+        "value": 140,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Diastolic blood pressure",
+        "value": 90,
+        "operator": ">="
+      },
       {
         "trigger": "DAK, Persistent symptoms",
-        "value": "DAK, Pain during urination (dysuria)",
+        "value": "DAK, Pain - During urination (dysuria)",
         "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Urine test conducted",
-    "logic_key": 19
-  },
-  {
-    "logics": [
+      },
       {
         "trigger": "DAK, Current symptoms",
         "value": "DAK, Pain - During urination (dysuria)",
         "operator": "="
+      },
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 26,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Repeat diastolic blood pressure",
+        "value": 90,
+        "operator": ">="
       }
     ],
     "action": "show",
-    "dependent": "DAK, Urine test required",
-    "logic_key": 20
+    "conditionType": "either",
+    "dependent": "DAK, Urine test conducted",
+    "logic_key": 18
   },
   {
     "logics": [
@@ -271,20 +283,8 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Blood haemoglobin test ordered",
+    "dependent": "DAK, Blood haemoglobin test conducted",
     "logic_key": 21
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Gestational age",
-        "value": 36.0,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Blood haemoglobin test ordered",
-    "logic_key": 22
   },
   {
     "logics": [
@@ -301,59 +301,20 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Blood haemoglobin test ordered",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Blood haemoglobin test conducted",
-    "logic_key": 24
-  },
-  {
-    "logics": [
-      {
         "trigger": "DAK, Blood haemoglobin test conducted",
         "value": false,
         "operator": "="
-      },
-      {
-        "trigger": "DAK, Blood haemoglobin test ordered",
-        "value": false,
-        "operator": "="
       }
     ],
     "action": "show",
-    "dependent": "DAK, Test stock-out",
+    "dependent": "DAK, Reason blood haemoglobin test not done",
     "logic_key": 25
   },
   {
     "logics": [
       {
-        "trigger": "DAK, Blood haemoglobin test conducted",
-        "value": false,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Blood haemoglobin test ordered",
-        "value": false,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Expired tests",
-    "logic_key": 26
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Blood haemoglobin test conducted",
-        "value": false,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Blood haemoglobin test ordered",
-        "value": false,
+        "trigger": "DAK, Reason blood haemoglobin test not done",
+        "value": "DAK, Other",
         "operator": "="
       }
     ],
@@ -657,7 +618,7 @@
       {
         "trigger": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "value": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
-        "operator": "="
+        "operator": "!="
       }
     ],
     "action": "show",
@@ -927,114 +888,6 @@
     "action": "show",
     "dependent": "Population prevalence of HIV in key populations (men who have sex with men, people in prison or other closed settings, people who inject drugs, sex workers and transgender people)",
     "logic_key": 75
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Delivery date",
-    "logic_key": 76
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Stillbirth",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Delivery date",
-    "logic_key": 77
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Place of delivery",
-    "logic_key": 78
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Stillbirth",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Place of delivery",
-    "logic_key": 79
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Preterm Birth",
-    "logic_key": 80
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Stillbirth",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Preterm Birth",
-    "logic_key": 81
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Delivery mode",
-    "logic_key": 82
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Stillbirth",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Delivery mode",
-    "logic_key": 83
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Birth weight",
-    "logic_key": 84
   },
   {
     "logics": [
@@ -1816,7 +1669,6 @@
     "dependent": "DAK, Other (specify)",
     "logic_key": 149
   },
-  
   {
     "logics": [
       {
@@ -2101,18 +1953,6 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Blood type test ordered",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Blood type test conducted",
-    "logic_key": 174
-  },
-  {
-    "logics": [
-      {
         "trigger": "DAK, Blood type test conducted",
         "value": true,
         "operator": "="
@@ -2133,18 +1973,6 @@
     "action": "show",
     "dependent": "DAK, Blood type",
     "logic_key": 176
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, HIV test ordered",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, HIV test conducted",
-    "logic_key": 177
   },
   {
     "logics": [
@@ -2185,30 +2013,6 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Ultrasound required",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Ultrasound scan ordered",
-    "logic_key": 181
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Ultrasound scan ordered",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Ultrasound scan conducted",
-    "logic_key": 182
-  },
-  {
-    "logics": [
-      {
         "trigger": "DAK, Reason for coming to facility",
         "value": "DAK, First antenatal care contact",
         "operator": "="
@@ -2227,44 +2031,8 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Blood type test ordered",
+    "dependent": "DAK, Blood type test conducted",
     "logic_key": 184
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, HIV test required",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, HIV test ordered",
-    "logic_key": 185
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Partner HIV test required",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Partner HIV test ordered",
-    "logic_key": 186
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Partner HIV test ordered",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Partner HIV test conducted",
-    "logic_key": 187
   },
   {
     "logics": [
@@ -2293,30 +2061,6 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Hepatitis B test required",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Hepatitis B test ordered",
-    "logic_key": 190
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Hepatitis B test ordered",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Hepatitis B test conducted",
-    "logic_key": 191
-  },
-  {
-    "logics": [
-      {
         "trigger": "DAK, Hepatitis B test conducted",
         "value": true,
         "operator": "="
@@ -2325,42 +2069,6 @@
     "action": "show",
     "dependent": "DAK, Hepatitis B test result",
     "logic_key": 192
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Hepatitis B test ordered",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Hepatitis B test type",
-    "logic_key": 193
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Hepatitis C test required",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Hepatitis C test ordered",
-    "logic_key": 194
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Hepatitis C test ordered",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Hepatitis C test type",
-    "logic_key": 195
   },
   {
     "logics": [
@@ -2390,30 +2098,6 @@
     "logics": [
       {
         "trigger": "DAK, Hepatitis C test conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Hepatitis C diagnosis",
-    "logic_key": 198
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Hepatitis C test ordered",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Hepatitis C test conducted",
-    "logic_key": 199
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Hepatitis C test conducted",
         "value": false,
         "operator": "="
       }
@@ -2425,19 +2109,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Syphilis test required",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Syphilis test ordered",
-    "logic_key": 201
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Syphilis test ordered",
+        "trigger": "DAK, Syphilis test conducted",
         "value": true,
         "operator": "="
       }
@@ -2445,18 +2117,6 @@
     "action": "show",
     "dependent": "DAK, Syphilis test type",
     "logic_key": 202
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Syphilis test ordered",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Syphilis test conducted",
-    "logic_key": 203
   },
   {
     "logics": [
@@ -2481,18 +2141,6 @@
     "action": "show",
     "dependent": "DAK, Syphilis test result",
     "logic_key": 205
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Syphilis test conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Syphilis diagnosis",
-    "logic_key": 206
   },
   {
     "logics": [
@@ -2526,19 +2174,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Urine test required",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Urine test ordered",
-    "logic_key": 209
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Urine test ordered",
+        "trigger": "DAK, Urine test conducted",
         "value": true,
         "operator": "="
       }
@@ -2546,18 +2182,6 @@
     "action": "show",
     "dependent": "DAK, Urine test type",
     "logic_key": 210
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Urine test ordered",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Urine test conducted",
-    "logic_key": 211
   },
   {
     "logics": [
@@ -2712,10 +2336,9 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Syphilis test required",
+    "dependent": "DAK, Syphilis test conducted",
     "logic_key": 224
   },
-
   {
     "logics": [
       {
@@ -2731,41 +2354,32 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Blood glucose test conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, 75 g oral glucose tolerance test (OGTT) \u00e2\u20ac\u201c 1 hour test result",
-    "logic_key": 227
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Blood glucose test conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, 75 g oral glucose tolerance test (OGTT) \u00e2\u20ac\u201c 2 hours test result",
-    "logic_key": 228
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Blood glucose test conducted",
-        "value": true,
-        "operator": "="
-      },
-      {
         "trigger": "DAK, Random blood sugar test result",
         "value": 0,
         "operator": ">="
       },
       {
         "trigger": "DAK, Fasting Blood sugar test result",
+        "value": 0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+        "value": 0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) – 1 hour test result",
+        "value": 0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) – 2 hours test result",
+        "value": 0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) – 2 hours test result",
         "value": 0,
         "operator": ">="
       }
@@ -2778,19 +2392,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Blood glucose test conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-    "logic_key": 230
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Blood haemoglobin test ordered",
+        "trigger": "DAK, Blood haemoglobin test conducted",
         "value": true,
         "operator": "="
       }
@@ -3183,18 +2785,7 @@
     "dependent": "DAK, Other reason Hep B prophylaxis was not provided",
     "logic_key": 267
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Hepatitis B test conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Hepatitis B diagnosis",
-    "logic_key": 268
-  },
+
   {
     "logics": [
       {
@@ -3270,20 +2861,8 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Midstream urine Gram-staining",
-        "value": "DAK, Positive",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Asymptomatic bacteriuria (ASB) diagnosis",
-    "logic_key": 275
-  },
-  {
-    "logics": [
-      {
         "trigger": "DAK, Gestational age",
-        "value": 32.0,
+        "value": 30.0,
         "operator": ">="
       }
     ],
@@ -3374,13 +2953,13 @@
   {
     "logics": [
       
-      {
-        "trigger": "DAK, Systolic blood pressure",
+          {
+            "trigger": "DAK, Systolic blood pressure",
         "value": 140,
         "operator": ">="
       },  
-      {
-        "trigger": "DAK, Diastolic blood pressure",
+          {
+            "trigger": "DAK, Diastolic blood pressure",
         "value": 90,
         "operator": ">="
       }
@@ -3998,11 +3577,7 @@
   },
   {
     "logics": [
-      {
-        "trigger": "DAK, Pregnancy confirmed",
-        "value": true,
-        "operator": "="
-      },
+
       {
         "trigger": "DAK, Syphilis test result",
         "value": "DAK, Syphilis positive",
@@ -4059,7 +3634,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Syphilis counselling, treatment and further testing",
+    "dependent": "DAK, Syphilis counselling and treatment",
     "logic_key": 333
   },
   {
@@ -4081,7 +3656,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Syphilis counselling, treatment and further testing",
+    "dependent": "DAK, Syphilis counselling and treatment",
     "logic_key": 334
   },
   {
@@ -4093,26 +3668,10 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Blood haemoglobin test ordered",
+    "dependent": "DAK, Blood haemoglobin test conducted",
     "logic_key": 335
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for coming to facility",
-        "value": "DAK, First antenatal care contact",
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Pregnancy confirmed",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, HIV category",
-    "logic_key": 338
-  },
+
   {
     "logics": [
       {
@@ -4200,134 +3759,45 @@
   {
     "logics": [
       {
+        "trigger": "DAK, Gestational age",
+        "value": 26,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Diastolic blood pressure",
+        "value": 90,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Repeat systolic blood pressure",
+        "value": 140,
+        "operator": ">="
+      },
+      {
         "trigger": "DAK, Current symptoms",
+        "value": "DAK, Pain - During urination (dysuria)",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Repeat diastolic blood pressure",
+        "value": 90,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Specific health concern(s)",
         "value": "DAK, Pain - During urination (dysuria)",
         "operator": "="
       }
     ],
     "action": "show",
-    "dependent": "DAK, Urine category",
-    "logic_key": 346
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Repeat systolic blood pressure",
-        "value": 140,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Urine category",
-    "logic_key": 347
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Repeat systolic blood pressure",
-        "value": 140,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Urine test required",
-    "logic_key": 348
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Diastolic blood pressure",
-        "value": 90,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Urine category",
-    "logic_key": 349
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Diastolic blood pressure",
-        "value": 90,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Urine test required",
-    "logic_key": 350
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for coming to facility",
-        "value": "DAK, First antenatal care contact",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Urine category",
-    "logic_key": 351
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for coming to facility",
-        "value": "DAK, First antenatal care contact",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Urine test required",
-    "logic_key": 352
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Gestational age",
-        "value": 26,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Urine category",
-    "logic_key": 353
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Gestational age",
-        "value": 26,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Urine test required",
-    "logic_key": 354
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Gestational age",
-        "value": 34,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
+    "conditionType": "either",
     "dependent": "DAK, Urine category",
     "logic_key": 355
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Gestational age",
-        "value": 34,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Urine test required",
-    "logic_key": 356
   },
   {
     "logics": [
@@ -4369,18 +3839,6 @@
     "action": "show",
     "dependent": "DAK, IPV",
     "logic_key": 359
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Rh factor",
-        "value": "DAK, Rh negative",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Danger sign",
-    "logic_key": 360
   },
   {
     "logics": [
@@ -4498,18 +3956,6 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Malaria endemic area",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Counselling on malaria prevention",
-    "logic_key": 371
-  },
-  {
-    "logics": [
-      {
         "trigger": "DAK, Emergency referral",
         "value": false,
         "operator": "="
@@ -4530,18 +3976,6 @@
     "action": "show",
     "dependent": "DAK, Treatment Given",
     "logic_key": 373
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Malaria endemic area",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Counselling conducted on malaria prevention",
-    "logic_key": 374
   },
   {
     "logics": [
@@ -4568,18 +4002,7 @@
     "dependent": "DAK, Has side-effects from iron and folic acid supplements",
     "logic_key": 376
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
-        "operator": "="
-      }
-    ],
-    "action": "required",
-    "dependent": "DAK, Delivery date",
-    "logic_key": 377
-  },
+ 
   {
     "logics": [
       {
@@ -4604,30 +4027,8 @@
     "dependent": "DAK, Place of delivery",
     "logic_key": 379
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
-        "operator": "="
-      }
-    ],
-    "action": "required",
-    "dependent": "DAK, Place of delivery",
-    "logic_key": 380
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
-        "operator": "="
-      }
-    ],
-    "action": "required",
-    "dependent": "DAK, Delivery mode",
-    "logic_key": 381
-  },
+ 
+ 
   {
     "logics": [
       {
@@ -4640,18 +4041,7 @@
     "dependent": "DAK, Delivery mode",
     "logic_key": 382
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
-        "operator": "="
-      }
-    ],
-    "action": "required",
-    "dependent": "DAK, Birth weight",
-    "logic_key": 383
-  },
+ 
   {
     "logics": [
       {
@@ -4664,18 +4054,7 @@
     "dependent": "DAK, Delivery complications",
     "logic_key": 384
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
-        "operator": "="
-      }
-    ],
-    "action": "required",
-    "dependent": "DAK, Delivery complications",
-    "logic_key": 385
-  },
+  
   {
     "logics": [
       {
@@ -4736,18 +4115,7 @@
     "dependent": "DAK, Cause of death",
     "logic_key": 390
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
-        "operator": "="
-      }
-    ],
-    "action": "required",
-    "dependent": "DAK, Preterm Birth",
-    "logic_key": 391
-  },
+  
   {
     "logics": [
       {
@@ -4760,98 +4128,9 @@
     "dependent": "DAK, Preterm Birth",
     "logic_key": 392
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Pregnancy confirmed",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Family planning",
-    "logic_key": 393
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
-        "operator": "!="
-      },
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Stillbirth",
-        "operator": "!="
-      }
-    ],
-    "action": "noneRequired",
-    "dependent": "DAK, Delivery date",
-    "logic_key": 394
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Stillbirth",
-        "operator": "!="
-      },
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
-        "operator": "!="
-      }
-    ],
-    "action": "noneRequired",
-    "dependent": "DAK, Place of delivery",
-    "logic_key": 395
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
-        "operator": "!="
-      },
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Stillbirth",
-        "operator": "!="
-      }
-    ],
-    "action": "noneRequired",
-    "dependent": "DAK, Delivery mode",
-    "logic_key": 396
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
-        "operator": "!="
-      },
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Stillbirth",
-        "operator": "!="
-      }
-    ],
-    "action": "noneRequired",
-    "dependent": "DAK, Birth weight",
-    "logic_key": 397
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
-        "operator": "!="
-      }
-    ],
-    "action": "noneRequired",
-    "dependent": "DAK, Delivery complications",
-    "logic_key": 398
-  },
+ 
+  
+
   {
     "logics": [
       {
@@ -4905,18 +4184,7 @@
     "dependent": "DAK, Cause of death",
     "logic_key": 402
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for closing ANC record",
-        "value": "DAK, Live birth",
-        "operator": "!="
-      }
-    ],
-    "action": "noneRequired",
-    "dependent": "DAK, Preterm Birth",
-    "logic_key": 403
-  },
+ 
   {
     "logics": [
       {
@@ -5559,7 +4827,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Number of pregnancies (gravida)",
+        "trigger": "DAK, Number of pregnancies gravida",
         "value": 1,
         "operator": ">="
       },
@@ -5787,20 +5055,20 @@
         "minValue": 92.0,
         "maxValue": 126.0,
         "operator": "between, <=, <"
-    },
-    {
+  },
+  {
         "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
         "minValue": 92.0,
         "maxValue": 126.0,
         "operator": "between, <=, <"
     },
-    {
+      {
         "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u2013 1 hour test result",
         "minValue": 180.0,
         "maxValue": 200.0,
         "operator": "between, <=, <"
-    },
-    {
+  },
+  {
         "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u2013 2 hours test result",
         "minValue": 153.0,
         "maxValue": 200.0,
@@ -5819,23 +5087,23 @@
         "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
         "value": 126.0,
         "operator": ">="
-    },
-    {
+  },
+      {
         "trigger": "DAK, Fasting Blood sugar test result",
         "value": 126.0,
         "operator": ">="
-    },
-    {
+  },
+  {
         "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u2013 1 hour test result",
         "value": 200.0,
         "operator": ">="
-    },
-    {
+  },
+  {
         "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u2013 2 hours test result",
         "value": 200.0,
         "operator": ">="
-    },
-    {
+  },
+      {
         "trigger": "DAK, Random blood sugar test result",
         "value": 200.0,
         "operator": ">="
@@ -5956,20 +5224,8 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Hepatitis B test required",
+    "dependent": "DAK, Hepatitis B test conducted",
     "logic_key": 485
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Pregnancy confirmed",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Hepatitis C test required",
-    "logic_key": 486
   },
   {
     "logics": [
@@ -5980,43 +5236,19 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Syphilis test required",
+    "dependent": "DAK, Syphilis test conducted",
     "logic_key": 487
   },
   {
     "logics": [
       {
-        "trigger": "DAK, Syphilis diagnosis",
-        "value": "DAK, Syphilis positive",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Syphilis test required",
-    "logic_key": 488
-  },
-  {
-    "logics": [
-      {
         "trigger": "DAK, Repeat diastolic blood pressure",
         "value": 90,
         "operator": ">="
       }
     ],
     "action": "show",
-    "dependent": "DAK, Urine category",
-    "logic_key": 489
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Repeat diastolic blood pressure",
-        "value": 90,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Urine test required",
+    "dependent": "DAK, Urine test conducted",
     "logic_key": 490
   },
   {
@@ -6453,30 +5685,6 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Malaria endemic area",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Malaria prophylaxis",
-    "logic_key": 560
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, HIV test required",
-        "value": false,
-        "operator": "="
-      }
-    ],
-    "action": "hide",
-    "dependent": "DAK, HIV test ordered",
-    "logic_key": 561
-  },
-  {
-    "logics": [
-      {
         "trigger": "DAK, Blood glucose test type",
         "value": "DAK, Oral glucose tolerance (OGTT) test",
         "operator": "="
@@ -6495,7 +5703,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, 75 g oral glucose tolerance test (OGTT) \u2013 1 hour test result",
+    "dependent": "DAK, 75 g oral glucose tolerance test (OGTT) – 1 hour test result",
     "logic_key": 563
   },
   {
@@ -6507,7 +5715,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, 75 g oral glucose tolerance test (OGTT) \u2013 2 hours test result",
+    "dependent": "DAK, 75 g oral glucose tolerance test (OGTT) – 2 hours test result",
     "logic_key": 564
   },
   {
@@ -7721,6 +6929,11 @@
         "trigger": "DAK, Pregnancy confirmed",
         "value": true,
         "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 20,
+        "operator": ">="
       }
     ],
     "action": "show",
@@ -7985,12 +7198,12 @@
             "trigger": "DAK, Systolic blood pressure",
             "value": 160.0,
             "operator": ">="
-        },
-        {
+          },
+          {
             "trigger": "DAK, Repeat systolic blood pressure",
             "value": 160.0,
             "operator": ">="
-        },
+          },
           {
             "trigger": "DAK, Symptoms of severe pre-eclampsia",
             "value": "DAK, No symptoms of severe pre-eclampsia",
@@ -8345,7 +7558,7 @@
             "trigger": "DAK, Gestational age",
             "value":20,
             "operator": "<"
-        }
+          }
         ]
       },
       {
@@ -8374,7 +7587,7 @@
             "trigger": "DAK, Gestational age",
             "value":20,
             "operator": "<"
-        }
+          }
         ]
       }
     ],
@@ -8606,70 +7819,32 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Gestational age",
-        "value": 24.0,
-        "operator": "<"
+        "rules": [
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 24.0,
+            "operator": "<"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "Ultrasound available at the health-care facility",
+            "value": false,
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 24,
+            "operator": ">="
+          }
+        ]
       }
     ],
     "action": "show",
-    "dependent": "DAK, Ultrasound required",
+    "dependent": "DAK, Ultrasound scan conducted",
     "logic_key": 680
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Gestational age",
-        "value": 24,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Ultrasound required",
-    "logic_key": 681
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Ultrasound scan conducted",
-        "value": false,
-        "operator": "="
-      },
-      {
-        "trigger": "Ultrasound available at the health-care facility",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Gestational age",
-        "value": 24,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Ultrasound required",
-    "logic_key": 682
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Ultrasound scan conducted",
-        "value": false,
-        "operator": "="
-      },
-      {
-        "trigger": "Ultrasound available at the health-care facility",
-        "value": false,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Gestational age",
-        "value": 24,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Ultrasound required",
-    "logic_key": 683
   },
   {
     "logics": [
@@ -8794,7 +7969,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Malaria endemic area",
+        "trigger": "DAK, Pregnancy confirmed",
         "value": true,
         "operator": "="
       }
@@ -8957,30 +8132,6 @@
     "action": "show",
     "dependent": "DAK, Other (specify)",
     "logic_key": 707
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Fasting Blood sugar test result",
-        "value": 0,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-    "logic_key": 708
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Random blood sugar test result",
-        "value": 0,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-    "logic_key": 709
   },
   {
     "logics": [
@@ -9364,5 +8515,1090 @@
   "action": "show",
    "dependent": "DAK, Known substance abuse during past pregnancy",
   "logic_key": 736
-}
+},
+{
+  "logics": [
+    {
+      "trigger": "DAK, Random blood sugar test result",
+      "value": 0,
+      "operator": ">="
+    },
+    {
+      "trigger": "DAK, Fasting Blood sugar test result",
+      "value": 0,
+      "operator": ">="
+    },
+    {
+      "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+      "value": 0,
+      "operator": ">="
+    },
+    {
+      "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) – 1 hour test result",
+      "value": 0,
+      "operator": ">="
+    },
+    {
+      "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) – 2 hours test result",
+      "value": 0,
+      "operator": ">="
+    },
+    {
+      "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) – 2 hours test result",
+      "value": 0,
+      "operator": ">="
+    }
+  ],
+  "action": "show",
+  "conditionType": "either",
+  "dependent": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+  "logic_key": 737
+},
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Urine test type",
+        "value": "DAK, Urine dipstick",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Urine dipstick result – ketone",
+    "logic_key": 738
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Ultrasound scan conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amniotic fluid index(cm)",
+    "logic_key": 714
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 24.0,
+        "operator": "<"
+      }
+    ],
+    "action": "required",
+    "dependent": "DAK, Ultrasound scan conducted",
+    "logic_key": 715
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 24.0,
+        "operator": ">="
+      }
+    ],
+    "action": "noneRequired",
+    "dependent": "DAK, Ultrasound scan conducted",
+    "logic_key": 716
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "="
+      }
+    ],
+    "action": "required",
+    "dependent": "DAK, Blood type test conducted",
+    "logic_key": 717
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "!="
+      }
+    ],
+    "action": "noneRequired",
+    "dependent": "DAK, Blood type test conducted",
+    "logic_key": 718
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "="
+      }
+    ],
+    "action": "required",
+    "dependent": "DAK, HIV test conducted",
+    "logic_key": 719
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "!="
+      }
+    ],
+    "action": "noneRequired",
+    "dependent": "DAK, HIV test conducted",
+    "logic_key": 720
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 30,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, HIV status",
+        "value": "DAK, HIV negative",
+        "operator": "="
+      }
+
+
+    ],
+    "action": "required",
+    "dependent": "DAK, HIV test conducted",
+    "logic_key": 721
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 30,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Existing chronic health conditions",
+        "value": "DAK, HIV positive",
+        "operator": "!="
+      }
+
+    ],
+    "action": "required",
+    "dependent": "DAK, HIV test conducted",
+    "logic_key": 722
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 30,
+        "operator": "<"
+      },
+      {
+        "trigger": "DAK, HIV status",
+        "value": "DAK, HIV negative",
+        "operator": "="
+      }
+    ],
+    "action": "noneRequired",
+    "dependent": "DAK, HIV test conducted",
+    "logic_key": 723
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 30,
+        "operator": "<"
+      },
+      {
+        "trigger": "DAK, Existing chronic health conditions",
+        "value": "DAK, HIV positive",
+        "operator": "!="
+      }
+
+    ],
+    "action": "noneRequired",
+    "dependent": "DAK, HIV test conducted",
+    "logic_key": 724
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, HIV status",
+        "value": "DAK, HIV positive",
+        "operator": "!="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, HIV test conducted",
+    "logic_key": 725
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy confirmed",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 30.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Existing chronic health conditions",
+        "value": "DAK, HIV positive",
+        "operator": "!="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, HIV category",
+    "logic_key": 726
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, HIV test conducted",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, HIV status",
+    "logic_key": 727
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Blood haemoglobin category",
+    "logic_key": 728
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy confirmed",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "required",
+    "dependent": "DAK, Hepatitis B test conducted",
+    "logic_key": 732
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy confirmed",
+        "value": false,
+        "operator": "="
+      }
+    ],
+    "action": "noneRequired",
+    "dependent": "DAK, Hepatitis B test conducted",
+    "logic_key": 733
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 30,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Syphilis category",
+    "logic_key": 736
+  },
+  {
+    "logics": [
+
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "!="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 29.0,
+        "operator": "<"
+      }
+    ],
+    "action": "noneRequired",
+    "dependent": "DAK, Syphilis test conducted",
+    "logic_key": 737
+  },
+  {
+    "logics": [
+
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 29.0,
+        "operator": ">="
+      }
+    ],
+    "action": "required",
+    "conditionType": "either",
+    "dependent": "DAK, Syphilis test conducted",
+    "logic_key": 738
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Repeat systolic blood pressure",
+        "value": 140,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "!="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 26,
+        "operator": "<"
+      },
+      {
+        "trigger": "DAK, Specific health concern(s)",
+        "value": "DAK, Pain - During urination (dysuria)",
+        "operator": "!="
+      },
+      {
+        "trigger": "DAK, Persistent symptoms",
+        "value": "DAK, Pain - During urination (dysuria)",
+        "operator": "!="
+      },
+      {
+        "trigger": "DAK, Current symptoms",
+        "value": "DAK, Pain - During urination (dysuria)",
+        "operator": "!="
+      }
+    ],
+    "action": "required",
+    "dependent": "DAK, Urine test conducted",
+    "logic_key": 740
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Repeat systolic blood pressure",
+        "value": 140,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 26,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Specific health concern(s)",
+        "value": "DAK, Pain - During urination (dysuria)",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Persistent symptoms",
+        "value": "DAK, Pain - During urination (dysuria)",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Current symptoms",
+        "value": "DAK, Pain - During urination (dysuria)",
+        "operator": "="
+      }
+    ],
+    "action": "required",
+    "conditionType": "either",
+    "dependent": "DAK, Urine test conducted",
+    "logic_key": 741
+  },
+  {
+    "logics": [
+
+      {
+        "trigger": "DAK, Syphilis test result",
+        "value": "DAK, Syphilis positive",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Syphilis counselling and treatment",
+    "logic_key": 754
+  },
+  {
+    "logics": [
+
+      {
+        "trigger": "DAK, Urine dipstick result – nitrites",
+        "value": "DAK, Positive",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Urine dipstick result – leukocytes",
+        "value": "DAK, Positive",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, seven-day antibiotic regimen for asymptomatic bacteriuria (ASB) not provided",
+    "logic_key": 755
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 30,
+        "operator": ">="
+      }
+    ],
+    "action": "required",
+    "dependent": "DAK, Counselling on birth preparedness and complications readiness",
+    "logic_key": 756
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 30,
+        "operator": "<"
+      }
+    ],
+    "action": "noneRequired",
+    "dependent": "DAK, Counselling on birth preparedness and complications readiness",
+    "logic_key": 757
+  },
+  {
+    "logics": [
+
+      {
+        "trigger": "DAK, Planned birth place",
+        "value": "DAK, Another facility",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Another facility_",
+    "logic_key": 758
+  },
+  {
+    "logics": [
+
+      {
+        "trigger": "DAK, Type of postpartum family planning method selected",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other (specify)",
+    "logic_key": 759
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy confirmed",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 20,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Family planning",
+    "logic_key": 780
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 30.0,
+        "operator": ">="
+      }
+    ],
+    "action": "required",
+    "dependent": "DAK, Counselling conducted on breastfeeding",
+    "logic_key": 781
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 30.0,
+        "operator": "<"
+      }
+    ],
+    "action": "noneRequired",
+    "dependent": "DAK, Counselling conducted on breastfeeding",
+    "logic_key": 782
+  },
+
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy confirmed",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling on malaria prevention",
+    "logic_key": 783
+
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Malaria endemic area",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Malaria Chemo-prophylaxis provided",
+    "logic_key": 784
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Malaria Chemo-prophylaxis provided",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, IPTp-SP dose 1 provided",
+    "logic_key": 785
+  },
+
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Malaria Chemo-prophylaxis provided",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, IPTp-SP dose 2 provided",
+    "logic_key": 786
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Malaria Chemo-prophylaxis provided",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, IPTp-SP dose 3 provided",
+    "logic_key": 787
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
+        "value": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, IPV",
+    "logic_key": 788
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 30,
+        "operator": ">"
+      }
+    ],
+    "action": "required",
+    "conditionType": "either",
+    "dependent": "DAK, HIV test conducted",
+    "logic_key": 789
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "!="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 30,
+        "operator": "<="
+      }
+    ],
+    "action": "noneRequired",
+    "conditionType": "either",
+    "dependent": "DAK, HIV test conducted",
+    "logic_key": 790
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 26,
+        "operator": ">="
+      }
+    ],
+    "action": "required",
+    "conditionType": "either",
+    "dependent": "DAK, Urine test conducted",
+    "logic_key": 791
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "!="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 26,
+        "operator": "<"
+      }
+    ],
+    "action": "noneRequired",
+    "conditionType": "either",
+    "dependent": "DAK, Urine test conducted",
+    "logic_key": 792
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, ANC Contact Number",
+        "value": 1,
+        "operator": "<"
+      }
+    ],
+    "action": "show",
+    "index": 0,
+    "parent": "DAK, Reason for coming to facility",
+    "dependent": "DAK, First antenatal care contact",
+    "logic_key": 710000
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Ultrasound done",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Source of gestational age",
+        "value": "DAK, LNMP",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Gestational age by Ultrasound",
+    "logic_key": 711000
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, LNMP Date",
+        "value": false,
+        "operator": "!="
+      },
+      {
+        "trigger": "DAK, Source of gestational age",
+        "value": "DAK, Ultrasound",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Gestational age by LMNP",
+    "logic_key": 712000
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Number of pregnancies gravida",
+        "value": 1,
+        "operator": ">"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Number of miscarriages or abortions",
+    "logic_key": 713000
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Number of miscarriages or abortions",
+        "value": 1,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Were the abortions consecutive",
+    "logic_key": 714000
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Number of miscarriages or abortions",
+        "value": 1,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Were the abortions spontaneous",
+    "logic_key": 715000
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Number of pregnancies gravida",
+        "value": 1,
+        "operator": ">"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Number of live births",
+    "logic_key": 716000
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Number of live births",
+        "value": 0,
+        "operator": ">"
+      }
+    ],
+    "action": "show",
+    "dependent": "DaK, Hx of previous Preterm delivery",
+    "logic_key": 717000
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Number of pregnancies gravida",
+        "value": 1,
+        "operator": ">"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Number of stillbirths",
+    "logic_key": 718000
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Number of live births",
+        "value": 1,
+        "operator": ">="
+      }
+    ],
+    "action": "noneRequired",
+    "dependent": "DAK, Ultrasound scan conducted",
+    "logic_key": 716
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "="
+      }
+    ],
+    "action": "required",
+    "dependent": "DAK, Blood type test conducted",
+    "logic_key": 717
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "!="
+      }
+    ],
+    "action": "noneRequired",
+    "dependent": "DAK, Blood type test conducted",
+    "logic_key": 718
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "="
+      }
+    ],
+    "action": "required",
+    "dependent": "DAK, HIV test conducted",
+    "logic_key": 719
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason for coming to facility",
+        "value": "DAK, First antenatal care contact",
+        "operator": "!="
+      }
+    ],
+    "action": "noneRequired",
+    "dependent": "DAK, HIV test conducted",
+    "logic_key": 720
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 30,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, HIV status",
+        "value": "DAK, HIV negative",
+        "operator": "="
+      }
+
+
+    ],
+    "action": "required",
+    "dependent": "DAK, HIV test conducted",
+    "logic_key": 721
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 30,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Existing chronic health conditions",
+        "value": "DAK, HIV positive",
+        "operator": "!="
+      }
+
+    ],
+    "action": "required",
+    "dependent": "DAK, HIV test conducted",
+    "logic_key": 722
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 30,
+        "operator": "<"
+      },
+      {
+        "trigger": "DAK, HIV status",
+        "value": "DAK, HIV negative",
+        "operator": "="
+      }
+    ],
+    "action": "noneRequired",
+    "dependent": "DAK, HIV test conducted",
+    "logic_key": 723
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 30,
+        "operator": "<"
+      },
+      {
+        "trigger": "DAK, Existing chronic health conditions",
+        "value": "DAK, HIV positive",
+        "operator": "!="
+      }
+
+    ],
+    "action": "noneRequired",
+    "dependent": "DAK, HIV test conducted",
+    "logic_key": 724
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, HIV status",
+        "value": "DAK, HIV positive",
+        "operator": "!="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Number of caesarian sections",
+    "logic_key": 719000
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Number of pregnancies gravida",
+        "value": 0,
+        "operator": ">"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Parity",
+    "logic_key": 720000
+  },
+  {
+    "logics": [
+      {
+        "rules": [
+          {
+            "trigger": "Ultrasound available at the health-care facility",
+            "value": false,
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 24,
+            "operator": ">="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "Ultrasound available at the health-care facility",
+            "value": true,
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 24,
+            "operator": ">="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "Ultrasound available at the health-care facility",
+            "value": true,
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 24,
+            "operator": "<"
+          },
+          {
+            "rules": [
+              {
+                "trigger": "Ultrasound available at the health-care facility",
+                "value": false,
+                "operator": "="
+              },
+              {
+                "trigger": "DAK, Gestational age",
+                "value": 24,
+                "operator": "<"
+              }
+            ]
+          }
+
+        ],
+        "action": "show",
+        "dependent": "DAK, Ultrasound category",
+        "logic_key": 720001
+      },
+      {
+        "logics": [
+          {
+            "rules": [
+              {
+                "trigger": "Ultrasound available at the health-care facility",
+                "value": false,
+                "operator": "="
+              },
+              {
+                "trigger": "DAK, Gestational age",
+                "value": 24,
+                "operator": ">="
+              }
+            ]
+          },
+          {
+            "rules": [
+              {
+                "trigger": "Ultrasound available at the health-care facility",
+                "value": true,
+                "operator": "="
+              },
+              {
+                "trigger": "DAK, Gestational age",
+                "value": 24,
+                "operator": ">="
+              }
+            ]
+          },
+          {
+            "rules": [
+              {
+                "trigger": "Ultrasound available at the health-care facility",
+                "value": true,
+                "operator": "="
+              },
+              {
+                "trigger": "DAK, Gestational age",
+                "value": 24,
+                "operator": "<"
+              }
+            ]
+          },
+          {
+            "rules": [
+              {
+                "trigger": "Ultrasound available at the health-care facility",
+                "value": true,
+                "operator": "="
+              },
+              {
+                "trigger": "DAK, Gestational age",
+                "value": 24,
+                "operator": "<"
+              }
+            ]
+          }
+
+        ],
+        "action": "show",
+        "dependent": "DAK, Ultrasound scan conducted",
+        "logic_key": 720002
+      }
+    ]
+  }
 ]

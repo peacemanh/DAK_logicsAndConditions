@@ -6,12 +6,11 @@
   "DAK, Gestational age during Miscarriage or abortion of the last pregnancy",
   "DAK, HIV test result FP",
   "DAK, Partner HIV status - confirmed",
-  "DAK, Hepatitis C diagnosis",
-  "DAK, Syphilis diagnosis",
-  "DAK, Hepatitis B diagnosis",
   "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
   "DAK, Gestational diabetes mellitus (GDM) diagnosis",
   "DAK, Reasonably certain a woman is not pregnant",
   "DAK, Amenorrhoea",
-  "DAK, Amniotic fluid level"
+  "DAK, HIV status",
+  "DAK, Amniotic fluid level",
+  "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry"
 ]
