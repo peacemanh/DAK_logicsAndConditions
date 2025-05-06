@@ -288,6 +288,7 @@
             {
                 "trigger": "DAK, Urine dipstick result \u2013 protein",
                 "orValues": [
+                    
                     "DAK, +++",
                     "DAK, ++++"
                 ],
@@ -1658,56 +1659,6 @@
         "logics": [
             {
                 "trigger": "DAK, Systolic blood pressure",
-                "value": 160.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Repeat systolic blood pressure",
-                "value": 160.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Urine dipstick result \u2013 protein",
-                "orValues": [
-                    "DAK, +",
-                    "DAK, None"
-                ],
-                "operator": "OR"
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Severe hypertension",
-        "logic_key": 117
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Diastolic blood pressure",
-                "value": 110.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Repeat diastolic blood pressure",
-                "value": 110.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Urine dipstick result \u2013 protein",
-                "orValues": [
-                    "DAK, +",
-                    "DAK, None"
-                ],
-                "operator": "OR"
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Severe hypertension",
-        "logic_key": 118
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Systolic blood pressure",
                 "minValue": 140.0,
                 "maxValue": 160.0,
                 "operator": "between, <=, <"
@@ -1731,6 +1682,7 @@
                 "value":20,
                 "operator": "<"
             }
+
         ],
         "dependentValue": true,
         "dependent": "DAK, Chronic Hypertension",

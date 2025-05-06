@@ -5073,13 +5073,14 @@
         "minValue": 153.0,
         "maxValue": 200.0,
         "operator": "between, <=, <"
-      }
+    }
     ],
     "action": "show",
     "conditionType":"either",
     "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
     "logic_key": 474
   },
+
   {
     "logics": [
       {
@@ -5106,13 +5107,14 @@
         "trigger": "DAK, Random blood sugar test result",
         "value": 200.0,
         "operator": ">="
-      }
+    }
     ],
     "action": "show",
     "conditionType":"either",
     "dependent": "DAK, Counselling conducted on diabetes mellitus (DM)",
     "logic_key": 475
   },
+
   {
     "logics": [
       {

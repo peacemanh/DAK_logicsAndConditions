@@ -45,7 +45,7 @@
     "minValue": 0,
     "maxValue": "DAK, Number of pregnancies gravida - DAK, Number of miscarriages or abortions",
     "type": "restrict",
-    "message": "Number of live births should be less than difference of Number of previous pregnancy and Number of miscarriages and/or abortions"
+    "message": "Number of live births should be less than difference of Number of previous pregnancy and DAK, Number of miscarriages or abortions"
   },
   {
     "conceptName": "DAK, Number of stillbirths",
@@ -53,7 +53,7 @@
     "minValue": 0,
     "maxValue": "DAK, Number of pregnancies gravida - DAK, Number of miscarriages or abortions - DAK, Number of live births",
     "type": "restrict",
-    "message": "Number of stillbirths should be less than than diffrence of Number of previous pregnancies, Number of miscarriages and/or abortions and Number of live births"
+    "message": "Number of stillbirths should be less than than diffrence of Number of previous pregnancies, DAK, Number of miscarriages or abortions and Number of live births"
   },
   {
     "conceptName": "DAK, Number of caesarian sections",
