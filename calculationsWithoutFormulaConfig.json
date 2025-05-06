@@ -2656,5 +2656,17 @@
         "dependentValue": true,
         "dependent": "DAK, Gestational Hypertension",
         "logic_key": 155
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DaK, Hx of previous Preterm delivery",
+                "value": "DAK, Has previous history of preterm delivery",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Preterm delivery",
+        "dependent": "DAK, Past pregnancy history",
+        "logic_key": 156
     }
 ]

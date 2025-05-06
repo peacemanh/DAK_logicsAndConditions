@@ -9089,7 +9089,6 @@
     }
   ],
   "action": "show",
-  "index":0,
   "parent": "DAK, Past pregnancy history",
   "dependent": "DAK, Caesarean section delivery",
   "logic_key": 718
@@ -9103,7 +9102,6 @@
     }
   ],
   "action": "show",
-  "index":0,
   "parent": "DAK, Past pregnancy history",
   "dependent": "DAK, Abortion",
   "logic_key": 719
@@ -9342,5 +9340,29 @@
   "action": "show",
    "dependent": "DAK, Past pregnancy history from",
   "logic_key": 734
+},
+{
+  "logics": [
+    {
+      "trigger": "DAK, Number of pregnancies gravida",
+      "value": 1,
+      "operator": ">="
+    }
+  ],
+  "action": "show",
+   "dependent": "DAK, Past pregnancy history",
+  "logic_key": 735
+},
+{
+  "logics": [
+    {
+      "trigger": "DAK, Number of pregnancies gravida",
+      "value": 1,
+      "operator": ">="
+    }
+  ],
+  "action": "show",
+   "dependent": "DAK, Known substance abuse during past pregnancy",
+  "logic_key": 736
 }
 ]
