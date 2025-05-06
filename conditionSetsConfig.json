@@ -7844,23 +7844,9 @@
         "operator": "OR" 
     }
     ],
-    "displayPoint": "DAK, Oedema type",
     "action": "Conduct further investigation and manage accordingly.",
     "annotation": "Ensure that blood pressure is within the normal range. Rule out renal, cardiovascular, and other medical conditions",
     "action_key": 487
-  },
-  {
-    "conditions": [
-      {
-        "trigger": "DAK, Symphysis-fundal height (SFH)",
-       "formula": "DAK, Gestational age- 3" ,
-       "operator": "<="
-      } 
-    ],
-    
-    "action": "Conduct further investigation and manage accordingly.",
-    "annotation": "Ensure that blood pressure is within the normal range. Rule out renal, cardiovascular, and other medical conditions",
-    "action_key": 488
   },
 
     {
