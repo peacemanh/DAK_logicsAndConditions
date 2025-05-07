@@ -9219,9 +9219,9 @@
         "operator": "="
       },
       {
-        "trigger": "DAK, Source of gestational age",
-        "value": "DAK, LNMP",
-        "operator": "="
+        "trigger": "DAK, Ultrasound date",
+        "value": false,
+        "operator": "!="
       }
     ],
     "action": "show",
@@ -9234,11 +9234,6 @@
         "trigger": "DAK, LNMP Date",
         "value": false,
         "operator": "!="
-      },
-      {
-        "trigger": "DAK, Source of gestational age",
-        "value": "DAK, Ultrasound",
-        "operator": "="
       }
     ],
     "action": "show",
@@ -9268,18 +9263,6 @@
     "action": "show",
     "dependent": "DAK, Were the abortions consecutive",
     "logic_key": 714000
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Number of miscarriages or abortions",
-        "value": 1,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Were the abortions spontaneous",
-    "logic_key": 715000
   },
   {
     "logics": [
