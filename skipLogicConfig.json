@@ -8091,18 +8091,6 @@
 {
   "logics": [
     {
-      "trigger": "DAK, Reason for refferal",
-      "value": "DAK, Referral other",
-      "operator": "="
-    }
-  ],
-  "action": "show",
-  "dependent":"DAK, Other referral specify",   
-  "logic_key": 716
-},
-{
-  "logics": [
-    {
       "trigger": "DAK, ANC Contact Number",
       "value": 1,
       "operator": "<"
@@ -8329,8 +8317,8 @@
 {
   "logics": [
     {
-      "trigger": "DAK, Reason for referral",
-      "value": "DAK, Referral for other reason",
+      "trigger": "DAK, Reason for refferal",
+      "value": "DAK, Referral other",
       "operator": "="
     }
   ],
@@ -8652,7 +8640,7 @@
     ],
     "action": "required",
     "dependent": "DAK, Hepatitis B test conducted",
-    "logic_key": 732
+    "logic_key": 73200
   },
   {
     "logics": [

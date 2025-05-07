@@ -1777,8 +1777,8 @@
         "operator": "="
       }
     ],
-    "action": "Refer to a hospital if necessary",
-    "annotation": "Consider cervical cancer and refer for further evaluation",
+    "action": "Consider cervical cancer and refer for further evaluation",
+    "annotation": "",
     "action_key": 148
   },
   {
@@ -7991,6 +7991,18 @@
       "action": "Conduct counselling on HIV risk",
       "annotation": "If the woman lives in a setting with a generalized HIV epidemic, or her partner is HIV positive, or she injects drugs, or she is a sex worker, then she is at high risk for HIV – counselling should be given to provide prevention options.Provide comprehensive HIV prevention options: STI screening and treatment (syndromic and syphilis)Condom promotion.Risk reduction counselling Pre-exposure prophylaxis (PrEP) with emphasis on adherence Emphasize importance of follow-up ANC contact visits",
       "action_key": 507
- }
+ },
+ {
+  "conditions": [
+    {
+      "key": "DAK, Pelvic exam result (visual)",
+      "value": "DAK, Evidence of amniotic fluid",
+      "operator": "="
+    }
+  ],
+  "action": "Consider (premature) rupture of membranes and refer if necessary.",
+  "annotation": " ",
+  "action_key": 508
+}
   
 ]
