@@ -858,7 +858,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Ever had sex - Reported",
+        "trigger": "DAK, Sexually active",
         "value": true,
         "operator": "="
       }
@@ -3141,7 +3141,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Ever had sex - Reported",
+        "trigger": "DAK, Sexually active",
         "value": true,
         "operator": "="
       },
