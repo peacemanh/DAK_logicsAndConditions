@@ -7669,12 +7669,12 @@
   {
     "conditions": [
       {
-        "trigger": "DAK, Pulse rate",
+        "key": "DAK, Pulse rate",
         "value": 60,
         "operator": "<"
     },
     {
-      "trigger": "DAK, Pulse rate",
+      "key": "DAK, Pulse rate",
       "value": 100,
       "operator": ">"
   }
@@ -7687,7 +7687,7 @@
   {
     "conditions": [
       {
-        "trigger": "DAK, Oedema type",
+        "key": "DAK, Oedema type",
        "orValues": ["DAK, Pitting ankle oedema", "DAK, Oedema of the hands and feet", "DAK, Pitting lower back oedema" , "DAK, Non pitting leg oedema", "DAK, Facial puffiness"],
         "operator": "OR" 
     }
@@ -7700,7 +7700,7 @@
   {
     "conditions": [
       {
-        "trigger": "DAK, Symphysis-fundal height (SFH)",
+        "key": "DAK, Symphysis-fundal height (SFH)",
        "formula": "DAK, Gestational age- 3" ,
        "operator": "<="
       } 
@@ -7714,7 +7714,7 @@
     {
       "conditions": [
         {
-          "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+          "key": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
           "value": 126.0,
           "operator": ">="
         }
@@ -7727,7 +7727,7 @@
     {
       "conditions": [
         {
-          "trigger": "DAK, Fasting Blood sugar test result",
+          "key": "DAK, Fasting Blood sugar test result",
           "value": 126.0,
           "operator": ">="
         }
@@ -7740,7 +7740,7 @@
     {
       "conditions": [
         {
-          "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) – 1 hour test result",
+          "key": "DAK, 75 g oral glucose tolerance test (OGTT) – 1 hour test result",
           "value": 200.0,
           "operator": ">="
         }
@@ -7753,7 +7753,7 @@
     {
       "conditions": [
         {
-          "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) – 2 hours test result",
+          "key": "DAK, 75 g oral glucose tolerance test (OGTT) – 2 hours test result",
           "value": 200.0,
           "operator": ">="
         }
@@ -7766,7 +7766,7 @@
     {
       "conditions": [
         {
-          "trigger": "DAK, Random blood sugar test result",
+          "key": "DAK, Random blood sugar test result",
           "value": 200.0,
           "operator": ">="
         }
@@ -7780,7 +7780,7 @@
   {
     "conditions": [
       {
-        "trigger": "DAK, Fasting Blood sugar test result",
+        "key": "DAK, Fasting Blood sugar test result",
         "minValue": 92.0,
         "maxValue": 126.0,
         "operator": "between, <=, <"
@@ -7794,7 +7794,7 @@
   {
     "conditions": [
       {
-        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+        "key": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
         "minValue": 92.0,
         "maxValue": 126.0,
         "operator": "between, <=, <"
@@ -7808,7 +7808,7 @@
   {
     "conditions": [
       {
-        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) – 1 hour test result",
+        "key": "DAK, 75 g oral glucose tolerance test (OGTT) – 1 hour test result",
         "minValue": 180.0,
         "maxValue": 200.0,
         "operator": "between, <=, <"
@@ -7822,7 +7822,7 @@
   {
     "conditions": [
       {
-        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) – 2 hours test result",
+        "key": "DAK, 75 g oral glucose tolerance test (OGTT) – 2 hours test result",
         "minValue": 153.0,
         "maxValue": 200.0,
         "operator": "between, <=, <"
