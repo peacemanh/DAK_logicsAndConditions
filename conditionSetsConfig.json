@@ -3557,11 +3557,6 @@
         "key": "DAK, Gestational age",
         "value": 12.0,
         "operator": "<="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 40.0,
-        "operator": ">="
       }
     ],
     "displayPoint": "DAK, Counselling conducted on anaemia",
@@ -3579,11 +3574,6 @@
       {
         "key": "DAK, Gestational age",
         "value": 28.0,
-        "operator": ">="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 40.0,
         "operator": ">="
       }
     ],
@@ -3604,11 +3594,6 @@
         "minValue": 13.0,
         "maxValue": 27.0,
         "operator": "between, <=, <="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 40.0,
-        "operator": ">="
       }
     ],
     "displayPoint": "DAK, Counselling conducted on anaemia",
@@ -3627,11 +3612,6 @@
         "key": "DAK, Pallor",
         "value": false,
         "operator": "="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 40.0,
-        "operator": ">="
       }
     ],
     "displayPoint": "DAK, Counselling conducted on anaemia",
@@ -3649,11 +3629,6 @@
       {
         "key": "DAK, Gestational age",
         "value": 12.0,
-        "operator": "<="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
         "operator": "<="
       },
       {
@@ -3680,11 +3655,6 @@
         "operator": ">="
       },
       {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
-      },
-      {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
         "value": true,
         "operator": "="
@@ -3707,11 +3677,6 @@
         "minValue": 13.0,
         "maxValue": 27.0,
         "operator": "between, <=, <="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
       },
       {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
@@ -3737,11 +3702,6 @@
         "operator": "="
       },
       {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
-      },
-      {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
         "value": true,
         "operator": "="
@@ -3762,11 +3722,6 @@
       {
         "key": "DAK, Gestational age",
         "value": 12.0,
-        "operator": "<="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
         "operator": "<="
       },
       {
@@ -3793,11 +3748,6 @@
         "operator": ">="
       },
       {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
-      },
-      {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
         "value": false,
         "operator": "="
@@ -3822,11 +3772,6 @@
         "operator": "between, <=, <="
       },
       {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
-      },
-      {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
         "value": false,
         "operator": "="
@@ -3848,11 +3793,6 @@
         "key": "DAK, Pallor",
         "value": false,
         "operator": "="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
       },
       {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
@@ -6220,19 +6160,7 @@
     "annotation": " Provide post-testing counselling and education on measures to reduce the risk of transmitting HBV to the infant, encourage partner testing, and ensure linkage to care of HBsAg positive. Refer to a hospital if necessary.",
     "action_key": 411
   },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Pregnancy confirmed",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Hepatitis C test conducted",
-    "action": "Conduct hepatitis C test",
-    "annotation": "Hepatitis C test required for all pregnant women ,if the test is available.Anti-HCV laboratory-based immunoassay is the preferred method for testing for Hep C infection in pregnancy; if immunoassay is not available, anti-HCV rapid diagnostic test (RDT) is recommended over dried blood spot (DBS) anti-HCV testing.",
-    "action_key": 412
-  },
+ 
   {
     "conditions": [
       {
@@ -6429,11 +6357,6 @@
         "key": "DAK, Gestational age",
         "value": 12.0,
         "operator": "<="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 40.0,
-        "operator": ">="
       }
     ],
     "displayPoint": "DAK, Amount of iron prescribed",
@@ -6452,11 +6375,6 @@
         "key": "DAK, Gestational age",
         "value": 12.0,
         "operator": "<="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 40.0,
-        "operator": ">="
       }
     ],
     "displayPoint": "DAK, Type of iron supplement dosage provided",
@@ -6475,11 +6393,6 @@
         "key": "DAK, Gestational age",
         "value": 12.0,
         "operator": "<="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 40.0,
-        "operator": ">="
       }
     ],
     "displayPoint": "DAK, Amount of daily dose of folic acid prescribed",
@@ -6497,11 +6410,6 @@
       {
         "key": "DAK, Gestational age",
         "value": 28.0,
-        "operator": ">="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 40.0,
         "operator": ">="
       }
     ],
@@ -6521,11 +6429,6 @@
         "key": "DAK, Gestational age",
         "value": 28.0,
         "operator": ">="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 40.0,
-        "operator": ">="
       }
     ],
     "displayPoint": "DAK, Type of iron supplement dosage provided",
@@ -6543,11 +6446,6 @@
       {
         "key": "DAK, Gestational age",
         "value": 28.0,
-        "operator": ">="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 40.0,
         "operator": ">="
       }
     ],
@@ -6568,11 +6466,6 @@
         "minValue": 13.0,
         "maxValue": 27.0,
         "operator": "between, <=, <="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 40.0,
-        "operator": ">="
       }
     ],
     "displayPoint": "DAK, Amount of iron prescribed",
@@ -6592,11 +6485,6 @@
         "minValue": 13.0,
         "maxValue": 27.0,
         "operator": "between, <=, <="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 40.0,
-        "operator": ">="
       }
     ],
     "displayPoint": "DAK, Type of iron supplement dosage provided",
@@ -6616,11 +6504,6 @@
         "minValue": 13.0,
         "maxValue": 27.0,
         "operator": "between, <=, <="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 40.0,
-        "operator": ">="
       }
     ],
     "displayPoint": "DAK, Amount of daily dose of folic acid prescribed",
@@ -6639,11 +6522,6 @@
         "key": "DAK, Pallor",
         "value": false,
         "operator": "="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 40.0,
-        "operator": ">="
       }
     ],
     "displayPoint": "DAK, Amount of iron prescribed",
@@ -6662,11 +6540,6 @@
         "key": "DAK, Pallor",
         "value": false,
         "operator": "="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 40.0,
-        "operator": ">="
       }
     ],
     "displayPoint": "DAK, Type of iron supplement dosage provided",
@@ -6685,11 +6558,6 @@
         "key": "DAK, Pallor",
         "value": false,
         "operator": "="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 40.0,
-        "operator": ">="
       }
     ],
     "displayPoint": "DAK, Amount of daily dose of folic acid prescribed",
@@ -6707,11 +6575,6 @@
       {
         "key": "DAK, Gestational age",
         "value": 12.0,
-        "operator": "<="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
         "operator": "<="
       },
       {
@@ -6738,11 +6601,6 @@
         "operator": "<="
       },
       {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
-      },
-      {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
         "value": true,
         "operator": "="
@@ -6763,11 +6621,6 @@
       {
         "key": "DAK, Gestational age",
         "value": 12.0,
-        "operator": "<="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
         "operator": "<="
       },
       {
@@ -6794,11 +6647,6 @@
         "operator": ">="
       },
       {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
-      },
-      {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
         "value": true,
         "operator": "="
@@ -6822,11 +6670,6 @@
         "operator": ">="
       },
       {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
-      },
-      {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
         "value": true,
         "operator": "="
@@ -6848,11 +6691,6 @@
         "key": "DAK, Gestational age",
         "value": 28.0,
         "operator": ">="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
       },
       {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
@@ -6879,11 +6717,6 @@
         "operator": "between, <=, <="
       },
       {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
-      },
-      {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
         "value": true,
         "operator": "="
@@ -6906,11 +6739,6 @@
         "minValue": 13.0,
         "maxValue": 27.0,
         "operator": "between, <=, <="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
       },
       {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
@@ -6937,11 +6765,6 @@
         "operator": "between, <=, <="
       },
       {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
-      },
-      {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
         "value": true,
         "operator": "="
@@ -6963,11 +6786,6 @@
         "key": "DAK, Pallor",
         "value": false,
         "operator": "="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
       },
       {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
@@ -6993,11 +6811,6 @@
         "operator": "="
       },
       {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
-      },
-      {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
         "value": true,
         "operator": "="
@@ -7021,11 +6834,6 @@
         "operator": "="
       },
       {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
-      },
-      {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
         "value": true,
         "operator": "="
@@ -7046,11 +6854,6 @@
       {
         "key": "DAK, Gestational age",
         "value": 12.0,
-        "operator": "<="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
         "operator": "<="
       },
       {
@@ -7077,11 +6880,6 @@
         "operator": "<="
       },
       {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
-      },
-      {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
         "value": false,
         "operator": "="
@@ -7102,11 +6900,6 @@
       {
         "key": "DAK, Gestational age",
         "value": 12.0,
-        "operator": "<="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
         "operator": "<="
       },
       {
@@ -7133,11 +6926,6 @@
         "operator": ">="
       },
       {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
-      },
-      {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
         "value": false,
         "operator": "="
@@ -7161,11 +6949,6 @@
         "operator": ">="
       },
       {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
-      },
-      {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
         "value": false,
         "operator": "="
@@ -7187,11 +6970,6 @@
         "key": "DAK, Gestational age",
         "value": 28.0,
         "operator": ">="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
       },
       {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
@@ -7218,11 +6996,6 @@
         "operator": "between, <=, <="
       },
       {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
-      },
-      {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
         "value": false,
         "operator": "="
@@ -7245,11 +7018,6 @@
         "minValue": 13.0,
         "maxValue": 27.0,
         "operator": "between, <=, <="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
       },
       {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
@@ -7276,11 +7044,6 @@
         "operator": "between, <=, <="
       },
       {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
-      },
-      {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
         "value": false,
         "operator": "="
@@ -7302,11 +7065,6 @@
         "key": "DAK, Pallor",
         "value": false,
         "operator": "="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
       },
       {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
@@ -7332,11 +7090,6 @@
         "operator": "="
       },
       {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
-      },
-      {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
         "value": false,
         "operator": "="
@@ -7358,11 +7111,6 @@
         "key": "DAK, Pallor",
         "value": false,
         "operator": "="
-      },
-      {
-        "key": "Population prevalence of anaemia",
-        "value": 20.0,
-        "operator": "<="
       },
       {
         "key": "DAK, Has side-effects from iron and folic acid supplements",
