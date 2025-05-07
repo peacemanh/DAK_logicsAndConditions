@@ -437,8 +437,8 @@
                     "DAK, Repeated health consultations with no clear diagnosis",
                     "DAK, Woman\u2019s partner or husband is intrusive during consultations",
                     "DAK, Woman often misses her own or her children\u2019s health-care appointments",
-                    "DAK, Children have emotional and behavioural problems",
-                    "DAK, Presenting signs/conditions for IPV"
+                    "DAK, Children have emotional and behavioural problems"
+                   
                 ],
                 "operator": "OR"
             }
