@@ -337,7 +337,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on non-pharma measures to relieve nausea and vomiting",
-    "action": "Conduct counseling on physiological symptoms    and advice on dietary management",
+    "action": "Conduct counseling on physiological symptoms  and advice on dietary management",
     "annotation": "Small and frequent feeding. Avoid triggering factors.Ginger, chamomile, and vitamin B6 recommended for the relief of nausea in early pregnancy, depending on a woman\u2019s preferences and available options. Women should be informed that symptoms of nausea and vomiting usually resolve in the second half of pregnancy.",
     "action_key": 27
   },
@@ -355,7 +355,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on pharmacological treatments for nausea and vomiting",
-    "action": "Conduct counseling on physiological symptoms   . Start management OR refer if no improvement",
+    "action": "Conduct counseling on physiological symptoms. Start management OR refer if no improvement",
     "annotation": "Pharmacological treatments for nausea and vomiting, such as doxylamine and metoclopramide, should be reserved for those pregnant women experiencing distressing symptoms that are not relieved by non-pharmacological options, under the supervision of a medical doctor due to side-effects of the anti emetics.",
     "action_key": 28
   },
@@ -369,7 +369,7 @@
     ],
     "displayPoint": "DAK, Counselling conducted on diet and lifestyle changes to prevent and relieve heartburn",
     "action": "Conduct counseling on physiological symptoms  ",
-    "annotation": "Advice on diet and lifestyle  (e.g. small and frequent feeding, avoid spicy and fatty foods, avoid sleeping in supine position immediately after eating, and adding pillows when necessary).",
+    "annotation": "Advice on diet and lifestyle (e.g. small and frequent feeding, avoid spicy and fatty foods, avoid sleeping in supine position immediately after eating, and adding pillows when necessary).",
     "action_key": 29
   },
   {
@@ -381,7 +381,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on antacid preparations to relieve heartburn",
-    "action": "Conduct counseling on physiological symptoms  .Start management OR refer if no improvement",
+    "action": "Conduct counseling on physiological symptoms.Start management OR refer if no improvement",
     "annotation": "Antacid preparations and other pharmacological treatments can be offered to women with troublesome symptoms that are not relieved by lifestyle modification.",
     "action_key": 30
   },
@@ -407,7 +407,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on use of magnesium and calcium to relieve leg cramps",
-    "action": "Conduct counseling on physiological symptoms  .Start management OR refer if no improvement",
+    "action": "Conduct counseling on physiological symptoms.Start management OR refer if no improvement",
     "annotation": "If leg cramps are not relieved with non-pharmacological measures, then give 300\u2013360\u00a0mg magnesium per day in two or three divided doses; give calcium 1\u00a0g twice daily for two weeks. These medifications might be avilabale in antenatal supplments",
     "action_key": 32
   },
@@ -1176,7 +1176,7 @@
       }
     ],
     "action": "Conduct further investigation, manage accordingly, or refer if necessary.",
-    "annotation": "If the body temperature is <35\u00b0C or ≥37.5\u00b0C, identify the cause, manage accordingly, or refer. 37.5",
+    "annotation": "If the body temperature is <35\u00b0C or \u226537.5\u00b0C, identify the cause, manage accordingly, or refer. 37.5",
     "action_key": 92
   },
   {
@@ -7991,6 +7991,6 @@
       "action": "Conduct counselling on HIV risk",
       "annotation": "If the woman lives in a setting with a generalized HIV epidemic, or her partner is HIV positive, or she injects drugs, or she is a sex worker, then she is at high risk for HIV – counselling should be given to provide prevention options.Provide comprehensive HIV prevention options: STI screening and treatment (syndromic and syphilis)Condom promotion.Risk reduction counselling Pre-exposure prophylaxis (PrEP) with emphasis on adherence Emphasize importance of follow-up ANC contact visits",
       "action_key": 507
-   }
+ }
   
 ]
