@@ -71,5 +71,13 @@
         "conditioner": {"key": "DAK, Source of gestational age", "value": "DAK, LNMP"},
         "resultType": "Date",
         "operator": "+"
+    },
+    {
+        "resultConcept": "DAK, Week difference FH and GA",
+        "operands": [
+            "DAK, Gestational age",
+            "DAK, Symphysis-fundal height (SFH)"
+        ],
+        "formula": "DAK, Gestational age - DAK, Symphysis-fundal height (SFH)"
     }
 ]
