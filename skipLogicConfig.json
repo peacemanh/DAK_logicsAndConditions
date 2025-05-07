@@ -542,16 +542,16 @@
     "logics": [
       {
         "trigger": "DAK, Amount of iron prescribed",
-        "value": 1,
-        "operator": "<"
+        "value": false,
+        "operator": "!="
       },
       {
         "trigger": "DAK, Amount of daily dose of folic acid prescribed",
-        "value": 1,
-        "operator": "<"
+        "value": false,
+        "operator": "!="
       }
     ],
-    "action": "show",
+    "action": "hide",
     "dependent": "DAK, iron and folic acid not prescribed",
     "logic_key": 47
   },
@@ -4718,30 +4718,6 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Gestational age",
-        "value": 26.0,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Blood haemoglobin category",
-    "logic_key": 448
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Gestational age",
-        "value": 36.0,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Blood haemoglobin category",
-    "logic_key": 449
-  },
-  {
-    "logics": [
-      {
         "trigger": "DAK, Pregnancy confirmed",
         "value": true,
         "operator": "="
@@ -5914,11 +5890,16 @@
     "logics": [
       {
         "trigger": "DAK, Amount of iron prescribed",
-        "value": 0,
-        "operator": ">"
+        "value": false,
+        "operator": "!="
+      },
+      {
+        "trigger": "DAK, Amount of daily dose of folic acid prescribed",
+        "value": false,
+        "operator": "!="
       }
     ],
-    "action": "show",
+    "action": "hide",
     "dependent": "DAK, Reason iron and folic acid not prescribed",
     "logic_key": 581
   },
@@ -7703,118 +7684,6 @@
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Diabetes risk",
     "logic_key": 678
-  },
-  {
-    "logics": [
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Blood haemoglobin test result",
-            "value": 11.0,
-            "operator": "<"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 12,
-            "operator": "<="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Blood haemoglobin test result",
-            "value": 11.0,
-            "operator": "<"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 28,
-            "operator": ">="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Blood haemoglobin test result",
-            "value": 11.0,
-            "operator": "<"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 28,
-            "operator": ">="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Blood haemoglobin test result",
-            "value": 10.5,
-            "operator": "<"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "minValue": 13.0,
-            "maxValue": 27.0,
-            "operator": "between, <=, <="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Blood haemoglobin test conducted",
-            "value": false,
-            "operator": "="
-          },
-          {
-            "trigger": "DAK, Pallor",
-            "value": true,
-            "operator": "="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Blood haemoglobin test result",
-            "value": 11.0,
-            "operator": ">="
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 12.0,
-            "operator": "<="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Blood haemoglobin test result",
-            "value": 11.0,
-            "operator": ">="
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 12.0,
-            "operator": "<="
-          },
-          {
-            "trigger": "DAK, Has side-effects from iron and folic acid supplements",
-            "value": false,
-            "operator": "="
-          }
-        ]
-      }
-    ],
-    "action": "show",
-    "conditionType": "deepAnalysis",
-    "dependent": "DAK, Type of iron supplement dosage provide",
-    "logic_key": 679
   },
   {
     "logics": [
