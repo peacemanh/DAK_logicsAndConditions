@@ -24453,7 +24453,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1168,
+        "logic_key": 1189,
         "conditionType": "either",
         "dependentValue": "DAK, HIV positive FP",
         "dependent": "DAK, HIV test result FP"
@@ -24471,7 +24471,7 @@
                 "operator": "="
             }
         ],
-        "logic_key": 1169,
+        "logic_key": 1191,
         "conditionType": "either",
         "dependentValue": "DAK, HIV negative FP",
         "dependent": "DAK, HIV test result FP"
@@ -24486,38 +24486,12 @@
             {
                 "trigger": "DAK, Rapid diagnostic test (Assay) number in testing strategy",
                 "positiveValue": "DAK, Assay 2",
-                "negativeValue": [
-                    "DAK, Assay 3"
-                ],
+                "negativeValue": ["DAK, Assay 3"],
                 "operator": "exclude"
             }
         ],
-        "logic_key": 1170,
+        "logic_key": 1193,
         "dependentValue": "DAK, HIV Inconclusive FP",
-        "dependent": "DAK, HIV test result FP"
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Cervical Cancer risk assessment conducted",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "logic_key": 1171,
-        "dependentValue": true,
-        "dependent": "DAK, Cevical cancer screening conducted"
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Test result of HIV assay 1",
-                "value": "DAK, Reactive",
-                "operator": "="
-            }
-        ],
-        "logic_key": 1172,
-        "dependentValue": "DAK, HIV positive FP",
         "dependent": "DAK, HIV test result FP"
     }
 ]
