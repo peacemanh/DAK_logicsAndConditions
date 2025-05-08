@@ -24507,5 +24507,17 @@
         "logic_key": 1171,
         "dependentValue": true,
         "dependent": "DAK, Cevical cancer screening conducted"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Test result of HIV assay 1",
+                "value": "DAK, Non-reactive",
+                "operator": "="
+            }
+        ],
+        "logic_key": 1172,
+        "dependentValue": "DAK, HIV negative FP",
+        "dependent": "DAK, HIV test result FP"
     }
 ]
