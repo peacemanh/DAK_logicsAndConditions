@@ -7145,8 +7145,8 @@
   {
     "conditions": [
       {
-        "key": "DAK, Tobacco use",
-        "value": true,
+        "key": "DAK, Current alcohol and/or other substance use",
+        "value": "DAK, Smoking",
         "operator": "="
       }
     ],
@@ -7158,8 +7158,8 @@
   {
     "conditions": [
       {
-        "key": "DAK, Recently quit tobacco products",
-        "value": true,
+        "key": "DAK, Current alcohol and/or other substance use",
+        "value": "DAK, Exposure to second hand smoke",
         "operator": "="
       }
     ],

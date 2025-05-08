@@ -1614,8 +1614,8 @@
       "logics": [
           {
               "trigger": "DAK, Number of miscarriages or abortions",
-              "value": 2,
-              "operator": ">="
+              "value": 1,
+              "operator": ">"
           }
       ],
       "action": "show",
@@ -7813,7 +7813,7 @@
           {
               "trigger": "DAK, Number of miscarriages or abortions",
               "value": 1,
-              "operator": ">="
+              "operator": ">"
           }
       ],
       "action": "show",
@@ -7871,9 +7871,9 @@
   {
       "logics": [
           {
-              "trigger": "DAK, HIV status",
-              "value": "DAK, HIV positive",
-              "operator": "!="
+              "trigger": "DAK, Number of live births",
+              "value": 1,
+              "operator": ">="
           }
       ],
       "action": "show",
@@ -8342,18 +8342,6 @@
       "action": "show",
       "dependent": "DAK, Number of miscarriages and or abortions",
       "logic_key": 573
-  },
-  {
-      "logics": [
-          {
-              "trigger": "DAK, Number of miscarriages and or abortions",
-              "value": 1,
-              "operator": ">="
-          }
-      ],
-      "action": "show",
-      "dependent": "DAK, Were the abortions spontaneous",
-      "logic_key": 574
   },
   {
       "logics": [
