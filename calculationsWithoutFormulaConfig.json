@@ -2291,7 +2291,7 @@
         "logics": [
             {
                 "trigger": "DAK, Number of caesarian sections",
-                "value": 1,
+                "value": 0,
                 "operator": ">"
             }
         ],
@@ -2303,7 +2303,7 @@
         "logics": [
             {
                 "trigger": "DAK, Number of miscarriages or abortions",
-                "value": 1,
+                "value": 0,
                 "operator": ">"
             }
         ],
