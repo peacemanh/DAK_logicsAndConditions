@@ -3599,10 +3599,15 @@
               "operator": "="
           },
           {
-              "trigger": "DAK, HIV test result FP",
-              "value": "DAK, HIV positive FP",
-              "operator": "="
-          }
+            "trigger": "DAK, Test result of HIV assay 2",
+            "value": "DAK, Reactive",
+            "operator": "="
+        },
+        {
+            "trigger": "DAK, Test result of HIV assay 3",
+            "value": "DAK, Reactive",
+            "operator": "="
+        }
       ],
       "action": "show",
       "conditionType": "either",
@@ -3635,13 +3640,19 @@
   },
   {
       "logics": [
-          {
-              "trigger": "DAK, HIV test result FP",
-              "value": "DAK, HIV negative FP",
-              "operator": "="
-          }
+        {
+            "trigger": "DAK, Test result of HIV assay 1",
+            "value": "DAK, Non-reactive",
+            "operator": "="
+        },
+        {
+            "trigger": "DAK, Test result of HIV assay 3",
+            "value": "DAK, Non-reactive",
+            "operator": "="
+        }
       ],
       "action": "show",
+      "conditionType":"either",
       "dependent": "DAK, HIV Negative counselling conducted",
       "logic_key": 260
   },
