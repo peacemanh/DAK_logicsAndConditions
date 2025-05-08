@@ -1368,7 +1368,7 @@
     "annotation": "If the second measurement is  <60 or >100 , indentify the cause and manage accordingly  or Refer",
     "action_key": 107
   },
-    {
+  {
     "conditions": [
       {
         "key": "DAK, Oxygen Saturation",
@@ -6160,7 +6160,7 @@
     "annotation": " Provide post-testing counselling and education on measures to reduce the risk of transmitting HBV to the infant, encourage partner testing, and ensure linkage to care of HBsAg positive. Refer to a hospital if necessary.",
     "action_key": 411
   },
- 
+
   {
     "conditions": [
       {
@@ -7360,8 +7360,8 @@
         "key": "DAK, Repeat systolic blood pressure",
         "value": 160,
         "operator": ">="
-  },
-  {
+      },
+      {
         "key": "DAK, Repeat diastolic blood pressure",
         "value": 110,
         "operator": ">="
@@ -7420,14 +7420,14 @@
         "key": "DAK, Pulse rate",
         "value": 60,
         "operator": "<"
-    },
-    {
-      "key": "DAK, Pulse rate",
-      "value": 100,
-      "operator": ">"
-  }
+      },
+      {
+        "key": "DAK, Pulse rate",
+        "value": 100,
+        "operator": ">"
+      }
     ],
-    
+
     "action": "Conduct further investigation, manage accordingly, or refer if necessary",
     "annotation": "If the pulse rate is <60 bpm (Bradycardia) or >100 bpm (Tachycardia), identify the cause, manage accordingly, or refer",
     "action_key": 486
@@ -7436,9 +7436,9 @@
     "conditions": [
       {
         "key": "DAK, Oedema type",
-       "orValues": ["DAK, Pitting ankle oedema", "DAK, Oedema of the hands and feet", "DAK, Pitting lower back oedema" , "DAK, Non pitting leg oedema", "DAK, Facial puffiness"],
-        "operator": "OR" 
-    }
+        "orValues": [ "DAK, Pitting ankle oedema", "DAK, Oedema of the hands and feet", "DAK, Pitting lower back oedema", "DAK, Non pitting leg oedema", "DAK, Facial puffiness" ],
+        "operator": "OR"
+      }
     ],
     "displayPoint": "DAK, Oedema type",
     "action": "Conduct further investigation and manage accordingly.",
@@ -7449,81 +7449,81 @@
     "conditions": [
       {
         "key": "DAK, Symphysis-fundal height (SFH)",
-       "formula": "DAK, Gestational age- 3" ,
-       "operator": "<="
-      } 
+        "formula": "DAK, Gestational age- 3",
+        "operator": "<="
+      }
     ],
-    
+
     "action": "Conduct further investigation and manage accordingly.",
     "annotation": "Ensure that blood pressure is within the normal range. Rule out renal, cardiovascular, and other medical conditions",
     "action_key": 488
   },
 
-    {
-      "conditions": [
-        {
-          "key": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
-          "value": 126.0,
-          "operator": ">="
-        }
-      ],
-      "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-      "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
-      "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
-      "action_key": 489
-    },
-    {
-      "conditions": [
-        {
-          "key": "DAK, Fasting Blood sugar test result",
-          "value": 126.0,
-          "operator": ">="
-        }
-      ],
-      "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-      "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
-      "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
-      "action_key": 490
-    },
-    {
-      "conditions": [
-        {
-          "key": "DAK, 75 g oral glucose tolerance test (OGTT) – 1 hour test result",
-          "value": 200.0,
-          "operator": ">="
-        }
-      ],
-      "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-      "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
-      "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
-      "action_key": 491
-    },
-    {
-      "conditions": [
-        {
-          "key": "DAK, 75 g oral glucose tolerance test (OGTT) – 2 hours test result",
-          "value": 200.0,
-          "operator": ">="
-        }
-      ],
-      "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-      "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
-      "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
-      "action_key": 492
-    },
-    {
-      "conditions": [
-        {
-          "key": "DAK, Random blood sugar test result",
-          "value": 200.0,
-          "operator": ">="
-        }
-      ],
-      "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-      "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
-      "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
-      "action_key": 493
-    },
+  {
+    "conditions": [
+      {
+        "key": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+        "value": 126.0,
+        "operator": ">="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
+    "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+    "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
+    "action_key": 489
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Fasting Blood sugar test result",
+        "value": 126.0,
+        "operator": ">="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
+    "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+    "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
+    "action_key": 490
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, 75 g oral glucose tolerance test (OGTT) – 1 hour test result",
+        "value": 200.0,
+        "operator": ">="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
+    "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+    "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
+    "action_key": 491
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, 75 g oral glucose tolerance test (OGTT) – 2 hours test result",
+        "value": 200.0,
+        "operator": ">="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
+    "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+    "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
+    "action_key": 492
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Random blood sugar test result",
+        "value": 200.0,
+        "operator": ">="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
+    "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+    "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
+    "action_key": 493
+  },
 
   {
     "conditions": [
@@ -7641,5 +7641,103 @@
     "action": "Provide 7-day antibiotic regimen for asymptomatic bacteriuria (ASB)",
     "annotation": "A woman is considered to have ASB when she has no urinary symptoms but either positive gram staining or positive urine dipstick test (nitrites or leukocytes). A seven-day antibiotic regimen is recommended for all pregnant women with asymptomatic bacteriuria (ASB) to prevent persistent bacteriuria, preterm birth, and low birth weight.",
     "action_key": 451
+  },
+  {
+    "conditions": [
+
+      {
+        "key": "DAK, Week difference FH and GA",
+        "value": 3,
+        "operator": "<="
+      }
+    ],
+    "action": "Small for gestational age utrus",
+    "annotation": "Consider intrauterine growth restriction (IUGR), intrauterine fetal death (IUFD), oligohydramnios, etc.",
+    "action_key": 452
+  },
+  {
+    "conditions": [
+
+      {
+        "key": "DAK, Week difference FH and GA",
+        "value": 3,
+        "operator": ">"
+      }
+    ],
+    "action": "Large for gestational age utrus",
+    "annotation": "Consider multiple pregnancy, polyhydramnios, macrosomia, etc.",
+    "action_key": 453
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, HIV status",
+        "value": "DAK, HIV negative",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Partner HIV status (reported)",
+        "value": "DAK, HIV positive",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on HIV risk",
+    "action": "Conduct counselling on HIV risk",
+    "annotation": "If the woman lives in a setting with a generalized HIV epidemic, or her partner is HIV positive, or she injects drugs, or she is a sex worker, then she is at high risk for HIV – counselling should be given to provide prevention options.Provide comprehensive HIV prevention options: STI screening and treatment (syndromic and syphilis)Condom promotion.Risk reduction counselling Pre-exposure prophylaxis (PrEP) with emphasis on adherence Emphasize importance of follow-up ANC contact visits",
+    "action_key": 454
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, HIV status",
+        "value": "DAK, HIV negative",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Partner HIV test result",
+        "value": "DAK, HIV positive",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on HIV risk",
+    "action": "Conduct counselling on HIV risk",
+    "annotation": "If the woman lives in a setting with a generalized HIV epidemic, or her partner is HIV positive, or she injects drugs, or she is a sex worker, then she is at high risk for HIV – counselling should be given to provide prevention options.Provide comprehensive HIV prevention options: STI screening and treatment (syndromic and syphilis)Condom promotion.Risk reduction counselling Pre-exposure prophylaxis (PrEP) with emphasis on adherence Emphasize importance of follow-up ANC contact visits",
+    "action_key": 455
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, HIV status",
+        "value": "DAK, HIV negative",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Partner HIV status - confirmed",
+        "value": "DAK, HIV positive",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on HIV risk",
+    "action": "Conduct counselling on HIV risk",
+    "annotation": "If the woman lives in a setting with a generalized HIV epidemic, or her partner is HIV positive, or she injects drugs, or she is a sex worker, then she is at high risk for HIV – counselling should be given to provide prevention options.Provide comprehensive HIV prevention options: STI screening and treatment (syndromic and syphilis)Condom promotion.Risk reduction counselling Pre-exposure prophylaxis (PrEP) with emphasis on adherence Emphasize importance of follow-up ANC contact visits",
+    "action_key": 456
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, HIV status",
+        "value": "DAK, HIV negative",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Current alcohol and/or other substance use",
+        "value": "DAK, Injectable drugs",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on HIV risk",
+    "action": "Conduct counselling on HIV risk",
+    "annotation": "If the woman lives in a setting with a generalized HIV epidemic, or her partner is HIV positive, or she injects drugs, or she is a sex worker, then she is at high risk for HIV – counselling should be given to provide prevention options.Provide comprehensive HIV prevention options: STI screening and treatment (syndromic and syphilis)Condom promotion.Risk reduction counselling Pre-exposure prophylaxis (PrEP) with emphasis on adherence Emphasize importance of follow-up ANC contact visits",
+    "action_key": 457
   }
 ]
