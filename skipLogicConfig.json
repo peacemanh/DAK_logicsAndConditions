@@ -1577,8 +1577,8 @@
   {
       "logics": [
           {
-              "trigger": "DAK, Emergency referral",
-              "value": true,
+              "trigger": "DAK, Referral Type ANC",
+              "value": "DAK, Emergency referral ANC",
               "operator": "="
           }
       ],
@@ -3716,8 +3716,8 @@
   {
       "logics": [
           {
-              "trigger": "DAK, Emergency referral",
-              "value": false,
+              "trigger": "DAK, Referral Type ANC",
+              "value": "DAK, Non-emergency referral ANC",
               "operator": "="
           }
       ],
@@ -7273,7 +7273,7 @@
           }
       ],
       "action": "show",
-      "dependent": "DAK, Other referral specify",
+      "dependent": "DAK, Other referral",
       "logic_key": 503
   },
   {
