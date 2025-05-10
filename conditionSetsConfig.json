@@ -4714,7 +4714,6 @@
         "value": 30,
         "operator": ">="
       }
-
     ],
     "displayPoint": "DAK, Counselling conducted on breastfeeding",
     "action": "Provide Counselling on breastfeeding",
@@ -6084,7 +6083,6 @@
     "annotation": "The health worker checking whether the woman is taking her medication for syphilis",
     "action_key": 401
   },
-
   {
     "conditions": [
       {
@@ -6160,7 +6158,6 @@
     "annotation": " Provide post-testing counselling and education on measures to reduce the risk of transmitting HBV to the infant, encourage partner testing, and ensure linkage to care of HBsAg positive. Refer to a hospital if necessary.",
     "action_key": 411
   },
- 
   {
     "conditions": [
       {
@@ -6197,7 +6194,6 @@
     "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct Counselling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
     "action_key": 414
   },
-
   {
     "conditions": [
       {
@@ -6234,7 +6230,6 @@
     "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct Counselling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
     "action_key": 417
   },
-
   {
     "conditions": [
       {
@@ -7135,7 +7130,6 @@
         "value": 12,
         "operator": ">"
       }
-
     ],
     "displayPoint": "DAK, Preventive antihelminthic treatment provided",
     "action": "Conduct deworming",
@@ -7324,7 +7318,6 @@
         "operator": "<"
       }
     ],
-
     "action": "Provide treatment for acute malnutrition",
     "annotation": "There is acute malnutrition and is an indication for supplementation with ready-to-use foods (e.g., Plumpy’Nut, corn-soy blend [CSB++]) until the measurement is in the normal range",
     "action_key": 478
@@ -7427,7 +7420,6 @@
       "operator": ">"
   }
     ],
-    
     "action": "Conduct further investigation, manage accordingly, or refer if necessary",
     "annotation": "If the pulse rate is <60 bpm (Bradycardia) or >100 bpm (Tachycardia), identify the cause, manage accordingly, or refer",
     "action_key": 486
@@ -7453,12 +7445,10 @@
        "operator": "<="
       } 
     ],
-    
     "action": "Conduct further investigation and manage accordingly.",
     "annotation": "Ensure that blood pressure is within the normal range. Rule out renal, cardiovascular, and other medical conditions",
     "action_key": 488
   },
-
     {
       "conditions": [
         {
@@ -7524,7 +7514,6 @@
       "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
       "action_key": 493
     },
-
   {
     "conditions": [
       {
@@ -7625,7 +7614,6 @@
   },
   {
     "conditions": [
-
       {
         "key": "DAK, Urine dipstick result – nitrites",
         "value": "DAK, Positive",
@@ -7641,5 +7629,101 @@
     "action": "Provide 7-day antibiotic regimen for asymptomatic bacteriuria (ASB)",
     "annotation": "A woman is considered to have ASB when she has no urinary symptoms but either positive gram staining or positive urine dipstick test (nitrites or leukocytes). A seven-day antibiotic regimen is recommended for all pregnant women with asymptomatic bacteriuria (ASB) to prevent persistent bacteriuria, preterm birth, and low birth weight.",
     "action_key": 451
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Week difference FH and GA",
+        "value": 3,
+        "operator": "<="
+      }
+    ],
+    "action": "Small for gestational age utrus",
+    "annotation": "Consider intrauterine growth restriction (IUGR), intrauterine fetal death (IUFD), oligohydramnios, etc.",
+    "action_key": 502
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Week difference FH and GA",
+        "value": 3,
+        "operator": ">"
+      }
+    ],
+    "action": "Large for gestational age utrus",
+    "annotation": "Consider multiple pregnancy, polyhydramnios, macrosomia, etc.",
+    "action_key": 503
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, HIV status",
+        "value": "DAK, HIV negative",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Partner HIV status (reported)",
+        "value": "DAK, HIV positive",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on HIV risk",
+    "action": "Conduct counselling on HIV risk",
+    "annotation": "If the woman lives in a setting with a generalized HIV epidemic, or her partner is HIV positive, or she injects drugs, or she is a sex worker, then she is at high risk for HIV – counselling should be given to provide prevention options.Provide comprehensive HIV prevention options: STI screening and treatment (syndromic and syphilis)Condom promotion.Risk reduction counselling Pre-exposure prophylaxis (PrEP) with emphasis on adherence Emphasize importance of follow-up ANC contact visits",
+    "action_key": 504
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, HIV status",
+        "value": "DAK, HIV negative",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Partner HIV test result",
+        "value": "DAK, HIV positive",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on HIV risk",
+    "action": "Conduct counselling on HIV risk",
+    "annotation": "If the woman lives in a setting with a generalized HIV epidemic, or her partner is HIV positive, or she injects drugs, or she is a sex worker, then she is at high risk for HIV – counselling should be given to provide prevention options.Provide comprehensive HIV prevention options: STI screening and treatment (syndromic and syphilis)Condom promotion.Risk reduction counselling Pre-exposure prophylaxis (PrEP) with emphasis on adherence Emphasize importance of follow-up ANC contact visits",
+    "action_key": 505
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, HIV status",
+        "value": "DAK, HIV negative",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Partner HIV status - confirmed",
+        "value": "DAK, HIV positive",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on HIV risk",
+    "action": "Conduct counselling on HIV risk",
+    "annotation": "If the woman lives in a setting with a generalized HIV epidemic, or her partner is HIV positive, or she injects drugs, or she is a sex worker, then she is at high risk for HIV – counselling should be given to provide prevention options.Provide comprehensive HIV prevention options: STI screening and treatment (syndromic and syphilis)Condom promotion.Risk reduction counselling Pre-exposure prophylaxis (PrEP) with emphasis on adherence Emphasize importance of follow-up ANC contact visits",
+    "action_key": 506
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, HIV status",
+        "value": "DAK, HIV negative",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Current alcohol and/or other substance use",
+        "value": "DAK, Injectable drugs",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on HIV risk",
+    "action": "Conduct counselling on HIV risk",
+    "annotation": "If the woman lives in a setting with a generalized HIV epidemic, or her partner is HIV positive, or she injects drugs, or she is a sex worker, then she is at high risk for HIV – counselling should be given to provide prevention options.Provide comprehensive HIV prevention options: STI screening and treatment (syndromic and syphilis)Condom promotion.Risk reduction counselling Pre-exposure prophylaxis (PrEP) with emphasis on adherence Emphasize importance of follow-up ANC contact visits",
+    "action_key": 507
   }
 ]
