@@ -5,7 +5,7 @@
     "minValue": 40,
     "maxValue": 205,
     "type": "restrict",
-    "message": "Height in range of 40 cm and 205 cm is acceptable"
+    "message": "Possible value of height ranges from 40 cm to 205 cm"
   },
   {
     "conceptName": "DAK, Current weight",
@@ -13,7 +13,7 @@
     "minValue": 30,
     "maxValue": 180,
     "type": "restrict",
-    "message": "Weight  in range of 30 Kg and 180 Kg is acceptable"
+    "message": "Possible value of Weight ranges from 30 Kg to 180 Kg."
   },
   {
     "conceptName": "DAK, Pre-gestational weight",
@@ -21,7 +21,7 @@
     "minValue": 30,
     "maxValue": 180,
     "type": "restrict",
-    "message": "Weight  in range of 30 Kg and 180 Kg is acceptable"
+    "message": "Possible value of weight ranges from 30 Kg to 180 Kg."
   },
  {
       "conceptName": "DAK, Number of pregnancies gravida",
@@ -29,7 +29,7 @@
     "minValue": 1,
     "maxValue": 15,
     "type": "restrict",
-    "message": "Number of pregnancies (gravida) should be between 1 and 15"
+    "message": "Possible value of of Number of pregnancies (gravida) ranges from 1 to 15"
   },
   {
       "conceptName": "DAK, Number of miscarriages or abortions",
@@ -69,7 +69,7 @@
     "minValue": 60,
     "maxValue": 280,
     "type": "restrict",
-    "message": "Systolic blood pressure in range of 60mmHg and 280mmHg is acceptable"
+    "message": "Possible value of Systolic blood pressure ranges from 60mmHg to 280mmHg."
   },
   {
     "conceptName": "DAK, Repeat systolic blood pressure",
@@ -77,7 +77,7 @@
     "minValue": 60,
     "maxValue": 280,
     "type": "optional",
-    "message": "Repeat systolic blood pressure in range of 60mmHg and 280mmHg is acceptable"
+    "message": "Possible value of Repeat systolic blood pressure rangse from 60mmHg to 280mmHg."
   },
   {
     "conceptName": "DAK, Diastolic blood pressure",
@@ -85,7 +85,7 @@
     "minValue": 40,
     "maxValue": 200,
     "type": "restrict",
-    "message": "Diastolic blood pressure in range of 40mmHg and 200mmHg is acceptable"
+    "message": "Possible value of Diastolic blood pressure ranges from 40mmHg to 200mmHg."
   },
   {
     "conceptName": "DAK, Repeat diastolic blood pressure",
@@ -93,7 +93,7 @@
     "minValue": 40,
     "maxValue": 200,
     "type": "optional",
-    "message": "Repeat diastolic blood pressure in range of 40mmHg and 200mmHg is acceptable"
+    "message": "Possible value of Repeat diastolic blood pressure ranges from 40mmHg to 200mmHg."
   },
   {
     "conceptName": "DAK, Body temperature",
@@ -101,7 +101,7 @@
     "minValue": 25,
     "maxValue": 46,
     "type": "restrict",
-    "message": "Body temperature in range of 25\u00B0c and 46\u00B0c is acceptable"
+    "message": "ossible value of of Body temperature ranges from 25\u00B0c to 46\u00B0c."
   },
   {
     "conceptName": "DAK, Pulse rate",
@@ -109,7 +109,7 @@
     "minValue": 40,
     "maxValue": 220,
     "type": "restrict",
-    "message": "Pulse rate  in range of 40bpm and 220bpm is acceptable"
+    "message": "Possible value of Pulse rate ranges from 40bpm to 220bpm."
   },
   {
     "conceptName": "DAK, Second pulse rate",
@@ -117,7 +117,7 @@
     "minValue": 40,
     "maxValue": 220,
     "type": "optional",
-    "message": "Second pulse rate in range of 50bpm and 200bpm is acceptable"
+    "message": "Possible value of second pulse rate ranges from 40bpm to 220bpm"
   },
   {
     "conceptName": "DAK, Respiratory rate",
@@ -125,7 +125,7 @@
     "minValue": 8,
     "maxValue": 40,
     "type": "restrict",
-    "message": "Pulse rate in range of 8bpm and 40bpm is acceptable"
+    "message": "Possible value of Respiratory rate ranges from 8bpm and 40bpm."
   },
   {
     "conceptName": "DAK, Oxygen Saturation",
@@ -133,7 +133,7 @@
     "minValue": 0,
     "maxValue": 100,
     "type": "restrict",
-    "message": "Oxygen Saturation in range of between 0% and 100% is acceptable"
+    "message": "Possible value of Oxygen Saturation ranges from between 0% and 100%."
   },
   {
     "conceptName": "DAK, Cervical dilation",
@@ -141,7 +141,7 @@
     "minValue": 0,
     "maxValue": 10,
     "type": "restrict",
-    "message": "Cervical dilation in range of  0cm and 10cm is acceptable"
+    "message": "Possible value of Cervical dilation ranges from 0cm to 10cm."
   },
   {
     "conceptName": "DAK, Symphysis-fundal height (SFH)",
@@ -149,7 +149,7 @@
     "minValue": 0,
     "maxValue": 44,
     "type": "restrict",
-    "message": "Fundal Height (wks) in range of 20 and 44 wks is acceptable"
+    "message": "Possible value of Fundal Height (wks) ranges from 20 and 44 wks."
   },
   {
     "conceptName": "DAK, Number of fetuses",
@@ -157,7 +157,7 @@
     "minValue": 1,
     "maxValue": 8,
     "type": "restrict",
-    "message": "number of fetuses the woman is carrying in range of 1 and 8 is acceptable"
+    "message": "Possible value of number of fetuses the woman is carrying ranges from 1 to 8."
   },
   {
     "conceptName": "DAK, ANC Contact Number",
@@ -165,7 +165,7 @@
     "minValue": 2,
     "maxValue": 14,
     "type": "restrict",
-    "message": "ANC contact number in range of 2 and 14 is acceptable"
+    "message": "Possible value of ANC contact number ranges from 2 to 14."
   },
   {
     "conceptName": "DAK, Amount of daily aspirin prescribed until delivery",
@@ -180,7 +180,7 @@
     "minValue": 30,
     "maxValue": 500,
     "type": "restrict",
-    "message": "Fasting Blood sugar test result in range of between 30 and 500 is acceptable"
+    "message": "Possible value of Fasting Blood sugar test result ranges from 30 to 500."
   },
   {
     "conceptName": "DAK, Blood haemoglobin test result",
@@ -188,7 +188,7 @@
     "minValue": 0,
     "maxValue": 25,
     "type": "restrict",
-    "message": "Blood haemoglobin test result in range of 0 and 25 is acceptable"
+    "message": "Possible value of Blood haemoglobin test result ranges from 0 to 25."
   },
   {
     "conceptName": "DAK, Gestational age",
@@ -196,7 +196,7 @@
     "minValue": 4,
     "maxValue": 40,
     "type": "restrict",
-    "message": "Gestational age in range of 4 and 40 is acceptable"
+    "message": "Possible value of Gestational age ranges from 4 to 40."
   },
   {
     "conceptName": "DAK, Birth weight",
@@ -212,7 +212,7 @@
     "minValue": 0,
     "maxValue": 6,
     "type": "restrict",
-    "message": "The number of days must be from 0 to 6."
+    "message": "Possible value of the number of days must ranges from 0 to 6."
   },
   {
     "conceptName": "DAK, MUAC",
@@ -220,6 +220,6 @@
     "minValue": 11,
     "maxValue": 47,
     "type": "restrict",
-    "message": "MUAC in range of 11 cm and 47 cm is acceptable"
+    "message": "Possible value of MUAC ranges from 11 cm to 47 cm."
   }
 ]
