@@ -5,7 +5,7 @@
     "minValue": 40,
     "maxValue": 205,
     "type": "restrict",
-    "message": "Height in range of 40 cm and 205 cm is acceptable"
+    "message": "Possible value of height ranges from 40 cm to 205 cm"
   },
   {
     "conceptName": "DAK, Weight FP",
@@ -13,7 +13,7 @@
     "minValue": 30,
     "maxValue": 180,
     "type": "restrict",
-    "message": "Weight  in range of 30 Kg and 180 Kg is acceptable"
+    "message": "Possible value of Weight ranges from 30 Kg to 180 Kg."
   },
   {
     "conceptName": "DAK, Systolic blood pressure",
@@ -21,22 +21,14 @@
     "minValue": 60,
     "maxValue": 280,
     "type": "restrict",
-    "message": "The system accpets the range from  60mmHg and 280mmHg"
+    "message": "Possible value of Systolic blood pressure ranges from 60mmHg to 280mmHg."
   },
   {
     "conceptName": "DAK, Diastolic blood pressure",
     "operator": "beyond, <=, <=",
-    "minValue": 30,
-    "maxValue": 280,
+    "minValue": 40,
+    "maxValue": 200,
     "type": "restrict",
-    "message": "The system accpets the range from 30mmHg and 260mmHg"
-  },
-  {
-    "conceptName": "DAK, Number of previous pregnancies",
-    "operator": "beyond, <=",
-    "minValue": 0,
-
-    "type": "restrict",
-    "message": "Diastolic blood pressure should be between 60mmHg and 260mmHg"
+    "message": "Possible value of Diastolic blood pressure ranges from 40mmHg to 200mmHg"
   }
 ]
