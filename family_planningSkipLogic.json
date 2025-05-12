@@ -4491,8 +4491,8 @@
   {
       "logics": [
           {
-              "trigger": "DAK, Emergency referral",
-              "value": true,
+              "trigger": "DAK, Referral Type",
+              "value": "DAK, Emergency referral FP",
               "operator": "="
           }
       ],
@@ -4515,8 +4515,8 @@
   {
       "logics": [
           {
-              "trigger": "DAK, Emergency referral",
-              "value": false,
+              "trigger": "DAK, Referral Type",
+              "value": "DAK, Non-emergency referral FP",
               "operator": "="
           }
       ],
