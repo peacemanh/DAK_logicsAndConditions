@@ -7532,7 +7532,7 @@
           {
               "trigger": "DAK, Number of pregnancies gravida",
               "value": 1,
-              "operator": ">="
+              "operator": ">"
           }
       ],
       "action": "show",
@@ -7871,7 +7871,7 @@
   {
       "logics": [
           {
-              "trigger": "DAK, Number of live births",
+              "trigger": "DAK, Number of pregnancies gravida",
               "value": 1,
               "operator": ">="
           }
