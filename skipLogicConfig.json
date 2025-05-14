@@ -1578,7 +1578,7 @@
           }
       ],
       "action": "show",
-      "dependent": "DAK, Reason for emergency referral",
+      "dependent": "DAK, Reason for emergency referral ANC",
       "logic_key": 128
   },
   {
