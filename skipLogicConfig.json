@@ -2788,6 +2788,7 @@
     "dependent": "DAK, Repeat systolic blood pressure after 15 min",
     "logic_key": 223
   },
+
   {
     "logics": [
       {
@@ -2828,6 +2829,7 @@
     "dependent": "DAK, Repeat diastolic blood pressure after 15 min",
     "logic_key": 224
   },
+
   {
     "logics": [
       {
