@@ -4566,7 +4566,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Tetanus Diphtheria (TD) Vaccine ",
+        "key": "DAK, Tetanus Diphtheria (TD) Vaccine",
         "value": "DAK, Unknown",
         "operator": "="
       }
@@ -7259,6 +7259,7 @@
         "value": true,
         "operator": "="
       }
+
     ],
     "displayPoint": "DAK, Counselling conducted on healthy eating and keeping physically active",
     "action": "Conduct counselling on increasing daily energy and  protien intake",
