@@ -2758,9 +2758,11 @@
       "dependent": "DAK, Heartburn",
       "logic_key": 222
   },
-  {
-      "logics": [
-          {
+   {
+    "logics": [
+      {
+        "rules": [
+         {
               "trigger": "DAK, Systolic blood pressure",
               "value": 140,
               "operator": ">="
@@ -2770,14 +2772,38 @@
               "value": 90,
               "operator": ">="
           }
-      ],
-      "action": "show",
-      "dependent": "DAK, Repeat systolic blood pressure",
-      "logic_key": 223
+        ]
+      },
+      {
+        "rules": [
+        {
+              "trigger": "DAK, Systolic blood pressure",
+              "value": 140,
+              "operator": ">="
+          }
+        ]
+      },
+      {
+        "rules": [
+            {
+              "trigger": "DAK, Diastolic blood pressure",
+              "value": 90,
+              "operator": ">="
+          }
+        ]
+      }
+    ],
+    "action": "show",
+    "conditionType": "deepAnalysis",
+    "dependent": "DAK, Repeat systolic blood pressure after 15 min",
+    "logic_key": 223
   },
+
   {
-      "logics": [
-          {
+    "logics": [
+      {
+        "rules": [
+         {
               "trigger": "DAK, Systolic blood pressure",
               "value": 140,
               "operator": ">="
@@ -2787,11 +2813,33 @@
               "value": 90,
               "operator": ">="
           }
-      ],
-      "action": "show",
-      "dependent": "DAK, Repeat diastolic blood pressure",
-      "logic_key": 224
+        ]
+      },
+      {
+        "rules": [
+        {
+              "trigger": "DAK, Systolic blood pressure",
+              "value": 140,
+              "operator": ">="
+          }
+        ]
+      },
+      {
+        "rules": [
+            {
+              "trigger": "DAK, Diastolic blood pressure",
+              "value": 90,
+              "operator": ">="
+          }
+        ]
+      }
+    ],
+    "action": "show",
+    "conditionType": "deepAnalysis",
+    "dependent": "DAK, Repeat diastolic blood pressure after 15 min",
+    "logic_key": 224
   },
+
   {
       "logics": [
           {
@@ -9425,6 +9473,87 @@
     "action": "show",
     "dependent": "DAK, Amniotic fluid level",
     "logic_key": 613
+  },
+   {
+    "logics": [
+      {
+        "rules": [
+         {
+              "trigger": "DAK, Repeat systolic blood pressure after 15 min",
+              "value": 140,
+              "operator": ">="
+          },
+          {
+              "trigger": "DAK, Repeat diastolic blood pressure after 15 min",
+              "value": 90,
+              "operator": ">="
+          }
+        ]
+      },
+      {
+        "rules": [
+        {
+              "trigger": "DAK, Repeat systolic blood pressure after 15 min",
+              "value": 140,
+              "operator": ">="
+          }
+        ]
+      },
+      {
+        "rules": [
+            {
+              "trigger": "DAK, Repeat diastolic blood pressure after 15 min",
+              "value": 90,
+              "operator": ">="
+          }
+        ]
+      }
+    ],
+    "action": "show",
+    "conditionType": "deepAnalysis",
+    "dependent": "DAK, Repeat systolic blood pressure",
+    "logic_key": 614
+  },
+
+  {
+    "logics": [
+      {
+        "rules": [
+         {
+              "trigger": "DAK, Repeat systolic blood pressure after 15 min",
+              "value": 140,
+              "operator": ">="
+          },
+          {
+              "trigger": "DAK, Repeat diastolic blood pressure after 15 min",
+              "value": 90,
+              "operator": ">="
+          }
+        ]
+      },
+      {
+        "rules": [
+        {
+              "trigger": "DAK, Repeat systolic blood pressure after 15 min",
+              "value": 140,
+              "operator": ">="
+          }
+        ]
+      },
+      {
+        "rules": [
+            {
+              "trigger": "DAK, Repeat diastolic blood pressure after 15 min",
+              "value": 90,
+              "operator": ">="
+          }
+        ]
+      }
+    ],
+    "action": "show",
+    "conditionType": "deepAnalysis",
+    "dependent": "DAK, Repeat diastolic blood pressure",
+    "logic_key": 615
   }
 
 
