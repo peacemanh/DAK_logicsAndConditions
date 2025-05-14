@@ -7720,7 +7720,6 @@
     "displayPoint": "DAK, Counselling conducted on HIV risk",
     "action": "Conduct counselling on HIV risk",
     "annotation": "If the woman lives in a setting with a generalized HIV epidemic, or her partner is HIV positive, or she injects drugs, or she is a sex worker, then she is at high risk for HIV – counselling should be given to provide prevention options.Provide comprehensive HIV prevention options: STI screening and treatment (syndromic and syphilis)Condom promotion.Risk reduction counselling Pre-exposure prophylaxis (PrEP) with emphasis on adherence Emphasize importance of follow-up ANC contact visits",
-<<<<<<< HEAD
     "action_key": 457
   },
   {
@@ -7749,9 +7748,6 @@
     "action": "Counselling on malaria prevention",
     "annotation": "Sleeping under an insecticide-treated bednet and the importance of seeking care and getting treatment as soon as she has any symptoms. \n- Wear loose-fitting long-sleeved closes",
     "action_key": 459
-=======
-    "action_key": 507
->>>>>>> 9496cb94a540fd6dcbf2741d7799c77033104098
   }
 
 
