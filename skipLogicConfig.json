@@ -449,11 +449,6 @@
               "trigger": "DAK, Amount of iron prescribed",
               "value": false,
               "operator": "!="
-          },
-          {
-              "trigger": "DAK, Amount of daily dose of folic acid prescribed",
-              "value": false,
-              "operator": "!="
           }
       ],
       "action": "hide",
@@ -5157,11 +5152,6 @@
       "logics": [
           {
               "trigger": "DAK, Amount of iron prescribed",
-              "value": false,
-              "operator": "!="
-          },
-          {
-              "trigger": "DAK, Amount of daily dose of folic acid prescribed",
               "value": false,
               "operator": "!="
           }
