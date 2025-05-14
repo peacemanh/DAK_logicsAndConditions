@@ -1563,28 +1563,28 @@
     "logic_key": 126
   },
   {
-    "logics": [
-      {
-        "trigger": "DAK, PrEP for HIV prevention provided",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Amount of oral PrEP provided",
-    "logic_key": 127
+      "logics": [
+          {
+              "trigger": "DAK, PrEP for HIV prevention provided",
+              "value": true,
+              "operator": "="
+          }
+      ],
+      "action": "show",
+      "dependent": "DAK, Amount of oral PrEP provided",
+      "logic_key": 127
   },
   {
-    "logics": [
-      {
-        "trigger": "DAK, Emergency referral",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Reason for emergency referral",
-    "logic_key": 128
+      "logics": [
+          {
+              "trigger": "DAK, Referral Type ANC",
+              "value": "DAK, Emergency referral ANC",
+              "operator": "="
+          }
+      ],
+      "action": "show",
+      "dependent": "DAK, Reason for emergency referral",
+      "logic_key": 128
   },
   {
     "logics": [
@@ -1611,16 +1611,16 @@
     "logic_key": 130
   },
   {
-    "logics": [
-      {
-        "trigger": "DAK, Number of miscarriages or abortions",
-        "value": 2,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Were the abortions spontaneous",
-    "logic_key": 131
+      "logics": [
+          {
+              "trigger": "DAK, Number of miscarriages or abortions",
+              "value": 1,
+              "operator": ">"
+          }
+      ],
+      "action": "show",
+      "dependent": "DAK, Were the abortions spontaneous",
+      "logic_key": 131
   },
   {
     "logics": [
@@ -3609,16 +3609,16 @@
     "logic_key": 293
   },
   {
-    "logics": [
-      {
-        "trigger": "DAK, Emergency referral",
-        "value": false,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Reason for refferal",
-    "logic_key": 294
+      "logics": [
+          {
+              "trigger": "DAK, Referral Type ANC",
+              "value": "DAK, Non-emergency referral ANC",
+              "operator": "="
+          }
+      ],
+      "action": "show",
+      "dependent": "DAK, Reason for refferal",
+      "logic_key": 294
   },
   {
     "logics": [
@@ -7160,16 +7160,16 @@
     "logic_key": 502
   },
   {
-    "logics": [
-      {
-        "trigger": "DAK, Reason for refferal",
-        "value": "DAK, Referral other",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Other referral specify",
-    "logic_key": 503
+      "logics": [
+          {
+              "trigger": "DAK, Reason for refferal",
+              "value": "DAK, Referral other",
+              "operator": "="
+          }
+      ],
+      "action": "show",
+      "dependent": "DAK, Other referral",
+      "logic_key": 503
   },
   {
     "logics": [
@@ -7716,16 +7716,16 @@
     "logic_key": 542
   },
   {
-    "logics": [
-      {
-        "trigger": "DAK, Number of miscarriages or abortions",
-        "value": 1,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Were the abortions consecutive",
-    "logic_key": 543
+      "logics": [
+          {
+              "trigger": "DAK, Number of miscarriages or abortions",
+              "value": 1,
+              "operator": ">"
+          }
+      ],
+      "action": "show",
+      "dependent": "DAK, Were the abortions consecutive",
+      "logic_key": 543
   },
   {
     "logics": [
@@ -7776,16 +7776,16 @@
     "logic_key": 547
   },
   {
-    "logics": [
-      {
-        "trigger": "DAK, HIV status",
-        "value": "DAK, HIV positive",
-        "operator": "!="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Number of caesarian sections",
-    "logic_key": 548
+      "logics": [
+          {
+              "trigger": "DAK, Number of live births",
+              "value": 1,
+              "operator": ">="
+          }
+      ],
+      "action": "show",
+      "dependent": "DAK, Number of caesarian sections",
+      "logic_key": 548
   },
   {
     "logics": [
@@ -8251,28 +8251,16 @@
     "logic_key": 573
   },
   {
-    "logics": [
-      {
-        "trigger": "DAK, Number of miscarriages and or abortions",
-        "value": 1,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Were the abortions spontaneous",
-    "logic_key": 574
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Number of pregnancies gravida",
-        "value": 1,
-        "operator": ">"
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Number of live births",
-    "logic_key": 575
+      "logics": [
+          {
+              "trigger": "DAK, Number of pregnancies gravida",
+              "value": 1,
+              "operator": ">"
+          }
+      ],
+      "action": "show",
+      "dependent": "DAK, Number of live births",
+      "logic_key": 575
   },
   {
     "logics": [

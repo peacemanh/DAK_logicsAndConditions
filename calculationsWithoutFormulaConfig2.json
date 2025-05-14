@@ -206,7 +206,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Severe pre-eclampsia",
-        "logic_key": 12
+        "logic_key": 19
     },
     {
         "logics": [
@@ -237,7 +237,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Severe pre-eclampsia",
-        "logic_key": 13
+        "logic_key": 11
     },
     {
         "logics": [
@@ -264,7 +264,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Pre-eclampsia",
-        "logic_key": 14
+        "logic_key": 20
     },
     {
         "logics": [
@@ -288,6 +288,7 @@
             {
                 "trigger": "DAK, Urine dipstick result \u2013 protein",
                 "orValues": [
+                    
                     "DAK, +++",
                     "DAK, ++++"
                 ],
@@ -296,7 +297,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Pre-eclampsia",
-        "logic_key": 15
+        "logic_key": 21
     },
     {
         "logics": [
@@ -329,7 +330,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Pre-eclampsia",
-        "logic_key": 16
+        "logic_key": 22
     },
     {
         "logics": [
@@ -354,7 +355,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Severe hypertension",
-        "logic_key": 17
+        "logic_key": 25
     },
     {
         "logics": [
@@ -379,7 +380,67 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Severe hypertension",
-        "logic_key": 18
+        "logic_key": 26
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Current symptoms",
+                "value": "DAK, Pain - During urination (dysuria)",
+                "operator": "="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Urine test required",
+        "logic_key": 27
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Repeat systolic blood pressure",
+                "value": 140.0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Urine test required",
+        "logic_key": 28
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Syphilis test result",
+                "value": "DAK, Syphilis positive",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Syphilis positive",
+        "dependent": "DAK, Syphilis diagnosis",
+        "logic_key": 29
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Syphilis test result",
+                "value": "DAK, Syphilis negative",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Syphilis negative",
+        "dependent": "DAK, Syphilis diagnosis",
+        "logic_key": 30
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Midstream urine Gram-staining",
+                "value": "DAK, Positive",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, ASB positive",
+        "dependent": "DAK, Asymptomatic bacteriuria (ASB) diagnosis",
+        "logic_key": 31
     },
     {
         "logics": [
@@ -391,7 +452,7 @@
         ],
         "dependentValue": "DAK, Urinary tract Infection",
         "dependent": "DAK, Conditions relevant to sterilization and FAB",
-        "logic_key": 19
+        "logic_key": 32
     },
     {
         "logics": [
@@ -403,7 +464,7 @@
         ],
         "dependentValue": "DAK, Urinary tract Infection",
         "dependent": "DAK, Conditions relevant to sterilization and FAB",
-        "logic_key": 20
+        "logic_key": 33
     },
     {
         "logics": [
@@ -437,308 +498,14 @@
                     "DAK, Repeated health consultations with no clear diagnosis",
                     "DAK, Woman\u2019s partner or husband is intrusive during consultations",
                     "DAK, Woman often misses her own or her children\u2019s health-care appointments",
-                    "DAK, Children have emotional and behavioural problems"
-                   
+                    "DAK, Children have emotional and behavioural problems",
+                    "DAK, Presenting signs/conditions for IPV"
                 ],
                 "operator": "OR"
             }
         ],
         "dependentValue": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
         "dependent": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
-        "logic_key": 21
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test result",
-                "value": 110.0,
-                "operator": "<"
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": "<="
-            }
-        ],
-        "dependentValue": "DAK, Positive",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 22
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test result",
-                "value": 110.0,
-                "operator": "<"
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 28.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": "DAK, Positive",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 23
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test result",
-                "value": 105.0,
-                "operator": "<"
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "minValue": 13.0,
-                "maxValue": 27.0,
-                "operator": "between, <=, <="
-            }
-        ],
-        "dependentValue": "DAK, Positive",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 24
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test conducted",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Pallor",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "dependentValue": "DAK, Positive",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 25
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test result",
-                "value": 110.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": "<="
-            },
-            {
-                "trigger": "Population prevalence of anaemia",
-                "value": 40.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": "DAK, Negative",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 26
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test result",
-                "value": 110.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 28.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "Population prevalence of anaemia",
-                "value": 40.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": "DAK, Negative",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 27
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test result",
-                "value": 105.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "minValue": 13.0,
-                "maxValue": 27.0,
-                "operator": "between, <=, <="
-            },
-            {
-                "trigger": "Population prevalence of anaemia",
-                "value": 40.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": "DAK, Negative",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 28
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test conducted",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Pallor",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "trigger": "Population prevalence of anaemia",
-                "value": 40.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": "DAK, Negative",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 29
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test result",
-                "value": 110.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": "<="
-            },
-            {
-                "trigger": "Population prevalence of anaemia",
-                "value": 20.0,
-                "operator": "<="
-            },
-            {
-                "trigger": "DAK, Has side-effects from iron and folic acid supplements",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "dependentValue": "DAK, Negative",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 30
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test result",
-                "value": 110.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 28.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "Population prevalence of anaemia",
-                "value": 20.0,
-                "operator": "<="
-            },
-            {
-                "trigger": "DAK, Has side-effects from iron and folic acid supplements",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "dependentValue": "DAK, Negative",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 31
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test result",
-                "value": 105.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "minValue": 13.0,
-                "maxValue": 27.0,
-                "operator": "between, <=, <="
-            },
-            {
-                "trigger": "Population prevalence of anaemia",
-                "value": 20.0,
-                "operator": "<="
-            },
-            {
-                "trigger": "DAK, Has side-effects from iron and folic acid supplements",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "dependentValue": "DAK, Negative",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 32
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test conducted",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Pallor",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "trigger": "Population prevalence of anaemia",
-                "value": 20.0,
-                "operator": "<="
-            },
-            {
-                "trigger": "DAK, Has side-effects from iron and folic acid supplements",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "dependentValue": "DAK, Negative",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 33
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test result",
-                "value": 110.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": "<="
-            },
-            {
-                "trigger": "Population prevalence of anaemia",
-                "value": 20.0,
-                "operator": "<="
-            },
-            {
-                "trigger": "DAK, Has side-effects from iron and folic acid supplements",
-                "value": false,
-                "operator": "="
-            }
-        ],
-        "dependentValue": "DAK, Negative",
-        "dependent": "DAK, Anaemia diagnosis",
         "logic_key": 34
     },
     {
@@ -746,6 +513,300 @@
             {
                 "trigger": "DAK, Blood haemoglobin test result",
                 "value": 110.0,
+                "operator": "<"
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 12.0,
+                "operator": "<="
+            }
+        ],
+        "dependentValue": "DAK, Positive",
+        "dependent": "DAK, Anaemia diagnosis",
+        "logic_key": 35
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Blood haemoglobin test result",
+                "value": 110.0,
+                "operator": "<"
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 28.0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": "DAK, Positive",
+        "dependent": "DAK, Anaemia diagnosis",
+        "logic_key": 36
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Blood haemoglobin test result",
+                "value": 105.0,
+                "operator": "<"
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "minValue": 13.0,
+                "maxValue": 27.0,
+                "operator": "between, <=, <="
+            }
+        ],
+        "dependentValue": "DAK, Positive",
+        "dependent": "DAK, Anaemia diagnosis",
+        "logic_key": 37
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Blood haemoglobin test conducted",
+                "value": false,
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Pallor",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Positive",
+        "dependent": "DAK, Anaemia diagnosis",
+        "logic_key": 38
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Blood haemoglobin test result",
+                "value": 110.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 12.0,
+                "operator": "<="
+            },
+            {
+                "trigger": "Population prevalence of anaemia",
+                "value": 40.0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": "DAK, Negative",
+        "dependent": "DAK, Anaemia diagnosis",
+        "logic_key": 39
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Blood haemoglobin test result",
+                "value": 110.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 28.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "Population prevalence of anaemia",
+                "value": 40.0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": "DAK, Negative",
+        "dependent": "DAK, Anaemia diagnosis",
+        "logic_key": 40
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Blood haemoglobin test result",
+                "value": 105.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "minValue": 13.0,
+                "maxValue": 27.0,
+                "operator": "between, <=, <="
+            },
+            {
+                "trigger": "Population prevalence of anaemia",
+                "value": 40.0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": "DAK, Negative",
+        "dependent": "DAK, Anaemia diagnosis",
+        "logic_key": 41
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Blood haemoglobin test conducted",
+                "value": false,
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Pallor",
+                "value": false,
+                "operator": "="
+            },
+            {
+                "trigger": "Population prevalence of anaemia",
+                "value": 40.0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": "DAK, Negative",
+        "dependent": "DAK, Anaemia diagnosis",
+        "logic_key": 42
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Blood haemoglobin test result",
+                "value": 110.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 12.0,
+                "operator": "<="
+            },
+            {
+                "trigger": "Population prevalence of anaemia",
+                "value": 20.0,
+                "operator": "<="
+            },
+            {
+                "trigger": "DAK, Has side-effects from iron and folic acid supplements",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Negative",
+        "dependent": "DAK, Anaemia diagnosis",
+        "logic_key": 43
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Blood haemoglobin test result",
+                "value": 110.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 28.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "Population prevalence of anaemia",
+                "value": 20.0,
+                "operator": "<="
+            },
+            {
+                "trigger": "DAK, Has side-effects from iron and folic acid supplements",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Negative",
+        "dependent": "DAK, Anaemia diagnosis",
+        "logic_key": 44
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Blood haemoglobin test result",
+                "value": 105.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "minValue": 13.0,
+                "maxValue": 27.0,
+                "operator": "between, <=, <="
+            },
+            {
+                "trigger": "Population prevalence of anaemia",
+                "value": 20.0,
+                "operator": "<="
+            },
+            {
+                "trigger": "DAK, Has side-effects from iron and folic acid supplements",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Negative",
+        "dependent": "DAK, Anaemia diagnosis",
+        "logic_key": 45
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Blood haemoglobin test conducted",
+                "value": false,
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Pallor",
+                "value": false,
+                "operator": "="
+            },
+            {
+                "trigger": "Population prevalence of anaemia",
+                "value": 20.0,
+                "operator": "<="
+            },
+            {
+                "trigger": "DAK, Has side-effects from iron and folic acid supplements",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Negative",
+        "dependent": "DAK, Anaemia diagnosis",
+        "logic_key": 46
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Blood haemoglobin test result",
+                "value": 110.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 12.0,
+                "operator": "<="
+            },
+            {
+                "trigger": "Population prevalence of anaemia",
+                "value": 20.0,
+                "operator": "<="
+            },
+            {
+                "trigger": "DAK, Has side-effects from iron and folic acid supplements",
+                "value": false,
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Negative",
+        "dependent": "DAK, Anaemia diagnosis",
+        "logic_key": 47
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Blood haemoglobin test result",
+                "value": 110.0,
                 "operator": ">="
             },
             {
@@ -766,7 +827,7 @@
         ],
         "dependentValue": "DAK, Negative",
         "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 35
+        "logic_key": 48
     },
     {
         "logics": [
@@ -788,7 +849,24 @@
         ],
         "dependentValue": "DAK, Referral for screening including diagnostics and lab testing",
         "dependent": "DAK, Reason for refferal",
-        "logic_key": 36
+        "logic_key": 49
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Pregnancy confirmed",
+                "value": true,
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Reason for coming to facility",
+                "value": "DAK, First antenatal care contact",
+                "operator": "="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, HIV test required",
+        "logic_key": 50
     },
     {
         "logics": [
@@ -816,7 +894,7 @@
         ],
         "dependentValue": "DAK, Negative",
         "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 37
+        "logic_key": 51
     },
     {
         "logics": [
@@ -843,7 +921,96 @@
         ],
         "dependentValue": "DAK, Negative",
         "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 38
+        "logic_key": 52
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Pregnancy confirmed",
+                "value": true,
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 24,
+                "operator": "<"
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, HIV test required",
+        "logic_key": 53
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, HIV status",
+                "value": "DAK, HIV positive",
+                "operator": "="
+            }
+        ],
+        "dependentValue": false,
+        "dependent": "DAK, HIV test required",
+        "logic_key": 54
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Pregnancy confirmed",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Hepatitis B test required",
+        "logic_key": 55
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Pregnancy confirmed",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Hepatitis C test required",
+        "logic_key": 56
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Reason for coming to facility",
+                "value": "DAK, First antenatal care contact",
+                "operator": "="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Syphilis test required",
+        "logic_key": 57
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 30.0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Syphilis test required",
+        "logic_key": 58
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Syphilis diagnosis",
+                "value": "DAK, Syphilis positive",
+                "operator": "="
+            }
+        ],
+        "dependentValue": false,
+        "dependent": "DAK, Syphilis test required",
+        "logic_key": 59
     },
     {
         "logics": [
@@ -855,7 +1022,7 @@
         ],
         "dependentValue": "DAK, HIV positive",
         "dependent": "DAK, Partner HIV status - confirmed",
-        "logic_key": 39
+        "logic_key": 60
     },
     {
         "logics": [
@@ -867,349 +1034,397 @@
         ],
         "dependentValue": "DAK, HIV negative",
         "dependent": "DAK, Partner HIV status - confirmed",
-        "logic_key": 40
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Number of fetuses",
-                "value": 2.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 41
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Past pregnancy history",
-                "value": "DAK, Pre-eclampsia",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 42
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Past pregnancy history",
-                "value": "DAK, Eclampsia",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 43
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Past pregnancy history",
-                "value": "DAK, Convulsions",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 44
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Autoimmune disease",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 45
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Diabetes",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 46
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Chronic Hypertensions",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 47
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Renal disease",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 48
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Number of fetuses",
-                "value": 2.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 49
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Past pregnancy history",
-                "value": "DAK, Pre-eclampsia",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 50
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Past pregnancy history",
-                "value": "DAK, Eclampsia",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 51
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Past pregnancy history",
-                "value": "DAK, Convulsions",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 52
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Autoimmune disease",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 53
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Diabetes",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 54
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Chronic Hypertensions",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 55
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Renal disease",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 56
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Number of fetuses",
-                "value": 2.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "Population with low dietary calcium intake",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 57
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Past pregnancy history",
-                "value": "DAK, Eclampsia",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "Population with low dietary calcium intake",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 58
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Past pregnancy history",
-                "value": "DAK, Convulsions",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "Population with low dietary calcium intake",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 59
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Autoimmune disease",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "Population with low dietary calcium intake",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 60
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Diabetes",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "Population with low dietary calcium intake",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
         "logic_key": 61
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Hepatitis B test result",
+                "value": "DAK, Hepatitis B positive",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Hepatitis B positive",
+        "dependent": "DAK, Hepatitis B diagnosis",
+        "logic_key": 62
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Hepatitis B test result",
+                "value": "DAK, Hepatitis B negative",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Hepatitis B negative",
+        "dependent": "DAK, Hepatitis B diagnosis",
+        "logic_key": 63
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Hepatitis C test result",
+                "value": "DAK, Hepatitis C positive",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Hepatitis C positive",
+        "dependent": "DAK, Hepatitis C diagnosis",
+        "logic_key": 64
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Hepatitis C test result",
+                "value": "DAK, Hepatitis C negative",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Hepatitis C negative",
+        "dependent": "DAK, Hepatitis C diagnosis",
+        "logic_key": 65
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Number of fetuses",
+                "value": 2.0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 66
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Past pregnancy history",
+                "value": "DAK, Pre-eclampsia",
+                "operator": "="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 67
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Past pregnancy history",
+                "value": "DAK, Eclampsia",
+                "operator": "="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 68
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Past pregnancy history",
+                "value": "DAK, Convulsions",
+                "operator": "="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 69
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Existing chronic health conditions",
+                "value": "DAK, Autoimmune disease",
+                "operator": "="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 70
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Existing chronic health conditions",
+                "value": "DAK, Diabetes",
+                "operator": "="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 71
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Existing chronic health conditions",
+                "value": "DAK, Chronic Hypertensions",
+                "operator": "="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 72
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Existing chronic health conditions",
+                "value": "DAK, Renal disease",
+                "operator": "="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 73
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Number of fetuses",
+                "value": 2.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 12.0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 74
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Past pregnancy history",
+                "value": "DAK, Pre-eclampsia",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 12.0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 75
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Past pregnancy history",
+                "value": "DAK, Eclampsia",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 12.0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 76
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Past pregnancy history",
+                "value": "DAK, Convulsions",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 12.0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 77
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Existing chronic health conditions",
+                "value": "DAK, Autoimmune disease",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 12.0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 78
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Existing chronic health conditions",
+                "value": "DAK, Diabetes",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 12.0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 79
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Existing chronic health conditions",
+                "value": "DAK, Chronic Hypertensions",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 12.0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 80
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Existing chronic health conditions",
+                "value": "DAK, Renal disease",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 12.0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 81
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Number of fetuses",
+                "value": 2.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 12.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "Population with low dietary calcium intake",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 82
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Past pregnancy history",
+                "value": "DAK, Eclampsia",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 12.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "Population with low dietary calcium intake",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 83
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Past pregnancy history",
+                "value": "DAK, Convulsions",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 12.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "Population with low dietary calcium intake",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 84
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Existing chronic health conditions",
+                "value": "DAK, Autoimmune disease",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 12.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "Population with low dietary calcium intake",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 85
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Existing chronic health conditions",
+                "value": "DAK, Diabetes",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 12.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "Population with low dietary calcium intake",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 86
     },
     {
         "logics": [
@@ -1231,7 +1446,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 62
+        "logic_key": 87
     },
     {
         "logics": [
@@ -1253,7 +1468,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 63
+        "logic_key": 88
     },
     {
         "logics": [
@@ -1275,7 +1490,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 64
+        "logic_key": 89
     },
     {
         "logics": [
@@ -1297,7 +1512,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 65
+        "logic_key": 90
     },
     {
         "logics": [
@@ -1319,7 +1534,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 66
+        "logic_key": 91
     },
     {
         "logics": [
@@ -1341,7 +1556,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 67
+        "logic_key": 92
     },
     {
         "logics": [
@@ -1363,7 +1578,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 68
+        "logic_key": 93
     },
     {
         "logics": [
@@ -1385,7 +1600,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 69
+        "logic_key": 94
     },
     {
         "logics": [
@@ -1407,7 +1622,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 70
+        "logic_key": 95
     },
     {
         "logics": [
@@ -1424,7 +1639,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, High risk for HIV",
-        "logic_key": 71
+        "logic_key": 96
     },
     {
         "logics": [
@@ -1441,7 +1656,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, High risk for HIV",
-        "logic_key": 72
+        "logic_key": 97
     },
     {
         "logics": [
@@ -1458,7 +1673,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, High risk for HIV",
-        "logic_key": 73
+        "logic_key": 98
     },
     {
         "logics": [
@@ -1475,7 +1690,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, High risk for HIV",
-        "logic_key": 74
+        "logic_key": 99
     },
     {
         "logics": [
@@ -1492,7 +1707,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, High risk for HIV",
-        "logic_key": 75
+        "logic_key": 100
     },
     {
         "logics": [
@@ -1509,7 +1724,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, High risk for HIV",
-        "logic_key": 76
+        "logic_key": 101
     },
     {
         "logics": [
@@ -1526,7 +1741,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, High risk for HIV",
-        "logic_key": 77
+        "logic_key": 102
     },
     {
         "logics": [
@@ -1538,7 +1753,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, High risk for HIV",
-        "logic_key": 78
+        "logic_key": 103
     },
     {
         "logics": [
@@ -1550,7 +1765,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, High risk for HIV",
-        "logic_key": 79
+        "logic_key": 104
     },
     {
         "logics": [
@@ -1562,7 +1777,7 @@
         ],
         "dependentValue": "DAK, Urine dipstick",
         "dependent": "DAK, Urine test type",
-        "logic_key": 80
+        "logic_key": 105
     },
     {
         "logics": [
@@ -1574,7 +1789,55 @@
         ],
         "dependentValue": "DAK, Urine dipstick",
         "dependent": "DAK, Urine test type",
-        "logic_key": 81
+        "logic_key": 106
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Repeat diastolic blood pressure",
+                "value": 90.0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Urine test required",
+        "logic_key": 107
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Reason for coming to facility",
+                "value": "DAK, First antenatal care contact",
+                "operator": "="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Urine test required",
+        "logic_key": 108
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 26.0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Urine test required",
+        "logic_key": 109
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Gestational age",
+                "value": 34.0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Urine test required",
+        "logic_key": 110
     },
     {
         "logics": [
@@ -1586,7 +1849,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, High risk for HIV",
-        "logic_key": 82
+        "logic_key": 111
     },
     {
         "logics": [
@@ -1598,7 +1861,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, TB screening recommended",
-        "logic_key": 83
+        "logic_key": 112
     },
     {
         "logics": [
@@ -1610,7 +1873,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Preterm Birth",
-        "logic_key": 84
+        "logic_key": 113
     },
     {
         "logics": [
@@ -1622,7 +1885,7 @@
         ],
         "dependentValue": "DAK, HIV negative",
         "dependent": "DAK, HIV status",
-        "logic_key": 85
+        "logic_key": 114
     },
     {
         "logics": [
@@ -1639,7 +1902,7 @@
         ],
         "dependentValue": "DAK, Fever",
         "dependent": "DAK, Current symptoms",
-        "logic_key": 86
+        "logic_key": 115
     },
     {
         "logics": [
@@ -1652,7 +1915,7 @@
         ],
         "dependentValue": "DAK, Abnormal pulse rate",
         "dependent": "DAK, Current symptoms",
-        "logic_key": 87
+        "logic_key": 116
     },
     {
         "logics": [
@@ -1678,13 +1941,14 @@
             },
             {
                 "trigger": "DAK, Gestational age",
-                "value": 20,
+                "value":20,
                 "operator": "<"
             }
+
         ],
         "dependentValue": true,
         "dependent": "DAK, Chronic Hypertension",
-        "logic_key": 88
+        "logic_key": 121
     },
     {
         "logics": [
@@ -1710,13 +1974,13 @@
             },
             {
                 "trigger": "DAK, Gestational age",
-                "value": 20,
+                "value":20,
                 "operator": "<"
             }
         ],
         "dependentValue": true,
         "dependent": "DAK, Chronic Hypertension",
-        "logic_key": 89
+        "logic_key": 122
     },
     {
         "logics": [
@@ -1728,7 +1992,19 @@
         ],
         "dependentValue": "DAK, HIV positive",
         "dependent": "DAK, HIV status",
-        "logic_key": 90
+        "logic_key": 125
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Existing chronic health conditions",
+                "value": "DAK, HIV positive",
+                "operator": "="
+            }
+        ],
+        "dependentValue": false,
+        "dependent": "DAK, HIV test required",
+        "logic_key": 126
     },
     {
         "logics": [
@@ -1745,7 +2021,7 @@
         ],
         "dependentValue": false,
         "dependent": "DAK, IPTp-SP dose 1 provided",
-        "logic_key": 91
+        "logic_key": 127
     },
     {
         "logics": [
@@ -1762,7 +2038,7 @@
         ],
         "dependentValue": false,
         "dependent": "DAK, IPTp-SP dose 2 provided",
-        "logic_key": 92
+        "logic_key": 128
     },
     {
         "logics": [
@@ -1779,7 +2055,7 @@
         ],
         "dependentValue": false,
         "dependent": "DAK, IPTp-SP dose 3 provided",
-        "logic_key": 93
+        "logic_key": 129
     },
     {
         "logics": [
@@ -1801,7 +2077,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 94
+        "logic_key": 130
     },
     {
         "logics": [
@@ -1823,7 +2099,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 95
+        "logic_key": 131
     },
     {
         "logics": [
@@ -1845,7 +2121,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 96
+        "logic_key": 132
     },
     {
         "logics": [
@@ -1867,7 +2143,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 97
+        "logic_key": 133
     },
     {
         "logics": [
@@ -1889,7 +2165,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 98
+        "logic_key": 134
     },
     {
         "logics": [
@@ -1911,7 +2187,7 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 99
+        "logic_key": 135
     },
     {
         "logics": [
@@ -1933,10 +2209,15 @@
         ],
         "dependentValue": true,
         "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 100
+        "logic_key": 136
     },
     {
         "logics": [
+            {
+                "trigger": "DAK, Ultrasound required",
+                "value": true,
+                "operator": "="
+            },
             {
                 "trigger": "DAK, Reason for coming to facility",
                 "value": "DAK, First antenatal care contact",
@@ -1960,7 +2241,7 @@
         "conditionType": "either",
         "dependentValue": true,
         "dependent": "DAK, Suggested Investigations",
-        "logic_key": 101
+        "logic_key": 137
     },
     {
         "logics": [
@@ -1986,7 +2267,7 @@
         "conditionType": "either",
         "dependentValue": true,
         "dependent": "DAK, ANC Contact Schedule Needed",
-        "logic_key": 102
+        "logic_key": 138
     },
     {
         "logics": [
@@ -1998,20 +2279,21 @@
         ],
         "dependentValue": "DAK, HIV-inconclusive",
         "dependent": "DAK, HIV status",
-        "logic_key": 103
+        "logic_key": 139
     },
     {
         "logics": [
-            {
-                "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
-                "value": 126.0,
-                "operator": ">="
-            },
             {
                 "trigger": "DAK, Fasting Blood sugar test result",
                 "value": 126.0,
                 "operator": ">="
             },
+            {
+                "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+                "value": 126.0,
+                "operator": ">="
+            },
+         
             {
                 "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u2013 1 hour test result",
                 "value": 200.0,
@@ -2031,7 +2313,7 @@
         "dependentValue": "DAK, Positive",
         "conditionType": "either",
         "dependent": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-        "logic_key": 104
+        "logic_key": 140
     },
     {
         "logics": [
@@ -2064,7 +2346,7 @@
         "dependentValue": "DAK, Negative",
         "conditionType": "either",
         "dependent": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-        "logic_key": 105
+        "logic_key": 141
     },
     {
         "logics": [
@@ -2096,7 +2378,7 @@
         "dependentValue": "DAK, Positive",
         "conditionType": "either",
         "dependent": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-        "logic_key": 106
+        "logic_key": 142
     },
     {
         "logics": [
@@ -2128,7 +2410,7 @@
         "dependentValue": "DAK, Negative",
         "conditionType": "either",
         "dependent": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-        "logic_key": 107
+        "logic_key": 143
     },
     {
         "logics": [
@@ -2140,7 +2422,7 @@
         ],
         "dependentValue": "DAK, Reduced amniotic fluid level",
         "dependent": "DAK, Amniotic fluid level",
-        "logic_key": 108
+        "logic_key": 144
     },
     {
         "logics": [
@@ -2153,7 +2435,7 @@
         ],
         "dependentValue": "DAK, Normal amniotic fluid level",
         "dependent": "DAK, Amniotic fluid level",
-        "logic_key": 109
+        "logic_key": 145
     },
     {
         "logics": [
@@ -2165,7 +2447,7 @@
         ],
         "dependentValue": "DAK, Increased amniotic fluid level",
         "dependent": "DAK, Amniotic fluid level",
-        "logic_key": 110
+        "logic_key": 146
     },
     {
         "logics": [
@@ -2237,7 +2519,7 @@
         "action": true,
         "conditionType": "deepAnalysis",
         "dependent": "DAK, Diabetes risk",
-        "logic_key": 111
+        "logic_key": 147
     },
     {
         "logics": [
@@ -2249,7 +2531,7 @@
         ],
         "dependentValue": "DAK, Bradycardia",
         "dependent": "DAK, Cardiac exam result",
-        "logic_key": 112
+        "logic_key": 148
     },
     {
         "logics": [
@@ -2261,7 +2543,7 @@
         ],
         "dependentValue": "DAK, Tachycardia",
         "dependent": "DAK, Cardiac exam result",
-        "logic_key": 113
+        "logic_key": 149
     },
     {
         "logics": [
@@ -2273,7 +2555,7 @@
         ],
         "dependentValue": "DAK, Bradypnea",
         "dependent": "DAK, Respiratory exam result",
-        "logic_key": 114
+        "logic_key": 150
     },
     {
         "logics": [
@@ -2285,31 +2567,31 @@
         ],
         "dependentValue": "DAK, Tachypnea",
         "dependent": "DAK, Respiratory exam result",
-        "logic_key": 115
+        "logic_key": 151
     },
     {
         "logics": [
             {
                 "trigger": "DAK, Number of caesarian sections",
-                "value": 0,
+                "value": 1,
                 "operator": ">"
             }
         ],
         "dependentValue": "DAK, Caesarean section delivery",
         "dependent": "DAK, Past pregnancy history",
-        "logic_key": 116
+        "logic_key": 152
     },
     {
         "logics": [
             {
                 "trigger": "DAK, Number of miscarriages or abortions",
-                "value": 0,
+                "value": 1,
                 "operator": ">"
             }
         ],
         "dependentValue": "DAK, Abortion",
         "dependent": "DAK, Past pregnancy history",
-        "logic_key": 117
+        "logic_key": 153
     },
     {
         "logics": [
@@ -2335,13 +2617,14 @@
             },
             {
                 "trigger": "DAK, Gestational age",
-                "value": 20,
+                "value":20,
                 "operator": ">"
             }
+
         ],
         "dependentValue": true,
         "dependent": "DAK, Gestational Hypertension",
-        "logic_key": 118
+        "logic_key": 154
     },
     {
         "logics": [
@@ -2367,13 +2650,13 @@
             },
             {
                 "trigger": "DAK, Gestational age",
-                "value": 20,
+                "value":20,
                 "operator": ">"
             }
         ],
         "dependentValue": true,
         "dependent": "DAK, Gestational Hypertension",
-        "logic_key": 119
+        "logic_key": 155
     },
     {
         "logics": [
@@ -2385,6 +2668,6 @@
         ],
         "dependentValue": "DAK, Preterm delivery",
         "dependent": "DAK, Past pregnancy history",
-        "logic_key": 120
+        "logic_key": 156
     }
 ]
