@@ -3362,52 +3362,7 @@
     "annotation": "Counselling:\n\u2013 Provide post-testing Counselling\n\u2013 Refer to hospital",
     "action_key": 236
   },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Pregnancy confirmed",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Syphilis test type",
-        "value": "DAK, Rapid plasma reagin (RPR) test",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Syphilis test result",
-        "value": "DAK, Syphilis positive",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Syphilis counselling and treatment",
-    "action": "Conduct syphilis treatment and Counselling",
-    "annotation": "Provide treatment according to the clinical phase of syphilis:\n\u2013 If primary or secondary stage of syphilis, give single dose of benzathine penicillin 2,400,000 IU\n\u2013 If late or unknown stage of syphilis, give one dose of benzathine penicillin 2,400,000 IU weekly for 3 consecutive weeks\n\u2013 Advise on treating partner\n\u2013 Encourage HIV testing and Counselling\n\u2013 Reinforce use of condoms\n\u2013 Proceed to further testing with an RPR or VDRL test after 6 months",
-    "action_key": 237
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Pregnancy confirmed",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "key": "DAK, Syphilis test type",
-        "value": "DAK, VDRL",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Syphilis test result",
-        "value": "DAK, Syphilis positive",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Syphilis counselling and treatment",
-    "action": "Conduct syphilis treatment and Counselling",
-    "annotation": "Provide treatment according to the clinical phase of syphilis:\n\u2013 If primary or secondary stage of syphilis, give single dose of benzathine penicillin 2,400,000 IU\n\u2013 If late or unknown stage of syphilis, give one dose of benzathine penicillin 2,400,000 IU weekly for 3 consecutive weeks\n\u2013 Advise on treating partner\n\u2013 Encourage HIV testing and Counselling\n\u2013 Reinforce use of condoms\n\u2013 Proceed to further testing with an RPR or VDRL test after 6 months",
-    "action_key": 238
-  },
+
   {
     "conditions": [
       {
@@ -6073,19 +6028,6 @@
   {
     "conditions": [
       {
-        "key": "DAK, Syphilis test result",
-        "value": "DAK, Syphilis positive",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Syphilis counselling and treatment",
-    "action": "Treatment for syphilis check",
-    "annotation": "The health worker checking whether the woman is taking her medication for syphilis",
-    "action_key": 401
-  },
-  {
-    "conditions": [
-      {
         "key": "DAK, High risk for HIV",
         "value": true,
         "operator": "="
@@ -6132,19 +6074,7 @@
     "annotation": "Rule out intestinal infections (and malaria and treat accordingly) , Counsel on compliance with treatment,Reassess at subsequent antenatal visit (4-6 weeks). If anemia persists, refer to hospital. ",
     "action_key": 407
   },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Syphilis test result",
-        "value": "DAK, Syphilis positive",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Syphilis counselling and treatment",
-    "action": "Syphilis counselling and treatment",
-    "annotation": "In low prevalence areas, if a woman tests positive for syphilis simply provide treatment. In high prevalence areas, if a woman tests positive on on-site rapid syphilis test (RST), provide first dose of treatment. Then run rapid plasma reagin (RPR) test. If RPR is also positive, provide treatment according to duration of syphilis.",
-    "action_key": 410
-  },
+
   {
     "conditions": [
       {
@@ -7339,7 +7269,7 @@
     "conditions": [
       {
         "key": "DAK, Tetanus Diphtheria Vaccine (TD)",
-        "orValues": [ "DAK, Unknown", "DAK, No doses"],
+        "orValues": [ "DAK, Unknown", "DAK, No doses" ],
         "operator": "OR"
       }
     ],
@@ -7450,71 +7380,71 @@
     "annotation": "Ensure that blood pressure is within the normal range. Rule out renal, cardiovascular, and other medical conditions",
     "action_key": 488
   },
-    {
-      "conditions": [
-        {
-          "key": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
-          "value": 126.0,
-          "operator": ">="
-        }
-      ],
-      "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-      "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
-      "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
-      "action_key": 489
-    },
-    {
-      "conditions": [
-        {
-          "key": "DAK, Fasting Blood sugar test result",
-          "value": 126.0,
-          "operator": ">="
-        }
-      ],
-      "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-      "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
-      "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
-      "action_key": 490
-    },
-    {
-      "conditions": [
-        {
-          "key": "DAK, 75 g oral glucose tolerance test (OGTT) – 1 hour test result",
-          "value": 200.0,
-          "operator": ">="
-        }
-      ],
-      "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-      "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
-      "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
-      "action_key": 491
-    },
-    {
-      "conditions": [
-        {
-          "key": "DAK, 75 g oral glucose tolerance test (OGTT) – 2 hours test result",
-          "value": 200.0,
-          "operator": ">="
-        }
-      ],
-      "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-      "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
-      "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
-      "action_key": 492
-    },
-    {
-      "conditions": [
-        {
-          "key": "DAK, Random blood sugar test result",
-          "value": 200.0,
-          "operator": ">="
-        }
-      ],
-      "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-      "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
-      "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
-      "action_key": 493
-    },
+  {
+    "conditions": [
+      {
+        "key": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+        "value": 126.0,
+        "operator": ">="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
+    "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+    "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
+    "action_key": 489
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Fasting Blood sugar test result",
+        "value": 126.0,
+        "operator": ">="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
+    "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+    "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
+    "action_key": 490
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, 75 g oral glucose tolerance test (OGTT) – 1 hour test result",
+        "value": 200.0,
+        "operator": ">="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
+    "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+    "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
+    "action_key": 491
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, 75 g oral glucose tolerance test (OGTT) – 2 hours test result",
+        "value": 200.0,
+        "operator": ">="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
+    "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+    "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
+    "action_key": 492
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Random blood sugar test result",
+        "value": 200.0,
+        "operator": ">="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
+    "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+    "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
+    "action_key": 493
+  },
   {
     "conditions": [
       {
@@ -7748,6 +7678,19 @@
     "action": "Counselling on malaria prevention",
     "annotation": "Sleeping under an insecticide-treated bednet and the importance of seeking care and getting treatment as soon as she has any symptoms. \n- Wear loose-fitting long-sleeved closes",
     "action_key": 459
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Syphilis test result",
+        "value": "DAK, Syphilis positive",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Syphilis counselling and treatment",
+    "action": "Syphilis counselling and treatment",
+    "annotation": "Provide treatment according to the clinical phase of syphilis: – If primary or secondary stage of syphilis, give single dose of benzathine penicillin 2,400,000 IU – If late or unknown stage of syphilis, give one dose of benzathine penicillin 2,400,000 IU weekly for 3 consecutive weeks – Advise on treating partner – Encourage HIV testing and counselling – Reinforce use of condoms – Proceed to further testing with an RPR or VDRL test after 6 months",
+    "action_key": 460
   }
 
 
