@@ -3,9 +3,9 @@
     "conceptName": "DAK, Height",
     "operator": "beyond, <, <",
     "minValue": 40,
-    "maxValue": 215,
+      "maxValue": 215,
     "type": "restrict",
-    "message": "Possible value of height ranges from 40 cm to 215 cm"
+      "message": "Possible value of height ranges from 40 cm to 215 cm"
   },
   {
     "conceptName": "DAK, Current weight",
@@ -29,7 +29,7 @@
     "minValue": 1,
     "maxValue": 15,
     "type": "restrict",
-    "message": "Possible value of of Number of pregnancies gravida ranges from 1 to 15"
+      "message": "Possible value of of Number of pregnancies gravida ranges from 1 to 15"
   },
   {
       "conceptName": "DAK, Number of miscarriages or abortions",
@@ -37,7 +37,7 @@
       "minValue": 0,
       "maxValue": "DAK, Number of pregnancies gravida",
     "type": "restrict",
-      "message": "Number of miscarriages and/or abortions should be less than Number of pregnancies gravida"
+        "message": "Number of miscarriages and/or abortions should be less than Number of pregnancies gravida"
   },
   {
     "conceptName": "DAK, Number of live births",
@@ -45,7 +45,7 @@
     "minValue": 0,
     "maxValue": "DAK, Number of pregnancies gravida - DAK, Number of miscarriages or abortions",
     "type": "restrict",
-    "message": "Number of live births should be less than difference of Number of pregnancies gravida and Number of miscarriages or abortions"
+      "message": "Number of live births should be less than difference of Number of pregnancies gravida and Number of miscarriages or abortions"
   },
   {
     "conceptName": "DAK, Number of stillbirths",
@@ -53,7 +53,7 @@
     "minValue": 0,
     "maxValue": "DAK, Number of pregnancies gravida - DAK, Number of miscarriages or abortions - DAK, Number of live births",
     "type": "restrict",
-    "message": "Number of stillbirths should be less than than diffrence of Number of pregnancies gravida and Number of miscarriages or abortions and Number of live births"
+      "message": "Number of stillbirths should be less than than diffrence of Number of pregnancies gravida and Number of miscarriages or abortions and Number of live births"
   },
   {
     "conceptName": "DAK, Number of caesarian sections",
@@ -76,16 +76,16 @@
     "operator": "beyond, <=, <=",
     "minValue": 60,
     "maxValue": 280,
-    "type": "restrict",
-    "message": "Possible value of Repeat systolic blood pressure ranges from 60mmHg to 280mmHg."
-  },
-  {
-    "conceptName": "DAK, Repeat systolic blood pressure after 15 min",
-    "operator": "beyond, <=, <=",
-    "minValue": 60,
-    "maxValue": 280,
-    "type": "restrict",
-    "message": "Possible value of Repeat systolic blood pressure ranges from 60mmHg to 280mmHg."
+      "type": "restrict",
+      "message": "Possible value of Repeat systolic blood pressure ranges from 60mmHg to 280mmHg."
+    },
+    {
+      "conceptName": "DAK, Repeat systolic blood pressure after 15 min",
+      "operator": "beyond, <=, <=",
+      "minValue": 60,
+      "maxValue": 280,
+      "type": "restrict",
+      "message": "Possible value of Repeat systolic blood pressure ranges from 60mmHg to 280mmHg."
   },
   {
     "conceptName": "DAK, Diastolic blood pressure",
@@ -100,15 +100,15 @@
     "operator": "beyond, <=, <=",
     "minValue": 40,
     "maxValue": 200,
-    "type": "restrict",
-    "message": "Possible value of Repeat diastolic blood pressure ranges from 40mmHg to 200mmHg."
-  },
-   {
-    "conceptName": "DAK, Repeat diastolic blood pressure after 15 min",
-    "operator": "beyond, <=, <=",
-    "minValue": 40,
-    "maxValue": 200,
-    "type": "restrict",
+      "type": "restrict",
+      "message": "Possible value of Repeat diastolic blood pressure ranges from 40mmHg to 200mmHg."
+    },
+     {
+      "conceptName": "DAK, Repeat diastolic blood pressure after 15 min",
+      "operator": "beyond, <=, <=",
+      "minValue": 40,
+      "maxValue": 200,
+      "type": "restrict",
     "message": "Possible value of Repeat diastolic blood pressure ranges from 40mmHg to 200mmHg."
   },
   {
@@ -117,7 +117,7 @@
     "minValue": 25,
     "maxValue": 46,
     "type": "restrict",
-    "message": "Possible value of of Body temperature ranges from 25\u00B0c to 46\u00B0c."
+      "message": "Possible value of of Body temperature ranges from 25\u00B0c to 46\u00B0c."
   },
   {
     "conceptName": "DAK, Pulse rate",
