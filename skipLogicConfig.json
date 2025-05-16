@@ -6556,11 +6556,6 @@
               "DAK, Renal disease"
             ],
             "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 12.0,
-            "operator": ">="
           }
         ]
       },
@@ -6573,11 +6568,6 @@
               "DAK, Convulsions"
             ],
             "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 12.0,
-            "operator": ">="
           }
         ]
       },
@@ -6586,11 +6576,6 @@
           {
             "trigger": "DAK, Number of fetuses",
             "value": 2.0,
-            "operator": ">="
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 12.0,
             "operator": ">="
           }
         ]
@@ -9486,5 +9471,18 @@
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Repeat diastolic blood pressure",
     "logic_key": 618
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Respiratory rate",
+        "value": false,
+        "operator": "!="
+      }
+    ],
+    "action": "hide",
+    "parent":"DAK, Respiratory exam result",
+    "dependent": "DAK, Respiratory exam not done",
+    "logic_key": 619
   }
 ]

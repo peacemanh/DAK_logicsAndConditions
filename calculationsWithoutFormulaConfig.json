@@ -2242,7 +2242,7 @@
     {
         "logics": [
             {
-                "trigger": "DAK, Pulse rate",
+                "trigger": "DAK, Second pulse rate",
                 "value": 60,
                 "operator": "<"
             }
@@ -2254,7 +2254,7 @@
     {
         "logics": [
             {
-                "trigger": "DAK, Pulse rate",
+                "trigger": "DAK, Second pulse rate",
                 "value": 100,
                 "operator": ">"
             }

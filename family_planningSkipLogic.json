@@ -804,20 +804,8 @@
             }
         ],
         "action": "hide",
-        "dependent": "DAK, Blood pressure cannot be taken",
-        "logic_key": 53
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood pressure cannot be taken",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "action": "show",
         "dependent": "DAK, Reason for not taking blood pressure form",
-        "logic_key": 54
+        "logic_key": 53
     },
     {
         "logics": [

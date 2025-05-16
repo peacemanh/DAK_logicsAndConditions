@@ -1635,11 +1635,6 @@
   {
     "conditions": [
       {
-        "key": "DAK, Gestational age",
-        "value": 37,
-        "operator": "<"
-      },
-      {
         "key": "DAK, Pelvic exam result (visual)",
         "value": "DAK, Evidence of amniotic fluid",
         "operator": "="
@@ -1780,23 +1775,6 @@
     "action": "Refer to a hospital if necessary",
     "annotation": "Consider cervical cancer and refer for further evaluation",
     "action_key": 148
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Pelvic exam result (visual)",
-        "value": "DAK, Evidence of amniotic fluid",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 37.0,
-        "operator": "<"
-      }
-    ],
-    "action": "Refer urgently to a hospital",
-    "annotation": "Woman should be referred urgently if there is evidence of amniotic fluid, which could indicate the start of labour",
-    "action_key": 149
   },
   {
     "conditions": [
@@ -2043,27 +2021,22 @@
     "conditions": [
       {
         "key": "DAK, Repeat systolic blood pressure",
-        "value": 140.0,
-        "operator": ">="
+        "minValue": 140.0,
+        "maxValue": 160.0,
+        "operator": "between, <=, <"
+      },
+       {
+        "key": "DAK, Repeat diastolic blood pressure",
+        "minValue": 90.0,
+        "maxValue": 110.0,
+        "operator": "between, <=, <"
       }
     ],
     "displayPoint": "DAK, Urine dipstick result – protein",
+     "conditionType":"either",
     "action": "Do urine dipstick test for protein",
     "annotation": "Given high values (SBP \u2265 140 or DBP \u2265 90) upon second measure, urine dipstick test should be done to check for protein in the urine, a symptom of pre-eclampsia",
     "action_key": 164
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Repeat diastolic blood pressure",
-        "value": 90.0,
-        "operator": ">="
-      }
-    ],
-    "displayPoint": "DAK, Urine test conducted",
-    "action": "Do urine dipstick test for protein",
-    "annotation": "Given high values (SBP \u2265 140 or DBP \u2265 90) upon second measure, urine dipstick test should be done to check for protein in the urine, a symptom of pre-eclampsia",
-    "action_key": 165
   },
   {
     "conditions": [
@@ -3792,10 +3765,15 @@
         "key": "DAK, Number of fetuses",
         "value": 2.0,
         "operator": ">="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<"
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk",
     "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide Counselling",
     "action_key": 262
   },
@@ -3805,10 +3783,15 @@
         "key": "DAK, Past pregnancy history",
         "value": "DAK, Pre-eclampsia",
         "operator": "="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<"
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk",
     "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide Counselling",
     "action_key": 263
   },
@@ -3818,10 +3801,15 @@
         "key": "DAK, Past pregnancy history",
         "value": "DAK, Eclampsia",
         "operator": "="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<"
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk",
     "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide Counselling",
     "action_key": 264
   },
@@ -3831,10 +3819,15 @@
         "key": "DAK, Past pregnancy history",
         "value": "DAK, Convulsions",
         "operator": "="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<"
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk",
     "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide Counselling",
     "action_key": 265
   },
@@ -3844,10 +3837,15 @@
         "key": "DAK, Existing chronic health conditions",
         "value": "DAK, Autoimmune disease",
         "operator": "="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<"
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk",
     "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide Counselling",
     "action_key": 266
   },
@@ -3857,10 +3855,15 @@
         "key": "DAK, Existing chronic health conditions",
         "value": "DAK, Diabetes",
         "operator": "="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<"
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk",
     "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide Counselling",
     "action_key": 267
   },
@@ -3870,10 +3873,15 @@
         "key": "DAK, Existing chronic health conditions",
         "value": "DAK, Chronic Hypertensions",
         "operator": "="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<"
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk",
     "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide Counselling",
     "action_key": 268
   },
@@ -3883,10 +3891,15 @@
         "key": "DAK, Existing chronic health conditions",
         "value": "DAK, Renal disease",
         "operator": "="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<"
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk",
     "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide Counselling",
     "action_key": 269
   },
@@ -3904,8 +3917,8 @@
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk '\"Amount of daily aspirin prescribed until delivery\" = 81mg",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
+    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 270
   },
   {
@@ -3922,8 +3935,8 @@
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk \"Amount of daily aspirin prescribed until delivery\" = 81mg",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 13 weeks gestation) for pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
+    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 271
   },
   {
@@ -3940,8 +3953,8 @@
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 14 weeks gestation) for pre-eclampsia risk",
+   "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
+    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 272
   },
   {
@@ -3958,8 +3971,8 @@
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 15 weeks gestation) for pre-eclampsia risk",
+   "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
+    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 273
   },
   {
@@ -3976,8 +3989,8 @@
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 16 weeks gestation) for pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
+    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 274
   },
   {
@@ -3994,8 +4007,8 @@
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 17 weeks gestation) for pre-eclampsia risk",
+  "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
+    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 275
   },
   {
@@ -4012,8 +4025,8 @@
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 18 weeks gestation) for pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
+    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 276
   },
   {
@@ -4030,8 +4043,8 @@
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 19 weeks gestation) for pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
+    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 277
   },
   {
@@ -4053,170 +4066,9 @@
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20132 g until delivery for pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
+    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 278
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Past pregnancy history",
-        "value": "DAK, Pre-eclampsia",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": ">="
-      },
-      {
-        "key": "Population with low dietary calcium intake",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20133 g until delivery for pre-eclampsia risk",
-    "action_key": 279
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Past pregnancy history",
-        "value": "DAK, Eclampsia",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": ">="
-      },
-      {
-        "key": "Population with low dietary calcium intake",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20134 g until delivery for pre-eclampsia risk",
-    "action_key": 280
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Past pregnancy history",
-        "value": "DAK, Convulsions",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": ">="
-      },
-      {
-        "key": "Population with low dietary calcium intake",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20135 g until delivery for pre-eclampsia risk",
-    "action_key": 281
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Existing chronic health conditions",
-        "value": "DAK, Autoimmune disease",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": ">="
-      },
-      {
-        "key": "Population with low dietary calcium intake",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20136 g until delivery for pre-eclampsia risk",
-    "action_key": 282
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Existing chronic health conditions",
-        "value": "DAK, Diabetes",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": ">="
-      },
-      {
-        "key": "Population with low dietary calcium intake",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20137 g until delivery for pre-eclampsia risk",
-    "action_key": 283
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Existing chronic health conditions",
-        "value": "DAK, Chronic Hypertension",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": ">="
-      },
-      {
-        "key": "Population with low dietary calcium intake",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20138 g until delivery for pre-eclampsia risk",
-    "action_key": 284
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Existing chronic health conditions",
-        "value": "DAK, Renal disease",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": ">="
-      },
-      {
-        "key": "Population with low dietary calcium intake",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20139 g until delivery for pre-eclampsia risk",
-    "action_key": 285
   },
   {
     "conditions": [
@@ -7561,8 +7413,9 @@
     "conditions": [
       {
         "key": "DAK, Week difference FH and GA",
-        "value": 3,
-        "operator": "<="
+        "minvalue": 0,
+        "maxValue":3,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Small for gestational age utrus",
@@ -7573,8 +7426,9 @@
     "conditions": [
       {
         "key": "DAK, Week difference FH and GA",
-        "value": 3,
-        "operator": ">"
+        "minvalue": 0,
+        "maxValue":-3,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Large for gestational age utrus",
@@ -7692,6 +7546,42 @@
     "action": "Syphilis counselling and treatment",
     "annotation": "Provide treatment according to the clinical phase of syphilis: – If primary or secondary stage of syphilis, give single dose of benzathine penicillin 2,400,000 IU – If late or unknown stage of syphilis, give one dose of benzathine penicillin 2,400,000 IU weekly for 3 consecutive weeks – Advise on treating partner – Encourage HIV testing and counselling – Reinforce use of condoms – Proceed to further testing with an RPR or VDRL test after 6 months",
     "action_key": 460
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Breast exam result",
+        "value": "DAK, Retracted Nipple",
+        "operator": "="
+      }
+    ],
+    "action": "Conduct further investigation and, if necessary, refer urgently to a hospital",
+    "annotation": "Woman's breast exam was abnormal and she should be referred to hospital for further investigation",
+    "action_key": 461
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Breast exam result",
+        "value": "DAK, Ulcer on the nipple",
+        "operator": "="
+      }
+    ],
+    "action": "Conduct further investigation and, if necessary, refer urgently to a hospital",
+    "annotation": "Woman's breast exam was abnormal and she should be referred to hospital for further investigation",
+    "action_key": 462
+  },
+   {
+    "conditions": [
+      {
+        "key": "DAK, Breast exam result",
+        "value": "DAK, Asymmetry",
+        "operator": "="
+      }
+    ],
+    "action": "Conduct further investigation and, if necessary, refer urgently to a hospital",
+    "annotation": "Woman's breast exam was abnormal and she should be referred to hospital for further investigation",
+    "action_key": 463
   }
 
 
