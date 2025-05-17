@@ -3179,7 +3179,7 @@
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Counselling conducted on hypertension",
+    "displayPoint": "DAK, Chronic Hypertensions",
     "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment",
     "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available",
     "action_key": 228
@@ -3202,10 +3202,15 @@
         "key": "DAK, Urine dipstick result \u2013 protein",
         "value": "DAK, +",
         "operator": "="
-      }
+      },
+       {
+            "key": "DAK, Gestational age",
+            "value": 20,
+            "operator": "<"
+       }
     ],
-    "displayPoint": "DAK, Counselling conducted on hypertension",
-    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment",
+    "displayPoint": "DAK, Chronic Hypertensions",
+    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment. ",
     "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 2 week or at next contact, refer to hospital or discuss case with the doctor, if available",
     "action_key": 229
   },
@@ -3227,10 +3232,15 @@
         "key": "DAK, Urine dipstick result \u2013 protein",
         "value": "DAK, +",
         "operator": "="
+      },
+       {
+            "key": "DAK, Gestational age",
+            "value": 20,
+            "operator": "<"
       }
     ],
-    "displayPoint": "DAK, Counselling conducted on hypertension",
-    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment",
+    "displayPoint": "DAK, Chronic Hypertensions",
+    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment.  ",
     "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 3 week or at next contact, refer to hospital or discuss case with the doctor, if available",
     "action_key": 230
   },
@@ -3252,10 +3262,15 @@
         "key": "DAK, Urine dipstick result \u2013 protein",
         "value": "DAK, Negative",
         "operator": "="
+      },
+       {
+            "key": "DAK, Gestational age",
+            "value": 20,
+            "operator": "<"
       }
     ],
-    "displayPoint": "DAK, Counselling conducted on hypertension",
-    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment",
+    "displayPoint": "DAK, Chronic Hypertensions",
+    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment.   ",
     "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 4 week or at next contact, refer to hospital or discuss case with the doctor, if available",
     "action_key": 231
   },
@@ -3277,10 +3292,15 @@
         "key": "DAK, Urine dipstick result \u2013 protein",
         "value": "DAK, Negative",
         "operator": "="
+      },
+       {
+            "key": "DAK, Gestational age",
+            "value": 20,
+            "operator": "<"
       }
     ],
-    "displayPoint": "DAK, Counselling conducted on hypertension",
-    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment",
+    "displayPoint": "DAK, Chronic Hypertensions",
+    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment.    ",
     "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 5 week or at next contact, refer to hospital or discuss case with the doctor, if available",
     "action_key": 232
   },
@@ -4047,29 +4067,7 @@
     "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 277
   },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Number of fetuses",
-        "value": 2.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": ">="
-      },
-      {
-        "key": "Population with low dietary calcium intake",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
-    "action_key": 278
-  },
+
   {
     "conditions": [
       {
@@ -5874,7 +5872,7 @@
       }
     ],
     "action": "Aspirin tablet check",
-    "annotation": "'After the woman has been prescribed aspirin, check whether the woman is still continuing to take her aspirin tablets",
+    "annotation": "After the woman has been prescribed aspirin, check whether the woman is still continuing to take her aspirin tablets",
     "action_key": 400
   },
   {
@@ -7394,7 +7392,7 @@
     "displayPoint": "DAK, Counselling on avoidance of harmful traditional practices",
     "action": "Conduct counselling on harmful traditional practices during pregnancy, childbirth, and postpartum",
     "annotation": null,
-    "action_key": 450
+    "action_key": 500
   },
   {
     "conditions": [
@@ -7407,7 +7405,7 @@
     "displayPoint": "DAK, seven-day antibiotic regimen for asymptomatic bacteriuria (ASB) not provided",
     "action": "Provide 7-day antibiotic regimen for asymptomatic bacteriuria (ASB)",
     "annotation": "A woman is considered to have ASB when she has no urinary symptoms but either positive gram staining or positive urine dipstick test (nitrites or leukocytes). A seven-day antibiotic regimen is recommended for all pregnant women with asymptomatic bacteriuria (ASB) to prevent persistent bacteriuria, preterm birth, and low birth weight.",
-    "action_key": 451
+    "action_key": 501
   },
   {
     "conditions": [
@@ -7505,7 +7503,7 @@
     "displayPoint": "DAK, Counselling conducted on HIV risk",
     "action": "Conduct counselling on HIV risk",
     "annotation": "If the woman lives in a setting with a generalized HIV epidemic, or her partner is HIV positive, or she injects drugs, or she is a sex worker, then she is at high risk for HIV – counselling should be given to provide prevention options.Provide comprehensive HIV prevention options: STI screening and treatment (syndromic and syphilis)Condom promotion.Risk reduction counselling Pre-exposure prophylaxis (PrEP) with emphasis on adherence Emphasize importance of follow-up ANC contact visits",
-    "action_key": 457
+    "action_key": 507
   },
   {
     "conditions": [
@@ -7519,7 +7517,7 @@
     "displayPoint": "DAK, seven-day antibiotic regimen for asymptomatic bacteriuria (ASB) not provided",
     "action": "Provide 7-day antibiotic regimen for asymptomatic bacteriuria (ASB)",
     "annotation": "A woman is considered to have ASB when she has no urinary symptoms but either positive gram staining or positive urine dipstick test (nitrites or leukocytes). A seven-day antibiotic regimen is recommended for all pregnant women with asymptomatic bacteriuria (ASB) to prevent persistent bacteriuria, preterm birth, and low birth weight.",
-    "action_key": 458
+    "action_key": 508
   },
   {
     "conditions": [
@@ -7532,7 +7530,7 @@
     "displayPoint": "DAK, Counselling conducted on malaria prevention",
     "action": "Counselling on malaria prevention",
     "annotation": "Sleeping under an insecticide-treated bednet and the importance of seeking care and getting treatment as soon as she has any symptoms. \n- Wear loose-fitting long-sleeved closes",
-    "action_key": 459
+    "action_key": 509
   },
   {
     "conditions": [
@@ -7545,7 +7543,7 @@
     "displayPoint": "DAK, Syphilis counselling and treatment",
     "action": "Syphilis counselling and treatment",
     "annotation": "Provide treatment according to the clinical phase of syphilis: – If primary or secondary stage of syphilis, give single dose of benzathine penicillin 2,400,000 IU – If late or unknown stage of syphilis, give one dose of benzathine penicillin 2,400,000 IU weekly for 3 consecutive weeks – Advise on treating partner – Encourage HIV testing and counselling – Reinforce use of condoms – Proceed to further testing with an RPR or VDRL test after 6 months",
-    "action_key": 460
+    "action_key": 510
   },
   {
     "conditions": [
@@ -7557,7 +7555,7 @@
     ],
     "action": "Conduct further investigation and, if necessary, refer urgently to a hospital",
     "annotation": "Woman's breast exam was abnormal and she should be referred to hospital for further investigation",
-    "action_key": 461
+    "action_key": 511
   },
   {
     "conditions": [
@@ -7569,7 +7567,7 @@
     ],
     "action": "Conduct further investigation and, if necessary, refer urgently to a hospital",
     "annotation": "Woman's breast exam was abnormal and she should be referred to hospital for further investigation",
-    "action_key": 462
+    "action_key": 512
   },
    {
     "conditions": [
@@ -7581,8 +7579,126 @@
     ],
     "action": "Conduct further investigation and, if necessary, refer urgently to a hospital",
     "annotation": "Woman's breast exam was abnormal and she should be referred to hospital for further investigation",
-    "action_key": 463
+    "action_key": 513
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Systolic blood pressure",
+        "minValue": 140.0,
+        "maxValue": 160.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "key": "DAK, Repeat systolic blood pressure",
+        "minValue": 140.0,
+        "maxValue": 160.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "key": "DAK, Urine dipstick result \u2013 protein",
+        "value": "DAK, +",
+        "operator": "="
+      },
+      {
+            "key": "DAK, Gestational age",
+            "value": 20,
+            "operator": ">"
+      }
+    ],
+    "displayPoint": "DAK, Gestational Hypertension",
+    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment   ",
+    "annotation": "Woman has hypertension – SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher after 20 weeks of gestational age and no proteinuria.Advice to reduce workload and to rest. Advise on danger signsReassess at the next contact or in 1 week. If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available .Manage as an outpatient if GA is <36 weeks and if blood pressure is in mild range without the use of antihypertensive medications.Refer at ≥36 weeks of gestation",
+    "action_key": 514
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Diastolic blood pressure",
+        "minValue": 90.0,
+        "maxValue": 110.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "key": "DAK, Repeat diastolic blood pressure",
+        "minValue": 90.0,
+        "maxValue": 110.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "key": "DAK, Urine dipstick result \u2013 protein",
+        "value": "DAK, +",
+        "operator": "="
+      },
+       {
+            "key": "DAK, Gestational age",
+            "value": 20,
+            "operator": ">"
+          }
+    ],
+    "displayPoint": "DAK, Gestational Hypertension",
+    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment  ",
+    "annotation": "Woman has hypertension – SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher after 20 weeks of gestational age and no proteinuria.Advice to reduce workload and to rest. Advise on danger signsReassess at the next contact or in 1 week. If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available .Manage as an outpatient if GA is <36 weeks and if blood pressure is in mild range without the use of antihypertensive medications.Refer at ≥36 weeks of gestation",
+    "action_key": 515
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Systolic blood pressure",
+        "minValue": 140.0,
+        "maxValue": 160.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "key": "DAK, Repeat systolic blood pressure",
+        "minValue": 140.0,
+        "maxValue": 160.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "key": "DAK, Urine dipstick result \u2013 protein",
+        "value": "DAK, Negative",
+        "operator": "="
+      },
+      {
+            "key": "DAK, Gestational age",
+            "value": 20,
+            "operator": ">"
+          }
+    ],
+    "displayPoint": "DAK, Gestational Hypertensions",
+    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment ",
+    "annotation": "Woman has hypertension – SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher after 20 weeks of gestational age and no proteinuria.Advice to reduce workload and to rest. Advise on danger signsReassess at the next contact or in 1 week. If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available .Manage as an outpatient if GA is <36 weeks and if blood pressure is in mild range without the use of antihypertensive medications.Refer at ≥36 weeks of gestation",
+    "action_key": 516
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Diastolic blood pressure",
+        "minValue": 90.0,
+        "maxValue": 110.0,
+        "operator": "between, <=, <="
+      },
+      {
+        "key": "DAK, Repeat diastolic blood pressure",
+        "minValue": 90.0,
+        "maxValue": 110.0,
+        "operator": "between, <=, <="
+      },
+      {
+        "key": "DAK, Urine dipstick result \u2013 protein",
+        "value": "DAK, Negative",
+        "operator": "="
+      },
+       {
+            "key": "DAK, Gestational age",
+            "value": 20,
+            "operator": ">"
+      }
+    ],
+    "displayPoint": "DAK, Gestational Hypertension",
+    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment",
+    "annotation": "Woman has hypertension – SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher after 20 weeks of gestational age and no proteinuria.Advice to reduce workload and to rest. Advise on danger signsReassess at the next contact or in 1 week. If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available .Manage as an outpatient if GA is <36 weeks and if blood pressure is in mild range without the use of antihypertensive medications.Refer at ≥36 weeks of gestation",
+    "action_key": 517
   }
-
-
 ]
