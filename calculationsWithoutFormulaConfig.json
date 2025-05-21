@@ -1264,12 +1264,7 @@
             },
             {
                 "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
+                "value": "DAK, Positive",
                 "operator": "="
             }
         ],
@@ -1285,13 +1280,8 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
+                "value": "DAK, Positive",
                 "operator": "="
             }
         ],
@@ -1307,13 +1297,8 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
+                "value": "DAK, Positive",
                 "operator": "="
             }
         ],
@@ -1329,13 +1314,8 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
+                "value": "DAK, Positive",
                 "operator": "="
             }
         ],
@@ -1351,13 +1331,8 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
+                "value": "DAK, Positive",
                 "operator": "="
             }
         ],
@@ -1373,13 +1348,8 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
+                "value": "DAK, Positive",
                 "operator": "="
             }
         ],
@@ -1395,13 +1365,8 @@
                 "operator": "="
             },
             {
-                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
                 "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
+                "value": "DAK, Positive",
                 "operator": "="
             }
         ],
@@ -1790,12 +1755,7 @@
             },
             {
                 "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
+                "value": "DAK, Positive",
                 "operator": "="
             }
         ],
@@ -1812,12 +1772,7 @@
             },
             {
                 "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
+                "value": "DAK, Positive",
                 "operator": "="
             }
         ],
@@ -1834,12 +1789,7 @@
             },
             {
                 "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
+                "value": "DAK, Positive",
                 "operator": "="
             }
         ],
@@ -1856,12 +1806,7 @@
             },
             {
                 "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
+                "value": "DAK, Positive",
                 "operator": "="
             }
         ],
@@ -1878,12 +1823,7 @@
             },
             {
                 "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
+                "value": "DAK, Positive",
                 "operator": "="
             }
         ],
@@ -1900,12 +1840,7 @@
             },
             {
                 "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
+                "value": "DAK, Positive",
                 "operator": "="
             }
         ],
@@ -1922,12 +1857,7 @@
             },
             {
                 "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
+                "value": "DAK, Positive",
                 "operator": "="
             }
         ],

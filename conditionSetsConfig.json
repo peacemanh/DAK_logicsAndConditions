@@ -3850,158 +3850,52 @@
       },
       {
         "key": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-        "value": "DAK, Negative",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-        "value": "DAK, Negative",
+        "value": "DAK, Positive",
         "operator": "="
       }
     ],
     "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
     "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
     "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m2 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
-    "action_key": 286
+    "action_key": 278
   },
   {
     "conditions": [
       {
         "key": "DAK, Past pregnancy history",
-        "value": "DAK, Gestational diabetes mellitus",
-        "operator": "="
+        "orValues": ["DAK, Gestational diabetes mellitus","DAK, Macrosomia"],
+        "operator": "OR"
       },
       {
         "key": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-        "value": "DAK, Negative",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-        "value": "DAK, Negative",
+        "value": "DAK, Positive",
         "operator": "="
       }
     ],
     "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
     "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
     "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m3 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
-    "action_key": 287
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Past pregnancy history",
-        "value": "DAK, Macrosomia",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-        "value": "DAK, Negative",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-        "value": "DAK, Negative",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
-    "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
-    "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m4 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
-    "action_key": 288
+    "action_key": 279
   },
   {
     "conditions": [
       {
         "key": "DAK, Urine dipstick result \u2013 glucose",
-        "value": "DAK, ++",
+        "orValues": ["DAK, ++","DAK, +++","DAK, ++++","DAK, +"],
         "operator": "="
       },
       {
         "key": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-        "value": "DAK, Negative",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-        "value": "DAK, Negative",
+        "value": "DAK, Positive",
         "operator": "="
       }
     ],
     "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
     "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
     "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m5 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
-    "action_key": 289
+    "action_key": 280
   },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Urine dipstick result \u2013 glucose",
-        "value": "DAK, +++",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-        "value": "DAK, Negative",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-        "value": "DAK, Negative",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
-    "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
-    "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m6 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
-    "action_key": 290
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Urine dipstick result \u2013 glucose",
-        "value": "DAK, ++++",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-        "value": "DAK, Negative",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-        "value": "DAK, Negative",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
-    "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
-    "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m7 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
-    "action_key": 291
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Urine dipstick result \u2013 glucose",
-        "value": "DAK, +",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-        "value": "DAK, Negative",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-        "value": "DAK, Negative",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
-    "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
-    "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m8 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
-    "action_key": 292
-  },
+ 
   {
     "conditions": [
       {
@@ -7413,5 +7307,60 @@
     "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment if neccessay  ",
     "annotation": "Woman has hypertension – SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher after 20 weeks of gestational age and no proteinuria.Advice to reduce workload and to rest. Advise on danger signsReassess at the next contact or in 1 week. If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available .Manage as an outpatient if GA is <36 weeks and if blood pressure is in mild range without the use of antihypertensive medications.Refer at ≥36 weeks of gestation",
     "action_key": 515
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, BMI",
+        "value": 30.0,
+        "operator": ">="
+      },
+      {
+        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+        "value": "DAK, Positive",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
+    "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
+    "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m2 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
+    "action_key": 516
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Past pregnancy history",
+        "orValues": ["DAK, Gestational diabetes mellitus","DAK, Macrosomia"],
+        "operator": "OR"
+      },
+      {
+        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+        "value": "DAK, Positive",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
+    "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
+    "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m3 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
+    "action_key": 517
+  },
+
+  {
+    "conditions": [
+      {
+        "key": "DAK, Urine dipstick result \u2013 glucose",
+        "orValues": ["DAK, ++","DAK, +++","DAK, ++++","DAK, +"],
+        "operator": "OR"
+      },
+      {
+        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+        "value": "DAK, Positive",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
+    "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
+    "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m5 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
+    "action_key": 518
   }
 ]
