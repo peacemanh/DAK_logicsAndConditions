@@ -2733,174 +2733,7 @@
     "annotation": "Symptom(s) of severe pre-eclampsia! Refer urgently to hospital!\nWoman has hypertension. If she is experiencing a symptom of severe pre-eclampsia, then refer urgently to the hospital for further investigation and management.\n\nProcedure\n\u2013 Give Loading dose of magnsium sulphate\n\u2013 Give appropriate anti-hypertensives\n\u2013 Revise the birth plan \n\u2013 Refer urgently to hospital",
     "action_key": 211
   },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Systolic blood pressure",
-        "value": 140.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Repeat systolic blood pressure",
-        "value": 140.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Symptoms of severe pre-eclampsia",
-        "value": "DAK, No symptoms of severe pre-eclampsia",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, ++",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Severe pre-eclampsia",
-    "action": "Refer urgently to a hospital",
-    "annotation": "",
-    "action_key": 212
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Diastolic blood pressure",
-        "value": 90.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Repeat diastolic blood pressure",
-        "value": 90.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Symptoms of severe pre-eclampsia",
-        "value": "DAK, No symptoms of severe pre-eclampsia",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, ++",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Severe pre-eclampsia",
-    "action": "Refer urgently to a hospital",
-    "annotation": "",
-    "action_key": 213
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Systolic blood pressure",
-        "value": 140.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Repeat systolic blood pressure",
-        "value": 140.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Symptoms of severe pre-eclampsia",
-        "value": "DAK, No symptoms of severe pre-eclampsia",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, +++",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Severe pre-eclampsia",
-    "action": "Refer urgently to a hospital",
-    "annotation": "",
-    "action_key": 214
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Diastolic blood pressure",
-        "value": 90.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Repeat diastolic blood pressure",
-        "value": 90.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Symptoms of severe pre-eclampsia",
-        "value": "DAK, No symptoms of severe pre-eclampsia",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, +++",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Severe pre-eclampsia",
-    "action": "Refer urgently to a hospital",
-    "annotation": "",
-    "action_key": 215
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Systolic blood pressure",
-        "value": 140.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Repeat systolic blood pressure",
-        "value": 140.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Symptoms of severe pre-eclampsia",
-        "value": "DAK, No symptoms of severe pre-eclampsia",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, ++++",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Severe pre-eclampsia",
-    "action": "Refer urgently to a hospital",
-    "annotation": "",
-    "action_key": 216
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Diastolic blood pressure",
-        "value": 90.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Repeat diastolic blood pressure",
-        "value": 90.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Symptoms of severe pre-eclampsia",
-        "value": "DAK, No symptoms of severe pre-eclampsia",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, ++++",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Severe pre-eclampsia",
-    "action": "Refer urgently to a hospital",
-    "annotation": "",
-    "action_key": 217
-  },
+  
   {
     "conditions": [
       {
@@ -2956,7 +2789,7 @@
     ],
     "displayPoint": "DAK, Pre-eclampsia",
     "action": "Refer urgently to a hospital",
-    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 3+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
+    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 2+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
     "action_key": 219
   },
   {
@@ -2986,7 +2819,7 @@
     ],
     "displayPoint": "DAK, Pre-eclampsia",
     "action": "Refer urgently to a hospital",
-    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 4+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
+    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 2+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
     "action_key": 220
   },
   {
@@ -3016,7 +2849,7 @@
     ],
     "displayPoint": "DAK, Pre-eclampsia",
     "action": "Refer urgently to a hospital",
-    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 5+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
+    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 2+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
     "action_key": 221
   },
   {
@@ -3046,7 +2879,7 @@
     ],
     "displayPoint": "DAK, Pre-eclampsia",
     "action": "Refer urgently to a hospital",
-    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 6+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
+    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 5+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
     "action_key": 222
   },
   {
@@ -3076,7 +2909,7 @@
     ],
     "displayPoint": "DAK, Pre-eclampsia",
     "action": "Refer urgently to a hospital",
-    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 7+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
+    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 5+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
     "action_key": 223
   },
   {
@@ -3179,7 +3012,7 @@
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Chronic Hypertensions",
+    "displayPoint": "DAK, Chronic Hypertension",
     "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment",
     "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available",
     "action_key": 228
@@ -3200,8 +3033,8 @@
       },
       {
         "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, +",
-        "operator": "="
+        "orValues": ["DAK, +","DAK, Negative"],
+        "operator": "OR"
       },
        {
             "key": "DAK, Gestational age",
@@ -3209,7 +3042,7 @@
             "operator": "<"
        }
     ],
-    "displayPoint": "DAK, Chronic Hypertensions",
+    "displayPoint": "DAK, Chronic Hypertension",
     "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment. ",
     "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 2 week or at next contact, refer to hospital or discuss case with the doctor, if available",
     "action_key": 229
@@ -3228,10 +3061,10 @@
         "maxValue": 110.0,
         "operator": "between, <=, <"
       },
-      {
+     {
         "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, +",
-        "operator": "="
+        "orValues": ["DAK, +","DAK, Negative"],
+        "operator": "OR"
       },
        {
             "key": "DAK, Gestational age",
@@ -3239,70 +3072,10 @@
             "operator": "<"
       }
     ],
-    "displayPoint": "DAK, Chronic Hypertensions",
+    "displayPoint": "DAK, Chronic Hypertension",
     "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment.  ",
     "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 3 week or at next contact, refer to hospital or discuss case with the doctor, if available",
     "action_key": 230
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Systolic blood pressure",
-        "minValue": 140.0,
-        "maxValue": 160.0,
-        "operator": "between, <=, <"
-      },
-      {
-        "key": "DAK, Repeat systolic blood pressure",
-        "minValue": 140.0,
-        "maxValue": 160.0,
-        "operator": "between, <=, <"
-      },
-      {
-        "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, Negative",
-        "operator": "="
-      },
-       {
-            "key": "DAK, Gestational age",
-            "value": 20,
-            "operator": "<"
-      }
-    ],
-    "displayPoint": "DAK, Chronic Hypertensions",
-    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment.   ",
-    "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 4 week or at next contact, refer to hospital or discuss case with the doctor, if available",
-    "action_key": 231
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Diastolic blood pressure",
-        "minValue": 90.0,
-        "maxValue": 110.0,
-        "operator": "between, <=, <="
-      },
-      {
-        "key": "DAK, Repeat diastolic blood pressure",
-        "minValue": 90.0,
-        "maxValue": 110.0,
-        "operator": "between, <=, <="
-      },
-      {
-        "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, Negative",
-        "operator": "="
-      },
-       {
-            "key": "DAK, Gestational age",
-            "value": 20,
-            "operator": "<"
-      }
-    ],
-    "displayPoint": "DAK, Chronic Hypertensions",
-    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment.    ",
-    "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 5 week or at next contact, refer to hospital or discuss case with the doctor, if available",
-    "action_key": 232
   },
   {
     "conditions": [
@@ -7597,8 +7370,8 @@
       },
       {
         "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, +",
-        "operator": "="
+        "orValues": ["DAK, +","DAK, Negative"],
+        "operator": "OR"
       },
       {
             "key": "DAK, Gestational age",
@@ -7627,8 +7400,8 @@
       },
       {
         "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, +",
-        "operator": "="
+        "orValues": ["DAK, +","DAK, Negative"],
+        "operator": "OR"
       },
        {
             "key": "DAK, Gestational age",
@@ -7640,65 +7413,5 @@
     "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment  ",
     "annotation": "Woman has hypertension – SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher after 20 weeks of gestational age and no proteinuria.Advice to reduce workload and to rest. Advise on danger signsReassess at the next contact or in 1 week. If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available .Manage as an outpatient if GA is <36 weeks and if blood pressure is in mild range without the use of antihypertensive medications.Refer at ≥36 weeks of gestation",
     "action_key": 515
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Systolic blood pressure",
-        "minValue": 140.0,
-        "maxValue": 160.0,
-        "operator": "between, <=, <"
-      },
-      {
-        "key": "DAK, Repeat systolic blood pressure",
-        "minValue": 140.0,
-        "maxValue": 160.0,
-        "operator": "between, <=, <"
-      },
-      {
-        "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, Negative",
-        "operator": "="
-      },
-      {
-            "key": "DAK, Gestational age",
-            "value": 20,
-            "operator": ">"
-          }
-    ],
-    "displayPoint": "DAK, Gestational Hypertensions",
-    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment ",
-    "annotation": "Woman has hypertension – SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher after 20 weeks of gestational age and no proteinuria.Advice to reduce workload and to rest. Advise on danger signsReassess at the next contact or in 1 week. If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available .Manage as an outpatient if GA is <36 weeks and if blood pressure is in mild range without the use of antihypertensive medications.Refer at ≥36 weeks of gestation",
-    "action_key": 516
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Diastolic blood pressure",
-        "minValue": 90.0,
-        "maxValue": 110.0,
-        "operator": "between, <=, <="
-      },
-      {
-        "key": "DAK, Repeat diastolic blood pressure",
-        "minValue": 90.0,
-        "maxValue": 110.0,
-        "operator": "between, <=, <="
-      },
-      {
-        "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, Negative",
-        "operator": "="
-      },
-       {
-            "key": "DAK, Gestational age",
-            "value": 20,
-            "operator": ">"
-      }
-    ],
-    "displayPoint": "DAK, Gestational Hypertension",
-    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment",
-    "annotation": "Woman has hypertension – SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher after 20 weeks of gestational age and no proteinuria.Advice to reduce workload and to rest. Advise on danger signsReassess at the next contact or in 1 week. If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available .Manage as an outpatient if GA is <36 weeks and if blood pressure is in mild range without the use of antihypertensive medications.Refer at ≥36 weeks of gestation",
-    "action_key": 517
   }
 ]

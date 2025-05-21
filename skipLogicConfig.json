@@ -6270,62 +6270,6 @@
             "operator": "OR"
           }
         ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Systolic blood pressure",
-            "value": 160.0,
-            "operator": ">"
-          },
-          {
-            "trigger": "DAK, Repeat systolic blood pressure",
-            "value": 160.0,
-            "operator": ">"
-          },
-          {
-            "trigger": "DAK, Symptoms of severe pre-eclampsia",
-            "value": "DAK, No symptoms of severe pre-eclampsia",
-            "operator": "="
-          },
-          {
-            "trigger": "DAK, Urine dipstick result \u2013 protein",
-            "orValues": [
-              "DAK, ++",
-              "DAK, +++",
-              "DAK, ++++"
-            ],
-            "operator": "="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Diastolic blood pressure",
-            "value": 90.0,
-            "operator": ">="
-          },
-          {
-            "trigger": "DAK, Repeat diastolic blood pressure",
-            "value": 90.0,
-            "operator": ">="
-          },
-          {
-            "trigger": "DAK, Symptoms of severe pre-eclampsia",
-            "value": "DAK, No symptoms of severe pre-eclampsia",
-            "operator": "="
-          },
-          {
-            "trigger": "DAK, Urine dipstick result \u2013 protein",
-            "orValues": [
-              "DAK, ++",
-              "DAK, +++",
-              "DAK, ++++"
-            ],
-            "operator": "OR"
-          }
-        ]
       }
     ],
     "action": "show",
@@ -6629,6 +6573,11 @@
       {
         "rules": [
           {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": "<"
+          },
+          {
             "trigger": "DAK, Systolic blood pressure",
             "minValue": 140.0,
             "maxValue": 160.0,
@@ -6644,19 +6593,19 @@
             "trigger": "DAK, Urine dipstick result \u2013 protein",
             "orValues": [
               "DAK, +",
-              "DAK, None"
+              "DAK, Negative"
             ],
             "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 20,
-            "operator": "<"
           }
         ]
       },
       {
         "rules": [
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": "<"
+          },
           {
             "trigger": "DAK, Diastolic blood pressure",
             "minValue": 90.0,
@@ -6673,14 +6622,9 @@
             "trigger": "DAK, Urine dipstick result \u2013 protein",
             "orValues": [
               "DAK, +",
-              "DAK, None"
+              "DAK, Negative"
             ],
             "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 20,
-            "operator": "<"
           }
         ]
       }
@@ -7218,7 +7162,7 @@
             "trigger": "DAK, Urine dipstick result \u2013 protein",
             "orValues": [
               "DAK, +",
-              "DAK, None"
+              "DAK, Negative"
             ],
             "operator": "OR"
           },
@@ -7247,7 +7191,7 @@
             "trigger": "DAK, Urine dipstick result \u2013 protein",
             "orValues": [
               "DAK, +",
-              "DAK, None"
+              "DAK, Negative"
             ],
             "operator": "OR"
           },

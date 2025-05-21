@@ -1672,7 +1672,7 @@
                 "trigger": "DAK, Urine dipstick result \u2013 protein",
                 "orValues": [
                     "DAK, +",
-                    "DAK, None"
+                    "DAK, Negative"
                 ],
                 "operator": "OR"
             },
@@ -1704,7 +1704,7 @@
                 "trigger": "DAK, Urine dipstick result \u2013 protein",
                 "orValues": [
                     "DAK, +",
-                    "DAK, None"
+                    "DAK, Negative"
                 ],
                 "operator": "OR"
             },
