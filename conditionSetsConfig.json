@@ -3013,7 +3013,7 @@
       }
     ],
     "displayPoint": "DAK, Chronic Hypertension",
-    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment",
+    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment if neccessay",
     "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available",
     "action_key": 228
   },
@@ -3043,7 +3043,7 @@
        }
     ],
     "displayPoint": "DAK, Chronic Hypertension",
-    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment. ",
+    "action": "Conduct hypertension counselling and refer her for further evaluation and manegment if neccessay. ",
     "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 2 week or at next contact, refer to hospital or discuss case with the doctor, if available",
     "action_key": 229
   },
@@ -3073,7 +3073,7 @@
       }
     ],
     "displayPoint": "DAK, Chronic Hypertension",
-    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment.  ",
+    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment if neccessay.  ",
     "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 3 week or at next contact, refer to hospital or discuss case with the doctor, if available",
     "action_key": 230
   },
@@ -3177,7 +3177,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "action": "Conduct REQUIRED overt diabetes mellitus (DM) Counselling and Refer",
+    "action": "Conduct overt diabetes mellitus (DM) Counselling and Refer",
     "annotation": "\u2013 The woman has diabetes mellitus (DM) in pregnancy if her random plasma glucose level is 200 mg/dL or higher\n\u2013 Woman with hyperglycemia, reassert dietary intervention and refer to high-level care",
     "action_key": 242
   },
@@ -3208,7 +3208,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on anaemia",
-    "action": "Conduct REQUIRED anaemia Counselling",
+    "action": "Conduct anaemia Counselling",
     "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct Counselling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
     "action_key": 244
   },
@@ -3226,7 +3226,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on anaemia",
-    "action": "Conduct REQUIRED anaemia Counselling",
+    "action": "Conduct anaemia Counselling",
     "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct Counselling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
     "action_key": 245
   },
@@ -3245,7 +3245,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on anaemia",
-    "action": "Conduct REQUIRED anaemia Counselling",
+    "action": "Conduct anaemia Counselling",
     "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct Counselling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
     "action_key": 246
   },
@@ -3263,7 +3263,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on anaemia",
-    "action": "Conduct REQUIRED anaemia Counselling",
+    "action": "Conduct anaemia Counselling",
     "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct Counselling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
     "action_key": 247
   },
@@ -7013,7 +7013,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+    "action": "Conduct overt diabetes mellitus (DM) counselling and refer",
     "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
     "action_key": 489
   },
@@ -7026,7 +7026,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+    "action": "Conduct overt diabetes mellitus (DM) counselling and refer",
     "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
     "action_key": 490
   },
@@ -7039,7 +7039,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+    "action": "Conduct overt diabetes mellitus (DM) counselling and refer",
     "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
     "action_key": 491
   },
@@ -7052,7 +7052,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+    "action": "Conduct overt diabetes mellitus (DM) counselling and refer",
     "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
     "action_key": 492
   },
@@ -7065,7 +7065,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+    "action": "Conduct overt diabetes mellitus (DM) counselling and refer",
     "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
     "action_key": 493
   },
@@ -7079,7 +7079,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
-    "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counselling and refer",
+    "action": "Conduct gestational diabetes mellitus (GDM) counselling and refer",
     "annotation": "If the woman is diagnosed with GDM, provide treatment and counselling accordingly",
     "action_key": 494
   },
@@ -7093,7 +7093,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
-    "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counselling and refer",
+    "action": "Conduct gestational diabetes mellitus (GDM) counselling and refer",
     "annotation": "If the woman is diagnosed with GDM, provide treatment and counselling accordingly",
     "action_key": 495
   },
@@ -7107,7 +7107,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
-    "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counselling and refer",
+    "action": "Conduct gestational diabetes mellitus (GDM) counselling and refer",
     "annotation": "If the woman is diagnosed with GDM, provide treatment and counselling accordingly",
     "action_key": 496
   },
@@ -7121,7 +7121,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
-    "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counselling and refer",
+    "action": "Conduct gestational diabetes mellitus (GDM) counselling and refer",
     "annotation": "If the woman is diagnosed with GDM, provide treatment and counselling accordingly",
     "action_key": 497
   },
@@ -7380,7 +7380,7 @@
       }
     ],
     "displayPoint": "DAK, Gestational Hypertension",
-    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment   ",
+    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment if neccessay  ",
     "annotation": "Woman has hypertension – SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher after 20 weeks of gestational age and no proteinuria.Advice to reduce workload and to rest. Advise on danger signsReassess at the next contact or in 1 week. If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available .Manage as an outpatient if GA is <36 weeks and if blood pressure is in mild range without the use of antihypertensive medications.Refer at ≥36 weeks of gestation",
     "action_key": 514
   },
@@ -7410,7 +7410,7 @@
           }
     ],
     "displayPoint": "DAK, Gestational Hypertension",
-    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment  ",
+    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment if neccessay  ",
     "annotation": "Woman has hypertension – SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher after 20 weeks of gestational age and no proteinuria.Advice to reduce workload and to rest. Advise on danger signsReassess at the next contact or in 1 week. If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available .Manage as an outpatient if GA is <36 weeks and if blood pressure is in mild range without the use of antihypertensive medications.Refer at ≥36 weeks of gestation",
     "action_key": 515
   }
