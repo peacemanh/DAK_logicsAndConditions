@@ -3439,85 +3439,13 @@
     "logics": [
       {
         "trigger": "DAK, Respiratory exam result",
-        "value": "DAK, Dyspnoea",
-        "operator": "="
+        "orValues": ["DAK, Dyspnoea","DAK, Cough","DAK, Bradypnea","DAK, Tachypnea","DAK, Wheezing","DAK, Rales","DAK, Other"],
+        "operator": "OR"
       }
     ],
     "action": "show",
     "dependent": "DAK, Oxygen Saturation",
     "logic_key": 275
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Respiratory exam result",
-        "value": "DAK, Cough",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Oxygen Saturation",
-    "logic_key": 276
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Respiratory exam result",
-        "value": "DAK, Bradypnea",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Oxygen Saturation",
-    "logic_key": 277
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Respiratory exam result",
-        "value": "DAK, Tachypnea",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Oxygen Saturation",
-    "logic_key": 278
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Respiratory exam result",
-        "value": "DAK, Wheezing",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Oxygen Saturation",
-    "logic_key": 279
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Respiratory exam result",
-        "value": "DAK, Rales",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Oxygen Saturation",
-    "logic_key": 280
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Respiratory exam result",
-        "value": "DAK, Other",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Oxygen Saturation",
-    "logic_key": 281
   },
   {
     "logics": [
@@ -4152,8 +4080,8 @@
       {
         "rules": [
           {
-            "trigger": "DAK, HIV status",
-            "value": "DAK, HIV negative",
+            "trigger": "DAK, HIV test result",
+            "value": "HIV-negative",
             "operator": "="
           },
           {
@@ -4166,8 +4094,36 @@
       {
         "rules": [
           {
-            "trigger": "DAK, HIV status",
-            "value": "DAK, HIV negative",
+            "trigger": "DAK, Existing chronic health conditions",
+            "value": "DAK, HIV positive",
+            "operator": "!="
+          },
+          {
+            "trigger": "DAK, Partner HIV status (reported)",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Current medications",
+            "value": "DAK, Antiretrovirals (ARVs)",
+            "operator": "!="
+          },
+          {
+            "trigger": "DAK, Partner HIV status (reported)",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, HIV test result",
+            "value": "HIV-negative",
             "operator": "="
           },
           {
@@ -4180,12 +4136,12 @@
       {
         "rules": [
           {
-            "trigger": "DAK, HIV status",
-            "value": "DAK, HIV negative",
-            "operator": "="
+            "trigger": "DAK, Existing chronic health conditions",
+            "value": "DAK, HIV positive",
+            "operator": "!="
           },
           {
-            "trigger": "DAK, Partner HIV status - confirmed",
+            "trigger": "DAK, Partner HIV test result",
             "value": "DAK, HIV positive",
             "operator": "="
           }
@@ -4194,12 +4150,97 @@
       {
         "rules": [
           {
-            "trigger": "DAK, HIV status",
-            "value": "DAK, HIV negative",
+            "trigger": "DAK, Current medications",
+            "value": "DAK, Antiretrovirals (ARVs)",
+            "operator": "!="
+          },
+          {
+            "trigger": "DAK, Partner HIV test result",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, HIV test result",
+            "value": "HIV-negative",
             "operator": "="
           },
           {
-            "trigger": "DAK, Current alcohol and/or other substance use",
+           "trigger": "DAK, Partner HIV status - confirmed",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Existing chronic health conditions",
+            "value": "DAK, HIV positive",
+            "operator": "!="
+          },
+          {
+           "trigger": "DAK, Partner HIV status - confirmed",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Current medications",
+            "value": "DAK, Antiretrovirals (ARVs)",
+            "operator": "!="
+          },
+          {
+           "trigger": "DAK, Partner HIV status - confirmed",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
+      },
+
+           {
+        "rules": [
+          {
+            "trigger": "DAK, HIV test result",
+            "value": "HIV-negative",
+            "operator": "="
+          },
+          {
+           "trigger": "DAK, Current alcohol and/or other substance use",
+            "value": "DAK, Injectable drugs",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Existing chronic health conditions",
+            "value": "DAK, HIV positive",
+            "operator": "!="
+          },
+          {
+          "trigger": "DAK, Current alcohol and/or other substance use",
+            "value": "DAK, Injectable drugs",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Current medications",
+            "value": "DAK, Antiretrovirals (ARVs)",
+            "operator": "!="
+          },
+          {
+           "trigger": "DAK, Current alcohol and/or other substance use",
             "value": "DAK, Injectable drugs",
             "operator": "="
           }
@@ -6496,130 +6537,7 @@
     "dependent": "DAK, Pre-eclampsia risk",
     "logic_key": 467
   },
-  {
-    "logics": [
-      {
-        "rules": [
-          {
-            "trigger": "DAK, BMI",
-            "value": 30.0,
-            "operator": ">="
-          },
-          {
-            "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-            "value": "DAK, Positive",
-            "operator": "="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Past pregnancy history",
-            "orValues": [
-              "DAK, Gestational diabetes mellitus",
-              "DAK, Macrosomia"
-            ],
-            "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-            "value": "DAK, Positive",
-            "operator": "="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Urine dipstick result \u2013 glucose",
-            "orValues": [
-              "DAK, ++",
-              "DAK, +++",
-              "DAK, ++++"
-            ],
-            "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-            "value": "DAK, Positive",
-            "operator": "="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, BMI",
-            "value": 30.0,
-            "operator": ">="
-          },
-          {
-            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-            "value": "DAK, Positive",
-            "operator": "="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Past pregnancy history",
-            "orValues": [
-              "DAK, Gestational diabetes mellitus",
-              "DAK, Macrosomia"
-            ],
-            "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-            "value": "DAK, Positive",
-            "operator": "="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Urine dipstick result \u2013 glucose",
-            "orValues": [
-              "DAK, ++",
-              "DAK, +++",
-              "DAK, ++++"
-            ],
-            "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-            "value": "DAK, Positive",
-            "operator": "="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Urine dipstick result \u2013 glucose",
-            "orValues": [
-              "DAK, ++",
-              "DAK, +++",
-              "DAK, ++++"
-            ],
-            "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-            "value": "DAK, Positive",
-            "operator": "="
-          }
-        ]
-      }
-    ],
-    "action": "show",
-    "conditionType": "deepAnalysis",
-    "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-    "logic_key": 469
-  },
+
   {
     "logics": [
       {
@@ -6733,7 +6651,12 @@
           },
           {
             "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-            "value": "DAK, Positive",
+            "value": "DAK, Negative",
+            "operator": "="
+          },
+           {
+            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+            "value": "DAK, Negative",
             "operator": "="
           }
         ]
@@ -6750,7 +6673,12 @@
           },
           {
             "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-            "value": "DAK, Positive",
+            "value": "DAK, Negative",
+            "operator": "="
+          },
+           {
+            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+            "value": "DAK, Negative",
             "operator": "="
           }
         ]
@@ -6768,60 +6696,17 @@
           },
           {
             "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-            "value": "DAK, Positive",
+            "value": "DAK, Negative",
             "operator": "="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, BMI",
-            "value": 30.0,
-            "operator": ">="
           },
-          {
+           {
             "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-            "value": "DAK, Positive",
-            "operator": "="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Past pregnancy history",
-            "orValues": [
-              "DAK, Gestatinal diabetes mellitus",
-              "DAK, Macrosomia"
-            ],
-            "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-            "value": "DAK, Positive",
-            "operator": "="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Urine dipstick result \u2013 glucose",
-            "orValues": [
-              "DAK, ++",
-              "DAK, +++",
-              "DAK, ++++"
-            ],
-            "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-            "value": "DAK, Positive",
+            "value": "DAK, Negative",
             "operator": "="
           }
         ]
       }
+     
     ],
     "action": "show",
     "conditionType": "deepAnalysis",
@@ -9480,5 +9365,34 @@
     "parent":"DAK, Respiratory exam result",
     "dependent": "DAK, Respiratory exam not done",
     "logic_key": 619
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, LNMP Date",
+        "value": false,
+        "operator": "!="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Gestational age by LMNP day",
+    "logic_key": 620
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Ultrasound done",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Ultrasound date",
+        "value": false,
+        "operator": "!="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Gestational age by Ultrasound days",
+    "logic_key": 621
   }
 ]

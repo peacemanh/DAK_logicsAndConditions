@@ -3043,7 +3043,7 @@
        }
     ],
     "displayPoint": "DAK, Chronic Hypertension",
-    "action": "Conduct hypertension counselling and refer her for further evaluation and manegment if neccessay. ",
+    "action": "Conduct hypertension counselling and refer her for further evaluation and manegment if neccessay.",
     "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 2 week or at next contact, refer to hospital or discuss case with the doctor, if available",
     "action_key": 229
   },
@@ -3073,7 +3073,7 @@
       }
     ],
     "displayPoint": "DAK, Chronic Hypertension",
-    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment if neccessay.  ",
+    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment if neccessay.",
     "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 3 week or at next contact, refer to hospital or discuss case with the doctor, if available",
     "action_key": 230
   },
@@ -3850,12 +3850,17 @@
       },
       {
         "key": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-        "value": "DAK, Positive",
+        "value": "DAK, Negative",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+        "value": "DAK, Negative",
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
-    "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
+    "displayPoint": "DAK, Gestational diabetes mellitus (GDM) risk counselling conducted",
+    "action": "Conduct counselling on gestational diabetes mellitus (GDM) risk",
     "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m2 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
     "action_key": 278
   },
@@ -3868,12 +3873,17 @@
       },
       {
         "key": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-        "value": "DAK, Positive",
+        "value": "DAK, Negative",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+        "value": "DAK, Negative",
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
-    "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
+    "displayPoint": "DAK, Gestational diabetes mellitus (GDM) risk counselling conducted",
+    "action": "Conduct counselling on gestational diabetes mellitus (GDM) risk",
     "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m3 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
     "action_key": 279
   },
@@ -3886,12 +3896,17 @@
       },
       {
         "key": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-        "value": "DAK, Positive",
+        "value": "DAK, Negative",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+        "value": "DAK, Negative",
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
-    "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
+    "displayPoint": "DAK, Gestational diabetes mellitus (GDM) risk counselling conducted",
+    "action": "Conduct counselling on gestational diabetes mellitus (GDM) risk",
     "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m5 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
     "action_key": 280
   },
@@ -7100,78 +7115,7 @@
     "annotation": "Consider multiple pregnancy, polyhydramnios, macrosomia, etc.",
     "action_key": 503
   },
-  {
-    "conditions": [
-      {
-        "key": "DAK, HIV status",
-        "value": "DAK, HIV negative",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Partner HIV status (reported)",
-        "value": "DAK, HIV positive",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Counselling conducted on HIV risk",
-    "action": "c on HIV risk",
-    "annotation": "If the woman lives in a setting with a generalized HIV epidemic, or her partner is HIV positive, or she injects drugs, or she is a sex worker, then she is at high risk for HIV – counselling should be given to provide prevention options.Provide comprehensive HIV prevention options: STI screening and treatment (syndromic and syphilis)Condom promotion.Risk reduction counselling Pre-exposure prophylaxis (PrEP) with emphasis on adherence Emphasize importance of follow-up ANC contact visits",
-    "action_key": 504
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, HIV status",
-        "value": "DAK, HIV negative",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Partner HIV test result",
-        "value": "DAK, HIV positive",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Counselling conducted on HIV risk",
-    "action": "Conduct counselling on HIV risk",
-    "annotation": "If the woman lives in a setting with a generalized HIV epidemic, or her partner is HIV positive, or she injects drugs, or she is a sex worker, then she is at high risk for HIV – counselling should be given to provide prevention options.Provide comprehensive HIV prevention options: STI screening and treatment (syndromic and syphilis)Condom promotion.Risk reduction counselling Pre-exposure prophylaxis (PrEP) with emphasis on adherence Emphasize importance of follow-up ANC contact visits",
-    "action_key": 505
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, HIV status",
-        "value": "DAK, HIV negative",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Partner HIV status - confirmed",
-        "value": "DAK, HIV positive",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Counselling conducted on HIV risk",
-    "action": "Conduct counselling on HIV risk",
-    "annotation": "If the woman lives in a setting with a generalized HIV epidemic, or her partner is HIV positive, or she injects drugs, or she is a sex worker, then she is at high risk for HIV – counselling should be given to provide prevention options.Provide comprehensive HIV prevention options: STI screening and treatment (syndromic and syphilis)Condom promotion.Risk reduction counselling Pre-exposure prophylaxis (PrEP) with emphasis on adherence Emphasize importance of follow-up ANC contact visits",
-    "action_key": 506
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, HIV status",
-        "value": "DAK, HIV negative",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Current alcohol and/or other substance use",
-        "value": "DAK, Injectable drugs",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Counselling conducted on HIV risk",
-    "action": "Conduct counselling on HIV risk",
-    "annotation": "If the woman lives in a setting with a generalized HIV epidemic, or her partner is HIV positive, or she injects drugs, or she is a sex worker, then she is at high risk for HIV – counselling should be given to provide prevention options.Provide comprehensive HIV prevention options: STI screening and treatment (syndromic and syphilis)Condom promotion.Risk reduction counselling Pre-exposure prophylaxis (PrEP) with emphasis on adherence Emphasize importance of follow-up ANC contact visits",
-    "action_key": 507
-  },
+
   {
     "conditions": [
 
@@ -7308,59 +7252,181 @@
     "annotation": "Woman has hypertension – SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher after 20 weeks of gestational age and no proteinuria.Advice to reduce workload and to rest. Advise on danger signsReassess at the next contact or in 1 week. If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available .Manage as an outpatient if GA is <36 weeks and if blood pressure is in mild range without the use of antihypertensive medications.Refer at ≥36 weeks of gestation",
     "action_key": 515
   },
-  {
-    "conditions": [
+    {
+    "logics": [
       {
-        "key": "DAK, BMI",
-        "value": 30.0,
-        "operator": ">="
+        "rules": [
+          {
+            "key": "DAK, HIV test result",
+            "value": "HIV-negative",
+            "operator": "="
+          },
+          {
+            "key": "DAK, Partner HIV status (reported)",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
       },
       {
-        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-        "value": "DAK, Positive",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
-    "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
-    "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m2 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
-    "action_key": 516
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Past pregnancy history",
-        "orValues": ["DAK, Gestational diabetes mellitus","DAK, Macrosomia"],
-        "operator": "OR"
+        "rules": [
+          {
+            "key": "DAK, Existing chronic health conditions",
+            "value": "DAK, HIV positive",
+            "operator": "!="
+          },
+          {
+            "key": "DAK, Partner HIV status (reported)",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
       },
       {
-        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-        "value": "DAK, Positive",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
-    "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
-    "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m3 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
-    "action_key": 517
-  },
+        "rules": [
+          {
+            "key": "DAK, Current medications",
+            "value": "DAK, Antiretrovirals (ARVs)",
+            "operator": "!="
+          },
+          {
+            "key": "DAK, Partner HIV status (reported)",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "key": "DAK, HIV test result",
+            "value": "HIV-negative",
+            "operator": "="
+          },
+          {
+            "key": "DAK, Partner HIV test result",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "key": "DAK, Existing chronic health conditions",
+            "value": "DAK, HIV positive",
+            "operator": "!="
+          },
+          {
+            "key": "DAK, Partner HIV test result",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "key": "DAK, Current medications",
+            "value": "DAK, Antiretrovirals (ARVs)",
+            "operator": "!="
+          },
+          {
+            "key": "DAK, Partner HIV test result",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "key": "DAK, HIV test result",
+            "value": "HIV-negative",
+            "operator": "="
+          },
+          {
+           "key": "DAK, Partner HIV status - confirmed",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "key": "DAK, Existing chronic health conditions",
+            "value": "DAK, HIV positive",
+            "operator": "!="
+          },
+          {
+           "key": "DAK, Partner HIV status - confirmed",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "key": "DAK, Current medications",
+            "value": "DAK, Antiretrovirals (ARVs)",
+            "operator": "!="
+          },
+          {
+           "key": "DAK, Partner HIV status - confirmed",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
+      },
 
-  {
-    "conditions": [
-      {
-        "key": "DAK, Urine dipstick result \u2013 glucose",
-        "orValues": ["DAK, ++","DAK, +++","DAK, ++++","DAK, +"],
-        "operator": "OR"
+           {
+        "rules": [
+          {
+            "key": "DAK, HIV test result",
+            "value": "HIV-negative",
+            "operator": "="
+          },
+          {
+           "key": "DAK, Current alcohol and/or other substance use",
+            "value": "DAK, Injectable drugs",
+            "operator": "="
+          }
+        ]
       },
       {
-        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-        "value": "DAK, Positive",
-        "operator": "="
+        "rules": [
+          {
+            "key": "DAK, Existing chronic health conditions",
+            "value": "DAK, HIV positive",
+            "operator": "!="
+          },
+          {
+          "key": "DAK, Current alcohol and/or other substance use",
+            "value": "DAK, Injectable drugs",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "key": "DAK, Current medications",
+            "value": "DAK, Antiretrovirals (ARVs)",
+            "operator": "!="
+          },
+          {
+           "key": "DAK, Current alcohol and/or other substance use",
+            "value": "DAK, Injectable drugs",
+            "operator": "="
+          }
+        ]
       }
     ],
-    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
-    "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
-    "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m5 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
-    "action_key": 518
+    "displayPoint": "DAK, Counselling conducted on HIV risk",
+    "action": "Conduct counselling on HIV risk",
+    "annotation": "If the woman lives in a setting with a generalized HIV epidemic, or her partner is HIV positive, or she injects drugs, or she is a sex worker, then she is at high risk for HIV – counselling should be given to provide prevention options.Provide comprehensive HIV prevention options: STI screening and treatment (syndromic and syphilis)Condom promotion.Risk reduction counselling Pre-exposure prophylaxis (PrEP) with emphasis on adherence Emphasize importance of follow-up ANC contact visits",
+    "action_key": 516
   }
 ]
