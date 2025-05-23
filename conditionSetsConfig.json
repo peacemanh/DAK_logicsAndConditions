@@ -1635,11 +1635,6 @@
   {
     "conditions": [
       {
-        "key": "DAK, Gestational age",
-        "value": 37,
-        "operator": "<"
-      },
-      {
         "key": "DAK, Pelvic exam result (visual)",
         "value": "DAK, Evidence of amniotic fluid",
         "operator": "="
@@ -1780,23 +1775,6 @@
     "action": "Refer to a hospital if necessary",
     "annotation": "Consider cervical cancer and refer for further evaluation",
     "action_key": 148
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Pelvic exam result (visual)",
-        "value": "DAK, Evidence of amniotic fluid",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 37.0,
-        "operator": "<"
-      }
-    ],
-    "action": "Refer urgently to a hospital",
-    "annotation": "Woman should be referred urgently if there is evidence of amniotic fluid, which could indicate the start of labour",
-    "action_key": 149
   },
   {
     "conditions": [
@@ -2043,27 +2021,22 @@
     "conditions": [
       {
         "key": "DAK, Repeat systolic blood pressure",
-        "value": 140.0,
-        "operator": ">="
+        "minValue": 140.0,
+        "maxValue": 160.0,
+        "operator": "between, <=, <"
+      },
+       {
+        "key": "DAK, Repeat diastolic blood pressure",
+        "minValue": 90.0,
+        "maxValue": 110.0,
+        "operator": "between, <=, <"
       }
     ],
     "displayPoint": "DAK, Urine dipstick result – protein",
+     "conditionType":"either",
     "action": "Do urine dipstick test for protein",
     "annotation": "Given high values (SBP \u2265 140 or DBP \u2265 90) upon second measure, urine dipstick test should be done to check for protein in the urine, a symptom of pre-eclampsia",
     "action_key": 164
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Repeat diastolic blood pressure",
-        "value": 90.0,
-        "operator": ">="
-      }
-    ],
-    "displayPoint": "DAK, Urine test conducted",
-    "action": "Do urine dipstick test for protein",
-    "annotation": "Given high values (SBP \u2265 140 or DBP \u2265 90) upon second measure, urine dipstick test should be done to check for protein in the urine, a symptom of pre-eclampsia",
-    "action_key": 165
   },
   {
     "conditions": [
@@ -2760,174 +2733,7 @@
     "annotation": "Symptom(s) of severe pre-eclampsia! Refer urgently to hospital!\nWoman has hypertension. If she is experiencing a symptom of severe pre-eclampsia, then refer urgently to the hospital for further investigation and management.\n\nProcedure\n\u2013 Give Loading dose of magnsium sulphate\n\u2013 Give appropriate anti-hypertensives\n\u2013 Revise the birth plan \n\u2013 Refer urgently to hospital",
     "action_key": 211
   },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Systolic blood pressure",
-        "value": 140.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Repeat systolic blood pressure",
-        "value": 140.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Symptoms of severe pre-eclampsia",
-        "value": "DAK, No symptoms of severe pre-eclampsia",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, ++",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Severe pre-eclampsia",
-    "action": "Refer urgently to a hospital",
-    "annotation": "",
-    "action_key": 212
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Diastolic blood pressure",
-        "value": 90.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Repeat diastolic blood pressure",
-        "value": 90.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Symptoms of severe pre-eclampsia",
-        "value": "DAK, No symptoms of severe pre-eclampsia",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, ++",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Severe pre-eclampsia",
-    "action": "Refer urgently to a hospital",
-    "annotation": "",
-    "action_key": 213
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Systolic blood pressure",
-        "value": 140.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Repeat systolic blood pressure",
-        "value": 140.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Symptoms of severe pre-eclampsia",
-        "value": "DAK, No symptoms of severe pre-eclampsia",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, +++",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Severe pre-eclampsia",
-    "action": "Refer urgently to a hospital",
-    "annotation": "",
-    "action_key": 214
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Diastolic blood pressure",
-        "value": 90.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Repeat diastolic blood pressure",
-        "value": 90.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Symptoms of severe pre-eclampsia",
-        "value": "DAK, No symptoms of severe pre-eclampsia",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, +++",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Severe pre-eclampsia",
-    "action": "Refer urgently to a hospital",
-    "annotation": "",
-    "action_key": 215
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Systolic blood pressure",
-        "value": 140.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Repeat systolic blood pressure",
-        "value": 140.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Symptoms of severe pre-eclampsia",
-        "value": "DAK, No symptoms of severe pre-eclampsia",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, ++++",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Severe pre-eclampsia",
-    "action": "Refer urgently to a hospital",
-    "annotation": "",
-    "action_key": 216
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Diastolic blood pressure",
-        "value": 90.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Repeat diastolic blood pressure",
-        "value": 90.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Symptoms of severe pre-eclampsia",
-        "value": "DAK, No symptoms of severe pre-eclampsia",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, ++++",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Severe pre-eclampsia",
-    "action": "Refer urgently to a hospital",
-    "annotation": "",
-    "action_key": 217
-  },
+  
   {
     "conditions": [
       {
@@ -2983,7 +2789,7 @@
     ],
     "displayPoint": "DAK, Pre-eclampsia",
     "action": "Refer urgently to a hospital",
-    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 3+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
+    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 2+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
     "action_key": 219
   },
   {
@@ -3013,7 +2819,7 @@
     ],
     "displayPoint": "DAK, Pre-eclampsia",
     "action": "Refer urgently to a hospital",
-    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 4+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
+    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 2+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
     "action_key": 220
   },
   {
@@ -3043,7 +2849,7 @@
     ],
     "displayPoint": "DAK, Pre-eclampsia",
     "action": "Refer urgently to a hospital",
-    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 5+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
+    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 2+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
     "action_key": 221
   },
   {
@@ -3073,7 +2879,7 @@
     ],
     "displayPoint": "DAK, Pre-eclampsia",
     "action": "Refer urgently to a hospital",
-    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 6+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
+    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 5+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
     "action_key": 222
   },
   {
@@ -3103,7 +2909,7 @@
     ],
     "displayPoint": "DAK, Pre-eclampsia",
     "action": "Refer urgently to a hospital",
-    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 7+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
+    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 5+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
     "action_key": 223
   },
   {
@@ -3206,8 +3012,8 @@
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Counselling conducted on hypertension",
-    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment",
+    "displayPoint": "DAK, Chronic Hypertension",
+    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment if neccessay",
     "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available",
     "action_key": 228
   },
@@ -3227,12 +3033,17 @@
       },
       {
         "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, +",
-        "operator": "="
-      }
+        "orValues": ["DAK, +","DAK, Negative"],
+        "operator": "OR"
+      },
+       {
+            "key": "DAK, Gestational age",
+            "value": 20,
+            "operator": "<"
+       }
     ],
-    "displayPoint": "DAK, Counselling conducted on hypertension",
-    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment",
+    "displayPoint": "DAK, Chronic Hypertension",
+    "action": "Conduct hypertension counselling and refer her for further evaluation and manegment if neccessay. ",
     "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 2 week or at next contact, refer to hospital or discuss case with the doctor, if available",
     "action_key": 229
   },
@@ -3250,66 +3061,21 @@
         "maxValue": 110.0,
         "operator": "between, <=, <"
       },
-      {
+     {
         "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, +",
-        "operator": "="
+        "orValues": ["DAK, +","DAK, Negative"],
+        "operator": "OR"
+      },
+       {
+            "key": "DAK, Gestational age",
+            "value": 20,
+            "operator": "<"
       }
     ],
-    "displayPoint": "DAK, Counselling conducted on hypertension",
-    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment",
+    "displayPoint": "DAK, Chronic Hypertension",
+    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment if neccessay.  ",
     "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 3 week or at next contact, refer to hospital or discuss case with the doctor, if available",
     "action_key": 230
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Systolic blood pressure",
-        "minValue": 140.0,
-        "maxValue": 160.0,
-        "operator": "between, <=, <"
-      },
-      {
-        "key": "DAK, Repeat systolic blood pressure",
-        "minValue": 140.0,
-        "maxValue": 160.0,
-        "operator": "between, <=, <"
-      },
-      {
-        "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, Negative",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Counselling conducted on hypertension",
-    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment",
-    "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 4 week or at next contact, refer to hospital or discuss case with the doctor, if available",
-    "action_key": 231
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Diastolic blood pressure",
-        "minValue": 90.0,
-        "maxValue": 110.0,
-        "operator": "between, <=, <="
-      },
-      {
-        "key": "DAK, Repeat diastolic blood pressure",
-        "minValue": 90.0,
-        "maxValue": 110.0,
-        "operator": "between, <=, <="
-      },
-      {
-        "key": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, Negative",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Counselling conducted on hypertension",
-    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment",
-    "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 5 week or at next contact, refer to hospital or discuss case with the doctor, if available",
-    "action_key": 232
   },
   {
     "conditions": [
@@ -3411,7 +3177,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "action": "Conduct REQUIRED overt diabetes mellitus (DM) Counselling and Refer",
+    "action": "Conduct overt diabetes mellitus (DM) Counselling and Refer",
     "annotation": "\u2013 The woman has diabetes mellitus (DM) in pregnancy if her random plasma glucose level is 200 mg/dL or higher\n\u2013 Woman with hyperglycemia, reassert dietary intervention and refer to high-level care",
     "action_key": 242
   },
@@ -3442,7 +3208,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on anaemia",
-    "action": "Conduct REQUIRED anaemia Counselling",
+    "action": "Conduct anaemia Counselling",
     "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct Counselling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
     "action_key": 244
   },
@@ -3460,7 +3226,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on anaemia",
-    "action": "Conduct REQUIRED anaemia Counselling",
+    "action": "Conduct anaemia Counselling",
     "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct Counselling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
     "action_key": 245
   },
@@ -3479,7 +3245,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on anaemia",
-    "action": "Conduct REQUIRED anaemia Counselling",
+    "action": "Conduct anaemia Counselling",
     "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct Counselling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
     "action_key": 246
   },
@@ -3497,7 +3263,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on anaemia",
-    "action": "Conduct REQUIRED anaemia Counselling",
+    "action": "Conduct anaemia Counselling",
     "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct Counselling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
     "action_key": 247
   },
@@ -3792,10 +3558,15 @@
         "key": "DAK, Number of fetuses",
         "value": 2.0,
         "operator": ">="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<"
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk",
     "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide Counselling",
     "action_key": 262
   },
@@ -3805,10 +3576,15 @@
         "key": "DAK, Past pregnancy history",
         "value": "DAK, Pre-eclampsia",
         "operator": "="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<"
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk",
     "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide Counselling",
     "action_key": 263
   },
@@ -3818,10 +3594,15 @@
         "key": "DAK, Past pregnancy history",
         "value": "DAK, Eclampsia",
         "operator": "="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<"
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk",
     "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide Counselling",
     "action_key": 264
   },
@@ -3831,10 +3612,15 @@
         "key": "DAK, Past pregnancy history",
         "value": "DAK, Convulsions",
         "operator": "="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<"
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk",
     "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide Counselling",
     "action_key": 265
   },
@@ -3844,10 +3630,15 @@
         "key": "DAK, Existing chronic health conditions",
         "value": "DAK, Autoimmune disease",
         "operator": "="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<"
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk",
     "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide Counselling",
     "action_key": 266
   },
@@ -3857,10 +3648,15 @@
         "key": "DAK, Existing chronic health conditions",
         "value": "DAK, Diabetes",
         "operator": "="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<"
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk",
     "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide Counselling",
     "action_key": 267
   },
@@ -3870,10 +3666,15 @@
         "key": "DAK, Existing chronic health conditions",
         "value": "DAK, Chronic Hypertensions",
         "operator": "="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<"
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk",
     "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide Counselling",
     "action_key": 268
   },
@@ -3883,10 +3684,15 @@
         "key": "DAK, Existing chronic health conditions",
         "value": "DAK, Renal disease",
         "operator": "="
+      },
+      {
+        "key": "DAK, Gestational age",
+        "value": 12.0,
+        "operator": "<"
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk",
     "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide Counselling",
     "action_key": 269
   },
@@ -3904,8 +3710,8 @@
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk '\"Amount of daily aspirin prescribed until delivery\" = 81mg",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
+    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 270
   },
   {
@@ -3922,8 +3728,8 @@
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk \"Amount of daily aspirin prescribed until delivery\" = 81mg",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 13 weeks gestation) for pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
+    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 271
   },
   {
@@ -3940,8 +3746,8 @@
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 14 weeks gestation) for pre-eclampsia risk",
+   "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
+    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 272
   },
   {
@@ -3958,8 +3764,8 @@
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 15 weeks gestation) for pre-eclampsia risk",
+   "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
+    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 273
   },
   {
@@ -3976,8 +3782,8 @@
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 16 weeks gestation) for pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
+    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 274
   },
   {
@@ -3994,8 +3800,8 @@
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 17 weeks gestation) for pre-eclampsia risk",
+  "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
+    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 275
   },
   {
@@ -4012,8 +3818,8 @@
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 18 weeks gestation) for pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
+    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 276
   },
   {
@@ -4030,194 +3836,11 @@
       }
     ],
     "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 19 weeks gestation) for pre-eclampsia risk",
+    "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
+    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 277
   },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Number of fetuses",
-        "value": 2.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": ">="
-      },
-      {
-        "key": "Population with low dietary calcium intake",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20132 g until delivery for pre-eclampsia risk",
-    "action_key": 278
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Past pregnancy history",
-        "value": "DAK, Pre-eclampsia",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": ">="
-      },
-      {
-        "key": "Population with low dietary calcium intake",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20133 g until delivery for pre-eclampsia risk",
-    "action_key": 279
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Past pregnancy history",
-        "value": "DAK, Eclampsia",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": ">="
-      },
-      {
-        "key": "Population with low dietary calcium intake",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20134 g until delivery for pre-eclampsia risk",
-    "action_key": 280
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Past pregnancy history",
-        "value": "DAK, Convulsions",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": ">="
-      },
-      {
-        "key": "Population with low dietary calcium intake",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20135 g until delivery for pre-eclampsia risk",
-    "action_key": 281
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Existing chronic health conditions",
-        "value": "DAK, Autoimmune disease",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": ">="
-      },
-      {
-        "key": "Population with low dietary calcium intake",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20136 g until delivery for pre-eclampsia risk",
-    "action_key": 282
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Existing chronic health conditions",
-        "value": "DAK, Diabetes",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": ">="
-      },
-      {
-        "key": "Population with low dietary calcium intake",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20137 g until delivery for pre-eclampsia risk",
-    "action_key": 283
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Existing chronic health conditions",
-        "value": "DAK, Chronic Hypertension",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": ">="
-      },
-      {
-        "key": "Population with low dietary calcium intake",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20138 g until delivery for pre-eclampsia risk",
-    "action_key": 284
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Existing chronic health conditions",
-        "value": "DAK, Renal disease",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": ">="
-      },
-      {
-        "key": "Population with low dietary calcium intake",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Provide Counselling on pre-eclampsia risk. '\"Amount of daily aspirin prescribed until delivery\" = 81mg. '1.5 g \u2264 \"Amount of calcium supplements provided\" \u2264 2 g",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 75 mg daily until delivery (starting at 12 weeks gestation) and ensure that she continues to take her daily calcium supplement of 1.5\u20139 g until delivery for pre-eclampsia risk",
-    "action_key": 285
-  },
+
   {
     "conditions": [
       {
@@ -4227,158 +3850,52 @@
       },
       {
         "key": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-        "value": "DAK, Negative",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-        "value": "DAK, Negative",
+        "value": "DAK, Positive",
         "operator": "="
       }
     ],
     "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
     "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
     "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m2 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
-    "action_key": 286
+    "action_key": 278
   },
   {
     "conditions": [
       {
         "key": "DAK, Past pregnancy history",
-        "value": "DAK, Gestational diabetes mellitus",
-        "operator": "="
+        "orValues": ["DAK, Gestational diabetes mellitus","DAK, Macrosomia"],
+        "operator": "OR"
       },
       {
         "key": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-        "value": "DAK, Negative",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-        "value": "DAK, Negative",
+        "value": "DAK, Positive",
         "operator": "="
       }
     ],
     "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
     "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
     "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m3 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
-    "action_key": 287
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Past pregnancy history",
-        "value": "DAK, Macrosomia",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-        "value": "DAK, Negative",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-        "value": "DAK, Negative",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
-    "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
-    "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m4 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
-    "action_key": 288
+    "action_key": 279
   },
   {
     "conditions": [
       {
         "key": "DAK, Urine dipstick result \u2013 glucose",
-        "value": "DAK, ++",
+        "orValues": ["DAK, ++","DAK, +++","DAK, ++++","DAK, +"],
         "operator": "="
       },
       {
         "key": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-        "value": "DAK, Negative",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-        "value": "DAK, Negative",
+        "value": "DAK, Positive",
         "operator": "="
       }
     ],
     "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
     "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
     "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m5 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
-    "action_key": 289
+    "action_key": 280
   },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Urine dipstick result \u2013 glucose",
-        "value": "DAK, +++",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-        "value": "DAK, Negative",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-        "value": "DAK, Negative",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
-    "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
-    "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m6 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
-    "action_key": 290
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Urine dipstick result \u2013 glucose",
-        "value": "DAK, ++++",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-        "value": "DAK, Negative",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-        "value": "DAK, Negative",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
-    "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
-    "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m7 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
-    "action_key": 291
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Urine dipstick result \u2013 glucose",
-        "value": "DAK, +",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-        "value": "DAK, Negative",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-        "value": "DAK, Negative",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
-    "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
-    "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m8 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
-    "action_key": 292
-  },
+ 
   {
     "conditions": [
       {
@@ -6022,7 +5539,7 @@
       }
     ],
     "action": "Aspirin tablet check",
-    "annotation": "'After the woman has been prescribed aspirin, check whether the woman is still continuing to take her aspirin tablets",
+    "annotation": "After the woman has been prescribed aspirin, check whether the woman is still continuing to take her aspirin tablets",
     "action_key": 400
   },
   {
@@ -7390,7 +6907,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+    "action": "Conduct overt diabetes mellitus (DM) counselling and refer",
     "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
     "action_key": 489
   },
@@ -7403,7 +6920,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+    "action": "Conduct overt diabetes mellitus (DM) counselling and refer",
     "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
     "action_key": 490
   },
@@ -7416,7 +6933,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+    "action": "Conduct overt diabetes mellitus (DM) counselling and refer",
     "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
     "action_key": 491
   },
@@ -7429,7 +6946,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+    "action": "Conduct overt diabetes mellitus (DM) counselling and refer",
     "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
     "action_key": 492
   },
@@ -7442,7 +6959,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on diabetes mellitus (DM)",
-    "action": "Conduct REQUIRED overt diabetes mellitus (DM) counselling and refer",
+    "action": "Conduct overt diabetes mellitus (DM) counselling and refer",
     "annotation": "If the woman is diagnosed with DM, provide treatment and counselling accordingly",
     "action_key": 493
   },
@@ -7456,7 +6973,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
-    "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counselling and refer",
+    "action": "Conduct gestational diabetes mellitus (GDM) counselling and refer",
     "annotation": "If the woman is diagnosed with GDM, provide treatment and counselling accordingly",
     "action_key": 494
   },
@@ -7470,7 +6987,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
-    "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counselling and refer",
+    "action": "Conduct gestational diabetes mellitus (GDM) counselling and refer",
     "annotation": "If the woman is diagnosed with GDM, provide treatment and counselling accordingly",
     "action_key": 495
   },
@@ -7484,7 +7001,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
-    "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counselling and refer",
+    "action": "Conduct gestational diabetes mellitus (GDM) counselling and refer",
     "annotation": "If the woman is diagnosed with GDM, provide treatment and counselling accordingly",
     "action_key": 496
   },
@@ -7498,7 +7015,7 @@
       }
     ],
     "displayPoint": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
-    "action": "Conduct REQUIRED gestational diabetes mellitus (GDM) counselling and refer",
+    "action": "Conduct gestational diabetes mellitus (GDM) counselling and refer",
     "annotation": "If the woman is diagnosed with GDM, provide treatment and counselling accordingly",
     "action_key": 497
   },
@@ -7542,7 +7059,7 @@
     "displayPoint": "DAK, Counselling on avoidance of harmful traditional practices",
     "action": "Conduct counselling on harmful traditional practices during pregnancy, childbirth, and postpartum",
     "annotation": null,
-    "action_key": 450
+    "action_key": 500
   },
   {
     "conditions": [
@@ -7555,14 +7072,15 @@
     "displayPoint": "DAK, seven-day antibiotic regimen for asymptomatic bacteriuria (ASB) not provided",
     "action": "Provide 7-day antibiotic regimen for asymptomatic bacteriuria (ASB)",
     "annotation": "A woman is considered to have ASB when she has no urinary symptoms but either positive gram staining or positive urine dipstick test (nitrites or leukocytes). A seven-day antibiotic regimen is recommended for all pregnant women with asymptomatic bacteriuria (ASB) to prevent persistent bacteriuria, preterm birth, and low birth weight.",
-    "action_key": 451
+    "action_key": 501
   },
   {
     "conditions": [
       {
         "key": "DAK, Week difference FH and GA",
-        "value": 3,
-        "operator": "<="
+        "minvalue": 0,
+        "maxValue":3,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Small for gestational age utrus",
@@ -7573,8 +7091,9 @@
     "conditions": [
       {
         "key": "DAK, Week difference FH and GA",
-        "value": 3,
-        "operator": ">"
+        "minvalue": 0,
+        "maxValue":-3,
+        "operator": "between, <=, <="
       }
     ],
     "action": "Large for gestational age utrus",
@@ -7651,7 +7170,7 @@
     "displayPoint": "DAK, Counselling conducted on HIV risk",
     "action": "Conduct counselling on HIV risk",
     "annotation": "If the woman lives in a setting with a generalized HIV epidemic, or her partner is HIV positive, or she injects drugs, or she is a sex worker, then she is at high risk for HIV – counselling should be given to provide prevention options.Provide comprehensive HIV prevention options: STI screening and treatment (syndromic and syphilis)Condom promotion.Risk reduction counselling Pre-exposure prophylaxis (PrEP) with emphasis on adherence Emphasize importance of follow-up ANC contact visits",
-    "action_key": 457
+    "action_key": 507
   },
   {
     "conditions": [
@@ -7665,7 +7184,7 @@
     "displayPoint": "DAK, seven-day antibiotic regimen for asymptomatic bacteriuria (ASB) not provided",
     "action": "Provide 7-day antibiotic regimen for asymptomatic bacteriuria (ASB)",
     "annotation": "A woman is considered to have ASB when she has no urinary symptoms but either positive gram staining or positive urine dipstick test (nitrites or leukocytes). A seven-day antibiotic regimen is recommended for all pregnant women with asymptomatic bacteriuria (ASB) to prevent persistent bacteriuria, preterm birth, and low birth weight.",
-    "action_key": 458
+    "action_key": 508
   },
   {
     "conditions": [
@@ -7678,7 +7197,7 @@
     "displayPoint": "DAK, Counselling conducted on malaria prevention",
     "action": "Counselling on malaria prevention",
     "annotation": "Sleeping under an insecticide-treated bednet and the importance of seeking care and getting treatment as soon as she has any symptoms. \n- Wear loose-fitting long-sleeved closes",
-    "action_key": 459
+    "action_key": 509
   },
   {
     "conditions": [
@@ -7691,8 +7210,157 @@
     "displayPoint": "DAK, Syphilis counselling and treatment",
     "action": "Syphilis counselling and treatment",
     "annotation": "Provide treatment according to the clinical phase of syphilis: – If primary or secondary stage of syphilis, give single dose of benzathine penicillin 2,400,000 IU – If late or unknown stage of syphilis, give one dose of benzathine penicillin 2,400,000 IU weekly for 3 consecutive weeks – Advise on treating partner – Encourage HIV testing and counselling – Reinforce use of condoms – Proceed to further testing with an RPR or VDRL test after 6 months",
-    "action_key": 460
+    "action_key": 510
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Breast exam result",
+        "value": "DAK, Retracted Nipple",
+        "operator": "="
+      }
+    ],
+    "action": "Conduct further investigation and, if necessary, refer urgently to a hospital",
+    "annotation": "Woman's breast exam was abnormal and she should be referred to hospital for further investigation",
+    "action_key": 511
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Breast exam result",
+        "value": "DAK, Ulcer on the nipple",
+        "operator": "="
+      }
+    ],
+    "action": "Conduct further investigation and, if necessary, refer urgently to a hospital",
+    "annotation": "Woman's breast exam was abnormal and she should be referred to hospital for further investigation",
+    "action_key": 512
+  },
+   {
+    "conditions": [
+      {
+        "key": "DAK, Breast exam result",
+        "value": "DAK, Asymmetry",
+        "operator": "="
+      }
+    ],
+    "action": "Conduct further investigation and, if necessary, refer urgently to a hospital",
+    "annotation": "Woman's breast exam was abnormal and she should be referred to hospital for further investigation",
+    "action_key": 513
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Systolic blood pressure",
+        "minValue": 140.0,
+        "maxValue": 160.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "key": "DAK, Repeat systolic blood pressure",
+        "minValue": 140.0,
+        "maxValue": 160.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "key": "DAK, Urine dipstick result \u2013 protein",
+        "orValues": ["DAK, +","DAK, Negative"],
+        "operator": "OR"
+      },
+      {
+            "key": "DAK, Gestational age",
+            "value": 20,
+            "operator": ">"
+      }
+    ],
+    "displayPoint": "DAK, Gestational Hypertension",
+    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment if neccessay  ",
+    "annotation": "Woman has hypertension – SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher after 20 weeks of gestational age and no proteinuria.Advice to reduce workload and to rest. Advise on danger signsReassess at the next contact or in 1 week. If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available .Manage as an outpatient if GA is <36 weeks and if blood pressure is in mild range without the use of antihypertensive medications.Refer at ≥36 weeks of gestation",
+    "action_key": 514
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Diastolic blood pressure",
+        "minValue": 90.0,
+        "maxValue": 110.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "key": "DAK, Repeat diastolic blood pressure",
+        "minValue": 90.0,
+        "maxValue": 110.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "key": "DAK, Urine dipstick result \u2013 protein",
+        "orValues": ["DAK, +","DAK, Negative"],
+        "operator": "OR"
+      },
+       {
+            "key": "DAK, Gestational age",
+            "value": 20,
+            "operator": ">"
+          }
+    ],
+    "displayPoint": "DAK, Gestational Hypertension",
+    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment if neccessay  ",
+    "annotation": "Woman has hypertension – SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher after 20 weeks of gestational age and no proteinuria.Advice to reduce workload and to rest. Advise on danger signsReassess at the next contact or in 1 week. If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available .Manage as an outpatient if GA is <36 weeks and if blood pressure is in mild range without the use of antihypertensive medications.Refer at ≥36 weeks of gestation",
+    "action_key": 515
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, BMI",
+        "value": 30.0,
+        "operator": ">="
+      },
+      {
+        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+        "value": "DAK, Positive",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
+    "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
+    "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m2 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
+    "action_key": 516
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Past pregnancy history",
+        "orValues": ["DAK, Gestational diabetes mellitus","DAK, Macrosomia"],
+        "operator": "OR"
+      },
+      {
+        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+        "value": "DAK, Positive",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
+    "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
+    "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m3 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
+    "action_key": 517
+  },
+
+  {
+    "conditions": [
+      {
+        "key": "DAK, Urine dipstick result \u2013 glucose",
+        "orValues": ["DAK, ++","DAK, +++","DAK, ++++","DAK, +"],
+        "operator": "OR"
+      },
+      {
+        "key": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+        "value": "DAK, Positive",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Risk of gestational diabetes mellitus (GDM)",
+    "action": "Provide Counselling on gestational diabetes mellitus (GDM) risk",
+    "annotation": "The woman is considered at risk for GDM if she has any of the following risk factors: \n\u2013 BMI of 30 kg/m5 or more\n\u2013 Previous GDM\n\u2013 Previous macrosomia \n\u2013 Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions\n\nPlease provide appropriate Counselling for GDM risk mitigation, including: \n\u2013 Reasserting dietary interventions\n\u2013 Reasserting physical activity during pregnancy",
+    "action_key": 518
   }
-
-
 ]

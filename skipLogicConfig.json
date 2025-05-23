@@ -2788,6 +2788,7 @@
     "dependent": "DAK, Repeat systolic blood pressure after 15 min",
     "logic_key": 223
   },
+
   {
     "logics": [
       {
@@ -2828,6 +2829,7 @@
     "dependent": "DAK, Repeat diastolic blood pressure after 15 min",
     "logic_key": 224
   },
+
   {
     "logics": [
       {
@@ -6268,62 +6270,6 @@
             "operator": "OR"
           }
         ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Systolic blood pressure",
-            "value": 160.0,
-            "operator": ">"
-          },
-          {
-            "trigger": "DAK, Repeat systolic blood pressure",
-            "value": 160.0,
-            "operator": ">"
-          },
-          {
-            "trigger": "DAK, Symptoms of severe pre-eclampsia",
-            "value": "DAK, No symptoms of severe pre-eclampsia",
-            "operator": "="
-          },
-          {
-            "trigger": "DAK, Urine dipstick result \u2013 protein",
-            "orValues": [
-              "DAK, ++",
-              "DAK, +++",
-              "DAK, ++++"
-            ],
-            "operator": "="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Diastolic blood pressure",
-            "value": 90.0,
-            "operator": ">="
-          },
-          {
-            "trigger": "DAK, Repeat diastolic blood pressure",
-            "value": 90.0,
-            "operator": ">="
-          },
-          {
-            "trigger": "DAK, Symptoms of severe pre-eclampsia",
-            "value": "DAK, No symptoms of severe pre-eclampsia",
-            "operator": "="
-          },
-          {
-            "trigger": "DAK, Urine dipstick result \u2013 protein",
-            "orValues": [
-              "DAK, ++",
-              "DAK, +++",
-              "DAK, ++++"
-            ],
-            "operator": "OR"
-          }
-        ]
       }
     ],
     "action": "show",
@@ -6490,8 +6436,8 @@
           },
           {
             "trigger": "DAK, Gestational age",
-            "value": 12.0,
-            "operator": ">="
+            "value": 0,
+            "operator": ">"
           }
         ]
       },
@@ -6507,8 +6453,8 @@
           },
           {
             "trigger": "DAK, Gestational age",
-            "value": 12.0,
-            "operator": ">="
+            "value": 0,
+            "operator": ">"
           }
         ]
       },
@@ -6521,8 +6467,8 @@
           },
           {
             "trigger": "DAK, Gestational age",
-            "value": 12.0,
-            "operator": ">="
+            "value": 0,
+            "operator": ">"
           }
         ]
       },
@@ -6530,6 +6476,15 @@
         "rules": [
           {
             "trigger": "DAK, Pre-eclampsia",
+            "value": false,
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Severe pre-eclampsia",
             "value": false,
             "operator": "="
           }
@@ -6546,76 +6501,13 @@
       {
         "rules": [
           {
-            "trigger": "DAK, Existing chronic health conditions",
-            "orValues": [
-              "DAK, Autoimmune disease",
-              "DAK, Diabetes",
-              "DAK, Chronic Hypertensions",
-              "DAK, Renal disease"
-            ],
-            "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 12.0,
-            "operator": ">="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Past pregnancy history",
-            "orValues": [
-              "DAK, Eclampsia",
-              "DAK, Convulsions"
-            ],
-            "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 12.0,
-            "operator": ">="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Number of fetuses",
-            "value": 2.0,
-            "operator": ">="
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 12.0,
-            "operator": ">="
-          }
-        ]
-      }
-    ],
-    "action": "show",
-    "conditionType": "deepAnalysis",
-    "dependent": "DAK, Risk of pre-eclampsia",
-    "logic_key": 468
-  },
-  {
-    "logics": [
-      {
-        "rules": [
-          {
             "trigger": "DAK, BMI",
             "value": 30.0,
             "operator": ">="
           },
           {
             "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-            "value": "DAK, Negative",
-            "operator": "="
-          },
-          {
-            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-            "value": "DAK, Negative",
+            "value": "DAK, Positive",
             "operator": "="
           }
         ]
@@ -6625,19 +6517,14 @@
           {
             "trigger": "DAK, Past pregnancy history",
             "orValues": [
-              "DAK, Gestatinal diabetes mellitus",
+              "DAK, Gestational diabetes mellitus",
               "DAK, Macrosomia"
             ],
             "operator": "OR"
           },
           {
             "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-            "value": "DAK, Negative",
-            "operator": "="
-          },
-          {
-            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-            "value": "DAK, Negative",
+            "value": "DAK, Positive",
             "operator": "="
           }
         ]
@@ -6655,12 +6542,74 @@
           },
           {
             "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-            "value": "DAK, Negative",
+            "value": "DAK, Positive",
             "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, BMI",
+            "value": 30.0,
+            "operator": ">="
           },
           {
             "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-            "value": "DAK, Negative",
+            "value": "DAK, Positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Past pregnancy history",
+            "orValues": [
+              "DAK, Gestational diabetes mellitus",
+              "DAK, Macrosomia"
+            ],
+            "operator": "OR"
+          },
+          {
+            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+            "value": "DAK, Positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 glucose",
+            "orValues": [
+              "DAK, ++",
+              "DAK, +++",
+              "DAK, ++++"
+            ],
+            "operator": "OR"
+          },
+          {
+            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+            "value": "DAK, Positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 glucose",
+            "orValues": [
+              "DAK, ++",
+              "DAK, +++",
+              "DAK, ++++"
+            ],
+            "operator": "OR"
+          },
+          {
+            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+            "value": "DAK, Positive",
             "operator": "="
           }
         ]
@@ -6675,6 +6624,11 @@
     "logics": [
       {
         "rules": [
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": "<"
+          },
           {
             "trigger": "DAK, Systolic blood pressure",
             "minValue": 140.0,
@@ -6691,19 +6645,19 @@
             "trigger": "DAK, Urine dipstick result \u2013 protein",
             "orValues": [
               "DAK, +",
-              "DAK, None"
+              "DAK, Negative"
             ],
             "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 20,
-            "operator": "<"
           }
         ]
       },
       {
         "rules": [
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": "<"
+          },
           {
             "trigger": "DAK, Diastolic blood pressure",
             "minValue": 90.0,
@@ -6720,14 +6674,9 @@
             "trigger": "DAK, Urine dipstick result \u2013 protein",
             "orValues": [
               "DAK, +",
-              "DAK, None"
+              "DAK, Negative"
             ],
             "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 20,
-            "operator": "<"
           }
         ]
       }
@@ -6775,7 +6724,7 @@
   },
   {
     "logics": [
-      {
+       {
         "rules": [
           {
             "trigger": "DAK, BMI",
@@ -6784,12 +6733,7 @@
           },
           {
             "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-            "value": "DAK, Negative",
-            "operator": "="
-          },
-          {
-            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-            "value": "DAK, Negative",
+            "value": "DAK, Positive",
             "operator": "="
           }
         ]
@@ -6806,12 +6750,7 @@
           },
           {
             "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-            "value": "DAK, Negative",
-            "operator": "="
-          },
-          {
-            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-            "value": "DAK, Negative",
+            "value": "DAK, Positive",
             "operator": "="
           }
         ]
@@ -6829,12 +6768,56 @@
           },
           {
             "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-            "value": "DAK, Negative",
+            "value": "DAK, Positive",
             "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, BMI",
+            "value": 30.0,
+            "operator": ">="
           },
           {
             "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-            "value": "DAK, Negative",
+            "value": "DAK, Positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Past pregnancy history",
+            "orValues": [
+              "DAK, Gestatinal diabetes mellitus",
+              "DAK, Macrosomia"
+            ],
+            "operator": "OR"
+          },
+          {
+            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+            "value": "DAK, Positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 glucose",
+            "orValues": [
+              "DAK, ++",
+              "DAK, +++",
+              "DAK, ++++"
+            ],
+            "operator": "OR"
+          },
+          {
+            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+            "value": "DAK, Positive",
             "operator": "="
           }
         ]
@@ -7265,7 +7248,7 @@
             "trigger": "DAK, Urine dipstick result \u2013 protein",
             "orValues": [
               "DAK, +",
-              "DAK, None"
+              "DAK, Negative"
             ],
             "operator": "OR"
           },
@@ -7294,7 +7277,7 @@
             "trigger": "DAK, Urine dipstick result \u2013 protein",
             "orValues": [
               "DAK, +",
-              "DAK, None"
+              "DAK, Negative"
             ],
             "operator": "OR"
           },
@@ -9484,5 +9467,18 @@
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Repeat diastolic blood pressure",
     "logic_key": 618
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Respiratory rate",
+        "value": false,
+        "operator": "!="
+      }
+    ],
+    "action": "hide",
+    "parent":"DAK, Respiratory exam result",
+    "dependent": "DAK, Respiratory exam not done",
+    "logic_key": 619
   }
 ]
