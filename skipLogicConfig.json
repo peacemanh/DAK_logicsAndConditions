@@ -1578,7 +1578,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Reason for emergency referral",
+    "dependent": "DAK, Reason for emergency referral ANC",
     "logic_key": 128
   },
   {
@@ -6276,14 +6276,8 @@
           },
           {
             "trigger": "DAK, Symptoms of severe pre-eclampsia",
-            "orValues": [
-              "DAK, Severe headache",
-              "DAK, Epigastric pain",
-              "DAK, Dizziness",
-              "DAK, Visual disturbance",
-              "DAK, Vomiting"
-            ],
-            "operator": "OR"
+            "value": "DAK, No symptoms of severe pre-eclampsia",
+            "operator": "!="
           }
         ]
       },
@@ -6301,14 +6295,8 @@
           },
           {
             "trigger": "DAK, Symptoms of severe pre-eclampsia",
-            "orValues": [
-              "DAK, Severe headache",
-              "DAK, Epigastric pain",
-              "DAK, Dizziness",
-              "DAK, Visual disturbance",
-              "DAK, Vomiting"
-            ],
-            "operator": "OR"
+            "value": "DAK, No symptoms of severe pre-eclampsia",
+            "operator": "!="
           }
         ]
       }
@@ -6449,7 +6437,7 @@
             "trigger": "DAK, Urine dipstick result \u2013 protein",
             "orValues": [
               "DAK, +",
-              "DAK, None"
+              "DAK, Negative"
             ],
             "operator": "OR"
           }
@@ -6469,7 +6457,10 @@
             "trigger": "DAK, Existing chronic health conditions",
             "orValues": [
               "DAK, Autoimmune disease",
-              "DAK, Diabetes",
+              "DAK, Diabetes arising in pregnancy (gestational diabetes)",
+              "DAK, Diabetes, pre-existing type 1",
+              "DAK, Diabetes, pre-existing type 2",
+              "DAK, Diabetes, other or unspecified",
               "DAK, Chronic Hypertensions",
               "DAK, Renal disease"
             ],
@@ -7314,7 +7305,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Reason for emergency referral",
+        "trigger": "DAK, Reason for emergency referral ANC",
         "value": "DAK, Other",
         "operator": "="
       }
@@ -9394,5 +9385,17 @@
     "action": "show",
     "dependent": "DAK, Gestational age by Ultrasound days",
     "logic_key": 621
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 12,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Pre-eclampsia risk counselling provided",
+    "logic_key": 622
   }
 ]

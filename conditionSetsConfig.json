@@ -2517,8 +2517,8 @@
       },
       {
         "key": "DAK, Symptoms of severe pre-eclampsia",
-        "value": "DAK, Severe headache",
-        "operator": "="
+        "value": "DAK, No symptoms of severe pre-eclampsia",
+        "operator": "!="
       }
     ],
     "displayPoint": "DAK, Severe pre-eclampsia",
@@ -2540,198 +2540,14 @@
       },
       {
         "key": "DAK, Symptoms of severe pre-eclampsia",
-        "value": "DAK, Severe headache",
-        "operator": "="
+        "value": "DAK, No symptoms of severe pre-eclampsia",
+        "operator": "!="
       }
     ],
     "displayPoint": "DAK, Severe pre-eclampsia",
     "action": "Start emergency manegment  and refer urgently to a hospital",
     "annotation": "Symptom(s) of severe pre-eclampsia! Refer urgently to hospital!\nWoman has hypertension. If she is experiencing a symptom of severe pre-eclampsia, then refer urgently to the hospital for further investigation and management.\n\nProcedure\n\u2013 Give Loading dose of magnsium sulphate\n\u2013 Give appropriate anti-hypertensives\n\u2013 Revise the birth plan \n\u2013 Refer urgently to hospital",
     "action_key": 203
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Systolic blood pressure",
-        "value": 140.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Repeat systolic blood pressure",
-        "value": 140.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Symptoms of severe pre-eclampsia",
-        "value": "DAK, Visual disturbance",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Severe pre-eclampsia",
-    "action": "Start emergency manegment  and refer urgently to a hospital",
-    "annotation": "Symptom(s) of severe pre-eclampsia! Refer urgently to hospital!\nWoman has hypertension. If she is experiencing a symptom of severe pre-eclampsia, then refer urgently to the hospital for further investigation and management.\n\nProcedure\n\u2013 Give Loading dose of magnsium sulphate\n\u2013 Give appropriate anti-hypertensives\n\u2013 Revise the birth plan \n\u2013 Refer urgently to hospital",
-    "action_key": 204
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Diastolic blood pressure",
-        "value": 90.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Repeat diastolic blood pressure",
-        "value": 90.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Symptoms of severe pre-eclampsia",
-        "value": "DAK, Visual disturbance",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Severe pre-eclampsia",
-    "action": "Start emergency manegment  and refer urgently to a hospital",
-    "annotation": "Symptom(s) of severe pre-eclampsia! Refer urgently to hospital!\nWoman has hypertension. If she is experiencing a symptom of severe pre-eclampsia, then refer urgently to the hospital for further investigation and management.\n\nProcedure\n\u2013 Give Loading dose of magnsium sulphate\n\u2013 Give appropriate anti-hypertensives\n\u2013 Revise the birth plan \n\u2013 Refer urgently to hospital",
-    "action_key": 205
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Systolic blood pressure",
-        "value": 140.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Repeat systolic blood pressure",
-        "value": 140.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Symptoms of severe pre-eclampsia",
-        "value": "DAK, Epigastric pain",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Severe pre-eclampsia",
-    "action": "Start emergency manegment  and refer urgently to a hospital",
-    "annotation": "Symptom(s) of severe pre-eclampsia! Refer urgently to hospital!\nWoman has hypertension. If she is experiencing a symptom of severe pre-eclampsia, then refer urgently to the hospital for further investigation and management.\n\nProcedure\n\u2013 Give Loading dose of magnsium sulphate\n\u2013 Give appropriate anti-hypertensives\n\u2013 Revise the birth plan \n\u2013 Refer urgently to hospital",
-    "action_key": 206
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Diastolic blood pressure",
-        "value": 90.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Repeat diastolic blood pressure",
-        "value": 90.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Symptoms of severe pre-eclampsia",
-        "value": "DAK, Epigastric pain",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Severe pre-eclampsia",
-    "action": "Start emergency manegment  and refer urgently to a hospital",
-    "annotation": "Symptom(s) of severe pre-eclampsia! Refer urgently to hospital!\nWoman has hypertension. If she is experiencing a symptom of severe pre-eclampsia, then refer urgently to the hospital for further investigation and management.\n\nProcedure\n\u2013 Give Loading dose of magnsium sulphate\n\u2013 Give appropriate anti-hypertensives\n\u2013 Revise the birth plan \n\u2013 Refer urgently to hospital",
-    "action_key": 207
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Systolic blood pressure",
-        "value": 140.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Repeat systolic blood pressure",
-        "value": 140.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Symptoms of severe pre-eclampsia",
-        "value": "DAK, Dizziness",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Severe pre-eclampsia",
-    "action": "Start emergency manegment  and refer urgently to a hospital",
-    "annotation": "Symptom(s) of severe pre-eclampsia! Refer urgently to hospital!\nWoman has hypertension. If she is experiencing a symptom of severe pre-eclampsia, then refer urgently to the hospital for further investigation and management.\n\nProcedure\n\u2013 Give Loading dose of magnsium sulphate\n\u2013 Give appropriate anti-hypertensives\n\u2013 Revise the birth plan \n\u2013 Refer urgently to hospital",
-    "action_key": 208
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Diastolic blood pressure",
-        "value": 90.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Repeat diastolic blood pressure",
-        "value": 90.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Symptoms of severe pre-eclampsia",
-        "value": "DAK, Dizziness",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Severe pre-eclampsia",
-    "action": "Start emergency manegment  and refer urgently to a hospital",
-    "annotation": "Symptom(s) of severe pre-eclampsia! Refer urgently to hospital!\nWoman has hypertension. If she is experiencing a symptom of severe pre-eclampsia, then refer urgently to the hospital for further investigation and management.\n\nProcedure\n\u2013 Give Loading dose of magnsium sulphate\n\u2013 Give appropriate anti-hypertensives\n\u2013 Revise the birth plan \n\u2013 Refer urgently to hospital",
-    "action_key": 209
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Systolic blood pressure",
-        "value": 140.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Repeat systolic blood pressure",
-        "value": 140.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Symptoms of severe pre-eclampsia",
-        "value": "DAK, Vomiting",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Severe pre-eclampsia",
-    "action": "Refer urgently to a hospital",
-    "annotation": "Symptom(s) of severe pre-eclampsia! Refer urgently to hospital!\nWoman has hypertension. If she is experiencing a symptom of severe pre-eclampsia, then refer urgently to the hospital for further investigation and management.\n\nProcedure\n\u2013 Give Loading dose of magnsium sulphate\n\u2013 Give appropriate anti-hypertensives\n\u2013 Revise the birth plan \n\u2013 Refer urgently to hospital",
-    "action_key": 210
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Diastolic blood pressure",
-        "value": 90.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Repeat diastolic blood pressure",
-        "value": 90.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Symptoms of severe pre-eclampsia",
-        "value": "DAK, Vomiting",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Severe pre-eclampsia",
-    "action": "Refer urgently to a hospital",
-    "annotation": "Symptom(s) of severe pre-eclampsia! Refer urgently to hospital!\nWoman has hypertension. If she is experiencing a symptom of severe pre-eclampsia, then refer urgently to the hospital for further investigation and management.\n\nProcedure\n\u2013 Give Loading dose of magnsium sulphate\n\u2013 Give appropriate anti-hypertensives\n\u2013 Revise the birth plan \n\u2013 Refer urgently to hospital",
-    "action_key": 211
   },
   
   {
@@ -2879,7 +2695,7 @@
     ],
     "displayPoint": "DAK, Pre-eclampsia",
     "action": "Refer urgently to a hospital",
-    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 5+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
+    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 2+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
     "action_key": 222
   },
   {
@@ -2909,7 +2725,7 @@
     ],
     "displayPoint": "DAK, Pre-eclampsia",
     "action": "Refer urgently to a hospital",
-    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 5+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
+    "annotation": "Pre-eclampsia diagnosis! Refer to hospital and revise birth plan.\nWoman has pre-eclampsia \u2013 SBP of 140 mmHg or above and/or DBP of 90 mmHg or above and proteinuria 2+ and no symptom of severe pre-eclampsia.\n\nProcedure: \n\u2013 Refer to hospital \n\u2013 Revise the birth plan",
     "action_key": 223
   },
   {
@@ -3013,7 +2829,7 @@
       }
     ],
     "displayPoint": "DAK, Chronic Hypertension",
-    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment if neccessay",
+    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment if neccessay.",
     "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available",
     "action_key": 228
   },
@@ -3646,8 +3462,8 @@
     "conditions": [
       {
         "key": "DAK, Existing chronic health conditions",
-        "value": "DAK, Diabetes",
-        "operator": "="
+        "orValues": ["DAK, Diabetes arising in pregnancy (gestational diabetes)","DAK, Diabetes, pre-existing type 1","DAK, Diabetes, pre-existing type 2","DAK, Diabetes, other or unspecified"],
+        "operator": "OR"
       },
       {
         "key": "DAK, Gestational age",
@@ -3709,7 +3525,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
+    "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
     "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
     "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 270
@@ -3727,7 +3543,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
+    "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
     "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
     "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 271
@@ -3745,7 +3561,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
+    "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
    "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
     "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 272
@@ -3763,7 +3579,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
+    "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
    "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
     "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 273
@@ -3781,7 +3597,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
+    "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
     "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
     "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 274
@@ -3799,7 +3615,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
+    "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
   "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
     "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 275
@@ -3817,7 +3633,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
+    "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
     "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
     "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 276
@@ -3835,7 +3651,7 @@
         "operator": ">="
       }
     ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
+    "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
     "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
     "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 277
@@ -5566,7 +5382,7 @@
       }
     ],
     "action": "Counselling on risk reduction ",
-    "annotation": "Provide counselling to reduce risk of contracting HIV if the woman is deemed to be at risk for contracting HIV",
+    "annotation": "c",
     "action_key": 403
   },
   {
@@ -7218,7 +7034,7 @@
       }
     ],
     "displayPoint": "DAK, Gestational Hypertension",
-    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment if neccessay  ",
+    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment if neccessay.",
     "annotation": "Woman has hypertension – SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher after 20 weeks of gestational age and no proteinuria.Advice to reduce workload and to rest. Advise on danger signsReassess at the next contact or in 1 week. If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available .Manage as an outpatient if GA is <36 weeks and if blood pressure is in mild range without the use of antihypertensive medications.Refer at ≥36 weeks of gestation",
     "action_key": 514
   },
@@ -7248,7 +7064,7 @@
           }
     ],
     "displayPoint": "DAK, Gestational Hypertension",
-    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment if neccessay  ",
+    "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment if neccessay.",
     "annotation": "Woman has hypertension – SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher after 20 weeks of gestational age and no proteinuria.Advice to reduce workload and to rest. Advise on danger signsReassess at the next contact or in 1 week. If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available .Manage as an outpatient if GA is <36 weeks and if blood pressure is in mild range without the use of antihypertensive medications.Refer at ≥36 weeks of gestation",
     "action_key": 515
   },

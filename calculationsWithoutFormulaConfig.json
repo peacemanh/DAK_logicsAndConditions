@@ -135,14 +135,8 @@
             },
             {
                 "trigger": "DAK, Symptoms of severe pre-eclampsia",
-                "orValues": [
-                    "DAK, Severe headache",
-                    "DAK, Epigastric pain",
-                    "DAK, Dizziness",
-                    "DAK, Visual disturbance",
-                    "DAK, Vomiting"
-                ],
-                "operator": "OR"
+                "value":"DAK, No symptoms of severe pre-eclampsia",
+                "operator": "!="
             }
         ],
         "dependentValue": true,
@@ -163,14 +157,8 @@
             },
             {
                 "trigger": "DAK, Symptoms of severe pre-eclampsia",
-                "orValues": [
-                    "DAK, Severe headache",
-                    "DAK, Epigastric pain",
-                    "DAK, Dizziness",
-                    "DAK, Visual disturbance",
-                    "DAK, Vomiting"
-                ],
-                "operator": "OR"
+                "value":"DAK, No symptoms of severe pre-eclampsia",
+                "operator": "!="
             }
         ],
         "dependentValue": true,
@@ -192,7 +180,7 @@
             {
                 "trigger": "DAK, Symptoms of severe pre-eclampsia",
                 "value": "DAK, No symptoms of severe pre-eclampsia",
-                "operator": "="
+                "operator": "!="
             },
             {
                 "trigger": "DAK, Urine dipstick result \u2013 protein",
@@ -223,7 +211,7 @@
             {
                 "trigger": "DAK, Symptoms of severe pre-eclampsia",
                 "value": "DAK, No symptoms of severe pre-eclampsia",
-                "operator": "="
+                "operator": "!="
             },
             {
                 "trigger": "DAK, Urine dipstick result \u2013 protein",
@@ -933,8 +921,8 @@
         "logics": [
             {
                 "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Diabetes",
-                "operator": "="
+                "orValues": ["DAK, Diabetes arising in pregnancy (gestational diabetes)","DAK, Diabetes, pre-existing type 1","DAK, Diabetes, pre-existing type 2","DAK, Diabetes, other or unspecified"],
+                "operator": "OR"
             }
         ],
         "dependentValue": true,
