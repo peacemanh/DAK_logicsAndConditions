@@ -6454,6 +6454,24 @@
       {
         "rules": [
           {
+            "trigger": "DAK, Pre-eclampsia",
+            "value": true,
+            "operator": "!="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Severe pre-eclampsia",
+            "value": true,
+            "operator": "!="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
             "trigger": "DAK, Existing chronic health conditions",
             "orValues": [
               "DAK, Autoimmune disease",
@@ -6507,17 +6525,18 @@
       {
         "rules": [
           {
-            "trigger": "DAK, Pre-eclampsia",
-            "value": false,
-            "operator": "="
-          }
-        ]
-      },
-      {
-        "rules": [
+            "trigger": "DAK, Systolic blood pressure",
+            "value": 140.0,
+            "operator": "<"
+          },
           {
-            "trigger": "DAK, Severe pre-eclampsia",
-            "value": false,
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "value": 140.0,
+            "operator": "<"
+          },
+          {
+            "trigger": "DAK, Symptoms of severe pre-eclampsia",
+            "value": "DAK, No symptoms of severe pre-eclampsia",
             "operator": "="
           }
         ]
