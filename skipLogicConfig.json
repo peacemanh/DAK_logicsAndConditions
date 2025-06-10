@@ -82,7 +82,7 @@
       }
     ],
     "action": "hide",
-    "dependent": "DAK, Reason blood pressure cannot be taken form",
+    "dependent": "DAK, Reason blood pressure cannot be taken",
     "logic_key": 5
   },
   {
@@ -3444,7 +3444,7 @@
       }
     ],
     "action": "show",
-    "dependent": "DAK, Oxygen Saturation",
+    "dependent": "DAK, Oxygen Saturationnn",
     "logic_key": 275
   },
   {
@@ -4336,9 +4336,34 @@
     "dependent": "DAK, Substance use",
     "logic_key": 340
   },
-  {
+
+   {
     "logics": [
+        {
+        "rules": [
+          {
+        "trigger": "DAK, Diastolic blood pressure",
+        "minValue": 90.0,
+        "maxValue": 110.0,
+        "operator": "between, <=, <"
+      },
       {
+        "trigger": "DAK, Repeat diastolic blood pressure",
+        "minValue": 90.0,
+        "maxValue": 110.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "trigger": "DAK, Urine dipstick result \u2013 protein",
+        "value": "DAK, +",
+        "operator": "="
+      }
+        ]
+      },
+
+       {
+        "rules": [
+          {
         "trigger": "DAK, Systolic blood pressure",
         "minValue": 140.0,
         "maxValue": 160.0,
@@ -4355,38 +4380,12 @@
         "value": "DAK, +",
         "operator": "="
       }
-    ],
-    "action": "show",
-    "dependent": "DAK, Counselling conducted on hypertension",
-    "logic_key": 341
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Diastolic blood pressure",
-        "minValue": 90.0,
-        "maxValue": 110.0,
-        "operator": "between, <=, <"
+        ]
       },
-      {
-        "trigger": "DAK, Repeat diastolic blood pressure",
-        "minValue": 90.0,
-        "maxValue": 110.0,
-        "operator": "between, <=, <"
-      },
-      {
-        "trigger": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, +",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Counselling conducted on hypertension",
-    "logic_key": 342
-  },
-  {
-    "logics": [
-      {
+
+       {
+        "rules": [
+     {
         "trigger": "DAK, Diastolic blood pressure",
         "minValue": 90.0,
         "maxValue": 110.0,
@@ -4403,11 +4402,15 @@
         "value": "DAK, Negative",
         "operator": "="
       }
+        ]
+      }
     ],
     "action": "show",
+    "conditionType": "deepAnalysis",
     "dependent": "DAK, Counselling conducted on hypertension",
-    "logic_key": 343
+    "logic_key": 507
   },
+
   {
     "logics": [
       {
@@ -9416,5 +9419,369 @@
     "action": "show",
     "dependent": "DAK, Pre-eclampsia risk counselling provided",
     "logic_key": 622
+  },
+   {
+    "logics": [
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, Negative"
+            ],
+            "operator": "OR"
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": ">"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, Negative"
+            ],
+            "operator": "OR"
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": ">"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": "<"
+          },
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, Negative"
+            ],
+            "operator": "OR"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": "<"
+          },
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, Negative"
+            ],
+            "operator": "OR"
+          }
+        ]
+      },
+       {
+        "rules": [
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "value": 140.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "value": 140.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Symptoms of severe pre-eclampsia",
+            "value": "DAK, No symptoms of severe pre-eclampsia",
+            "operator": "!="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "value": 90.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "value": 90.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Symptoms of severe pre-eclampsia",
+            "value": "DAK, No symptoms of severe pre-eclampsia",
+            "operator": "!="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "value": 160.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "value": 160.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Symptoms of severe pre-eclampsia",
+            "value": "DAK, No symptoms of severe pre-eclampsia",
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "value": "DAK, ++",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Symptoms of severe pre-eclampsia",
+            "value": "DAK, No symptoms of severe pre-eclampsia",
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +++",
+              "DAK, ++++"
+            ],
+            "operator": "OR"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Symptoms of severe pre-eclampsia",
+            "value": "DAK, No symptoms of severe pre-eclampsia",
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, ++",
+              "DAK, +++",
+              "DAK, ++++"
+            ],
+            "operator": "OR"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+        "trigger": "DAK, Diastolic blood pressure",
+        "minValue": 90.0,
+        "maxValue": 110.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "trigger": "DAK, Repeat diastolic blood pressure",
+        "minValue": 90.0,
+        "maxValue": 110.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "trigger": "DAK, Urine dipstick result \u2013 protein",
+        "value": "DAK, +",
+        "operator": "="
+      }
+        ]
+      },
+
+       {
+        "rules": [
+          {
+        "trigger": "DAK, Systolic blood pressure",
+        "minValue": 140.0,
+        "maxValue": 160.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "trigger": "DAK, Repeat systolic blood pressure",
+        "minValue": 140.0,
+        "maxValue": 160.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "trigger": "DAK, Urine dipstick result \u2013 protein",
+        "value": "DAK, +",
+        "operator": "="
+      }
+        ]
+      },
+
+       {
+        "rules": [
+     {
+        "trigger": "DAK, Diastolic blood pressure",
+        "minValue": 90.0,
+        "maxValue": 110.0,
+        "operator": "between, <=, <="
+      },
+      {
+        "trigger": "DAK, Repeat diastolic blood pressure",
+        "minValue": 90.0,
+        "maxValue": 110.0,
+        "operator": "between, <=, <="
+      },
+      {
+        "trigger": "DAK, Urine dipstick result \u2013 protein",
+        "value": "DAK, Negative",
+        "operator": "="
+      }
+        ]
+      },
+            {
+        "rules": [
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "value": 160.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "value": 160.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, None"
+            ],
+            "operator": "OR"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "value": 110.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "value": 110.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, Negative"
+            ],
+            "operator": "OR"
+          }
+        ]
+      },
+      {
+         "rules": [
+      {
+        "trigger": "DAK, HIV test result",
+        "value": "DAK, HIV-positive",
+        "operator": "="
+      }
+               ]
+    }
+  ],
+    
+    "action": "show",
+    "conditionType": "deepAnalysis",
+    "dependent": "DAK, Diagnoses",
+    "logic_key": 623
   }
 ]
