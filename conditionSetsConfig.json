@@ -3378,150 +3378,6 @@
       {
         "key": "DAK, Gestational age",
         "value": 12.0,
-        "operator": "<"
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Conduct counselling on pre-eclampsia risk",
-    "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide Counselling",
-    "action_key": 262
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Past pregnancy history",
-        "value": "DAK, Pre-eclampsia",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": "<"
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Conduct counselling on pre-eclampsia risk",
-    "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide counselling",
-    "action_key": 263
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Past pregnancy history",
-        "value": "DAK, Eclampsia",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": "<"
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Conduct counselling on pre-eclampsia risk",
-    "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide counselling",
-    "action_key": 264
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Past pregnancy history",
-        "value": "DAK, Convulsions",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": "<"
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Conduct counselling on pre-eclampsia risk",
-    "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide counselling",
-    "action_key": 265
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Existing chronic health conditions",
-        "value": "DAK, Autoimmune disease",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": "<"
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Conduct counselling on pre-eclampsia risk",
-    "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide counselling",
-    "action_key": 266
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Existing chronic health conditions",
-        "orValues": ["DAK, Diabetes arising in pregnancy (gestational diabetes)","DAK, Diabetes, pre-existing type 1","DAK, Diabetes, pre-existing type 2","DAK, Diabetes, other or unspecified"],
-        "operator": "OR"
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": "<"
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Conduct counselling on pre-eclampsia risk",
-    "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide Counselling",
-    "action_key": 267
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Existing chronic health conditions",
-        "value": "DAK, Chronic Hypertensions",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": "<"
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Conduct counselling on pre-eclampsia risk",
-    "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide Counselling",
-    "action_key": 268
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Existing chronic health conditions",
-        "value": "DAK, Renal disease",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": "<"
-      }
-    ],
-    "displayPoint": "DAK, Risk of pre-eclampsia",
-    "action": "Conduct counselling on pre-eclampsia risk",
-    "annotation": "The woman is at risk of developing pre-eclampsia \u2013 provide Counselling",
-    "action_key": 269
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Number of fetuses",
-        "value": 2.0,
-        "operator": ">="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
         "operator": ">="
       }
     ],
@@ -3587,10 +3443,18 @@
   {
     "conditions": [
       {
-        "key": "DAK, Existing chronic health conditions",
-        "value": "DAK, Autoimmune disease",
-        "operator": "="
-      },
+            "key": "DAK, Existing chronic health conditions",
+            "orValues": [
+              "DAK, Autoimmune disease",
+              "DAK, Diabetes arising in pregnancy (gestational diabetes)",
+              "DAK, Diabetes, pre-existing type 1",
+              "DAK, Diabetes, pre-existing type 2",
+              "DAK, Diabetes, other or unspecified",
+              "DAK, Chronic Hypertensions",
+              "DAK, Renal disease"
+            ],
+            "operator": "OR"
+          },
       {
         "key": "DAK, Gestational age",
         "value": 12.0,
@@ -3599,62 +3463,8 @@
     ],
     "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
     "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
-    "action_key": 274
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Existing chronic health conditions",
-        "value": "DAK, Diabetes",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": ">="
-      }
-    ],
-    "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
-  "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
     "annotation": "The woman is at risk of developing pre-eclampsia: provide counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
     "action_key": 275
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Existing chronic health conditions",
-        "value": "DAK, Chronic Hypertension",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": ">="
-      }
-    ],
-    "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
-    "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
-    "action_key": 276
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Existing chronic health conditions",
-        "value": "DAK, Renal disease",
-        "operator": "="
-      },
-      {
-        "key": "DAK, Gestational age",
-        "value": 12.0,
-        "operator": ">="
-      }
-    ],
-    "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
-    "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
-    "annotation": "The woman is at risk of developing pre-eclampsia: provide counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
-    "action_key": 277
   },
 
   {
