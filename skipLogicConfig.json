@@ -9484,5 +9484,17 @@
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Repeat diastolic blood pressure",
     "logic_key": 618
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test result",
+        "value": null,
+        "operator": "!="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Hematocrit (Ht)",
+    "logic_key": 619
   }
 ]
