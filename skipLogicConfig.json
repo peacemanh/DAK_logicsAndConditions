@@ -56,18 +56,7 @@
     "dependent": "DAK, Fetal movement",
     "logic_key": 3
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Hepatitis B test result",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Counselling conducted on hepatitis B positive",
-    "logic_key": 4
-  },
+ 
   {
     "logics": [
       {
@@ -3136,18 +3125,7 @@
     "dependent": "DAK, tobacco reduction",
     "logic_key": 247
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Hepatitis B test result",
-        "value": "DAK, Hepatitis B positive",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Counselling conducted on hepatitis B positive",
-    "logic_key": 248
-  },
+
   {
     "logics": [
       {
@@ -3416,23 +3394,7 @@
     "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
     "logic_key": 270
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Pregnancy confirmed",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Syphilis test result",
-        "value": "DAK, Syphilis positive",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Syphilis counselling and treatment",
-    "logic_key": 272
-  },
+  
   {
     "logics": [
       {
@@ -4765,52 +4727,8 @@
     "dependent": "DAK, Counselling conducted on anaemia",
     "logic_key": 363
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Blood haemoglobin test conducted",
-        "value": false,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Pallor",
-        "value": false,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Has side-effects from iron and folic acid supplements",
-        "value": false,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Counselling conducted on anaemia",
-    "logic_key": 364
-  },
-  {
-    "logics": [
-      {
-        "trigger": "Population with low dietary calcium intake",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Amount of daily calcium supplements provided",
-    "logic_key": 365
-  },
-  {
-    "logics": [
-      {
-        "trigger": "Population with low dietary calcium intake",
-        "value": false,
-        "operator": "="
-      }
-    ],
-    "action": "hide",
-    "dependent": "DAK, Amount of daily calcium supplements provided",
-    "logic_key": 366
-  },
+  
+  
   {
     "logics": [
       {
@@ -4895,18 +4813,7 @@
     "dependent": "DAK, IPTp-SP dose 3 date",
     "logic_key": 373
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Hepatitis B test result",
-        "value": false,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Counselling conducted on hepatitis B positive",
-    "logic_key": 374
-  },
+
   {
     "logics": [
       {
@@ -7519,23 +7426,6 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Urine dipstick result \u2013 nitrites",
-        "value": "DAK, Positive",
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Urine dipstick result \u2013 leukocytes",
-        "value": "DAK, Positive",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, seven-day antibiotic regimen for asymptomatic bacteriuria (ASB) not provided",
-    "logic_key": 525
-  },
-  {
-    "logics": [
-      {
         "trigger": "DAK, Gestational age",
         "value": 30,
         "operator": ">="
@@ -8034,18 +7924,7 @@
     "dependent": "DAK, HIV status",
     "logic_key": 554
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Syphilis test result",
-        "value": "DAK, Syphilis positive",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Syphilis counselling and treatment",
-    "logic_key": 555
-  },
+  
   {
     "logics": [
       {
@@ -9488,13 +9367,796 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Blood haemoglobin test result",
-        "value": null,
-        "operator": "!="
+        "rules": [
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, Negative"
+            ],
+            "operator": "OR"
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": ">"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, Negative"
+            ],
+            "operator": "OR"
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": ">"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": "<"
+          },
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, Negative"
+            ],
+            "operator": "OR"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": "<"
+          },
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, Negative"
+            ],
+            "operator": "OR"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "value": 140.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "value": 140.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Symptoms of severe pre-eclampsia",
+            "value": "DAK, No symptoms of severe pre-eclampsia",
+            "operator": "!="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "value": 90.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "value": 90.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Symptoms of severe pre-eclampsia",
+            "value": "DAK, No symptoms of severe pre-eclampsia",
+            "operator": "!="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "value": 160.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "value": 160.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Symptoms of severe pre-eclampsia",
+            "value": "DAK, No symptoms of severe pre-eclampsia",
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "value": "DAK, ++",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Symptoms of severe pre-eclampsia",
+            "value": "DAK, No symptoms of severe pre-eclampsia",
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +++",
+              "DAK, ++++"
+            ],
+            "operator": "OR"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Symptoms of severe pre-eclampsia",
+            "value": "DAK, No symptoms of severe pre-eclampsia",
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, ++",
+              "DAK, +++",
+              "DAK, ++++"
+            ],
+            "operator": "OR"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "value": "DAK, +",
+            "operator": "="
+          }
+        ]
+      },
+
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "value": "DAK, +",
+            "operator": "="
+          }
+        ]
+      },
+
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <="
+          },
+          {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <="
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "value": "DAK, Negative",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "value": 160.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "value": 160.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, None"
+            ],
+            "operator": "OR"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "value": 110.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "value": 110.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, Negative"
+            ],
+            "operator": "OR"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, HIV test result",
+            "value": "DAK, HIV-positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Hepatitis B test result",
+            "value": "DAK, Hepatitis B positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Hepatitis C test result",
+            "value": "DAK, Hepatitis C positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Syphilis test result",
+            "value": "DAK, Syphilis positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 nitrites",
+            "value": "DAK, Positive",
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 leukocytes",
+            "value": "DAK, Positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 nitrites",
+            "value": "DAK, Positive",
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 leukocytes",
+            "value": "DAK, Positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Midstream urine Gram-staining",
+            "value": "DAK, Positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Midstream urine Gram-staining",
+            "value": "DAK, Positive",
+            "operator": "="
+          }
+        ]
       }
+
+
+    ],
+
+    "action": "show",
+    "conditionType": "deepAnalysis",
+    "dependent": "DAK, Diagnoses",
+    "logic_key": 619
+  },
+  {
+    "logics": [
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Fasting Blood sugar test result",
+            "minValue": 92.0,
+            "maxValue": 126.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+            "minValue": 92.0,
+            "maxValue": 126.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u2013 1 hour test result",
+            "minValue": 180.0,
+            "maxValue": 200.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u2013 2 hours test result",
+            "minValue": 153.0,
+            "maxValue": 200.0,
+            "operator": "between, <=, <"
+          }
+        ],
+        "innerConditionType": "either"
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+            "value": 126.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Fasting Blood sugar test result",
+            "value": 126.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u2013 1 hour test result",
+            "value": 200.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u2013 2 hours test result",
+            "value": 200.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Random blood sugar test result",
+            "value": 200.0,
+            "operator": ">="
+          }
+        ],
+        "innerConditionType": "either"
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, TB screening result",
+            "value": "DAK, Positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Blood haemoglobin test result",
+            "value": 11.0,
+            "operator": "<"
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 12,
+            "operator": "<="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Blood haemoglobin test result",
+            "value": 11.0,
+            "operator": "<"
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 28,
+            "operator": ">="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Blood haemoglobin test result",
+            "value": 10.5,
+            "operator": "<"
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "minValue": 13.0,
+            "maxValue": 27.0,
+            "operator": "between, <=, <="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Blood haemoglobin test conducted",
+            "value": false,
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Pallor",
+            "value": true,
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Blood haemoglobin test result",
+            "value": 11.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 12.0,
+            "operator": "<="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Blood haemoglobin test result",
+            "value": 11.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 28.0,
+            "operator": ">="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Blood haemoglobin test result",
+            "value": 10.5,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "minValue": 13.0,
+            "maxValue": 27.0,
+            "operator": "between, <=, <="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Blood haemoglobin test conducted",
+            "value": false,
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Pallor",
+            "value": false,
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Blood haemoglobin test result",
+            "value": 11.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 12.0,
+            "operator": "<="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Blood haemoglobin test result",
+            "value": 11.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 28.0,
+            "operator": "<="
+          },
+          {
+            "trigger": "DAK, Has side-effects from iron and folic acid supplements",
+            "value": false,
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Blood haemoglobin test result",
+            "value": 10.5,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "minValue": 13.0,
+            "maxValue": 27.0,
+            "operator": "between, <=, <="
+          },
+          {
+            "trigger": "DAK, Has side-effects from iron and folic acid supplements",
+            "value": false,
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Blood haemoglobin test conducted",
+            "value": false,
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Pallor",
+            "value": false,
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Has side-effects from iron and folic acid supplements",
+            "value": false,
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Blood haemoglobin test result",
+            "value": 11.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 12.0,
+            "operator": "<="
+          },
+          {
+            "trigger": "DAK, Has side-effects from iron and folic acid supplements",
+            "value": false,
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Blood haemoglobin test result",
+            "value": 11.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 28.0,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Has side-effects from iron and folic acid supplements",
+            "value": false,
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Blood haemoglobin test result",
+            "value": 10.5,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "minValue": 13.0,
+            "maxValue": 27.0,
+            "operator": "between, <=, <="
+          },
+          {
+            "trigger": "DAK, Has side-effects from iron and folic acid supplements",
+            "value": false,
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Blood haemoglobin test result",
+            "value": 10.5,
+            "operator": ">="
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "minValue": 13.0,
+            "maxValue": 27.0,
+            "operator": "between, <=, <="
+          },
+          {
+            "trigger": "DAK, Has side-effects from iron and folic acid supplements",
+            "value": false,
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Anaemia diagnosis",
+            "orValues": [
+              "DAK, Moderate (7-9.9 g/dl)",
+              "DAK, Mild (10-10.9 g/dl)",
+              "DAK, Severe (<7g/dl)"
+            ],
+            "operator": "OR"
+          }
+        ]
+      }
+
     ],
     "action": "show",
-    "dependent": "DAK, Hematocrit (Ht)",
-    "logic_key": 619
+    "conditionType": "deepAnalysis",
+    "dependent": "DAK, Diagnoses continued",
+    "logic_key": 620
   }
+
+
 ]
