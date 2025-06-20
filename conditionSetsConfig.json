@@ -6481,13 +6481,13 @@
   {
     "conditions": [
       {
-        "key": "DAK, Repeat systolic blood pressure",
+        "key": "DAK, Repeat systolic blood pressure after 15 min",
         "minValue": 140,
         "maxValue": 160,
         "operator": "between, <=, <"
       },
       {
-        "key": "DAK, Repeat diastolic blood pressure",
+        "key": "DAK, Repeat diastolic blood pressure after 15 min",
         "minValue": 90,
         "maxValue": 110,
         "operator": "between, <=, <"

@@ -2362,6 +2362,11 @@
         "trigger": "DAK, Amount of daily aspirin prescribed until delivery",
         "value": 1,
         "operator": ">="
+      },
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 12,
+        "operator": "<"
       }
     ],
     "action": "hide",
@@ -7130,6 +7135,11 @@
     "logics": [
       {
         "rules": [
+            {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": ">"
+          },
           {
             "trigger": "DAK, Systolic blood pressure",
             "minValue": 140.0,
@@ -7149,16 +7159,16 @@
               "DAK, Negative"
             ],
             "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 20,
-            "operator": ">"
           }
         ]
       },
       {
         "rules": [
+            {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": ">"
+          },
           {
             "trigger": "DAK, Diastolic blood pressure",
             "minValue": 90.0,
@@ -7178,11 +7188,6 @@
               "DAK, Negative"
             ],
             "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 20,
-            "operator": ">"
           }
         ]
       }
@@ -9784,5 +9789,72 @@
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Diagnoses",
     "logic_key": 623
+  },
+  {
+    "logics": [
+      {
+        "rules": [
+          {
+        "trigger": "DAK, Fasting Blood sugar test result",
+        "minValue": 92.0,
+        "maxValue": 126.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+        "minValue": 92.0,
+        "maxValue": 126.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u2013 1 hour test result",
+        "minValue": 180.0,
+        "maxValue": 200.0,
+        "operator": "between, <=, <"
+      },
+      {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u2013 2 hours test result",
+        "minValue": 153.0,
+        "maxValue": 200.0,
+        "operator": "between, <=, <"
+      }
+        ],
+         "innerConditionType": "either"
+      },
+      {
+        "rules": [
+           {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) - fasting glucose test result",
+        "value": 126.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Fasting Blood sugar test result",
+        "value": 126.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u2013 1 hour test result",
+        "value": 200.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, 75 g oral glucose tolerance test (OGTT) \u2013 2 hours test result",
+        "value": 200.0,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Random blood sugar test result",
+        "value": 200.0,
+        "operator": ">="
+      }
+        ],
+       "innerConditionType": "either"
+      }
+    ],
+    "action": "show",
+    "conditionType": "deepAnalysis",
+    "dependent": "DAK, Diagnoses continued",
+    "logic_key": 224
   }
 ]
