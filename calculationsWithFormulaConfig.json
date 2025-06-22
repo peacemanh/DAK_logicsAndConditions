@@ -48,6 +48,12 @@
         "dateSource": true
     },
     {
+        "resultConcept": "DAK, Gestational age by LMNP day",
+        "operands": ["DAK, LNMP Date"],
+        "formula": "DAK, LNMP Date % 7",
+        "dateSource": true
+    },
+    {
         "resultConcept": "DAK, Gestational age",
         "operands": ["DAK, Gestational age exist", "DAK, Gestational Age Days in Current Week exist"],
         "formula": "((DAK, Gestational age exist * 7) + DAK, Gestational Age Days in Current Week exist) / 7"
@@ -63,6 +69,12 @@
         "formula": "DAK, LNMP Date % 7",
         "conditioner": {"key": "DAK, Source of gestational age", "value": "DAK, LNMP"},
         "dateSource": true
+    },
+    {
+        "resultConcept": "DAK, Gestational Age Days in Current Week",
+        "operands": ["DAK, Gestational age by Ultrasound days"],
+        "formula": "DAK, Gestational age by Ultrasound days / 1",
+        "conditioner": {"key": "DAK, Source of gestational age", "value": "DAK, Ultrasound"}
     },
     {
         "resultConcept": "DAK, Expected date of delivery (EDD)",
