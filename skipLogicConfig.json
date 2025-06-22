@@ -2362,11 +2362,6 @@
         "trigger": "DAK, Amount of daily aspirin prescribed until delivery",
         "value": 1,
         "operator": ">="
-      },
-      {
-        "trigger": "DAK, Gestational age",
-        "value": 12,
-        "operator": "<"
       }
     ],
     "action": "hide",
@@ -4340,80 +4335,6 @@
     "action": "show",
     "dependent": "DAK, Substance use",
     "logic_key": 340
-  },
-
-   {
-    "logics": [
-        {
-        "rules": [
-          {
-        "trigger": "DAK, Diastolic blood pressure",
-        "minValue": 90.0,
-        "maxValue": 110.0,
-        "operator": "between, <=, <"
-      },
-      {
-        "trigger": "DAK, Repeat diastolic blood pressure",
-        "minValue": 90.0,
-        "maxValue": 110.0,
-        "operator": "between, <=, <"
-      },
-      {
-        "trigger": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, +",
-        "operator": "="
-      }
-        ]
-      },
-
-       {
-        "rules": [
-          {
-        "trigger": "DAK, Systolic blood pressure",
-        "minValue": 140.0,
-        "maxValue": 160.0,
-        "operator": "between, <=, <"
-      },
-      {
-        "trigger": "DAK, Repeat systolic blood pressure",
-        "minValue": 140.0,
-        "maxValue": 160.0,
-        "operator": "between, <=, <"
-      },
-      {
-        "trigger": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, +",
-        "operator": "="
-      }
-        ]
-      },
-
-       {
-        "rules": [
-     {
-        "trigger": "DAK, Diastolic blood pressure",
-        "minValue": 90.0,
-        "maxValue": 110.0,
-        "operator": "between, <=, <="
-      },
-      {
-        "trigger": "DAK, Repeat diastolic blood pressure",
-        "minValue": 90.0,
-        "maxValue": 110.0,
-        "operator": "between, <=, <="
-      },
-      {
-        "trigger": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, Negative",
-        "operator": "="
-      }
-        ]
-      }
-    ],
-    "action": "show",
-    "conditionType": "deepAnalysis",
-    "dependent": "DAK, Counselling conducted on hypertension",
-    "logic_key": 507
   },
 
   {
@@ -6459,24 +6380,6 @@
   },
   {
     "logics": [
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Pre-eclampsia",
-            "value": true,
-            "operator": "!="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Severe pre-eclampsia",
-            "value": true,
-            "operator": "!="
-          }
-        ]
-      },
       {
         "rules": [
           {
@@ -9855,6 +9758,42 @@
     "action": "show",
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Diagnoses continued",
-    "logic_key": 224
+    "logic_key": 624
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 12,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Reason aspirin not prescribed form",
+    "logic_key": 625
+  },
+    {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 12,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of daily aspirin prescribed until delivery",
+    "logic_key": 626
+  },
+      {
+    "logics": [
+      {
+        "trigger": "DAK, Reason aspirin not prescribed",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other reason aspirin not prescribed",
+    "logic_key": 627
   }
 ]

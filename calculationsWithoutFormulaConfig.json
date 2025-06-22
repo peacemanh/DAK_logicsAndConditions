@@ -866,7 +866,7 @@
             },
             {
                 "trigger": "DAK, Gestational age",
-                "value": 12.0,
+                "value": 0,
                 "operator": ">="
             }
         ],
