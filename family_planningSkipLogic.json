@@ -804,21 +804,10 @@
             }
         ],
         "action": "hide",
-        "dependent": "DAK, Reason for not taking blood pressure form",
+        "dependent": "DAK, Reason for not taking blood pressure",
         "logic_key": 53
     },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Visit Status",
-                "value": "DAK, Emergency contraception",
-                "operator": "="
-            }
-        ],
-        "action": "hide",
-        "dependent": "DAK, Ever had sex - Reported",
-        "logic_key": 55
-    },
+
     {
         "logics": [
             {
@@ -846,7 +835,7 @@
     {
         "logics": [
             {
-                "trigger": "DAK, Sexually active",
+                "trigger": "DAK, Ever had sex - Reported",
                 "value": true,
                 "operator": "="
             }
