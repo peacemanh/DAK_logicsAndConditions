@@ -56,7 +56,6 @@
     "dependent": "DAK, Fetal movement",
     "logic_key": 3
   },
-
   {
     "logics": [
       {
@@ -71,7 +70,7 @@
       }
     ],
     "action": "hide",
-    "dependent": "DAK, Reason blood pressure cannot be taken form",
+    "dependent": "DAK, Reason blood pressure cannot be taken",
     "logic_key": 5
   },
   {
@@ -3125,7 +3124,6 @@
     "dependent": "DAK, tobacco reduction",
     "logic_key": 247
   },
-
   {
     "logics": [
       {
@@ -3137,18 +3135,6 @@
     "action": "show",
     "dependent": "DAK, Counselling conducted on hepatitis C positive",
     "logic_key": 249
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Midstream urine Gram-staining",
-        "value": "DAK, Positive",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, seven-day antibiotic regimen for asymptomatic bacteriuria (ASB) not provided",
-    "logic_key": 250
   },
   {
     "logics": [
@@ -3393,91 +3379,6 @@
     "action": "required",
     "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
     "logic_key": 270
-  },
-
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Respiratory exam result",
-        "value": "DAK, Dyspnoea",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Oxygen Saturation",
-    "logic_key": 275
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Respiratory exam result",
-        "value": "DAK, Cough",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Oxygen Saturation",
-    "logic_key": 276
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Respiratory exam result",
-        "value": "DAK, Bradypnea",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Oxygen Saturation",
-    "logic_key": 277
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Respiratory exam result",
-        "value": "DAK, Tachypnea",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Oxygen Saturation",
-    "logic_key": 278
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Respiratory exam result",
-        "value": "DAK, Wheezing",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Oxygen Saturation",
-    "logic_key": 279
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Respiratory exam result",
-        "value": "DAK, Rales",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Oxygen Saturation",
-    "logic_key": 280
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Respiratory exam result",
-        "value": "DAK, Other",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Oxygen Saturation",
-    "logic_key": 281
   },
   {
     "logics": [
@@ -4112,8 +4013,8 @@
       {
         "rules": [
           {
-            "trigger": "DAK, HIV status",
-            "value": "DAK, HIV negative",
+            "trigger": "DAK, HIV test result",
+            "value": "HIV-negative",
             "operator": "="
           },
           {
@@ -4126,8 +4027,36 @@
       {
         "rules": [
           {
-            "trigger": "DAK, HIV status",
-            "value": "DAK, HIV negative",
+            "trigger": "DAK, Existing chronic health conditions",
+            "value": "DAK, HIV positive",
+            "operator": "!="
+          },
+          {
+            "trigger": "DAK, Partner HIV status (reported)",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Current medications",
+            "value": "DAK, Antiretrovirals (ARVs)",
+            "operator": "!="
+          },
+          {
+            "trigger": "DAK, Partner HIV status (reported)",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, HIV test result",
+            "value": "HIV-negative",
             "operator": "="
           },
           {
@@ -4140,8 +4069,36 @@
       {
         "rules": [
           {
-            "trigger": "DAK, HIV status",
-            "value": "DAK, HIV negative",
+            "trigger": "DAK, Existing chronic health conditions",
+            "value": "DAK, HIV positive",
+            "operator": "!="
+          },
+          {
+            "trigger": "DAK, Partner HIV test result",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Current medications",
+            "value": "DAK, Antiretrovirals (ARVs)",
+            "operator": "!="
+          },
+          {
+            "trigger": "DAK, Partner HIV test result",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, HIV test result",
+            "value": "HIV-negative",
             "operator": "="
           },
           {
@@ -4154,9 +4111,65 @@
       {
         "rules": [
           {
-            "trigger": "DAK, HIV status",
-            "value": "DAK, HIV negative",
+            "trigger": "DAK, Existing chronic health conditions",
+            "value": "DAK, HIV positive",
+            "operator": "!="
+          },
+          {
+            "trigger": "DAK, Partner HIV status - confirmed",
+            "value": "DAK, HIV positive",
             "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Current medications",
+            "value": "DAK, Antiretrovirals (ARVs)",
+            "operator": "!="
+          },
+          {
+            "trigger": "DAK, Partner HIV status - confirmed",
+            "value": "DAK, HIV positive",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, HIV test result",
+            "value": "HIV-negative",
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Current alcohol and/or other substance use",
+            "value": "DAK, Injectable drugs",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Existing chronic health conditions",
+            "value": "DAK, HIV positive",
+            "operator": "!="
+          },
+          {
+            "trigger": "DAK, Current alcohol and/or other substance use",
+            "value": "DAK, Injectable drugs",
+            "operator": "="
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Current medications",
+            "value": "DAK, Antiretrovirals (ARVs)",
+            "operator": "!="
           },
           {
             "trigger": "DAK, Current alcohol and/or other substance use",
@@ -4254,78 +4267,6 @@
     "action": "show",
     "dependent": "DAK, Substance use",
     "logic_key": 340
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Systolic blood pressure",
-        "minValue": 140.0,
-        "maxValue": 160.0,
-        "operator": "between, <=, <"
-      },
-      {
-        "trigger": "DAK, Repeat systolic blood pressure",
-        "minValue": 140.0,
-        "maxValue": 160.0,
-        "operator": "between, <=, <"
-      },
-      {
-        "trigger": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, +",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Counselling conducted on hypertension",
-    "logic_key": 341
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Diastolic blood pressure",
-        "minValue": 90.0,
-        "maxValue": 110.0,
-        "operator": "between, <=, <"
-      },
-      {
-        "trigger": "DAK, Repeat diastolic blood pressure",
-        "minValue": 90.0,
-        "maxValue": 110.0,
-        "operator": "between, <=, <"
-      },
-      {
-        "trigger": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, +",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Counselling conducted on hypertension",
-    "logic_key": 342
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Diastolic blood pressure",
-        "minValue": 90.0,
-        "maxValue": 110.0,
-        "operator": "between, <=, <="
-      },
-      {
-        "trigger": "DAK, Repeat diastolic blood pressure",
-        "minValue": 90.0,
-        "maxValue": 110.0,
-        "operator": "between, <=, <="
-      },
-      {
-        "trigger": "DAK, Urine dipstick result \u2013 protein",
-        "value": "DAK, Negative",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Counselling conducted on hypertension",
-    "logic_key": 343
   },
   {
     "logics": [
@@ -4727,8 +4668,28 @@
     "dependent": "DAK, Counselling conducted on anaemia",
     "logic_key": 363
   },
-
-
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Blood haemoglobin test conducted",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Pallor",
+        "value": false,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Has side-effects from iron and folic acid supplements",
+        "value": false,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Counselling conducted on anaemia",
+    "logic_key": 364
+  },
   {
     "logics": [
       {
@@ -4813,7 +4774,6 @@
     "dependent": "DAK, IPTp-SP dose 3 date",
     "logic_key": 373
   },
-
   {
     "logics": [
       {
@@ -6140,67 +6100,8 @@
           },
           {
             "trigger": "DAK, Symptoms of severe pre-eclampsia",
-            "orValues": [
-              "DAK, Severe headache",
-              "DAK, Epigastric pain",
-              "DAK, Dizziness",
-              "DAK, Visual disturbance",
-              "DAK, Vomiting"
-            ],
-            "operator": "OR"
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Diastolic blood pressure",
-            "value": 90.0,
-            "operator": ">="
-          },
-          {
-            "trigger": "DAK, Repeat diastolic blood pressure",
-            "value": 90.0,
-            "operator": ">="
-          },
-          {
-            "trigger": "DAK, Symptoms of severe pre-eclampsia",
-            "orValues": [
-              "DAK, Severe headache",
-              "DAK, Epigastric pain",
-              "DAK, Dizziness",
-              "DAK, Visual disturbance",
-              "DAK, Vomiting"
-            ],
-            "operator": "OR"
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Systolic blood pressure",
-            "value": 160.0,
-            "operator": ">"
-          },
-          {
-            "trigger": "DAK, Repeat systolic blood pressure",
-            "value": 160.0,
-            "operator": ">"
-          },
-          {
-            "trigger": "DAK, Symptoms of severe pre-eclampsia",
             "value": "DAK, No symptoms of severe pre-eclampsia",
-            "operator": "="
-          },
-          {
-            "trigger": "DAK, Urine dipstick result \u2013 protein",
-            "orValues": [
-              "DAK, ++",
-              "DAK, +++",
-              "DAK, ++++"
-            ],
-            "operator": "="
+            "operator": "!="
           }
         ]
       },
@@ -6219,16 +6120,7 @@
           {
             "trigger": "DAK, Symptoms of severe pre-eclampsia",
             "value": "DAK, No symptoms of severe pre-eclampsia",
-            "operator": "="
-          },
-          {
-            "trigger": "DAK, Urine dipstick result \u2013 protein",
-            "orValues": [
-              "DAK, ++",
-              "DAK, +++",
-              "DAK, ++++"
-            ],
-            "operator": "OR"
+            "operator": "!="
           }
         ]
       }
@@ -6369,7 +6261,7 @@
             "trigger": "DAK, Urine dipstick result \u2013 protein",
             "orValues": [
               "DAK, +",
-              "DAK, None"
+              "DAK, Negative"
             ],
             "operator": "OR"
           }
@@ -6389,7 +6281,10 @@
             "trigger": "DAK, Existing chronic health conditions",
             "orValues": [
               "DAK, Autoimmune disease",
-              "DAK, Diabetes",
+              "DAK, Diabetes arising in pregnancy (gestational diabetes)",
+              "DAK, Diabetes, pre-existing type 1",
+              "DAK, Diabetes, pre-existing type 2",
+              "DAK, Diabetes, other or unspecified",
               "DAK, Chronic Hypertensions",
               "DAK, Renal disease"
             ],
@@ -6397,8 +6292,8 @@
           },
           {
             "trigger": "DAK, Gestational age",
-            "value": 12.0,
-            "operator": ">="
+            "value": 0,
+            "operator": ">"
           }
         ]
       },
@@ -6414,8 +6309,8 @@
           },
           {
             "trigger": "DAK, Gestational age",
-            "value": 12.0,
-            "operator": ">="
+            "value": 0,
+            "operator": ">"
           }
         ]
       },
@@ -6428,16 +6323,26 @@
           },
           {
             "trigger": "DAK, Gestational age",
-            "value": 12.0,
-            "operator": ">="
+            "value": 0,
+            "operator": ">"
           }
         ]
       },
       {
         "rules": [
           {
-            "trigger": "DAK, Pre-eclampsia",
-            "value": false,
+            "trigger": "DAK, Systolic blood pressure",
+            "value": 140.0,
+            "operator": "<"
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "value": 140.0,
+            "operator": "<"
+          },
+          {
+            "trigger": "DAK, Symptoms of severe pre-eclampsia",
+            "value": "DAK, No symptoms of severe pre-eclampsia",
             "operator": "="
           }
         ]
@@ -6453,135 +6358,10 @@
       {
         "rules": [
           {
-            "trigger": "DAK, Existing chronic health conditions",
-            "orValues": [
-              "DAK, Autoimmune disease",
-              "DAK, Diabetes",
-              "DAK, Chronic Hypertensions",
-              "DAK, Renal disease"
-            ],
-            "operator": "OR"
-          },
-          {
             "trigger": "DAK, Gestational age",
-            "value": 12.0,
-            "operator": ">="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Past pregnancy history",
-            "orValues": [
-              "DAK, Eclampsia",
-              "DAK, Convulsions"
-            ],
-            "operator": "OR"
+            "value": 20,
+            "operator": "<"
           },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 12.0,
-            "operator": ">="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Number of fetuses",
-            "value": 2.0,
-            "operator": ">="
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 12.0,
-            "operator": ">="
-          }
-        ]
-      }
-    ],
-    "action": "show",
-    "conditionType": "deepAnalysis",
-    "dependent": "DAK, Risk of pre-eclampsia",
-    "logic_key": 468
-  },
-  {
-    "logics": [
-      {
-        "rules": [
-          {
-            "trigger": "DAK, BMI",
-            "value": 30.0,
-            "operator": ">="
-          },
-          {
-            "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-            "value": "DAK, Negative",
-            "operator": "="
-          },
-          {
-            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-            "value": "DAK, Negative",
-            "operator": "="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Past pregnancy history",
-            "orValues": [
-              "DAK, Gestatinal diabetes mellitus",
-              "DAK, Macrosomia"
-            ],
-            "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-            "value": "DAK, Negative",
-            "operator": "="
-          },
-          {
-            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-            "value": "DAK, Negative",
-            "operator": "="
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Urine dipstick result \u2013 glucose",
-            "orValues": [
-              "DAK, ++",
-              "DAK, +++",
-              "DAK, ++++"
-            ],
-            "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-            "value": "DAK, Negative",
-            "operator": "="
-          },
-          {
-            "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-            "value": "DAK, Negative",
-            "operator": "="
-          }
-        ]
-      }
-    ],
-    "action": "show",
-    "conditionType": "deepAnalysis",
-    "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-    "logic_key": 469
-  },
-  {
-    "logics": [
-      {
-        "rules": [
           {
             "trigger": "DAK, Systolic blood pressure",
             "minValue": 140.0,
@@ -6598,19 +6378,19 @@
             "trigger": "DAK, Urine dipstick result \u2013 protein",
             "orValues": [
               "DAK, +",
-              "DAK, None"
+              "DAK, Negative"
             ],
             "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 20,
-            "operator": "<"
           }
         ]
       },
       {
         "rules": [
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": "<"
+          },
           {
             "trigger": "DAK, Diastolic blood pressure",
             "minValue": 90.0,
@@ -6627,14 +6407,9 @@
             "trigger": "DAK, Urine dipstick result \u2013 protein",
             "orValues": [
               "DAK, +",
-              "DAK, None"
+              "DAK, Negative"
             ],
             "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 20,
-            "operator": "<"
           }
         ]
       }
@@ -7157,6 +6932,11 @@
       {
         "rules": [
           {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": ">"
+          },
+          {
             "trigger": "DAK, Systolic blood pressure",
             "minValue": 140.0,
             "maxValue": 160.0,
@@ -7172,19 +6952,19 @@
             "trigger": "DAK, Urine dipstick result \u2013 protein",
             "orValues": [
               "DAK, +",
-              "DAK, None"
+              "DAK, Negative"
             ],
             "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 20,
-            "operator": ">"
           }
         ]
       },
       {
         "rules": [
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": ">"
+          },
           {
             "trigger": "DAK, Diastolic blood pressure",
             "minValue": 90.0,
@@ -7201,14 +6981,9 @@
             "trigger": "DAK, Urine dipstick result \u2013 protein",
             "orValues": [
               "DAK, +",
-              "DAK, None"
+              "DAK, Negative"
             ],
             "operator": "OR"
-          },
-          {
-            "trigger": "DAK, Gestational age",
-            "value": 20,
-            "operator": ">"
           }
         ]
       }
@@ -7353,7 +7128,7 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Reason for emergency referral",
+        "trigger": "DAK, Reason for emergency referral ANC",
         "value": "DAK, Other",
         "operator": "="
       }
@@ -7924,21 +7699,34 @@
     "dependent": "DAK, HIV status",
     "logic_key": 554
   },
-
   {
     "logics": [
       {
-        "trigger": "DAK, Urine dipstick result \u2013 nitrites",
-        "value": "DAK, Positive",
-        "operator": "="
+        "rules": [
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 nitrites",
+            "value": "DAK, Positive",
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 leukocytes",
+            "value": "DAK, Positive",
+            "operator": "="
+          }
+        ]
       },
       {
-        "trigger": "DAK, Urine dipstick result \u2013 leukocytes",
-        "value": "DAK, Positive",
-        "operator": "="
+        "rules": [
+          {
+            "trigger": "DAK, Midstream urine Gram-staining",
+            "value": "DAK, Positive",
+            "operator": "="
+          }
+        ]
       }
     ],
     "action": "show",
+    "conditionType": "deepAnalysis",
     "dependent": "DAK, seven-day antibiotic regimen for asymptomatic bacteriuria (ASB) not provided",
     "logic_key": 556
   },
@@ -9355,6 +9143,60 @@
   {
     "logics": [
       {
+        "trigger": "DAK, Respiratory rate",
+        "value": false,
+        "operator": "!="
+      }
+    ],
+    "action": "hide",
+    "parent": "DAK, Respiratory exam result",
+    "dependent": "DAK, Respiratory exam not done",
+    "logic_key": 619
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, LNMP Date",
+        "value": false,
+        "operator": "!="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Gestational age by LMNP day",
+    "logic_key": 620
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Ultrasound done",
+        "value": true,
+        "operator": "="
+      },
+      {
+        "trigger": "DAK, Ultrasound date",
+        "value": false,
+        "operator": "!="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Gestational age by Ultrasound days",
+    "logic_key": 621
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 12,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Pre-eclampsia risk counselling provided",
+    "logic_key": 622
+  },
+  {
+    "logics": [
+      {
         "rules": [
           {
             "trigger": "DAK, Systolic blood pressure",
@@ -9612,7 +9454,6 @@
           }
         ]
       },
-
       {
         "rules": [
           {
@@ -9634,7 +9475,6 @@
           }
         ]
       },
-
       {
         "rules": [
           {
@@ -10138,14 +9978,48 @@
           }
         ]
       }
-
     ],
     "action": "show",
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Diagnoses continued",
-    "logic_key": 620
+    "logic_key": 624
   },
-  
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 12,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Reason aspirin not prescribed form",
+    "logic_key": 625
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Gestational age",
+        "value": 12,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Amount of daily aspirin prescribed until delivery",
+    "logic_key": 626
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Reason aspirin not prescribed",
+        "value": "DAK, Other",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Other reason aspirin not prescribed",
+    "logic_key": 627
+  },
   {
     "logics": [
 
@@ -10157,8 +10031,6 @@
     ],
     "action": "show",
     "dependent": "DAK, IPV Form",
-    "logic_key": 621
+    "logic_key": 628
   }
-
-
 ]

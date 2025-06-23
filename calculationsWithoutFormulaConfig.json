@@ -135,14 +135,8 @@
             },
             {
                 "trigger": "DAK, Symptoms of severe pre-eclampsia",
-                "orValues": [
-                    "DAK, Severe headache",
-                    "DAK, Epigastric pain",
-                    "DAK, Dizziness",
-                    "DAK, Visual disturbance",
-                    "DAK, Vomiting"
-                ],
-                "operator": "OR"
+                "value": "DAK, No symptoms of severe pre-eclampsia",
+                "operator": "!="
             }
         ],
         "dependentValue": true,
@@ -163,14 +157,8 @@
             },
             {
                 "trigger": "DAK, Symptoms of severe pre-eclampsia",
-                "orValues": [
-                    "DAK, Severe headache",
-                    "DAK, Epigastric pain",
-                    "DAK, Dizziness",
-                    "DAK, Visual disturbance",
-                    "DAK, Vomiting"
-                ],
-                "operator": "OR"
+                "value": "DAK, No symptoms of severe pre-eclampsia",
+                "operator": "!="
             }
         ],
         "dependentValue": true,
@@ -192,7 +180,7 @@
             {
                 "trigger": "DAK, Symptoms of severe pre-eclampsia",
                 "value": "DAK, No symptoms of severe pre-eclampsia",
-                "operator": "="
+                "operator": "!="
             },
             {
                 "trigger": "DAK, Urine dipstick result \u2013 protein",
@@ -223,7 +211,7 @@
             {
                 "trigger": "DAK, Symptoms of severe pre-eclampsia",
                 "value": "DAK, No symptoms of severe pre-eclampsia",
-                "operator": "="
+                "operator": "!="
             },
             {
                 "trigger": "DAK, Urine dipstick result \u2013 protein",
@@ -438,7 +426,6 @@
                     "DAK, Woman\u2019s partner or husband is intrusive during consultations",
                     "DAK, Woman often misses her own or her children\u2019s health-care appointments",
                     "DAK, Children have emotional and behavioural problems"
-                   
                 ],
                 "operator": "OR"
             }
@@ -469,8 +456,6 @@
         "dependent": "DAK, Reason for refferal",
         "logic_key": 36
     },
-    
-   
     {
         "logics": [
             {
@@ -501,106 +486,10 @@
                 "trigger": "DAK, Number of fetuses",
                 "value": 2.0,
                 "operator": ">="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 41
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Past pregnancy history",
-                "value": "DAK, Pre-eclampsia",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 42
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Past pregnancy history",
-                "value": "DAK, Eclampsia",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 43
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Past pregnancy history",
-                "value": "DAK, Convulsions",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 44
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Autoimmune disease",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 45
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Diabetes",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 46
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Chronic Hypertensions",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 47
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Renal disease",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 48
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Number of fetuses",
-                "value": 2.0,
-                "operator": ">="
             },
             {
                 "trigger": "DAK, Gestational age",
-                "value": 12.0,
+                "value": 0,
                 "operator": ">="
             }
         ],
@@ -617,8 +506,8 @@
             },
             {
                 "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
+                "value": 0,
+                "operator": ">"
             }
         ],
         "dependentValue": true,
@@ -628,14 +517,22 @@
     {
         "logics": [
             {
-                "trigger": "DAK, Past pregnancy history",
-                "value": "DAK, Eclampsia",
-                "operator": "="
+                "trigger": "DAK, Existing chronic health conditions",
+                "orValues": [
+                    "DAK, Autoimmune disease",
+                    "DAK, Diabetes arising in pregnancy (gestational diabetes)",
+                    "DAK, Diabetes, pre-existing type 1",
+                    "DAK, Diabetes, pre-existing type 2",
+                    "DAK, Diabetes, other or unspecified",
+                    "DAK, Chronic Hypertensions",
+                    "DAK, Renal disease"
+                ],
+                "operator": "OR"
             },
             {
                 "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
+                "value": 0,
+                "operator": ">"
             }
         ],
         "dependentValue": true,
@@ -651,354 +548,13 @@
             },
             {
                 "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
+                "value": 0,
+                "operator": ">"
             }
         ],
         "dependentValue": true,
         "dependent": "DAK, Risk of pre-eclampsia",
         "logic_key": 52
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Autoimmune disease",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 53
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Diabetes",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 54
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Chronic Hypertensions",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 55
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Renal disease",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 56
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Number of fetuses",
-                "value": 2.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 57
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Past pregnancy history",
-                "value": "DAK, Eclampsia",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 58
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Past pregnancy history",
-                "value": "DAK, Convulsions",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 59
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Autoimmune disease",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 60
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Diabetes",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 61
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Chronic Hypertension",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 62
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Existing chronic health conditions",
-                "value": "DAK, Renal disease",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of pre-eclampsia",
-        "logic_key": 63
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, BMI",
-                "value": 30.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 64
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Past pregnancy history",
-                "value": "DAK, Gestational diabetes mellitus",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 65
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Past pregnancy history",
-                "value": "DAK, Macrosomia",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 66
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Urine dipstick result \u2013 glucose",
-                "value": "DAK, ++",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 67
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Urine dipstick result \u2013 glucose",
-                "value": "DAK, +++",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 68
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Urine dipstick result \u2013 glucose",
-                "value": "DAK, ++++",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 69
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Urine dipstick result \u2013 glucose",
-                "value": "DAK, +",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 70
     },
     {
         "logics": [
@@ -1251,7 +807,7 @@
                 "trigger": "DAK, Urine dipstick result \u2013 protein",
                 "orValues": [
                     "DAK, +",
-                    "DAK, None"
+                    "DAK, Negative"
                 ],
                 "operator": "OR"
             },
@@ -1283,7 +839,7 @@
                 "trigger": "DAK, Urine dipstick result \u2013 protein",
                 "orValues": [
                     "DAK, +",
-                    "DAK, None"
+                    "DAK, Negative"
                 ],
                 "operator": "OR"
             },
@@ -1359,160 +915,6 @@
         "dependentValue": false,
         "dependent": "DAK, IPTp-SP dose 3 provided",
         "logic_key": 93
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, BMI",
-                "value": 30.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 94
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Past pregnancy history",
-                "value": "DAK, Gestational diabetes mellitus",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 95
-    },
-    {
-        "logics": [
-            {
-                "tigger": "DAK, Past pregnancy history",
-                "value": "DAK, Macrosomia",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 96
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Urine dipstick result \u2013 glucose",
-                "value": "DAK, ++",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 97
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Urine dipstick result \u2013 glucose",
-                "value": "DAK, +++",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 98
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Urine dipstick result \u2013 glucose",
-                "value": "DAK, ++++",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 99
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Urine dipstick result \u2013 glucose",
-                "value": "DAK, +",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                "value": "DAK, Negative",
-                "operator": "="
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-        "logic_key": 100
     },
     {
         "logics": [
@@ -1749,79 +1151,7 @@
     {
         "logics": [
             {
-                "rules": [
-                    {
-                        "trigger": "DAK, BMI",
-                        "value": 30.0,
-                        "operator": ">="
-                    },
-                    {
-                        "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                        "value": "DAK, Negative",
-                        "operator": "="
-                    },
-                    {
-                        "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                        "value": "DAK, Negative",
-                        "operator": "="
-                    }
-                ]
-            },
-            {
-                "rules": [
-                    {
-                        "trigger": "DAK, Past pregnancy history",
-                        "orValues": [
-                            "DAK, Gestatinal diabetes mellitus",
-                            "DAK, Macrosomia"
-                        ],
-                        "operator": "OR"
-                    },
-                    {
-                        "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                        "value": "DAK, Negative",
-                        "operator": "="
-                    },
-                    {
-                        "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                        "value": "DAK, Negative",
-                        "operator": "="
-                    }
-                ]
-            },
-            {
-                "rules": [
-                    {
-                        "trigger": "DAK, Urine dipstick result \u2013 glucose",
-                        "orValues": [
-                            "DAK, ++",
-                            "DAK, +++",
-                            "DAK, ++++"
-                        ],
-                        "operator": "OR"
-                    },
-                    {
-                        "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-                        "value": "DAK, Negative",
-                        "operator": "="
-                    },
-                    {
-                        "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-                        "value": "DAK, Negative",
-                        "operator": "="
-                    }
-                ]
-            }
-        ],
-        "action": true,
-        "conditionType": "deepAnalysis",
-        "dependent": "DAK, Diabetes risk",
-        "logic_key": 111
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Pulse rate",
+                "trigger": "DAK, Second pulse rate",
                 "value": 60,
                 "operator": "<"
             }
@@ -1833,7 +1163,7 @@
     {
         "logics": [
             {
-                "trigger": "DAK, Pulse rate",
+                "trigger": "DAK, Second pulse rate",
                 "value": 100,
                 "operator": ">"
             }
@@ -1882,8 +1212,8 @@
         "logics": [
             {
                 "trigger": "DAK, Number of miscarriages or abortions",
-                "value": 0,
-                "operator": ">"
+                "value": 1,
+                "operator": ">="
             }
         ],
         "dependentValue": "DAK, Abortion",
@@ -1954,67 +1284,127 @@
         "dependent": "DAK, Gestational Hypertension",
         "logic_key": 119
     },
-  {
-    "logics": [
-      {
-        "trigger": "DaK, Hx of previous Preterm delivery",
-        "value": "DAK, Has previous history of preterm delivery",
-        "operator": "="
-      }
-    ],
-    "dependentValue": "DAK, Preterm delivery",
-    "dependent": "DAK, Past pregnancy history",
-    "logic_key": 120
-  },
-  {
-    "logics": [
-
-      {
-
-        "trigger": "DAK, Blood haemoglobin test result",
-        "minValue": 9,
-        "maxValue": 10.9,
-        "operator": "between, <=, <="
-      }
-
-    ],
-    "dependentValue": "DAK, Mild (10-10.9 g/dl)",
-    "dependent": "DAK, Anaemia diagnosis",
-    "logic_key": 121
-  },
-  {
-    "logics": [
-
-      {
-
-        "trigger": "DAK, Blood haemoglobin test result",
-        "minValue": 7,
-        "maxValue": 8.9,
-        "operator": "between, <=, <="
-      }
-
-    ],
-    "dependentValue": "DAK, Moderate (7-9.9 g/dl)",
-    "dependent": "DAK, Anaemia diagnosis",
-    "logic_key": 122
-  },
-  {
-    "logics": [
-
-      {
-
-        "trigger": "DAK, Blood haemoglobin test result",
-        "value": 7,
-        "operator": "<="
-      }
-
-    ],
-    "dependentValue": "DAK, Severe (<7g/dl)",
-    "dependent": "DAK, Anaemia diagnosis",
-    "logic_key": 123
-  }
-  
-  
-
-
+    {
+        "logics": [
+            {
+                "trigger": "DaK, Hx of previous Preterm delivery",
+                "value": "DAK, Has previous history of preterm delivery",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Preterm delivery",
+        "dependent": "DAK, Past pregnancy history",
+        "logic_key": 120
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, BMI",
+                "value": 30.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+                "value": "DAK, Negative",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+                "value": "DAK, Negative",
+                "operator": "="
+            }
+        ],
+        "logic_key": 121,
+        "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
+        "dependentValue": true
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Past pregnancy history",
+                "orValues": [
+                    "DAK, Gestational diabetes mellitus",
+                    "DAK, Macrosomia"
+                ],
+                "operator": "OR"
+            },
+            {
+                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+                "value": "DAK, Negative",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+                "value": "DAK, Negative",
+                "operator": "="
+            }
+        ],
+        "logic_key": 122,
+        "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
+        "dependentValue": true
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Urine dipstick result – glucose",
+                "orValues": [
+                    "DAK, ++",
+                    "DAK, +++",
+                    "DAK, ++++"
+                ],
+                "operator": "OR"
+            },
+            {
+                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+                "value": "DAK, Negative",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+                "value": "DAK, Negative",
+                "operator": "="
+            }
+        ],
+        "logic_key": 123,
+        "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
+        "dependentValue": true
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Blood haemoglobin test result",
+                "minValue": 9,
+                "maxValue": 10.9,
+                "operator": "between, <=, <="
+            }
+        ],
+        "dependentValue": "DAK, Mild (10-10.9 g/dl)",
+        "dependent": "DAK, Anaemia diagnosis",
+        "logic_key": 124
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Blood haemoglobin test result",
+                "minValue": 7,
+                "maxValue": 8.9,
+                "operator": "between, <=, <="
+            }
+        ],
+        "dependentValue": "DAK, Moderate (7-9.9 g/dl)",
+        "dependent": "DAK, Anaemia diagnosis",
+        "logic_key": 125
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Blood haemoglobin test result",
+                "value": 7,
+                "operator": "<="
+            }
+        ],
+        "dependentValue": "DAK, Severe (<7g/dl)",
+        "dependent": "DAK, Anaemia diagnosis",
+        "logic_key": 126
+    }
 ]
