@@ -56,7 +56,7 @@
     "dependent": "DAK, Fetal movement",
     "logic_key": 3
   },
- 
+
   {
     "logics": [
       {
@@ -3394,7 +3394,7 @@
     "dependent": "DAK, Counselling conducted on gestational diabetes mellitus (GDM)",
     "logic_key": 270
   },
-  
+
   {
     "logics": [
       {
@@ -4727,8 +4727,8 @@
     "dependent": "DAK, Counselling conducted on anaemia",
     "logic_key": 363
   },
-  
-  
+
+
   {
     "logics": [
       {
@@ -7924,7 +7924,7 @@
     "dependent": "DAK, HIV status",
     "logic_key": 554
   },
-  
+
   {
     "logics": [
       {
@@ -8030,18 +8030,6 @@
     "action": "noneRequired",
     "dependent": "DAK, Counselling conducted on breastfeeding",
     "logic_key": 563
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Pregnancy confirmed",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Counselling on malaria prevention",
-    "logic_key": 564
   },
   {
     "logics": [
@@ -10156,6 +10144,20 @@
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Diagnoses continued",
     "logic_key": 620
+  },
+  
+  {
+    "logics": [
+
+      {
+        "trigger": "Minimum requirements for IPV assessment",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, IPV Form",
+    "logic_key": 621
   }
 
 
