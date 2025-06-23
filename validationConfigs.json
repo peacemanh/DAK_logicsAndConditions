@@ -237,5 +237,45 @@
     "maxValue": 47,
     "type": "restrict",
     "message": "Possible value of MUAC ranges from 11 cm to 47 cm."
+  },
+  {
+    "conceptName": "DAK, Hematocrit (Ht)",
+    "minValue": 27,
+    "maxValue": 32.7,
+    "operator": "beyond, <, <",
+    "conditioner": {
+      "key": "DAK, Blood haemoglobin test result",
+      "minValue": 9,
+      "maxValue": 10.9,
+      "operator": "between, <=, <="
+    },
+    "type": "optional",
+    "message": "The hematocrit level has to be between 27% and 32.7%"
+  },
+  {
+    "conceptName": "DAK, Hematocrit (Ht)",
+    "minValue": 21,
+    "maxValue": 26.7,
+    "operator": "beyond, <, <",
+    "conditioner": {
+      "key": "DAK, Blood haemoglobin test result",
+      "minValue": 7,
+      "maxValue": 8.9,
+      "operator": "between, <=, <="
+    },
+    "type": "optional",
+    "message": "The hematocrit level has to be between 21% and 26.7%!"
+  },
+  {
+    "conceptName": "DAK, Hematocrit (Ht)",
+    "value": 21,
+    "operator": ">=",
+    "conditioner": {
+      "key": "DAK, Blood haemoglobin test result",
+      "value": 7,
+      "operator": "<="
+    },
+    "type": "optional",
+    "message": "The hematocrit level has to be less than 21%"
   }
 ]
