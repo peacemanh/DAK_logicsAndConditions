@@ -31,6 +31,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, STI/HIV screening: laboratory tests conducted",
     "action": " Link to STI testing. Prompt diagnosis and treatment based on syndromic diagnosis or perform STI testing. Link to STI testing",
     "annotation": "The patient should be linked for diagnosis and treatement \u2013Provide testing, diagnosis and  immediate treatment of  STIs based on signs/symptoms. \u2013Offer HIV testing and counseling \u2013 Support Partner notification of diagnosis   symptoms \u2013 Promote condom/lubricant use, combination  of condoms with other FP methods,  mutually faithful relationships and engagement in non-penetrative sexual intimacy to prevent STIs.",
     "action_key": 2
