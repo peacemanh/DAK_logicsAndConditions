@@ -9512,7 +9512,7 @@
             "trigger": "DAK, Urine dipstick result \u2013 protein",
             "orValues": [
               "DAK, +",
-              "DAK, None"
+              "DAK, Negative"
             ],
             "operator": "OR"
           }
@@ -10032,5 +10032,71 @@
     "action": "show",
     "dependent": "DAK, IPV Form",
     "logic_key": 628
+  },
+  {
+    "logics": [
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 0,
+            "operator": ">"
+          },
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, Negative"
+            ],
+            "operator": "OR"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 0,
+            "operator": ">"
+          },
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, Negative"
+            ],
+            "operator": "OR"
+          }
+        ]
+      }
+    ],
+    "action": "show",
+    "conditionType": "deepAnalysis",
+    "dependent": "DAK, Counselling conducted on hypertension",
+    "logic_key": 629
   }
 ]
