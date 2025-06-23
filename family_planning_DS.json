@@ -31,6 +31,7 @@
         "operator": "="
       }
     ],
+    "displayPoint": "DAK, STI/HIV screening: laboratory tests conducted",
     "action": " Link to STI testing. Prompt diagnosis and treatment based on syndromic diagnosis or perform STI testing. Link to STI testing",
     "annotation": "The patient should be linked for diagnosis and treatement \u2013Provide testing, diagnosis and  immediate treatment of  STIs based on signs/symptoms. \u2013Offer HIV testing and counseling \u2013 Support Partner notification of diagnosis   symptoms \u2013 Promote condom/lubricant use, combination  of condoms with other FP methods,  mutually faithful relationships and engagement in non-penetrative sexual intimacy to prevent STIs.",
     "action_key": 2
@@ -37280,6 +37281,279 @@
     "action": "- Offer HIV/STI testing (initial and periodic)- Promote correct and consistent condom use with other FP methods- Provide STI risk-reduction counseling- Encourage mutual monogamy or safe partner selection",
     "annotation": "Dual protection prevents unintended pregnancy and STI transmission. Behavioral counseling supports sustained risk reduction.",
     "action_key": 1702
-  }
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, STI risk assessment factors",
+        "orValues": [
+          "DAK, Partner has STI",
+          "DAK, Partner is HIV positive"
 
+        ],
+        "operator": "OR"
+      }
+    ],
+    "displayPoint": "DAK, STI risk assessment factors",
+    "action": "- Offer HIV/STI testing- Provide syndromic treatment or referral to OPD- Support partner notification- Promote consistent condom use- Discuss PrEP if eligible",
+    "annotation": "Prompt diagnosis and partner management prevent reinfection and onward transmission. PrEP may be considered for high-risk serodiscordant partners.",
+    "action_key": 1703
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, STI risk assessment factors",
+        "orValues": [
+          "DAK, Engages in unprotected sex",
+          "DAK, Involvement in, or having sexual partners from key population",
+          "DAK, Most At Risk Population (MARPS) for HIV and sexually transmitted infections"
+
+        ],
+        "operator": "OR"
+      }
+    ],
+    "displayPoint": "DAK, STI risk assessment factors",
+    "action": "- Provide confidential, stigma-free HIV/STI testing- Offer individualized counseling on risk-reduction- Promote consistent condom/lubricant use- Offer PrEP where available- Refer to OPD/STI services as needed",
+    "annotation": "High-risk clients benefit from regular screening, dual protection, and linkage to appropriate care. Stigma-free services build trust and ensure follow-up.",
+    "action_key": 1704
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, STI risk assessment factors",
+        "value": "DAK, Injection drug use or needle sharing",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, STI risk assessment factors",
+    "action": "- Provide HIV, HBV, and HCV testing- Offer harm reduction counseling (e.g., safe injection)- Promote condom use with other FP methods- Refer to addiction/recovery or OPD services",
+    "annotation": "Injecting drug use increases risk of blood-borne infections. Integrated FP and harm-reduction services are critical for prevention and care.",
+    "action_key": 1705
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Cervical Cancer risk factors FP",
+        "orValues": [
+          "DAK, Persistent infection with high-risk HPV types",
+          "DAK, Early onset of sexual activity",
+          "DAK, Multiple sexual partners",
+          "DAK, Partner with multiple partners",
+          "DAK, High parity (≥3 full-term pregnancies)",
+          "DAK, Long-term oral contraceptive use (≥5 years)",
+          "DAK, Co-infections (e.g., HSV-2, Chlamydia)",
+          "DAK, Poor genital hygiene",
+          "DAK, Lack of prior screening history"
+
+        ],
+        "operator": "OR"
+      }
+    ],
+    "displayPoint": "DAK, Cervical Cancer risk factors FP",
+    "action": "- Provide cervical cancer screening if client is eligible (e.g., VIA/Pap/HPV test)- Offer brief counseling on risk and benefits- Promote dual protection and preventive behaviors- Schedule future screening if currently ineligible",
+    "annotation": "– Screening offered if criteria met. If deferred, detailed discussion documented (e.g., due to ineligible age, pregnancy, client refusal, or service unavailability). Client advised on purpose and timing of future screening and encouraged to return.",
+    "action_key": 1706
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Cervical Cancer risk factors FP",
+        "value": "DAK, HIV infection or other immunosuppression",
+        "operator": "="
+
+      }
+    ],
+    "displayPoint": "DAK, Cervical Cancer risk factors FP",
+    "action": "- Recommend frequent cervical screening as per national protocol- Provide risk-specific counseling- Link to HIV or chronic disease management services- Integrate screening with ART or chronic care visits",
+    "annotation": "– Cervical cancer screening prioritized due to immunocompromised status. If not assessed, justification noted. Future screening planned and client encouraged to return when eligible.",
+    "action_key": 1707
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Cervical Cancer risk factors FP",
+        "orValues": [
+          "DAK, Unprotected sexual intercourse",
+          "DAK, Smoking or secondhand smoke exposure"
+        ],
+        "operator": "OR"
+      }
+    ],
+    "displayPoint": "DAK, Cervical Cancer risk factors FP",
+    "action": "- Counsel on prevention: promote dual protection, safe sex, and/or smoking cessation- Offer screening if eligible- Refer to appropriate services (e.g., cessation support)",
+    "annotation": "– Risk factors discussed and counseling provided. Screening done if applicable; otherwise, reason for deferral noted (e.g., age, pregnancy). Return visit scheduled or recommended.",
+    "action_key": 1708
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Cervical Cancer risk factors FP",
+        "orValues": [
+          "DAK, Low awareness or health access barriers",
+          "DAK, Lack of prior screening history"
+        ],
+        "operator": "OR"
+      }
+    ],
+    "displayPoint": "DAK, Cervical Cancer risk factors FP",
+    "action": "- Provide health education on cervical cancer and benefits of screening- Identify barriers and suggest practical solutions (e.g., alternative visit times, referrals)- Document refusal or ineligibility, and plan reassessment",
+    "annotation": "– Client informed of screening importance. Assessment deferred due to system/client factor. No medical contraindications. Screening planned for future visit or when access improves.",
+    "action_key": 1709
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Test results",
+        "value": "DAK, Vaginal discharge",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Test results",
+    "action": "- Treat with Metronidazole for Trichomoniasis or Clindamycin for Bacterial Vaginosis.",
+    "annotation": "- Educate on the importance of completing the full treatment course to prevent reinfection.",
+    "action_key": 1710
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Test results",
+        "value": "DAK, Vaginal discharge",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Test results",
+    "action": "- Treat with Metronidazole for Trichomoniasis or Clindamycin for Bacterial Vaginosis. - Counsel on proper genital hygiene and safe sex practices. - Encourage condom use to reduce transmission risk. ",
+    "annotation": "- Educate on the importance of completing the full treatment course to prevent reinfection. - Advise partner treatment to avoid reinfection. - Reinforce the need for regular STI screenings, especially for sexually active individuals. ",
+    "action_key": 1711
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Test results",
+        "value": "DAK, Genital ulcer",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Test results",
+    "action": "- Treat with Penicillin for Syphilis or Acyclovir for Herpes Simplex Virus (HSV). - Offer HIV testing and counseling. - Advise condom use during sexual activity.",
+    "annotation": "- Counsel on the risks of transmission, especially related to HIV. - Emphasize the importance of partner notification and treatment. - Reinforce the need for safe sex practices to prevent STI transmission. ",
+    "action_key": 1712
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Test results",
+        "value": "DAK, Lower abdominal tenderness",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Test results",
+    "action": "- Treat with Ceftriaxone and Doxycycline for Gonorrhea and Chlamydia. - Provide follow-up care to ensure symptom improvement. - Recommend pelvic rest (avoid sexual activity) during treatment. ",
+    "annotation": "- Discuss the risks of untreated PID, including infertility and chronic pain. - Advise on the importance of early treatment to avoid complications like ectopic pregnancy. - Reinforce the need for safe sexual practices and partner treatment.",
+    "action_key": 1713
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Test results",
+        "value": "DAK, Urethral Discharge",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Test results",
+    "action": "- Treat with Ceftriaxone and Azithromycin for Gonorrhea and Chlamydia. - Advise partner treatment and sexual abstinence until treatment is complete. ",
+    "annotation": "- Counsel the patient on the importance of condom use during sexual activity to prevent further transmission. - Promote the importance of regular screenings and encourage open communication about STI prevention.",
+    "action_key": 1714
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Test results",
+        "value": "DAK, Cervicitis (Cervical Tenderness, Abnormal Bleeding)",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Test results",
+    "action": "- Treat with Ceftriaxone and Doxycycline for Gonorrhea and Chlamydia. - Offer HIV testing and counseling. - Recommend condom use for future sexual activity to prevent further infections. ",
+    "annotation": "- Explain the importance of treatment for both partners to avoid reinfection. - Advise on the need for future screenings and regular checkups for sexually active individuals.  - Reinforce the significance of mutual monogamy in preventing STIs.",
+    "action_key": 1715
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Test results",
+        "value": "DAK, Warts",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Test results",
+    "action": "- Cryotherapy or Podophyllin or Laser therapy. - Advise on HPV vaccination for prevention of future infections. - Reinforce the importance of regular cervical screening for women due to HPV’s association with cervical cancer.",
+    "annotation": "- Counsel about the possible recurrence of warts and the need for follow-up care. - Explain that the warts may come back, and consistent monitoring and management may be required. - Discuss the importance of condom use to reduce the transmission of HPV and prevent new infections.",
+    "action_key": 1716
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Test results",
+        "value": "DAK, Asymptomatic Screening (High-Risk Groups)",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Test results",
+    "action": "- Offer HIV testing and comprehensive STI screening. - Recommend condom use and safe sex practices to reduce transmission.",
+    "annotation": "- Provide education on the importance of regular screening for high-risk individuals (e.g., multiple partners). - Reinforce the value of early detection and prevention to minimize complications from untreated STIs.",
+    "action_key": 1717
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Test results",
+        "value": "DAK, Urethral Discharge Syndrome",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Test results",
+    "action": "- Treat with Ceftriaxone (for Gonorrhea) and Azithromycin (for Chlamydia). - Advise partner treatment, condom use, and HIV testing. ",
+    "annotation": "- Partner notification and treatment is essential to prevent reinfection. - Educate on safe sexual practices. - Follow-up if symptoms persist.",
+    "action_key": 1718
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Test results",
+        "value": "DAK, Scrotal Swelling Syndrome",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Test results",
+    "action": "- Treat with Ceftriaxone and Doxycycline. - Provide pain relief and scrotal elevation. - Offer HIV testing.",
+    "annotation": "- Educate on safe sexual practices and partner treatment. - Advise for follow-up if symptoms persist.",
+    "action_key": 1719
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Test results",
+        "value": "DAK, Pelvic inflammatory disease",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Test results",
+    "action": "- Treat with Ceftriaxone, Doxycycline, and Metronidazole. - Refer to hospitalization if severe. - Advise abstinence from sex.",
+    "annotation": "- PID increases the risk of infertility and ectopic pregnancy; prompt treatment is crucial. - Partner treatment is necessary. - Schedule follow-up visits for complications.",
+    "action_key": 1720
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Test results",
+        "value": "DAK, Asymptomatic Screening (High-Risk Groups)",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Test results",
+    "action": "- Routine STI screening for Chlamydia, Gonorrhea, Syphilis, and HIV. - Provide prevention counseling and promote condom use.",
+    "annotation": "- Regular screening for high-risk individuals is essential. - Partner treatment reduces reinfection. - Encourage follow-up visits.",
+    "action_key": 1721
+  }
 ]
