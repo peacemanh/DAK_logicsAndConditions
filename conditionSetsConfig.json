@@ -2894,8 +2894,8 @@
             }
         ],
         "displayPoint": "DAK, Chronic Hypertension",
-        "action": "Conduct hypertension counselling and Refer her for further evaluation and manegment if neccessay.",
-        "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 3 week or at next contact, refer to hospital or discuss case with the doctor, if available",
+        "action": "Conduct hypertension counselling and refer her for further evaluation and manegment if neccessay.",
+        "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher before 20 weeks of gestational age and no proteinuria.\n\nCounselling:\n\u2013 Advice to reduce workload and to rest\n\u2013 Advise on danger signs\n\u2013 Reassess at the next contact or in 1 week\n\u2013 If hypertension persists after 2 week or at next contact, refer to hospital or discuss case with the doctor, if available",
         "action_key": 204
     },
     {
