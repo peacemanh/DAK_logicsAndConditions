@@ -135,7 +135,7 @@
             },
             {
                 "trigger": "DAK, Symptoms of severe pre-eclampsia",
-                "value":"DAK, No symptoms of severe pre-eclampsia",
+                "value": "DAK, No symptoms of severe pre-eclampsia",
                 "operator": "!="
             }
         ],
@@ -157,7 +157,7 @@
             },
             {
                 "trigger": "DAK, Symptoms of severe pre-eclampsia",
-                "value":"DAK, No symptoms of severe pre-eclampsia",
+                "value": "DAK, No symptoms of severe pre-eclampsia",
                 "operator": "!="
             }
         ],
@@ -426,7 +426,6 @@
                     "DAK, Woman\u2019s partner or husband is intrusive during consultations",
                     "DAK, Woman often misses her own or her children\u2019s health-care appointments",
                     "DAK, Children have emotional and behavioural problems"
-                   
                 ],
                 "operator": "OR"
             }
@@ -434,327 +433,6 @@
         "dependentValue": "DAK, Woman discloses or is suspected to be subjected to intimate partner violence",
         "dependent": "DAK, Presenting signs and symptoms that trigger suspicion of IPV and clinical inquiry",
         "logic_key": 21
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test result",
-                "value": 110.0,
-                "operator": "<"
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": "<="
-            }
-        ],
-        "dependentValue": "DAK, Positive",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 22
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test result",
-                "value": 110.0,
-                "operator": "<"
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 28.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": "DAK, Positive",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 23
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test result",
-                "value": 105.0,
-                "operator": "<"
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "minValue": 13.0,
-                "maxValue": 27.0,
-                "operator": "between, <=, <="
-            }
-        ],
-        "dependentValue": "DAK, Positive",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 24
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test conducted",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Pallor",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "dependentValue": "DAK, Positive",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 25
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test result",
-                "value": 110.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": "<="
-            },
-            {
-                "trigger": "Population prevalence of anaemia",
-                "value": 40.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": "DAK, Negative",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 26
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test result",
-                "value": 110.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 28.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "Population prevalence of anaemia",
-                "value": 40.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": "DAK, Negative",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 27
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test result",
-                "value": 105.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "minValue": 13.0,
-                "maxValue": 27.0,
-                "operator": "between, <=, <="
-            },
-            {
-                "trigger": "Population prevalence of anaemia",
-                "value": 40.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": "DAK, Negative",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 28
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test conducted",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Pallor",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "trigger": "Population prevalence of anaemia",
-                "value": 40.0,
-                "operator": ">="
-            }
-        ],
-        "dependentValue": "DAK, Negative",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 29
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test result",
-                "value": 110.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": "<="
-            },
-            {
-                "trigger": "Population prevalence of anaemia",
-                "value": 20.0,
-                "operator": "<="
-            },
-            {
-                "trigger": "DAK, Has side-effects from iron and folic acid supplements",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "dependentValue": "DAK, Negative",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 30
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test result",
-                "value": 110.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 28.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "Population prevalence of anaemia",
-                "value": 20.0,
-                "operator": "<="
-            },
-            {
-                "trigger": "DAK, Has side-effects from iron and folic acid supplements",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "dependentValue": "DAK, Negative",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 31
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test result",
-                "value": 105.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "minValue": 13.0,
-                "maxValue": 27.0,
-                "operator": "between, <=, <="
-            },
-            {
-                "trigger": "Population prevalence of anaemia",
-                "value": 20.0,
-                "operator": "<="
-            },
-            {
-                "trigger": "DAK, Has side-effects from iron and folic acid supplements",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "dependentValue": "DAK, Negative",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 32
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test conducted",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Pallor",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "trigger": "Population prevalence of anaemia",
-                "value": 20.0,
-                "operator": "<="
-            },
-            {
-                "trigger": "DAK, Has side-effects from iron and folic acid supplements",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "dependentValue": "DAK, Negative",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 33
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test result",
-                "value": 110.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": "<="
-            },
-            {
-                "trigger": "Population prevalence of anaemia",
-                "value": 20.0,
-                "operator": "<="
-            },
-            {
-                "trigger": "DAK, Has side-effects from iron and folic acid supplements",
-                "value": false,
-                "operator": "="
-            }
-        ],
-        "dependentValue": "DAK, Negative",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 34
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test result",
-                "value": 110.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "value": 28.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "Population prevalence of anaemia",
-                "value": 20.0,
-                "operator": "<="
-            },
-            {
-                "trigger": "DAK, Has side-effects from iron and folic acid supplements",
-                "value": false,
-                "operator": "="
-            }
-        ],
-        "dependentValue": "DAK, Negative",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 35
     },
     {
         "logics": [
@@ -777,61 +455,6 @@
         "dependentValue": "DAK, Referral for screening including diagnostics and lab testing",
         "dependent": "DAK, Reason for refferal",
         "logic_key": 36
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test result",
-                "value": 105.0,
-                "operator": ">="
-            },
-            {
-                "trigger": "DAK, Gestational age",
-                "minValue": 13.0,
-                "maxValue": 27.0,
-                "operator": "between, <=, <="
-            },
-            {
-                "trigger": "Population prevalence of anaemia",
-                "value": 20.0,
-                "operator": "<="
-            },
-            {
-                "trigger": "DAK, Has side-effects from iron and folic acid supplements",
-                "value": false,
-                "operator": "="
-            }
-        ],
-        "dependentValue": "DAK, Negative",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 37
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DAK, Blood haemoglobin test conducted",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Pallor",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "trigger": "Population prevalence of anaemia",
-                "value": 20.0,
-                "operator": "<="
-            },
-            {
-                "trigger": "DAK, Has side-effects from iron and folic acid supplements",
-                "value": false,
-                "operator": "="
-            }
-        ],
-        "dependentValue": "DAK, Negative",
-        "dependent": "DAK, Anaemia diagnosis",
-        "logic_key": 38
     },
     {
         "logics": [
@@ -894,17 +517,17 @@
     {
         "logics": [
             {
-            "trigger": "DAK, Existing chronic health conditions",
-                 "orValues": [
-              "DAK, Autoimmune disease",
-              "DAK, Diabetes arising in pregnancy (gestational diabetes)",
-              "DAK, Diabetes, pre-existing type 1",
-              "DAK, Diabetes, pre-existing type 2",
-              "DAK, Diabetes, other or unspecified",
-              "DAK, Chronic Hypertensions",
-              "DAK, Renal disease"
-            ],
-             "operator": "OR"
+                "trigger": "DAK, Existing chronic health conditions",
+                "orValues": [
+                    "DAK, Autoimmune disease",
+                    "DAK, Diabetes arising in pregnancy (gestational diabetes)",
+                    "DAK, Diabetes, pre-existing type 1",
+                    "DAK, Diabetes, pre-existing type 2",
+                    "DAK, Diabetes, other or unspecified",
+                    "DAK, Chronic Hypertensions",
+                    "DAK, Renal disease"
+                ],
+                "operator": "OR"
             },
             {
                 "trigger": "DAK, Gestational age",
@@ -933,7 +556,6 @@
         "dependent": "DAK, Risk of pre-eclampsia",
         "logic_key": 52
     },
-    
     {
         "logics": [
             {
@@ -1052,18 +674,6 @@
         "dependentValue": true,
         "dependent": "DAK, High risk for HIV",
         "logic_key": 77
-    },
-    {
-        "logics": [
-            {
-                "trigger": "Population incidence of HIV in the absence of PrEP",
-                "value": 3.0,
-                "operator": ">"
-            }
-        ],
-        "dependentValue": true,
-        "dependent": "DAK, High risk for HIV",
-        "logic_key": 78
     },
     {
         "logics": [
@@ -1687,78 +1297,114 @@
         "logic_key": 120
     },
     {
-
-      "logics": [
-        {
-          "trigger": "DAK, BMI",
-          "value": 30.0,
-          "operator": ">="
-        },
-        {
-          "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-          "value": "DAK, Negative",
-          "operator": "="
-        },
-        {
-          "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-          "value": "DAK, Negative",
-          "operator": "="
-        }
-      ],
-      "logic_key": 121,
-      "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-      "dependentValue": true
+        "logics": [
+            {
+                "trigger": "DAK, BMI",
+                "value": 30.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+                "value": "DAK, Negative",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+                "value": "DAK, Negative",
+                "operator": "="
+            }
+        ],
+        "logic_key": 121,
+        "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
+        "dependentValue": true
     },
     {
-      "logics": [
-        {
-          "trigger": "DAK, Past pregnancy history",
-          "orValues": [
-            "DAK, Gestational diabetes mellitus",
-            "DAK, Macrosomia"
-          ],
-          "operator": "OR"
-        },
-        {
-          "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-          "value": "DAK, Negative",
-          "operator": "="
-        },
-        {
-          "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-          "value": "DAK, Negative",
-          "operator": "="
-        }
-      ],
-      "logic_key": 122,
-      "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-      "dependentValue": true
+        "logics": [
+            {
+                "trigger": "DAK, Past pregnancy history",
+                "orValues": [
+                    "DAK, Gestational diabetes mellitus",
+                    "DAK, Macrosomia"
+                ],
+                "operator": "OR"
+            },
+            {
+                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+                "value": "DAK, Negative",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+                "value": "DAK, Negative",
+                "operator": "="
+            }
+        ],
+        "logic_key": 122,
+        "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
+        "dependentValue": true
     },
     {
-      "logics": [
-        {
-          "trigger": "DAK, Urine dipstick result – glucose",
-          "orValues": [
-            "DAK, ++",
-            "DAK, +++",
-            "DAK, ++++"
-          ],
-          "operator": "OR"
-        },
-        {
-          "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
-          "value": "DAK, Negative",
-          "operator": "="
-        },
-        {
-          "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
-          "value": "DAK, Negative",
-          "operator": "="
-        }
-      ],
-      "logic_key": 123,
-      "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
-      "dependentValue": true
+        "logics": [
+            {
+                "trigger": "DAK, Urine dipstick result – glucose",
+                "orValues": [
+                    "DAK, ++",
+                    "DAK, +++",
+                    "DAK, ++++"
+                ],
+                "operator": "OR"
+            },
+            {
+                "trigger": "DAK, Gestational diabetes mellitus (GDM) diagnosis",
+                "value": "DAK, Negative",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Overt Diabetes mellitus (DM) during pregnancy diagnosis",
+                "value": "DAK, Negative",
+                "operator": "="
+            }
+        ],
+        "logic_key": 123,
+        "dependent": "DAK, Risk of gestational diabetes mellitus (GDM)",
+        "dependentValue": true
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Blood haemoglobin test result",
+                "minValue": 9,
+                "maxValue": 10.9,
+                "operator": "between, <=, <="
+            }
+        ],
+        "dependentValue": "DAK, Mild (10-10.9 g/dl)",
+        "dependent": "DAK, Anaemia diagnosis",
+        "logic_key": 124
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Blood haemoglobin test result",
+                "minValue": 7,
+                "maxValue": 8.9,
+                "operator": "between, <=, <="
+            }
+        ],
+        "dependentValue": "DAK, Moderate (7-9.9 g/dl)",
+        "dependent": "DAK, Anaemia diagnosis",
+        "logic_key": 125
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Blood haemoglobin test result",
+                "value": 7,
+                "operator": "<="
+            }
+        ],
+        "dependentValue": "DAK, Severe (<7g/dl)",
+        "dependent": "DAK, Anaemia diagnosis",
+        "logic_key": 126
     }
-  ]
-
+]

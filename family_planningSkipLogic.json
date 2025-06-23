@@ -443,34 +443,6 @@
     {
         "logics": [
             {
-                "trigger": "DAK, Pelvic/genital examination conducted",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, STI/HIV screening: laboratory tests conducted",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, STI risk assessment conducted",
-                "value": true,
-                "operator": "="
-            },
-            {
-                "trigger": "DAK, Blood haemoglobin test conducted",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "action": "show",
-        "conditionType": "either",
-        "dependent": "DAK, Test results",
-        "logic_key": 27
-    },
-    {
-        "logics": [
-            {
                 "trigger": "DAK, HIV test screening: Rapid/laboratory test conducted",
                 "value": true,
                 "operator": "="
@@ -807,7 +779,6 @@
         "dependent": "DAK, Reason for not taking blood pressure",
         "logic_key": 53
     },
-
     {
         "logics": [
             {
@@ -4417,18 +4388,6 @@
     {
         "logics": [
             {
-                "trigger": "DAK, STI risk assessment conducted",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "action": "show",
-        "dependent": "DAK, STI/HIV screening: laboratory tests available",
-        "logic_key": 325
-    },
-    {
-        "logics": [
-            {
                 "trigger": "DAK, Health condition(s)",
                 "value": "DAK, HIV/AIDS",
                 "operator": "="
@@ -4509,5 +4468,29 @@
         "action": "show",
         "dependent": "DAK, Implant issue",
         "logic_key": 331
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Pelvic/genital examination conducted",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "DAK, Test results",
+        "logic_key": 332
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, STI/HIV screening: laboratory tests conducted",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "DAK, Pelvic/genital examination conducted",
+        "logic_key": 333
     }
 ]
