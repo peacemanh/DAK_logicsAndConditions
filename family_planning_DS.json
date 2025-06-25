@@ -14,18 +14,6 @@
   {
     "conditions": [
       {
-        "key": "DAK, STI risk assessment conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "Provide Treatment Counsel on dual protection , Partner notification.  Offer routine HIV and STI testing. \u2013 Link with OPD for STI treatment",
-    "annotation": "\u2013Provide testing, diagnosis and  immediate treatment of  STIs based on signs/symptoms.\u2013Offer HIV testing and counseling \u2013 Support Partner notification of diagnosis   symptoms \u2013 Promote condom/lubricant use, combination  of condoms with other FP methods,  mutually faithful relationships and engagement in non-penetrative sexual intimacy to prevent STIs.\n Link with OPD for STI treatment",
-    "action_key": 1
-  },
-  {
-    "conditions": [
-      {
         "key": "DAK, Pelvic/genital examination conducted",
         "value": true,
         "operator": "="
