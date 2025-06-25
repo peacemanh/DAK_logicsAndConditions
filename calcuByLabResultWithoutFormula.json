@@ -1,0 +1,761 @@
+[
+    {
+        "logics": [
+            {
+                "trigger": "Blood group type",
+                "orValues": ["Blood group type A", "Blood group type B", "Blood group type AB", "Blood group type O"],
+                "operator": "OR"
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Blood type test conducted",
+        "logic_key": 999990
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Blood group type",
+                "value": "Blood group type A",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, A",
+        "dependent": "DAK, Blood type",
+        "logic_key": 999991
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Blood group type",
+                "value": "Blood group type B",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, B",
+        "dependent": "DAK, Blood type",
+        "logic_key": 999992
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Blood group type",
+                "value": "Blood group type AB",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, AB",
+        "dependent": "DAK, Blood type",
+        "logic_key": 999993
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Blood group type",
+                "value": "Blood group type O",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, O",
+        "dependent": "DAK, Blood type",
+        "logic_key": 999994
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Rheumatoid Factor",
+                "value": "Positive",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Rh positive",
+        "dependent": "DAK, Rh factor",
+        "logic_key": 999995
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Rheumatoid Factor",
+                "value": "Negative",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Rh negative",
+        "dependent": "DAK, Rh factor",
+        "logic_key": 999996
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Glucose random",
+                "value": 0,
+                "operator": ">="
+            },
+            {
+                "trigger": "Glucose fasting",
+                "value": 0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": true,
+        "conditionType": "either",
+        "dependent": "DAK, Blood glucose test conducted",
+        "logic_key": 999997
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Glucose fasting",
+                "value": 0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": "DAK, Fasting Blood sugar",
+        "dependent": "DAK, Blood glucose test type",
+        "logic_key": 999998
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Glucose random",
+                "value": 0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": "DAK, Random blood sugar",
+        "dependent": "DAK, Blood glucose test type",
+        "logic_key": 999999
+    },
+    {
+        "logics": [
+            {
+                "trigger": "OGGT",
+                "value": 0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": "DAK, Oral glucose tolerance (OGTT) test",
+        "dependent": "DAK, Blood glucose test type",
+        "logic_key": 9999910
+    },    
+    {
+        "logics": [
+            {
+                "trigger": "Hemoglobin test",
+                "value": 0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Blood haemoglobin test conducted",
+        "logic_key": 9999911
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Hemoglobin test",
+                "value": 0,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": "DAK, Complete blood count test",
+        "dependent": "DAK, Blood haemoglobin test type",
+        "logic_key": 9999912
+    },
+    {
+        "logics": [
+            {
+                "trigger": "HIV test (serum)",
+                "orValues": ["Positive", "Negative", "Inconclusive"],
+                "operator": "OR"
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, HIV test conducted",
+        "logic_key": 9999913
+    },
+    {
+        "logics": [
+            {
+                "trigger": "HIV test (serum)",
+                "value": "Positive",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, HIV-positive",
+        "dependent": "DAK, HIV test result",
+        "logic_key": 9999914
+    },
+    {
+        "logics": [
+            {
+                "trigger": "HIV test (serum)",
+                "value": "Negative",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, HIV-negative",
+        "dependent": "DAK, HIV test result",
+        "logic_key": 9999915
+    },
+    {
+        "logics": [
+            {
+                "trigger": "HIV test (serum)",
+                "value": "Inconclusive",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, HIV-inconclusive",
+        "dependent": "DAK, HIV test result",
+        "logic_key": 9999916
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Hepatitis B surface antigen",
+                "orValues": ["Positive", "Negative"],
+                "operator": "OR"
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Hepatitis B test conducted",
+        "logic_key": 9999917
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Hepatitis B surface antigen",
+                "value": "Positive",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Hepatitis B positive",
+        "dependent": "DAK, Hepatitis B test result",
+        "logic_key": 9999918
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Hepatitis B surface antigen",
+                "value": "Negative",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Hepatitis B negative",
+        "dependent": "DAK, Hepatitis B test result",
+        "logic_key": 9999919
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Hepatitis C test",
+                "orValues": ["Positive", "Negative"],
+                "operator": "OR"
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Hepatitis C test conducted",
+        "logic_key": 9999920
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Hepatitis C test",
+                "value": "Positive",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Hepatitis C positive",
+        "dependent": "DAK, Hepatitis C test result",
+        "logic_key": 9999921
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Hepatitis C test",
+                "value": "Negative",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Hepatitis C negative",
+        "dependent": "DAK, Hepatitis C test result",
+        "logic_key": 9999922
+    },
+    {
+        "logics": [
+            {
+                "trigger": "VDRL",
+                "orValues": ["Reactive", "Non Reactive"],
+                "operator": "OR"
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Syphilis test conducted",
+        "logic_key": 9999923
+    },
+    {
+        "logics": [
+            {
+                "trigger": "VDRL",
+                "value": "Reactive",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Syphilis positive",
+        "dependent": "DAK, Syphilis test result",
+        "logic_key": 9999924
+    },
+    {
+        "logics": [
+            {
+                "trigger": "VDRL",
+                "value": "Non Reactive",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Syphilis negative",
+        "dependent": "DAK, Syphilis test result",
+        "logic_key": 9999925
+    },
+
+    {
+        "logics": [
+            {
+                "trigger": "Urine Culture",
+                "orValues": ["Positive", "No Growth"],
+                "operator": "OR"
+            },
+            {
+                "trigger": "Midstream urine Gram-staining",
+                "orValues": ["Positive", "Negative"],
+                "operator": "OR"
+            },
+            {
+                "trigger": "Nitrates (Urine)",
+                "orValues": ["Positive", "Negative"],
+                "operator": "OR"
+            },
+            {
+                "trigger": "Leukocyte esterase",
+                "orValues": ["Positive", "Negative"],
+                "operator": "OR"
+            },
+            {
+                "trigger": "Protein urine",
+                "orValues": ["Negative", "1+", "2+", "3+", "4+"],
+                "operator": "OR"
+            },
+            {
+                "trigger": "Glucose urine",
+                "orValues": ["Negative", "1+", "2+", "3+", "4+"],
+                "operator": "OR"
+            },
+            {
+                "trigger": "Ketone Bodies",
+                "orValues": ["Negative", "1+", "2+", "3+", "4+"],
+                "operator": "OR"
+            }
+        ],
+        "dependentValue": true,
+        "conditionType": "either",
+        "dependent": "DAK, Urine test conducted",
+        "logic_key": 9999926
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Urine Culture",
+                "value": "Positive",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Positive – any agent",
+        "dependent": "DAK, Urine Culture",
+        "logic_key": 9999927
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Urine Culture",
+                "value": "No Growth",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, No growth",
+        "dependent": "DAK, Urine Culture",
+        "logic_key": 9999928
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Midstream urine Gram-staining",
+                "value": "Positive",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Positive",
+        "dependent": "DAK, Midstream urine Gram-staining",
+        "logic_key": 9999929
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Midstream urine Gram-staining",
+                "value": "Negative",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Negative",
+        "dependent": "DAK, Midstream urine Gram-staining",
+        "logic_key": 9999930
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Nitrates (Urine)",
+                "value": "Positive",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Positive",
+        "dependent": "DAK, Urine dipstick result – nitrites",
+        "logic_key": 9999931
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Nitrates (Urine)",
+                "value": "Negative",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Negative",
+        "dependent": "DAK, Urine dipstick result – nitrites",
+        "logic_key": 9999932
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Leukocyte esterase",
+                "value": "Positive",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Positive",
+        "dependent": "DAK, Urine dipstick result – leukocytes",
+        "logic_key": 9999933
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Leukocyte esterase",
+                "value": "Negative",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Negative",
+        "dependent": "DAK, Urine dipstick result – leukocytes",
+        "logic_key": 9999934
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Protein urine",
+                "value": "Negative",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Negative",
+        "dependent": "DAK, Urine dipstick result – protein",
+        "logic_key": 9999935
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Protein urine",
+                "value": "1+",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, +",
+        "dependent": "DAK, Urine dipstick result – protein",
+        "logic_key": 9999936
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Protein urine",
+                "value": "2+",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, ++",
+        "dependent": "DAK, Urine dipstick result – protein",
+        "logic_key": 9999937
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Protein urine",
+                "value": "3+",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, +++",
+        "dependent": "DAK, Urine dipstick result – protein",
+        "logic_key": 9999938
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Protein urine",
+                "value": "4+",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, ++++",
+        "dependent": "DAK, Urine dipstick result – protein",
+        "logic_key": 9999939
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Glucose urine",
+                "value": "Negative",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Negative",
+        "dependent": "DAK, Urine dipstick result – glucose",
+        "logic_key": 9999940
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Glucose urine",
+                "value": "1+",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, +",
+        "dependent": "DAK, Urine dipstick result – glucose",
+        "logic_key": 9999941
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Glucose urine",
+                "value": "2+",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, ++",
+        "dependent": "DAK, Urine dipstick result – glucose",
+        "logic_key": 9999942
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Glucose urine",
+                "value": "3+",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, +++",
+        "dependent": "DAK, Urine dipstick result – glucose",
+        "logic_key": 9999943
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Glucose urine",
+                "value": "4+",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, ++++",
+        "dependent": "DAK, Urine dipstick result – glucose",
+        "logic_key": 9999944
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Ketone Bodies",
+                "value": "Negative",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Negative",
+        "dependent": "DAK, Urine dipstick result – ketone",
+        "logic_key": 9999945
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Ketone Bodies",
+                "value": "1+",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, +",
+        "dependent": "DAK, Urine dipstick result – ketone",
+        "logic_key": 9999946
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Ketone Bodies",
+                "value": "2+",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, ++",
+        "dependent": "DAK, Urine dipstick result – ketone",
+        "logic_key": 9999947
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Ketone Bodies",
+                "value": "3+",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, +++",
+        "dependent": "DAK, Urine dipstick result – ketone",
+        "logic_key": 9999948
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Ketone Bodies",
+                "value": "4+",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, ++++",
+        "dependent": "DAK, Urine dipstick result – ketone",
+        "logic_key": 9999949
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Gestational Age by ultrasound",
+                "value": 1,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Ultrasound scan conducted",
+        "logic_key": 9999950
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Gestational Age by ultrasound",
+                "value": 1,
+                "operator": ">="
+            }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Ultrasound done",
+        "logic_key": 9999951
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Gross Anomalies",
+                "value": "DAK, No gross congenital anomale",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, No gross congenital anomale",
+        "dependent": "DAK, Gross Congenital Anomale",
+        "logic_key": 9999952
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Gross Anomalies",
+                "value": "DAK, Haydrocephalus",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Haydrocephalus",
+        "dependent": "DAK, Gross Congenital Anomale",
+        "logic_key": 9999953
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Gross Anomalies",
+                "value": "DAK, Anencephaly",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Anencephaly",
+        "dependent": "DAK, Gross Congenital Anomale",
+        "logic_key": 9999954
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Gross Anomalies",
+                "value": "DAK, Spinal Bifida",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Spinal Bifida",
+        "dependent": "DAK, Gross Congenital Anomale",
+        "logic_key": 9999955
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Gross Anomalies",
+                "value": "Other (Specify)",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Other",
+        "dependent": "DAK, Gross Congenital Anomale",
+        "logic_key": 9999956
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Placenta location",
+                "value": "DAK, Previa",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Previa",
+        "dependent": "DAK, Placenta location",
+        "logic_key": 9999957
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Placenta location",
+                "value": "DAK, Low",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Low",
+        "dependent": "DAK, Placenta location",
+        "logic_key": 9999958
+    }
+    ,
+    {
+        "logics": [
+            {
+                "trigger": "Placenta location",
+                "value": "DAK, Fundal",
+                "operator": "="
+            }
+        ],
+        "dependentValue": "DAK, Fundal",
+        "dependent": "DAK, Placenta location",
+        "logic_key": 9999959
+    }
+]
