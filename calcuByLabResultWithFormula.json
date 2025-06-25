@@ -1,0 +1,42 @@
+[
+    {
+        "resultConcept": "DAK, Fasting Blood sugar test result",
+        "operands": [ "Glucose fasting"],
+        "formula": "Glucose fasting / 1"
+    },
+    {
+        "resultConcept": "DAK, Random blood sugar test result",
+        "operands": ["Glucose random"],
+        "formula": "Glucose random / 1"
+    },
+    {
+        "resultConcept": "DAK, Blood haemoglobin test result",
+        "operands": [ "Hemoglobin test"],
+        "formula": "Hemoglobin test / 1"
+    },
+    {
+        "resultConcept": "DAK, Hematocrit (Ht)",
+        "operands": ["Hematocrit"],
+        "formula": "Hematocrit / 1"
+    },
+    {
+        "resultConcept": "DAK, White blood cell (WBC) count",
+        "operands": ["White Blood Cell"],
+        "formula": "White Blood Cell / 1"
+    },
+    {
+        "resultConcept": "DAK, Platelet count",
+        "operands": ["Platelet Count"],
+        "formula": "Platelet Count / 1"
+    },
+    {
+        "resultConcept": "DAK, Gestational age by Ultrasound",
+        "operands": ["Gestational Age by ultrasound"],
+        "formula": "Gestational Age by ultrasound / 1"
+    },
+    {
+        "resultConcept": "DAK, Amniotic fluid index(cm)",
+        "operands": ["Amniotic fluid index"],
+        "formula": "Amniotic fluid index / 1"
+    }
+]

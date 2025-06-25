@@ -1,14 +1,406 @@
 [
     {
         "logics": [
+          {
+            "hiddenFields": [
+              "The name of the concept that should be hidded during first page load"
+            ]
+          }
+        ],
+        "action": "none",
+        "dependent": "none",
+        "logic_key": 0
+      },
+      {
+        "logics": [
             {
-                "trigger": "None",
-                "value": "None",
+                "trigger": "Triage Red",
+                "value": null,
+                "operator": "!="
+            },
+            {
+                "trigger": "Triage Orange",
+                "value": null,
+                "operator": "!="
+            },
+            {
+                "trigger": "Triage Yellow",
+                "value": null,
+                "operator": "!="
+            },
+            {
+                "trigger": "Triage Green",
+                "value": null,
+                "operator": "!="
+            }
+        ],
+        "action": "hide",
+        "conditionType": "either",
+        "dependent": "Triage Black",
+        "logic_key": 1
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Triage Red",
+                "value": null,
+                "operator": "!="
+            },
+            {
+                "trigger": "Triage Black",
+                "value": null,
+                "operator": "!="
+            },
+            {
+                "trigger": "Triage Yellow",
+                "value": null,
+                "operator": "!="
+            },
+            {
+                "trigger": "Triage Green",
+                "value": null,
+                "operator": "!="
+            }
+        ],
+        "action": "hide",
+        "conditionType": "either",
+        "dependent": "Triage Orange",
+        "logic_key": 2
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Triage Orange",
+                "value": null,
+                "operator": "!="
+            },
+            {
+                "trigger": "Triage Black",
+                "value": null,
+                "operator": "!="
+            },
+            {
+                "trigger": "Triage Yellow",
+                "value": null,
+                "operator": "!="
+            },
+            {
+                "trigger": "Triage Green",
+                "value": null,
+                "operator": "!="
+            }
+        ],
+        "action": "hide",
+        "conditionType": "either",
+        "dependent": "Triage Red",
+        "logic_key": 3
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Triage Orange",
+                "value": null,
+                "operator": "!="
+            },
+            {
+                "trigger": "Triage Black",
+                "value": null,
+                "operator": "!="
+            },
+            {
+                "trigger": "Triage Red",
+                "value": null,
+                "operator": "!="
+            },
+            {
+                "trigger": "Triage Green",
+                "value": null,
+                "operator": "!="
+            }
+        ],
+        "action": "hide",
+        "conditionType": "either",
+        "dependent": "Triage Yellow",
+        "logic_key": 4
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Triage Orange",
+                "value": null,
+                "operator": "!="
+            },
+            {
+                "trigger": "Triage Black",
+                "value": null,
+                "operator": "!="
+            },
+            {
+                "trigger": "Triage Red",
+                "value": null,
+                "operator": "!="
+            },
+            {
+                "trigger": "Triage Yellow",
+                "value": null,
+                "operator": "!="
+            }
+        ],
+        "action": "hide",
+        "conditionType": "either",
+        "dependent": "Triage Green",
+        "logic_key": 5
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Triage Chief Complaint",
+                "value": "Other",
                 "operator": "="
             }
         ],
-        "action": "None",
-        "dependent": "None",
-        "logic_key": 1
+        "action": "show",
+        "dependent": "Other",
+        "logic_key": 6
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Trauma",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "Trauma Happened",
+        "logic_key": 7
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Trauma",
+                "value": false,
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "Non Trauma Complaints",
+        "logic_key": 8
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Number of Fetus(es)",
+                "value": 2,
+                "operator": ">="
+            }
+        ],
+        "action": "show",
+        "dependent": "Fetal Heart Rate (Fetus 2)",
+        "logic_key": 24
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Number of Fetus(es)",
+                "value": 2,
+                "operator": ">="
+            }
+        ],
+        "action": "show",
+        "dependent": "Estimated Fetal Weight (Fetus 2)",
+        "logic_key": 25
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Number of Fetus(es)",
+                "value": 2,
+                "operator": ">="
+            }
+        ],
+        "action": "show",
+        "dependent": "Presentation (Fetus 2)",
+        "logic_key": 26
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Observed Abnormalities",
+                "value": "HEENT",
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "HEENT",
+        "logic_key": 36
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Observed Abnormalities",
+                "value": "Lymphoglandular Systems (LGS)",
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "Lymphoglandular Systems (LGS)",
+        "logic_key": 37
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Observed Abnormalities",
+                "value": "Respiratory System (RS)",
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "Respiratory System (RS)",
+        "logic_key": 38
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Observed Abnormalities",
+                "value": "Cardiovascular System (CVS)",
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "Cardiovascular System (CVS)",
+        "logic_key": 39
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Observed Abnormalities",
+                "value": "The Abdomen and Pelvis",
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "The Abdomen and Pelvis",
+        "logic_key": 40
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Observed Abnormalities",
+                "value": "Genitourinary System (GUS)",
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "Genitourinary System (GUS)",
+        "logic_key": 41
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Observed Abnormalities",
+                "value": "Musculoskeletal System (MSS)",
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "Musculoskeletal System (MSS)",
+        "logic_key": 42
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Observed Abnormalities",
+                "value": "Integumentary System (IS)",
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "Integumentary System (IS)",
+        "logic_key": 43
+    },
+    {
+        "logics": [
+            {
+                "trigger": "Observed Abnormalities",
+                "value": "Nervous System (NS)",
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "Nervous System (NS)",
+        "logic_key": 44
+    },
+    {
+        "logics": [
+            {
+                "trigger": "EPI schedule",
+                "value": "EPI 0",
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "EPI 0",
+        "logic_key": 45
+    },
+    {
+        "logics": [
+            {
+                "trigger": "EPI schedule",
+                "value": "EPI 1",
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "EPI 1",
+        "logic_key": 46
+    },
+    {
+        "logics": [
+            {
+                "trigger": "EPI schedule",
+                "value": "EPI 2",
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "EPI 2",
+        "logic_key": 47
+    },
+    {
+        "logics": [
+            {
+                "trigger": "EPI schedule",
+                "value": "EPI 3",
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "EPI 3",
+        "logic_key": 48
+    },
+    {
+        "logics": [
+            {
+                "trigger": "EPI schedule",
+                "value": "EPI 9 months",
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "EPI 9 months",
+        "logic_key": 49
+    },
+    {
+        "logics": [
+            {
+                "trigger": "EPI schedule",
+                "value": "EPI 15 months",
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "EPI 15 months",
+        "logic_key": 50
     }
 ]    
