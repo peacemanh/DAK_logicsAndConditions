@@ -138,18 +138,6 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Health condition(s)",
-        "value": "DAK, HIV/AIDS",
-        "operator": "!="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, HIV risk assessment conducted",
-    "logic_key": 4
-  },
-  {
-    "logics": [
-      {
         "trigger": "DAK, HIV risk assessment conducted",
         "value": true,
         "operator": "="
@@ -402,7 +390,7 @@
     "dependent": "DAK, Method in mind",
     "logic_key": 23
   },
-  
+
   {
     "logics": [
       {
@@ -4483,19 +4471,7 @@
     "dependent": "DAK, Pelvic/genital examination conducted",
     "logic_key": 333
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Service for clients with special needs",
-        "value": "DAK, HIV Poistive",
-        "operator": "!="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, HIV risk assessment conducted",
-    "logic_key": 334
 
-  },
   {
     "logics": [
       {
@@ -4539,6 +4515,25 @@
     "conditionType": "either",
     "dependent": "DAK, Pregnancy test result",
     "logic_key": 337
+
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Service for clients with special needs",
+        "value": "DAK, HIV Poistive",
+        "operator": "!="
+      },
+      {
+        "trigger": "DAK, Health condition(s)",
+        "value": "DAK, HIV/AIDS",
+        "operator": "!="
+      }
+    ],
+    "action": "show",
+    "conditionType": "either",
+    "dependent": "DAK, HIV risk assessment conducted",
+    "logic_key": 338
 
   }
 
