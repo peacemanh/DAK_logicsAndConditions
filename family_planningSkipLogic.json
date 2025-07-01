@@ -4489,11 +4489,11 @@
     "logics": [
       {
         "trigger": "gender",
-        "value": "F",
+        "value": "M",
         "operator": "="
       }
     ],
-    "action": "hide",
+    "action": "show",
     "parent": "DAK, Test results",
     "dependent": "DAK, Scrotal Swelling Syndrome",
     "logic_key": 336
@@ -4531,10 +4531,21 @@
       }
     ],
     "action": "show",
-    "conditionType": "either",
     "dependent": "DAK, HIV risk assessment conducted",
     "logic_key": 338
 
+  },
+  {
+    "logics": [
+      {
+        "trigger": "gender",
+        "value": "F",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Cervical Cancer Screening Section",
+    "logic_key": 339
   }
 
 ]

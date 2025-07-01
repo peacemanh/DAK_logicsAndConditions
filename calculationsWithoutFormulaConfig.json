@@ -1400,7 +1400,7 @@
             {
                 "trigger": "DAK, Blood haemoglobin test result",
                 "value": 7,
-                "operator": "<="
+                "operator": "<"
             }
         ],
         "dependentValue": "DAK, Severe (<7g/dl)",

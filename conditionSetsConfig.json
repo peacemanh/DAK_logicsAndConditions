@@ -2077,19 +2077,19 @@
         "annotation": "The urine dipstick test is important for identifying hypertensive disorders ( protein uria), DM (glucose uria), asymptomatic bacteriuria (ASB) and UTI.  Midstream culture and gram -staining are the standard tests  for diagnosis of ASB if available.",
         "action_key": 157
     },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Hematocrit (Ht)",
-                "value": 20.0,
-                "operator": "<"
-            }
-        ],
-        "displayPoint": "DAK, Hematocrit (Ht)",
-        "action": "Referral",
-        "annotation": "Hematocrit levels too low! Refer her for further evaluation and management",
-        "action_key": 158
-    },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Hematocrit (Ht)",
+        "value": 20.0,
+        "operator": "<"
+      }
+    ],
+    "displayPoint": "DAK, Hematocrit (Ht)",
+    "action": "Refer her for further evaluation and management",
+    "annotation": "Hematocrit levels too low!",
+    "action_key": 158
+  },
     {
         "conditions": [
             {
@@ -2099,23 +2099,23 @@
             }
         ],
         "displayPoint": "DAK, White blood cell (WBC) count",
-        "action": "Referrer her if not explained by the physiological change of the pregnancy",
+        "action": "Refer her if not explained by the physiological change of the pregnancy",
         "annotation": "White blood cell count too high!Refer her for further evaluation and management if not explained by the physiological change of the pregnancy",
         "action_key": 159
     },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Platelet count",
-                "value": 100000.0,
-                "operator": "<"
-            }
-        ],
-        "displayPoint": "DAK, Platelet count",
-        "action": "Referral",
-        "annotation": "Platelet count too low! Refer her for further evaluation and management",
-        "action_key": 160
-    },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Platelet count",
+        "value": 100000.0,
+        "operator": "<"
+      }
+    ],
+    "displayPoint": "DAK, Platelet count",
+    "action": "Reffer her for further evaluation and management",
+    "annotation": "Platelet count too low!",
+    "action_key": 160
+  },
     {
         "conditions": [
             {
@@ -5020,38 +5020,14 @@
     {
         "conditions": [
             {
-                "key": "DAK, Hematocrit (Ht)",
-                "value": 20.0,
-                "operator": "<"
-            }
-        ],
-        "action": "Low levels",
-        "annotation": "Hematocrit levels too low! Refer her for further evaluation and management",
-        "action_key": 328
-    },
-    {
-        "conditions": [
-            {
                 "key": "DAK, White blood cell (WBC) count",
                 "value": 4000.0,
                 "operator": "<"
             }
         ],
         "action": "Low levels",
-        "annotation": "White blood cell count too high!Refer her for further evaluation and management if not explained by the physiological change of the pregnancy",
+        "annotation": "White blood cell count too low!Refer her for further evaluation and management if not explained by the physiological change of the pregnancy",
         "action_key": 329
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Platelet count",
-                "value": 100000.0,
-                "operator": "<"
-            }
-        ],
-        "action": "Low levels",
-        "annotation": "Platelet count too low! Refer her for further evaluation and management",
-        "action_key": 330
     },
     {
         "conditions": [
@@ -5065,18 +5041,6 @@
         "action": "Conduct counselling on hygiene",
         "annotation": "Handwashing with soap is the most important hygiene action she can take, especially before preparing food and after going to the toilet. A pregnant woman should wash her body regularly with clean water. Moreover, regular cleaning of the teeth with a dental stick or a toothbrush and toothpaste is important for dental hygiene",
         "action_key": 331
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Counselling on avoidance of harmful traditional practices",
-                "value": false,
-                "operator": "="
-            }
-        ],
-        "action": "Counselling on avoidance of harmful traditional practices",
-        "annotation": "Counsel women on avoidance of harmful traditional practices",
-        "action_key": 332
     },
     {
         "conditions": [
@@ -5239,7 +5203,7 @@
         ],
         "displayPoint": "DAK, Counselling conducted on anaemia",
         "action": "Counselling on anaemia",
-        "annotation": "Rule out intestinal infections (and malaria and treat accordingly) , Counsel on compliance with treatment,Reassess at subsequent antenatal visit (4-6 weeks). If anemia persists, refer to hospital. ",
+        "annotation": "Rule out intestinal infections (and malaria and treat accordingly) , Counsel on compliance with treatment,Reassess at subsequent antenatal visit (4-6 weeks). If anemia persists, refer to hospital. If anemia persists, refer to hospital.Her daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia. The equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate. ",
         "action_key": 345
     },
     {
@@ -5286,46 +5250,10 @@
                 "operator": ">="
             }
         ],
-        "displayPoint": "DAK, Type of iron supplement dosage provided",
-        "action": "Type of iron supplement dosage provided = Daily",
-        "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct counselling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
-        "action_key": 348
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Blood haemoglobin test result",
-                "value": 11.0,
-                "operator": "<"
-            },
-            {
-                "key": "DAK, Gestational age",
-                "value": 28.0,
-                "operator": ">="
-            }
-        ],
         "displayPoint": "DAK, Amount of iron prescribed",
         "action": "Amount of iron prescribed = 120 mg",
         "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct counselling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
         "action_key": 349
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Blood haemoglobin test result",
-                "value": 11.0,
-                "operator": "<"
-            },
-            {
-                "key": "DAK, Gestational age",
-                "value": 28.0,
-                "operator": ">="
-            }
-        ],
-        "displayPoint": "DAK, Type of iron supplement dosage provided",
-        "action": "Type of iron supplement dosage provided = Daily",
-        "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct counselling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
-        "action_key": 350
     },
     {
         "conditions": [
@@ -5345,25 +5273,6 @@
         "action": "Amount of iron prescribed = 120 mg",
         "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct counselling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
         "action_key": 351
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Blood haemoglobin test result",
-                "value": 10.5,
-                "operator": "<"
-            },
-            {
-                "key": "DAK, Gestational age",
-                "minValue": 13.0,
-                "maxValue": 27.0,
-                "operator": "between, <=, <="
-            }
-        ],
-        "displayPoint": "DAK, Type of iron supplement dosage provided",
-        "action": "Type of iron supplement dosage provided = Daily",
-        "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct counselling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
-        "action_key": 352
     },
     {
         "conditions": [
@@ -5415,24 +5324,6 @@
                 "operator": "="
             }
         ],
-        "displayPoint": "DAK, Type of iron supplement dosage provided",
-        "action": "Type of iron supplement dosage provided = Daily",
-        "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct counselling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
-        "action_key": 355
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Blood haemoglobin test conducted",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Pallor",
-                "value": true,
-                "operator": "="
-            }
-        ],
         "displayPoint": "DAK, Amount of daily dose of folic acid prescribed",
         "action": "Amount of daily dose of folic acid prescribed= 0.4mg",
         "annotation": "Anaemia can be diagnosed if Hb level is less than 11 in first or third trimester or Hb level less than 10.5 in second trimester; OR there is no Hb test result recorded, but woman has pallor.\n\nIf a woman is diagnosed with anaemia during pregnancy, conduct counselling for managing and treating anaemia. \n\nHer daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia.\n\nThe equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
@@ -5469,24 +5360,6 @@
                 "operator": "<="
             }
         ],
-        "displayPoint": "DAK, Type of iron supplement dosage provided",
-        "action": "Type of iron supplement dosage provided = Daily",
-        "annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDue to the population's high anaemia prevalence, a daily dose of 60 mg of elemental iron is preferred over a lower dose. A daily dose of 400 micrograms (0.4 mg) folic acid is also recommended.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate heptahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
-        "action_key": 358
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Blood haemoglobin test result",
-                "value": 11.0,
-                "operator": ">="
-            },
-            {
-                "key": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": "<="
-            }
-        ],
         "displayPoint": "DAK, Amount of daily dose of folic acid prescribed",
         "action": "Amount of daily dose of folic acid prescribed= 0.4mg",
         "annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDue to the population's high anaemia prevalence, a daily dose of 60 mg of elemental iron is preferred over a lower dose. A daily dose of 400 micrograms (0.4 mg) folic acid is also recommended.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate heptahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
@@ -5509,24 +5382,6 @@
         "action": "Amount of iron prescribed = 60 mg",
         "annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDue to the population's high anaemia prevalence, a daily dose of 60 mg of elemental iron is preferred over a lower dose. A daily dose of 400 micrograms (0.4 mg) folic acid is also recommended.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate heptahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
         "action_key": 360
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Blood haemoglobin test result",
-                "value": 11.0,
-                "operator": ">="
-            },
-            {
-                "key": "DAK, Gestational age",
-                "value": 28.0,
-                "operator": ">="
-            }
-        ],
-        "displayPoint": "DAK, Type of iron supplement dosage provided",
-        "action": "Type of iron supplement dosage provided = Daily",
-        "annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDue to the population's high anaemia prevalence, a daily dose of 60 mg of elemental iron is preferred over a lower dose. A daily dose of 400 micrograms (0.4 mg) folic acid is also recommended.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate heptahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
-        "action_key": 361
     },
     {
         "conditions": [
@@ -5579,25 +5434,6 @@
                 "operator": "between, <=, <="
             }
         ],
-        "displayPoint": "DAK, Type of iron supplement dosage provided",
-        "action": "Type of iron supplement dosage provided = Daily",
-        "annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDue to the population's high anaemia prevalence, a daily dose of 60 mg of elemental iron is preferred over a lower dose. A daily dose of 400 micrograms (0.4 mg) folic acid is also recommended.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate heptahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
-        "action_key": 364
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Blood haemoglobin test result",
-                "value": 10.5,
-                "operator": ">="
-            },
-            {
-                "key": "DAK, Gestational age",
-                "minValue": 13.0,
-                "maxValue": 27.0,
-                "operator": "between, <=, <="
-            }
-        ],
         "displayPoint": "DAK, Amount of daily dose of folic acid prescribed",
         "action": "Amount of daily dose of folic acid prescribed= 0.4mg",
         "annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDue to the population's high anaemia prevalence, a daily dose of 60 mg of elemental iron is preferred over a lower dose. A daily dose of 400 micrograms (0.4 mg) folic acid is also recommended.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate heptahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
@@ -5620,24 +5456,6 @@
         "action": "Amount of iron prescribed = 60 mg",
         "annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDaily oral iron and folic acid supplementation with 30\u201360 mg of elemental iron and 400 micrograms (0.4 mg) of folic acidc to prevent maternal anaemia, puerperal sepsis, low birth weight and preterm birth.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate hepahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
         "action_key": 366
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Blood haemoglobin test conducted",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Pallor",
-                "value": false,
-                "operator": "="
-            }
-        ],
-        "displayPoint": "DAK, Type of iron supplement dosage provided",
-        "action": "Type of iron supplement dosage provided = Daily",
-        "annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDaily oral iron and folic acid supplementation with 30\u201360 mg of elemental iron and 400 micrograms (0.4 mg) of folic acidc to prevent maternal anaemia, puerperal sepsis, low birth weight and preterm birth.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate hepahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
-        "action_key": 367
     },
     {
         "conditions": [
@@ -5698,29 +5516,6 @@
                 "operator": "="
             }
         ],
-        "displayPoint": "DAK, Type of iron supplement dosage provided",
-        "action": "Type of iron supplement dosage provided = Daily",
-        "annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDaily oral iron and folic acid supplementation with 30\u201360 mg of elemental iron and 400 micrograms (0.4 mg) of folic acidc to prevent maternal anaemia, puerperal sepsis, low birth weight and preterm birth.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate hepahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
-        "action_key": 370
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Blood haemoglobin test result",
-                "value": 11.0,
-                "operator": ">="
-            },
-            {
-                "key": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": "<="
-            },
-            {
-                "key": "DAK, Has side-effects from iron and folic acid supplements",
-                "value": true,
-                "operator": "="
-            }
-        ],
         "displayPoint": "DAK, Amount of daily dose of folic acid prescribed",
         "action": "Amount of daily dose of folic acid prescribed= 0.4mg",
         "annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDaily oral iron and folic acid supplementation with 30\u201360 mg of elemental iron and 400 micrograms (0.4 mg) of folic acidc to prevent maternal anaemia, puerperal sepsis, low birth weight and preterm birth.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate hepahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
@@ -5748,29 +5543,6 @@
         "action": "30 mg \u00e2\u2030\u00a4 Amount of iron prescribed \u00e2\u2030\u00a4 60 mg",
         "annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDaily oral iron and folic acid supplementation with 30\u201360 mg of elemental iron and 400 micrograms (0.4 mg) of folic acidc to prevent maternal anaemia, puerperal sepsis, low birth weight and preterm birth.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate hepahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
         "action_key": 372
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Blood haemoglobin test result",
-                "value": 11.0,
-                "operator": ">="
-            },
-            {
-                "key": "DAK, Gestational age",
-                "value": 28.0,
-                "operator": ">="
-            },
-            {
-                "key": "DAK, Has side-effects from iron and folic acid supplements",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "displayPoint": "DAK, Type of iron supplement dosage provided",
-        "action": "Type of iron supplement dosage provided = Daily",
-        "annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDaily oral iron and folic acid supplementation with 30\u201360 mg of elemental iron and 400 micrograms (0.4 mg) of folic acidc to prevent maternal anaemia, puerperal sepsis, low birth weight and preterm birth.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate hepahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
-        "action_key": 373
     },
     {
         "conditions": [
@@ -5838,30 +5610,6 @@
                 "operator": "="
             }
         ],
-        "displayPoint": "DAK, Type of iron supplement dosage provided",
-        "action": "Type of iron supplement dosage provided = Daily",
-        "annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDaily oral iron and folic acid supplementation with 30\u201360 mg of elemental iron and 400 micrograms (0.4 mg) of folic acidc to prevent maternal anaemia, puerperal sepsis, low birth weight and preterm birth.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate hepahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
-        "action_key": 376
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Blood haemoglobin test result",
-                "value": 10.5,
-                "operator": ">="
-            },
-            {
-                "key": "DAK, Gestational age",
-                "minValue": 13.0,
-                "maxValue": 27.0,
-                "operator": "between, <=, <="
-            },
-            {
-                "key": "DAK, Has side-effects from iron and folic acid supplements",
-                "value": true,
-                "operator": "="
-            }
-        ],
         "displayPoint": "DAK, Amount of daily dose of folic acid prescribed",
         "action": "Amount of daily dose of folic acid prescribed= 0.4mg",
         "annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDaily oral iron and folic acid supplementation with 30\u201360 mg of elemental iron and 400 micrograms (0.4 mg) of folic acidc to prevent maternal anaemia, puerperal sepsis, low birth weight and preterm birth.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate hepahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
@@ -5889,29 +5637,6 @@
         "action": "30 mg \u00e2\u2030\u00a4 Amount of iron prescribed \u00e2\u2030\u00a4 60 mg",
         "annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDaily oral iron and folic acid supplementation with 30\u201360 mg of elemental iron and 400 micrograms (0.4 mg) of folic acidc to prevent maternal anaemia, puerperal sepsis, low birth weight and preterm birth.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate hepahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
         "action_key": 378
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Blood haemoglobin test conducted",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Pallor",
-                "value": false,
-                "operator": "="
-            },
-            {
-                "key": "DAK, Has side-effects from iron and folic acid supplements",
-                "value": true,
-                "operator": "="
-            }
-        ],
-        "displayPoint": "DAK, Type of iron supplement dosage provided",
-        "action": "Type of iron supplement dosage provided = Daily",
-        "annotation": "If a woman is not diagnosed for anaemia, iron and folic acid supplementation is still recommended. \n\nDaily oral iron and folic acid supplementation with 30\u201360 mg of elemental iron and 400 micrograms (0.4 mg) of folic acidc to prevent maternal anaemia, puerperal sepsis, low birth weight and preterm birth.\n\nThe equivalent of 60 mg of elemental iron is 300 mg of ferrous sulfate hepahydrate, 180 mg of ferrous fumarate or 500 mg of ferrous gluconate.\n\nPlease refer to iron sources listed below for additional guidance that can be provided.",
-        "action_key": 379
     },
     {
         "conditions": [
@@ -6381,32 +6106,32 @@
         "annotation": "Counselling:- Provide post-testing counselling \u2013 Advise retesting if ongoing risk or known exposure",
         "action_key": 404
     },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Anaemia diagnosis",
-                "value": "DAK, Moderate (7-9.9 g/dl)",
-                "operator": "="
-            }
-        ],
-        "displayPoint": "DAK, Counselling conducted on anaemia",
-        "action": "Counselling on anaemia",
-        "annotation": "Rule out intestinal infections (and malaria and treat accordingly) , Counsel on compliance with treatment,Reassess at subsequent antenatal visit (4-6 weeks). If anemia persists, refer to hospital. ",
-        "action_key": 405
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Anaemia diagnosis",
-                "value": "DAK, Severe (<7g/dl)",
-                "operator": "="
-            }
-        ],
-        "displayPoint": "DAK, Counselling conducted on anaemia",
-        "action": "Refer immediately to hospital",
-        "annotation": "The woman has severe anemia and should be immediately referred to a hospital for further evaluation and treatment",
-        "action_key": 406
-    },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Anaemia diagnosis",
+        "value": "DAK, Moderate (7-9.9 g/dl)",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on anaemia",
+    "action": "Counselling on anaemia",
+    "annotation": "Rule out intestinal infections (and malaria and treat accordingly) , Counsel on compliance with treatment,Reassess at subsequent antenatal visit (4-6 weeks). If anemia persists, refer to hospital. If anemia persists, refer to hospital.Her daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia. The equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate. ",
+    "action_key": 405
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Anaemia diagnosis",
+        "value": "DAK, Severe (<7g/dl)",
+        "operator": "="
+      }
+    ],
+    "displayPoint": "DAK, Counselling conducted on anaemia",
+    "action": "Conduct anemia counselling and refer immediately to a hospital",
+    "annotation": "The woman has severe anemia and should be immediately referred to a hospital for further evaluation and treatment",
+    "action_key": 406
+  },
     {
         "conditions": [
             {
