@@ -3997,11 +3997,6 @@
         "trigger": "DAK, Number of pregnancies gravida",
         "value": 1,
         "operator": ">="
-      },
-      {
-        "trigger": "DaK, Hx of previous Preterm delivery",
-        "value": "DAK, Has previous history of preterm delivery",
-        "operator": "="
       }
     ],
     "action": "show",
@@ -7136,19 +7131,6 @@
     "action": "show",
     "dependent": "DAK, Other referral specify",
     "logic_key": 519
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DaK, Hx of previous Preterm delivery",
-        "value": "DAK, Has previous history of preterm delivery",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "parent": "DAK, Past pregnancy history",
-    "dependent": "DAK, Preterm delivery",
-    "logic_key": 520
   },
   {
     "logics": [
