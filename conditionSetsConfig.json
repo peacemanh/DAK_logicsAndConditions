@@ -1170,9 +1170,9 @@
         "conditions": [
             {
                 "key": "DAK, Body temperature",
-                "minValue": 35,
-                "maxValue": 37.5,
-                "operator": "beyond, <, <="
+                "minValue": 25,
+                "maxValue": 35,
+                "operator": "between, <=, <"
             }
         ],
         "action": "Conduct further investigation, manage accordingly, or refer if necessary.",
@@ -6451,12 +6451,12 @@
     {
         "conditions": [
             {
-                "key": "DAK, Repeat systolic blood pressure",
+                "key": "DAK, Repeat systolic blood pressure after 15 min",
                 "value": 160,
                 "operator": ">="
             },
             {
-                "key": "DAK, Repeat diastolic blood pressure",
+                "key": "DAK, Repeat diastolic blood pressure after 15 min",
                 "value": 110,
                 "operator": ">="
             }
@@ -6736,9 +6736,8 @@
         "conditions": [
             {
                 "key": "DAK, Week difference FH and GA",
-                "minvalue": 0,
-                "maxValue": 3,
-                "operator": "between, <=, <="
+                "value": 97,
+                "operator": "<="
             }
         ],
         "action": "Small for gestational age utrus",
@@ -6749,9 +6748,8 @@
         "conditions": [
             {
                 "key": "DAK, Week difference FH and GA",
-                "minvalue": -3,
-                "maxValue": 0,
-                "operator": "between, <=, <="
+                "value":103,
+                "operator": ">="
             }
         ],
         "action": "Large for gestational age utrus",
@@ -7166,5 +7164,69 @@
         "action": "Referral to a hospital for complete investigation and possible blood transfusion; continue therapeutic iron dose then after",
         "annotation": "",
         "action_key": 455
+    },
+ {
+        "conditions": [
+            {
+                "key": "DAK, Systolic blood pressure",
+                "value": 140,
+                "operator": ">="
+            }
+        ],
+        "action": "Measure BP again after 10\u201315 minutes rest",
+        "annotation": "Given high values (SBP \u00e2\u2030\u00a5 140 and/or DBP \u00e2\u2030\u00a5 90) upon first measure, blood pressure should be measured again.",
+        "action_key": 456
+    },
+     {
+        "conditions": [
+            {
+                "key": "DAK, Diastolic blood pressure",
+                "value": 90,
+                "operator": ">="
+            }
+        ],
+        "action": "Measure BP again after 10\u201315 minutes rest",
+        "annotation": "Given high values (SBP \u00e2\u2030\u00a5 140 and/or DBP \u00e2\u2030\u00a5 90) upon first measure, blood pressure should be measured again.",
+        "action_key": 457
+    },
+
+        {
+        "conditions": [
+            {
+                "key": "DAK, Repeat diastolic blood pressure after 15 min",
+                "minValue": 90,
+                "maxValue": 110,
+                "operator": "between, <=, <"
+            }
+        ],
+        "action": "Measure blood pressure again after 4 hours",
+        "annotation": "Given high values (SBP \u2265 140 and/or DBP \u2265 90), blood pressure should be measured again after 4 hours. Ensure there is appropriate spacing for both the systolic and diastolic BP values",
+        "action_key": 458
+    },
+        {
+        "conditions": [
+            {
+                "key": "DAK, Repeat systolic blood pressure after 15 min",
+                "minValue": 140,
+                "maxValue": 160,
+                "operator": "between, <=, <"
+            }
+        ],
+        "action": "Measure blood pressure again after 4 hours",
+        "annotation": "Given high values (SBP \u2265 140 and/or DBP \u2265 90), blood pressure should be measured again after 4 hours. Ensure there is appropriate spacing for both the systolic and diastolic BP values",
+        "action_key": 459
+    },
+     {
+        "conditions": [
+            {
+                "key": "DAK, Body temperature",
+                "minValue": 37.5,
+                "maxValue": 46,
+                "operator": "between, <, <="
+            }
+        ],
+        "action": "Conduct further investigation, manage accordingly, or refer if necessary.",
+        "annotation": "If the body temperature is <35\u00b0C or \u226537.5\u00b0C, identify the cause, manage accordingly, or refer. 37.5",
+        "action_key": 460
     }
 ]

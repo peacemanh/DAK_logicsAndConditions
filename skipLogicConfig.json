@@ -9066,13 +9066,15 @@
         "rules": [
           {
             "trigger": "DAK, Repeat systolic blood pressure after 15 min",
-            "value": 140,
-            "operator": ">="
+            "minValue": 140,
+            "maxValue": 160,
+            "operator": "between, <=, <"
           },
           {
             "trigger": "DAK, Repeat diastolic blood pressure after 15 min",
-            "value": 90,
-            "operator": ">="
+            "minValue": 90,
+            "maxValue": 110,
+            "operator": "between, <=, <"
           }
         ]
       },
@@ -9080,8 +9082,9 @@
         "rules": [
           {
             "trigger": "DAK, Repeat systolic blood pressure after 15 min",
-            "value": 140,
-            "operator": ">="
+           "minValue": 140,
+            "maxValue": 160,
+            "operator": "between, <=, <"
           }
         ]
       },
@@ -9089,8 +9092,9 @@
         "rules": [
           {
             "trigger": "DAK, Repeat diastolic blood pressure after 15 min",
-            "value": 90,
-            "operator": ">="
+            "minValue": 90,
+            "maxValue": 110,
+            "operator": "between, <=, <"
           }
         ]
       }
@@ -9106,13 +9110,15 @@
         "rules": [
           {
             "trigger": "DAK, Repeat systolic blood pressure after 15 min",
-            "value": 140,
-            "operator": ">="
+            "minValue": 140,
+            "maxValue": 160,
+            "operator": "between, <=, <"
           },
           {
             "trigger": "DAK, Repeat diastolic blood pressure after 15 min",
-            "value": 90,
-            "operator": ">="
+            "minValue": 90,
+            "maxValue": 110,
+            "operator": "between, <=, <"
           }
         ]
       },
@@ -9120,8 +9126,9 @@
         "rules": [
           {
             "trigger": "DAK, Repeat systolic blood pressure after 15 min",
-            "value": 140,
-            "operator": ">="
+           "minValue": 140,
+            "maxValue": 160,
+            "operator": "between, <=, <"
           }
         ]
       },
@@ -9129,8 +9136,9 @@
         "rules": [
           {
             "trigger": "DAK, Repeat diastolic blood pressure after 15 min",
-            "value": 90,
-            "operator": ">="
+            "minValue": 90,
+            "maxValue": 110,
+            "operator": "between, <=, <"
           }
         ]
       }
@@ -10039,7 +10047,36 @@
         "rules": [
           {
             "trigger": "DAK, Gestational age",
-            "value": 0,
+            "value": 20,
+            "operator": "<"
+          },
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, Negative"
+            ],
+            "operator": "OR"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
             "operator": ">"
           },
           {
@@ -10068,7 +10105,36 @@
         "rules": [
           {
             "trigger": "DAK, Gestational age",
-            "value": 0,
+            "value": 20,
+            "operator": "<"
+          },
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, Negative"
+            ],
+            "operator": "OR"
+          }
+        ]
+        },
+        {
+        "rules": [
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
             "operator": ">"
           },
           {
@@ -10092,11 +10158,35 @@
             "operator": "OR"
           }
         ]
-      }
+        }
     ],
     "action": "show",
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Counselling conducted on hypertension",
     "logic_key": 629
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Repeat systolic blood pressure",
+        "value": 140,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Symptoms of severe pre-eclampsia",
+    "logic_key": 630
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Repeat diastolic blood pressure",
+        "value": 90,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Symptoms of severe pre-eclampsia",
+    "logic_key": 631
   }
 ]

@@ -90,6 +90,6 @@
             "DAK, Gestational age",
             "DAK, Symphysis-fundal height (SFH)"
         ],
-        "formula": "DAK, Gestational age - DAK, Symphysis-fundal height (SFH)"
+        "formula": "DAK, Symphysis-fundal height (SFH) - DAK, Gestational age + 100"
     }
 ]
