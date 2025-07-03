@@ -24519,5 +24519,201 @@
         "logic_key": 1172,
         "dependentValue": "DAK, HIV negative FP",
         "dependent": "DAK, HIV test result FP"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Primary Screening Result",
+                "value": "DAK, Positive",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Triage Test Result",
+                "value": "DAK, Negative",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, HIV test result FP",
+                "value": "DAK, HIV negative FP",
+                "operator": "="
+            }
+        ],
+        "logic_key": 1173,
+        "dependentValue": 12,
+        "dependent": "DAK, Follow-Up Evaluation Interval"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Primary Screening Result",
+                "value": "DAK, Positive",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Triage Test Result",
+                "value": "DAK, Negative",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, HIV test result FP",
+                "value": "DAK, HIV positive FP",
+                "operator": "="
+            }
+        ],
+        "logic_key": 1174,
+        "dependentValue": 6,
+        "dependent": "DAK, Follow-Up Evaluation Interval"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Primary Screening Result",
+                "value": "DAK, Positive",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Triage Test Result",
+                "value": "DAK, Positive",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, HIV test result FP",
+                "value": "DAK, HIV positive FP",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Treatment Provided",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "logic_key": 1175,
+        "dependentValue": 12,
+        "dependent": "DAK, Follow-Up Evaluation Interval"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Primary Screening Result",
+                "value": "DAK, Positive",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Triage Test Result",
+                "value": "DAK, Positive",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, HIV test result FP",
+                "value": "DAK, HIV negative FP",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Treatment Provided",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "logic_key": 1176,
+        "dependentValue": 36,
+        "dependent": "DAK, Follow-Up Evaluation Interval"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Primary Screening Result",
+                "value": "DAK, Positive",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Triage Test Result",
+                "value": "DAK, Negative",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Health condition(s)",
+                "value": "DAK, HIV/AIDS",
+                "operator": "!="
+            }
+        ],
+        "logic_key": 1177,
+        "dependentValue": 12,
+        "dependent": "DAK, Follow-Up Evaluation Interval"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Primary Screening Result",
+                "value": "DAK, Positive",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Triage Test Result",
+                "value": "DAK, Negative",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Health condition(s)",
+                "value": "DAK, HIV/AIDS",
+                "operator": "="
+            }
+        ],
+        "logic_key": 1178,
+        "dependentValue": 6,
+        "dependent": "DAK, Follow-Up Evaluation Interval"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Primary Screening Result",
+                "value": "DAK, Positive",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Triage Test Result",
+                "value": "DAK, Positive",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Health condition(s)",
+                "value": "DAK, HIV/AIDS",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Treatment Provided",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "logic_key": 1179,
+        "dependentValue": 12,
+        "dependent": "DAK, Follow-Up Evaluation Interval"
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Primary Screening Result",
+                "value": "DAK, Positive",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Triage Test Result",
+                "value": "DAK, Positive",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Health condition(s)",
+                "value": "DAK, HIV/AIDS",
+                "operator": "!="
+            },
+            {
+                "trigger": "DAK, Treatment Provided",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "logic_key": 1180,
+        "dependentValue": 36,
+        "dependent": "DAK, Follow-Up Evaluation Interval"
     }
 ]
