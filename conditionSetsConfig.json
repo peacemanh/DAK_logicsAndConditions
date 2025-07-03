@@ -7252,12 +7252,12 @@
                 "operator": "OR"
             },
              {
-            "trigger": "DAK, Gestational age",
+            "key": "DAK, Gestational age",
             "value": 20,
             "operator": "="
           },
           {
-            "trigger": "DAK, Gestational Age Days in Current Week",
+            "key": "DAK, Gestational Age Days in Current Week",
             "value": 0,
             "operator": ">"
           }
@@ -7290,12 +7290,12 @@
                 "operator": "OR"
             },
              {
-            "trigger": "DAK, Gestational age",
+            "key": "DAK, Gestational age",
             "value": 20,
             "operator": "="
           },
           {
-            "trigger": "DAK, Gestational Age Days in Current Week",
+            "key": "DAK, Gestational Age Days in Current Week",
             "value": 0,
             "operator": ">"
           }
