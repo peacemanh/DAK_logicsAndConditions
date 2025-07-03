@@ -37388,7 +37388,6 @@
     "annotation": "– Client informed of screening importance. Assessment deferred due to system/client factor. No medical contraindications. Screening planned for future visit or when access improves.",
     "action_key": 1709
   },
- 
   {
     "conditions": [
       {
@@ -37531,5 +37530,61 @@
     "action": "- Routine STI screening for Chlamydia, Gonorrhea, Syphilis, and HIV. - Provide prevention counseling and promote condom use.",
     "annotation": "- Regular screening for high-risk individuals is essential. - Partner treatment reduces reinfection. - Encourage follow-up visits.",
     "action_key": 1721
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Primary Screening Result",
+        "value": "DAK, Positive",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Triage Test Result",
+        "value": "DAK, Negative",
+        "operator": "="
+      }
+    ],
+    "action": "Lesion not confirmed; earlier re-screening for HIV+ due to higher progression risk.",
+    "annotation": "",
+    "action_key": 1722
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Primary Screening Result",
+        "value": "DAK, Positive",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Triage Test Result",
+        "value": "DAK, Positive",
+        "operator": "="
+      }
+    ],
+    "action": "Lesion confirmed; initiate appropriate treatment.",
+    "annotation": "",
+    "action_key": 1723
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Primary Screening Result",
+        "value": "DAK, Positive",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Triage Test Result",
+        "value": "DAK, Positive",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Treatment Provided",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "Follow-up screening is critical to detect recurrence, especially for HIV-positive clients.",
+    "annotation": "",
+    "action_key": 1724
   }
 ]

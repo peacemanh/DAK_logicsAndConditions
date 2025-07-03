@@ -390,7 +390,6 @@
     "dependent": "DAK, Method in mind",
     "logic_key": 23
   },
-
   {
     "logics": [
       {
@@ -2397,39 +2396,39 @@
     "logic_key": 166
   },
   {
-    "logics": [
-      {
-        "trigger": "DAK, Primary Screening Result",
-        "value": "DAK, Positive",
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Triage Test Result",
-        "value": "DAK, Positive",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Treatment Provided",
-    "logic_key": 167
-  },
+        "logics": [
+            {
+                "trigger": "DAK, Primary Screening Result",
+                "value": "DAK, Positive",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Triage Test Result",
+                "value": "DAK, Positive",
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "DAK, Treatment Provided",
+        "logic_key": 167
+    },
   {
-    "logics": [
-      {
-        "trigger": "DAK, Primary Screening Result",
-        "value": "DAK, Positive",
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Triage Test Result",
-        "value": "DAK, Positive",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Treatment Methods",
-    "logic_key": 168
-  },
+        "logics": [
+            {
+                "trigger": "DAK, Primary Screening Result",
+                "value": "DAK, Positive",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Triage Test Result",
+                "value": "DAK, Positive",
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "DAK, Treatment Methods",
+        "logic_key": 168
+    },
   {
     "logics": [
       {
@@ -2625,29 +2624,29 @@
     "logic_key": 184
   },
   {
-    "logics": [
-      {
-        "trigger": "DAK, Cevical cancer screening conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Screening Test",
-    "logic_key": 185
-  },
+        "logics": [
+            {
+                "trigger": "DAK, Cevical cancer screening conducted",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "DAK, Screening Test",
+        "logic_key": 185
+    },
   {
-    "logics": [
-      {
-        "trigger": "DAK, Primary Screening Result",
-        "value": "DAK, Positive",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Triage Tests for Positive Screening Result",
-    "logic_key": 186
-  },
+        "logics": [
+            {
+                "trigger": "DAK, Primary Screening Result",
+                "value": "DAK, Positive",
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "DAK, Triage Tests for Positive Screening Result",
+        "logic_key": 186
+    },
   {
     "logics": [
       {
@@ -3506,7 +3505,6 @@
     "dependent": "DAK, Sterilization Issue",
     "logic_key": 255
   },
-
   {
     "logics": [
       {
@@ -3585,29 +3583,17 @@
     "logic_key": 261
   },
   {
-    "logics": [
-      {
-        "trigger": "DAK, Cevical cancer screening conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Screening Test",
-    "logic_key": 262
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Cevical cancer screening conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Primary Screening Result",
-    "logic_key": 263
-  },
+        "logics": [
+            {
+                "trigger": "DAK, Cevical cancer screening conducted",
+                "value": true,
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "DAK, Primary Screening Result",
+        "logic_key": 263
+    },
   {
     "logics": [
       {
@@ -4130,29 +4116,58 @@
     "logic_key": 305
   },
   {
-    "logics": [
-      {
-        "trigger": "DAK, Cevical cancer screening conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Triage Test Result",
-    "logic_key": 306
-  },
+        "logics": [
+            {
+                "trigger": "DAK, Primary Screening Result",
+                "value": "DAK, Positive",
+                "operator": "="
+            }
+        ],
+        "action": "show",
+        "dependent": "DAK, Triage Test Result",
+        "logic_key": 306
+    },
   {
-    "logics": [
-      {
-        "trigger": "DAK, Cevical cancer screening conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Follow-Up Evaluation Interval",
-    "logic_key": 307
-  },
+        "logics": [
+            {
+                "rules": [
+                    {
+                        "trigger": "DAK, Primary Screening Result",
+                        "value": "DAK, Positive",
+                        "operator": "="
+                    },
+                    {
+                        "trigger": "DAK, Triage Test Result",
+                        "value": "DAK, Negative",
+                        "operator": "="
+                    }
+                ]
+            },
+            {
+                "rules": [
+                    {
+                        "trigger": "DAK, Primary Screening Result",
+                        "value": "DAK, Positive",
+                        "operator": "="
+                    },
+                    {
+                        "trigger": "DAK, Triage Test Result",
+                        "value": "DAK, Positive",
+                        "operator": "="
+                    },
+                    {
+                        "trigger": "DAK, Treatment Provided",
+                        "value": true,
+                        "operator": "="
+                    }
+                ]
+            }
+        ],
+        "action": "show",
+        "conditionType": "deepAnalysis",
+        "dependent": "DAK, Follow-Up Evaluation Interval",
+        "logic_key": 307
+    },
   {
     "logics": [
       {
@@ -4554,5 +4569,4 @@
     "dependent": "DAK, HIV screening: laboratory tests available",
     "logic_key": 340
   }
-
 ]

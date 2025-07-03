@@ -77,7 +77,7 @@
     "minValue": 60,
     "maxValue": 280,
       "type": "restrict",
-      "message": "Possible value of Repeat systolic blood pressure ranges from 60mmHg to 280mmHg."
+      "message": "Possible value of systolic blood pressure ranges from 60mmHg to 280mmHg."
     },
     {
       "conceptName": "DAK, Repeat systolic blood pressure after 15 min",
@@ -85,7 +85,7 @@
       "minValue": 60,
       "maxValue": 280,
       "type": "restrict",
-      "message": "Possible value of Repeat systolic blood pressure ranges from 60mmHg to 280mmHg."
+      "message": "Possible value of systolic blood pressure ranges from 60mmHg to 280mmHg."
   },
   {
     "conceptName": "DAK, Diastolic blood pressure",
@@ -101,7 +101,7 @@
     "minValue": 40,
     "maxValue": 200,
       "type": "restrict",
-      "message": "Possible value of Repeat diastolic blood pressure ranges from 40mmHg to 200mmHg."
+      "message": "Possible value of diastolic blood pressure ranges from 40mmHg to 200mmHg."
     },
      {
       "conceptName": "DAK, Repeat diastolic blood pressure after 15 min",
@@ -109,7 +109,7 @@
       "minValue": 40,
       "maxValue": 200,
       "type": "restrict",
-    "message": "Possible value of Repeat diastolic blood pressure ranges from 40mmHg to 200mmHg."
+    "message": "Possible value of diastolic blood pressure ranges from 40mmHg to 200mmHg."
   },
   {
     "conceptName": "DAK, Body temperature",
@@ -277,5 +277,45 @@
     },
     "type": "optional",
     "message": "The hematocrit level has to be less than 21%"
+  },
+  {
+    "conceptName": "DAK, Gestational age by Ultrasound days",
+    "operator": ">",
+    "value": 6,
+    "type": "restrict",
+    "message": "Possible value of Gestational age by Ultrasound (days) has to be less than 7."
+  },
+  {
+    "conceptName": "DAK, Gestational age by LMNP day",
+    "operator": ">",
+    "value": 6,
+    "type": "restrict",
+    "message": "Possible value of Gestational age by LMNP (days) has to be less than 7."
+  },
+  {
+    "conceptName": "DAK, Provider's telephone number",
+    "operator": "beyond, <, <",
+    "minValue": 700000000,
+    "maxValue": 799999999,
+    "conditioner": {
+      "key": "DAK, Phone Number Type",
+      "value": "DAK, Safaricom",
+      "operator": "="
+    },
+    "type": "restrict",
+    "message": "Please enter a valid phone number in the format 07xxxxxxxx"
+  },
+  {
+    "conceptName": "DAK, Provider's telephone number",
+    "operator": "beyond, <, <",
+    "minValue": 900000000,
+    "maxValue": 999999999,
+    "conditioner": {
+      "key": "DAK, Phone Number Type",
+      "value": "DAK, Ethio Telecom",
+      "operator": "="
+    },
+    "type": "restrict",
+    "message": "Please enter a valid phone number in the format 09xxxxxxxx"
   }
 ]

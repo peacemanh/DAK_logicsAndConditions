@@ -3496,17 +3496,31 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Pregnancy confirmed",
-        "value": true,
-        "operator": "="
+        "rules": [
+          {
+            "trigger": "DAK, Pregnancy confirmed",
+            "value": true,
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 12,
+            "operator": "<="
+          }
+        ]
       },
       {
-        "trigger": "DAK, Gestational age",
-        "value": 12,
-        "operator": ">"
+        "rules": [
+          {
+            "trigger": "DAK, Preventive antihelminthic treatment provided exist",
+            "value": true,
+            "operator": "="
+          }
+        ]
       }
     ],
-    "action": "show",
+    "action": "hide",
+    "conditionType": "deepAnalysis",
     "dependent": "DAK, Deworming",
     "logic_key": 293
   },
@@ -3790,7 +3804,6 @@
     "dependent": "DAK, Counselling conducted on Rh factor negative",
     "logic_key": 315
   },
-
   {
     "logics": [
       {
@@ -3998,11 +4011,6 @@
         "trigger": "DAK, Number of pregnancies gravida",
         "value": 1,
         "operator": ">="
-      },
-      {
-        "trigger": "DaK, Hx of previous Preterm delivery",
-        "value": "DAK, Has previous history of preterm delivery",
-        "operator": "="
       }
     ],
     "action": "show",
@@ -6077,7 +6085,7 @@
     "logics": [
       {
         "trigger": "DAK, Clinical enquiry for IPV",
-        "value": false,
+        "value": true,
         "operator": "="
       }
     ],
@@ -6907,7 +6915,7 @@
       {
         "trigger": "DAK, Number of caesarian sections",
         "value": 1,
-        "operator": ">"
+        "operator": ">="
       }
     ],
     "action": "show",
@@ -6964,6 +6972,74 @@
           {
             "trigger": "DAK, Gestational age",
             "value": 20,
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Gestational Age Days in Current Week",
+            "value": 0,
+            "operator": ">"
+          },
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, Negative"
+            ],
+            "operator": "OR"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": ">"
+          },
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, Negative"
+            ],
+            "operator": "OR"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Gestational Age Days in Current Week",
+            "value": 0,
             "operator": ">"
           },
           {
@@ -7138,20 +7214,7 @@
     "dependent": "DAK, Other referral specify",
     "logic_key": 519
   },
-  {
-    "logics": [
-      {
-        "trigger": "DaK, Hx of previous Preterm delivery",
-        "value": "DAK, Has previous history of preterm delivery",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "parent": "DAK, Past pregnancy history",
-    "dependent": "DAK, Preterm delivery",
-    "logic_key": 520
-  },
-  {
+    {
     "logics": [
       {
         "trigger": "DAK, Number of pregnancies gravida",
@@ -7250,6 +7313,8 @@
   {
     "logics": [
       {
+        "rules": [
+          {
         "trigger": "DAK, Pregnancy confirmed",
         "value": true,
         "operator": "="
@@ -7257,10 +7322,22 @@
       {
         "trigger": "DAK, Gestational age",
         "value": 20,
-        "operator": ">="
+        "operator": "<"
+      }
+        ]
+      },
+      {
+        "rules": [
+          {
+        "trigger": "DAK, Type of postpartum family planning method selected exist",
+        "value": true,
+        "operator": "="
+      }
+        ]
       }
     ],
-    "action": "show",
+    "action": "hide",
+    "conditionType": "deepAnalysis",
     "dependent": "DAK, Family planning",
     "logic_key": 530
   },
@@ -7491,8 +7568,18 @@
     "logics": [
       {
         "trigger": "DAK, Number of pregnancies gravida",
-        "value": 0,
-        "operator": ">"
+        "value": 1,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Number of live births",
+        "value": 1,
+        "operator": ">="
+      },
+      {
+        "trigger": "DAK, Number of stillbirths",
+        "value": 1,
+        "operator": ">="
       }
     ],
     "action": "show",
@@ -7778,23 +7865,6 @@
     "action": "show",
     "dependent": "DAK, Other (specify)",
     "logic_key": 560
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Pregnancy confirmed",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Gestational age",
-        "value": 20,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Family planning",
-    "logic_key": 561
   },
   {
     "logics": [
@@ -9067,13 +9137,15 @@
         "rules": [
           {
             "trigger": "DAK, Repeat systolic blood pressure after 15 min",
-            "value": 140,
-            "operator": ">="
+            "minValue": 140,
+            "maxValue": 160,
+            "operator": "between, <=, <"
           },
           {
             "trigger": "DAK, Repeat diastolic blood pressure after 15 min",
-            "value": 90,
-            "operator": ">="
+            "minValue": 90,
+            "maxValue": 110,
+            "operator": "between, <=, <"
           }
         ]
       },
@@ -9081,8 +9153,9 @@
         "rules": [
           {
             "trigger": "DAK, Repeat systolic blood pressure after 15 min",
-            "value": 140,
-            "operator": ">="
+           "minValue": 140,
+            "maxValue": 160,
+            "operator": "between, <=, <"
           }
         ]
       },
@@ -9090,8 +9163,9 @@
         "rules": [
           {
             "trigger": "DAK, Repeat diastolic blood pressure after 15 min",
-            "value": 90,
-            "operator": ">="
+            "minValue": 90,
+            "maxValue": 110,
+            "operator": "between, <=, <"
           }
         ]
       }
@@ -9107,13 +9181,15 @@
         "rules": [
           {
             "trigger": "DAK, Repeat systolic blood pressure after 15 min",
-            "value": 140,
-            "operator": ">="
+            "minValue": 140,
+            "maxValue": 160,
+            "operator": "between, <=, <"
           },
           {
             "trigger": "DAK, Repeat diastolic blood pressure after 15 min",
-            "value": 90,
-            "operator": ">="
+            "minValue": 90,
+            "maxValue": 110,
+            "operator": "between, <=, <"
           }
         ]
       },
@@ -9121,8 +9197,9 @@
         "rules": [
           {
             "trigger": "DAK, Repeat systolic blood pressure after 15 min",
-            "value": 140,
-            "operator": ">="
+           "minValue": 140,
+            "maxValue": 160,
+            "operator": "between, <=, <"
           }
         ]
       },
@@ -9130,8 +9207,9 @@
         "rules": [
           {
             "trigger": "DAK, Repeat diastolic blood pressure after 15 min",
-            "value": 90,
-            "operator": ">="
+            "minValue": 90,
+            "maxValue": 110,
+            "operator": "between, <=, <"
           }
         ]
       }
@@ -9200,6 +9278,11 @@
       {
         "rules": [
           {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": ">"
+          },
+          {
             "trigger": "DAK, Systolic blood pressure",
             "minValue": 140.0,
             "maxValue": 160.0,
@@ -9218,16 +9301,50 @@
               "DAK, Negative"
             ],
             "operator": "OR"
+          }
+        ]
           },
+          {
+        "rules": [
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Gestational Age Days in Current Week",
+            "value": 0,
+            "operator": ">"
+          },
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, Negative"
+            ],
+            "operator": "OR"
+          }
+        ]
+      },   
+      {
+        "rules": [
           {
             "trigger": "DAK, Gestational age",
             "value": 20,
             "operator": ">"
-          }
-        ]
-      },
-      {
-        "rules": [
+          },
           {
             "trigger": "DAK, Diastolic blood pressure",
             "minValue": 90.0,
@@ -9247,11 +9364,40 @@
               "DAK, Negative"
             ],
             "operator": "OR"
+          }
+        ]
           },
+          {
+        "rules": [
           {
             "trigger": "DAK, Gestational age",
             "value": 20,
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Gestational Age Days in Current Week",
+            "value": 0,
             "operator": ">"
+          },
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, Negative"
+            ],
+            "operator": "OR"
           }
         ]
       },
@@ -9632,8 +9778,6 @@
           }
         ]
       }
-
-
     ],
 
     "action": "show",
@@ -10049,6 +10193,98 @@
         "rules": [
           {
             "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": "<"
+          },
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, Negative"
+            ],
+            "operator": "OR"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": "<"
+          },
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, Negative"
+            ],
+            "operator": "OR"
+          }
+        ]
+        },
+        {
+        "rules": [
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": ">"
+          },
+          {
+            "trigger": "DAK, Systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure",
+            "minValue": 140.0,
+            "maxValue": 160.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, Negative"
+            ],
+            "operator": "OR"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Gestational Age Days in Current Week",
             "value": 0,
             "operator": ">"
           },
@@ -10078,6 +10314,40 @@
         "rules": [
           {
             "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": ">"
+          },
+          {
+            "trigger": "DAK, Diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat diastolic blood pressure",
+            "minValue": 90.0,
+            "maxValue": 110.0,
+            "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Urine dipstick result \u2013 protein",
+            "orValues": [
+              "DAK, +",
+              "DAK, Negative"
+            ],
+            "operator": "OR"
+          }
+        ]
+      },
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Gestational Age Days in Current Week",
             "value": 0,
             "operator": ">"
           },
@@ -10108,6 +10378,30 @@
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Counselling conducted on hypertension",
     "logic_key": 629
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Repeat systolic blood pressure",
+        "value": 140,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Symptoms of severe pre-eclampsia",
+    "logic_key": 630
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Repeat diastolic blood pressure",
+        "value": 90,
+        "operator": ">="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Symptoms of severe pre-eclampsia",
+    "logic_key": 631
   },
   {
     "logics": [
