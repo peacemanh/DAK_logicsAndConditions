@@ -14,7 +14,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Pelvic/genital examination conducted",
+        "key": "DAK, STI/HIV screening: laboratory tests conducted",
         "value": true,
         "operator": "="
       }
@@ -64,11 +64,11 @@
     "conditions": [
       {
         "key": "DAK, Cervical Cancer risk assessment conducted",
-        "value": true,
+        "value": false,
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Cervical Cancer risk factors FP",
+    "displayPoint": "DAK, Cervical Cancer risk assessment conducted",
     "action": "- Discuss the reason for cervical cancer risk assessment was not performed due to [e.g., client below eligible age, pregnancy, client declined, service not available, etc.]. - Advise the client to undergo the assessment at a more appropriate time (e.g., during the next scheduled visit or post-delivery). -Provided brief counseling on the importance of cervical cancer risk assessment and regular screening. -Discuss about future screening or risk assessment to be recommended or scheduled in alignment with national guidelines.",
     "annotation": "\u2013 -Detail discussion on the reason for cervical cancer risk assessment was deferred during this visit due to [specific reason \u2014 e.g., ineligible age, unavailability of services, client refusal]. \u2013 - Inform the client about the purpose and appropriate timing for screening and encouraged to return when eligible. \u2013 - Discuss on the assessment postponed and planned for the next routine visit or when conditions allow.\u2013-Discuss about no medical contraindications identified; assessment delay attributed to eligibility or service-related factors.",
     "action_key": 6
@@ -37397,19 +37397,6 @@
       }
     ],
     "displayPoint": "DAK, Test results",
-    "action": "- Treat with Metronidazole for Trichomoniasis or Clindamycin for Bacterial Vaginosis.",
-    "annotation": "- Educate on the importance of completing the full treatment course to prevent reinfection.",
-    "action_key": 1710
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Test results",
-        "value": "DAK, Vaginal discharge",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Test results",
     "action": "- Treat with Metronidazole for Trichomoniasis or Clindamycin for Bacterial Vaginosis. - Counsel on proper genital hygiene and safe sex practices. - Encourage condom use to reduce transmission risk. ",
     "annotation": "- Educate on the importance of completing the full treatment course to prevent reinfection. - Advise partner treatment to avoid reinfection. - Reinforce the need for regular STI screenings, especially for sexually active individuals. ",
     "action_key": 1711
@@ -37543,5 +37530,61 @@
     "action": "- Routine STI screening for Chlamydia, Gonorrhea, Syphilis, and HIV. - Provide prevention counseling and promote condom use.",
     "annotation": "- Regular screening for high-risk individuals is essential. - Partner treatment reduces reinfection. - Encourage follow-up visits.",
     "action_key": 1721
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Primary Screening Result",
+        "value": "DAK, Positive",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Triage Test Result",
+        "value": "DAK, Negative",
+        "operator": "="
+      }
+    ],
+    "action": "Lesion not confirmed; earlier re-screening for HIV+ due to higher progression risk.",
+    "annotation": "",
+    "action_key": 1722
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Primary Screening Result",
+        "value": "DAK, Positive",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Triage Test Result",
+        "value": "DAK, Positive",
+        "operator": "="
+      }
+    ],
+    "action": "Lesion confirmed; initiate appropriate treatment.",
+    "annotation": "",
+    "action_key": 1723
+  },
+  {
+    "conditions": [
+      {
+        "key": "DAK, Primary Screening Result",
+        "value": "DAK, Positive",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Triage Test Result",
+        "value": "DAK, Positive",
+        "operator": "="
+      },
+      {
+        "key": "DAK, Treatment Provided",
+        "value": true,
+        "operator": "="
+      }
+    ],
+    "action": "Follow-up screening is critical to detect recurrence, especially for HIV-positive clients.",
+    "annotation": "",
+    "action_key": 1724
   }
 ]

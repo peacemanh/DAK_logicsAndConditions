@@ -67,7 +67,7 @@
         "triggerEvent": "DAK, Tetanus-diphtheria (TD) 1 immunization provided",
         "triggerDate": "DAK, Date Tetanus-diphtheria (TD) 1 immunization was received",
         "value": true,
-        "sceduleDays": 28,
+        "scheduleDays": 28,
         "service": "TDV 2",
         "type": "other"
     },
@@ -75,7 +75,7 @@
         "triggerEvent": "DAK, Tetanus-diphtheria (TD) 2 immunization provided",
         "triggerDate": "DAK, Date Tetanus-diphtheria (TD) 2 immunization was received",
         "value": true,
-        "sceduleDays": 180,
+        "scheduleDays": 180,
         "service": "TDV 3",
         "type": "other"
     },
@@ -83,7 +83,7 @@
         "triggerEvent": "DAK, Tetanus-diphtheria (TD) 3 immunization provided",
         "triggerDate": "DAK, Date Tetanus-diphtheria (TD) 3 immunization was received",
         "value": true,
-        "sceduleDays": 365,
+        "scheduleDays": 365,
         "service": "TDV 4",
         "type": "other"
     },
@@ -91,7 +91,7 @@
         "triggerEvent": "DAK, Tetanus-diphtheria (TD) 4 immunization provided",
         "triggerDate": "DAK, Date Tetanus-diphtheria (TD) 4 immunization was received",
         "value": true,
-        "sceduleDays": 365,
+        "scheduleDays": 365,
         "service": "TDV 5",
         "type": "other"
     },
@@ -99,7 +99,7 @@
         "triggerEvent": "DAK, Gestational age",
         "triggerDate": "contact date",
         "value": "",
-        "sceduleDays": 91,
+        "scheduleDays": 91,
         "service": "IPTp-SP dose 1",
         "type": "special",
         "displayPoint": "DAK, Malaria Chemo-prophylaxis provided"
@@ -108,7 +108,7 @@
         "triggerEvent": "DAK, IPTp-SP dose 1 provided",
         "triggerDate": "DAK, IPTp-SP dose 1 date",
         "value": true,
-        "sceduleDays": 28,
+        "scheduleDays": 28,
         "service": "IPTp-SP dose 2",
         "type": "other"
     },
@@ -116,7 +116,7 @@
         "triggerEvent": "DAK, IPTp-SP dose 2 provided",
         "triggerDate": "DAK, IPTp-SP dose 2 date",
         "value": true,
-        "sceduleDays": 28,
+        "scheduleDays": 28,
         "service": "IPTp-SP dose 3",
         "type": "other"
     }

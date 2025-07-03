@@ -283,13 +283,39 @@
     "operator": ">",
     "value": 6,
     "type": "restrict",
-    "message": "Possible value of Gestational age by Ultrasound (days) has to be less than 7 ,if it's a week"
+    "message": "Possible value of Gestational age by Ultrasound (days) has to be less than 7."
   },
   {
     "conceptName": "DAK, Gestational age by LMNP day",
     "operator": ">",
     "value": 6,
     "type": "restrict",
-    "message": "Possible value of Gestational age by LMNP (days) has to be less than 7 ,if it's a week."
+    "message": "Possible value of Gestational age by LMNP (days) has to be less than 7."
+  },
+  {
+    "conceptName": "DAK, Provider's telephone number",
+    "operator": "beyond, <, <",
+    "minValue": 700000000,
+    "maxValue": 799999999,
+    "conditioner": {
+      "key": "DAK, Phone Number Type",
+      "value": "DAK, Safaricom",
+      "operator": "="
+    },
+    "type": "restrict",
+    "message": "Please enter a valid phone number in the format 07xxxxxxxx"
+  },
+  {
+    "conceptName": "DAK, Provider's telephone number",
+    "operator": "beyond, <, <",
+    "minValue": 900000000,
+    "maxValue": 999999999,
+    "conditioner": {
+      "key": "DAK, Phone Number Type",
+      "value": "DAK, Ethio Telecom",
+      "operator": "="
+    },
+    "type": "restrict",
+    "message": "Please enter a valid phone number in the format 09xxxxxxxx"
   }
 ]

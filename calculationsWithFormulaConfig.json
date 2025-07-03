@@ -9,7 +9,9 @@
     },
     {
         "resultConcept": "DAK, ANC Contact Number",
-        "operands": ["DAK, ANC Contact Number exist"],
+        "operands": [
+            "DAK, ANC Contact Number exist"
+        ],
         "formula": "DAK, ANC Contact Number exist + 1"
     },
     {
@@ -30,57 +32,92 @@
     },
     {
         "resultConcept": "DAK, Gestational age",
-        "operands": ["DAK, LNMP Date"],
+        "operands": [
+            "DAK, LNMP Date"
+        ],
         "formula": "DAK, LNMP Date / 7",
-        "conditioner": {"key": "DAK, Source of gestational age", "value": "DAK, LNMP"},
+        "conditioner": {
+            "key": "DAK, Source of gestational age",
+            "value": "DAK, LNMP"
+        },
         "dateSource": true
     },
     {
         "resultConcept": "DAK, Gestational age",
-        "operands": ["DAK, Gestational age by Ultrasound"],
+        "operands": [
+            "DAK, Gestational age by Ultrasound"
+        ],
         "formula": "DAK, Gestational age by Ultrasound / 1",
-        "conditioner": {"key": "DAK, Source of gestational age", "value": "DAK, Ultrasound"}
+        "conditioner": {
+            "key": "DAK, Source of gestational age",
+            "value": "DAK, Ultrasound"
+        }
     },
     {
         "resultConcept": "DAK, Gestational age by LMNP",
-        "operands": ["DAK, LNMP Date"],
+        "operands": [
+            "DAK, LNMP Date"
+        ],
         "formula": "DAK, LNMP Date / 7",
         "dateSource": true
     },
     {
         "resultConcept": "DAK, Gestational age by LMNP day",
-        "operands": ["DAK, LNMP Date"],
+        "operands": [
+            "DAK, LNMP Date"
+        ],
         "formula": "DAK, LNMP Date % 7",
         "dateSource": true
     },
     {
         "resultConcept": "DAK, Gestational age",
-        "operands": ["DAK, Gestational age exist", "DAK, Gestational Age Days in Current Week exist"],
+        "operands": [
+            "DAK, Gestational age exist",
+            "DAK, Gestational Age Days in Current Week exist"
+        ],
         "formula": "((DAK, Gestational age exist * 7) + DAK, Gestational Age Days in Current Week exist) / 7"
     },
     {
         "resultConcept": "DAK, Gestational Age Days in Current Week",
-        "operands": ["DAK, Gestational age exist", "DAK, Gestational Age Days in Current Week exist"],
+        "operands": [
+            "DAK, Gestational age exist",
+            "DAK, Gestational Age Days in Current Week exist"
+        ],
         "formula": "((DAK, Gestational age exist * 7) + DAK, Gestational Age Days in Current Week exist) % 7"
     },
     {
         "resultConcept": "DAK, Gestational Age Days in Current Week",
-        "operands": ["DAK, LNMP Date"],
+        "operands": [
+            "DAK, LNMP Date"
+        ],
         "formula": "DAK, LNMP Date % 7",
-        "conditioner": {"key": "DAK, Source of gestational age", "value": "DAK, LNMP"},
+        "conditioner": {
+            "key": "DAK, Source of gestational age",
+            "value": "DAK, LNMP"
+        },
         "dateSource": true
     },
     {
         "resultConcept": "DAK, Gestational Age Days in Current Week",
-        "operands": ["DAK, Gestational age by Ultrasound days"],
+        "operands": [
+            "DAK, Gestational age by Ultrasound days"
+        ],
         "formula": "DAK, Gestational age by Ultrasound days / 1",
-        "conditioner": {"key": "DAK, Source of gestational age", "value": "DAK, Ultrasound"}
+        "conditioner": {
+            "key": "DAK, Source of gestational age",
+            "value": "DAK, Ultrasound"
+        }
     },
     {
         "resultConcept": "DAK, Expected date of delivery (EDD)",
-        "operands": ["DAK, LNMP Date"],
+        "operands": [
+            "DAK, LNMP Date"
+        ],
         "formula": 282,
-        "conditioner": {"key": "DAK, Source of gestational age", "value": "DAK, LNMP"},
+        "conditioner": {
+            "key": "DAK, Source of gestational age",
+            "value": "DAK, LNMP"
+        },
         "resultType": "Date",
         "operator": "+"
     },

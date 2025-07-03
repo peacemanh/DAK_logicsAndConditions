@@ -335,7 +335,7 @@
                 "trigger": "DAK, Urine dipstick result \u2013 protein",
                 "orValues": [
                     "DAK, +",
-                    "DAK, None"
+                    "DAK, Negative"
                 ],
                 "operator": "OR"
             }
@@ -360,7 +360,7 @@
                 "trigger": "DAK, Urine dipstick result \u2013 protein",
                 "orValues": [
                     "DAK, +",
-                    "DAK, None"
+                    "DAK, Negative"
                 ],
                 "operator": "OR"
             }
@@ -1200,8 +1200,8 @@
         "logics": [
             {
                 "trigger": "DAK, Number of caesarian sections",
-                "value": 0,
-                "operator": ">"
+                "value": 1,
+                "operator": ">="
             }
         ],
         "dependentValue": "DAK, Caesarean section delivery",
@@ -1388,7 +1388,7 @@
             {
                 "trigger": "DAK, Blood haemoglobin test result",
                 "value": 7,
-                "operator": "<="
+                "operator": "<"
             }
         ],
         "dependentValue": "DAK, Severe (<7g/dl)",
