@@ -3506,18 +3506,7 @@
     "dependent": "DAK, Sterilization Issue",
     "logic_key": 255
   },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Health condition(s)",
-        "value": "DAK, HIV/AIDS",
-        "operator": "!="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, HIV screening: laboratory tests available",
-    "logic_key": 256
-  },
+
   {
     "logics": [
       {
@@ -4546,6 +4535,24 @@
     "action": "show",
     "dependent": "DAK, Cervical Cancer Screening Section",
     "logic_key": 339
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Service for clients with special needs",
+        "value": "DAK, HIV Poistive",
+        "operator": "!="
+      },
+      {
+        "trigger": "DAK, Health condition(s)",
+        "value": "DAK, HIV/AIDS",
+        "operator": "!="
+      }
+
+    ],
+    "action": "show",
+    "dependent": "DAK, HIV screening: laboratory tests available",
+    "logic_key": 340
   }
 
 ]
