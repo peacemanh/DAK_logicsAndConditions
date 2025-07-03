@@ -7228,5 +7228,81 @@
         "action": "Conduct further investigation, manage accordingly, or refer if necessary.",
         "annotation": "If the body temperature is <35\u00b0C or \u226537.5\u00b0C, identify the cause, manage accordingly, or refer. 37.5",
         "action_key": 460
+    },
+    {
+        "conditions": [
+            {
+                "key": "DAK, Systolic blood pressure",
+                "minValue": 140.0,
+                "maxValue": 160.0,
+                "operator": "between, <=, <"
+            },
+            {
+                "key": "DAK, Repeat systolic blood pressure",
+                "minValue": 140.0,
+                "maxValue": 160.0,
+                "operator": "between, <=, <"
+            },
+            {
+                "key": "DAK, Urine dipstick result \u2013 protein",
+                "orValues": [
+                    "DAK, +",
+                    "DAK, Negative"
+                ],
+                "operator": "OR"
+            },
+             {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Gestational Age Days in Current Week",
+            "value": 0,
+            "operator": ">"
+          }
+        ],
+        "displayPoint": "DAK, Gestational Hypertension",
+        "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment if neccessay.",
+        "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher after 20 weeks of gestational age and no proteinuria.Advice to reduce workload and to rest. Advise on danger signsReassess at the next contact or in 1 week. If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available .Manage as an outpatient if GA is <36 weeks and if blood pressure is in mild range without the use of antihypertensive medications.Refer at \u226536 weeks of gestation",
+        "action_key": 461
+    },
+    {
+        "conditions": [
+            {
+                "key": "DAK, Diastolic blood pressure",
+                "minValue": 90.0,
+                "maxValue": 110.0,
+                "operator": "between, <=, <"
+            },
+            {
+                "key": "DAK, Repeat diastolic blood pressure",
+                "minValue": 90.0,
+                "maxValue": 110.0,
+                "operator": "between, <=, <"
+            },
+            {
+                "key": "DAK, Urine dipstick result \u2013 protein",
+                "orValues": [
+                    "DAK, +",
+                    "DAK, Negative"
+                ],
+                "operator": "OR"
+            },
+             {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Gestational Age Days in Current Week",
+            "value": 0,
+            "operator": ">"
+          }
+        ],
+        "displayPoint": "DAK, Gestational Hypertension",
+        "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment if neccessay.",
+        "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher after 20 weeks of gestational age and no proteinuria.Advice to reduce workload and to rest. Advise on danger signsReassess at the next contact or in 1 week. If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available .Manage as an outpatient if GA is <36 weeks and if blood pressure is in mild range without the use of antihypertensive medications.Refer at \u226536 weeks of gestation",
+        "action_key": 462
     }
 ]

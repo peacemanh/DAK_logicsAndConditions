@@ -1238,7 +1238,7 @@
                 "trigger": "DAK, Urine dipstick result \u2013 protein",
                 "orValues": [
                     "DAK, +",
-                    "DAK, None"
+                    "DAK, Negative"
                 ],
                 "operator": "OR"
             },
@@ -1270,7 +1270,7 @@
                 "trigger": "DAK, Urine dipstick result \u2013 protein",
                 "orValues": [
                     "DAK, +",
-                    "DAK, None"
+                    "DAK, Negative"
                 ],
                 "operator": "OR"
             },
@@ -1283,18 +1283,6 @@
         "dependentValue": true,
         "dependent": "DAK, Gestational Hypertension",
         "logic_key": 119
-    },
-    {
-        "logics": [
-            {
-                "trigger": "DaK, Hx of previous Preterm delivery",
-                "value": "DAK, Has previous history of preterm delivery",
-                "operator": "="
-            }
-        ],
-        "dependentValue": "DAK, Preterm delivery",
-        "dependent": "DAK, Past pregnancy history",
-        "logic_key": 120
     },
     {
         "logics": [
@@ -1406,5 +1394,79 @@
         "dependentValue": "DAK, Severe (<7g/dl)",
         "dependent": "DAK, Anaemia diagnosis",
         "logic_key": 126
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Systolic blood pressure",
+                "minValue": 140.0,
+                "maxValue": 160.0,
+                "operator": "between, <=, <"
+            },
+            {
+                "trigger": "DAK, Repeat systolic blood pressure",
+                "minValue": 140.0,
+                "maxValue": 160.0,
+                "operator": "between, <=, <"
+            },
+            {
+                "trigger": "DAK, Urine dipstick result \u2013 protein",
+                "orValues": [
+                    "DAK, +",
+                    "DAK, Negative"
+                ],
+                "operator": "OR"
+            },
+            {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Gestational Age Days in Current Week",
+            "value": 0,
+            "operator": ">"
+          }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Gestational Hypertension",
+        "logic_key": 127
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Diastolic blood pressure",
+                "minValue": 90.0,
+                "maxValue": 110.0,
+                "operator": "between, <=, <"
+            },
+            {
+                "trigger": "DAK, Repeat diastolic blood pressure",
+                "minValue": 90.0,
+                "maxValue": 110.0,
+                "operator": "between, <=, <"
+            },
+            {
+                "trigger": "DAK, Urine dipstick result \u2013 protein",
+                "orValues": [
+                    "DAK, +",
+                    "DAK, Negative"
+                ],
+                "operator": "OR"
+            },
+            {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Gestational Age Days in Current Week",
+            "value": 0,
+            "operator": ">"
+          }
+        ],
+        "dependentValue": true,
+        "dependent": "DAK, Gestational Hypertension",
+        "logic_key": 128
     }
 ]
