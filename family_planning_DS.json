@@ -14,7 +14,7 @@
   {
     "conditions": [
       {
-        "key": "DAK, Pelvic/genital examination conducted",
+        "key": "DAK, STI/HIV screening: laboratory tests conducted",
         "value": true,
         "operator": "="
       }
@@ -64,11 +64,11 @@
     "conditions": [
       {
         "key": "DAK, Cervical Cancer risk assessment conducted",
-        "value": true,
+        "value": false,
         "operator": "="
       }
     ],
-    "displayPoint": "DAK, Cervical Cancer risk factors FP",
+    "displayPoint": "DAK, Cervical Cancer risk assessment conducted",
     "action": "- Discuss the reason for cervical cancer risk assessment was not performed due to [e.g., client below eligible age, pregnancy, client declined, service not available, etc.]. - Advise the client to undergo the assessment at a more appropriate time (e.g., during the next scheduled visit or post-delivery). -Provided brief counseling on the importance of cervical cancer risk assessment and regular screening. -Discuss about future screening or risk assessment to be recommended or scheduled in alignment with national guidelines.",
     "annotation": "\u2013 -Detail discussion on the reason for cervical cancer risk assessment was deferred during this visit due to [specific reason \u2014 e.g., ineligible age, unavailability of services, client refusal]. \u2013 - Inform the client about the purpose and appropriate timing for screening and encouraged to return when eligible. \u2013 - Discuss on the assessment postponed and planned for the next routine visit or when conditions allow.\u2013-Discuss about no medical contraindications identified; assessment delay attributed to eligibility or service-related factors.",
     "action_key": 6
@@ -37388,19 +37388,7 @@
     "annotation": "– Client informed of screening importance. Assessment deferred due to system/client factor. No medical contraindications. Screening planned for future visit or when access improves.",
     "action_key": 1709
   },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Test results",
-        "value": "DAK, Vaginal discharge",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Test results",
-    "action": "- Treat with Metronidazole for Trichomoniasis or Clindamycin for Bacterial Vaginosis.",
-    "annotation": "- Educate on the importance of completing the full treatment course to prevent reinfection.",
-    "action_key": 1710
-  },
+ 
   {
     "conditions": [
       {
