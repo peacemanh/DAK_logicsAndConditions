@@ -3071,8 +3071,8 @@
       },
       {
         "trigger": "DAK, Visit Status",
-        "value": "DAK, New",
-        "operator": "!="
+        "value": "DAK, Emergency contraception",
+        "operator": "="
       }
     ],
     "action": "show",
