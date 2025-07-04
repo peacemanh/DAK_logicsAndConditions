@@ -501,8 +501,12 @@
         "logics": [
             {
                 "trigger": "DAK, Past pregnancy history",
-                "value": "DAK, Pre-eclampsia",
-                "operator": "="
+                "orValues": [
+              "DAK, Eclampsia",
+              "DAK, Pre-eclampsia",
+              "DAK, Convulsions"
+            ],
+            "operator": "OR"
             },
             {
                 "trigger": "DAK, Gestational age",

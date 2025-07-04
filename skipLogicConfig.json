@@ -6312,6 +6312,7 @@
             "trigger": "DAK, Past pregnancy history",
             "orValues": [
               "DAK, Eclampsia",
+              "DAK, Pre-eclampsia",
               "DAK, Convulsions"
             ],
             "operator": "OR"
@@ -9260,18 +9261,6 @@
     "action": "show",
     "dependent": "DAK, Gestational age by Ultrasound days",
     "logic_key": 621
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Gestational age",
-        "value": 12,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Pre-eclampsia risk counselling provided",
-    "logic_key": 622
   },
   {
     "logics": [
