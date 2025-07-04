@@ -1472,5 +1472,203 @@
         "dependentValue": true,
         "dependent": "DAK, Gestational Hypertension",
         "logic_key": 128
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Systolic blood pressure",
+                "value": 140.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Repeat systolic blood pressure",
+                "value": 140.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Symptoms of severe pre-eclampsia",
+                "value": "DAK, No symptoms of severe pre-eclampsia",
+                "operator": "!="
+            }
+        ],
+        "dependentValue": false,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 129
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Diastolic blood pressure",
+                "value": 90.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Repeat diastolic blood pressure",
+                "value": 90.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Symptoms of severe pre-eclampsia",
+                "value": "DAK, No symptoms of severe pre-eclampsia",
+                "operator": "!="
+            }
+        ],
+        "dependentValue": false,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 130
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Systolic blood pressure",
+                "value": 140.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Repeat systolic blood pressure",
+                "value": 140.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Symptoms of severe pre-eclampsia",
+                "value": "DAK, No symptoms of severe pre-eclampsia",
+                "operator": "!="
+            },
+            {
+                "trigger": "DAK, Urine dipstick result \u2013 protein",
+                "orValues": [
+                    "DAK, ++",
+                    "DAK, +++",
+                    "DAK, ++++"
+                ],
+                "operator": "="
+            }
+        ],
+        "dependentValue": false,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 131
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Diastolic blood pressure",
+                "value": 90.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Repeat diastolic blood pressure",
+                "value": 90.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Symptoms of severe pre-eclampsia",
+                "value": "DAK, No symptoms of severe pre-eclampsia",
+                "operator": "!="
+            },
+            {
+                "trigger": "DAK, Urine dipstick result \u2013 protein",
+                "orValues": [
+                    "DAK, ++",
+                    "DAK, +++",
+                    "DAK, ++++"
+                ],
+                "operator": "OR"
+            }
+        ],
+        "dependentValue": false,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 132
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Systolic blood pressure",
+                "value": 160.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Repeat systolic blood pressure",
+                "value": 160.0,
+                "operator": ">="
+            },
+            {
+                "trigger": "DAK, Symptoms of severe pre-eclampsia",
+                "value": "DAK, No symptoms of severe pre-eclampsia",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Urine dipstick result \u2013 protein",
+                "value": "DAK, ++",
+                "operator": "="
+            }
+        ],
+        "dependentValue": false,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 133
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Systolic blood pressure",
+                "minValue": 140.0,
+                "maxValue": 160.0,
+                "operator": "between, <=, <"
+            },
+            {
+                "trigger": "DAK, Repeat systolic blood pressure",
+                "minValue": 140.0,
+                "maxValue": 160.0,
+                "operator": "between, <=, <"
+            },
+            {
+                "trigger": "DAK, Symptoms of severe pre-eclampsia",
+                "value": "DAK, No symptoms of severe pre-eclampsia",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Urine dipstick result \u2013 protein",
+                "orValues": [
+                    "DAK, +++",
+                    "DAK, ++++"
+                ],
+                "operator": "OR"
+            }
+        ],
+        "dependentValue": false,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 134
+    },
+    {
+        "logics": [
+            {
+                "trigger": "DAK, Diastolic blood pressure",
+                "minValue": 90.0,
+                "maxValue": 110.0,
+                "operator": "between, <=, <"
+            },
+            {
+                "trigger": "DAK, Repeat diastolic blood pressure",
+                "minValue": 90.0,
+                "maxValue": 110.0,
+                "operator": "between, <=, <"
+            },
+            {
+                "trigger": "DAK, Symptoms of severe pre-eclampsia",
+                "value": "DAK, No symptoms of severe pre-eclampsia",
+                "operator": "="
+            },
+            {
+                "trigger": "DAK, Urine dipstick result \u2013 protein",
+                "orValues": [
+                    "DAK, ++",
+                    "DAK, +++",
+                    "DAK, ++++"
+                ],
+                "operator": "OR"
+            }
+        ],
+        "dependentValue": false,
+        "dependent": "DAK, Risk of pre-eclampsia",
+        "logic_key": 135
     }
 ]
