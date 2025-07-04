@@ -1152,23 +1152,6 @@
     {
         "conditions": [
             {
-                "key": "DAK, Systolic blood pressure",
-                "value": 140,
-                "operator": ">="
-            },
-            {
-                "key": "DAK, Diastolic blood pressure",
-                "value": 90,
-                "operator": ">="
-            }
-        ],
-        "action": "Measure BP again after 10\u201315 minutes rest",
-        "annotation": "Given high values (SBP \u00e2\u2030\u00a5 140 and/or DBP \u00e2\u2030\u00a5 90) upon first measure, blood pressure should be measured again.",
-        "action_key": 90
-    },
-    {
-        "conditions": [
-            {
                 "key": "DAK, Body temperature",
                 "minValue": 25,
                 "maxValue": 35,
@@ -2077,19 +2060,19 @@
         "annotation": "The urine dipstick test is important for identifying hypertensive disorders ( protein uria), DM (glucose uria), asymptomatic bacteriuria (ASB) and UTI.  Midstream culture and gram -staining are the standard tests  for diagnosis of ASB if available.",
         "action_key": 157
     },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Hematocrit (Ht)",
-        "value": 20.0,
-        "operator": "<"
-      }
-    ],
-    "displayPoint": "DAK, Hematocrit (Ht)",
-    "action": "Refer her for further evaluation and management",
-    "annotation": "Hematocrit levels too low!",
-    "action_key": 158
-  },
+    {
+        "conditions": [
+            {
+                "key": "DAK, Hematocrit (Ht)",
+                "value": 20.0,
+                "operator": "<"
+            }
+        ],
+        "displayPoint": "DAK, Hematocrit (Ht)",
+        "action": "Refer her for further evaluation and management",
+        "annotation": "Hematocrit levels too low!",
+        "action_key": 158
+    },
     {
         "conditions": [
             {
@@ -2103,19 +2086,19 @@
         "annotation": "White blood cell count too high!Refer her for further evaluation and management if not explained by the physiological change of the pregnancy",
         "action_key": 159
     },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Platelet count",
-        "value": 100000.0,
-        "operator": "<"
-      }
-    ],
-    "displayPoint": "DAK, Platelet count",
-    "action": "Reffer her for further evaluation and management",
-    "annotation": "Platelet count too low!",
-    "action_key": 160
-  },
+    {
+        "conditions": [
+            {
+                "key": "DAK, Platelet count",
+                "value": 100000.0,
+                "operator": "<"
+            }
+        ],
+        "displayPoint": "DAK, Platelet count",
+        "action": "Reffer her for further evaluation and management",
+        "annotation": "Platelet count too low!",
+        "action_key": 160
+    },
     {
         "conditions": [
             {
@@ -6106,32 +6089,32 @@
         "annotation": "Counselling:- Provide post-testing counselling \u2013 Advise retesting if ongoing risk or known exposure",
         "action_key": 404
     },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Anaemia diagnosis",
-        "value": "DAK, Moderate (7-9.9 g/dl)",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Counselling conducted on anaemia",
-    "action": "Counselling on anaemia",
-    "annotation": "Rule out intestinal infections (and malaria and treat accordingly) , Counsel on compliance with treatment,Reassess at subsequent antenatal visit (4-6 weeks). If anemia persists, refer to hospital. If anemia persists, refer to hospital.Her daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia. The equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate. ",
-    "action_key": 405
-  },
-  {
-    "conditions": [
-      {
-        "key": "DAK, Anaemia diagnosis",
-        "value": "DAK, Severe (<7g/dl)",
-        "operator": "="
-      }
-    ],
-    "displayPoint": "DAK, Counselling conducted on anaemia",
-    "action": "Conduct anemia counselling and refer immediately to a hospital",
-    "annotation": "The woman has severe anemia and should be immediately referred to a hospital for further evaluation and treatment",
-    "action_key": 406
-  },
+    {
+        "conditions": [
+            {
+                "key": "DAK, Anaemia diagnosis",
+                "value": "DAK, Moderate (7-9.9 g/dl)",
+                "operator": "="
+            }
+        ],
+        "displayPoint": "DAK, Counselling conducted on anaemia",
+        "action": "Counselling on anaemia",
+        "annotation": "Rule out intestinal infections (and malaria and treat accordingly) , Counsel on compliance with treatment,Reassess at subsequent antenatal visit (4-6 weeks). If anemia persists, refer to hospital. If anemia persists, refer to hospital.Her daily elemental iron should be increased to 120 mg until her haemoglobin (Hb) concentration rises to normal (Hb 110 g/L or higher). Thereafter, she can resume the standard daily antenatal iron dose to prevent recurrence of anaemia. The equivalent of 120 mg of elemental iron equals 600 mg of ferrous sulfate heptahydrate, 360 mg of ferrous fumarate or 1000 mg of ferrous gluconate. ",
+        "action_key": 405
+    },
+    {
+        "conditions": [
+            {
+                "key": "DAK, Anaemia diagnosis",
+                "value": "DAK, Severe (<7g/dl)",
+                "operator": "="
+            }
+        ],
+        "displayPoint": "DAK, Counselling conducted on anaemia",
+        "action": "Conduct anemia counselling and refer immediately to a hospital",
+        "annotation": "The woman has severe anemia and should be immediately referred to a hospital for further evaluation and treatment",
+        "action_key": 406
+    },
     {
         "conditions": [
             {
@@ -6179,11 +6162,6 @@
                 "key": "DAK, Repeat systolic blood pressure after 15 min",
                 "value": 160,
                 "operator": ">="
-            },
-            {
-                "key": "DAK, Repeat diastolic blood pressure after 15 min",
-                "value": 110,
-                "operator": ">="
             }
         ],
         "action": "Provide antihypertensive and anticonvulsant treatment as per protocol, and refer",
@@ -6213,25 +6191,6 @@
         "action": "Refer her to a hospital",
         "annotation": null,
         "action_key": 412
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Repeat systolic blood pressure after 15 min",
-                "minValue": 140,
-                "maxValue": 160,
-                "operator": "between, <=, <"
-            },
-            {
-                "key": "DAK, Repeat diastolic blood pressure after 15 min",
-                "minValue": 90,
-                "maxValue": 110,
-                "operator": "between, <=, <"
-            }
-        ],
-        "action": "Measure blood pressure again after 4 hours",
-        "annotation": "Given high values (SBP \u2265 140 and/or DBP \u2265 90), blood pressure should be measured again after 4 hours. Ensure there is appropriate spacing for both the systolic and diastolic BP values",
-        "action_key": 413
     },
     {
         "conditions": [
@@ -6473,7 +6432,7 @@
         "conditions": [
             {
                 "key": "DAK, Week difference FH and GA",
-                "value":103,
+                "value": 103,
                 "operator": ">="
             }
         ],
@@ -6890,7 +6849,7 @@
         "annotation": "",
         "action_key": 455
     },
- {
+    {
         "conditions": [
             {
                 "key": "DAK, Systolic blood pressure",
@@ -6902,7 +6861,7 @@
         "annotation": "Given high values (SBP \u00e2\u2030\u00a5 140 and/or DBP \u00e2\u2030\u00a5 90) upon first measure, blood pressure should be measured again.",
         "action_key": 456
     },
-     {
+    {
         "conditions": [
             {
                 "key": "DAK, Diastolic blood pressure",
@@ -6914,21 +6873,25 @@
         "annotation": "Given high values (SBP \u00e2\u2030\u00a5 140 and/or DBP \u00e2\u2030\u00a5 90) upon first measure, blood pressure should be measured again.",
         "action_key": 457
     },
-
-        {
+    {
         "conditions": [
             {
                 "key": "DAK, Repeat diastolic blood pressure after 15 min",
                 "minValue": 90,
                 "maxValue": 110,
                 "operator": "between, <=, <"
+            },
+            {
+                "key": "DAK, Repeat systolic blood pressure after 15 min",
+                "value": 160,
+                "operator": "<"
             }
         ],
         "action": "Measure blood pressure again after 4 hours",
         "annotation": "Given high values (SBP \u2265 140 and/or DBP \u2265 90), blood pressure should be measured again after 4 hours. Ensure there is appropriate spacing for both the systolic and diastolic BP values",
         "action_key": 458
     },
-        {
+    {
         "conditions": [
             {
                 "key": "DAK, Repeat systolic blood pressure after 15 min",
@@ -6941,7 +6904,7 @@
         "annotation": "Given high values (SBP \u2265 140 and/or DBP \u2265 90), blood pressure should be measured again after 4 hours. Ensure there is appropriate spacing for both the systolic and diastolic BP values",
         "action_key": 459
     },
-     {
+    {
         "conditions": [
             {
                 "key": "DAK, Body temperature",
@@ -6976,16 +6939,16 @@
                 ],
                 "operator": "OR"
             },
-             {
-            "key": "DAK, Gestational age",
-            "value": 20,
-            "operator": "="
-          },
-          {
-            "key": "DAK, Gestational Age Days in Current Week",
-            "value": 0,
-            "operator": ">"
-          }
+            {
+                "key": "DAK, Gestational age",
+                "value": 20,
+                "operator": "="
+            },
+            {
+                "key": "DAK, Gestational Age Days in Current Week",
+                "value": 0,
+                "operator": ">"
+            }
         ],
         "displayPoint": "DAK, Gestational Hypertension",
         "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment if neccessay.",
@@ -7014,23 +6977,23 @@
                 ],
                 "operator": "OR"
             },
-             {
-            "key": "DAK, Gestational age",
-            "value": 20,
-            "operator": "="
-          },
-          {
-            "key": "DAK, Gestational Age Days in Current Week",
-            "value": 0,
-            "operator": ">"
-          }
+            {
+                "key": "DAK, Gestational age",
+                "value": 20,
+                "operator": "="
+            },
+            {
+                "key": "DAK, Gestational Age Days in Current Week",
+                "value": 0,
+                "operator": ">"
+            }
         ],
         "displayPoint": "DAK, Gestational Hypertension",
         "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment if neccessay.",
         "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher after 20 weeks of gestational age and no proteinuria.Advice to reduce workload and to rest. Advise on danger signsReassess at the next contact or in 1 week. If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available .Manage as an outpatient if GA is <36 weeks and if blood pressure is in mild range without the use of antihypertensive medications.Refer at \u226536 weeks of gestation",
         "action_key": 462
     },
-     {
+    {
         "conditions": [
             {
                 "key": "DAK, Number of fetuses",
@@ -7071,10 +7034,10 @@
             {
                 "key": "DAK, Past pregnancy history",
                 "orValues": [
-              "DAK, Eclampsia",
-              "DAK, Pre-eclampsia"
-            ],
-            "operator": "OR"
+                    "DAK, Eclampsia",
+                    "DAK, Pre-eclampsia"
+                ],
+                "operator": "OR"
             },
             {
                 "key": "DAK, Gestational age",
@@ -7083,7 +7046,7 @@
             }
         ],
         "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
-       "action": "Conduct counselling on pre-eclampsia risk",
+        "action": "Conduct counselling on pre-eclampsia risk",
         "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling",
         "action_key": 465
     },
@@ -7129,6 +7092,18 @@
         "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
         "action": "Conduct counselling on pre-eclampsia risk",
         "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling",
+        "action_key": 467
+    },
+    {
+        "conditions": [
+            {
+                "key": "DAK, Repeat diastolic blood pressure after 15 min",
+                "value": 110,
+                "operator": ">="
+            }
+        ],
+        "action": "Provide antihypertensive and anticonvulsant treatment as per protocol, and refer",
+        "annotation": "Antihypertensives: Hydralazine is the drug of choice for acute therapy. Administer 5 mg IV slowly every 20 minutes until the blood pressure is lowered to a diastolic level of <110 mmHg. The maximum dose is 20 mg within 24 hours. If Hydralazine is unavailable, alternative drugs such as Nifedipine can be used.Anticonvulsants: Administer magnesium sulfate (MgSO\u2084) as the first-line treatment. If MgSO\u2084 is unavailable, provide alternative anticonvulsants as per protocol",
         "action_key": 467
     }
 ]
