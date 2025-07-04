@@ -9138,22 +9138,6 @@
         "rules": [
           {
             "trigger": "DAK, Repeat systolic blood pressure after 15 min",
-            "minValue": 140,
-            "maxValue": 160,
-            "operator": "between, <=, <"
-          },
-          {
-            "trigger": "DAK, Repeat diastolic blood pressure after 15 min",
-            "minValue": 90,
-            "maxValue": 110,
-            "operator": "between, <=, <"
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Repeat systolic blood pressure after 15 min",
            "minValue": 140,
             "maxValue": 160,
             "operator": "between, <=, <"
@@ -9167,6 +9151,11 @@
             "minValue": 90,
             "maxValue": 110,
             "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure after 15 min",
+           "value": 160,
+            "operator": "<"
           }
         ]
       }
@@ -9182,22 +9171,6 @@
         "rules": [
           {
             "trigger": "DAK, Repeat systolic blood pressure after 15 min",
-            "minValue": 140,
-            "maxValue": 160,
-            "operator": "between, <=, <"
-          },
-          {
-            "trigger": "DAK, Repeat diastolic blood pressure after 15 min",
-            "minValue": 90,
-            "maxValue": 110,
-            "operator": "between, <=, <"
-          }
-        ]
-      },
-      {
-        "rules": [
-          {
-            "trigger": "DAK, Repeat systolic blood pressure after 15 min",
            "minValue": 140,
             "maxValue": 160,
             "operator": "between, <=, <"
@@ -9211,6 +9184,11 @@
             "minValue": 90,
             "maxValue": 110,
             "operator": "between, <=, <"
+          },
+          {
+            "trigger": "DAK, Repeat systolic blood pressure after 15 min",
+           "value": 160,
+            "operator": "<"
           }
         ]
       }
