@@ -214,6 +214,22 @@
     "type": "restrict",
     "message": "Possible value of Gestational age ranges from 4 to 40."
   },
+    {
+    "conceptName": "DAK, Gestational age by LMNP",
+    "operator": "beyond, <=, <=",
+    "minValue": 4,
+    "maxValue": 40,
+    "type": "restrict",
+    "message": "Possible value of Gestational age ranges from 4 to 40."
+  },
+    {
+    "conceptName": "DAK, Gestational age by Ultrasound",
+    "operator": "beyond, <=, <=",
+    "minValue": 4,
+    "maxValue": 40,
+    "type": "restrict",
+    "message": "Possible value of Gestational age ranges from 4 to 40."
+  },
   {
     "conceptName": "DAK, Birth weight",
     "operator": "beyond, <=, <=",
