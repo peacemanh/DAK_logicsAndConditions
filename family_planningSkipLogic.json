@@ -4574,10 +4574,10 @@
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Pregnant",
-        "operator": "!="
+        "operator": "="
       }
     ],
-    "action": "show",
+    "action": "hide",
     "dependent": "DAK, Wanting to get pregnant",
     "logic_key": 341
   },
@@ -4586,10 +4586,10 @@
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Pregnant",
-        "operator": "!="
+        "operator": "="
       }
     ],
-    "action": "show",
+    "action": "hide",
     "dependent": "DAK, Family Planning Method Medical Eligibility",
     "logic_key": 342
   },
@@ -4598,10 +4598,10 @@
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Pregnant",
-        "operator": "!="
+        "operator": "="
       }
     ],
-    "action": "show",
+    "action": "hide",
     "dependent": "DAK, Medical eligibility category",
     "logic_key": 343
   },
@@ -4610,10 +4610,10 @@
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Pregnant",
-        "operator": "!="
+        "operator": "="
       }
     ],
-    "action": "show",
+    "action": "hide",
     "dependent": "DAK, Client preferences",
     "logic_key": 344
   },
@@ -4622,10 +4622,10 @@
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Pregnant",
-        "operator": "!="
+        "operator": "="
       }
     ],
-    "action": "show",
+    "action": "hide",
     "dependent": "DAK, Chosen method",
     "logic_key": 345
   },
@@ -4634,10 +4634,10 @@
       {
         "trigger": "DAK, Pregnancy test result",
         "value": "DAK, Pregnant",
-        "operator": "!="
+        "operator": "="
       }
     ],
-    "action": "show",
+    "action": "hide",
     "dependent": "DAK, Where method will be provided",
     "logic_key": 346
   }
