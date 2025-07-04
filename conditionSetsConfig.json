@@ -7029,5 +7029,106 @@
         "action": "Conduct hypertension Counselling and Refer her for further evaluation and manegment if neccessay.",
         "annotation": "Woman has hypertension \u2013 SBP of 140 mmHg or higher and/or DBP of 90 mmHg or higher after 20 weeks of gestational age and no proteinuria.Advice to reduce workload and to rest. Advise on danger signsReassess at the next contact or in 1 week. If hypertension persists after 1 week or at next contact, refer to hospital or discuss case with the doctor, if available .Manage as an outpatient if GA is <36 weeks and if blood pressure is in mild range without the use of antihypertensive medications.Refer at \u226536 weeks of gestation",
         "action_key": 462
+    },
+     {
+        "conditions": [
+            {
+                "key": "DAK, Number of fetuses",
+                "value": 2.0,
+                "operator": ">="
+            },
+            {
+                "key": "DAK, Gestational age",
+                "value": 12.0,
+                "operator": "<"
+            }
+        ],
+        "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
+        "action": "Conduct counselling on pre-eclampsia risk",
+        "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling",
+        "action_key": 463
+    },
+    {
+        "conditions": [
+            {
+                "key": "DAK, Past pregnancy history",
+                "value": "DAK, Pre-eclampsia",
+                "operator": "="
+            },
+            {
+                "key": "DAK, Gestational age",
+                "value": 12.0,
+                "operator": "<"
+            }
+        ],
+        "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
+        "action": "Conduct counselling on pre-eclampsia risk",
+        "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling",
+        "action_key": 464
+    },
+    {
+        "conditions": [
+            {
+                "key": "DAK, Past pregnancy history",
+                "orValues": [
+              "DAK, Eclampsia",
+              "DAK, Pre-eclampsia"
+            ],
+            "operator": "OR"
+            },
+            {
+                "key": "DAK, Gestational age",
+                "value": 12.0,
+                "operator": "<"
+            }
+        ],
+        "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
+       "action": "Conduct counselling on pre-eclampsia risk",
+        "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling",
+        "action_key": 465
+    },
+    {
+        "conditions": [
+            {
+                "key": "DAK, Past pregnancy history",
+                "value": "DAK, Convulsions",
+                "operator": "="
+            },
+            {
+                "key": "DAK, Gestational age",
+                "value": 12.0,
+                "operator": "<"
+            }
+        ],
+        "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
+        "action": "Conduct counselling on pre-eclampsia risk",
+        "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling",
+        "action_key": 466
+    },
+    {
+        "conditions": [
+            {
+                "key": "DAK, Existing chronic health conditions",
+                "orValues": [
+                    "DAK, Autoimmune disease",
+                    "DAK, Diabetes arising in pregnancy (gestational diabetes)",
+                    "DAK, Diabetes, pre-existing type 1",
+                    "DAK, Diabetes, pre-existing type 2",
+                    "DAK, Diabetes, other or unspecified",
+                    "DAK, Chronic Hypertensions",
+                    "DAK, Renal disease"
+                ],
+                "operator": "OR"
+            },
+            {
+                "key": "DAK, Gestational age",
+                "value": 12.0,
+                "operator": "<"
+            }
+        ],
+        "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
+        "action": "Conduct counselling on pre-eclampsia risk",
+        "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling",
+        "action_key": 467
     }
 ]

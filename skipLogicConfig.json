@@ -9265,18 +9265,6 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Gestational age",
-        "value": 12,
-        "operator": ">="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Pre-eclampsia risk counselling provided",
-    "logic_key": 622
-  },
-  {
-    "logics": [
-      {
         "rules": [
           {
             "trigger": "DAK, Gestational age",
