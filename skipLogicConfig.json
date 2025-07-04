@@ -6312,6 +6312,7 @@
             "trigger": "DAK, Past pregnancy history",
             "orValues": [
               "DAK, Eclampsia",
+              "DAK, Pre-eclampsia",
               "DAK, Convulsions"
             ],
             "operator": "OR"
