@@ -4568,5 +4568,77 @@
     "action": "show",
     "dependent": "DAK, HIV screening: laboratory tests available",
     "logic_key": 340
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy test result",
+        "value": "DAK, Pregnant",
+        "operator": "!="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Wanting to get pregnant",
+    "logic_key": 341
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy test result",
+        "value": "DAK, Pregnant",
+        "operator": "!="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Family Planning Method Medical Eligibility",
+    "logic_key": 342
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy test result",
+        "value": "DAK, Pregnant",
+        "operator": "!="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Medical eligibility category",
+    "logic_key": 343
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy test result",
+        "value": "DAK, Pregnant",
+        "operator": "!="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Client preferences",
+    "logic_key": 344
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy test result",
+        "value": "DAK, Pregnant",
+        "operator": "!="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Chosen method",
+    "logic_key": 345
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Pregnancy test result",
+        "value": "DAK, Pregnant",
+        "operator": "!="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Where method will be provided",
+    "logic_key": 346
   }
 ]

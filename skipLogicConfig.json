@@ -10403,7 +10403,7 @@
     ],
     "action": "show",
     "dependent": "DAK, Persistent behaviours",
-    "logic_key": 630
+    "logic_key": 632
   },
   {
     "logics": [
@@ -10415,6 +10415,6 @@
     ],
     "action": "show",
     "dependent": "DAK, Previous behaviour category",
-    "logic_key": 631
+    "logic_key": 633
   }
 ]
