@@ -299,14 +299,14 @@
     "operator": ">",
     "value": 6,
     "type": "restrict",
-    "message": "Possible value of Gestational age by Ultrasound (days) has to be less than 7."
+    "message": "Possible value of (days) has to be less than 7."
   },
   {
     "conceptName": "DAK, Gestational age by LMNP day",
     "operator": ">",
     "value": 6,
     "type": "restrict",
-    "message": "Possible value of Gestational age by LMNP (days) has to be less than 7."
+    "message": "Possible value of (days) has to be less than 7."
   },
   {
     "conceptName": "DAK, Provider's telephone number",
