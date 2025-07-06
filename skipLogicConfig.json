@@ -10111,7 +10111,12 @@
         "trigger": "DAK, Gestational age",
         "value": 12,
         "operator": ">="
-      }
+      },
+       {
+            "trigger":"DAK, Risk of pre-eclampsia",
+                "value": true,
+                "operator": "="
+     }
     ],
     "action": "show",
     "dependent": "DAK, Reason aspirin not prescribed form",
@@ -10123,7 +10128,12 @@
         "trigger": "DAK, Gestational age",
         "value": 12,
         "operator": ">="
-      }
+      },
+      {
+            "trigger":"DAK, Risk of pre-eclampsia",
+                "value": true,
+                "operator": "="
+       }
     ],
     "action": "show",
     "dependent": "DAK, Amount of daily aspirin prescribed until delivery",
@@ -10394,5 +10404,29 @@
     "action": "show",
     "dependent": "DAK, Previous behaviour category",
     "logic_key": 633
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, Respiratory exam result",
+        "orValues": ["DAK, Dyspnoea","DAK, Cough","DAK, Bradypnea","DAK, Tachypnea","DAK, Wheezing","DAK, Rales","DAK, Other"],
+        "operator": "OR"
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Oxygen Saturation",
+    "logic_key": 634
+  },
+  {
+    "logics": [
+      {
+            "trigger":"DAK, Risk of pre-eclampsia",
+                "value": true,
+                "operator": "="
+            }
+    ],
+    "action": "show",
+    "dependent": "DAK, Pre-eclampsia risk counselling provided",
+    "logic_key": 635
   }
 ]

@@ -3358,100 +3358,20 @@
     {
         "conditions": [
             {
-                "key": "DAK, Number of fetuses",
-                "value": 2.0,
-                "operator": ">="
-            },
-            {
                 "key": "DAK, Gestational age",
                 "value": 12.0,
                 "operator": ">="
+            },
+              {
+                "key": "DAK, Risk of pre-eclampsia",
+                "value": true,
+                "operator": "="
             }
         ],
         "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
         "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
         "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
         "action_key": 232
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Past pregnancy history",
-                "value": "DAK, Pre-eclampsia",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
-        "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
-        "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
-        "action_key": 233
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Past pregnancy history",
-                "value": "DAK, Eclampsia",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
-        "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
-        "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
-        "action_key": 234
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Past pregnancy history",
-                "value": "DAK, Convulsions",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
-        "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
-        "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
-        "action_key": 235
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Existing chronic health conditions",
-                "orValues": [
-                    "DAK, Autoimmune disease",
-                    "DAK, Diabetes arising in pregnancy (gestational diabetes)",
-                    "DAK, Diabetes, pre-existing type 1",
-                    "DAK, Diabetes, pre-existing type 2",
-                    "DAK, Diabetes, other or unspecified",
-                    "DAK, Chronic Hypertensions",
-                    "DAK, Renal disease"
-                ],
-                "operator": "OR"
-            },
-            {
-                "key": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": ">="
-            }
-        ],
-        "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
-        "action": "Conduct counselling on pre-eclampsia risk and prescribe asprin",
-        "annotation": "The woman is at risk of developing pre-eclampsia: provide counselling; prescribe aspirin 81 mg daily until delivery (starting at 12 weeks gestation) for pre-eclampsia risk",
-        "action_key": 236
     },
     {
         "conditions": [
@@ -6996,114 +6916,19 @@
     {
         "conditions": [
             {
-                "key": "DAK, Number of fetuses",
-                "value": 2.0,
-                "operator": ">="
-            },
-            {
                 "key": "DAK, Gestational age",
                 "value": 12.0,
                 "operator": "<"
+            },
+            {
+                "key": "DAK, Risk of pre-eclampsia",
+                "value": true,
+                "operator": "="
             }
         ],
         "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
         "action": "Conduct counselling on pre-eclampsia risk",
         "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling",
         "action_key": 463
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Past pregnancy history",
-                "value": "DAK, Pre-eclampsia",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": "<"
-            }
-        ],
-        "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
-        "action": "Conduct counselling on pre-eclampsia risk",
-        "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling",
-        "action_key": 464
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Past pregnancy history",
-                "orValues": [
-                    "DAK, Eclampsia",
-                    "DAK, Pre-eclampsia"
-                ],
-                "operator": "OR"
-            },
-            {
-                "key": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": "<"
-            }
-        ],
-        "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
-        "action": "Conduct counselling on pre-eclampsia risk",
-        "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling",
-        "action_key": 465
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Past pregnancy history",
-                "value": "DAK, Convulsions",
-                "operator": "="
-            },
-            {
-                "key": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": "<"
-            }
-        ],
-        "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
-        "action": "Conduct counselling on pre-eclampsia risk",
-        "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling",
-        "action_key": 466
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Existing chronic health conditions",
-                "orValues": [
-                    "DAK, Autoimmune disease",
-                    "DAK, Diabetes arising in pregnancy (gestational diabetes)",
-                    "DAK, Diabetes, pre-existing type 1",
-                    "DAK, Diabetes, pre-existing type 2",
-                    "DAK, Diabetes, other or unspecified",
-                    "DAK, Chronic Hypertensions",
-                    "DAK, Renal disease"
-                ],
-                "operator": "OR"
-            },
-            {
-                "key": "DAK, Gestational age",
-                "value": 12.0,
-                "operator": "<"
-            }
-        ],
-        "displayPoint": "DAK, Pre-eclampsia risk counselling provided",
-        "action": "Conduct counselling on pre-eclampsia risk",
-        "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling",
-        "action_key": 467
-    },
-    {
-        "conditions": [
-            {
-                "key": "DAK, Repeat diastolic blood pressure after 15 min",
-                "value": 110,
-                "operator": ">="
-            }
-        ],
-        "action": "Provide antihypertensive and anticonvulsant treatment as per protocol, and refer",
-        "annotation": "Antihypertensives: Hydralazine is the drug of choice for acute therapy. Administer 5 mg IV slowly every 20 minutes until the blood pressure is lowered to a diastolic level of <110 mmHg. The maximum dose is 20 mg within 24 hours. If Hydralazine is unavailable, alternative drugs such as Nifedipine can be used.Anticonvulsants: Administer magnesium sulfate (MgSO\u2084) as the first-line treatment. If MgSO\u2084 is unavailable, provide alternative anticonvulsants as per protocol",
-        "action_key": 467
     }
 ]
