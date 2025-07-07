@@ -301,6 +301,13 @@
     "type": "restrict",
     "message": "Possible value of (days) has to be less than 7."
   },
+    {
+    "conceptName": "DAK, Menstural Pattern",
+    "operator": ">",
+    "value": 35,
+    "type": "optional",
+    "message": "Possible value of Menstural Pattern has to be less than or equal to 35."
+  },
   {
     "conceptName": "DAK, Gestational age by LMNP day",
     "operator": ">",
@@ -333,5 +340,12 @@
     },
     "type": "restrict",
     "message": "Please enter a valid phone number in the format 09xxxxxxxx"
+  },
+  {
+    "conceptName": "DAK, Menstural Pattern",
+    "operator": ">",
+    "value": 35,
+    "type": "optional",
+    "message": "Possible value of Menstural Pattern has to be less than or equal to 35."
   }
 ]

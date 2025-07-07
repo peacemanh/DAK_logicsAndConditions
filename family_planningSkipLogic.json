@@ -823,16 +823,23 @@
   },
   {
     "logics": [
+   
       {
         "trigger": "DAK, Parity",
         "value": 1,
         "operator": ">="
+      },
+         {
+        "trigger": "DAK, Has client ever been pregnant",
+        "value": true,
+        "operator": "="
       }
     ],
     "action": "show",
     "dependent": "DAK, Breastfeeding Form",
     "logic_key": 61
   },
+
   {
     "logics": [
       {
