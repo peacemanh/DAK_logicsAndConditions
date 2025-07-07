@@ -4116,8 +4116,15 @@
         "trigger": "DAK, Wanting to get pregnant",
         "value": true,
         "operator": "="
+      },
+      {
+        "trigger": "DAK, Pregnancy test result",
+        "value": "DAK, Pregnant",
+        "operator": "="
       }
+
     ],
+    "conditionType": "either",
     "action": "hide",
     "dependent": "DAK, Have a method in mind",
     "logic_key": 305
