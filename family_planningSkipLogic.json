@@ -4546,7 +4546,13 @@
         "trigger": "DAK, Health condition(s)",
         "value": "DAK, HIV/AIDS",
         "operator": "!="
+      },
+      {
+        "trigger": "DAK, Current medications FP",
+        "value": "DAK, Antiretroviral therapy",
+        "operator": "!="
       }
+
     ],
     "action": "show",
     "dependent": "DAK, HIV risk assessment conducted",

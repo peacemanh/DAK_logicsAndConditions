@@ -2083,7 +2083,7 @@
         ],
         "displayPoint": "DAK, White blood cell (WBC) count",
         "action": "Refer her if not explained by the physiological change of the pregnancy",
-        "annotation": "White blood cell count too high!Refer her for further evaluation and management if not explained by the physiological change of the pregnancy",
+        "annotation": "White blood cell count too high!",
         "action_key": 159
     },
     {
@@ -4920,18 +4920,18 @@
         "annotation": "Hepatitis B testing is recommended for all pregnant women.HBsAg laboratory-based immunoassay is the preferred method for testing for Hep B infection in pregnancy; if immunoassay is not available, HBsAg rapid diagnostic test (RDT) is recommended over dried blood spot (DBS) HBsAg testing.",
         "action_key": 327
     },
-    {
-        "conditions": [
-            {
-                "key": "DAK, White blood cell (WBC) count",
-                "value": 4000.0,
-                "operator": "<"
-            }
-        ],
-        "action": "Low levels",
-        "annotation": "White blood cell count too low!Refer her for further evaluation and management if not explained by the physiological change of the pregnancy",
-        "action_key": 329
-    },
+  {
+    "conditions": [
+      {
+        "key": "DAK, White blood cell (WBC) count",
+        "value": 4000.0,
+        "operator": "<"
+      }
+    ],
+    "action": "Refer her if not explained by the physiological change of the pregnancy ",
+    "annotation": "White blood cell count too low!Refer her for further evaluation and management if not explained by the physiological change of the pregnancy",
+    "action_key": 329
+  },
     {
         "conditions": [
             {
