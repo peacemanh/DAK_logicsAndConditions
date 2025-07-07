@@ -285,7 +285,7 @@
   {
     "conceptName": "DAK, Hematocrit (Ht)",
     "value": 21,
-    "operator": ">=",
+    "operator": "<=",
     "conditioner": {
       "key": "DAK, Blood haemoglobin test result",
       "value": 7,
