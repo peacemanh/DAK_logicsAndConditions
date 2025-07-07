@@ -30,5 +30,12 @@
     "maxValue": 200,
     "type": "restrict",
     "message": "Possible value of Diastolic blood pressure ranges from 40mmHg to 200mmHg"
+  },
+   {
+    "conceptName": "DAK, Menstural Pattern",
+    "operator": ">",
+    "value": 35,
+    "type": "optional",
+    "message": "Possible value of Menstural Pattern has to be less than or equal to 35."
   }
 ]
