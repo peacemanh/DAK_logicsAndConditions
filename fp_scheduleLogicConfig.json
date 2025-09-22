@@ -147,6 +147,14 @@
     {
         "triggerEvent": "DAK, Method or service provided",
         "triggerDate": "contact date",
+        "value": "DAK, DMPA-SC -SI",
+        "scheduleDays": 90,
+        "service": "DMPA-SC -SI next injection",
+        "type": "FP"
+    },
+    {
+        "triggerEvent": "DAK, Method or service provided",
+        "triggerDate": "contact date",
         "value": "DAK, Progestogen-only pills (POPs)",
         "scheduleDays": 90,
         "service": "Post-Progestogen-only pills (POPs) follow-up",

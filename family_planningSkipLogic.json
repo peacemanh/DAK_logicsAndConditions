@@ -3072,23 +3072,6 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Sexually active",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Visit Status",
-        "value": "DAK, Emergency contraception",
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Never used contraception",
-    "logic_key": 221
-  },
-  {
-    "logics": [
-      {
         "trigger": "DAK, Health condition(s)",
         "value": "DAK, Pelvic inflammatory disease",
         "operator": "="

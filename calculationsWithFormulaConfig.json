@@ -45,13 +45,16 @@
     {
         "resultConcept": "DAK, Gestational age",
         "operands": [
-            "DAK, Gestational age by Ultrasound"
+            "DAK, Gestational age by Ultrasound",
+            "DAK, Ultrasound date",
+            "DAK, Gestational age by Ultrasound days"
         ],
-        "formula": "DAK, Gestational age by Ultrasound / 1",
+        "formula": "DAK, Gestational age by Ultrasound + ((DAK, Ultrasound date + DAK, Gestational age by Ultrasound days) / 7)",
         "conditioner": {
             "key": "DAK, Source of gestational age",
             "value": "DAK, Ultrasound"
-        }
+        },
+        "dateSource": true
     },
     {
         "resultConcept": "DAK, Gestational age by LMNP",
@@ -100,13 +103,15 @@
     {
         "resultConcept": "DAK, Gestational Age Days in Current Week",
         "operands": [
-            "DAK, Gestational age by Ultrasound days"
+            "DAK, Gestational age by Ultrasound days",
+            "DAK, Ultrasound date"
         ],
-        "formula": "DAK, Gestational age by Ultrasound days / 1",
+        "formula": "(DAK, Gestational age by Ultrasound days + DAK, Ultrasound date) % 7",
         "conditioner": {
             "key": "DAK, Source of gestational age",
             "value": "DAK, Ultrasound"
-        }
+        },
+        "dateSource": true
     },
     {
         "resultConcept": "DAK, Expected date of delivery (EDD)",

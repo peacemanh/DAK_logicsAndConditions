@@ -64,6 +64,14 @@
         "displayPoint": "DAK, ANC Contact Schedule Needed"
     },
     {
+        "triggerEvent": "DAK, ANC Contact Number",
+        "value": 8,
+        "conditioner": "DAK, Gestational age",
+        "service": "ANC Contact 9",
+        "type": "contact schedule",
+        "displayPoint": "DAK, ANC Contact Schedule Needed"
+    },
+    {
         "triggerEvent": "DAK, Tetanus-diphtheria (TD) 1 immunization provided",
         "triggerDate": "DAK, Date Tetanus-diphtheria (TD) 1 immunization was received",
         "value": true,
