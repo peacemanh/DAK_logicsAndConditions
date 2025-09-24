@@ -2227,42 +2227,6 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Blood haemoglobin test conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Hematocrit (Ht)",
-    "logic_key": 182
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Blood haemoglobin test conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, White blood cell (WBC) count",
-    "logic_key": 183
-  },
-  {
-    "logics": [
-      {
-        "trigger": "DAK, Blood haemoglobin test conducted",
-        "value": true,
-        "operator": "="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Platelet count",
-    "logic_key": 184
-  },
-  {
-    "logics": [
-      {
         "trigger": "DAK, TB screening conducted",
         "value": false,
         "operator": "="
@@ -7223,7 +7187,7 @@
     "dependent": "DAK, Other referral specify",
     "logic_key": 519
   },
-    {
+  {
     "logics": [
       {
         "trigger": "DAK, Number of pregnancies gravida",
@@ -7324,24 +7288,24 @@
       {
         "rules": [
           {
-        "trigger": "DAK, Pregnancy confirmed",
-        "value": true,
-        "operator": "="
-      },
-      {
-        "trigger": "DAK, Gestational age",
-        "value": 20,
-        "operator": "<"
-      }
+            "trigger": "DAK, Pregnancy confirmed",
+            "value": true,
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Gestational age",
+            "value": 20,
+            "operator": "<"
+          }
         ]
       },
       {
         "rules": [
           {
-        "trigger": "DAK, Type of postpartum family planning method selected exist",
-        "value": true,
-        "operator": "="
-      }
+            "trigger": "DAK, Type of postpartum family planning method selected exist",
+            "value": true,
+            "operator": "="
+          }
         ]
       }
     ],
@@ -9146,7 +9110,7 @@
         "rules": [
           {
             "trigger": "DAK, Repeat systolic blood pressure after 15 min",
-           "minValue": 140,
+            "minValue": 140,
             "maxValue": 160,
             "operator": "between, <=, <"
           }
@@ -9162,7 +9126,7 @@
           },
           {
             "trigger": "DAK, Repeat systolic blood pressure after 15 min",
-           "value": 160,
+            "value": 160,
             "operator": "<"
           }
         ]
@@ -9179,7 +9143,7 @@
         "rules": [
           {
             "trigger": "DAK, Repeat systolic blood pressure after 15 min",
-           "minValue": 140,
+            "minValue": 140,
             "maxValue": 160,
             "operator": "between, <=, <"
           }
@@ -9195,7 +9159,7 @@
           },
           {
             "trigger": "DAK, Repeat systolic blood pressure after 15 min",
-           "value": 160,
+            "value": 160,
             "operator": "<"
           }
         ]
@@ -9278,8 +9242,8 @@
             "operator": "OR"
           }
         ]
-          },
-          {
+      },
+      {
         "rules": [
           {
             "trigger": "DAK, Gestational age",
@@ -9312,7 +9276,7 @@
             "operator": "OR"
           }
         ]
-      },   
+      },
       {
         "rules": [
           {
@@ -9341,8 +9305,8 @@
             "operator": "OR"
           }
         ]
-          },
-          {
+      },
+      {
         "rules": [
           {
             "trigger": "DAK, Gestational age",
@@ -10120,11 +10084,11 @@
         "value": 12,
         "operator": ">="
       },
-       {
-            "trigger":"DAK, Risk of pre-eclampsia",
-                "value": true,
-                "operator": "="
-     }
+      {
+        "trigger": "DAK, Risk of pre-eclampsia",
+        "value": true,
+        "operator": "="
+      }
     ],
     "action": "show",
     "dependent": "DAK, Reason aspirin not prescribed form",
@@ -10138,10 +10102,10 @@
         "operator": ">="
       },
       {
-            "trigger":"DAK, Risk of pre-eclampsia",
-                "value": true,
-                "operator": "="
-       }
+        "trigger": "DAK, Risk of pre-eclampsia",
+        "value": true,
+        "operator": "="
+      }
     ],
     "action": "show",
     "dependent": "DAK, Amount of daily aspirin prescribed until delivery",
@@ -10231,8 +10195,8 @@
             "operator": "OR"
           }
         ]
-        },
-        {
+      },
+      {
         "rules": [
           {
             "trigger": "DAK, Gestational age",
@@ -10295,7 +10259,7 @@
           }
         ]
       },
-      
+
       {
         "rules": [
           {
@@ -10404,20 +10368,8 @@
   {
     "logics": [
       {
-        "trigger": "DAK, Reason for coming to facility",
-        "value": "DAK, First antenatal care contact",
-        "operator": "!="
-      }
-    ],
-    "action": "show",
-    "dependent": "DAK, Previous behaviour category",
-    "logic_key": 633
-  },
-  {
-    "logics": [
-      {
         "trigger": "DAK, Respiratory exam result",
-        "orValues": ["DAK, Dyspnoea","DAK, Cough","DAK, Bradypnea","DAK, Tachypnea","DAK, Wheezing","DAK, Rales","DAK, Other"],
+        "orValues": [ "DAK, Dyspnoea", "DAK, Cough", "DAK, Bradypnea", "DAK, Tachypnea", "DAK, Wheezing", "DAK, Rales", "DAK, Other" ],
         "operator": "OR"
       }
     ],
@@ -10428,13 +10380,96 @@
   {
     "logics": [
       {
-            "trigger":"DAK, Risk of pre-eclampsia",
-                "value": true,
-                "operator": "="
-            }
+        "trigger": "DAK, Risk of pre-eclampsia",
+        "value": true,
+        "operator": "="
+      }
     ],
     "action": "show",
     "dependent": "DAK, Pre-eclampsia risk counselling provided",
     "logic_key": 635
+  },
+  {
+    "logics": [
+      {
+        "trigger": "DAK, HIV test result",
+        "value": "DAK, HIV-positive",
+        "operator": "="
+      }
+    ],
+    "action": "show",
+    "dependent": "DAK, Linkage with PMTCT service",
+    "logic_key": 636
+  },
+  {
+    "logics": [
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Blood haemoglobin test type",
+            "value": "DAK, Complete blood count test",
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Blood haemoglobin test conducted",
+            "value": true,
+            "operator": "="
+          }
+        ]
+      }
+
+    ],
+    "action": "show",
+    "conditionType": "deepAnalysis",
+    "dependent": "DAK, Platelet count",
+    "logic_key": 637
+  },
+  {
+    "logics": [
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Blood haemoglobin test type",
+            "value": "DAK, Complete blood count test",
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Blood haemoglobin test conducted",
+            "value": true,
+            "operator": "="
+          }
+        ]
+      }
+
+    ],
+    "action": "show",
+    "conditionType": "deepAnalysis",
+    "dependent": "DAK, White blood cell (WBC) count",
+    "logic_key": 638
+  },
+  {
+    "logics": [
+      {
+        "rules": [
+          {
+            "trigger": "DAK, Blood haemoglobin test type",
+            "value": "DAK, Complete blood count test",
+            "operator": "="
+          },
+          {
+            "trigger": "DAK, Blood haemoglobin test conducted",
+            "value": true,
+            "operator": "="
+          }
+        ]
+      }
+
+    ],
+    "action": "show",
+    "conditionType": "deepAnalysis",
+    "dependent": "DAK, Hematocrit (Ht)",
+    "logic_key": 649
   }
+
+
 ]
