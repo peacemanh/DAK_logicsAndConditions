@@ -2083,7 +2083,7 @@
         ],
         "displayPoint": "DAK, White blood cell (WBC) count",
         "action": "Refer her if not explained by the physiological change of the pregnancy",
-        "annotation": "White blood cell count too high!",
+        "annotation": "White blood cell count too high!Refer her for further evaluation and management if not explained by the physiological change of the pregnancy",
         "action_key": 159
     },
     {
@@ -4920,18 +4920,18 @@
         "annotation": "Hepatitis B testing is recommended for all pregnant women.HBsAg laboratory-based immunoassay is the preferred method for testing for Hep B infection in pregnancy; if immunoassay is not available, HBsAg rapid diagnostic test (RDT) is recommended over dried blood spot (DBS) HBsAg testing.",
         "action_key": 327
     },
-  {
-    "conditions": [
-      {
-        "key": "DAK, White blood cell (WBC) count",
-        "value": 4000.0,
-        "operator": "<"
-      }
-    ],
-    "action": "Refer her if not explained by the physiological change of the pregnancy ",
-    "annotation": "White blood cell count too low!Refer her for further evaluation and management if not explained by the physiological change of the pregnancy",
-    "action_key": 329
-  },
+    {
+        "conditions": [
+            {
+                "key": "DAK, White blood cell (WBC) count",
+                "value": 4000.0,
+                "operator": "<"
+            }
+        ],
+        "action": "Low levels",
+        "annotation": "White blood cell count too low!Refer her for further evaluation and management if not explained by the physiological change of the pregnancy",
+        "action_key": 329
+    },
     {
         "conditions": [
             {
@@ -6079,7 +6079,7 @@
     {
         "conditions": [
             {
-                "key": "DAK, Repeat systolic blood pressure after 15 min",
+                "key": "DAK, Systolic blood pressure",
                 "value": 160,
                 "operator": ">="
             }
@@ -6344,7 +6344,7 @@
                 "operator": "<="
             }
         ],
-        "action": "Small for gestational age utrus",
+        "action": "Small for gestational age utrus (< 3)",
         "annotation": "Consider intrauterine growth restriction (IUGR), intrauterine fetal death (IUFD), oligohydramnios, etc.",
         "action_key": 430
     },
@@ -6356,7 +6356,7 @@
                 "operator": ">="
             }
         ],
-        "action": "Large for gestational age utrus",
+        "action": "Large for gestational age utrus (> 3)",
         "annotation": "Consider multiple pregnancy, polyhydramnios, macrosomia, etc.",
         "action_key": 431
     },
@@ -6773,8 +6773,9 @@
         "conditions": [
             {
                 "key": "DAK, Systolic blood pressure",
-                "value": 140,
-                "operator": ">="
+              "minValue":140 ,
+              "maxValue": 160,
+            "operator": "between, <=, <"
             }
         ],
         "action": "Measure BP again after 10\u201315 minutes rest",
@@ -6785,8 +6786,9 @@
         "conditions": [
             {
                 "key": "DAK, Diastolic blood pressure",
-                "value": 90,
-                "operator": ">="
+              "minValue":90 ,
+              "maxValue": 110,
+            "operator": "between, <=, <"
             }
         ],
         "action": "Measure BP again after 10\u201315 minutes rest",
@@ -6803,8 +6805,9 @@
             },
             {
                 "key": "DAK, Repeat systolic blood pressure after 15 min",
-                "value": 160,
-                "operator": "<"
+              "minValue":140 ,
+              "maxValue": 160,
+            "operator": "between, <=, <"
             }
         ],
         "action": "Measure blood pressure again after 4 hours",
@@ -6930,5 +6933,17 @@
         "action": "Conduct counselling on pre-eclampsia risk",
         "annotation": "The woman is at risk of developing pre-eclampsia: provide Counselling",
         "action_key": 463
+    },
+  {
+        "conditions": [
+            {
+                "key": "DAK, Diastolic blood pressure",
+                "value": 110,
+                "operator": ">="
+            }
+        ],
+        "action": "Provide antihypertensive and anticonvulsant treatment as per protocol, and refer",
+        "annotation": "Antihypertensives: Hydralazine is the drug of choice for acute therapy. Administer 5 mg IV slowly every 20 minutes until the blood pressure is lowered to a diastolic level of <110 mmHg. The maximum dose is 20 mg within 24 hours. If Hydralazine is unavailable, alternative drugs such as Nifedipine can be used.Anticonvulsants: Administer magnesium sulfate (MgSO\u2084) as the first-line treatment. If MgSO\u2084 is unavailable, provide alternative anticonvulsants as per protocol",
+        "action_key": 464
     }
 ]
