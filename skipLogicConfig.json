@@ -2706,14 +2706,14 @@
         "rules": [
           {
             "trigger": "DAK, Systolic blood pressure",
-            "minValue": 140,
+            "minValue":140 ,
             "maxValue": 160,
             "operator": "between, <=, <"
           },
           {
             "trigger": "DAK, Diastolic blood pressure",
-            "minValue": 90,
-            "maxValue": 110,
+              "minValue":90 ,
+              "maxValue": 110,
             "operator": "between, <=, <"
           }
         ]
@@ -2722,8 +2722,8 @@
         "rules": [
           {
             "trigger": "DAK, Systolic blood pressure",
-            "minValue": 140,
-            "maxValue": 160,
+              "minValue":140 ,
+              "maxValue": 160,
             "operator": "between, <=, <"
           }
         ]
@@ -2732,8 +2732,8 @@
         "rules": [
           {
             "trigger": "DAK, Diastolic blood pressure",
-            "minValue": 90,
-            "maxValue": 110,
+              "minValue":90 ,
+              "maxValue": 110,
             "operator": "between, <=, <"
           }
         ]
@@ -2750,14 +2750,14 @@
         "rules": [
           {
             "trigger": "DAK, Systolic blood pressure",
-            "minValue": 140,
-            "maxValue": 160,
+              "minValue":140 ,
+              "maxValue": 160,
             "operator": "between, <=, <"
           },
           {
             "trigger": "DAK, Diastolic blood pressure",
-            "minValue": 90,
-            "maxValue": 110,
+              "minValue":90 ,
+              "maxValue": 110,
             "operator": "between, <=, <"
           }
         ]
@@ -2766,8 +2766,8 @@
         "rules": [
           {
             "trigger": "DAK, Systolic blood pressure",
-            "minValue": 140,
-            "maxValue": 160,
+              "minValue":140 ,
+              "maxValue": 160,
             "operator": "between, <=, <"
           }
         ]
@@ -2776,8 +2776,8 @@
         "rules": [
           {
             "trigger": "DAK, Diastolic blood pressure",
-            "minValue": 90,
-            "maxValue": 110,
+              "minValue":90 ,
+              "maxValue": 110,
             "operator": "between, <=, <"
           }
         ]
