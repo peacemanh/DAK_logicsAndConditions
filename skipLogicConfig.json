@@ -2706,13 +2706,15 @@
         "rules": [
           {
             "trigger": "DAK, Systolic blood pressure",
-            "value": 140,
-            "operator": ">="
+            "minValue": 140,
+            "maxValue": 160,
+            "operator": "between, <=, <"
           },
           {
             "trigger": "DAK, Diastolic blood pressure",
-            "value": 90,
-            "operator": ">="
+            "minValue": 90,
+            "maxValue": 110,
+            "operator": "between, <=, <"
           }
         ]
       },
@@ -2720,8 +2722,9 @@
         "rules": [
           {
             "trigger": "DAK, Systolic blood pressure",
-            "value": 140,
-            "operator": ">="
+            "minValue": 140,
+            "maxValue": 160,
+            "operator": "between, <=, <"
           }
         ]
       },
@@ -2729,8 +2732,9 @@
         "rules": [
           {
             "trigger": "DAK, Diastolic blood pressure",
-            "value": 90,
-            "operator": ">="
+            "minValue": 90,
+            "maxValue": 110,
+            "operator": "between, <=, <"
           }
         ]
       }
@@ -2746,13 +2750,15 @@
         "rules": [
           {
             "trigger": "DAK, Systolic blood pressure",
-            "value": 140,
-            "operator": ">="
+            "minValue": 140,
+            "maxValue": 160,
+            "operator": "between, <=, <"
           },
           {
             "trigger": "DAK, Diastolic blood pressure",
-            "value": 90,
-            "operator": ">="
+            "minValue": 90,
+            "maxValue": 110,
+            "operator": "between, <=, <"
           }
         ]
       },
@@ -2760,8 +2766,9 @@
         "rules": [
           {
             "trigger": "DAK, Systolic blood pressure",
-            "value": 140,
-            "operator": ">="
+            "minValue": 140,
+            "maxValue": 160,
+            "operator": "between, <=, <"
           }
         ]
       },
@@ -2769,8 +2776,9 @@
         "rules": [
           {
             "trigger": "DAK, Diastolic blood pressure",
-            "value": 90,
-            "operator": ">="
+            "minValue": 90,
+            "maxValue": 110,
+            "operator": "between, <=, <"
           }
         ]
       }
@@ -9710,7 +9718,6 @@
         ]
       }
     ],
-
     "action": "show",
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Diagnoses",
@@ -10117,7 +10124,6 @@
   },
   {
     "logics": [
-
       {
         "trigger": "Minimum requirements for IPV assessment",
         "value": true,
@@ -10251,7 +10257,6 @@
           }
         ]
       },
-
       {
         "rules": [
           {
@@ -10361,7 +10366,15 @@
     "logics": [
       {
         "trigger": "DAK, Respiratory exam result",
-        "orValues": [ "DAK, Dyspnoea", "DAK, Cough", "DAK, Bradypnea", "DAK, Tachypnea", "DAK, Wheezing", "DAK, Rales", "DAK, Other" ],
+        "orValues": [
+          "DAK, Dyspnoea",
+          "DAK, Cough",
+          "DAK, Bradypnea",
+          "DAK, Tachypnea",
+          "DAK, Wheezing",
+          "DAK, Rales",
+          "DAK, Other"
+        ],
         "operator": "OR"
       }
     ],
@@ -10409,7 +10422,6 @@
           }
         ]
       }
-
     ],
     "action": "show",
     "conditionType": "deepAnalysis",
@@ -10432,7 +10444,6 @@
           }
         ]
       }
-
     ],
     "action": "show",
     "conditionType": "deepAnalysis",
@@ -10455,13 +10466,10 @@
           }
         ]
       }
-
     ],
     "action": "show",
     "conditionType": "deepAnalysis",
     "dependent": "DAK, Hematocrit (Ht)",
     "logic_key": 649
   }
-
-
 ]
