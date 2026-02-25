@@ -37586,5 +37586,22 @@
     "action": "Follow-up screening is critical to detect recurrence, especially for HIV-positive clients.",
     "annotation": "",
     "action_key": 1724
+  },
+
+  {
+    "conditions": [
+      {
+        "key": "DAK, Signs and symptoms for clinical inquiry for sexual violence",
+        "orValues": [
+          "DAK, Forced into sexual activity",
+          "DAK, Physically hurt by partner"
+        ],
+        "operator": "OR"
+      }
+    ],
+    "displayPoint": "DAK, Signs and symptoms for clinical inquiry for sexual violence",
+    "action": "Provide LIVES + Clinical care if needed (treat injuries) + Referral",
+    "annotation": "",
+    "action_key": 1725
   }
 ]
